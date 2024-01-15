@@ -8,7 +8,7 @@ const versionSwitcherHtml = `
 <div id="version-switcher-select">
     <div class="component-select">
         <div id="component-select-current-display" class="component-select__current">
-        ${thisPackageMetaData.displayTitle} ${thisPackageMetaData.version}
+        ${thisPackageMetaData.displayTitle}
         </div>
         <ul id="version-switcher-ul" class="component-select__options-container">
         </ul>
@@ -31,7 +31,6 @@ function populateVersionSwitcher(metadata, versionsData, currentLang){
     for (let i = 0; i < versionsData.length; ++i) {
         if (versionsData[i].lang === "en")
             enVersionInfo = versionsData[i];
-        
         if ((!currentLang && versionsData[i].lang === 'en') || currentLang === versionsData[i].lang)
             thisVersionInfo = versionsData[i];
     }
@@ -39,10 +38,9 @@ function populateVersionSwitcher(metadata, versionsData, currentLang){
     for (let i = 0; i < enVersionInfo.versions.length; ++i) {
         const version = enVersionInfo.versions[i];
         const thisPackageVersionShort = getShortVersion(thisPackageMetaData.version);
-        
         if (thisPackageVersionShort === version)
             continue;
-        
+
         const isLocalised = thisVersionInfo.versions.includes(version);
         let unityVersion;
         if (metadata)
@@ -175,7 +173,7 @@ function createVersionOption(version, gotoUrl, unityVersion){
 }
 
 function getRedirectUrl(versionTrimmed, isLocalised, currentLang){
-    let output = `https://nk-studio.github.io/SceneSystem/Packages/${thisPackageMetaData.name}@${versionTrimmed}/`;
+    let output = `/Packages/${thisPackageMetaData.name}@${versionTrimmed}/`;
     if (isLocalised && currentLang && currentLang !== 'en')
         output = `/${currentLang}${output}`;
     return output;

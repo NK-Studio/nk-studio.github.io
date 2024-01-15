@@ -1,47 +1,48 @@
 const isOffline = !location.host || (location.host.indexOf('nk-studio.github.io') === -1);
 
-$(function () {
-
+$(function(){
     if (isOffline) {
         onLastPopulate();
         return;
     }
 
-    // const pathLanguageRegex = /^\/(?:(?<lang>.*?)\/)?Packages\//;
-    // const pathLanguageMatch = location.pathname.match(pathLanguageRegex);
+    const pathLanguageRegex = /^\/(?:(?<lang>.*?)\/)?Packages\//;
+    const pathLanguageMatch = location.pathname.match(pathLanguageRegex);
 
-    // let languageMatch;
-    // if (!isOffline)
-    //languageMatch = pathLanguageMatch.groups.lang;
-    // else
-    languageMatch = thisPackageMetaData.lang;
+    let languageMatch;
+    if (!isOffline)
+        languageMatch = pathLanguageMatch.groups.lang;
+    else
+        languageMatch = thisPackageMetaData.lang;
 
     const packageName = thisPackageMetaData.name;
-    const urlPrefix = !isOffline ? "/Packages" : '';
+    const urlPrefix = !isOffline ? '/Packages' : '';
 
     let hasPopulated = false;
 
-    function getPackageMetaData(callback) {
+    function getPackageMetaData(callback){
         const requestURL = `${urlPrefix}/metadata/${packageName}/metadata.json`;
+
         request(requestURL, callback);
     }
 
     function getSwitcherData(callback) {
         const requestURL = `${urlPrefix}/metadata/${packageName}/versions.json`;
+
         request(requestURL, callback);
     }
 
-    function request(requestURL, callback) {
-        if (!hasPopulated) {
-            $.getJSON(requestURL, function (data) {
+    function request(requestURL, callback){
+        if (!hasPopulated){
+            $.getJSON(requestURL, function(data){
                 callback(data);
-            }).fail(function () {
+            }).fail(function(){
                 callback();
             });
         }
     }
 
-    getSwitcherData(function (versionsData) {
+    getSwitcherData(function(versionsData) {
         if (!versionsData || !versionsData.langs) {
             // No data for lang switcher
             onLastPopulate();
@@ -50,7 +51,7 @@ $(function () {
 
         populateLanguageSwitcher(versionsData.langs, languageMatch); // See language-switcher.js
 
-        getPackageMetaData(function (metadata) {
+        getPackageMetaData(function(metadata){
             populateVersionSwitcher(metadata, versionsData.langs, languageMatch); // See version-switcher.js
         });
     });

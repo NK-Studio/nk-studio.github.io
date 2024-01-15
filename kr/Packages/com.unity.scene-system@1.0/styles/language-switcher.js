@@ -33,7 +33,7 @@ function populateLanguageSwitcher(data, currentLang) {
         }
         else {
             // Else send to latest because another version exists
-            targetUrl += `/${!isOffline ? "https://nk-studio.github.io/SceneSystem/Packages/" : ""}${thisPackageMetaData.name}@${getLatestVersion(element.versions)}/index.html`;
+            targetUrl += `/${!isOffline ? "Packages/" : ""}${thisPackageMetaData.name}@${getLatestVersion(element.versions)}/index.html`;
         }
 
         $languageSelect.append(`<option class="${className}" value="${targetUrl}" ${selectedOption}>${element.display}</li>`);

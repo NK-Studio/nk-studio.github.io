@@ -17,7 +17,7 @@ $(function () {
     languageMatch = thisPackageMetaData.lang;
 
     const packageName = thisPackageMetaData.name;
-    const urlPrefix = !isOffline ? "https://nk-studio.github.io/SceneSystem/Packages" : '';
+    const urlPrefix = !isOffline ? "/Packages" : '';
 
     let hasPopulated = false;
 

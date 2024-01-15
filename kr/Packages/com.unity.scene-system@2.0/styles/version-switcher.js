@@ -8,7 +8,7 @@ const versionSwitcherHtml = `
 <div id="version-switcher-select">
     <div class="component-select">
         <div id="component-select-current-display" class="component-select__current">
-        ${thisPackageMetaData.displayTitle}
+        ${thisPackageMetaData.displayTitle} ${thisPackageMetaData.version}
         </div>
         <ul id="version-switcher-ul" class="component-select__options-container">
         </ul>

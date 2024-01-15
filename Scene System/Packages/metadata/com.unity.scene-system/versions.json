@@ -1,0 +1,22 @@
+﻿{
+  "langs": [
+    {
+      "pathPrefix": "",
+      "versions": [
+        "1.0",
+        "2.0"
+      ],
+      "display": "English",
+      "lang": "en"
+    },
+    {
+      "pathPrefix": "kr",
+      "versions": [
+        "1.0",
+        "2.0"
+      ],
+      "display": "\ud55c\uad6d\uc5b4",
+      "lang": "kr"
+    }
+  ]
+}

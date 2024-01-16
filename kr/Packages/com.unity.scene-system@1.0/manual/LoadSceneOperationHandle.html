@@ -1,0 +1,176 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <script type="text/javascript">thisPackageMetaData = { name: "com.unity.scene-system", version: "1.0.0", displayTitle:"Scene System", lang: "kr" };</script>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>LoadScene Operation Handle | Scene System </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="LoadScene Operation Handle | Scene System ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <link rel="stylesheet" href="../styles/version-switcher.css">
+      <link rel="stylesheet" href="../styles/language-switcher.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../manual/index.html">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="">
+              </a>            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+            <div class="container hide-when-search" id="breadcrumb">
+                <!-- Unity Customization: Remove content of breadcrumb bar. This space is used for version and language switchers
+                            <ul class="breadcrumb">
+                              <li></li>
+                            </ul>
+                            -->
+            </div>
+        </div>      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+        <div id="unity_breadcrumb_placeholder">
+            <ul class="breadcrumb">
+            <li></li>
+            </ul>
+        </div>
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="loadscene-operation-handle">LoadScene Operation Handle</h1>
+
+<p>Scene System의 모든 비동기 메서드에는 반환 값으로 LoadScene Operation Handle이라는 구조가 있습니다.
+LoadScene Operation Handle을 사용하면 전환 대기, 씬 활성화 등이 가능합니다.</p>
+<h2 id="프로세스가-완료될-때까지-기다리기">프로세스가 완료될 때까지 기다리기</h2>
+<p>콜백 처리가 완료될 때까지 기다리려면 onCompleted를 사용하세요.</p>
+<pre><code class="lang-cs">var handle = Scenes.LoadSceneAsync(&quot;SceneName&quot;);
+handle.onCompleted += () =&gt;
+{
+     Debug.Log(&quot;completed&quot;);
+};
+</code></pre>
+<p>코루틴에서 기다리려면 ToYieldInteraction 메서드를 사용하세요.</p>
+<pre><code class="lang-cs">var handle = Scenes.LoadSceneAsync(&quot;SceneName&quot;);
+yield return handle.ToYieldInteraction();
+</code></pre>
+<p>async/await로 기다리려면 ToTask 메서드를 사용하세요.</p>
+<pre><code class="lang-cs">var handle = Scenes.LoadSceneAsync(&quot;SceneName&quot;);
+await handle.ToTask();
+</code></pre>
+<h2 id="진행도-가져오기">진행도 가져오기</h2>
+<p>'LoadScene Operation Handle' 에서 진행 상황을 가져오는 것도 가능합니다.</p>
+<pre><code class="lang-cs">var handle = Scenes.LoadSceneAsync(&quot;SceneName&quot;);
+
+// 진행 상황을 0과 1 사이의 부동 소수점으로 가져옵니다.
+var progress = handle.Progress;
+
+// 완료되면 받기
+var isDone = handle.IsDone;
+</code></pre>
+<h2 id="씬-활성화">씬 활성화</h2>
+<p><code>AllowSceneActivation()</code> 메서드를 사용하면 씬 로딩 완료 시점을 조정할 수 있습니다.
+다음은 코루틴 내에서 Allow Scene Activation을 사용하는 예입니다.</p>
+<pre><code class="lang-cs">var handle = Scenes.LoadSceneAsync(&quot;SceneName&quot;);
+
+// AllowSceneActivation을 false로 설정
+handle.AllowSceneActivation(false);
+
+// 진행률이 0.9에 도달할 때까지 기다립니다(로딩이 완료됨).
+yield return new WaitWhile(() =&gt; handle.Progress &lt; 0.9f);
+
+// AllowSceneActivation을 true로 설정
+handle.AllowSceneActivation(true);
+
+// 장면이 활성화될 때까지 기다리세요
+yield return handle.ToYieldInteraction();
+</code></pre>
+<p><code>AllowSceneActivation</code>이 false로 설정된 경우 <code>Progress</code> 및 <code>IsDone</code> 값의 동작은 Unity의 <code>AllowSceneActivation</code>을 따릅니다.
+<a href="https://docs.unity3d.com/2019.4/Documentation/ScriptReference/AsyncOperation-allowSceneActivation.html">https://docs.unity3d.com/2019.4/Documentation/ScriptReference/AsyncOperation-allowSceneActivation.html</a></p>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/NK-Studio/SceneSystem-Document/blob/main/kr/1.0.0/manual/LoadSceneOperationHandle.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      <span>Copyright © 2024 NK Studio<br>Generated by <strong>DocFX</strong> on 6 January 2024 </span>
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../styles/version-switcher.js"></script>
+    <script type="text/javascript" src="../styles/language-switcher.js"></script>
+    <script type="text/javascript" src="../styles/metadata-collector.js"></script>  </body>
+</html>

@@ -1,3 +1,1821 @@
 ### YamlMime:XRefMap
 sorted: true
-references: []
+references:
+- uid: UnityEditor.SceneSystem
+  name: UnityEditor.SceneSystem
+  href: api/UnityEditor.SceneSystem.html
+  commentId: N:UnityEditor.SceneSystem
+  fullName: UnityEditor.SceneSystem
+  nameWithType: UnityEditor.SceneSystem
+- uid: UnityEditor.SceneSystem.SceneLoaderInspector
+  name: SceneLoaderInspector
+  href: api/UnityEditor.SceneSystem.SceneLoaderInspector.html
+  commentId: T:UnityEditor.SceneSystem.SceneLoaderInspector
+  fullName: UnityEditor.SceneSystem.SceneLoaderInspector
+  nameWithType: SceneLoaderInspector
+- uid: UnityEditor.SceneSystem.SceneLoaderInspector.#ctor
+  name: SceneLoaderInspector()
+  href: api/UnityEditor.SceneSystem.SceneLoaderInspector.html#UnityEditor_SceneSystem_SceneLoaderInspector__ctor
+  commentId: M:UnityEditor.SceneSystem.SceneLoaderInspector.#ctor
+  name.vb: New()
+  fullName: UnityEditor.SceneSystem.SceneLoaderInspector.SceneLoaderInspector()
+  fullName.vb: UnityEditor.SceneSystem.SceneLoaderInspector.New()
+  nameWithType: SceneLoaderInspector.SceneLoaderInspector()
+  nameWithType.vb: SceneLoaderInspector.New()
+- uid: UnityEditor.SceneSystem.SceneLoaderInspector.#ctor*
+  name: SceneLoaderInspector
+  href: api/UnityEditor.SceneSystem.SceneLoaderInspector.html#UnityEditor_SceneSystem_SceneLoaderInspector__ctor_
+  commentId: Overload:UnityEditor.SceneSystem.SceneLoaderInspector.#ctor
+  name.vb: New
+  fullName: UnityEditor.SceneSystem.SceneLoaderInspector.SceneLoaderInspector
+  fullName.vb: UnityEditor.SceneSystem.SceneLoaderInspector.New
+  nameWithType: SceneLoaderInspector.SceneLoaderInspector
+  nameWithType.vb: SceneLoaderInspector.New
+- uid: UnityEditor.SceneSystem.SceneLoaderInspector.CreateInspectorGUI
+  name: CreateInspectorGUI()
+  href: api/UnityEditor.SceneSystem.SceneLoaderInspector.html#UnityEditor_SceneSystem_SceneLoaderInspector_CreateInspectorGUI
+  commentId: M:UnityEditor.SceneSystem.SceneLoaderInspector.CreateInspectorGUI
+  fullName: UnityEditor.SceneSystem.SceneLoaderInspector.CreateInspectorGUI()
+  nameWithType: SceneLoaderInspector.CreateInspectorGUI()
+- uid: UnityEditor.SceneSystem.SceneLoaderInspector.CreateInspectorGUI*
+  name: CreateInspectorGUI
+  href: api/UnityEditor.SceneSystem.SceneLoaderInspector.html#UnityEditor_SceneSystem_SceneLoaderInspector_CreateInspectorGUI_
+  commentId: Overload:UnityEditor.SceneSystem.SceneLoaderInspector.CreateInspectorGUI
+  fullName: UnityEditor.SceneSystem.SceneLoaderInspector.CreateInspectorGUI
+  nameWithType: SceneLoaderInspector.CreateInspectorGUI
+- uid: UnityEngine.SceneSystem
+  name: UnityEngine.SceneSystem
+  href: api/UnityEngine.SceneSystem.html
+  commentId: N:UnityEngine.SceneSystem
+  fullName: UnityEngine.SceneSystem
+  nameWithType: UnityEngine.SceneSystem
+- uid: UnityEngine.SceneSystem.ILoadSceneCallbackReceiver
+  name: ILoadSceneCallbackReceiver
+  href: api/UnityEngine.SceneSystem.ILoadSceneCallbackReceiver.html
+  commentId: T:UnityEngine.SceneSystem.ILoadSceneCallbackReceiver
+  fullName: UnityEngine.SceneSystem.ILoadSceneCallbackReceiver
+  nameWithType: ILoadSceneCallbackReceiver
+- uid: UnityEngine.SceneSystem.ILoadSceneCallbackReceiver.OnActiveSceneChanged(UnityEngine.SceneManagement.Scene,UnityEngine.SceneManagement.Scene)
+  name: OnActiveSceneChanged(Scene, Scene)
+  href: api/UnityEngine.SceneSystem.ILoadSceneCallbackReceiver.html#UnityEngine_SceneSystem_ILoadSceneCallbackReceiver_OnActiveSceneChanged_UnityEngine_SceneManagement_Scene_UnityEngine_SceneManagement_Scene_
+  commentId: M:UnityEngine.SceneSystem.ILoadSceneCallbackReceiver.OnActiveSceneChanged(UnityEngine.SceneManagement.Scene,UnityEngine.SceneManagement.Scene)
+  fullName: UnityEngine.SceneSystem.ILoadSceneCallbackReceiver.OnActiveSceneChanged(UnityEngine.SceneManagement.Scene, UnityEngine.SceneManagement.Scene)
+  nameWithType: ILoadSceneCallbackReceiver.OnActiveSceneChanged(Scene, Scene)
+- uid: UnityEngine.SceneSystem.ILoadSceneCallbackReceiver.OnActiveSceneChanged*
+  name: OnActiveSceneChanged
+  href: api/UnityEngine.SceneSystem.ILoadSceneCallbackReceiver.html#UnityEngine_SceneSystem_ILoadSceneCallbackReceiver_OnActiveSceneChanged_
+  commentId: Overload:UnityEngine.SceneSystem.ILoadSceneCallbackReceiver.OnActiveSceneChanged
+  fullName: UnityEngine.SceneSystem.ILoadSceneCallbackReceiver.OnActiveSceneChanged
+  nameWithType: ILoadSceneCallbackReceiver.OnActiveSceneChanged
+- uid: UnityEngine.SceneSystem.ILoadSceneCallbackReceiver.OnLoad(UnityEngine.SceneManagement.Scene,UnityEngine.SceneManagement.LoadSceneMode)
+  name: OnLoad(Scene, LoadSceneMode)
+  href: api/UnityEngine.SceneSystem.ILoadSceneCallbackReceiver.html#UnityEngine_SceneSystem_ILoadSceneCallbackReceiver_OnLoad_UnityEngine_SceneManagement_Scene_UnityEngine_SceneManagement_LoadSceneMode_
+  commentId: M:UnityEngine.SceneSystem.ILoadSceneCallbackReceiver.OnLoad(UnityEngine.SceneManagement.Scene,UnityEngine.SceneManagement.LoadSceneMode)
+  fullName: UnityEngine.SceneSystem.ILoadSceneCallbackReceiver.OnLoad(UnityEngine.SceneManagement.Scene, UnityEngine.SceneManagement.LoadSceneMode)
+  nameWithType: ILoadSceneCallbackReceiver.OnLoad(Scene, LoadSceneMode)
+- uid: UnityEngine.SceneSystem.ILoadSceneCallbackReceiver.OnLoad*
+  name: OnLoad
+  href: api/UnityEngine.SceneSystem.ILoadSceneCallbackReceiver.html#UnityEngine_SceneSystem_ILoadSceneCallbackReceiver_OnLoad_
+  commentId: Overload:UnityEngine.SceneSystem.ILoadSceneCallbackReceiver.OnLoad
+  fullName: UnityEngine.SceneSystem.ILoadSceneCallbackReceiver.OnLoad
+  nameWithType: ILoadSceneCallbackReceiver.OnLoad
+- uid: UnityEngine.SceneSystem.ILoadSceneCallbackReceiver.OnUnload(UnityEngine.SceneManagement.Scene)
+  name: OnUnload(Scene)
+  href: api/UnityEngine.SceneSystem.ILoadSceneCallbackReceiver.html#UnityEngine_SceneSystem_ILoadSceneCallbackReceiver_OnUnload_UnityEngine_SceneManagement_Scene_
+  commentId: M:UnityEngine.SceneSystem.ILoadSceneCallbackReceiver.OnUnload(UnityEngine.SceneManagement.Scene)
+  fullName: UnityEngine.SceneSystem.ILoadSceneCallbackReceiver.OnUnload(UnityEngine.SceneManagement.Scene)
+  nameWithType: ILoadSceneCallbackReceiver.OnUnload(Scene)
+- uid: UnityEngine.SceneSystem.ILoadSceneCallbackReceiver.OnUnload*
+  name: OnUnload
+  href: api/UnityEngine.SceneSystem.ILoadSceneCallbackReceiver.html#UnityEngine_SceneSystem_ILoadSceneCallbackReceiver_OnUnload_
+  commentId: Overload:UnityEngine.SceneSystem.ILoadSceneCallbackReceiver.OnUnload
+  fullName: UnityEngine.SceneSystem.ILoadSceneCallbackReceiver.OnUnload
+  nameWithType: ILoadSceneCallbackReceiver.OnUnload
+- uid: UnityEngine.SceneSystem.ISceneContainerCallbackReceiver
+  name: ISceneContainerCallbackReceiver
+  href: api/UnityEngine.SceneSystem.ISceneContainerCallbackReceiver.html
+  commentId: T:UnityEngine.SceneSystem.ISceneContainerCallbackReceiver
+  fullName: UnityEngine.SceneSystem.ISceneContainerCallbackReceiver
+  nameWithType: ISceneContainerCallbackReceiver
+- uid: UnityEngine.SceneSystem.ISceneContainerCallbackReceiver.OnAfterPop(System.String,System.String)
+  name: OnAfterPop(string, string)
+  href: api/UnityEngine.SceneSystem.ISceneContainerCallbackReceiver.html#UnityEngine_SceneSystem_ISceneContainerCallbackReceiver_OnAfterPop_System_String_System_String_
+  commentId: M:UnityEngine.SceneSystem.ISceneContainerCallbackReceiver.OnAfterPop(System.String,System.String)
+  name.vb: OnAfterPop(String, String)
+  fullName: UnityEngine.SceneSystem.ISceneContainerCallbackReceiver.OnAfterPop(string, string)
+  fullName.vb: UnityEngine.SceneSystem.ISceneContainerCallbackReceiver.OnAfterPop(String, String)
+  nameWithType: ISceneContainerCallbackReceiver.OnAfterPop(string, string)
+  nameWithType.vb: ISceneContainerCallbackReceiver.OnAfterPop(String, String)
+- uid: UnityEngine.SceneSystem.ISceneContainerCallbackReceiver.OnAfterPop*
+  name: OnAfterPop
+  href: api/UnityEngine.SceneSystem.ISceneContainerCallbackReceiver.html#UnityEngine_SceneSystem_ISceneContainerCallbackReceiver_OnAfterPop_
+  commentId: Overload:UnityEngine.SceneSystem.ISceneContainerCallbackReceiver.OnAfterPop
+  fullName: UnityEngine.SceneSystem.ISceneContainerCallbackReceiver.OnAfterPop
+  nameWithType: ISceneContainerCallbackReceiver.OnAfterPop
+- uid: UnityEngine.SceneSystem.ISceneContainerCallbackReceiver.OnAfterPush(System.String,System.String)
+  name: OnAfterPush(string, string)
+  href: api/UnityEngine.SceneSystem.ISceneContainerCallbackReceiver.html#UnityEngine_SceneSystem_ISceneContainerCallbackReceiver_OnAfterPush_System_String_System_String_
+  commentId: M:UnityEngine.SceneSystem.ISceneContainerCallbackReceiver.OnAfterPush(System.String,System.String)
+  name.vb: OnAfterPush(String, String)
+  fullName: UnityEngine.SceneSystem.ISceneContainerCallbackReceiver.OnAfterPush(string, string)
+  fullName.vb: UnityEngine.SceneSystem.ISceneContainerCallbackReceiver.OnAfterPush(String, String)
+  nameWithType: ISceneContainerCallbackReceiver.OnAfterPush(string, string)
+  nameWithType.vb: ISceneContainerCallbackReceiver.OnAfterPush(String, String)
+- uid: UnityEngine.SceneSystem.ISceneContainerCallbackReceiver.OnAfterPush*
+  name: OnAfterPush
+  href: api/UnityEngine.SceneSystem.ISceneContainerCallbackReceiver.html#UnityEngine_SceneSystem_ISceneContainerCallbackReceiver_OnAfterPush_
+  commentId: Overload:UnityEngine.SceneSystem.ISceneContainerCallbackReceiver.OnAfterPush
+  fullName: UnityEngine.SceneSystem.ISceneContainerCallbackReceiver.OnAfterPush
+  nameWithType: ISceneContainerCallbackReceiver.OnAfterPush
+- uid: UnityEngine.SceneSystem.ISceneContainerCallbackReceiver.OnBeforePop(System.String,System.String)
+  name: OnBeforePop(string, string)
+  href: api/UnityEngine.SceneSystem.ISceneContainerCallbackReceiver.html#UnityEngine_SceneSystem_ISceneContainerCallbackReceiver_OnBeforePop_System_String_System_String_
+  commentId: M:UnityEngine.SceneSystem.ISceneContainerCallbackReceiver.OnBeforePop(System.String,System.String)
+  name.vb: OnBeforePop(String, String)
+  fullName: UnityEngine.SceneSystem.ISceneContainerCallbackReceiver.OnBeforePop(string, string)
+  fullName.vb: UnityEngine.SceneSystem.ISceneContainerCallbackReceiver.OnBeforePop(String, String)
+  nameWithType: ISceneContainerCallbackReceiver.OnBeforePop(string, string)
+  nameWithType.vb: ISceneContainerCallbackReceiver.OnBeforePop(String, String)
+- uid: UnityEngine.SceneSystem.ISceneContainerCallbackReceiver.OnBeforePop*
+  name: OnBeforePop
+  href: api/UnityEngine.SceneSystem.ISceneContainerCallbackReceiver.html#UnityEngine_SceneSystem_ISceneContainerCallbackReceiver_OnBeforePop_
+  commentId: Overload:UnityEngine.SceneSystem.ISceneContainerCallbackReceiver.OnBeforePop
+  fullName: UnityEngine.SceneSystem.ISceneContainerCallbackReceiver.OnBeforePop
+  nameWithType: ISceneContainerCallbackReceiver.OnBeforePop
+- uid: UnityEngine.SceneSystem.ISceneContainerCallbackReceiver.OnBeforePush(System.String,System.String)
+  name: OnBeforePush(string, string)
+  href: api/UnityEngine.SceneSystem.ISceneContainerCallbackReceiver.html#UnityEngine_SceneSystem_ISceneContainerCallbackReceiver_OnBeforePush_System_String_System_String_
+  commentId: M:UnityEngine.SceneSystem.ISceneContainerCallbackReceiver.OnBeforePush(System.String,System.String)
+  name.vb: OnBeforePush(String, String)
+  fullName: UnityEngine.SceneSystem.ISceneContainerCallbackReceiver.OnBeforePush(string, string)
+  fullName.vb: UnityEngine.SceneSystem.ISceneContainerCallbackReceiver.OnBeforePush(String, String)
+  nameWithType: ISceneContainerCallbackReceiver.OnBeforePush(string, string)
+  nameWithType.vb: ISceneContainerCallbackReceiver.OnBeforePush(String, String)
+- uid: UnityEngine.SceneSystem.ISceneContainerCallbackReceiver.OnBeforePush*
+  name: OnBeforePush
+  href: api/UnityEngine.SceneSystem.ISceneContainerCallbackReceiver.html#UnityEngine_SceneSystem_ISceneContainerCallbackReceiver_OnBeforePush_
+  commentId: Overload:UnityEngine.SceneSystem.ISceneContainerCallbackReceiver.OnBeforePush
+  fullName: UnityEngine.SceneSystem.ISceneContainerCallbackReceiver.OnBeforePush
+  nameWithType: ISceneContainerCallbackReceiver.OnBeforePush
+- uid: UnityEngine.SceneSystem.ISceneHandler
+  name: ISceneHandler
+  href: api/UnityEngine.SceneSystem.ISceneHandler.html
+  commentId: T:UnityEngine.SceneSystem.ISceneHandler
+  fullName: UnityEngine.SceneSystem.ISceneHandler
+  nameWithType: ISceneHandler
+- uid: UnityEngine.SceneSystem.ISceneHandler.GetLoadSceneOperation(System.String,UnityEngine.SceneManagement.LoadSceneMode)
+  name: GetLoadSceneOperation(string, LoadSceneMode)
+  href: api/UnityEngine.SceneSystem.ISceneHandler.html#UnityEngine_SceneSystem_ISceneHandler_GetLoadSceneOperation_System_String_UnityEngine_SceneManagement_LoadSceneMode_
+  commentId: M:UnityEngine.SceneSystem.ISceneHandler.GetLoadSceneOperation(System.String,UnityEngine.SceneManagement.LoadSceneMode)
+  name.vb: GetLoadSceneOperation(String, LoadSceneMode)
+  fullName: UnityEngine.SceneSystem.ISceneHandler.GetLoadSceneOperation(string, UnityEngine.SceneManagement.LoadSceneMode)
+  fullName.vb: UnityEngine.SceneSystem.ISceneHandler.GetLoadSceneOperation(String, UnityEngine.SceneManagement.LoadSceneMode)
+  nameWithType: ISceneHandler.GetLoadSceneOperation(string, LoadSceneMode)
+  nameWithType.vb: ISceneHandler.GetLoadSceneOperation(String, LoadSceneMode)
+- uid: UnityEngine.SceneSystem.ISceneHandler.GetLoadSceneOperation*
+  name: GetLoadSceneOperation
+  href: api/UnityEngine.SceneSystem.ISceneHandler.html#UnityEngine_SceneSystem_ISceneHandler_GetLoadSceneOperation_
+  commentId: Overload:UnityEngine.SceneSystem.ISceneHandler.GetLoadSceneOperation
+  fullName: UnityEngine.SceneSystem.ISceneHandler.GetLoadSceneOperation
+  nameWithType: ISceneHandler.GetLoadSceneOperation
+- uid: UnityEngine.SceneSystem.ISceneHandler.GetUnloadSceneOperation(System.String)
+  name: GetUnloadSceneOperation(string)
+  href: api/UnityEngine.SceneSystem.ISceneHandler.html#UnityEngine_SceneSystem_ISceneHandler_GetUnloadSceneOperation_System_String_
+  commentId: M:UnityEngine.SceneSystem.ISceneHandler.GetUnloadSceneOperation(System.String)
+  name.vb: GetUnloadSceneOperation(String)
+  fullName: UnityEngine.SceneSystem.ISceneHandler.GetUnloadSceneOperation(string)
+  fullName.vb: UnityEngine.SceneSystem.ISceneHandler.GetUnloadSceneOperation(String)
+  nameWithType: ISceneHandler.GetUnloadSceneOperation(string)
+  nameWithType.vb: ISceneHandler.GetUnloadSceneOperation(String)
+- uid: UnityEngine.SceneSystem.ISceneHandler.GetUnloadSceneOperation*
+  name: GetUnloadSceneOperation
+  href: api/UnityEngine.SceneSystem.ISceneHandler.html#UnityEngine_SceneSystem_ISceneHandler_GetUnloadSceneOperation_
+  commentId: Overload:UnityEngine.SceneSystem.ISceneHandler.GetUnloadSceneOperation
+  fullName: UnityEngine.SceneSystem.ISceneHandler.GetUnloadSceneOperation
+  nameWithType: ISceneHandler.GetUnloadSceneOperation
+- uid: UnityEngine.SceneSystem.ISceneHandler.Load(System.String,UnityEngine.SceneManagement.LoadSceneMode)
+  name: Load(string, LoadSceneMode)
+  href: api/UnityEngine.SceneSystem.ISceneHandler.html#UnityEngine_SceneSystem_ISceneHandler_Load_System_String_UnityEngine_SceneManagement_LoadSceneMode_
+  commentId: M:UnityEngine.SceneSystem.ISceneHandler.Load(System.String,UnityEngine.SceneManagement.LoadSceneMode)
+  name.vb: Load(String, LoadSceneMode)
+  fullName: UnityEngine.SceneSystem.ISceneHandler.Load(string, UnityEngine.SceneManagement.LoadSceneMode)
+  fullName.vb: UnityEngine.SceneSystem.ISceneHandler.Load(String, UnityEngine.SceneManagement.LoadSceneMode)
+  nameWithType: ISceneHandler.Load(string, LoadSceneMode)
+  nameWithType.vb: ISceneHandler.Load(String, LoadSceneMode)
+- uid: UnityEngine.SceneSystem.ISceneHandler.Load*
+  name: Load
+  href: api/UnityEngine.SceneSystem.ISceneHandler.html#UnityEngine_SceneSystem_ISceneHandler_Load_
+  commentId: Overload:UnityEngine.SceneSystem.ISceneHandler.Load
+  fullName: UnityEngine.SceneSystem.ISceneHandler.Load
+  nameWithType: ISceneHandler.Load
+- uid: UnityEngine.SceneSystem.ISceneHandler.LoadAsync(System.String,UnityEngine.SceneManagement.LoadSceneMode)
+  name: LoadAsync(string, LoadSceneMode)
+  href: api/UnityEngine.SceneSystem.ISceneHandler.html#UnityEngine_SceneSystem_ISceneHandler_LoadAsync_System_String_UnityEngine_SceneManagement_LoadSceneMode_
+  commentId: M:UnityEngine.SceneSystem.ISceneHandler.LoadAsync(System.String,UnityEngine.SceneManagement.LoadSceneMode)
+  name.vb: LoadAsync(String, LoadSceneMode)
+  fullName: UnityEngine.SceneSystem.ISceneHandler.LoadAsync(string, UnityEngine.SceneManagement.LoadSceneMode)
+  fullName.vb: UnityEngine.SceneSystem.ISceneHandler.LoadAsync(String, UnityEngine.SceneManagement.LoadSceneMode)
+  nameWithType: ISceneHandler.LoadAsync(string, LoadSceneMode)
+  nameWithType.vb: ISceneHandler.LoadAsync(String, LoadSceneMode)
+- uid: UnityEngine.SceneSystem.ISceneHandler.LoadAsync*
+  name: LoadAsync
+  href: api/UnityEngine.SceneSystem.ISceneHandler.html#UnityEngine_SceneSystem_ISceneHandler_LoadAsync_
+  commentId: Overload:UnityEngine.SceneSystem.ISceneHandler.LoadAsync
+  fullName: UnityEngine.SceneSystem.ISceneHandler.LoadAsync
+  nameWithType: ISceneHandler.LoadAsync
+- uid: UnityEngine.SceneSystem.ISceneHandler.Unload(System.String)
+  name: Unload(string)
+  href: api/UnityEngine.SceneSystem.ISceneHandler.html#UnityEngine_SceneSystem_ISceneHandler_Unload_System_String_
+  commentId: M:UnityEngine.SceneSystem.ISceneHandler.Unload(System.String)
+  name.vb: Unload(String)
+  fullName: UnityEngine.SceneSystem.ISceneHandler.Unload(string)
+  fullName.vb: UnityEngine.SceneSystem.ISceneHandler.Unload(String)
+  nameWithType: ISceneHandler.Unload(string)
+  nameWithType.vb: ISceneHandler.Unload(String)
+- uid: UnityEngine.SceneSystem.ISceneHandler.Unload*
+  name: Unload
+  href: api/UnityEngine.SceneSystem.ISceneHandler.html#UnityEngine_SceneSystem_ISceneHandler_Unload_
+  commentId: Overload:UnityEngine.SceneSystem.ISceneHandler.Unload
+  fullName: UnityEngine.SceneSystem.ISceneHandler.Unload
+  nameWithType: ISceneHandler.Unload
+- uid: UnityEngine.SceneSystem.ISceneHandler.UnloadAsync(System.String)
+  name: UnloadAsync(string)
+  href: api/UnityEngine.SceneSystem.ISceneHandler.html#UnityEngine_SceneSystem_ISceneHandler_UnloadAsync_System_String_
+  commentId: M:UnityEngine.SceneSystem.ISceneHandler.UnloadAsync(System.String)
+  name.vb: UnloadAsync(String)
+  fullName: UnityEngine.SceneSystem.ISceneHandler.UnloadAsync(string)
+  fullName.vb: UnityEngine.SceneSystem.ISceneHandler.UnloadAsync(String)
+  nameWithType: ISceneHandler.UnloadAsync(string)
+  nameWithType.vb: ISceneHandler.UnloadAsync(String)
+- uid: UnityEngine.SceneSystem.ISceneHandler.UnloadAsync*
+  name: UnloadAsync
+  href: api/UnityEngine.SceneSystem.ISceneHandler.html#UnityEngine_SceneSystem_ISceneHandler_UnloadAsync_
+  commentId: Overload:UnityEngine.SceneSystem.ISceneHandler.UnloadAsync
+  fullName: UnityEngine.SceneSystem.ISceneHandler.UnloadAsync
+  nameWithType: ISceneHandler.UnloadAsync
+- uid: UnityEngine.SceneSystem.LoadingActionSkipMode
+  name: LoadingActionSkipMode
+  href: api/UnityEngine.SceneSystem.LoadingActionSkipMode.html
+  commentId: T:UnityEngine.SceneSystem.LoadingActionSkipMode
+  fullName: UnityEngine.SceneSystem.LoadingActionSkipMode
+  nameWithType: LoadingActionSkipMode
+- uid: UnityEngine.SceneSystem.LoadingActionSkipMode.AnyKey
+  name: AnyKey
+  href: api/UnityEngine.SceneSystem.LoadingActionSkipMode.html#UnityEngine_SceneSystem_LoadingActionSkipMode_AnyKey
+  commentId: F:UnityEngine.SceneSystem.LoadingActionSkipMode.AnyKey
+  fullName: UnityEngine.SceneSystem.LoadingActionSkipMode.AnyKey
+  nameWithType: LoadingActionSkipMode.AnyKey
+- uid: UnityEngine.SceneSystem.LoadingActionSkipMode.InstantComplete
+  name: InstantComplete
+  href: api/UnityEngine.SceneSystem.LoadingActionSkipMode.html#UnityEngine_SceneSystem_LoadingActionSkipMode_InstantComplete
+  commentId: F:UnityEngine.SceneSystem.LoadingActionSkipMode.InstantComplete
+  fullName: UnityEngine.SceneSystem.LoadingActionSkipMode.InstantComplete
+  nameWithType: LoadingActionSkipMode.InstantComplete
+- uid: UnityEngine.SceneSystem.LoadingActionSkipMode.Manual
+  name: Manual
+  href: api/UnityEngine.SceneSystem.LoadingActionSkipMode.html#UnityEngine_SceneSystem_LoadingActionSkipMode_Manual
+  commentId: F:UnityEngine.SceneSystem.LoadingActionSkipMode.Manual
+  fullName: UnityEngine.SceneSystem.LoadingActionSkipMode.Manual
+  nameWithType: LoadingActionSkipMode.Manual
+- uid: UnityEngine.SceneSystem.LoadingActionSkipMode.value__
+  name: value__
+  href: api/UnityEngine.SceneSystem.LoadingActionSkipMode.html#UnityEngine_SceneSystem_LoadingActionSkipMode_value__
+  commentId: F:UnityEngine.SceneSystem.LoadingActionSkipMode.value__
+  fullName: UnityEngine.SceneSystem.LoadingActionSkipMode.value__
+  nameWithType: LoadingActionSkipMode.value__
+- uid: UnityEngine.SceneSystem.LoadMultiSceneMode
+  name: LoadMultiSceneMode
+  href: api/UnityEngine.SceneSystem.LoadMultiSceneMode.html
+  commentId: T:UnityEngine.SceneSystem.LoadMultiSceneMode
+  fullName: UnityEngine.SceneSystem.LoadMultiSceneMode
+  nameWithType: LoadMultiSceneMode
+- uid: UnityEngine.SceneSystem.LoadMultiSceneMode.Parallel
+  name: Parallel
+  href: api/UnityEngine.SceneSystem.LoadMultiSceneMode.html#UnityEngine_SceneSystem_LoadMultiSceneMode_Parallel
+  commentId: F:UnityEngine.SceneSystem.LoadMultiSceneMode.Parallel
+  fullName: UnityEngine.SceneSystem.LoadMultiSceneMode.Parallel
+  nameWithType: LoadMultiSceneMode.Parallel
+- uid: UnityEngine.SceneSystem.LoadMultiSceneMode.Sequential
+  name: Sequential
+  href: api/UnityEngine.SceneSystem.LoadMultiSceneMode.html#UnityEngine_SceneSystem_LoadMultiSceneMode_Sequential
+  commentId: F:UnityEngine.SceneSystem.LoadMultiSceneMode.Sequential
+  fullName: UnityEngine.SceneSystem.LoadMultiSceneMode.Sequential
+  nameWithType: LoadMultiSceneMode.Sequential
+- uid: UnityEngine.SceneSystem.LoadMultiSceneMode.value__
+  name: value__
+  href: api/UnityEngine.SceneSystem.LoadMultiSceneMode.html#UnityEngine_SceneSystem_LoadMultiSceneMode_value__
+  commentId: F:UnityEngine.SceneSystem.LoadMultiSceneMode.value__
+  fullName: UnityEngine.SceneSystem.LoadMultiSceneMode.value__
+  nameWithType: LoadMultiSceneMode.value__
+- uid: UnityEngine.SceneSystem.LoadSceneOperationHandle
+  name: LoadSceneOperationHandle
+  href: api/UnityEngine.SceneSystem.LoadSceneOperationHandle.html
+  commentId: T:UnityEngine.SceneSystem.LoadSceneOperationHandle
+  fullName: UnityEngine.SceneSystem.LoadSceneOperationHandle
+  nameWithType: LoadSceneOperationHandle
+- uid: UnityEngine.SceneSystem.LoadSceneOperationHandle.#ctor(UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperationBase)
+  name: LoadSceneOperationHandle(LoadSceneOperationBase)
+  href: api/UnityEngine.SceneSystem.LoadSceneOperationHandle.html#UnityEngine_SceneSystem_LoadSceneOperationHandle__ctor_UnityEngine_SceneSystem_LoadSceneOperations_LoadSceneOperationBase_
+  commentId: M:UnityEngine.SceneSystem.LoadSceneOperationHandle.#ctor(UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperationBase)
+  name.vb: New(LoadSceneOperationBase)
+  fullName: UnityEngine.SceneSystem.LoadSceneOperationHandle.LoadSceneOperationHandle(UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperationBase)
+  fullName.vb: UnityEngine.SceneSystem.LoadSceneOperationHandle.New(UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperationBase)
+  nameWithType: LoadSceneOperationHandle.LoadSceneOperationHandle(LoadSceneOperationBase)
+  nameWithType.vb: LoadSceneOperationHandle.New(LoadSceneOperationBase)
+- uid: UnityEngine.SceneSystem.LoadSceneOperationHandle.#ctor*
+  name: LoadSceneOperationHandle
+  href: api/UnityEngine.SceneSystem.LoadSceneOperationHandle.html#UnityEngine_SceneSystem_LoadSceneOperationHandle__ctor_
+  commentId: Overload:UnityEngine.SceneSystem.LoadSceneOperationHandle.#ctor
+  name.vb: New
+  fullName: UnityEngine.SceneSystem.LoadSceneOperationHandle.LoadSceneOperationHandle
+  fullName.vb: UnityEngine.SceneSystem.LoadSceneOperationHandle.New
+  nameWithType: LoadSceneOperationHandle.LoadSceneOperationHandle
+  nameWithType.vb: LoadSceneOperationHandle.New
+- uid: UnityEngine.SceneSystem.LoadSceneOperationHandle.AllowSceneActivation(System.Boolean)
+  name: AllowSceneActivation(bool)
+  href: api/UnityEngine.SceneSystem.LoadSceneOperationHandle.html#UnityEngine_SceneSystem_LoadSceneOperationHandle_AllowSceneActivation_System_Boolean_
+  commentId: M:UnityEngine.SceneSystem.LoadSceneOperationHandle.AllowSceneActivation(System.Boolean)
+  name.vb: AllowSceneActivation(Boolean)
+  fullName: UnityEngine.SceneSystem.LoadSceneOperationHandle.AllowSceneActivation(bool)
+  fullName.vb: UnityEngine.SceneSystem.LoadSceneOperationHandle.AllowSceneActivation(Boolean)
+  nameWithType: LoadSceneOperationHandle.AllowSceneActivation(bool)
+  nameWithType.vb: LoadSceneOperationHandle.AllowSceneActivation(Boolean)
+- uid: UnityEngine.SceneSystem.LoadSceneOperationHandle.AllowSceneActivation*
+  name: AllowSceneActivation
+  href: api/UnityEngine.SceneSystem.LoadSceneOperationHandle.html#UnityEngine_SceneSystem_LoadSceneOperationHandle_AllowSceneActivation_
+  commentId: Overload:UnityEngine.SceneSystem.LoadSceneOperationHandle.AllowSceneActivation
+  fullName: UnityEngine.SceneSystem.LoadSceneOperationHandle.AllowSceneActivation
+  nameWithType: LoadSceneOperationHandle.AllowSceneActivation
+- uid: UnityEngine.SceneSystem.LoadSceneOperationHandle.IsDone
+  name: IsDone
+  href: api/UnityEngine.SceneSystem.LoadSceneOperationHandle.html#UnityEngine_SceneSystem_LoadSceneOperationHandle_IsDone
+  commentId: P:UnityEngine.SceneSystem.LoadSceneOperationHandle.IsDone
+  fullName: UnityEngine.SceneSystem.LoadSceneOperationHandle.IsDone
+  nameWithType: LoadSceneOperationHandle.IsDone
+- uid: UnityEngine.SceneSystem.LoadSceneOperationHandle.IsDone*
+  name: IsDone
+  href: api/UnityEngine.SceneSystem.LoadSceneOperationHandle.html#UnityEngine_SceneSystem_LoadSceneOperationHandle_IsDone_
+  commentId: Overload:UnityEngine.SceneSystem.LoadSceneOperationHandle.IsDone
+  fullName: UnityEngine.SceneSystem.LoadSceneOperationHandle.IsDone
+  nameWithType: LoadSceneOperationHandle.IsDone
+- uid: UnityEngine.SceneSystem.LoadSceneOperationHandle.IsValid
+  name: IsValid
+  href: api/UnityEngine.SceneSystem.LoadSceneOperationHandle.html#UnityEngine_SceneSystem_LoadSceneOperationHandle_IsValid
+  commentId: P:UnityEngine.SceneSystem.LoadSceneOperationHandle.IsValid
+  fullName: UnityEngine.SceneSystem.LoadSceneOperationHandle.IsValid
+  nameWithType: LoadSceneOperationHandle.IsValid
+- uid: UnityEngine.SceneSystem.LoadSceneOperationHandle.IsValid*
+  name: IsValid
+  href: api/UnityEngine.SceneSystem.LoadSceneOperationHandle.html#UnityEngine_SceneSystem_LoadSceneOperationHandle_IsValid_
+  commentId: Overload:UnityEngine.SceneSystem.LoadSceneOperationHandle.IsValid
+  fullName: UnityEngine.SceneSystem.LoadSceneOperationHandle.IsValid
+  nameWithType: LoadSceneOperationHandle.IsValid
+- uid: UnityEngine.SceneSystem.LoadSceneOperationHandle.onCompleted
+  name: onCompleted
+  href: api/UnityEngine.SceneSystem.LoadSceneOperationHandle.html#UnityEngine_SceneSystem_LoadSceneOperationHandle_onCompleted
+  commentId: E:UnityEngine.SceneSystem.LoadSceneOperationHandle.onCompleted
+  fullName: UnityEngine.SceneSystem.LoadSceneOperationHandle.onCompleted
+  nameWithType: LoadSceneOperationHandle.onCompleted
+- uid: UnityEngine.SceneSystem.LoadSceneOperationHandle.Progress
+  name: Progress
+  href: api/UnityEngine.SceneSystem.LoadSceneOperationHandle.html#UnityEngine_SceneSystem_LoadSceneOperationHandle_Progress
+  commentId: P:UnityEngine.SceneSystem.LoadSceneOperationHandle.Progress
+  fullName: UnityEngine.SceneSystem.LoadSceneOperationHandle.Progress
+  nameWithType: LoadSceneOperationHandle.Progress
+- uid: UnityEngine.SceneSystem.LoadSceneOperationHandle.Progress*
+  name: Progress
+  href: api/UnityEngine.SceneSystem.LoadSceneOperationHandle.html#UnityEngine_SceneSystem_LoadSceneOperationHandle_Progress_
+  commentId: Overload:UnityEngine.SceneSystem.LoadSceneOperationHandle.Progress
+  fullName: UnityEngine.SceneSystem.LoadSceneOperationHandle.Progress
+  nameWithType: LoadSceneOperationHandle.Progress
+- uid: UnityEngine.SceneSystem.LoadSceneOperationHandleExtensions
+  name: LoadSceneOperationHandleExtensions
+  href: api/UnityEngine.SceneSystem.LoadSceneOperationHandleExtensions.html
+  commentId: T:UnityEngine.SceneSystem.LoadSceneOperationHandleExtensions
+  fullName: UnityEngine.SceneSystem.LoadSceneOperationHandleExtensions
+  nameWithType: LoadSceneOperationHandleExtensions
+- uid: UnityEngine.SceneSystem.LoadSceneOperationHandleExtensions.ToTask(UnityEngine.SceneSystem.LoadSceneOperationHandle,System.Threading.CancellationToken)
+  name: ToTask(LoadSceneOperationHandle, CancellationToken)
+  href: api/UnityEngine.SceneSystem.LoadSceneOperationHandleExtensions.html#UnityEngine_SceneSystem_LoadSceneOperationHandleExtensions_ToTask_UnityEngine_SceneSystem_LoadSceneOperationHandle_System_Threading_CancellationToken_
+  commentId: M:UnityEngine.SceneSystem.LoadSceneOperationHandleExtensions.ToTask(UnityEngine.SceneSystem.LoadSceneOperationHandle,System.Threading.CancellationToken)
+  fullName: UnityEngine.SceneSystem.LoadSceneOperationHandleExtensions.ToTask(UnityEngine.SceneSystem.LoadSceneOperationHandle, System.Threading.CancellationToken)
+  nameWithType: LoadSceneOperationHandleExtensions.ToTask(LoadSceneOperationHandle, CancellationToken)
+- uid: UnityEngine.SceneSystem.LoadSceneOperationHandleExtensions.ToTask*
+  name: ToTask
+  href: api/UnityEngine.SceneSystem.LoadSceneOperationHandleExtensions.html#UnityEngine_SceneSystem_LoadSceneOperationHandleExtensions_ToTask_
+  commentId: Overload:UnityEngine.SceneSystem.LoadSceneOperationHandleExtensions.ToTask
+  fullName: UnityEngine.SceneSystem.LoadSceneOperationHandleExtensions.ToTask
+  nameWithType: LoadSceneOperationHandleExtensions.ToTask
+- uid: UnityEngine.SceneSystem.LoadSceneOperationHandleExtensions.ToYieldInteraction(UnityEngine.SceneSystem.LoadSceneOperationHandle)
+  name: ToYieldInteraction(LoadSceneOperationHandle)
+  href: api/UnityEngine.SceneSystem.LoadSceneOperationHandleExtensions.html#UnityEngine_SceneSystem_LoadSceneOperationHandleExtensions_ToYieldInteraction_UnityEngine_SceneSystem_LoadSceneOperationHandle_
+  commentId: M:UnityEngine.SceneSystem.LoadSceneOperationHandleExtensions.ToYieldInteraction(UnityEngine.SceneSystem.LoadSceneOperationHandle)
+  fullName: UnityEngine.SceneSystem.LoadSceneOperationHandleExtensions.ToYieldInteraction(UnityEngine.SceneSystem.LoadSceneOperationHandle)
+  nameWithType: LoadSceneOperationHandleExtensions.ToYieldInteraction(LoadSceneOperationHandle)
+- uid: UnityEngine.SceneSystem.LoadSceneOperationHandleExtensions.ToYieldInteraction*
+  name: ToYieldInteraction
+  href: api/UnityEngine.SceneSystem.LoadSceneOperationHandleExtensions.html#UnityEngine_SceneSystem_LoadSceneOperationHandleExtensions_ToYieldInteraction_
+  commentId: Overload:UnityEngine.SceneSystem.LoadSceneOperationHandleExtensions.ToYieldInteraction
+  fullName: UnityEngine.SceneSystem.LoadSceneOperationHandleExtensions.ToYieldInteraction
+  nameWithType: LoadSceneOperationHandleExtensions.ToYieldInteraction
+- uid: UnityEngine.SceneSystem.LoadSceneOperations
+  name: UnityEngine.SceneSystem.LoadSceneOperations
+  href: api/UnityEngine.SceneSystem.LoadSceneOperations.html
+  commentId: N:UnityEngine.SceneSystem.LoadSceneOperations
+  fullName: UnityEngine.SceneSystem.LoadSceneOperations
+  nameWithType: UnityEngine.SceneSystem.LoadSceneOperations
+- uid: UnityEngine.SceneSystem.LoadSceneOperations.CompletedLoadSceneOperation
+  name: CompletedLoadSceneOperation
+  href: api/UnityEngine.SceneSystem.LoadSceneOperations.CompletedLoadSceneOperation.html
+  commentId: T:UnityEngine.SceneSystem.LoadSceneOperations.CompletedLoadSceneOperation
+  fullName: UnityEngine.SceneSystem.LoadSceneOperations.CompletedLoadSceneOperation
+  nameWithType: CompletedLoadSceneOperation
+- uid: UnityEngine.SceneSystem.LoadSceneOperations.CompletedLoadSceneOperation.#ctor
+  name: CompletedLoadSceneOperation()
+  href: api/UnityEngine.SceneSystem.LoadSceneOperations.CompletedLoadSceneOperation.html#UnityEngine_SceneSystem_LoadSceneOperations_CompletedLoadSceneOperation__ctor
+  commentId: M:UnityEngine.SceneSystem.LoadSceneOperations.CompletedLoadSceneOperation.#ctor
+  name.vb: New()
+  fullName: UnityEngine.SceneSystem.LoadSceneOperations.CompletedLoadSceneOperation.CompletedLoadSceneOperation()
+  fullName.vb: UnityEngine.SceneSystem.LoadSceneOperations.CompletedLoadSceneOperation.New()
+  nameWithType: CompletedLoadSceneOperation.CompletedLoadSceneOperation()
+  nameWithType.vb: CompletedLoadSceneOperation.New()
+- uid: UnityEngine.SceneSystem.LoadSceneOperations.CompletedLoadSceneOperation.#ctor*
+  name: CompletedLoadSceneOperation
+  href: api/UnityEngine.SceneSystem.LoadSceneOperations.CompletedLoadSceneOperation.html#UnityEngine_SceneSystem_LoadSceneOperations_CompletedLoadSceneOperation__ctor_
+  commentId: Overload:UnityEngine.SceneSystem.LoadSceneOperations.CompletedLoadSceneOperation.#ctor
+  name.vb: New
+  fullName: UnityEngine.SceneSystem.LoadSceneOperations.CompletedLoadSceneOperation.CompletedLoadSceneOperation
+  fullName.vb: UnityEngine.SceneSystem.LoadSceneOperations.CompletedLoadSceneOperation.New
+  nameWithType: CompletedLoadSceneOperation.CompletedLoadSceneOperation
+  nameWithType.vb: CompletedLoadSceneOperation.New
+- uid: UnityEngine.SceneSystem.LoadSceneOperations.CompletedLoadSceneOperation.AllowSceneActivation(System.Boolean)
+  name: AllowSceneActivation(bool)
+  href: api/UnityEngine.SceneSystem.LoadSceneOperations.CompletedLoadSceneOperation.html#UnityEngine_SceneSystem_LoadSceneOperations_CompletedLoadSceneOperation_AllowSceneActivation_System_Boolean_
+  commentId: M:UnityEngine.SceneSystem.LoadSceneOperations.CompletedLoadSceneOperation.AllowSceneActivation(System.Boolean)
+  name.vb: AllowSceneActivation(Boolean)
+  fullName: UnityEngine.SceneSystem.LoadSceneOperations.CompletedLoadSceneOperation.AllowSceneActivation(bool)
+  fullName.vb: UnityEngine.SceneSystem.LoadSceneOperations.CompletedLoadSceneOperation.AllowSceneActivation(Boolean)
+  nameWithType: CompletedLoadSceneOperation.AllowSceneActivation(bool)
+  nameWithType.vb: CompletedLoadSceneOperation.AllowSceneActivation(Boolean)
+- uid: UnityEngine.SceneSystem.LoadSceneOperations.CompletedLoadSceneOperation.AllowSceneActivation*
+  name: AllowSceneActivation
+  href: api/UnityEngine.SceneSystem.LoadSceneOperations.CompletedLoadSceneOperation.html#UnityEngine_SceneSystem_LoadSceneOperations_CompletedLoadSceneOperation_AllowSceneActivation_
+  commentId: Overload:UnityEngine.SceneSystem.LoadSceneOperations.CompletedLoadSceneOperation.AllowSceneActivation
+  fullName: UnityEngine.SceneSystem.LoadSceneOperations.CompletedLoadSceneOperation.AllowSceneActivation
+  nameWithType: CompletedLoadSceneOperation.AllowSceneActivation
+- uid: UnityEngine.SceneSystem.LoadSceneOperations.CompletedLoadSceneOperation.Execute
+  name: Execute()
+  href: api/UnityEngine.SceneSystem.LoadSceneOperations.CompletedLoadSceneOperation.html#UnityEngine_SceneSystem_LoadSceneOperations_CompletedLoadSceneOperation_Execute
+  commentId: M:UnityEngine.SceneSystem.LoadSceneOperations.CompletedLoadSceneOperation.Execute
+  fullName: UnityEngine.SceneSystem.LoadSceneOperations.CompletedLoadSceneOperation.Execute()
+  nameWithType: CompletedLoadSceneOperation.Execute()
+- uid: UnityEngine.SceneSystem.LoadSceneOperations.CompletedLoadSceneOperation.Execute*
+  name: Execute
+  href: api/UnityEngine.SceneSystem.LoadSceneOperations.CompletedLoadSceneOperation.html#UnityEngine_SceneSystem_LoadSceneOperations_CompletedLoadSceneOperation_Execute_
+  commentId: Overload:UnityEngine.SceneSystem.LoadSceneOperations.CompletedLoadSceneOperation.Execute
+  fullName: UnityEngine.SceneSystem.LoadSceneOperations.CompletedLoadSceneOperation.Execute
+  nameWithType: CompletedLoadSceneOperation.Execute
+- uid: UnityEngine.SceneSystem.LoadSceneOperations.CompletedLoadSceneOperation.HasExecuted
+  name: HasExecuted
+  href: api/UnityEngine.SceneSystem.LoadSceneOperations.CompletedLoadSceneOperation.html#UnityEngine_SceneSystem_LoadSceneOperations_CompletedLoadSceneOperation_HasExecuted
+  commentId: P:UnityEngine.SceneSystem.LoadSceneOperations.CompletedLoadSceneOperation.HasExecuted
+  fullName: UnityEngine.SceneSystem.LoadSceneOperations.CompletedLoadSceneOperation.HasExecuted
+  nameWithType: CompletedLoadSceneOperation.HasExecuted
+- uid: UnityEngine.SceneSystem.LoadSceneOperations.CompletedLoadSceneOperation.HasExecuted*
+  name: HasExecuted
+  href: api/UnityEngine.SceneSystem.LoadSceneOperations.CompletedLoadSceneOperation.html#UnityEngine_SceneSystem_LoadSceneOperations_CompletedLoadSceneOperation_HasExecuted_
+  commentId: Overload:UnityEngine.SceneSystem.LoadSceneOperations.CompletedLoadSceneOperation.HasExecuted
+  fullName: UnityEngine.SceneSystem.LoadSceneOperations.CompletedLoadSceneOperation.HasExecuted
+  nameWithType: CompletedLoadSceneOperation.HasExecuted
+- uid: UnityEngine.SceneSystem.LoadSceneOperations.CompletedLoadSceneOperation.IsDone
+  name: IsDone
+  href: api/UnityEngine.SceneSystem.LoadSceneOperations.CompletedLoadSceneOperation.html#UnityEngine_SceneSystem_LoadSceneOperations_CompletedLoadSceneOperation_IsDone
+  commentId: P:UnityEngine.SceneSystem.LoadSceneOperations.CompletedLoadSceneOperation.IsDone
+  fullName: UnityEngine.SceneSystem.LoadSceneOperations.CompletedLoadSceneOperation.IsDone
+  nameWithType: CompletedLoadSceneOperation.IsDone
+- uid: UnityEngine.SceneSystem.LoadSceneOperations.CompletedLoadSceneOperation.IsDone*
+  name: IsDone
+  href: api/UnityEngine.SceneSystem.LoadSceneOperations.CompletedLoadSceneOperation.html#UnityEngine_SceneSystem_LoadSceneOperations_CompletedLoadSceneOperation_IsDone_
+  commentId: Overload:UnityEngine.SceneSystem.LoadSceneOperations.CompletedLoadSceneOperation.IsDone
+  fullName: UnityEngine.SceneSystem.LoadSceneOperations.CompletedLoadSceneOperation.IsDone
+  nameWithType: CompletedLoadSceneOperation.IsDone
+- uid: UnityEngine.SceneSystem.LoadSceneOperations.CompletedLoadSceneOperation.onCompleted
+  name: onCompleted
+  href: api/UnityEngine.SceneSystem.LoadSceneOperations.CompletedLoadSceneOperation.html#UnityEngine_SceneSystem_LoadSceneOperations_CompletedLoadSceneOperation_onCompleted
+  commentId: E:UnityEngine.SceneSystem.LoadSceneOperations.CompletedLoadSceneOperation.onCompleted
+  fullName: UnityEngine.SceneSystem.LoadSceneOperations.CompletedLoadSceneOperation.onCompleted
+  nameWithType: CompletedLoadSceneOperation.onCompleted
+- uid: UnityEngine.SceneSystem.LoadSceneOperations.CompletedLoadSceneOperation.Progress
+  name: Progress
+  href: api/UnityEngine.SceneSystem.LoadSceneOperations.CompletedLoadSceneOperation.html#UnityEngine_SceneSystem_LoadSceneOperations_CompletedLoadSceneOperation_Progress
+  commentId: P:UnityEngine.SceneSystem.LoadSceneOperations.CompletedLoadSceneOperation.Progress
+  fullName: UnityEngine.SceneSystem.LoadSceneOperations.CompletedLoadSceneOperation.Progress
+  nameWithType: CompletedLoadSceneOperation.Progress
+- uid: UnityEngine.SceneSystem.LoadSceneOperations.CompletedLoadSceneOperation.Progress*
+  name: Progress
+  href: api/UnityEngine.SceneSystem.LoadSceneOperations.CompletedLoadSceneOperation.html#UnityEngine_SceneSystem_LoadSceneOperations_CompletedLoadSceneOperation_Progress_
+  commentId: Overload:UnityEngine.SceneSystem.LoadSceneOperations.CompletedLoadSceneOperation.Progress
+  fullName: UnityEngine.SceneSystem.LoadSceneOperations.CompletedLoadSceneOperation.Progress
+  nameWithType: CompletedLoadSceneOperation.Progress
+- uid: UnityEngine.SceneSystem.LoadSceneOperations.ConcatLoadSceneOperation
+  name: ConcatLoadSceneOperation
+  href: api/UnityEngine.SceneSystem.LoadSceneOperations.ConcatLoadSceneOperation.html
+  commentId: T:UnityEngine.SceneSystem.LoadSceneOperations.ConcatLoadSceneOperation
+  fullName: UnityEngine.SceneSystem.LoadSceneOperations.ConcatLoadSceneOperation
+  nameWithType: ConcatLoadSceneOperation
+- uid: UnityEngine.SceneSystem.LoadSceneOperations.ConcatLoadSceneOperation.#ctor(UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperationBase[])
+  name: ConcatLoadSceneOperation(params LoadSceneOperationBase[])
+  href: api/UnityEngine.SceneSystem.LoadSceneOperations.ConcatLoadSceneOperation.html#UnityEngine_SceneSystem_LoadSceneOperations_ConcatLoadSceneOperation__ctor_UnityEngine_SceneSystem_LoadSceneOperations_LoadSceneOperationBase___
+  commentId: M:UnityEngine.SceneSystem.LoadSceneOperations.ConcatLoadSceneOperation.#ctor(UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperationBase[])
+  name.vb: New(ParamArray LoadSceneOperationBase())
+  fullName: UnityEngine.SceneSystem.LoadSceneOperations.ConcatLoadSceneOperation.ConcatLoadSceneOperation(params UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperationBase[])
+  fullName.vb: UnityEngine.SceneSystem.LoadSceneOperations.ConcatLoadSceneOperation.New(ParamArray UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperationBase())
+  nameWithType: ConcatLoadSceneOperation.ConcatLoadSceneOperation(params LoadSceneOperationBase[])
+  nameWithType.vb: ConcatLoadSceneOperation.New(ParamArray LoadSceneOperationBase())
+- uid: UnityEngine.SceneSystem.LoadSceneOperations.ConcatLoadSceneOperation.#ctor*
+  name: ConcatLoadSceneOperation
+  href: api/UnityEngine.SceneSystem.LoadSceneOperations.ConcatLoadSceneOperation.html#UnityEngine_SceneSystem_LoadSceneOperations_ConcatLoadSceneOperation__ctor_
+  commentId: Overload:UnityEngine.SceneSystem.LoadSceneOperations.ConcatLoadSceneOperation.#ctor
+  name.vb: New
+  fullName: UnityEngine.SceneSystem.LoadSceneOperations.ConcatLoadSceneOperation.ConcatLoadSceneOperation
+  fullName.vb: UnityEngine.SceneSystem.LoadSceneOperations.ConcatLoadSceneOperation.New
+  nameWithType: ConcatLoadSceneOperation.ConcatLoadSceneOperation
+  nameWithType.vb: ConcatLoadSceneOperation.New
+- uid: UnityEngine.SceneSystem.LoadSceneOperations.ConcatLoadSceneOperation.AllowSceneActivation(System.Boolean)
+  name: AllowSceneActivation(bool)
+  href: api/UnityEngine.SceneSystem.LoadSceneOperations.ConcatLoadSceneOperation.html#UnityEngine_SceneSystem_LoadSceneOperations_ConcatLoadSceneOperation_AllowSceneActivation_System_Boolean_
+  commentId: M:UnityEngine.SceneSystem.LoadSceneOperations.ConcatLoadSceneOperation.AllowSceneActivation(System.Boolean)
+  name.vb: AllowSceneActivation(Boolean)
+  fullName: UnityEngine.SceneSystem.LoadSceneOperations.ConcatLoadSceneOperation.AllowSceneActivation(bool)
+  fullName.vb: UnityEngine.SceneSystem.LoadSceneOperations.ConcatLoadSceneOperation.AllowSceneActivation(Boolean)
+  nameWithType: ConcatLoadSceneOperation.AllowSceneActivation(bool)
+  nameWithType.vb: ConcatLoadSceneOperation.AllowSceneActivation(Boolean)
+- uid: UnityEngine.SceneSystem.LoadSceneOperations.ConcatLoadSceneOperation.AllowSceneActivation*
+  name: AllowSceneActivation
+  href: api/UnityEngine.SceneSystem.LoadSceneOperations.ConcatLoadSceneOperation.html#UnityEngine_SceneSystem_LoadSceneOperations_ConcatLoadSceneOperation_AllowSceneActivation_
+  commentId: Overload:UnityEngine.SceneSystem.LoadSceneOperations.ConcatLoadSceneOperation.AllowSceneActivation
+  fullName: UnityEngine.SceneSystem.LoadSceneOperations.ConcatLoadSceneOperation.AllowSceneActivation
+  nameWithType: ConcatLoadSceneOperation.AllowSceneActivation
+- uid: UnityEngine.SceneSystem.LoadSceneOperations.ConcatLoadSceneOperation.Execute
+  name: Execute()
+  href: api/UnityEngine.SceneSystem.LoadSceneOperations.ConcatLoadSceneOperation.html#UnityEngine_SceneSystem_LoadSceneOperations_ConcatLoadSceneOperation_Execute
+  commentId: M:UnityEngine.SceneSystem.LoadSceneOperations.ConcatLoadSceneOperation.Execute
+  fullName: UnityEngine.SceneSystem.LoadSceneOperations.ConcatLoadSceneOperation.Execute()
+  nameWithType: ConcatLoadSceneOperation.Execute()
+- uid: UnityEngine.SceneSystem.LoadSceneOperations.ConcatLoadSceneOperation.Execute*
+  name: Execute
+  href: api/UnityEngine.SceneSystem.LoadSceneOperations.ConcatLoadSceneOperation.html#UnityEngine_SceneSystem_LoadSceneOperations_ConcatLoadSceneOperation_Execute_
+  commentId: Overload:UnityEngine.SceneSystem.LoadSceneOperations.ConcatLoadSceneOperation.Execute
+  fullName: UnityEngine.SceneSystem.LoadSceneOperations.ConcatLoadSceneOperation.Execute
+  nameWithType: ConcatLoadSceneOperation.Execute
+- uid: UnityEngine.SceneSystem.LoadSceneOperations.ConcatLoadSceneOperation.HasExecuted
+  name: HasExecuted
+  href: api/UnityEngine.SceneSystem.LoadSceneOperations.ConcatLoadSceneOperation.html#UnityEngine_SceneSystem_LoadSceneOperations_ConcatLoadSceneOperation_HasExecuted
+  commentId: P:UnityEngine.SceneSystem.LoadSceneOperations.ConcatLoadSceneOperation.HasExecuted
+  fullName: UnityEngine.SceneSystem.LoadSceneOperations.ConcatLoadSceneOperation.HasExecuted
+  nameWithType: ConcatLoadSceneOperation.HasExecuted
+- uid: UnityEngine.SceneSystem.LoadSceneOperations.ConcatLoadSceneOperation.HasExecuted*
+  name: HasExecuted
+  href: api/UnityEngine.SceneSystem.LoadSceneOperations.ConcatLoadSceneOperation.html#UnityEngine_SceneSystem_LoadSceneOperations_ConcatLoadSceneOperation_HasExecuted_
+  commentId: Overload:UnityEngine.SceneSystem.LoadSceneOperations.ConcatLoadSceneOperation.HasExecuted
+  fullName: UnityEngine.SceneSystem.LoadSceneOperations.ConcatLoadSceneOperation.HasExecuted
+  nameWithType: ConcatLoadSceneOperation.HasExecuted
+- uid: UnityEngine.SceneSystem.LoadSceneOperations.ConcatLoadSceneOperation.IsDone
+  name: IsDone
+  href: api/UnityEngine.SceneSystem.LoadSceneOperations.ConcatLoadSceneOperation.html#UnityEngine_SceneSystem_LoadSceneOperations_ConcatLoadSceneOperation_IsDone
+  commentId: P:UnityEngine.SceneSystem.LoadSceneOperations.ConcatLoadSceneOperation.IsDone
+  fullName: UnityEngine.SceneSystem.LoadSceneOperations.ConcatLoadSceneOperation.IsDone
+  nameWithType: ConcatLoadSceneOperation.IsDone
+- uid: UnityEngine.SceneSystem.LoadSceneOperations.ConcatLoadSceneOperation.IsDone*
+  name: IsDone
+  href: api/UnityEngine.SceneSystem.LoadSceneOperations.ConcatLoadSceneOperation.html#UnityEngine_SceneSystem_LoadSceneOperations_ConcatLoadSceneOperation_IsDone_
+  commentId: Overload:UnityEngine.SceneSystem.LoadSceneOperations.ConcatLoadSceneOperation.IsDone
+  fullName: UnityEngine.SceneSystem.LoadSceneOperations.ConcatLoadSceneOperation.IsDone
+  nameWithType: ConcatLoadSceneOperation.IsDone
+- uid: UnityEngine.SceneSystem.LoadSceneOperations.ConcatLoadSceneOperation.onCompleted
+  name: onCompleted
+  href: api/UnityEngine.SceneSystem.LoadSceneOperations.ConcatLoadSceneOperation.html#UnityEngine_SceneSystem_LoadSceneOperations_ConcatLoadSceneOperation_onCompleted
+  commentId: E:UnityEngine.SceneSystem.LoadSceneOperations.ConcatLoadSceneOperation.onCompleted
+  fullName: UnityEngine.SceneSystem.LoadSceneOperations.ConcatLoadSceneOperation.onCompleted
+  nameWithType: ConcatLoadSceneOperation.onCompleted
+- uid: UnityEngine.SceneSystem.LoadSceneOperations.ConcatLoadSceneOperation.Progress
+  name: Progress
+  href: api/UnityEngine.SceneSystem.LoadSceneOperations.ConcatLoadSceneOperation.html#UnityEngine_SceneSystem_LoadSceneOperations_ConcatLoadSceneOperation_Progress
+  commentId: P:UnityEngine.SceneSystem.LoadSceneOperations.ConcatLoadSceneOperation.Progress
+  fullName: UnityEngine.SceneSystem.LoadSceneOperations.ConcatLoadSceneOperation.Progress
+  nameWithType: ConcatLoadSceneOperation.Progress
+- uid: UnityEngine.SceneSystem.LoadSceneOperations.ConcatLoadSceneOperation.Progress*
+  name: Progress
+  href: api/UnityEngine.SceneSystem.LoadSceneOperations.ConcatLoadSceneOperation.html#UnityEngine_SceneSystem_LoadSceneOperations_ConcatLoadSceneOperation_Progress_
+  commentId: Overload:UnityEngine.SceneSystem.LoadSceneOperations.ConcatLoadSceneOperation.Progress
+  fullName: UnityEngine.SceneSystem.LoadSceneOperations.ConcatLoadSceneOperation.Progress
+  nameWithType: ConcatLoadSceneOperation.Progress
+- uid: UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperation
+  name: LoadSceneOperation
+  href: api/UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperation.html
+  commentId: T:UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperation
+  fullName: UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperation
+  nameWithType: LoadSceneOperation
+- uid: UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperation.#ctor(System.Func{UnityEngine.AsyncOperation})
+  name: LoadSceneOperation(Func<AsyncOperation>)
+  href: api/UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperation.html#UnityEngine_SceneSystem_LoadSceneOperations_LoadSceneOperation__ctor_System_Func_UnityEngine_AsyncOperation__
+  commentId: M:UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperation.#ctor(System.Func{UnityEngine.AsyncOperation})
+  name.vb: New(Func(Of AsyncOperation))
+  fullName: UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperation.LoadSceneOperation(System.Func<UnityEngine.AsyncOperation>)
+  fullName.vb: UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperation.New(System.Func(Of UnityEngine.AsyncOperation))
+  nameWithType: LoadSceneOperation.LoadSceneOperation(Func<AsyncOperation>)
+  nameWithType.vb: LoadSceneOperation.New(Func(Of AsyncOperation))
+- uid: UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperation.#ctor*
+  name: LoadSceneOperation
+  href: api/UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperation.html#UnityEngine_SceneSystem_LoadSceneOperations_LoadSceneOperation__ctor_
+  commentId: Overload:UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperation.#ctor
+  name.vb: New
+  fullName: UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperation.LoadSceneOperation
+  fullName.vb: UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperation.New
+  nameWithType: LoadSceneOperation.LoadSceneOperation
+  nameWithType.vb: LoadSceneOperation.New
+- uid: UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperation.AllowSceneActivation(System.Boolean)
+  name: AllowSceneActivation(bool)
+  href: api/UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperation.html#UnityEngine_SceneSystem_LoadSceneOperations_LoadSceneOperation_AllowSceneActivation_System_Boolean_
+  commentId: M:UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperation.AllowSceneActivation(System.Boolean)
+  name.vb: AllowSceneActivation(Boolean)
+  fullName: UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperation.AllowSceneActivation(bool)
+  fullName.vb: UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperation.AllowSceneActivation(Boolean)
+  nameWithType: LoadSceneOperation.AllowSceneActivation(bool)
+  nameWithType.vb: LoadSceneOperation.AllowSceneActivation(Boolean)
+- uid: UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperation.AllowSceneActivation*
+  name: AllowSceneActivation
+  href: api/UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperation.html#UnityEngine_SceneSystem_LoadSceneOperations_LoadSceneOperation_AllowSceneActivation_
+  commentId: Overload:UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperation.AllowSceneActivation
+  fullName: UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperation.AllowSceneActivation
+  nameWithType: LoadSceneOperation.AllowSceneActivation
+- uid: UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperation.Execute
+  name: Execute()
+  href: api/UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperation.html#UnityEngine_SceneSystem_LoadSceneOperations_LoadSceneOperation_Execute
+  commentId: M:UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperation.Execute
+  fullName: UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperation.Execute()
+  nameWithType: LoadSceneOperation.Execute()
+- uid: UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperation.Execute*
+  name: Execute
+  href: api/UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperation.html#UnityEngine_SceneSystem_LoadSceneOperations_LoadSceneOperation_Execute_
+  commentId: Overload:UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperation.Execute
+  fullName: UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperation.Execute
+  nameWithType: LoadSceneOperation.Execute
+- uid: UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperation.HasExecuted
+  name: HasExecuted
+  href: api/UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperation.html#UnityEngine_SceneSystem_LoadSceneOperations_LoadSceneOperation_HasExecuted
+  commentId: P:UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperation.HasExecuted
+  fullName: UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperation.HasExecuted
+  nameWithType: LoadSceneOperation.HasExecuted
+- uid: UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperation.HasExecuted*
+  name: HasExecuted
+  href: api/UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperation.html#UnityEngine_SceneSystem_LoadSceneOperations_LoadSceneOperation_HasExecuted_
+  commentId: Overload:UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperation.HasExecuted
+  fullName: UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperation.HasExecuted
+  nameWithType: LoadSceneOperation.HasExecuted
+- uid: UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperation.IsDone
+  name: IsDone
+  href: api/UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperation.html#UnityEngine_SceneSystem_LoadSceneOperations_LoadSceneOperation_IsDone
+  commentId: P:UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperation.IsDone
+  fullName: UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperation.IsDone
+  nameWithType: LoadSceneOperation.IsDone
+- uid: UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperation.IsDone*
+  name: IsDone
+  href: api/UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperation.html#UnityEngine_SceneSystem_LoadSceneOperations_LoadSceneOperation_IsDone_
+  commentId: Overload:UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperation.IsDone
+  fullName: UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperation.IsDone
+  nameWithType: LoadSceneOperation.IsDone
+- uid: UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperation.onCompleted
+  name: onCompleted
+  href: api/UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperation.html#UnityEngine_SceneSystem_LoadSceneOperations_LoadSceneOperation_onCompleted
+  commentId: E:UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperation.onCompleted
+  fullName: UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperation.onCompleted
+  nameWithType: LoadSceneOperation.onCompleted
+- uid: UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperation.Progress
+  name: Progress
+  href: api/UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperation.html#UnityEngine_SceneSystem_LoadSceneOperations_LoadSceneOperation_Progress
+  commentId: P:UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperation.Progress
+  fullName: UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperation.Progress
+  nameWithType: LoadSceneOperation.Progress
+- uid: UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperation.Progress*
+  name: Progress
+  href: api/UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperation.html#UnityEngine_SceneSystem_LoadSceneOperations_LoadSceneOperation_Progress_
+  commentId: Overload:UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperation.Progress
+  fullName: UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperation.Progress
+  nameWithType: LoadSceneOperation.Progress
+- uid: UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperationBase
+  name: LoadSceneOperationBase
+  href: api/UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperationBase.html
+  commentId: T:UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperationBase
+  fullName: UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperationBase
+  nameWithType: LoadSceneOperationBase
+- uid: UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperationBase.#ctor
+  name: LoadSceneOperationBase()
+  href: api/UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperationBase.html#UnityEngine_SceneSystem_LoadSceneOperations_LoadSceneOperationBase__ctor
+  commentId: M:UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperationBase.#ctor
+  name.vb: New()
+  fullName: UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperationBase.LoadSceneOperationBase()
+  fullName.vb: UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperationBase.New()
+  nameWithType: LoadSceneOperationBase.LoadSceneOperationBase()
+  nameWithType.vb: LoadSceneOperationBase.New()
+- uid: UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperationBase.#ctor*
+  name: LoadSceneOperationBase
+  href: api/UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperationBase.html#UnityEngine_SceneSystem_LoadSceneOperations_LoadSceneOperationBase__ctor_
+  commentId: Overload:UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperationBase.#ctor
+  name.vb: New
+  fullName: UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperationBase.LoadSceneOperationBase
+  fullName.vb: UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperationBase.New
+  nameWithType: LoadSceneOperationBase.LoadSceneOperationBase
+  nameWithType.vb: LoadSceneOperationBase.New
+- uid: UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperationBase.AllowSceneActivation(System.Boolean)
+  name: AllowSceneActivation(bool)
+  href: api/UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperationBase.html#UnityEngine_SceneSystem_LoadSceneOperations_LoadSceneOperationBase_AllowSceneActivation_System_Boolean_
+  commentId: M:UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperationBase.AllowSceneActivation(System.Boolean)
+  name.vb: AllowSceneActivation(Boolean)
+  fullName: UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperationBase.AllowSceneActivation(bool)
+  fullName.vb: UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperationBase.AllowSceneActivation(Boolean)
+  nameWithType: LoadSceneOperationBase.AllowSceneActivation(bool)
+  nameWithType.vb: LoadSceneOperationBase.AllowSceneActivation(Boolean)
+- uid: UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperationBase.AllowSceneActivation*
+  name: AllowSceneActivation
+  href: api/UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperationBase.html#UnityEngine_SceneSystem_LoadSceneOperations_LoadSceneOperationBase_AllowSceneActivation_
+  commentId: Overload:UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperationBase.AllowSceneActivation
+  fullName: UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperationBase.AllowSceneActivation
+  nameWithType: LoadSceneOperationBase.AllowSceneActivation
+- uid: UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperationBase.Execute
+  name: Execute()
+  href: api/UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperationBase.html#UnityEngine_SceneSystem_LoadSceneOperations_LoadSceneOperationBase_Execute
+  commentId: M:UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperationBase.Execute
+  fullName: UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperationBase.Execute()
+  nameWithType: LoadSceneOperationBase.Execute()
+- uid: UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperationBase.Execute*
+  name: Execute
+  href: api/UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperationBase.html#UnityEngine_SceneSystem_LoadSceneOperations_LoadSceneOperationBase_Execute_
+  commentId: Overload:UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperationBase.Execute
+  fullName: UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperationBase.Execute
+  nameWithType: LoadSceneOperationBase.Execute
+- uid: UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperationBase.HasExecuted
+  name: HasExecuted
+  href: api/UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperationBase.html#UnityEngine_SceneSystem_LoadSceneOperations_LoadSceneOperationBase_HasExecuted
+  commentId: P:UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperationBase.HasExecuted
+  fullName: UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperationBase.HasExecuted
+  nameWithType: LoadSceneOperationBase.HasExecuted
+- uid: UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperationBase.HasExecuted*
+  name: HasExecuted
+  href: api/UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperationBase.html#UnityEngine_SceneSystem_LoadSceneOperations_LoadSceneOperationBase_HasExecuted_
+  commentId: Overload:UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperationBase.HasExecuted
+  fullName: UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperationBase.HasExecuted
+  nameWithType: LoadSceneOperationBase.HasExecuted
+- uid: UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperationBase.IsDone
+  name: IsDone
+  href: api/UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperationBase.html#UnityEngine_SceneSystem_LoadSceneOperations_LoadSceneOperationBase_IsDone
+  commentId: P:UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperationBase.IsDone
+  fullName: UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperationBase.IsDone
+  nameWithType: LoadSceneOperationBase.IsDone
+- uid: UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperationBase.IsDone*
+  name: IsDone
+  href: api/UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperationBase.html#UnityEngine_SceneSystem_LoadSceneOperations_LoadSceneOperationBase_IsDone_
+  commentId: Overload:UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperationBase.IsDone
+  fullName: UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperationBase.IsDone
+  nameWithType: LoadSceneOperationBase.IsDone
+- uid: UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperationBase.onCompleted
+  name: onCompleted
+  href: api/UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperationBase.html#UnityEngine_SceneSystem_LoadSceneOperations_LoadSceneOperationBase_onCompleted
+  commentId: E:UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperationBase.onCompleted
+  fullName: UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperationBase.onCompleted
+  nameWithType: LoadSceneOperationBase.onCompleted
+- uid: UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperationBase.Progress
+  name: Progress
+  href: api/UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperationBase.html#UnityEngine_SceneSystem_LoadSceneOperations_LoadSceneOperationBase_Progress
+  commentId: P:UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperationBase.Progress
+  fullName: UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperationBase.Progress
+  nameWithType: LoadSceneOperationBase.Progress
+- uid: UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperationBase.Progress*
+  name: Progress
+  href: api/UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperationBase.html#UnityEngine_SceneSystem_LoadSceneOperations_LoadSceneOperationBase_Progress_
+  commentId: Overload:UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperationBase.Progress
+  fullName: UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperationBase.Progress
+  nameWithType: LoadSceneOperationBase.Progress
+- uid: UnityEngine.SceneSystem.LoadSceneOperations.MergeLoadSceneOperation
+  name: MergeLoadSceneOperation
+  href: api/UnityEngine.SceneSystem.LoadSceneOperations.MergeLoadSceneOperation.html
+  commentId: T:UnityEngine.SceneSystem.LoadSceneOperations.MergeLoadSceneOperation
+  fullName: UnityEngine.SceneSystem.LoadSceneOperations.MergeLoadSceneOperation
+  nameWithType: MergeLoadSceneOperation
+- uid: UnityEngine.SceneSystem.LoadSceneOperations.MergeLoadSceneOperation.#ctor(UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperationBase[])
+  name: MergeLoadSceneOperation(params LoadSceneOperationBase[])
+  href: api/UnityEngine.SceneSystem.LoadSceneOperations.MergeLoadSceneOperation.html#UnityEngine_SceneSystem_LoadSceneOperations_MergeLoadSceneOperation__ctor_UnityEngine_SceneSystem_LoadSceneOperations_LoadSceneOperationBase___
+  commentId: M:UnityEngine.SceneSystem.LoadSceneOperations.MergeLoadSceneOperation.#ctor(UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperationBase[])
+  name.vb: New(ParamArray LoadSceneOperationBase())
+  fullName: UnityEngine.SceneSystem.LoadSceneOperations.MergeLoadSceneOperation.MergeLoadSceneOperation(params UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperationBase[])
+  fullName.vb: UnityEngine.SceneSystem.LoadSceneOperations.MergeLoadSceneOperation.New(ParamArray UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperationBase())
+  nameWithType: MergeLoadSceneOperation.MergeLoadSceneOperation(params LoadSceneOperationBase[])
+  nameWithType.vb: MergeLoadSceneOperation.New(ParamArray LoadSceneOperationBase())
+- uid: UnityEngine.SceneSystem.LoadSceneOperations.MergeLoadSceneOperation.#ctor*
+  name: MergeLoadSceneOperation
+  href: api/UnityEngine.SceneSystem.LoadSceneOperations.MergeLoadSceneOperation.html#UnityEngine_SceneSystem_LoadSceneOperations_MergeLoadSceneOperation__ctor_
+  commentId: Overload:UnityEngine.SceneSystem.LoadSceneOperations.MergeLoadSceneOperation.#ctor
+  name.vb: New
+  fullName: UnityEngine.SceneSystem.LoadSceneOperations.MergeLoadSceneOperation.MergeLoadSceneOperation
+  fullName.vb: UnityEngine.SceneSystem.LoadSceneOperations.MergeLoadSceneOperation.New
+  nameWithType: MergeLoadSceneOperation.MergeLoadSceneOperation
+  nameWithType.vb: MergeLoadSceneOperation.New
+- uid: UnityEngine.SceneSystem.LoadSceneOperations.MergeLoadSceneOperation.AllowSceneActivation(System.Boolean)
+  name: AllowSceneActivation(bool)
+  href: api/UnityEngine.SceneSystem.LoadSceneOperations.MergeLoadSceneOperation.html#UnityEngine_SceneSystem_LoadSceneOperations_MergeLoadSceneOperation_AllowSceneActivation_System_Boolean_
+  commentId: M:UnityEngine.SceneSystem.LoadSceneOperations.MergeLoadSceneOperation.AllowSceneActivation(System.Boolean)
+  name.vb: AllowSceneActivation(Boolean)
+  fullName: UnityEngine.SceneSystem.LoadSceneOperations.MergeLoadSceneOperation.AllowSceneActivation(bool)
+  fullName.vb: UnityEngine.SceneSystem.LoadSceneOperations.MergeLoadSceneOperation.AllowSceneActivation(Boolean)
+  nameWithType: MergeLoadSceneOperation.AllowSceneActivation(bool)
+  nameWithType.vb: MergeLoadSceneOperation.AllowSceneActivation(Boolean)
+- uid: UnityEngine.SceneSystem.LoadSceneOperations.MergeLoadSceneOperation.AllowSceneActivation*
+  name: AllowSceneActivation
+  href: api/UnityEngine.SceneSystem.LoadSceneOperations.MergeLoadSceneOperation.html#UnityEngine_SceneSystem_LoadSceneOperations_MergeLoadSceneOperation_AllowSceneActivation_
+  commentId: Overload:UnityEngine.SceneSystem.LoadSceneOperations.MergeLoadSceneOperation.AllowSceneActivation
+  fullName: UnityEngine.SceneSystem.LoadSceneOperations.MergeLoadSceneOperation.AllowSceneActivation
+  nameWithType: MergeLoadSceneOperation.AllowSceneActivation
+- uid: UnityEngine.SceneSystem.LoadSceneOperations.MergeLoadSceneOperation.Execute
+  name: Execute()
+  href: api/UnityEngine.SceneSystem.LoadSceneOperations.MergeLoadSceneOperation.html#UnityEngine_SceneSystem_LoadSceneOperations_MergeLoadSceneOperation_Execute
+  commentId: M:UnityEngine.SceneSystem.LoadSceneOperations.MergeLoadSceneOperation.Execute
+  fullName: UnityEngine.SceneSystem.LoadSceneOperations.MergeLoadSceneOperation.Execute()
+  nameWithType: MergeLoadSceneOperation.Execute()
+- uid: UnityEngine.SceneSystem.LoadSceneOperations.MergeLoadSceneOperation.Execute*
+  name: Execute
+  href: api/UnityEngine.SceneSystem.LoadSceneOperations.MergeLoadSceneOperation.html#UnityEngine_SceneSystem_LoadSceneOperations_MergeLoadSceneOperation_Execute_
+  commentId: Overload:UnityEngine.SceneSystem.LoadSceneOperations.MergeLoadSceneOperation.Execute
+  fullName: UnityEngine.SceneSystem.LoadSceneOperations.MergeLoadSceneOperation.Execute
+  nameWithType: MergeLoadSceneOperation.Execute
+- uid: UnityEngine.SceneSystem.LoadSceneOperations.MergeLoadSceneOperation.HasExecuted
+  name: HasExecuted
+  href: api/UnityEngine.SceneSystem.LoadSceneOperations.MergeLoadSceneOperation.html#UnityEngine_SceneSystem_LoadSceneOperations_MergeLoadSceneOperation_HasExecuted
+  commentId: P:UnityEngine.SceneSystem.LoadSceneOperations.MergeLoadSceneOperation.HasExecuted
+  fullName: UnityEngine.SceneSystem.LoadSceneOperations.MergeLoadSceneOperation.HasExecuted
+  nameWithType: MergeLoadSceneOperation.HasExecuted
+- uid: UnityEngine.SceneSystem.LoadSceneOperations.MergeLoadSceneOperation.HasExecuted*
+  name: HasExecuted
+  href: api/UnityEngine.SceneSystem.LoadSceneOperations.MergeLoadSceneOperation.html#UnityEngine_SceneSystem_LoadSceneOperations_MergeLoadSceneOperation_HasExecuted_
+  commentId: Overload:UnityEngine.SceneSystem.LoadSceneOperations.MergeLoadSceneOperation.HasExecuted
+  fullName: UnityEngine.SceneSystem.LoadSceneOperations.MergeLoadSceneOperation.HasExecuted
+  nameWithType: MergeLoadSceneOperation.HasExecuted
+- uid: UnityEngine.SceneSystem.LoadSceneOperations.MergeLoadSceneOperation.IsDone
+  name: IsDone
+  href: api/UnityEngine.SceneSystem.LoadSceneOperations.MergeLoadSceneOperation.html#UnityEngine_SceneSystem_LoadSceneOperations_MergeLoadSceneOperation_IsDone
+  commentId: P:UnityEngine.SceneSystem.LoadSceneOperations.MergeLoadSceneOperation.IsDone
+  fullName: UnityEngine.SceneSystem.LoadSceneOperations.MergeLoadSceneOperation.IsDone
+  nameWithType: MergeLoadSceneOperation.IsDone
+- uid: UnityEngine.SceneSystem.LoadSceneOperations.MergeLoadSceneOperation.IsDone*
+  name: IsDone
+  href: api/UnityEngine.SceneSystem.LoadSceneOperations.MergeLoadSceneOperation.html#UnityEngine_SceneSystem_LoadSceneOperations_MergeLoadSceneOperation_IsDone_
+  commentId: Overload:UnityEngine.SceneSystem.LoadSceneOperations.MergeLoadSceneOperation.IsDone
+  fullName: UnityEngine.SceneSystem.LoadSceneOperations.MergeLoadSceneOperation.IsDone
+  nameWithType: MergeLoadSceneOperation.IsDone
+- uid: UnityEngine.SceneSystem.LoadSceneOperations.MergeLoadSceneOperation.onCompleted
+  name: onCompleted
+  href: api/UnityEngine.SceneSystem.LoadSceneOperations.MergeLoadSceneOperation.html#UnityEngine_SceneSystem_LoadSceneOperations_MergeLoadSceneOperation_onCompleted
+  commentId: E:UnityEngine.SceneSystem.LoadSceneOperations.MergeLoadSceneOperation.onCompleted
+  fullName: UnityEngine.SceneSystem.LoadSceneOperations.MergeLoadSceneOperation.onCompleted
+  nameWithType: MergeLoadSceneOperation.onCompleted
+- uid: UnityEngine.SceneSystem.LoadSceneOperations.MergeLoadSceneOperation.Progress
+  name: Progress
+  href: api/UnityEngine.SceneSystem.LoadSceneOperations.MergeLoadSceneOperation.html#UnityEngine_SceneSystem_LoadSceneOperations_MergeLoadSceneOperation_Progress
+  commentId: P:UnityEngine.SceneSystem.LoadSceneOperations.MergeLoadSceneOperation.Progress
+  fullName: UnityEngine.SceneSystem.LoadSceneOperations.MergeLoadSceneOperation.Progress
+  nameWithType: MergeLoadSceneOperation.Progress
+- uid: UnityEngine.SceneSystem.LoadSceneOperations.MergeLoadSceneOperation.Progress*
+  name: Progress
+  href: api/UnityEngine.SceneSystem.LoadSceneOperations.MergeLoadSceneOperation.html#UnityEngine_SceneSystem_LoadSceneOperations_MergeLoadSceneOperation_Progress_
+  commentId: Overload:UnityEngine.SceneSystem.LoadSceneOperations.MergeLoadSceneOperation.Progress
+  fullName: UnityEngine.SceneSystem.LoadSceneOperations.MergeLoadSceneOperation.Progress
+  nameWithType: MergeLoadSceneOperation.Progress
+- uid: UnityEngine.SceneSystem.SceneContainer
+  name: SceneContainer
+  href: api/UnityEngine.SceneSystem.SceneContainer.html
+  commentId: T:UnityEngine.SceneSystem.SceneContainer
+  fullName: UnityEngine.SceneSystem.SceneContainer
+  nameWithType: SceneContainer
+- uid: UnityEngine.SceneSystem.SceneContainer.AddCallbackReceiver(UnityEngine.SceneSystem.ISceneContainerCallbackReceiver)
+  name: AddCallbackReceiver(ISceneContainerCallbackReceiver)
+  href: api/UnityEngine.SceneSystem.SceneContainer.html#UnityEngine_SceneSystem_SceneContainer_AddCallbackReceiver_UnityEngine_SceneSystem_ISceneContainerCallbackReceiver_
+  commentId: M:UnityEngine.SceneSystem.SceneContainer.AddCallbackReceiver(UnityEngine.SceneSystem.ISceneContainerCallbackReceiver)
+  fullName: UnityEngine.SceneSystem.SceneContainer.AddCallbackReceiver(UnityEngine.SceneSystem.ISceneContainerCallbackReceiver)
+  nameWithType: SceneContainer.AddCallbackReceiver(ISceneContainerCallbackReceiver)
+- uid: UnityEngine.SceneSystem.SceneContainer.AddCallbackReceiver*
+  name: AddCallbackReceiver
+  href: api/UnityEngine.SceneSystem.SceneContainer.html#UnityEngine_SceneSystem_SceneContainer_AddCallbackReceiver_
+  commentId: Overload:UnityEngine.SceneSystem.SceneContainer.AddCallbackReceiver
+  fullName: UnityEngine.SceneSystem.SceneContainer.AddCallbackReceiver
+  nameWithType: SceneContainer.AddCallbackReceiver
+- uid: UnityEngine.SceneSystem.SceneContainer.Build
+  name: Build()
+  href: api/UnityEngine.SceneSystem.SceneContainer.html#UnityEngine_SceneSystem_SceneContainer_Build
+  commentId: M:UnityEngine.SceneSystem.SceneContainer.Build
+  fullName: UnityEngine.SceneSystem.SceneContainer.Build()
+  nameWithType: SceneContainer.Build()
+- uid: UnityEngine.SceneSystem.SceneContainer.Build*
+  name: Build
+  href: api/UnityEngine.SceneSystem.SceneContainer.html#UnityEngine_SceneSystem_SceneContainer_Build_
+  commentId: Overload:UnityEngine.SceneSystem.SceneContainer.Build
+  fullName: UnityEngine.SceneSystem.SceneContainer.Build
+  nameWithType: SceneContainer.Build
+- uid: UnityEngine.SceneSystem.SceneContainer.ClearStack
+  name: ClearStack()
+  href: api/UnityEngine.SceneSystem.SceneContainer.html#UnityEngine_SceneSystem_SceneContainer_ClearStack
+  commentId: M:UnityEngine.SceneSystem.SceneContainer.ClearStack
+  fullName: UnityEngine.SceneSystem.SceneContainer.ClearStack()
+  nameWithType: SceneContainer.ClearStack()
+- uid: UnityEngine.SceneSystem.SceneContainer.ClearStack*
+  name: ClearStack
+  href: api/UnityEngine.SceneSystem.SceneContainer.html#UnityEngine_SceneSystem_SceneContainer_ClearStack_
+  commentId: Overload:UnityEngine.SceneSystem.SceneContainer.ClearStack
+  fullName: UnityEngine.SceneSystem.SceneContainer.ClearStack
+  nameWithType: SceneContainer.ClearStack
+- uid: UnityEngine.SceneSystem.SceneContainer.Create
+  name: Create()
+  href: api/UnityEngine.SceneSystem.SceneContainer.html#UnityEngine_SceneSystem_SceneContainer_Create
+  commentId: M:UnityEngine.SceneSystem.SceneContainer.Create
+  fullName: UnityEngine.SceneSystem.SceneContainer.Create()
+  nameWithType: SceneContainer.Create()
+- uid: UnityEngine.SceneSystem.SceneContainer.Create*
+  name: Create
+  href: api/UnityEngine.SceneSystem.SceneContainer.html#UnityEngine_SceneSystem_SceneContainer_Create_
+  commentId: Overload:UnityEngine.SceneSystem.SceneContainer.Create
+  fullName: UnityEngine.SceneSystem.SceneContainer.Create
+  nameWithType: SceneContainer.Create
+- uid: UnityEngine.SceneSystem.SceneContainer.IsLoading
+  name: IsLoading
+  href: api/UnityEngine.SceneSystem.SceneContainer.html#UnityEngine_SceneSystem_SceneContainer_IsLoading
+  commentId: P:UnityEngine.SceneSystem.SceneContainer.IsLoading
+  fullName: UnityEngine.SceneSystem.SceneContainer.IsLoading
+  nameWithType: SceneContainer.IsLoading
+- uid: UnityEngine.SceneSystem.SceneContainer.IsLoading*
+  name: IsLoading
+  href: api/UnityEngine.SceneSystem.SceneContainer.html#UnityEngine_SceneSystem_SceneContainer_IsLoading_
+  commentId: Overload:UnityEngine.SceneSystem.SceneContainer.IsLoading
+  fullName: UnityEngine.SceneSystem.SceneContainer.IsLoading
+  nameWithType: SceneContainer.IsLoading
+- uid: UnityEngine.SceneSystem.SceneContainer.OnAfterPop
+  name: OnAfterPop
+  href: api/UnityEngine.SceneSystem.SceneContainer.html#UnityEngine_SceneSystem_SceneContainer_OnAfterPop
+  commentId: E:UnityEngine.SceneSystem.SceneContainer.OnAfterPop
+  fullName: UnityEngine.SceneSystem.SceneContainer.OnAfterPop
+  nameWithType: SceneContainer.OnAfterPop
+- uid: UnityEngine.SceneSystem.SceneContainer.OnAfterPush
+  name: OnAfterPush
+  href: api/UnityEngine.SceneSystem.SceneContainer.html#UnityEngine_SceneSystem_SceneContainer_OnAfterPush
+  commentId: E:UnityEngine.SceneSystem.SceneContainer.OnAfterPush
+  fullName: UnityEngine.SceneSystem.SceneContainer.OnAfterPush
+  nameWithType: SceneContainer.OnAfterPush
+- uid: UnityEngine.SceneSystem.SceneContainer.OnBeforePop
+  name: OnBeforePop
+  href: api/UnityEngine.SceneSystem.SceneContainer.html#UnityEngine_SceneSystem_SceneContainer_OnBeforePop
+  commentId: E:UnityEngine.SceneSystem.SceneContainer.OnBeforePop
+  fullName: UnityEngine.SceneSystem.SceneContainer.OnBeforePop
+  nameWithType: SceneContainer.OnBeforePop
+- uid: UnityEngine.SceneSystem.SceneContainer.OnBeforePush
+  name: OnBeforePush
+  href: api/UnityEngine.SceneSystem.SceneContainer.html#UnityEngine_SceneSystem_SceneContainer_OnBeforePush
+  commentId: E:UnityEngine.SceneSystem.SceneContainer.OnBeforePush
+  fullName: UnityEngine.SceneSystem.SceneContainer.OnBeforePush
+  nameWithType: SceneContainer.OnBeforePush
+- uid: UnityEngine.SceneSystem.SceneContainer.Pop
+  name: Pop()
+  href: api/UnityEngine.SceneSystem.SceneContainer.html#UnityEngine_SceneSystem_SceneContainer_Pop
+  commentId: M:UnityEngine.SceneSystem.SceneContainer.Pop
+  fullName: UnityEngine.SceneSystem.SceneContainer.Pop()
+  nameWithType: SceneContainer.Pop()
+- uid: UnityEngine.SceneSystem.SceneContainer.Pop*
+  name: Pop
+  href: api/UnityEngine.SceneSystem.SceneContainer.html#UnityEngine_SceneSystem_SceneContainer_Pop_
+  commentId: Overload:UnityEngine.SceneSystem.SceneContainer.Pop
+  fullName: UnityEngine.SceneSystem.SceneContainer.Pop
+  nameWithType: SceneContainer.Pop
+- uid: UnityEngine.SceneSystem.SceneContainer.Push(System.String)
+  name: Push(string)
+  href: api/UnityEngine.SceneSystem.SceneContainer.html#UnityEngine_SceneSystem_SceneContainer_Push_System_String_
+  commentId: M:UnityEngine.SceneSystem.SceneContainer.Push(System.String)
+  name.vb: Push(String)
+  fullName: UnityEngine.SceneSystem.SceneContainer.Push(string)
+  fullName.vb: UnityEngine.SceneSystem.SceneContainer.Push(String)
+  nameWithType: SceneContainer.Push(string)
+  nameWithType.vb: SceneContainer.Push(String)
+- uid: UnityEngine.SceneSystem.SceneContainer.Push*
+  name: Push
+  href: api/UnityEngine.SceneSystem.SceneContainer.html#UnityEngine_SceneSystem_SceneContainer_Push_
+  commentId: Overload:UnityEngine.SceneSystem.SceneContainer.Push
+  fullName: UnityEngine.SceneSystem.SceneContainer.Push
+  nameWithType: SceneContainer.Push
+- uid: UnityEngine.SceneSystem.SceneContainer.Register(System.String,System.Int32,System.Int32)
+  name: Register(string, int, int)
+  href: api/UnityEngine.SceneSystem.SceneContainer.html#UnityEngine_SceneSystem_SceneContainer_Register_System_String_System_Int32_System_Int32_
+  commentId: M:UnityEngine.SceneSystem.SceneContainer.Register(System.String,System.Int32,System.Int32)
+  name.vb: Register(String, Integer, Integer)
+  fullName: UnityEngine.SceneSystem.SceneContainer.Register(string, int, int)
+  fullName.vb: UnityEngine.SceneSystem.SceneContainer.Register(String, Integer, Integer)
+  nameWithType: SceneContainer.Register(string, int, int)
+  nameWithType.vb: SceneContainer.Register(String, Integer, Integer)
+- uid: UnityEngine.SceneSystem.SceneContainer.Register(System.String,System.String,System.Int32)
+  name: Register(string, string, int)
+  href: api/UnityEngine.SceneSystem.SceneContainer.html#UnityEngine_SceneSystem_SceneContainer_Register_System_String_System_String_System_Int32_
+  commentId: M:UnityEngine.SceneSystem.SceneContainer.Register(System.String,System.String,System.Int32)
+  name.vb: Register(String, String, Integer)
+  fullName: UnityEngine.SceneSystem.SceneContainer.Register(string, string, int)
+  fullName.vb: UnityEngine.SceneSystem.SceneContainer.Register(String, String, Integer)
+  nameWithType: SceneContainer.Register(string, string, int)
+  nameWithType.vb: SceneContainer.Register(String, String, Integer)
+- uid: UnityEngine.SceneSystem.SceneContainer.Register*
+  name: Register
+  href: api/UnityEngine.SceneSystem.SceneContainer.html#UnityEngine_SceneSystem_SceneContainer_Register_
+  commentId: Overload:UnityEngine.SceneSystem.SceneContainer.Register
+  fullName: UnityEngine.SceneSystem.SceneContainer.Register
+  nameWithType: SceneContainer.Register
+- uid: UnityEngine.SceneSystem.SceneContainer.RegisterPermanent(System.Int32,System.Int32)
+  name: RegisterPermanent(int, int)
+  href: api/UnityEngine.SceneSystem.SceneContainer.html#UnityEngine_SceneSystem_SceneContainer_RegisterPermanent_System_Int32_System_Int32_
+  commentId: M:UnityEngine.SceneSystem.SceneContainer.RegisterPermanent(System.Int32,System.Int32)
+  name.vb: RegisterPermanent(Integer, Integer)
+  fullName: UnityEngine.SceneSystem.SceneContainer.RegisterPermanent(int, int)
+  fullName.vb: UnityEngine.SceneSystem.SceneContainer.RegisterPermanent(Integer, Integer)
+  nameWithType: SceneContainer.RegisterPermanent(int, int)
+  nameWithType.vb: SceneContainer.RegisterPermanent(Integer, Integer)
+- uid: UnityEngine.SceneSystem.SceneContainer.RegisterPermanent(System.String,System.Int32)
+  name: RegisterPermanent(string, int)
+  href: api/UnityEngine.SceneSystem.SceneContainer.html#UnityEngine_SceneSystem_SceneContainer_RegisterPermanent_System_String_System_Int32_
+  commentId: M:UnityEngine.SceneSystem.SceneContainer.RegisterPermanent(System.String,System.Int32)
+  name.vb: RegisterPermanent(String, Integer)
+  fullName: UnityEngine.SceneSystem.SceneContainer.RegisterPermanent(string, int)
+  fullName.vb: UnityEngine.SceneSystem.SceneContainer.RegisterPermanent(String, Integer)
+  nameWithType: SceneContainer.RegisterPermanent(string, int)
+  nameWithType.vb: SceneContainer.RegisterPermanent(String, Integer)
+- uid: UnityEngine.SceneSystem.SceneContainer.RegisterPermanent*
+  name: RegisterPermanent
+  href: api/UnityEngine.SceneSystem.SceneContainer.html#UnityEngine_SceneSystem_SceneContainer_RegisterPermanent_
+  commentId: Overload:UnityEngine.SceneSystem.SceneContainer.RegisterPermanent
+  fullName: UnityEngine.SceneSystem.SceneContainer.RegisterPermanent
+  nameWithType: SceneContainer.RegisterPermanent
+- uid: UnityEngine.SceneSystem.SceneContainer.Release
+  name: Release()
+  href: api/UnityEngine.SceneSystem.SceneContainer.html#UnityEngine_SceneSystem_SceneContainer_Release
+  commentId: M:UnityEngine.SceneSystem.SceneContainer.Release
+  fullName: UnityEngine.SceneSystem.SceneContainer.Release()
+  nameWithType: SceneContainer.Release()
+- uid: UnityEngine.SceneSystem.SceneContainer.Release*
+  name: Release
+  href: api/UnityEngine.SceneSystem.SceneContainer.html#UnityEngine_SceneSystem_SceneContainer_Release_
+  commentId: Overload:UnityEngine.SceneSystem.SceneContainer.Release
+  fullName: UnityEngine.SceneSystem.SceneContainer.Release
+  nameWithType: SceneContainer.Release
+- uid: UnityEngine.SceneSystem.SceneContainer.RemoveCallbackReceiver(UnityEngine.SceneSystem.ISceneContainerCallbackReceiver)
+  name: RemoveCallbackReceiver(ISceneContainerCallbackReceiver)
+  href: api/UnityEngine.SceneSystem.SceneContainer.html#UnityEngine_SceneSystem_SceneContainer_RemoveCallbackReceiver_UnityEngine_SceneSystem_ISceneContainerCallbackReceiver_
+  commentId: M:UnityEngine.SceneSystem.SceneContainer.RemoveCallbackReceiver(UnityEngine.SceneSystem.ISceneContainerCallbackReceiver)
+  fullName: UnityEngine.SceneSystem.SceneContainer.RemoveCallbackReceiver(UnityEngine.SceneSystem.ISceneContainerCallbackReceiver)
+  nameWithType: SceneContainer.RemoveCallbackReceiver(ISceneContainerCallbackReceiver)
+- uid: UnityEngine.SceneSystem.SceneContainer.RemoveCallbackReceiver*
+  name: RemoveCallbackReceiver
+  href: api/UnityEngine.SceneSystem.SceneContainer.html#UnityEngine_SceneSystem_SceneContainer_RemoveCallbackReceiver_
+  commentId: Overload:UnityEngine.SceneSystem.SceneContainer.RemoveCallbackReceiver
+  fullName: UnityEngine.SceneSystem.SceneContainer.RemoveCallbackReceiver
+  nameWithType: SceneContainer.RemoveCallbackReceiver
+- uid: UnityEngine.SceneSystem.SceneContainer.StackCount
+  name: StackCount
+  href: api/UnityEngine.SceneSystem.SceneContainer.html#UnityEngine_SceneSystem_SceneContainer_StackCount
+  commentId: P:UnityEngine.SceneSystem.SceneContainer.StackCount
+  fullName: UnityEngine.SceneSystem.SceneContainer.StackCount
+  nameWithType: SceneContainer.StackCount
+- uid: UnityEngine.SceneSystem.SceneContainer.StackCount*
+  name: StackCount
+  href: api/UnityEngine.SceneSystem.SceneContainer.html#UnityEngine_SceneSystem_SceneContainer_StackCount_
+  commentId: Overload:UnityEngine.SceneSystem.SceneContainer.StackCount
+  fullName: UnityEngine.SceneSystem.SceneContainer.StackCount
+  nameWithType: SceneContainer.StackCount
+- uid: UnityEngine.SceneSystem.SceneHandler
+  name: SceneHandler
+  href: api/UnityEngine.SceneSystem.SceneHandler.html
+  commentId: T:UnityEngine.SceneSystem.SceneHandler
+  fullName: UnityEngine.SceneSystem.SceneHandler
+  nameWithType: SceneHandler
+- uid: UnityEngine.SceneSystem.SceneHandler.#ctor
+  name: SceneHandler()
+  href: api/UnityEngine.SceneSystem.SceneHandler.html#UnityEngine_SceneSystem_SceneHandler__ctor
+  commentId: M:UnityEngine.SceneSystem.SceneHandler.#ctor
+  name.vb: New()
+  fullName: UnityEngine.SceneSystem.SceneHandler.SceneHandler()
+  fullName.vb: UnityEngine.SceneSystem.SceneHandler.New()
+  nameWithType: SceneHandler.SceneHandler()
+  nameWithType.vb: SceneHandler.New()
+- uid: UnityEngine.SceneSystem.SceneHandler.#ctor*
+  name: SceneHandler
+  href: api/UnityEngine.SceneSystem.SceneHandler.html#UnityEngine_SceneSystem_SceneHandler__ctor_
+  commentId: Overload:UnityEngine.SceneSystem.SceneHandler.#ctor
+  name.vb: New
+  fullName: UnityEngine.SceneSystem.SceneHandler.SceneHandler
+  fullName.vb: UnityEngine.SceneSystem.SceneHandler.New
+  nameWithType: SceneHandler.SceneHandler
+  nameWithType.vb: SceneHandler.New
+- uid: UnityEngine.SceneSystem.SceneHandler.GetLoadSceneOperation(System.String,UnityEngine.SceneManagement.LoadSceneMode)
+  name: GetLoadSceneOperation(string, LoadSceneMode)
+  href: api/UnityEngine.SceneSystem.SceneHandler.html#UnityEngine_SceneSystem_SceneHandler_GetLoadSceneOperation_System_String_UnityEngine_SceneManagement_LoadSceneMode_
+  commentId: M:UnityEngine.SceneSystem.SceneHandler.GetLoadSceneOperation(System.String,UnityEngine.SceneManagement.LoadSceneMode)
+  name.vb: GetLoadSceneOperation(String, LoadSceneMode)
+  fullName: UnityEngine.SceneSystem.SceneHandler.GetLoadSceneOperation(string, UnityEngine.SceneManagement.LoadSceneMode)
+  fullName.vb: UnityEngine.SceneSystem.SceneHandler.GetLoadSceneOperation(String, UnityEngine.SceneManagement.LoadSceneMode)
+  nameWithType: SceneHandler.GetLoadSceneOperation(string, LoadSceneMode)
+  nameWithType.vb: SceneHandler.GetLoadSceneOperation(String, LoadSceneMode)
+- uid: UnityEngine.SceneSystem.SceneHandler.GetLoadSceneOperation*
+  name: GetLoadSceneOperation
+  href: api/UnityEngine.SceneSystem.SceneHandler.html#UnityEngine_SceneSystem_SceneHandler_GetLoadSceneOperation_
+  commentId: Overload:UnityEngine.SceneSystem.SceneHandler.GetLoadSceneOperation
+  fullName: UnityEngine.SceneSystem.SceneHandler.GetLoadSceneOperation
+  nameWithType: SceneHandler.GetLoadSceneOperation
+- uid: UnityEngine.SceneSystem.SceneHandler.GetUnloadSceneOperation(System.String)
+  name: GetUnloadSceneOperation(string)
+  href: api/UnityEngine.SceneSystem.SceneHandler.html#UnityEngine_SceneSystem_SceneHandler_GetUnloadSceneOperation_System_String_
+  commentId: M:UnityEngine.SceneSystem.SceneHandler.GetUnloadSceneOperation(System.String)
+  name.vb: GetUnloadSceneOperation(String)
+  fullName: UnityEngine.SceneSystem.SceneHandler.GetUnloadSceneOperation(string)
+  fullName.vb: UnityEngine.SceneSystem.SceneHandler.GetUnloadSceneOperation(String)
+  nameWithType: SceneHandler.GetUnloadSceneOperation(string)
+  nameWithType.vb: SceneHandler.GetUnloadSceneOperation(String)
+- uid: UnityEngine.SceneSystem.SceneHandler.GetUnloadSceneOperation*
+  name: GetUnloadSceneOperation
+  href: api/UnityEngine.SceneSystem.SceneHandler.html#UnityEngine_SceneSystem_SceneHandler_GetUnloadSceneOperation_
+  commentId: Overload:UnityEngine.SceneSystem.SceneHandler.GetUnloadSceneOperation
+  fullName: UnityEngine.SceneSystem.SceneHandler.GetUnloadSceneOperation
+  nameWithType: SceneHandler.GetUnloadSceneOperation
+- uid: UnityEngine.SceneSystem.SceneHandler.Load(System.String,UnityEngine.SceneManagement.LoadSceneMode)
+  name: Load(string, LoadSceneMode)
+  href: api/UnityEngine.SceneSystem.SceneHandler.html#UnityEngine_SceneSystem_SceneHandler_Load_System_String_UnityEngine_SceneManagement_LoadSceneMode_
+  commentId: M:UnityEngine.SceneSystem.SceneHandler.Load(System.String,UnityEngine.SceneManagement.LoadSceneMode)
+  name.vb: Load(String, LoadSceneMode)
+  fullName: UnityEngine.SceneSystem.SceneHandler.Load(string, UnityEngine.SceneManagement.LoadSceneMode)
+  fullName.vb: UnityEngine.SceneSystem.SceneHandler.Load(String, UnityEngine.SceneManagement.LoadSceneMode)
+  nameWithType: SceneHandler.Load(string, LoadSceneMode)
+  nameWithType.vb: SceneHandler.Load(String, LoadSceneMode)
+- uid: UnityEngine.SceneSystem.SceneHandler.Load*
+  name: Load
+  href: api/UnityEngine.SceneSystem.SceneHandler.html#UnityEngine_SceneSystem_SceneHandler_Load_
+  commentId: Overload:UnityEngine.SceneSystem.SceneHandler.Load
+  fullName: UnityEngine.SceneSystem.SceneHandler.Load
+  nameWithType: SceneHandler.Load
+- uid: UnityEngine.SceneSystem.SceneHandler.LoadAsync(System.String,UnityEngine.SceneManagement.LoadSceneMode)
+  name: LoadAsync(string, LoadSceneMode)
+  href: api/UnityEngine.SceneSystem.SceneHandler.html#UnityEngine_SceneSystem_SceneHandler_LoadAsync_System_String_UnityEngine_SceneManagement_LoadSceneMode_
+  commentId: M:UnityEngine.SceneSystem.SceneHandler.LoadAsync(System.String,UnityEngine.SceneManagement.LoadSceneMode)
+  name.vb: LoadAsync(String, LoadSceneMode)
+  fullName: UnityEngine.SceneSystem.SceneHandler.LoadAsync(string, UnityEngine.SceneManagement.LoadSceneMode)
+  fullName.vb: UnityEngine.SceneSystem.SceneHandler.LoadAsync(String, UnityEngine.SceneManagement.LoadSceneMode)
+  nameWithType: SceneHandler.LoadAsync(string, LoadSceneMode)
+  nameWithType.vb: SceneHandler.LoadAsync(String, LoadSceneMode)
+- uid: UnityEngine.SceneSystem.SceneHandler.LoadAsync*
+  name: LoadAsync
+  href: api/UnityEngine.SceneSystem.SceneHandler.html#UnityEngine_SceneSystem_SceneHandler_LoadAsync_
+  commentId: Overload:UnityEngine.SceneSystem.SceneHandler.LoadAsync
+  fullName: UnityEngine.SceneSystem.SceneHandler.LoadAsync
+  nameWithType: SceneHandler.LoadAsync
+- uid: UnityEngine.SceneSystem.SceneHandler.Unload(System.String)
+  name: Unload(string)
+  href: api/UnityEngine.SceneSystem.SceneHandler.html#UnityEngine_SceneSystem_SceneHandler_Unload_System_String_
+  commentId: M:UnityEngine.SceneSystem.SceneHandler.Unload(System.String)
+  name.vb: Unload(String)
+  fullName: UnityEngine.SceneSystem.SceneHandler.Unload(string)
+  fullName.vb: UnityEngine.SceneSystem.SceneHandler.Unload(String)
+  nameWithType: SceneHandler.Unload(string)
+  nameWithType.vb: SceneHandler.Unload(String)
+- uid: UnityEngine.SceneSystem.SceneHandler.Unload*
+  name: Unload
+  href: api/UnityEngine.SceneSystem.SceneHandler.html#UnityEngine_SceneSystem_SceneHandler_Unload_
+  commentId: Overload:UnityEngine.SceneSystem.SceneHandler.Unload
+  fullName: UnityEngine.SceneSystem.SceneHandler.Unload
+  nameWithType: SceneHandler.Unload
+- uid: UnityEngine.SceneSystem.SceneHandler.UnloadAsync(System.String)
+  name: UnloadAsync(string)
+  href: api/UnityEngine.SceneSystem.SceneHandler.html#UnityEngine_SceneSystem_SceneHandler_UnloadAsync_System_String_
+  commentId: M:UnityEngine.SceneSystem.SceneHandler.UnloadAsync(System.String)
+  name.vb: UnloadAsync(String)
+  fullName: UnityEngine.SceneSystem.SceneHandler.UnloadAsync(string)
+  fullName.vb: UnityEngine.SceneSystem.SceneHandler.UnloadAsync(String)
+  nameWithType: SceneHandler.UnloadAsync(string)
+  nameWithType.vb: SceneHandler.UnloadAsync(String)
+- uid: UnityEngine.SceneSystem.SceneHandler.UnloadAsync*
+  name: UnloadAsync
+  href: api/UnityEngine.SceneSystem.SceneHandler.html#UnityEngine_SceneSystem_SceneHandler_UnloadAsync_
+  commentId: Overload:UnityEngine.SceneSystem.SceneHandler.UnloadAsync
+  fullName: UnityEngine.SceneSystem.SceneHandler.UnloadAsync
+  nameWithType: SceneHandler.UnloadAsync
+- uid: UnityEngine.SceneSystem.SceneLoader
+  name: SceneLoader
+  href: api/UnityEngine.SceneSystem.SceneLoader.html
+  commentId: T:UnityEngine.SceneSystem.SceneLoader
+  fullName: UnityEngine.SceneSystem.SceneLoader
+  nameWithType: SceneLoader
+- uid: UnityEngine.SceneSystem.SceneLoader.#ctor
+  name: SceneLoader()
+  href: api/UnityEngine.SceneSystem.SceneLoader.html#UnityEngine_SceneSystem_SceneLoader__ctor
+  commentId: M:UnityEngine.SceneSystem.SceneLoader.#ctor
+  name.vb: New()
+  fullName: UnityEngine.SceneSystem.SceneLoader.SceneLoader()
+  fullName.vb: UnityEngine.SceneSystem.SceneLoader.New()
+  nameWithType: SceneLoader.SceneLoader()
+  nameWithType.vb: SceneLoader.New()
+- uid: UnityEngine.SceneSystem.SceneLoader.#ctor*
+  name: SceneLoader
+  href: api/UnityEngine.SceneSystem.SceneLoader.html#UnityEngine_SceneSystem_SceneLoader__ctor_
+  commentId: Overload:UnityEngine.SceneSystem.SceneLoader.#ctor
+  name.vb: New
+  fullName: UnityEngine.SceneSystem.SceneLoader.SceneLoader
+  fullName.vb: UnityEngine.SceneSystem.SceneLoader.New
+  nameWithType: SceneLoader.SceneLoader
+  nameWithType.vb: SceneLoader.New
+- uid: UnityEngine.SceneSystem.SceneLoader.AllowCompletion
+  name: AllowCompletion()
+  href: api/UnityEngine.SceneSystem.SceneLoader.html#UnityEngine_SceneSystem_SceneLoader_AllowCompletion
+  commentId: M:UnityEngine.SceneSystem.SceneLoader.AllowCompletion
+  fullName: UnityEngine.SceneSystem.SceneLoader.AllowCompletion()
+  nameWithType: SceneLoader.AllowCompletion()
+- uid: UnityEngine.SceneSystem.SceneLoader.AllowCompletion*
+  name: AllowCompletion
+  href: api/UnityEngine.SceneSystem.SceneLoader.html#UnityEngine_SceneSystem_SceneLoader_AllowCompletion_
+  commentId: Overload:UnityEngine.SceneSystem.SceneLoader.AllowCompletion
+  fullName: UnityEngine.SceneSystem.SceneLoader.AllowCompletion
+  nameWithType: SceneLoader.AllowCompletion
+- uid: UnityEngine.SceneSystem.SceneLoader.DestroyOnCompleted
+  name: DestroyOnCompleted
+  href: api/UnityEngine.SceneSystem.SceneLoader.html#UnityEngine_SceneSystem_SceneLoader_DestroyOnCompleted
+  commentId: F:UnityEngine.SceneSystem.SceneLoader.DestroyOnCompleted
+  fullName: UnityEngine.SceneSystem.SceneLoader.DestroyOnCompleted
+  nameWithType: SceneLoader.DestroyOnCompleted
+- uid: UnityEngine.SceneSystem.SceneLoader.GetLoadScene
+  name: GetLoadScene()
+  href: api/UnityEngine.SceneSystem.SceneLoader.html#UnityEngine_SceneSystem_SceneLoader_GetLoadScene
+  commentId: M:UnityEngine.SceneSystem.SceneLoader.GetLoadScene
+  fullName: UnityEngine.SceneSystem.SceneLoader.GetLoadScene()
+  nameWithType: SceneLoader.GetLoadScene()
+- uid: UnityEngine.SceneSystem.SceneLoader.GetLoadScene*
+  name: GetLoadScene
+  href: api/UnityEngine.SceneSystem.SceneLoader.html#UnityEngine_SceneSystem_SceneLoader_GetLoadScene_
+  commentId: Overload:UnityEngine.SceneSystem.SceneLoader.GetLoadScene
+  fullName: UnityEngine.SceneSystem.SceneLoader.GetLoadScene
+  nameWithType: SceneLoader.GetLoadScene
+- uid: UnityEngine.SceneSystem.SceneLoader.GetLoadScenes
+  name: GetLoadScenes()
+  href: api/UnityEngine.SceneSystem.SceneLoader.html#UnityEngine_SceneSystem_SceneLoader_GetLoadScenes
+  commentId: M:UnityEngine.SceneSystem.SceneLoader.GetLoadScenes
+  fullName: UnityEngine.SceneSystem.SceneLoader.GetLoadScenes()
+  nameWithType: SceneLoader.GetLoadScenes()
+- uid: UnityEngine.SceneSystem.SceneLoader.GetLoadScenes*
+  name: GetLoadScenes
+  href: api/UnityEngine.SceneSystem.SceneLoader.html#UnityEngine_SceneSystem_SceneLoader_GetLoadScenes_
+  commentId: Overload:UnityEngine.SceneSystem.SceneLoader.GetLoadScenes
+  fullName: UnityEngine.SceneSystem.SceneLoader.GetLoadScenes
+  nameWithType: SceneLoader.GetLoadScenes
+- uid: UnityEngine.SceneSystem.SceneLoader.LoadStyle
+  name: LoadStyle
+  href: api/UnityEngine.SceneSystem.SceneLoader.html#UnityEngine_SceneSystem_SceneLoader_LoadStyle
+  commentId: F:UnityEngine.SceneSystem.SceneLoader.LoadStyle
+  fullName: UnityEngine.SceneSystem.SceneLoader.LoadStyle
+  nameWithType: SceneLoader.LoadStyle
+- uid: UnityEngine.SceneSystem.SceneLoader.MinimumLoadingTime
+  name: MinimumLoadingTime
+  href: api/UnityEngine.SceneSystem.SceneLoader.html#UnityEngine_SceneSystem_SceneLoader_MinimumLoadingTime
+  commentId: F:UnityEngine.SceneSystem.SceneLoader.MinimumLoadingTime
+  fullName: UnityEngine.SceneSystem.SceneLoader.MinimumLoadingTime
+  nameWithType: SceneLoader.MinimumLoadingTime
+- uid: UnityEngine.SceneSystem.SceneLoader.onCompleted
+  name: onCompleted
+  href: api/UnityEngine.SceneSystem.SceneLoader.html#UnityEngine_SceneSystem_SceneLoader_onCompleted
+  commentId: F:UnityEngine.SceneSystem.SceneLoader.onCompleted
+  fullName: UnityEngine.SceneSystem.SceneLoader.onCompleted
+  nameWithType: SceneLoader.onCompleted
+- uid: UnityEngine.SceneSystem.SceneLoader.onLoadCompleted
+  name: onLoadCompleted
+  href: api/UnityEngine.SceneSystem.SceneLoader.html#UnityEngine_SceneSystem_SceneLoader_onLoadCompleted
+  commentId: F:UnityEngine.SceneSystem.SceneLoader.onLoadCompleted
+  fullName: UnityEngine.SceneSystem.SceneLoader.onLoadCompleted
+  nameWithType: SceneLoader.onLoadCompleted
+- uid: UnityEngine.SceneSystem.SceneLoader.onLoading
+  name: onLoading
+  href: api/UnityEngine.SceneSystem.SceneLoader.html#UnityEngine_SceneSystem_SceneLoader_onLoading
+  commentId: F:UnityEngine.SceneSystem.SceneLoader.onLoading
+  fullName: UnityEngine.SceneSystem.SceneLoader.onLoading
+  nameWithType: SceneLoader.onLoading
+- uid: UnityEngine.SceneSystem.SceneLoader.SkipMode
+  name: SkipMode
+  href: api/UnityEngine.SceneSystem.SceneLoader.html#UnityEngine_SceneSystem_SceneLoader_SkipMode
+  commentId: F:UnityEngine.SceneSystem.SceneLoader.SkipMode
+  fullName: UnityEngine.SceneSystem.SceneLoader.SkipMode
+  nameWithType: SceneLoader.SkipMode
+- uid: UnityEngine.SceneSystem.Scenes
+  name: Scenes
+  href: api/UnityEngine.SceneSystem.Scenes.html
+  commentId: T:UnityEngine.SceneSystem.Scenes
+  fullName: UnityEngine.SceneSystem.Scenes
+  nameWithType: Scenes
+- uid: UnityEngine.SceneSystem.Scenes.AddCallbackReceiver(UnityEngine.SceneSystem.ILoadSceneCallbackReceiver)
+  name: AddCallbackReceiver(ILoadSceneCallbackReceiver)
+  href: api/UnityEngine.SceneSystem.Scenes.html#UnityEngine_SceneSystem_Scenes_AddCallbackReceiver_UnityEngine_SceneSystem_ILoadSceneCallbackReceiver_
+  commentId: M:UnityEngine.SceneSystem.Scenes.AddCallbackReceiver(UnityEngine.SceneSystem.ILoadSceneCallbackReceiver)
+  fullName: UnityEngine.SceneSystem.Scenes.AddCallbackReceiver(UnityEngine.SceneSystem.ILoadSceneCallbackReceiver)
+  nameWithType: Scenes.AddCallbackReceiver(ILoadSceneCallbackReceiver)
+- uid: UnityEngine.SceneSystem.Scenes.AddCallbackReceiver*
+  name: AddCallbackReceiver
+  href: api/UnityEngine.SceneSystem.Scenes.html#UnityEngine_SceneSystem_Scenes_AddCallbackReceiver_
+  commentId: Overload:UnityEngine.SceneSystem.Scenes.AddCallbackReceiver
+  fullName: UnityEngine.SceneSystem.Scenes.AddCallbackReceiver
+  nameWithType: Scenes.AddCallbackReceiver
+- uid: UnityEngine.SceneSystem.Scenes.Count
+  name: Count
+  href: api/UnityEngine.SceneSystem.Scenes.html#UnityEngine_SceneSystem_Scenes_Count
+  commentId: P:UnityEngine.SceneSystem.Scenes.Count
+  fullName: UnityEngine.SceneSystem.Scenes.Count
+  nameWithType: Scenes.Count
+- uid: UnityEngine.SceneSystem.Scenes.Count*
+  name: Count
+  href: api/UnityEngine.SceneSystem.Scenes.html#UnityEngine_SceneSystem_Scenes_Count_
+  commentId: Overload:UnityEngine.SceneSystem.Scenes.Count
+  fullName: UnityEngine.SceneSystem.Scenes.Count
+  nameWithType: Scenes.Count
+- uid: UnityEngine.SceneSystem.Scenes.CountInBuildSettings
+  name: CountInBuildSettings
+  href: api/UnityEngine.SceneSystem.Scenes.html#UnityEngine_SceneSystem_Scenes_CountInBuildSettings
+  commentId: P:UnityEngine.SceneSystem.Scenes.CountInBuildSettings
+  fullName: UnityEngine.SceneSystem.Scenes.CountInBuildSettings
+  nameWithType: Scenes.CountInBuildSettings
+- uid: UnityEngine.SceneSystem.Scenes.CountInBuildSettings*
+  name: CountInBuildSettings
+  href: api/UnityEngine.SceneSystem.Scenes.html#UnityEngine_SceneSystem_Scenes_CountInBuildSettings_
+  commentId: Overload:UnityEngine.SceneSystem.Scenes.CountInBuildSettings
+  fullName: UnityEngine.SceneSystem.Scenes.CountInBuildSettings
+  nameWithType: Scenes.CountInBuildSettings
+- uid: UnityEngine.SceneSystem.Scenes.CreateScene(System.String,UnityEngine.SceneManagement.CreateSceneParameters)
+  name: CreateScene(string, CreateSceneParameters)
+  href: api/UnityEngine.SceneSystem.Scenes.html#UnityEngine_SceneSystem_Scenes_CreateScene_System_String_UnityEngine_SceneManagement_CreateSceneParameters_
+  commentId: M:UnityEngine.SceneSystem.Scenes.CreateScene(System.String,UnityEngine.SceneManagement.CreateSceneParameters)
+  name.vb: CreateScene(String, CreateSceneParameters)
+  fullName: UnityEngine.SceneSystem.Scenes.CreateScene(string, UnityEngine.SceneManagement.CreateSceneParameters)
+  fullName.vb: UnityEngine.SceneSystem.Scenes.CreateScene(String, UnityEngine.SceneManagement.CreateSceneParameters)
+  nameWithType: Scenes.CreateScene(string, CreateSceneParameters)
+  nameWithType.vb: Scenes.CreateScene(String, CreateSceneParameters)
+- uid: UnityEngine.SceneSystem.Scenes.CreateScene(System.String)
+  name: CreateScene(string)
+  href: api/UnityEngine.SceneSystem.Scenes.html#UnityEngine_SceneSystem_Scenes_CreateScene_System_String_
+  commentId: M:UnityEngine.SceneSystem.Scenes.CreateScene(System.String)
+  name.vb: CreateScene(String)
+  fullName: UnityEngine.SceneSystem.Scenes.CreateScene(string)
+  fullName.vb: UnityEngine.SceneSystem.Scenes.CreateScene(String)
+  nameWithType: Scenes.CreateScene(string)
+  nameWithType.vb: Scenes.CreateScene(String)
+- uid: UnityEngine.SceneSystem.Scenes.CreateScene*
+  name: CreateScene
+  href: api/UnityEngine.SceneSystem.Scenes.html#UnityEngine_SceneSystem_Scenes_CreateScene_
+  commentId: Overload:UnityEngine.SceneSystem.Scenes.CreateScene
+  fullName: UnityEngine.SceneSystem.Scenes.CreateScene
+  nameWithType: Scenes.CreateScene
+- uid: UnityEngine.SceneSystem.Scenes.GetActiveScene
+  name: GetActiveScene()
+  href: api/UnityEngine.SceneSystem.Scenes.html#UnityEngine_SceneSystem_Scenes_GetActiveScene
+  commentId: M:UnityEngine.SceneSystem.Scenes.GetActiveScene
+  fullName: UnityEngine.SceneSystem.Scenes.GetActiveScene()
+  nameWithType: Scenes.GetActiveScene()
+- uid: UnityEngine.SceneSystem.Scenes.GetActiveScene*
+  name: GetActiveScene
+  href: api/UnityEngine.SceneSystem.Scenes.html#UnityEngine_SceneSystem_Scenes_GetActiveScene_
+  commentId: Overload:UnityEngine.SceneSystem.Scenes.GetActiveScene
+  fullName: UnityEngine.SceneSystem.Scenes.GetActiveScene
+  nameWithType: Scenes.GetActiveScene
+- uid: UnityEngine.SceneSystem.Scenes.GetSceneAt(System.Int32)
+  name: GetSceneAt(int)
+  href: api/UnityEngine.SceneSystem.Scenes.html#UnityEngine_SceneSystem_Scenes_GetSceneAt_System_Int32_
+  commentId: M:UnityEngine.SceneSystem.Scenes.GetSceneAt(System.Int32)
+  name.vb: GetSceneAt(Integer)
+  fullName: UnityEngine.SceneSystem.Scenes.GetSceneAt(int)
+  fullName.vb: UnityEngine.SceneSystem.Scenes.GetSceneAt(Integer)
+  nameWithType: Scenes.GetSceneAt(int)
+  nameWithType.vb: Scenes.GetSceneAt(Integer)
+- uid: UnityEngine.SceneSystem.Scenes.GetSceneAt*
+  name: GetSceneAt
+  href: api/UnityEngine.SceneSystem.Scenes.html#UnityEngine_SceneSystem_Scenes_GetSceneAt_
+  commentId: Overload:UnityEngine.SceneSystem.Scenes.GetSceneAt
+  fullName: UnityEngine.SceneSystem.Scenes.GetSceneAt
+  nameWithType: Scenes.GetSceneAt
+- uid: UnityEngine.SceneSystem.Scenes.GetSceneByBuildIndex(System.Int32)
+  name: GetSceneByBuildIndex(int)
+  href: api/UnityEngine.SceneSystem.Scenes.html#UnityEngine_SceneSystem_Scenes_GetSceneByBuildIndex_System_Int32_
+  commentId: M:UnityEngine.SceneSystem.Scenes.GetSceneByBuildIndex(System.Int32)
+  name.vb: GetSceneByBuildIndex(Integer)
+  fullName: UnityEngine.SceneSystem.Scenes.GetSceneByBuildIndex(int)
+  fullName.vb: UnityEngine.SceneSystem.Scenes.GetSceneByBuildIndex(Integer)
+  nameWithType: Scenes.GetSceneByBuildIndex(int)
+  nameWithType.vb: Scenes.GetSceneByBuildIndex(Integer)
+- uid: UnityEngine.SceneSystem.Scenes.GetSceneByBuildIndex*
+  name: GetSceneByBuildIndex
+  href: api/UnityEngine.SceneSystem.Scenes.html#UnityEngine_SceneSystem_Scenes_GetSceneByBuildIndex_
+  commentId: Overload:UnityEngine.SceneSystem.Scenes.GetSceneByBuildIndex
+  fullName: UnityEngine.SceneSystem.Scenes.GetSceneByBuildIndex
+  nameWithType: Scenes.GetSceneByBuildIndex
+- uid: UnityEngine.SceneSystem.Scenes.GetSceneByName(System.String)
+  name: GetSceneByName(string)
+  href: api/UnityEngine.SceneSystem.Scenes.html#UnityEngine_SceneSystem_Scenes_GetSceneByName_System_String_
+  commentId: M:UnityEngine.SceneSystem.Scenes.GetSceneByName(System.String)
+  name.vb: GetSceneByName(String)
+  fullName: UnityEngine.SceneSystem.Scenes.GetSceneByName(string)
+  fullName.vb: UnityEngine.SceneSystem.Scenes.GetSceneByName(String)
+  nameWithType: Scenes.GetSceneByName(string)
+  nameWithType.vb: Scenes.GetSceneByName(String)
+- uid: UnityEngine.SceneSystem.Scenes.GetSceneByName*
+  name: GetSceneByName
+  href: api/UnityEngine.SceneSystem.Scenes.html#UnityEngine_SceneSystem_Scenes_GetSceneByName_
+  commentId: Overload:UnityEngine.SceneSystem.Scenes.GetSceneByName
+  fullName: UnityEngine.SceneSystem.Scenes.GetSceneByName
+  nameWithType: Scenes.GetSceneByName
+- uid: UnityEngine.SceneSystem.Scenes.GetSceneByPath(System.String)
+  name: GetSceneByPath(string)
+  href: api/UnityEngine.SceneSystem.Scenes.html#UnityEngine_SceneSystem_Scenes_GetSceneByPath_System_String_
+  commentId: M:UnityEngine.SceneSystem.Scenes.GetSceneByPath(System.String)
+  name.vb: GetSceneByPath(String)
+  fullName: UnityEngine.SceneSystem.Scenes.GetSceneByPath(string)
+  fullName.vb: UnityEngine.SceneSystem.Scenes.GetSceneByPath(String)
+  nameWithType: Scenes.GetSceneByPath(string)
+  nameWithType.vb: Scenes.GetSceneByPath(String)
+- uid: UnityEngine.SceneSystem.Scenes.GetSceneByPath*
+  name: GetSceneByPath
+  href: api/UnityEngine.SceneSystem.Scenes.html#UnityEngine_SceneSystem_Scenes_GetSceneByPath_
+  commentId: Overload:UnityEngine.SceneSystem.Scenes.GetSceneByPath
+  fullName: UnityEngine.SceneSystem.Scenes.GetSceneByPath
+  nameWithType: Scenes.GetSceneByPath
+- uid: UnityEngine.SceneSystem.Scenes.Loader
+  name: Loader
+  href: api/UnityEngine.SceneSystem.Scenes.html#UnityEngine_SceneSystem_Scenes_Loader
+  commentId: P:UnityEngine.SceneSystem.Scenes.Loader
+  fullName: UnityEngine.SceneSystem.Scenes.Loader
+  nameWithType: Scenes.Loader
+- uid: UnityEngine.SceneSystem.Scenes.Loader*
+  name: Loader
+  href: api/UnityEngine.SceneSystem.Scenes.html#UnityEngine_SceneSystem_Scenes_Loader_
+  commentId: Overload:UnityEngine.SceneSystem.Scenes.Loader
+  fullName: UnityEngine.SceneSystem.Scenes.Loader
+  nameWithType: Scenes.Loader
+- uid: UnityEngine.SceneSystem.Scenes.LoadScene(System.Int32,UnityEngine.SceneManagement.LoadSceneMode)
+  name: LoadScene(int, LoadSceneMode)
+  href: api/UnityEngine.SceneSystem.Scenes.html#UnityEngine_SceneSystem_Scenes_LoadScene_System_Int32_UnityEngine_SceneManagement_LoadSceneMode_
+  commentId: M:UnityEngine.SceneSystem.Scenes.LoadScene(System.Int32,UnityEngine.SceneManagement.LoadSceneMode)
+  name.vb: LoadScene(Integer, LoadSceneMode)
+  fullName: UnityEngine.SceneSystem.Scenes.LoadScene(int, UnityEngine.SceneManagement.LoadSceneMode)
+  fullName.vb: UnityEngine.SceneSystem.Scenes.LoadScene(Integer, UnityEngine.SceneManagement.LoadSceneMode)
+  nameWithType: Scenes.LoadScene(int, LoadSceneMode)
+  nameWithType.vb: Scenes.LoadScene(Integer, LoadSceneMode)
+- uid: UnityEngine.SceneSystem.Scenes.LoadScene(System.String,UnityEngine.SceneManagement.LoadSceneMode)
+  name: LoadScene(string, LoadSceneMode)
+  href: api/UnityEngine.SceneSystem.Scenes.html#UnityEngine_SceneSystem_Scenes_LoadScene_System_String_UnityEngine_SceneManagement_LoadSceneMode_
+  commentId: M:UnityEngine.SceneSystem.Scenes.LoadScene(System.String,UnityEngine.SceneManagement.LoadSceneMode)
+  name.vb: LoadScene(String, LoadSceneMode)
+  fullName: UnityEngine.SceneSystem.Scenes.LoadScene(string, UnityEngine.SceneManagement.LoadSceneMode)
+  fullName.vb: UnityEngine.SceneSystem.Scenes.LoadScene(String, UnityEngine.SceneManagement.LoadSceneMode)
+  nameWithType: Scenes.LoadScene(string, LoadSceneMode)
+  nameWithType.vb: Scenes.LoadScene(String, LoadSceneMode)
+- uid: UnityEngine.SceneSystem.Scenes.LoadScene(UnityEngine.SceneReference,UnityEngine.SceneManagement.LoadSceneMode)
+  name: LoadScene(SceneReference, LoadSceneMode)
+  href: api/UnityEngine.SceneSystem.Scenes.html#UnityEngine_SceneSystem_Scenes_LoadScene_UnityEngine_SceneReference_UnityEngine_SceneManagement_LoadSceneMode_
+  commentId: M:UnityEngine.SceneSystem.Scenes.LoadScene(UnityEngine.SceneReference,UnityEngine.SceneManagement.LoadSceneMode)
+  fullName: UnityEngine.SceneSystem.Scenes.LoadScene(UnityEngine.SceneReference, UnityEngine.SceneManagement.LoadSceneMode)
+  nameWithType: Scenes.LoadScene(SceneReference, LoadSceneMode)
+- uid: UnityEngine.SceneSystem.Scenes.LoadScene*
+  name: LoadScene
+  href: api/UnityEngine.SceneSystem.Scenes.html#UnityEngine_SceneSystem_Scenes_LoadScene_
+  commentId: Overload:UnityEngine.SceneSystem.Scenes.LoadScene
+  fullName: UnityEngine.SceneSystem.Scenes.LoadScene
+  nameWithType: Scenes.LoadScene
+- uid: UnityEngine.SceneSystem.Scenes.LoadSceneAsync(System.Int32,UnityEngine.SceneManagement.LoadSceneMode)
+  name: LoadSceneAsync(int, LoadSceneMode)
+  href: api/UnityEngine.SceneSystem.Scenes.html#UnityEngine_SceneSystem_Scenes_LoadSceneAsync_System_Int32_UnityEngine_SceneManagement_LoadSceneMode_
+  commentId: M:UnityEngine.SceneSystem.Scenes.LoadSceneAsync(System.Int32,UnityEngine.SceneManagement.LoadSceneMode)
+  name.vb: LoadSceneAsync(Integer, LoadSceneMode)
+  fullName: UnityEngine.SceneSystem.Scenes.LoadSceneAsync(int, UnityEngine.SceneManagement.LoadSceneMode)
+  fullName.vb: UnityEngine.SceneSystem.Scenes.LoadSceneAsync(Integer, UnityEngine.SceneManagement.LoadSceneMode)
+  nameWithType: Scenes.LoadSceneAsync(int, LoadSceneMode)
+  nameWithType.vb: Scenes.LoadSceneAsync(Integer, LoadSceneMode)
+- uid: UnityEngine.SceneSystem.Scenes.LoadSceneAsync(System.String,UnityEngine.SceneManagement.LoadSceneMode)
+  name: LoadSceneAsync(string, LoadSceneMode)
+  href: api/UnityEngine.SceneSystem.Scenes.html#UnityEngine_SceneSystem_Scenes_LoadSceneAsync_System_String_UnityEngine_SceneManagement_LoadSceneMode_
+  commentId: M:UnityEngine.SceneSystem.Scenes.LoadSceneAsync(System.String,UnityEngine.SceneManagement.LoadSceneMode)
+  name.vb: LoadSceneAsync(String, LoadSceneMode)
+  fullName: UnityEngine.SceneSystem.Scenes.LoadSceneAsync(string, UnityEngine.SceneManagement.LoadSceneMode)
+  fullName.vb: UnityEngine.SceneSystem.Scenes.LoadSceneAsync(String, UnityEngine.SceneManagement.LoadSceneMode)
+  nameWithType: Scenes.LoadSceneAsync(string, LoadSceneMode)
+  nameWithType.vb: Scenes.LoadSceneAsync(String, LoadSceneMode)
+- uid: UnityEngine.SceneSystem.Scenes.LoadSceneAsync(UnityEngine.SceneReference,UnityEngine.SceneManagement.LoadSceneMode)
+  name: LoadSceneAsync(SceneReference, LoadSceneMode)
+  href: api/UnityEngine.SceneSystem.Scenes.html#UnityEngine_SceneSystem_Scenes_LoadSceneAsync_UnityEngine_SceneReference_UnityEngine_SceneManagement_LoadSceneMode_
+  commentId: M:UnityEngine.SceneSystem.Scenes.LoadSceneAsync(UnityEngine.SceneReference,UnityEngine.SceneManagement.LoadSceneMode)
+  fullName: UnityEngine.SceneSystem.Scenes.LoadSceneAsync(UnityEngine.SceneReference, UnityEngine.SceneManagement.LoadSceneMode)
+  nameWithType: Scenes.LoadSceneAsync(SceneReference, LoadSceneMode)
+- uid: UnityEngine.SceneSystem.Scenes.LoadSceneAsync*
+  name: LoadSceneAsync
+  href: api/UnityEngine.SceneSystem.Scenes.html#UnityEngine_SceneSystem_Scenes_LoadSceneAsync_
+  commentId: Overload:UnityEngine.SceneSystem.Scenes.LoadSceneAsync
+  fullName: UnityEngine.SceneSystem.Scenes.LoadSceneAsync
+  nameWithType: Scenes.LoadSceneAsync
+- uid: UnityEngine.SceneSystem.Scenes.LoadScenes(System.Int32[])
+  name: LoadScenes(params int[])
+  href: api/UnityEngine.SceneSystem.Scenes.html#UnityEngine_SceneSystem_Scenes_LoadScenes_System_Int32___
+  commentId: M:UnityEngine.SceneSystem.Scenes.LoadScenes(System.Int32[])
+  name.vb: LoadScenes(ParamArray Integer())
+  fullName: UnityEngine.SceneSystem.Scenes.LoadScenes(params int[])
+  fullName.vb: UnityEngine.SceneSystem.Scenes.LoadScenes(ParamArray Integer())
+  nameWithType: Scenes.LoadScenes(params int[])
+  nameWithType.vb: Scenes.LoadScenes(ParamArray Integer())
+- uid: UnityEngine.SceneSystem.Scenes.LoadScenes(System.String[])
+  name: LoadScenes(params string[])
+  href: api/UnityEngine.SceneSystem.Scenes.html#UnityEngine_SceneSystem_Scenes_LoadScenes_System_String___
+  commentId: M:UnityEngine.SceneSystem.Scenes.LoadScenes(System.String[])
+  name.vb: LoadScenes(ParamArray String())
+  fullName: UnityEngine.SceneSystem.Scenes.LoadScenes(params string[])
+  fullName.vb: UnityEngine.SceneSystem.Scenes.LoadScenes(ParamArray String())
+  nameWithType: Scenes.LoadScenes(params string[])
+  nameWithType.vb: Scenes.LoadScenes(ParamArray String())
+- uid: UnityEngine.SceneSystem.Scenes.LoadScenes(UnityEngine.SceneReference[])
+  name: LoadScenes(params SceneReference[])
+  href: api/UnityEngine.SceneSystem.Scenes.html#UnityEngine_SceneSystem_Scenes_LoadScenes_UnityEngine_SceneReference___
+  commentId: M:UnityEngine.SceneSystem.Scenes.LoadScenes(UnityEngine.SceneReference[])
+  name.vb: LoadScenes(ParamArray SceneReference())
+  fullName: UnityEngine.SceneSystem.Scenes.LoadScenes(params UnityEngine.SceneReference[])
+  fullName.vb: UnityEngine.SceneSystem.Scenes.LoadScenes(ParamArray UnityEngine.SceneReference())
+  nameWithType: Scenes.LoadScenes(params SceneReference[])
+  nameWithType.vb: Scenes.LoadScenes(ParamArray SceneReference())
+- uid: UnityEngine.SceneSystem.Scenes.LoadScenes*
+  name: LoadScenes
+  href: api/UnityEngine.SceneSystem.Scenes.html#UnityEngine_SceneSystem_Scenes_LoadScenes_
+  commentId: Overload:UnityEngine.SceneSystem.Scenes.LoadScenes
+  fullName: UnityEngine.SceneSystem.Scenes.LoadScenes
+  nameWithType: Scenes.LoadScenes
+- uid: UnityEngine.SceneSystem.Scenes.LoadScenesAsync(System.Int32[])
+  name: LoadScenesAsync(params int[])
+  href: api/UnityEngine.SceneSystem.Scenes.html#UnityEngine_SceneSystem_Scenes_LoadScenesAsync_System_Int32___
+  commentId: M:UnityEngine.SceneSystem.Scenes.LoadScenesAsync(System.Int32[])
+  name.vb: LoadScenesAsync(ParamArray Integer())
+  fullName: UnityEngine.SceneSystem.Scenes.LoadScenesAsync(params int[])
+  fullName.vb: UnityEngine.SceneSystem.Scenes.LoadScenesAsync(ParamArray Integer())
+  nameWithType: Scenes.LoadScenesAsync(params int[])
+  nameWithType.vb: Scenes.LoadScenesAsync(ParamArray Integer())
+- uid: UnityEngine.SceneSystem.Scenes.LoadScenesAsync(System.String[])
+  name: LoadScenesAsync(params string[])
+  href: api/UnityEngine.SceneSystem.Scenes.html#UnityEngine_SceneSystem_Scenes_LoadScenesAsync_System_String___
+  commentId: M:UnityEngine.SceneSystem.Scenes.LoadScenesAsync(System.String[])
+  name.vb: LoadScenesAsync(ParamArray String())
+  fullName: UnityEngine.SceneSystem.Scenes.LoadScenesAsync(params string[])
+  fullName.vb: UnityEngine.SceneSystem.Scenes.LoadScenesAsync(ParamArray String())
+  nameWithType: Scenes.LoadScenesAsync(params string[])
+  nameWithType.vb: Scenes.LoadScenesAsync(ParamArray String())
+- uid: UnityEngine.SceneSystem.Scenes.LoadScenesAsync(UnityEngine.SceneReference[])
+  name: LoadScenesAsync(params SceneReference[])
+  href: api/UnityEngine.SceneSystem.Scenes.html#UnityEngine_SceneSystem_Scenes_LoadScenesAsync_UnityEngine_SceneReference___
+  commentId: M:UnityEngine.SceneSystem.Scenes.LoadScenesAsync(UnityEngine.SceneReference[])
+  name.vb: LoadScenesAsync(ParamArray SceneReference())
+  fullName: UnityEngine.SceneSystem.Scenes.LoadScenesAsync(params UnityEngine.SceneReference[])
+  fullName.vb: UnityEngine.SceneSystem.Scenes.LoadScenesAsync(ParamArray UnityEngine.SceneReference())
+  nameWithType: Scenes.LoadScenesAsync(params SceneReference[])
+  nameWithType.vb: Scenes.LoadScenesAsync(ParamArray SceneReference())
+- uid: UnityEngine.SceneSystem.Scenes.LoadScenesAsync(UnityEngine.SceneSystem.LoadMultiSceneMode,System.Int32[])
+  name: LoadScenesAsync(LoadMultiSceneMode, params int[])
+  href: api/UnityEngine.SceneSystem.Scenes.html#UnityEngine_SceneSystem_Scenes_LoadScenesAsync_UnityEngine_SceneSystem_LoadMultiSceneMode_System_Int32___
+  commentId: M:UnityEngine.SceneSystem.Scenes.LoadScenesAsync(UnityEngine.SceneSystem.LoadMultiSceneMode,System.Int32[])
+  name.vb: LoadScenesAsync(LoadMultiSceneMode, ParamArray Integer())
+  fullName: UnityEngine.SceneSystem.Scenes.LoadScenesAsync(UnityEngine.SceneSystem.LoadMultiSceneMode, params int[])
+  fullName.vb: UnityEngine.SceneSystem.Scenes.LoadScenesAsync(UnityEngine.SceneSystem.LoadMultiSceneMode, ParamArray Integer())
+  nameWithType: Scenes.LoadScenesAsync(LoadMultiSceneMode, params int[])
+  nameWithType.vb: Scenes.LoadScenesAsync(LoadMultiSceneMode, ParamArray Integer())
+- uid: UnityEngine.SceneSystem.Scenes.LoadScenesAsync(UnityEngine.SceneSystem.LoadMultiSceneMode,System.String[])
+  name: LoadScenesAsync(LoadMultiSceneMode, params string[])
+  href: api/UnityEngine.SceneSystem.Scenes.html#UnityEngine_SceneSystem_Scenes_LoadScenesAsync_UnityEngine_SceneSystem_LoadMultiSceneMode_System_String___
+  commentId: M:UnityEngine.SceneSystem.Scenes.LoadScenesAsync(UnityEngine.SceneSystem.LoadMultiSceneMode,System.String[])
+  name.vb: LoadScenesAsync(LoadMultiSceneMode, ParamArray String())
+  fullName: UnityEngine.SceneSystem.Scenes.LoadScenesAsync(UnityEngine.SceneSystem.LoadMultiSceneMode, params string[])
+  fullName.vb: UnityEngine.SceneSystem.Scenes.LoadScenesAsync(UnityEngine.SceneSystem.LoadMultiSceneMode, ParamArray String())
+  nameWithType: Scenes.LoadScenesAsync(LoadMultiSceneMode, params string[])
+  nameWithType.vb: Scenes.LoadScenesAsync(LoadMultiSceneMode, ParamArray String())
+- uid: UnityEngine.SceneSystem.Scenes.LoadScenesAsync(UnityEngine.SceneSystem.LoadMultiSceneMode,UnityEngine.SceneReference[])
+  name: LoadScenesAsync(LoadMultiSceneMode, params SceneReference[])
+  href: api/UnityEngine.SceneSystem.Scenes.html#UnityEngine_SceneSystem_Scenes_LoadScenesAsync_UnityEngine_SceneSystem_LoadMultiSceneMode_UnityEngine_SceneReference___
+  commentId: M:UnityEngine.SceneSystem.Scenes.LoadScenesAsync(UnityEngine.SceneSystem.LoadMultiSceneMode,UnityEngine.SceneReference[])
+  name.vb: LoadScenesAsync(LoadMultiSceneMode, ParamArray SceneReference())
+  fullName: UnityEngine.SceneSystem.Scenes.LoadScenesAsync(UnityEngine.SceneSystem.LoadMultiSceneMode, params UnityEngine.SceneReference[])
+  fullName.vb: UnityEngine.SceneSystem.Scenes.LoadScenesAsync(UnityEngine.SceneSystem.LoadMultiSceneMode, ParamArray UnityEngine.SceneReference())
+  nameWithType: Scenes.LoadScenesAsync(LoadMultiSceneMode, params SceneReference[])
+  nameWithType.vb: Scenes.LoadScenesAsync(LoadMultiSceneMode, ParamArray SceneReference())
+- uid: UnityEngine.SceneSystem.Scenes.LoadScenesAsync*
+  name: LoadScenesAsync
+  href: api/UnityEngine.SceneSystem.Scenes.html#UnityEngine_SceneSystem_Scenes_LoadScenesAsync_
+  commentId: Overload:UnityEngine.SceneSystem.Scenes.LoadScenesAsync
+  fullName: UnityEngine.SceneSystem.Scenes.LoadScenesAsync
+  nameWithType: Scenes.LoadScenesAsync
+- uid: UnityEngine.SceneSystem.Scenes.MergeScenes(UnityEngine.SceneManagement.Scene,UnityEngine.SceneManagement.Scene)
+  name: MergeScenes(Scene, Scene)
+  href: api/UnityEngine.SceneSystem.Scenes.html#UnityEngine_SceneSystem_Scenes_MergeScenes_UnityEngine_SceneManagement_Scene_UnityEngine_SceneManagement_Scene_
+  commentId: M:UnityEngine.SceneSystem.Scenes.MergeScenes(UnityEngine.SceneManagement.Scene,UnityEngine.SceneManagement.Scene)
+  fullName: UnityEngine.SceneSystem.Scenes.MergeScenes(UnityEngine.SceneManagement.Scene, UnityEngine.SceneManagement.Scene)
+  nameWithType: Scenes.MergeScenes(Scene, Scene)
+- uid: UnityEngine.SceneSystem.Scenes.MergeScenes*
+  name: MergeScenes
+  href: api/UnityEngine.SceneSystem.Scenes.html#UnityEngine_SceneSystem_Scenes_MergeScenes_
+  commentId: Overload:UnityEngine.SceneSystem.Scenes.MergeScenes
+  fullName: UnityEngine.SceneSystem.Scenes.MergeScenes
+  nameWithType: Scenes.MergeScenes
+- uid: UnityEngine.SceneSystem.Scenes.MoveGameObjectToScene(UnityEngine.GameObject,UnityEngine.SceneManagement.Scene)
+  name: MoveGameObjectToScene(GameObject, Scene)
+  href: api/UnityEngine.SceneSystem.Scenes.html#UnityEngine_SceneSystem_Scenes_MoveGameObjectToScene_UnityEngine_GameObject_UnityEngine_SceneManagement_Scene_
+  commentId: M:UnityEngine.SceneSystem.Scenes.MoveGameObjectToScene(UnityEngine.GameObject,UnityEngine.SceneManagement.Scene)
+  fullName: UnityEngine.SceneSystem.Scenes.MoveGameObjectToScene(UnityEngine.GameObject, UnityEngine.SceneManagement.Scene)
+  nameWithType: Scenes.MoveGameObjectToScene(GameObject, Scene)
+- uid: UnityEngine.SceneSystem.Scenes.MoveGameObjectToScene*
+  name: MoveGameObjectToScene
+  href: api/UnityEngine.SceneSystem.Scenes.html#UnityEngine_SceneSystem_Scenes_MoveGameObjectToScene_
+  commentId: Overload:UnityEngine.SceneSystem.Scenes.MoveGameObjectToScene
+  fullName: UnityEngine.SceneSystem.Scenes.MoveGameObjectToScene
+  nameWithType: Scenes.MoveGameObjectToScene
+- uid: UnityEngine.SceneSystem.Scenes.onActiveSceneChanged
+  name: onActiveSceneChanged
+  href: api/UnityEngine.SceneSystem.Scenes.html#UnityEngine_SceneSystem_Scenes_onActiveSceneChanged
+  commentId: E:UnityEngine.SceneSystem.Scenes.onActiveSceneChanged
+  fullName: UnityEngine.SceneSystem.Scenes.onActiveSceneChanged
+  nameWithType: Scenes.onActiveSceneChanged
+- uid: UnityEngine.SceneSystem.Scenes.onSceneLoaded
+  name: onSceneLoaded
+  href: api/UnityEngine.SceneSystem.Scenes.html#UnityEngine_SceneSystem_Scenes_onSceneLoaded
+  commentId: E:UnityEngine.SceneSystem.Scenes.onSceneLoaded
+  fullName: UnityEngine.SceneSystem.Scenes.onSceneLoaded
+  nameWithType: Scenes.onSceneLoaded
+- uid: UnityEngine.SceneSystem.Scenes.onSceneUnLoaded
+  name: onSceneUnLoaded
+  href: api/UnityEngine.SceneSystem.Scenes.html#UnityEngine_SceneSystem_Scenes_onSceneUnLoaded
+  commentId: E:UnityEngine.SceneSystem.Scenes.onSceneUnLoaded
+  fullName: UnityEngine.SceneSystem.Scenes.onSceneUnLoaded
+  nameWithType: Scenes.onSceneUnLoaded
+- uid: UnityEngine.SceneSystem.Scenes.RemoveCallbackReceiver(UnityEngine.SceneSystem.ILoadSceneCallbackReceiver)
+  name: RemoveCallbackReceiver(ILoadSceneCallbackReceiver)
+  href: api/UnityEngine.SceneSystem.Scenes.html#UnityEngine_SceneSystem_Scenes_RemoveCallbackReceiver_UnityEngine_SceneSystem_ILoadSceneCallbackReceiver_
+  commentId: M:UnityEngine.SceneSystem.Scenes.RemoveCallbackReceiver(UnityEngine.SceneSystem.ILoadSceneCallbackReceiver)
+  fullName: UnityEngine.SceneSystem.Scenes.RemoveCallbackReceiver(UnityEngine.SceneSystem.ILoadSceneCallbackReceiver)
+  nameWithType: Scenes.RemoveCallbackReceiver(ILoadSceneCallbackReceiver)
+- uid: UnityEngine.SceneSystem.Scenes.RemoveCallbackReceiver*
+  name: RemoveCallbackReceiver
+  href: api/UnityEngine.SceneSystem.Scenes.html#UnityEngine_SceneSystem_Scenes_RemoveCallbackReceiver_
+  commentId: Overload:UnityEngine.SceneSystem.Scenes.RemoveCallbackReceiver
+  fullName: UnityEngine.SceneSystem.Scenes.RemoveCallbackReceiver
+  nameWithType: Scenes.RemoveCallbackReceiver
+- uid: UnityEngine.SceneSystem.Scenes.SetActiveScene(UnityEngine.SceneManagement.Scene)
+  name: SetActiveScene(Scene)
+  href: api/UnityEngine.SceneSystem.Scenes.html#UnityEngine_SceneSystem_Scenes_SetActiveScene_UnityEngine_SceneManagement_Scene_
+  commentId: M:UnityEngine.SceneSystem.Scenes.SetActiveScene(UnityEngine.SceneManagement.Scene)
+  fullName: UnityEngine.SceneSystem.Scenes.SetActiveScene(UnityEngine.SceneManagement.Scene)
+  nameWithType: Scenes.SetActiveScene(Scene)
+- uid: UnityEngine.SceneSystem.Scenes.SetActiveScene*
+  name: SetActiveScene
+  href: api/UnityEngine.SceneSystem.Scenes.html#UnityEngine_SceneSystem_Scenes_SetActiveScene_
+  commentId: Overload:UnityEngine.SceneSystem.Scenes.SetActiveScene
+  fullName: UnityEngine.SceneSystem.Scenes.SetActiveScene
+  nameWithType: Scenes.SetActiveScene
+- uid: UnityEngine.SceneSystem.Scenes.UnloadScene(System.Int32)
+  name: UnloadScene(int)
+  href: api/UnityEngine.SceneSystem.Scenes.html#UnityEngine_SceneSystem_Scenes_UnloadScene_System_Int32_
+  commentId: M:UnityEngine.SceneSystem.Scenes.UnloadScene(System.Int32)
+  name.vb: UnloadScene(Integer)
+  fullName: UnityEngine.SceneSystem.Scenes.UnloadScene(int)
+  fullName.vb: UnityEngine.SceneSystem.Scenes.UnloadScene(Integer)
+  nameWithType: Scenes.UnloadScene(int)
+  nameWithType.vb: Scenes.UnloadScene(Integer)
+- uid: UnityEngine.SceneSystem.Scenes.UnloadScene(System.String)
+  name: UnloadScene(string)
+  href: api/UnityEngine.SceneSystem.Scenes.html#UnityEngine_SceneSystem_Scenes_UnloadScene_System_String_
+  commentId: M:UnityEngine.SceneSystem.Scenes.UnloadScene(System.String)
+  name.vb: UnloadScene(String)
+  fullName: UnityEngine.SceneSystem.Scenes.UnloadScene(string)
+  fullName.vb: UnityEngine.SceneSystem.Scenes.UnloadScene(String)
+  nameWithType: Scenes.UnloadScene(string)
+  nameWithType.vb: Scenes.UnloadScene(String)
+- uid: UnityEngine.SceneSystem.Scenes.UnloadScene(UnityEngine.SceneReference)
+  name: UnloadScene(SceneReference)
+  href: api/UnityEngine.SceneSystem.Scenes.html#UnityEngine_SceneSystem_Scenes_UnloadScene_UnityEngine_SceneReference_
+  commentId: M:UnityEngine.SceneSystem.Scenes.UnloadScene(UnityEngine.SceneReference)
+  fullName: UnityEngine.SceneSystem.Scenes.UnloadScene(UnityEngine.SceneReference)
+  nameWithType: Scenes.UnloadScene(SceneReference)
+- uid: UnityEngine.SceneSystem.Scenes.UnloadScene*
+  name: UnloadScene
+  href: api/UnityEngine.SceneSystem.Scenes.html#UnityEngine_SceneSystem_Scenes_UnloadScene_
+  commentId: Overload:UnityEngine.SceneSystem.Scenes.UnloadScene
+  fullName: UnityEngine.SceneSystem.Scenes.UnloadScene
+  nameWithType: Scenes.UnloadScene
+- uid: UnityEngine.SceneSystem.Scenes.UnloadSceneAsync(System.Int32)
+  name: UnloadSceneAsync(int)
+  href: api/UnityEngine.SceneSystem.Scenes.html#UnityEngine_SceneSystem_Scenes_UnloadSceneAsync_System_Int32_
+  commentId: M:UnityEngine.SceneSystem.Scenes.UnloadSceneAsync(System.Int32)
+  name.vb: UnloadSceneAsync(Integer)
+  fullName: UnityEngine.SceneSystem.Scenes.UnloadSceneAsync(int)
+  fullName.vb: UnityEngine.SceneSystem.Scenes.UnloadSceneAsync(Integer)
+  nameWithType: Scenes.UnloadSceneAsync(int)
+  nameWithType.vb: Scenes.UnloadSceneAsync(Integer)
+- uid: UnityEngine.SceneSystem.Scenes.UnloadSceneAsync(System.String)
+  name: UnloadSceneAsync(string)
+  href: api/UnityEngine.SceneSystem.Scenes.html#UnityEngine_SceneSystem_Scenes_UnloadSceneAsync_System_String_
+  commentId: M:UnityEngine.SceneSystem.Scenes.UnloadSceneAsync(System.String)
+  name.vb: UnloadSceneAsync(String)
+  fullName: UnityEngine.SceneSystem.Scenes.UnloadSceneAsync(string)
+  fullName.vb: UnityEngine.SceneSystem.Scenes.UnloadSceneAsync(String)
+  nameWithType: Scenes.UnloadSceneAsync(string)
+  nameWithType.vb: Scenes.UnloadSceneAsync(String)
+- uid: UnityEngine.SceneSystem.Scenes.UnloadSceneAsync(UnityEngine.SceneReference)
+  name: UnloadSceneAsync(SceneReference)
+  href: api/UnityEngine.SceneSystem.Scenes.html#UnityEngine_SceneSystem_Scenes_UnloadSceneAsync_UnityEngine_SceneReference_
+  commentId: M:UnityEngine.SceneSystem.Scenes.UnloadSceneAsync(UnityEngine.SceneReference)
+  fullName: UnityEngine.SceneSystem.Scenes.UnloadSceneAsync(UnityEngine.SceneReference)
+  nameWithType: Scenes.UnloadSceneAsync(SceneReference)
+- uid: UnityEngine.SceneSystem.Scenes.UnloadSceneAsync*
+  name: UnloadSceneAsync
+  href: api/UnityEngine.SceneSystem.Scenes.html#UnityEngine_SceneSystem_Scenes_UnloadSceneAsync_
+  commentId: Overload:UnityEngine.SceneSystem.Scenes.UnloadSceneAsync
+  fullName: UnityEngine.SceneSystem.Scenes.UnloadSceneAsync
+  nameWithType: Scenes.UnloadSceneAsync
+- uid: UnityEngine.SceneSystem.Scenes.UnloadScenes(System.Int32[])
+  name: UnloadScenes(params int[])
+  href: api/UnityEngine.SceneSystem.Scenes.html#UnityEngine_SceneSystem_Scenes_UnloadScenes_System_Int32___
+  commentId: M:UnityEngine.SceneSystem.Scenes.UnloadScenes(System.Int32[])
+  name.vb: UnloadScenes(ParamArray Integer())
+  fullName: UnityEngine.SceneSystem.Scenes.UnloadScenes(params int[])
+  fullName.vb: UnityEngine.SceneSystem.Scenes.UnloadScenes(ParamArray Integer())
+  nameWithType: Scenes.UnloadScenes(params int[])
+  nameWithType.vb: Scenes.UnloadScenes(ParamArray Integer())
+- uid: UnityEngine.SceneSystem.Scenes.UnloadScenes(System.String[])
+  name: UnloadScenes(params string[])
+  href: api/UnityEngine.SceneSystem.Scenes.html#UnityEngine_SceneSystem_Scenes_UnloadScenes_System_String___
+  commentId: M:UnityEngine.SceneSystem.Scenes.UnloadScenes(System.String[])
+  name.vb: UnloadScenes(ParamArray String())
+  fullName: UnityEngine.SceneSystem.Scenes.UnloadScenes(params string[])
+  fullName.vb: UnityEngine.SceneSystem.Scenes.UnloadScenes(ParamArray String())
+  nameWithType: Scenes.UnloadScenes(params string[])
+  nameWithType.vb: Scenes.UnloadScenes(ParamArray String())
+- uid: UnityEngine.SceneSystem.Scenes.UnloadScenes(UnityEngine.SceneReference[])
+  name: UnloadScenes(params SceneReference[])
+  href: api/UnityEngine.SceneSystem.Scenes.html#UnityEngine_SceneSystem_Scenes_UnloadScenes_UnityEngine_SceneReference___
+  commentId: M:UnityEngine.SceneSystem.Scenes.UnloadScenes(UnityEngine.SceneReference[])
+  name.vb: UnloadScenes(ParamArray SceneReference())
+  fullName: UnityEngine.SceneSystem.Scenes.UnloadScenes(params UnityEngine.SceneReference[])
+  fullName.vb: UnityEngine.SceneSystem.Scenes.UnloadScenes(ParamArray UnityEngine.SceneReference())
+  nameWithType: Scenes.UnloadScenes(params SceneReference[])
+  nameWithType.vb: Scenes.UnloadScenes(ParamArray SceneReference())
+- uid: UnityEngine.SceneSystem.Scenes.UnloadScenes*
+  name: UnloadScenes
+  href: api/UnityEngine.SceneSystem.Scenes.html#UnityEngine_SceneSystem_Scenes_UnloadScenes_
+  commentId: Overload:UnityEngine.SceneSystem.Scenes.UnloadScenes
+  fullName: UnityEngine.SceneSystem.Scenes.UnloadScenes
+  nameWithType: Scenes.UnloadScenes
+- uid: UnityEngine.SceneSystem.Scenes.UnloadScenesAsync(System.Int32[])
+  name: UnloadScenesAsync(params int[])
+  href: api/UnityEngine.SceneSystem.Scenes.html#UnityEngine_SceneSystem_Scenes_UnloadScenesAsync_System_Int32___
+  commentId: M:UnityEngine.SceneSystem.Scenes.UnloadScenesAsync(System.Int32[])
+  name.vb: UnloadScenesAsync(ParamArray Integer())
+  fullName: UnityEngine.SceneSystem.Scenes.UnloadScenesAsync(params int[])
+  fullName.vb: UnityEngine.SceneSystem.Scenes.UnloadScenesAsync(ParamArray Integer())
+  nameWithType: Scenes.UnloadScenesAsync(params int[])
+  nameWithType.vb: Scenes.UnloadScenesAsync(ParamArray Integer())
+- uid: UnityEngine.SceneSystem.Scenes.UnloadScenesAsync(System.String[])
+  name: UnloadScenesAsync(params string[])
+  href: api/UnityEngine.SceneSystem.Scenes.html#UnityEngine_SceneSystem_Scenes_UnloadScenesAsync_System_String___
+  commentId: M:UnityEngine.SceneSystem.Scenes.UnloadScenesAsync(System.String[])
+  name.vb: UnloadScenesAsync(ParamArray String())
+  fullName: UnityEngine.SceneSystem.Scenes.UnloadScenesAsync(params string[])
+  fullName.vb: UnityEngine.SceneSystem.Scenes.UnloadScenesAsync(ParamArray String())
+  nameWithType: Scenes.UnloadScenesAsync(params string[])
+  nameWithType.vb: Scenes.UnloadScenesAsync(ParamArray String())
+- uid: UnityEngine.SceneSystem.Scenes.UnloadScenesAsync(UnityEngine.SceneReference[])
+  name: UnloadScenesAsync(params SceneReference[])
+  href: api/UnityEngine.SceneSystem.Scenes.html#UnityEngine_SceneSystem_Scenes_UnloadScenesAsync_UnityEngine_SceneReference___
+  commentId: M:UnityEngine.SceneSystem.Scenes.UnloadScenesAsync(UnityEngine.SceneReference[])
+  name.vb: UnloadScenesAsync(ParamArray SceneReference())
+  fullName: UnityEngine.SceneSystem.Scenes.UnloadScenesAsync(params UnityEngine.SceneReference[])
+  fullName.vb: UnityEngine.SceneSystem.Scenes.UnloadScenesAsync(ParamArray UnityEngine.SceneReference())
+  nameWithType: Scenes.UnloadScenesAsync(params SceneReference[])
+  nameWithType.vb: Scenes.UnloadScenesAsync(ParamArray SceneReference())
+- uid: UnityEngine.SceneSystem.Scenes.UnloadScenesAsync*
+  name: UnloadScenesAsync
+  href: api/UnityEngine.SceneSystem.Scenes.html#UnityEngine_SceneSystem_Scenes_UnloadScenesAsync_
+  commentId: Overload:UnityEngine.SceneSystem.Scenes.UnloadScenesAsync
+  fullName: UnityEngine.SceneSystem.Scenes.UnloadScenesAsync
+  nameWithType: Scenes.UnloadScenesAsync
+- uid: UnityEngine.SceneSystem.WithLoadingScreenExtensions
+  name: WithLoadingScreenExtensions
+  href: api/UnityEngine.SceneSystem.WithLoadingScreenExtensions.html
+  commentId: T:UnityEngine.SceneSystem.WithLoadingScreenExtensions
+  fullName: UnityEngine.SceneSystem.WithLoadingScreenExtensions
+  nameWithType: WithLoadingScreenExtensions
+- uid: UnityEngine.SceneSystem.WithLoadingScreenExtensions.WithLoadingScreen(UnityEngine.SceneSystem.LoadSceneOperationHandle,UnityEngine.SceneSystem.SceneLoader)
+  name: WithLoadingScreen(LoadSceneOperationHandle, SceneLoader)
+  href: api/UnityEngine.SceneSystem.WithLoadingScreenExtensions.html#UnityEngine_SceneSystem_WithLoadingScreenExtensions_WithLoadingScreen_UnityEngine_SceneSystem_LoadSceneOperationHandle_UnityEngine_SceneSystem_SceneLoader_
+  commentId: M:UnityEngine.SceneSystem.WithLoadingScreenExtensions.WithLoadingScreen(UnityEngine.SceneSystem.LoadSceneOperationHandle,UnityEngine.SceneSystem.SceneLoader)
+  fullName: UnityEngine.SceneSystem.WithLoadingScreenExtensions.WithLoadingScreen(UnityEngine.SceneSystem.LoadSceneOperationHandle, UnityEngine.SceneSystem.SceneLoader)
+  nameWithType: WithLoadingScreenExtensions.WithLoadingScreen(LoadSceneOperationHandle, SceneLoader)
+- uid: UnityEngine.SceneSystem.WithLoadingScreenExtensions.WithLoadingScreen*
+  name: WithLoadingScreen
+  href: api/UnityEngine.SceneSystem.WithLoadingScreenExtensions.html#UnityEngine_SceneSystem_WithLoadingScreenExtensions_WithLoadingScreen_
+  commentId: Overload:UnityEngine.SceneSystem.WithLoadingScreenExtensions.WithLoadingScreen
+  fullName: UnityEngine.SceneSystem.WithLoadingScreenExtensions.WithLoadingScreen
+  nameWithType: WithLoadingScreenExtensions.WithLoadingScreen

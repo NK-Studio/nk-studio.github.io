@@ -1,6 +1,6 @@
 {
   "homepages": [],
-  "source_base_path": "/Users/nkstudio/Desktop/SceneSystem-Document/en",
+  "source_base_path": "/Users/nkstudio/Desktop/SceneSystem-Document/en/1.0.0",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -13,12 +13,276 @@
       "is_incremental": false
     },
     {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEditor.SceneSystem.SceneLoaderInspector.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEditor.SceneSystem.SceneLoaderInspector.html",
+          "hash": "yIZL7tMarqlkuqWDUU3R/xUV9GNT9OTHoIC1uJEhYXc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEditor.SceneSystem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEditor.SceneSystem.html",
+          "hash": "nsj4xLZgUPhL8Ljo7JXef1gB7Dj5SKeVoDHIbqIqWrg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.SceneSystem.ILoadSceneCallbackReceiver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.SceneSystem.ILoadSceneCallbackReceiver.html",
+          "hash": "zNxYRZMm10HxTsMsLOwert6eC+vLRu6pGId89wSMiuI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.SceneSystem.ISceneContainerCallbackReceiver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.SceneSystem.ISceneContainerCallbackReceiver.html",
+          "hash": "QoS7jHL4q6y7R8ss3xkQy7c4xXXS9w3zC33hsqrHxK0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.SceneSystem.ISceneHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.SceneSystem.ISceneHandler.html",
+          "hash": "x+57oPrEh8LHlwFDc7X8oKZrPkQ1kQ9mJUBys8C3K1M="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.SceneSystem.LoadMultiSceneMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.SceneSystem.LoadMultiSceneMode.html",
+          "hash": "qAfMQsDOXWp1jeFII1zvKu7eHBef2zpQrTcC+ejjn6Q="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.SceneSystem.LoadSceneOperationHandle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.SceneSystem.LoadSceneOperationHandle.html",
+          "hash": "G18ZWCe+2GyRkp/cC/cZMUoXdQRkBTJvBSJjI+F9Flc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.SceneSystem.LoadSceneOperationHandleExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.SceneSystem.LoadSceneOperationHandleExtensions.html",
+          "hash": "ucX4HyUNEK4keqzDrrNjebE1HK/STr7HDBEk5Nm9sMo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.SceneSystem.LoadSceneOperations.CompletedLoadSceneOperation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.SceneSystem.LoadSceneOperations.CompletedLoadSceneOperation.html",
+          "hash": "/yO0a9fx+NMwgdqNRhDmqs6tbcQXfI2Cb4+NuLQDEJ8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.SceneSystem.LoadSceneOperations.ConcatLoadSceneOperation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.SceneSystem.LoadSceneOperations.ConcatLoadSceneOperation.html",
+          "hash": "i1J57gYIF+h46XjACnAZZ0K9FhMl17eQ7dgGhm3m3e8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperation.html",
+          "hash": "hRP5gJD0mDXo+q4gVs0Oabjq1S+yJMFONxeH902+TZI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperationBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.SceneSystem.LoadSceneOperations.LoadSceneOperationBase.html",
+          "hash": "4GS2ua1DgzmwEodpskR/VijwSRXiqjF59HVLWvxczgk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.SceneSystem.LoadSceneOperations.MergeLoadSceneOperation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.SceneSystem.LoadSceneOperations.MergeLoadSceneOperation.html",
+          "hash": "MquypkY/bHffOvK2lKNGBA9yPD5qB4FKtuAFBTPqIoQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.SceneSystem.LoadSceneOperations.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.SceneSystem.LoadSceneOperations.html",
+          "hash": "X+yK+aT2QuG9ze3gvYRmNHULA+P5PCBF384pMW4CD4Q="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.SceneSystem.LoadingActionSkipMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.SceneSystem.LoadingActionSkipMode.html",
+          "hash": "3b9mG1qonNCTo+Xi4L7ooOH6BODnTrJ3Mh8FxwDYCDk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.SceneSystem.SceneContainer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.SceneSystem.SceneContainer.html",
+          "hash": "gGll0sGP+KJEG/A4ndymfAgLIjdNLwZuQA9o+tAu/Hg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.SceneSystem.SceneHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.SceneSystem.SceneHandler.html",
+          "hash": "nJ+A1P4aoc3xz4D8KmA3N+oM51Tm3fIfsoKMpRSEjzA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.SceneSystem.SceneLoader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.SceneSystem.SceneLoader.html",
+          "hash": "hIZmeqn9MnxRITkjlH50YmaD5xHt1FTHogLys+UYy7M="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.SceneSystem.Scenes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.SceneSystem.Scenes.html",
+          "hash": "Mc/xHzqpyzmxQbXNY5Bfyo5NFujI+TlSlHKjuvtzmcg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.SceneSystem.WithLoadingScreenExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.SceneSystem.WithLoadingScreenExtensions.html",
+          "hash": "ZtM+hZcrx838vjp0vuOqYo/y+bq0tKRYQK2bAriGLQc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.SceneSystem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.SceneSystem.html",
+          "hash": "xy1jjVtTpiDZGIQH/68SAzS4V7Kh/7D6PLWwu+t2zDs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "api/index.md",
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "H7DhrSgIvmNiNtmLAYv8X2GU7MtOKzFFVV1C7qyVrh8="
+          "hash": "btJteGHvpP/Dx0DSyrFRbESa+Q6/eOwBDWPOaBLMkl0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "XklfBVniGzO0z9wBlmVf/vXFv2gIJR3m3xN4wl/uWU4="
         }
       },
       "is_incremental": false,
@@ -30,7 +294,7 @@
       "output": {
         ".html": {
           "relative_path": "changelog/CHANGELOG.html",
-          "hash": "scHrvqkAF1WmZ8DXldwW8LbzwZfE3CNHaMp/j0dmGvc="
+          "hash": "5ncK23PWlc6qr8AjWFbD6Nev2HeIbaVmAoBGtWZ8dWY="
         }
       },
       "is_incremental": false,
@@ -72,6 +336,28 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/img10.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/img10.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/img11.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/img11.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/img2.png",
       "output": {
         "resource": {
@@ -87,6 +373,72 @@
       "output": {
         "resource": {
           "relative_path": "images/img3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/img4.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/img4.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/img5.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/img5.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/img6.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/img6.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/img7.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/img7.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/img8.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/img8.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/img9.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/img9.png"
         }
       },
       "is_incremental": false,
@@ -131,7 +483,7 @@
       "output": {
         ".html": {
           "relative_path": "license/License.html",
-          "hash": "wwKP3ziaYf/gMRdEF2FKihN7KqauU8usdMh0biFpTpo="
+          "hash": "cFPFIuHPPhBA2zRGC/Qt45cKkdu5JJzOzB0EPLDtdLU="
         }
       },
       "is_incremental": false,
@@ -151,11 +503,23 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "manual/Events.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/Events.html",
+          "hash": "o+Fnz5zv/YtSZR/K+sojCNyO0h0EEf5Gc5Y4e3zfItQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "manual/GettingStarted.md",
       "output": {
         ".html": {
           "relative_path": "manual/GettingStarted.html",
-          "hash": "SP9LNH1stpVi2Jg/R4OL2V2j3LGt1pbBxT16EepeZ4s="
+          "hash": "Aodmd+b9oCPBtp48Uktk6oEaDYcGy39jauSrmqlQrZM="
         }
       },
       "is_incremental": false,
@@ -167,7 +531,19 @@
       "output": {
         ".html": {
           "relative_path": "manual/Installation.html",
-          "hash": "lom8mJcQ0EoSr4lBZSflBpEQLRGBI19H+8ynhNiIVEw="
+          "hash": "nGzTrWZTNCpEa5KuPcunBOzWCCiZNcGNRtltkWJjhs8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/LoadSceneOperationHandle.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/LoadSceneOperationHandle.html",
+          "hash": "udSuNBmgBrYnvUgYaq6D+j6YRc3g1frdSbQuI167tCY="
         }
       },
       "is_incremental": false,
@@ -179,7 +555,91 @@
       "output": {
         ".html": {
           "relative_path": "manual/Requirements.html",
-          "hash": "CBY9SflpAwYwwy/k70+daDzIZo9vsdbnkbgX1Qm8Ia0="
+          "hash": "i78S63Tm70IO5jm9JIIuQIkMiSEspajn2QDbscIKoe8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/Sample.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/Sample.html",
+          "hash": "n/Y6AJfVbQIZ4bfjhrN1Y9vgfXtYpc8I9rjv1eZS5p8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/SceneContainer.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/SceneContainer.html",
+          "hash": "SHbP5MVz9E6tYcOrDukEgUoT99Gh1LFoVH0/wTRcUyY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/SceneLoader.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/SceneLoader.html",
+          "hash": "+7+w6RkGLO4lNQDdo/s9b8DjkGC4qyRYAnUTBu8tg8U="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/SceneReference.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/SceneReference.html",
+          "hash": "DjT0eXNk2hcmFkA+qasjfXn0B0t2LCkfwz0esebpTus="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/SceneSystemAndUniRx.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/SceneSystemAndUniRx.html",
+          "hash": "TPJrK1sjpO6wbDi2NkRNNWGNogn1HsNVWNpzk7rFc3g="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/SceneSystemAndUniTask.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/SceneSystemAndUniTask.html",
+          "hash": "VT0qxzITKN+oDCHVklySQII0KjbZ0hmjDBlzFOILREg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/Scenes.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/Scenes.html",
+          "hash": "QUm1DFkmzXHzpoYZvb9H4x/fyz4slel8TGdU2ckgoXU="
         }
       },
       "is_incremental": false,
@@ -191,7 +651,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/index.html",
-          "hash": "YnU+iACA5/gvfJgNcWlWKXJ5a1UFFEeF9CzmUqUeNhA="
+          "hash": "ay/C1Yzj8UmEDvI4qq8XYw8KMfMsVQXLfrOP6iHOBDo="
         }
       },
       "is_incremental": false,
@@ -203,7 +663,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/toc.html",
-          "hash": "9gWlahi+rG88onH+0M4xwr5Cqn/IwvuubfasOHHfWqk="
+          "hash": "bU7UaYpH2k6ScSR7xYcqMTOhT4OFJezvAQUPWxkqCTI="
         }
       },
       "is_incremental": false,
@@ -215,7 +675,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "SXRaDju4JQKu4GZEXT6i3wEyrpcGpPwLLSXIGGkTEqw="
+          "hash": "ABhcEDpViDs0p/YefTP9Ue2y9H7o1zwJT4xNGMwBmpc="
         }
       },
       "is_incremental": false,
@@ -236,7 +696,13 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 7,
+          "total_file_count": 16,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 21,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

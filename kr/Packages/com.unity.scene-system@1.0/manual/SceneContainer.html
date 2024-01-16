@@ -1,0 +1,187 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <script type="text/javascript">thisPackageMetaData = { name: "com.unity.scene-system", version: "1.0.0", displayTitle:"Scene System", lang: "kr" };</script>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Scene Container | Scene System </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Scene Container | Scene System ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <link rel="stylesheet" href="../styles/version-switcher.css">
+      <link rel="stylesheet" href="../styles/language-switcher.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../manual/index.html">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="">
+              </a>            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+            <div class="container hide-when-search" id="breadcrumb">
+                <!-- Unity Customization: Remove content of breadcrumb bar. This space is used for version and language switchers
+                            <ul class="breadcrumb">
+                              <li></li>
+                            </ul>
+                            -->
+            </div>
+        </div>      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+        <div id="unity_breadcrumb_placeholder">
+            <ul class="breadcrumb">
+            <li></li>
+            </ul>
+        </div>
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="scene-container">Scene Container</h1>
+
+<img src="../images/img10.png" style="display: block; margin: auto;">
+<br>
+<p>Unity에서 여러 씬을 사용하는 프로젝트 구조를 채택하는 경우 어떤 방식으로든 여러 씬의 전환을 구현해야 합니다.<br>
+Scene System은 이러한 복잡한 씬 전환을 수행하기 위한 함수로 <code>SceneContainer</code> 클래스를 제공합니다.<br>
+<strong>Push &amp; Pop</strong>을 지원하며 <strong>스택</strong>에 쌓아서 동작합니다.</p>
+<h1 id="컨테이너-생성">컨테이너 생성</h1>
+<pre><code class="lang-cs">// 컨테이너를 생성합니다.
+var container = SceneContainer.Create();
+</code></pre>
+<p><code>SceneContainer</code>를 사용하는 경우 먼저 <code>SceneContainer.Create()</code>를 사용하여 새 컨테이너를 만듭니다.
+<br>
+<br></p>
+<pre><code class="lang-cs">// 씬과 관련된 키를 첫 번째 인수에 전달하고 씬 이름 또는 씬 buildIndex를 두 번째 인수에 전달합니다.
+container.Register(&quot;Page1&quot;, &quot;Sample1A&quot;);
+container.Register(&quot;Page1&quot;, &quot;Sample1B&quot;);
+
+container.Register(&quot;Page2&quot;, &quot;Sample2&quot;);
+</code></pre>
+<p><code>Register</code> 메소드를 사용하여 런타임 시 로드/언로드할 씬을 등록합니다. (로드 될때 Additive 방식으로 로드됩니다.)
+<br>
+<br></p>
+<pre><code class="lang-cs">// 씬 이름 또는 씬 buildIndex를 인수로 전달합니다.
+container.RegisterPermanent(&quot;Permanent1&quot;);
+container.RegisterPermanent(&quot;Permanent2&quot;);
+</code></pre>
+<p>RegisterPermanent 메서드를 사용하여 런타임 시 영구적으로 존재하는 장면을 등록합니다.
+<br>
+<br></p>
+<pre><code class="lang-cs">// 컨테이너를 빌드
+var handle = container.Build();
+
+// 완료를 기다립니다.
+yield return handle.ToYieldInteraction();
+</code></pre>
+<p>마지막으로 <strong>Build 메서드를 호출</strong>합니다.<br>
+이 메서드를 호출하면 컨테이너가 활성화되는 동시에 RegisterPermanent에 등록된 <strong>씬이 Additive 방식으로 로드</strong>됩니다.<br>
+이 프로세스는 기본적으로 비동기식이며 일반적인 씬 로드와 동일한 동기 방식으로 기다릴 수 있습니다.</p>
+<h1 id="컨테이너를-사용한-씬-전환">컨테이너를 사용한 씬 전환</h1>
+<pre><code class="lang-cs">// 등록된 키와 관련된 모든 씬을 로드합니다.
+var handle = container.Push(&quot;Page1&quot;);
+yield return handle.ToYieldInteraction();
+
+// 이전 씬으로 돌아가기
+handle = container.Pop();
+yield return handle.ToYieldInteraction();
+</code></pre>
+<p><code>Scene Container</code>를 사용하여 씬 전환을 수행하려면 Push 메서드를 사용하세요. (Additive 방식으로 씬을 로드합니다.)<br>
+씬이 히스토리에 누적되며, <code>Pop()</code> 메소드를 호출하면 이전 씬으로 돌아갈 수 있습니다.
+<br>
+<br></p>
+<pre><code class="lang-cs">var handle = container.ClearStack();
+</code></pre>
+<p><code>ClearStack</code> 메서드를 호출하면 히스토리를 리셋하고 <code>Push()</code> 로 로드한 모든 씬을 언로드할 수 있습니다.
+<br>
+<br></p>
+<pre><code class="lang-cs">var handle = container.Release();
+</code></pre>
+<p>또한 <code>Release()</code>를 호출하여 컨테이너를 삭제하고, RegisterPermanent(영구 씬)으로 등록한 씬을 포함한 모든 씬을 언로드할 수도 있습니다.</p>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/NK-Studio/SceneSystem-Document/blob/main/kr/1.0.0/manual/SceneContainer.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      <span>Copyright © 2024 NK Studio<br>Generated by <strong>DocFX</strong> on 6 January 2024 </span>
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../styles/version-switcher.js"></script>
+    <script type="text/javascript" src="../styles/language-switcher.js"></script>
+    <script type="text/javascript" src="../styles/metadata-collector.js"></script>  </body>
+</html>

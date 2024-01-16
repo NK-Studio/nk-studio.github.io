@@ -1,0 +1,176 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <script type="text/javascript">thisPackageMetaData = { name: "com.unity.scene-system", version: "1.0.0", displayTitle:"Scene System", lang: "en" };</script>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>LoadScene Operation Handle | Scene System </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="LoadScene Operation Handle | Scene System ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <link rel="stylesheet" href="../styles/version-switcher.css">
+      <link rel="stylesheet" href="../styles/language-switcher.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../manual/index.html">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="">
+              </a>            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+            <div class="container hide-when-search" id="breadcrumb">
+                <!-- Unity Customization: Remove content of breadcrumb bar. This space is used for version and language switchers
+                            <ul class="breadcrumb">
+                              <li></li>
+                            </ul>
+                            -->
+            </div>
+        </div>      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+        <div id="unity_breadcrumb_placeholder">
+            <ul class="breadcrumb">
+            <li></li>
+            </ul>
+        </div>
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="loadscene-operation-handle">LoadScene Operation Handle</h1>
+
+<p>All asynchronous methods in the Scene System have a structure called LoadScene Operation Handle as a return value.
+By using LoadScene Operation Handle, it is possible to wait for transitions, enable scenes, etc.</p>
+<h2 id="wait-for-the-process-to-complete">Wait for the process to complete</h2>
+<p>Use onCompleted to wait for the completion of processing in a callback.</p>
+<pre><code class="lang-cs">var handle = Scenes.LoadSceneAsync(&quot;SceneName&quot;);
+handle.onCompleted += () =&gt;
+{
+     Debug.Log(&quot;completed&quot;);
+};
+</code></pre>
+<p>To wait in a coroutine, use the ToYieldInteraction method.</p>
+<pre><code class="lang-cs">var handle = Scenes.LoadSceneAsync(&quot;SceneName&quot;);
+yield return handle.ToYieldInteraction();
+</code></pre>
+<p>To wait with async/await, use the ToTask method.</p>
+<pre><code class="lang-cs">var handle = Scenes.LoadSceneAsync(&quot;SceneName&quot;);
+await handle.ToTask();
+</code></pre>
+<h2 id="get-progress">Get Progress</h2>
+<p>It is also possible to get the progress from the 'LoadScene Operation Handle'.</p>
+<pre><code class="lang-cs">var handle = Scenes.LoadSceneAsync(&quot;SceneName&quot;);
+
+// get the progress as a float between 0 and 1
+var progress = handle.Progress;
+
+// get if completed
+var isDone = handle.IsDone;
+</code></pre>
+<h2 id="activate-scene">Activate Scene</h2>
+<p>By using the <code>AllowSceneActivation()</code> method, it is possible to adjust the timing of scene loading completion.
+Here is an example of using Allow Scene Activation inside a coroutine.</p>
+<pre><code class="lang-cs">var handle = Scenes.LoadSceneAsync(&quot;SceneName&quot;);
+
+// set allowSceneActivation to false
+handle.AllowSceneActivation(false);
+
+// wait until progress reaches 0.9 (loading is complete)
+yield return new WaitWhile(() =&gt; handle.Progress &lt; 0.9f);
+
+// set allowSceneActivation to true
+handle.AllowSceneActivation(true);
+
+// wait until the scene is activated
+yield return handle.ToYieldInteraction();
+</code></pre>
+<p>Regarding the behavior of <code>Progress</code> and <code>IsDone</code> values when <code>AllowSceneActivation</code> is set to false, it conforms to Unity's <code>AllowSceneActivation</code>.
+<a href="https://docs.unity3d.com/2019.4/Documentation/ScriptReference/AsyncOperation-allowSceneActivation.html">https://docs.unity3d.com/2019.4/Documentation/ScriptReference/AsyncOperation-allowSceneActivation.html</a></p>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/NK-Studio/SceneSystem-Document/blob/main/en/1.0.0/manual/LoadSceneOperationHandle.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      <span>Copyright © 2024 NK Studio<br>Generated by <strong>DocFX</strong> on 6 January 2024 </span>
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../styles/version-switcher.js"></script>
+    <script type="text/javascript" src="../styles/language-switcher.js"></script>
+    <script type="text/javascript" src="../styles/metadata-collector.js"></script>  </body>
+</html>

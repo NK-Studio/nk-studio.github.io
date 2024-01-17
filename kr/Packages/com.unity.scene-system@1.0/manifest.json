@@ -551,18 +551,6 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "manual/Requirements.md",
-      "output": {
-        ".html": {
-          "relative_path": "manual/Requirements.html",
-          "hash": "Lxu7zT2K56Me5PKMaQJYYiOhOYY/h9Pmu7JnzGyzgG8="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "manual/Sample.md",
       "output": {
         ".html": {
@@ -603,7 +591,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/SceneReference.html",
-          "hash": "5gG/HB8ZvjZKTdfgt5/taL2Dg3upcpWQVE7ECaJUFWQ="
+          "hash": "+LMY3UmVFeK3qg5kEXA1D6xy4EurCVJaUC6TVnJWwPQ="
         }
       },
       "is_incremental": false,
@@ -651,7 +639,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/index.html",
-          "hash": "XVBxuK740cG7WFYGe1hnY31qtS5eu0wklxplDORZmpQ="
+          "hash": "Q7I4hysQwT7uuHfcJoBBKq99xyOAjN+TPu427LyGmZE="
         }
       },
       "is_incremental": false,
@@ -663,7 +651,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/toc.html",
-          "hash": "kBx3nChmSGN5aVDAOz972txqLfDA52bYsJUbfMPv6nQ="
+          "hash": "51JNzqhqAPCyFFz26WA12EwM9ZfyEvWQ4hkbzmJrwiE="
         }
       },
       "is_incremental": false,
@@ -701,17 +689,17 @@
     {
       "status": {
         "can_incremental": false,
-        "details": "Cannot build incrementally because last build info is missing.",
+        "details": "Cannot build incrementally because config changed.",
         "incrementalPhase": "build",
         "total_file_count": 0,
         "skipped_file_count": 0,
-        "full_build_reason_code": "NoAvailableBuildCache"
+        "full_build_reason_code": "ConfigChanged"
       },
       "processors": {
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 17,
+          "total_file_count": 16,
           "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {

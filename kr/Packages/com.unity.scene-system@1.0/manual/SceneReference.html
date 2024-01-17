@@ -85,25 +85,41 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="scene-reference">Scene Reference</h1>
 
-<p><code>Scene Reference</code>를 사용하면 <strong>Inspector에서 Scene 에셋을 사용하는 것이 가능</strong>해집니다.</p>
-<p>
-<img src="../images/img1.png" style="display: block; margin: auto; width: 650px;">
-</p>
+<p><img src="../images/img5.png" alt="img5.png"></p>
+<p>Scene System은 <code>Scene Reference</code>를 지원합니다.</p>
+<p>Scene System은 Scene Reference를 설치하는 두 가지 방법을 제공합니다.</p>
+<ul>
+<li>Scene System Wizard를 이용한 설치</li>
+<li>Git UPM을 사용하여 설치</li>
+</ul>
+<h2 id="scene-system-wizard를-이용한-설치">Scene System Wizard를 이용한 설치</h2>
+<p><img src="../images/img4.png" alt="img4.png"></p>
+<p>유니티 상단에 Tools &gt; Scene System &gt; Scene System Wizard.</p>
+<p>Scene System Wizard를 사용하면 Scene System과 함께 Scene Reference도 설치할 수 있습니다.</p>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>내부에서 Git UPM을 사용하여 설치하므로 Git이 필요합니다.</p>
+</div>
+<h2 id="git-upm을-사용하여-설치">Git UPM을 사용하여 설치</h2>
+<pre><code>https://github.com/NK-Studio/SceneReference.git#UPM
+</code></pre>
+<p>유니티 상단에 Window &gt; Package Manager &gt; + &gt; Add package from git URL...<br>
+입력창에 위 주소를 입력하고 추가 버튼을 클릭하면 설치가 완료됩니다.</p>
 <h2 id="예제-코드">예제 코드</h2>
 <pre><code class="lang-cs">using UnityEngine;
 using UnityEngine.SceneSystem;
 
-public class SceneReferenceExample : MonoBehaviour
+public class Example : MonoBehaviour
 {
-    public SceneReference sceneReference;
+    public SceneReference nextScene;
 
-    void Load()
+    private void Start()
     {
-        // can be used as an argument for LoadScene
-        Scenes.LoadScene(sceneReference);
-
-        // get scene asset file path from assetPath
-        Debug.Log(sceneReference.assetPath);
+        // 씬을 로드합니다.
+        Scenes.LoadSceneAsync(nextScene);
+        
+        // 씬 레퍼런스의 경로를 가져옵니다.
+        Debug.Log(nextScene.Path);
     }
 }
 </code></pre>

@@ -85,25 +85,41 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="scene-reference">Scene Reference</h1>
 
-<p>By using SceneReference, it becomes possible to <strong>edit Scene assets on the Inspector</strong>.</p>
-<p>
-<img src="../images/img1.png" style="display: block; margin: auto; width: 650px;">
-</p>
+<p><img src="../images/img5.png" alt="img5.png"></p>
+<p>The Scene System supports <code>Scene Reference</code>.</p>
+<p>The Scene System provides two ways to install a Scene Reference:</p>
+<ul>
+<li>Installation using the Scene System Wizard</li>
+<li>Installation using Git UPM</li>
+</ul>
+<h2 id="installation-using-the-scene-system-wizard">Installation using the Scene System Wizard</h2>
+<p><img src="../images/img4.png" alt="img4.png"></p>
+<p>Open Tools &gt; Scene System &gt; Scene System Wizard.</p>
+<p>Using the Scene System Wizard, you can install the Scene Reference along with the Scene System.</p>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>The internal implementation uses Git UPM for installation, so Git is required.</p>
+</div>
+<h2 id="installation-using-git-upm">Installation using Git UPM</h2>
+<pre><code>https://github.com/NK-Studio/SceneReference.git#UPM
+</code></pre>
+<p>Open Window &gt; Package Manager &gt; + &gt; Add package from git URL...<br>
+Enter the above address in the input box and click the Add button to complete the installation.</p>
 <h2 id="example-code">Example Code</h2>
 <pre><code class="lang-cs">using UnityEngine;
 using UnityEngine.SceneSystem;
 
-public class SceneReferenceExample : MonoBehaviour
+public class Example : MonoBehaviour
 {
-    public SceneReference sceneReference;
+    public SceneReference nextScene;
 
-    void Load()
+    private void Start()
     {
-        // can be used as an argument for LoadScene
-        Scenes.LoadScene(sceneReference);
-
-        // get scene asset file path from assetPath
-        Debug.Log(sceneReference.assetPath);
+        // Load the scene.
+        Scenes.LoadSceneAsync(nextScene);
+        
+        // Get the path of the scene.
+        Debug.Log(nextScene.Path);
     }
 }
 </code></pre>

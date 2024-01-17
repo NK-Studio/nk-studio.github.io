@@ -132,7 +132,7 @@
   "manual/index.html": {
     "href": "manual/index.html",
     "title": "Scene System | Scene System",
-    "keywords": "Scene System 소개 Scene System은 Unity에서의 씬 관리에 관련된 함수를 제공하는 라이브러리입니다. 이 라이브러리에는 씬을 불러오는 API와 에디터에서 씬 설정을 가능하게 하는 기능이 포함되어 있습니다. 특징 Scene Manager를 확장하는 다기능 장면 관리를 위한 API 인스펙터에서 장면 참조를 설정할 수 있는 SceneReference 추가 로딩 화면의 쉬운 구현을 위한 Scene Loader 컴포넌트 효율적인 다중 씬 관리를 위한 SceneContainer 코루틴과 async/await 지원 UniRx/UniTask 지원"
+    "keywords": "Scene System 소개 Scene System은 Unity에서의 씬 관리에 관련된 함수를 제공하는 라이브러리입니다. 이 라이브러리에는 씬을 불러오는 API와 에디터에서 씬 설정을 가능하게 하는 기능이 포함되어 있습니다. 특징 Scene Manager를 확장하는 다기능 씬 관리를 위한 API 인스펙터에서 씬 에셋을 참조할 수 있는 SceneReference 추가 로딩 화면을 쉽게 구현할 수 있는 Scene Loader 컴포넌트 제공i> 효율적인 다중 씬 관리를 위한 Scene Container 제공 코루틴과 async/await 지원 UniRx/UniTask 지원"
   },
   "manual/Installation.html": {
     "href": "manual/Installation.html",
@@ -143,11 +143,6 @@
     "href": "manual/LoadSceneOperationHandle.html",
     "title": "LoadScene Operation Handle | Scene System",
     "keywords": "LoadScene Operation Handle Scene System의 모든 비동기 메서드에는 반환 값으로 LoadScene Operation Handle이라는 구조가 있습니다. LoadScene Operation Handle을 사용하면 전환 대기, 씬 활성화 등이 가능합니다. 프로세스가 완료될 때까지 기다리기 콜백 처리가 완료될 때까지 기다리려면 onCompleted를 사용하세요. var handle = Scenes.LoadSceneAsync(\"SceneName\"); handle.onCompleted += () => { Debug.Log(\"completed\"); }; 코루틴에서 기다리려면 ToYieldInteraction 메서드를 사용하세요. var handle = Scenes.LoadSceneAsync(\"SceneName\"); yield return handle.ToYieldInteraction(); async/await로 기다리려면 ToTask 메서드를 사용하세요. var handle = Scenes.LoadSceneAsync(\"SceneName\"); await handle.ToTask(); 진행도 가져오기 'LoadScene Operation Handle' 에서 진행 상황을 가져오는 것도 가능합니다. var handle = Scenes.LoadSceneAsync(\"SceneName\"); // 진행 상황을 0과 1 사이의 부동 소수점으로 가져옵니다. var progress = handle.Progress; // 완료되면 받기 var isDone = handle.IsDone; 씬 활성화 AllowSceneActivation() 메서드를 사용하면 씬 로딩 완료 시점을 조정할 수 있습니다. 다음은 코루틴 내에서 Allow Scene Activation을 사용하는 예입니다. var handle = Scenes.LoadSceneAsync(\"SceneName\"); // AllowSceneActivation을 false로 설정 handle.AllowSceneActivation(false); // 진행률이 0.9에 도달할 때까지 기다립니다(로딩이 완료됨). yield return new WaitWhile(() => handle.Progress < 0.9f); // AllowSceneActivation을 true로 설정 handle.AllowSceneActivation(true); // 장면이 활성화될 때까지 기다리세요 yield return handle.ToYieldInteraction(); AllowSceneActivation이 false로 설정된 경우 Progress 및 IsDone 값의 동작은 Unity의 AllowSceneActivation을 따릅니다. https://docs.unity3d.com/2019.4/Documentation/ScriptReference/AsyncOperation-allowSceneActivation.html"
-  },
-  "manual/Requirements.html": {
-    "href": "manual/Requirements.html",
-    "title": "요구 사항 | Scene System",
-    "keywords": "요구 사항 Scene System에는 Scene Reference 가 필요합니다. Scene System은 Scene Reference를 설치하는 두 가지 방법을 제공합니다. Scene System Wizard를 이용한 설치 Git UPM을 사용하여 설치 Scene System Wizard를 이용한 설치 유니티 상단에 Tools > Scene System > Scene System Wizard. Scene System Wizard를 사용하면 Scene System과 함께 Scene Reference도 설치할 수 있습니다. Warning 내부에서 Git UPM을 사용하여 설치하므로 Git이 필요합니다. Git UPM을 사용하여 설치 https://github.com/NK-Studio/SceneReference.git#UPM 유니티 상단에 Window > Package Manager > + > Add package from git URL... 입력창에 위 주소를 입력하고 추가 버튼을 클릭하면 설치가 완료됩니다."
   },
   "manual/Sample.html": {
     "href": "manual/Sample.html",
@@ -167,7 +162,7 @@
   "manual/SceneReference.html": {
     "href": "manual/SceneReference.html",
     "title": "Scene Reference | Scene System",
-    "keywords": "Scene Reference Scene Reference를 사용하면 Inspector에서 Scene 에셋을 사용하는 것이 가능해집니다. 예제 코드 using UnityEngine; using UnityEngine.SceneSystem; public class SceneReferenceExample : MonoBehaviour { public SceneReference sceneReference; void Load() { // can be used as an argument for LoadScene Scenes.LoadScene(sceneReference); // get scene asset file path from assetPath Debug.Log(sceneReference.assetPath); } }"
+    "keywords": "Scene Reference Scene System은 Scene Reference를 지원합니다. Scene System은 Scene Reference를 설치하는 두 가지 방법을 제공합니다. Scene System Wizard를 이용한 설치 Git UPM을 사용하여 설치 Scene System Wizard를 이용한 설치 유니티 상단에 Tools > Scene System > Scene System Wizard. Scene System Wizard를 사용하면 Scene System과 함께 Scene Reference도 설치할 수 있습니다. Warning 내부에서 Git UPM을 사용하여 설치하므로 Git이 필요합니다. Git UPM을 사용하여 설치 https://github.com/NK-Studio/SceneReference.git#UPM 유니티 상단에 Window > Package Manager > + > Add package from git URL... 입력창에 위 주소를 입력하고 추가 버튼을 클릭하면 설치가 완료됩니다. 예제 코드 using UnityEngine; using UnityEngine.SceneSystem; public class Example : MonoBehaviour { public SceneReference nextScene; private void Start() { // 씬을 로드합니다. Scenes.LoadSceneAsync(nextScene); // 씬 레퍼런스의 경로를 가져옵니다. Debug.Log(nextScene.Path); } }"
   },
   "manual/Scenes.html": {
     "href": "manual/Scenes.html",

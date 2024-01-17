@@ -132,7 +132,7 @@
   "manual/index.html": {
     "href": "manual/index.html",
     "title": "Scene System | Scene System",
-    "keywords": "Scene System 소개 Scene System은 Unity에서의 씬 관리에 관련된 함수를 제공하는 라이브러리입니다. 이 라이브러리에는 씬을 불러오는 API와 에디터에서 씬 설정을 가능하게 하는 기능이 포함되어 있습니다. 특징 Scene Manager를 확장하는 다기능 씬 관리를 위한 API 인스펙터에서 씬 에셋을 참조할 수 있는 SceneReference 추가 로딩 화면을 쉽게 구현할 수 있는 Scene Loader 컴포넌트 제공i> 효율적인 다중 씬 관리를 위한 Scene Container 제공 코루틴과 async/await 지원 UniRx/UniTask 지원"
+    "keywords": "Scene System 소개 Scene System은 Unity에서의 씬 관리에 관련된 함수를 제공하는 라이브러리입니다. 이 라이브러리에는 씬을 불러오는 API와 에디터에서 씬 설정을 가능하게 하는 기능이 포함되어 있습니다. 특징 Scene Manager를 확장하는 다기능 씬 관리를 위한 API 인스펙터에서 씬 에셋을 참조할 수 있는 SceneReference 추가 로딩 화면을 쉽게 구현할 수 있는 Scene Loader 컴포넌트 제공 효율적인 다중 씬 관리를 위한 Scene Container 제공 코루틴과 async/await 지원 UniRx/UniTask 지원"
   },
   "manual/Installation.html": {
     "href": "manual/Installation.html",

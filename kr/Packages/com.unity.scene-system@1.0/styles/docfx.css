@@ -1,9 +1,9 @@
 /* Copyright (c) Microsoft Corporation. All Rights Reserved. Licensed under the MIT License. See License.txt in the project root for license information. */
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i&display=swap');
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
 
 html,
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Pretendard', sans-serif;
   height: 100%;
 }
 button,

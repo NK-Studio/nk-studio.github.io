@@ -591,7 +591,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/SceneLoader.html",
-          "hash": "+7+w6RkGLO4lNQDdo/s9b8DjkGC4qyRYAnUTBu8tg8U="
+          "hash": "TzJExxACNo70t2FRyZ6kUtt1FutfRRYwI+ByUrpFBR8="
         }
       },
       "is_incremental": false,
@@ -651,7 +651,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/index.html",
-          "hash": "ay/C1Yzj8UmEDvI4qq8XYw8KMfMsVQXLfrOP6iHOBDo="
+          "hash": "sdgoGqj7NZLKfNGg2TcHWcoiuDAg/w8lwCRVSBeS2C8="
         }
       },
       "is_incremental": false,
@@ -664,6 +664,21 @@
         ".html": {
           "relative_path": "manual/toc.html",
           "hash": "bU7UaYpH2k6ScSR7xYcqMTOhT4OFJezvAQUPWxkqCTI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "node_modules/jetbrains-mono-webfont/README.md",
+      "output": {
+        ".html": {
+          "relative_path": "node_modules/jetbrains-mono-webfont/README.html",
+          "hash": "BDTHiDtRRBi5CnhzBnJ3REHJ4HnZ41kIhlA3MrZWQIE="
         }
       },
       "is_incremental": false,
@@ -696,7 +711,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 16,
+          "total_file_count": 17,
           "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {

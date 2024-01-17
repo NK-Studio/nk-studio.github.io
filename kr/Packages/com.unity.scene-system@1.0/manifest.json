@@ -543,7 +543,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/LoadSceneOperationHandle.html",
-          "hash": "ZPRH010wcI/lwuPQu7CH1/NTuIKuFsexEgmYSdV5eFQ="
+          "hash": "nUrC/gqhpjNFzseYIDTukD3cLbItRgdfXQjeGIBRP7Q="
         }
       },
       "is_incremental": false,
@@ -591,7 +591,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/SceneLoader.html",
-          "hash": "hJne6fCeOXxrWH6P8fK0Mul54jJaf+eT/nuYBVPyk70="
+          "hash": "rj/6uatQoBNnnlFTazrdnn5gRYg6HNu82fr3OEcgDZ4="
         }
       },
       "is_incremental": false,
@@ -651,7 +651,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/index.html",
-          "hash": "ar/vcboIclcbUSuGh57ysiISetBKgTa8VZhOd22co90="
+          "hash": "XVBxuK740cG7WFYGe1hnY31qtS5eu0wklxplDORZmpQ="
         }
       },
       "is_incremental": false,
@@ -664,6 +664,21 @@
         ".html": {
           "relative_path": "manual/toc.html",
           "hash": "kBx3nChmSGN5aVDAOz972txqLfDA52bYsJUbfMPv6nQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "node_modules/jetbrains-mono-webfont/README.md",
+      "output": {
+        ".html": {
+          "relative_path": "node_modules/jetbrains-mono-webfont/README.html",
+          "hash": "jsu9+EN713Tua6snC3mjXa/A7XMNJfMUWhOZhfbuyoo="
         }
       },
       "is_incremental": false,
@@ -685,25 +700,23 @@
   "incremental_info": [
     {
       "status": {
-        "can_incremental": false,
-        "details": "Cannot build incrementally because config changed.",
+        "can_incremental": true,
         "incrementalPhase": "build",
         "total_file_count": 0,
-        "skipped_file_count": 0,
-        "full_build_reason_code": "ConfigChanged"
+        "skipped_file_count": 0
       },
       "processors": {
         "ConceptualDocumentProcessor": {
-          "can_incremental": false,
+          "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 16,
-          "skipped_file_count": 0
+          "total_file_count": 17,
+          "skipped_file_count": 16
         },
         "ManagedReferenceDocumentProcessor": {
-          "can_incremental": false,
+          "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 21,
-          "skipped_file_count": 0
+          "skipped_file_count": 21
         },
         "ResourceDocumentProcessor": {
           "can_incremental": false,

@@ -18,7 +18,7 @@
       "output": {
         ".html": {
           "relative_path": "changelog/CHANGELOG.html",
-          "hash": "SiODn201a5HSvT9QBUOK6kuv4I+rY2mLHVkTttiePDg="
+          "hash": "sNUGMRMMwyNJNaLp4Gg0MEKafOj5MAVWvwt+Pr32/nM="
         }
       },
       "is_incremental": false,
@@ -97,7 +97,7 @@
       "output": {
         ".html": {
           "relative_path": "license/License.html",
-          "hash": "IsLQjs47/fDDJNwQNsR80lV/wnuxOCxFIcSLLv7UI6o="
+          "hash": "6uaFb/uXe91TH9MHhQdG7hGMVI15kdszWmdOrjFr/Ec="
         }
       },
       "is_incremental": false,
@@ -121,7 +121,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/GettingStarted.html",
-          "hash": "BoBQWAJu/BDijdScTXPNiR7En65Bw1mgfu+xHkPnn5E="
+          "hash": "0AdTk0US8KT+kLCEQ6P5qz6iMB0ROhsRnNeKqPeUxlQ="
         }
       },
       "is_incremental": false,
@@ -133,7 +133,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/index.html",
-          "hash": "QyTTK5579NA+Lzgt/Q+YXEdZgxRnwvrXZn6N1uBTVdY="
+          "hash": "hWFrbCVX/wwO6XBLfPw/fdm2SAiiZELgBI1GmYWbn4c="
         }
       },
       "is_incremental": false,
@@ -160,7 +160,7 @@
       "output": {
         ".html": {
           "relative_path": "node_modules/jetbrains-mono-webfont/README.html",
-          "hash": "ptwiIN3xGjdI+vhkZdtCZHblFyafLCG6zJ4RAuq5K2o="
+          "hash": "S2MoJX+QzAwhRe0OtXeg/oU9gM7ESZxAfUVBFLl1XOI="
         }
       },
       "is_incremental": false,
@@ -183,11 +183,11 @@
     {
       "status": {
         "can_incremental": false,
-        "details": "Cannot build incrementally because last build info is missing.",
+        "details": "Cannot build incrementally because config changed.",
         "incrementalPhase": "build",
         "total_file_count": 0,
         "skipped_file_count": 0,
-        "full_build_reason_code": "NoAvailableBuildCache"
+        "full_build_reason_code": "ConfigChanged"
       },
       "processors": {
         "ConceptualDocumentProcessor": {

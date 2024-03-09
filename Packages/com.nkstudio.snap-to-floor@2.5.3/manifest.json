@@ -18,7 +18,7 @@
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "/6HAVlGVuaU/OCyQcJx0snKHX/ZKOLInA64as/7DuLo="
+          "hash": "1tQky7lHqRQ13SswSoykdse8pT0gWhUg2NbHnEuYQSQ="
         }
       },
       "is_incremental": false,
@@ -30,7 +30,7 @@
       "output": {
         ".html": {
           "relative_path": "changelog/CHANGELOG.html",
-          "hash": "IUxY0ksLaRr4F/wibdGXZH8qJUyBnVsTHOmMkLjSgWI="
+          "hash": "PGPxo0PQA3rWVAbdbTtkdW+pcFNjqG2JK73HVFCb6fw="
         }
       },
       "is_incremental": false,
@@ -109,7 +109,7 @@
       "output": {
         ".html": {
           "relative_path": "license/License.html",
-          "hash": "voaxW+jvWzzM5by3//GChvqAhlnDV9diugCyvpkYXco="
+          "hash": "Fl13I/ivgb0gSG+ym4qMnuN23mDfxlu02J3HfbWMKh4="
         }
       },
       "is_incremental": false,
@@ -133,7 +133,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/GettingStarted.html",
-          "hash": "p9Rc3uHsixj2ZrwX0wg8evND6gc9HUyzrezrrh6mQ/0="
+          "hash": "FEiuSuf9peSSlz/u6mvMH7OpHF4gvftGmE3VxSf5e+Q="
         }
       },
       "is_incremental": false,
@@ -145,7 +145,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/index.html",
-          "hash": "ocB0LJwUPuE8hHmpcq0nAuyN/3p/j/HtkqCzOr/xCXc="
+          "hash": "QYqAFsb3ePQQyHNVBAJJt2hr+4b641ma7dXE92oHWuI="
         }
       },
       "is_incremental": false,
@@ -172,7 +172,7 @@
       "output": {
         ".html": {
           "relative_path": "node_modules/jetbrains-mono-webfont/README.html",
-          "hash": "oO4LqdtbekQl3kbErQyg2LAe6a5ibbmuODFd+FseUoM="
+          "hash": "m49wsP882LqMP0rcFMv7CcP426tRR6RPgVgVwITPXrw="
         }
       },
       "is_incremental": false,
@@ -195,11 +195,11 @@
     {
       "status": {
         "can_incremental": false,
-        "details": "Cannot build incrementally because last build info is missing.",
+        "details": "Cannot build incrementally because config changed.",
         "incrementalPhase": "build",
         "total_file_count": 0,
         "skipped_file_count": 0,
-        "full_build_reason_code": "NoAvailableBuildCache"
+        "full_build_reason_code": "ConfigChanged"
       },
       "processors": {
         "ConceptualDocumentProcessor": {

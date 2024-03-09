@@ -1,0 +1,15 @@
+﻿{
+  "versions":{
+    "2.5.3":{
+      "unity":"2021.3",
+      "displayName":"Snap To Floor",
+      "name":"com.nkstudio.snap-to-floor",
+      "type":"asset",
+      "keywords":[
+        "Unreal",
+        "SanpToFloor"
+      ],
+      "version":"2.5.3"
+    }
+  }
+}

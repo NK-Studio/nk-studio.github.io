@@ -1,0 +1,442 @@
+{
+  "homepages": [],
+  "source_base_path": "/Users/nkstudio/Desktop/UDocument-Sample/Packages/com.nkstudio.udiscordbot@1.0.0",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MiniJSON.Json.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MiniJSON.Json.html",
+          "hash": "ZynTbZJ35wmvg15063A/fH3sGv1PldyyTBNIaKKvhB8="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MiniJSON.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MiniJSON.html",
+          "hash": "aHF+nAq7yDnG0O+dot95Luod/mLmopnvV4mD8DnEAXA="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NKStudio.Discord.DiscordBot.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NKStudio.Discord.DiscordBot.html",
+          "hash": "lgL/5s3Di7zUpzDJemO+J7qF1a3S+4x2CyPKq+PSp2M="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NKStudio.Discord.DiscordBotExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NKStudio.Discord.DiscordBotExtensions.html",
+          "hash": "AT3ftkqqAoVFuUkot3gYb0COWDCsbAUzZ1Es1fbK/Y0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NKStudio.Discord.Experimental.Video.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NKStudio.Discord.Experimental.Video.html",
+          "hash": "FpkRXn+J+Fy76gX64/oH+FhKI8QqlyxOCP6ASq07JUg="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NKStudio.Discord.Experimental.VideoExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NKStudio.Discord.Experimental.VideoExtensions.html",
+          "hash": "GpYwCZJK4KxsFemR0KFwzDACWbwG0DM0+ZVumYUA+Tw="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NKStudio.Discord.Experimental.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NKStudio.Discord.Experimental.html",
+          "hash": "yoqSjrOQbr3u57I2nc2DkVOW+dTBJj6ktoBptica//E="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NKStudio.Discord.Module.Author.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NKStudio.Discord.Module.Author.html",
+          "hash": "nmSSnfxo46s9fAMUq1q8NBT0BYPpJnwMmTizTIr1MNA="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NKStudio.Discord.Module.AuthorExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NKStudio.Discord.Module.AuthorExtension.html",
+          "hash": "XqV9BzVnIGvEGo6/JLM8IohI6Odtm3QYy5iRpnWJqrk="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NKStudio.Discord.Module.ColorExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NKStudio.Discord.Module.ColorExtension.html",
+          "hash": "qLSzpw4qbKj99iypWSfF49bmGtS47KYY8SG53REIF1Y="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NKStudio.Discord.Module.Embed.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NKStudio.Discord.Module.Embed.html",
+          "hash": "UiInH4NxK9r4/LpAkowSxOAVRhkVQ4PIcs4j+49nWqs="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NKStudio.Discord.Module.EmbedExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NKStudio.Discord.Module.EmbedExtensions.html",
+          "hash": "2GngLyvhwuCQFb/MvtwvDmPgei5HNWiIpR7NC+zOruA="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NKStudio.Discord.Module.Footer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NKStudio.Discord.Module.Footer.html",
+          "hash": "mEpN5Kpcvyh5D3BCbsZbyCoeBjhW3RndT+8lyD2pL00="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NKStudio.Discord.Module.FooterExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NKStudio.Discord.Module.FooterExtensions.html",
+          "hash": "lSq+5T9qr1hJFdHhf6TmtZg1taQMeth8oMSBZiWYmy4="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NKStudio.Discord.Module.ImageExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NKStudio.Discord.Module.ImageExtension.html",
+          "hash": "dzRJ3iAs4PUbE9CkxrHlffXDmyD2koYHeW8Pq1l6MiE="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NKStudio.Discord.Module.Options.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NKStudio.Discord.Module.Options.html",
+          "hash": "aO5ud+ApjhqRtUn3Ns8CGfLrp5siuQUknv2aMZl10L0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NKStudio.Discord.Module.Timestamp.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NKStudio.Discord.Module.Timestamp.html",
+          "hash": "2LhGGGtbOQMLvvpB2Cj2FwYhOwv7cGk9CHecng0A2ZI="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NKStudio.Discord.Module.TimestampExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NKStudio.Discord.Module.TimestampExtension.html",
+          "hash": "zGjfyrgCFbyYvK54hCH3eDsk4I7vd3yRhMwbnP8WtFQ="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NKStudio.Discord.Module.TitleExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NKStudio.Discord.Module.TitleExtension.html",
+          "hash": "KfX5yZV4d6wDOMAM49/jFrRWGwgkHlU5K/l0IZmrPrQ="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NKStudio.Discord.Module.URLExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NKStudio.Discord.Module.URLExtension.html",
+          "hash": "7diCVhk0i/G1A6ktBp+ZRkl7TJLh0BlO71jPLb5R9Ss="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NKStudio.Discord.Module.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NKStudio.Discord.Module.html",
+          "hash": "G8uAPG0llgZkPxtIlG7pzKUHKl6TeC9IHOZ3POtKLF0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NKStudio.Discord.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NKStudio.Discord.html",
+          "hash": "gFgTymIFS5Kne+XBhdrdy5ryC7uLBiznTxvhPz/haV4="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "y0bZmS0/yDgsKy4Im9lAlvt0RamDK/pwZVBFzgTXNtw="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "UG2x0VDc1P148vDDtpKmS/yJewv02ipB6wyR+RNwKE0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/intro.html",
+          "hash": "PmvWPINPm8XnTMFYOCR5padAs7m/MNx+LoPhMfqv37w="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html",
+          "hash": "+FPCLcvmNhVb9VLasYr6Tnep0PZtIA6V/UOJ0u+1RmE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "favicon.ico",
+      "output": {
+        "resource": {
+          "relative_path": "favicon.ico"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "index.html",
+      "output": {
+        "resource": {
+          "relative_path": "index.html"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "logo.svg",
+      "output": {
+        "resource": {
+          "relative_path": "logo.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/index.html",
+          "hash": "N0abNHOkYFsCw7x0sVdZM0ZGE3GYvHeAdXxN1SlBMm4="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "manual/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "manual/toc.html",
+          "hash": "XT5acZr56lCi795o9AnkTU8uwuUxIaXrP3OaD1zcIUo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "YcrTUiGN/+rBFsNHcW2OSXaYn4EIggfFeUuQxOCfsoo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": true,
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 3,
+          "skipped_file_count": 3
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 22,
+          "skipped_file_count": 22
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": true,
+        "details": "Can support incremental post processing.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

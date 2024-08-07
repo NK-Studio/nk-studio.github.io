@@ -1,0 +1,676 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: MiniJSON
+  name: MiniJSON
+  href: api/MiniJSON.html
+  commentId: N:MiniJSON
+  fullName: MiniJSON
+  nameWithType: MiniJSON
+- uid: MiniJSON.Json
+  name: Json
+  href: api/MiniJSON.Json.html
+  commentId: T:MiniJSON.Json
+  fullName: MiniJSON.Json
+  nameWithType: Json
+- uid: MiniJSON.Json.Deserialize(System.String)
+  name: Deserialize(string)
+  href: api/MiniJSON.Json.html#MiniJSON_Json_Deserialize_System_String_
+  commentId: M:MiniJSON.Json.Deserialize(System.String)
+  name.vb: Deserialize(String)
+  fullName: MiniJSON.Json.Deserialize(string)
+  fullName.vb: MiniJSON.Json.Deserialize(String)
+  nameWithType: Json.Deserialize(string)
+  nameWithType.vb: Json.Deserialize(String)
+- uid: MiniJSON.Json.Deserialize*
+  name: Deserialize
+  href: api/MiniJSON.Json.html#MiniJSON_Json_Deserialize_
+  commentId: Overload:MiniJSON.Json.Deserialize
+  isSpec: "True"
+  fullName: MiniJSON.Json.Deserialize
+  nameWithType: Json.Deserialize
+- uid: MiniJSON.Json.Serialize(System.Object)
+  name: Serialize(object)
+  href: api/MiniJSON.Json.html#MiniJSON_Json_Serialize_System_Object_
+  commentId: M:MiniJSON.Json.Serialize(System.Object)
+  name.vb: Serialize(Object)
+  fullName: MiniJSON.Json.Serialize(object)
+  fullName.vb: MiniJSON.Json.Serialize(Object)
+  nameWithType: Json.Serialize(object)
+  nameWithType.vb: Json.Serialize(Object)
+- uid: MiniJSON.Json.Serialize*
+  name: Serialize
+  href: api/MiniJSON.Json.html#MiniJSON_Json_Serialize_
+  commentId: Overload:MiniJSON.Json.Serialize
+  isSpec: "True"
+  fullName: MiniJSON.Json.Serialize
+  nameWithType: Json.Serialize
+- uid: NKStudio.Discord
+  name: NKStudio.Discord
+  href: api/NKStudio.Discord.html
+  commentId: N:NKStudio.Discord
+  fullName: NKStudio.Discord
+  nameWithType: NKStudio.Discord
+- uid: NKStudio.Discord.DiscordBot
+  name: DiscordBot
+  href: api/NKStudio.Discord.DiscordBot.html
+  commentId: T:NKStudio.Discord.DiscordBot
+  fullName: NKStudio.Discord.DiscordBot
+  nameWithType: DiscordBot
+- uid: NKStudio.Discord.DiscordBot.Create(System.String)
+  name: Create(string)
+  href: api/NKStudio.Discord.DiscordBot.html#NKStudio_Discord_DiscordBot_Create_System_String_
+  commentId: M:NKStudio.Discord.DiscordBot.Create(System.String)
+  name.vb: Create(String)
+  fullName: NKStudio.Discord.DiscordBot.Create(string)
+  fullName.vb: NKStudio.Discord.DiscordBot.Create(String)
+  nameWithType: DiscordBot.Create(string)
+  nameWithType.vb: DiscordBot.Create(String)
+- uid: NKStudio.Discord.DiscordBot.Create*
+  name: Create
+  href: api/NKStudio.Discord.DiscordBot.html#NKStudio_Discord_DiscordBot_Create_
+  commentId: Overload:NKStudio.Discord.DiscordBot.Create
+  isSpec: "True"
+  fullName: NKStudio.Discord.DiscordBot.Create
+  nameWithType: DiscordBot.Create
+- uid: NKStudio.Discord.DiscordBot.CreateWebRequest(NKStudio.Discord.Module.Options)
+  name: CreateWebRequest(Options)
+  href: api/NKStudio.Discord.DiscordBot.html#NKStudio_Discord_DiscordBot_CreateWebRequest_NKStudio_Discord_Module_Options_
+  commentId: M:NKStudio.Discord.DiscordBot.CreateWebRequest(NKStudio.Discord.Module.Options)
+  fullName: NKStudio.Discord.DiscordBot.CreateWebRequest(NKStudio.Discord.Module.Options)
+  nameWithType: DiscordBot.CreateWebRequest(Options)
+- uid: NKStudio.Discord.DiscordBot.CreateWebRequest*
+  name: CreateWebRequest
+  href: api/NKStudio.Discord.DiscordBot.html#NKStudio_Discord_DiscordBot_CreateWebRequest_
+  commentId: Overload:NKStudio.Discord.DiscordBot.CreateWebRequest
+  isSpec: "True"
+  fullName: NKStudio.Discord.DiscordBot.CreateWebRequest
+  nameWithType: DiscordBot.CreateWebRequest
+- uid: NKStudio.Discord.DiscordBot.Options
+  name: Options
+  href: api/NKStudio.Discord.DiscordBot.html#NKStudio_Discord_DiscordBot_Options
+  commentId: F:NKStudio.Discord.DiscordBot.Options
+  fullName: NKStudio.Discord.DiscordBot.Options
+  nameWithType: DiscordBot.Options
+- uid: NKStudio.Discord.DiscordBotExtensions
+  name: DiscordBotExtensions
+  href: api/NKStudio.Discord.DiscordBotExtensions.html
+  commentId: T:NKStudio.Discord.DiscordBotExtensions
+  fullName: NKStudio.Discord.DiscordBotExtensions
+  nameWithType: DiscordBotExtensions
+- uid: NKStudio.Discord.DiscordBotExtensions.Send(NKStudio.Discord.DiscordBot)
+  name: Send(DiscordBot)
+  href: api/NKStudio.Discord.DiscordBotExtensions.html#NKStudio_Discord_DiscordBotExtensions_Send_NKStudio_Discord_DiscordBot_
+  commentId: M:NKStudio.Discord.DiscordBotExtensions.Send(NKStudio.Discord.DiscordBot)
+  fullName: NKStudio.Discord.DiscordBotExtensions.Send(NKStudio.Discord.DiscordBot)
+  nameWithType: DiscordBotExtensions.Send(DiscordBot)
+- uid: NKStudio.Discord.DiscordBotExtensions.Send*
+  name: Send
+  href: api/NKStudio.Discord.DiscordBotExtensions.html#NKStudio_Discord_DiscordBotExtensions_Send_
+  commentId: Overload:NKStudio.Discord.DiscordBotExtensions.Send
+  isSpec: "True"
+  fullName: NKStudio.Discord.DiscordBotExtensions.Send
+  nameWithType: DiscordBotExtensions.Send
+- uid: NKStudio.Discord.DiscordBotExtensions.WithAvatarURL(NKStudio.Discord.DiscordBot,System.String)
+  name: WithAvatarURL(DiscordBot, string)
+  href: api/NKStudio.Discord.DiscordBotExtensions.html#NKStudio_Discord_DiscordBotExtensions_WithAvatarURL_NKStudio_Discord_DiscordBot_System_String_
+  commentId: M:NKStudio.Discord.DiscordBotExtensions.WithAvatarURL(NKStudio.Discord.DiscordBot,System.String)
+  name.vb: WithAvatarURL(DiscordBot, String)
+  fullName: NKStudio.Discord.DiscordBotExtensions.WithAvatarURL(NKStudio.Discord.DiscordBot, string)
+  fullName.vb: NKStudio.Discord.DiscordBotExtensions.WithAvatarURL(NKStudio.Discord.DiscordBot, String)
+  nameWithType: DiscordBotExtensions.WithAvatarURL(DiscordBot, string)
+  nameWithType.vb: DiscordBotExtensions.WithAvatarURL(DiscordBot, String)
+- uid: NKStudio.Discord.DiscordBotExtensions.WithAvatarURL*
+  name: WithAvatarURL
+  href: api/NKStudio.Discord.DiscordBotExtensions.html#NKStudio_Discord_DiscordBotExtensions_WithAvatarURL_
+  commentId: Overload:NKStudio.Discord.DiscordBotExtensions.WithAvatarURL
+  isSpec: "True"
+  fullName: NKStudio.Discord.DiscordBotExtensions.WithAvatarURL
+  nameWithType: DiscordBotExtensions.WithAvatarURL
+- uid: NKStudio.Discord.DiscordBotExtensions.WithContent(NKStudio.Discord.DiscordBot,System.String)
+  name: WithContent(DiscordBot, string)
+  href: api/NKStudio.Discord.DiscordBotExtensions.html#NKStudio_Discord_DiscordBotExtensions_WithContent_NKStudio_Discord_DiscordBot_System_String_
+  commentId: M:NKStudio.Discord.DiscordBotExtensions.WithContent(NKStudio.Discord.DiscordBot,System.String)
+  name.vb: WithContent(DiscordBot, String)
+  fullName: NKStudio.Discord.DiscordBotExtensions.WithContent(NKStudio.Discord.DiscordBot, string)
+  fullName.vb: NKStudio.Discord.DiscordBotExtensions.WithContent(NKStudio.Discord.DiscordBot, String)
+  nameWithType: DiscordBotExtensions.WithContent(DiscordBot, string)
+  nameWithType.vb: DiscordBotExtensions.WithContent(DiscordBot, String)
+- uid: NKStudio.Discord.DiscordBotExtensions.WithContent*
+  name: WithContent
+  href: api/NKStudio.Discord.DiscordBotExtensions.html#NKStudio_Discord_DiscordBotExtensions_WithContent_
+  commentId: Overload:NKStudio.Discord.DiscordBotExtensions.WithContent
+  isSpec: "True"
+  fullName: NKStudio.Discord.DiscordBotExtensions.WithContent
+  nameWithType: DiscordBotExtensions.WithContent
+- uid: NKStudio.Discord.DiscordBotExtensions.WithTTS(NKStudio.Discord.DiscordBot,System.Boolean)
+  name: WithTTS(DiscordBot, bool)
+  href: api/NKStudio.Discord.DiscordBotExtensions.html#NKStudio_Discord_DiscordBotExtensions_WithTTS_NKStudio_Discord_DiscordBot_System_Boolean_
+  commentId: M:NKStudio.Discord.DiscordBotExtensions.WithTTS(NKStudio.Discord.DiscordBot,System.Boolean)
+  name.vb: WithTTS(DiscordBot, Boolean)
+  fullName: NKStudio.Discord.DiscordBotExtensions.WithTTS(NKStudio.Discord.DiscordBot, bool)
+  fullName.vb: NKStudio.Discord.DiscordBotExtensions.WithTTS(NKStudio.Discord.DiscordBot, Boolean)
+  nameWithType: DiscordBotExtensions.WithTTS(DiscordBot, bool)
+  nameWithType.vb: DiscordBotExtensions.WithTTS(DiscordBot, Boolean)
+- uid: NKStudio.Discord.DiscordBotExtensions.WithTTS*
+  name: WithTTS
+  href: api/NKStudio.Discord.DiscordBotExtensions.html#NKStudio_Discord_DiscordBotExtensions_WithTTS_
+  commentId: Overload:NKStudio.Discord.DiscordBotExtensions.WithTTS
+  isSpec: "True"
+  fullName: NKStudio.Discord.DiscordBotExtensions.WithTTS
+  nameWithType: DiscordBotExtensions.WithTTS
+- uid: NKStudio.Discord.DiscordBotExtensions.WithUsername(NKStudio.Discord.DiscordBot,System.String)
+  name: WithUsername(DiscordBot, string)
+  href: api/NKStudio.Discord.DiscordBotExtensions.html#NKStudio_Discord_DiscordBotExtensions_WithUsername_NKStudio_Discord_DiscordBot_System_String_
+  commentId: M:NKStudio.Discord.DiscordBotExtensions.WithUsername(NKStudio.Discord.DiscordBot,System.String)
+  name.vb: WithUsername(DiscordBot, String)
+  fullName: NKStudio.Discord.DiscordBotExtensions.WithUsername(NKStudio.Discord.DiscordBot, string)
+  fullName.vb: NKStudio.Discord.DiscordBotExtensions.WithUsername(NKStudio.Discord.DiscordBot, String)
+  nameWithType: DiscordBotExtensions.WithUsername(DiscordBot, string)
+  nameWithType.vb: DiscordBotExtensions.WithUsername(DiscordBot, String)
+- uid: NKStudio.Discord.DiscordBotExtensions.WithUsername*
+  name: WithUsername
+  href: api/NKStudio.Discord.DiscordBotExtensions.html#NKStudio_Discord_DiscordBotExtensions_WithUsername_
+  commentId: Overload:NKStudio.Discord.DiscordBotExtensions.WithUsername
+  isSpec: "True"
+  fullName: NKStudio.Discord.DiscordBotExtensions.WithUsername
+  nameWithType: DiscordBotExtensions.WithUsername
+- uid: NKStudio.Discord.Experimental
+  name: NKStudio.Discord.Experimental
+  href: api/NKStudio.Discord.Experimental.html
+  commentId: N:NKStudio.Discord.Experimental
+  fullName: NKStudio.Discord.Experimental
+  nameWithType: NKStudio.Discord.Experimental
+- uid: NKStudio.Discord.Experimental.Video
+  name: Video
+  href: api/NKStudio.Discord.Experimental.Video.html
+  commentId: T:NKStudio.Discord.Experimental.Video
+  fullName: NKStudio.Discord.Experimental.Video
+  nameWithType: Video
+- uid: NKStudio.Discord.Experimental.Video.Create(System.String)
+  name: Create(string)
+  href: api/NKStudio.Discord.Experimental.Video.html#NKStudio_Discord_Experimental_Video_Create_System_String_
+  commentId: M:NKStudio.Discord.Experimental.Video.Create(System.String)
+  name.vb: Create(String)
+  fullName: NKStudio.Discord.Experimental.Video.Create(string)
+  fullName.vb: NKStudio.Discord.Experimental.Video.Create(String)
+  nameWithType: Video.Create(string)
+  nameWithType.vb: Video.Create(String)
+- uid: NKStudio.Discord.Experimental.Video.Create*
+  name: Create
+  href: api/NKStudio.Discord.Experimental.Video.html#NKStudio_Discord_Experimental_Video_Create_
+  commentId: Overload:NKStudio.Discord.Experimental.Video.Create
+  isSpec: "True"
+  fullName: NKStudio.Discord.Experimental.Video.Create
+  nameWithType: Video.Create
+- uid: NKStudio.Discord.Experimental.Video.Height
+  name: Height
+  href: api/NKStudio.Discord.Experimental.Video.html#NKStudio_Discord_Experimental_Video_Height
+  commentId: F:NKStudio.Discord.Experimental.Video.Height
+  fullName: NKStudio.Discord.Experimental.Video.Height
+  nameWithType: Video.Height
+- uid: NKStudio.Discord.Experimental.Video.URL
+  name: URL
+  href: api/NKStudio.Discord.Experimental.Video.html#NKStudio_Discord_Experimental_Video_URL
+  commentId: F:NKStudio.Discord.Experimental.Video.URL
+  fullName: NKStudio.Discord.Experimental.Video.URL
+  nameWithType: Video.URL
+- uid: NKStudio.Discord.Experimental.Video.Width
+  name: Width
+  href: api/NKStudio.Discord.Experimental.Video.html#NKStudio_Discord_Experimental_Video_Width
+  commentId: F:NKStudio.Discord.Experimental.Video.Width
+  fullName: NKStudio.Discord.Experimental.Video.Width
+  nameWithType: Video.Width
+- uid: NKStudio.Discord.Experimental.VideoExtensions
+  name: VideoExtensions
+  href: api/NKStudio.Discord.Experimental.VideoExtensions.html
+  commentId: T:NKStudio.Discord.Experimental.VideoExtensions
+  fullName: NKStudio.Discord.Experimental.VideoExtensions
+  nameWithType: VideoExtensions
+- uid: NKStudio.Discord.Experimental.VideoExtensions.AddVideo(NKStudio.Discord.Module.Embed,NKStudio.Discord.Experimental.Video)
+  name: AddVideo(Embed, Video)
+  href: api/NKStudio.Discord.Experimental.VideoExtensions.html#NKStudio_Discord_Experimental_VideoExtensions_AddVideo_NKStudio_Discord_Module_Embed_NKStudio_Discord_Experimental_Video_
+  commentId: M:NKStudio.Discord.Experimental.VideoExtensions.AddVideo(NKStudio.Discord.Module.Embed,NKStudio.Discord.Experimental.Video)
+  fullName: NKStudio.Discord.Experimental.VideoExtensions.AddVideo(NKStudio.Discord.Module.Embed, NKStudio.Discord.Experimental.Video)
+  nameWithType: VideoExtensions.AddVideo(Embed, Video)
+- uid: NKStudio.Discord.Experimental.VideoExtensions.AddVideo*
+  name: AddVideo
+  href: api/NKStudio.Discord.Experimental.VideoExtensions.html#NKStudio_Discord_Experimental_VideoExtensions_AddVideo_
+  commentId: Overload:NKStudio.Discord.Experimental.VideoExtensions.AddVideo
+  isSpec: "True"
+  fullName: NKStudio.Discord.Experimental.VideoExtensions.AddVideo
+  nameWithType: VideoExtensions.AddVideo
+- uid: NKStudio.Discord.Experimental.VideoExtensions.WithHeight(NKStudio.Discord.Experimental.Video,System.Int32)
+  name: WithHeight(Video, int)
+  href: api/NKStudio.Discord.Experimental.VideoExtensions.html#NKStudio_Discord_Experimental_VideoExtensions_WithHeight_NKStudio_Discord_Experimental_Video_System_Int32_
+  commentId: M:NKStudio.Discord.Experimental.VideoExtensions.WithHeight(NKStudio.Discord.Experimental.Video,System.Int32)
+  name.vb: WithHeight(Video, Integer)
+  fullName: NKStudio.Discord.Experimental.VideoExtensions.WithHeight(NKStudio.Discord.Experimental.Video, int)
+  fullName.vb: NKStudio.Discord.Experimental.VideoExtensions.WithHeight(NKStudio.Discord.Experimental.Video, Integer)
+  nameWithType: VideoExtensions.WithHeight(Video, int)
+  nameWithType.vb: VideoExtensions.WithHeight(Video, Integer)
+- uid: NKStudio.Discord.Experimental.VideoExtensions.WithHeight*
+  name: WithHeight
+  href: api/NKStudio.Discord.Experimental.VideoExtensions.html#NKStudio_Discord_Experimental_VideoExtensions_WithHeight_
+  commentId: Overload:NKStudio.Discord.Experimental.VideoExtensions.WithHeight
+  isSpec: "True"
+  fullName: NKStudio.Discord.Experimental.VideoExtensions.WithHeight
+  nameWithType: VideoExtensions.WithHeight
+- uid: NKStudio.Discord.Experimental.VideoExtensions.WithURL(NKStudio.Discord.Experimental.Video,System.String)
+  name: WithURL(Video, string)
+  href: api/NKStudio.Discord.Experimental.VideoExtensions.html#NKStudio_Discord_Experimental_VideoExtensions_WithURL_NKStudio_Discord_Experimental_Video_System_String_
+  commentId: M:NKStudio.Discord.Experimental.VideoExtensions.WithURL(NKStudio.Discord.Experimental.Video,System.String)
+  name.vb: WithURL(Video, String)
+  fullName: NKStudio.Discord.Experimental.VideoExtensions.WithURL(NKStudio.Discord.Experimental.Video, string)
+  fullName.vb: NKStudio.Discord.Experimental.VideoExtensions.WithURL(NKStudio.Discord.Experimental.Video, String)
+  nameWithType: VideoExtensions.WithURL(Video, string)
+  nameWithType.vb: VideoExtensions.WithURL(Video, String)
+- uid: NKStudio.Discord.Experimental.VideoExtensions.WithURL*
+  name: WithURL
+  href: api/NKStudio.Discord.Experimental.VideoExtensions.html#NKStudio_Discord_Experimental_VideoExtensions_WithURL_
+  commentId: Overload:NKStudio.Discord.Experimental.VideoExtensions.WithURL
+  isSpec: "True"
+  fullName: NKStudio.Discord.Experimental.VideoExtensions.WithURL
+  nameWithType: VideoExtensions.WithURL
+- uid: NKStudio.Discord.Experimental.VideoExtensions.WithWidth(NKStudio.Discord.Experimental.Video,System.Int32)
+  name: WithWidth(Video, int)
+  href: api/NKStudio.Discord.Experimental.VideoExtensions.html#NKStudio_Discord_Experimental_VideoExtensions_WithWidth_NKStudio_Discord_Experimental_Video_System_Int32_
+  commentId: M:NKStudio.Discord.Experimental.VideoExtensions.WithWidth(NKStudio.Discord.Experimental.Video,System.Int32)
+  name.vb: WithWidth(Video, Integer)
+  fullName: NKStudio.Discord.Experimental.VideoExtensions.WithWidth(NKStudio.Discord.Experimental.Video, int)
+  fullName.vb: NKStudio.Discord.Experimental.VideoExtensions.WithWidth(NKStudio.Discord.Experimental.Video, Integer)
+  nameWithType: VideoExtensions.WithWidth(Video, int)
+  nameWithType.vb: VideoExtensions.WithWidth(Video, Integer)
+- uid: NKStudio.Discord.Experimental.VideoExtensions.WithWidth*
+  name: WithWidth
+  href: api/NKStudio.Discord.Experimental.VideoExtensions.html#NKStudio_Discord_Experimental_VideoExtensions_WithWidth_
+  commentId: Overload:NKStudio.Discord.Experimental.VideoExtensions.WithWidth
+  isSpec: "True"
+  fullName: NKStudio.Discord.Experimental.VideoExtensions.WithWidth
+  nameWithType: VideoExtensions.WithWidth
+- uid: NKStudio.Discord.Module
+  name: NKStudio.Discord.Module
+  href: api/NKStudio.Discord.Module.html
+  commentId: N:NKStudio.Discord.Module
+  fullName: NKStudio.Discord.Module
+  nameWithType: NKStudio.Discord.Module
+- uid: NKStudio.Discord.Module.Author
+  name: Author
+  href: api/NKStudio.Discord.Module.Author.html
+  commentId: T:NKStudio.Discord.Module.Author
+  fullName: NKStudio.Discord.Module.Author
+  nameWithType: Author
+- uid: NKStudio.Discord.Module.Author.Create(System.String)
+  name: Create(string)
+  href: api/NKStudio.Discord.Module.Author.html#NKStudio_Discord_Module_Author_Create_System_String_
+  commentId: M:NKStudio.Discord.Module.Author.Create(System.String)
+  name.vb: Create(String)
+  fullName: NKStudio.Discord.Module.Author.Create(string)
+  fullName.vb: NKStudio.Discord.Module.Author.Create(String)
+  nameWithType: Author.Create(string)
+  nameWithType.vb: Author.Create(String)
+- uid: NKStudio.Discord.Module.Author.Create*
+  name: Create
+  href: api/NKStudio.Discord.Module.Author.html#NKStudio_Discord_Module_Author_Create_
+  commentId: Overload:NKStudio.Discord.Module.Author.Create
+  isSpec: "True"
+  fullName: NKStudio.Discord.Module.Author.Create
+  nameWithType: Author.Create
+- uid: NKStudio.Discord.Module.AuthorExtension
+  name: AuthorExtension
+  href: api/NKStudio.Discord.Module.AuthorExtension.html
+  commentId: T:NKStudio.Discord.Module.AuthorExtension
+  fullName: NKStudio.Discord.Module.AuthorExtension
+  nameWithType: AuthorExtension
+- uid: NKStudio.Discord.Module.AuthorExtension.AddAuthor(NKStudio.Discord.Module.Embed,NKStudio.Discord.Module.Author)
+  name: AddAuthor(Embed, Author)
+  href: api/NKStudio.Discord.Module.AuthorExtension.html#NKStudio_Discord_Module_AuthorExtension_AddAuthor_NKStudio_Discord_Module_Embed_NKStudio_Discord_Module_Author_
+  commentId: M:NKStudio.Discord.Module.AuthorExtension.AddAuthor(NKStudio.Discord.Module.Embed,NKStudio.Discord.Module.Author)
+  fullName: NKStudio.Discord.Module.AuthorExtension.AddAuthor(NKStudio.Discord.Module.Embed, NKStudio.Discord.Module.Author)
+  nameWithType: AuthorExtension.AddAuthor(Embed, Author)
+- uid: NKStudio.Discord.Module.AuthorExtension.AddAuthor*
+  name: AddAuthor
+  href: api/NKStudio.Discord.Module.AuthorExtension.html#NKStudio_Discord_Module_AuthorExtension_AddAuthor_
+  commentId: Overload:NKStudio.Discord.Module.AuthorExtension.AddAuthor
+  isSpec: "True"
+  fullName: NKStudio.Discord.Module.AuthorExtension.AddAuthor
+  nameWithType: AuthorExtension.AddAuthor
+- uid: NKStudio.Discord.Module.AuthorExtension.SetName(NKStudio.Discord.Module.Author,System.String)
+  name: SetName(Author, string)
+  href: api/NKStudio.Discord.Module.AuthorExtension.html#NKStudio_Discord_Module_AuthorExtension_SetName_NKStudio_Discord_Module_Author_System_String_
+  commentId: M:NKStudio.Discord.Module.AuthorExtension.SetName(NKStudio.Discord.Module.Author,System.String)
+  name.vb: SetName(Author, String)
+  fullName: NKStudio.Discord.Module.AuthorExtension.SetName(NKStudio.Discord.Module.Author, string)
+  fullName.vb: NKStudio.Discord.Module.AuthorExtension.SetName(NKStudio.Discord.Module.Author, String)
+  nameWithType: AuthorExtension.SetName(Author, string)
+  nameWithType.vb: AuthorExtension.SetName(Author, String)
+- uid: NKStudio.Discord.Module.AuthorExtension.SetName*
+  name: SetName
+  href: api/NKStudio.Discord.Module.AuthorExtension.html#NKStudio_Discord_Module_AuthorExtension_SetName_
+  commentId: Overload:NKStudio.Discord.Module.AuthorExtension.SetName
+  isSpec: "True"
+  fullName: NKStudio.Discord.Module.AuthorExtension.SetName
+  nameWithType: AuthorExtension.SetName
+- uid: NKStudio.Discord.Module.AuthorExtension.WithIconURL(NKStudio.Discord.Module.Author,System.String)
+  name: WithIconURL(Author, string)
+  href: api/NKStudio.Discord.Module.AuthorExtension.html#NKStudio_Discord_Module_AuthorExtension_WithIconURL_NKStudio_Discord_Module_Author_System_String_
+  commentId: M:NKStudio.Discord.Module.AuthorExtension.WithIconURL(NKStudio.Discord.Module.Author,System.String)
+  name.vb: WithIconURL(Author, String)
+  fullName: NKStudio.Discord.Module.AuthorExtension.WithIconURL(NKStudio.Discord.Module.Author, string)
+  fullName.vb: NKStudio.Discord.Module.AuthorExtension.WithIconURL(NKStudio.Discord.Module.Author, String)
+  nameWithType: AuthorExtension.WithIconURL(Author, string)
+  nameWithType.vb: AuthorExtension.WithIconURL(Author, String)
+- uid: NKStudio.Discord.Module.AuthorExtension.WithIconURL*
+  name: WithIconURL
+  href: api/NKStudio.Discord.Module.AuthorExtension.html#NKStudio_Discord_Module_AuthorExtension_WithIconURL_
+  commentId: Overload:NKStudio.Discord.Module.AuthorExtension.WithIconURL
+  isSpec: "True"
+  fullName: NKStudio.Discord.Module.AuthorExtension.WithIconURL
+  nameWithType: AuthorExtension.WithIconURL
+- uid: NKStudio.Discord.Module.AuthorExtension.WithURL(NKStudio.Discord.Module.Author,System.String)
+  name: WithURL(Author, string)
+  href: api/NKStudio.Discord.Module.AuthorExtension.html#NKStudio_Discord_Module_AuthorExtension_WithURL_NKStudio_Discord_Module_Author_System_String_
+  commentId: M:NKStudio.Discord.Module.AuthorExtension.WithURL(NKStudio.Discord.Module.Author,System.String)
+  name.vb: WithURL(Author, String)
+  fullName: NKStudio.Discord.Module.AuthorExtension.WithURL(NKStudio.Discord.Module.Author, string)
+  fullName.vb: NKStudio.Discord.Module.AuthorExtension.WithURL(NKStudio.Discord.Module.Author, String)
+  nameWithType: AuthorExtension.WithURL(Author, string)
+  nameWithType.vb: AuthorExtension.WithURL(Author, String)
+- uid: NKStudio.Discord.Module.AuthorExtension.WithURL*
+  name: WithURL
+  href: api/NKStudio.Discord.Module.AuthorExtension.html#NKStudio_Discord_Module_AuthorExtension_WithURL_
+  commentId: Overload:NKStudio.Discord.Module.AuthorExtension.WithURL
+  isSpec: "True"
+  fullName: NKStudio.Discord.Module.AuthorExtension.WithURL
+  nameWithType: AuthorExtension.WithURL
+- uid: NKStudio.Discord.Module.ColorExtension
+  name: ColorExtension
+  href: api/NKStudio.Discord.Module.ColorExtension.html
+  commentId: T:NKStudio.Discord.Module.ColorExtension
+  fullName: NKStudio.Discord.Module.ColorExtension
+  nameWithType: ColorExtension
+- uid: NKStudio.Discord.Module.ColorExtension.AddColor(NKStudio.Discord.Module.Embed,UnityEngine.Color32)
+  name: AddColor(Embed, Color32)
+  href: api/NKStudio.Discord.Module.ColorExtension.html#NKStudio_Discord_Module_ColorExtension_AddColor_NKStudio_Discord_Module_Embed_UnityEngine_Color32_
+  commentId: M:NKStudio.Discord.Module.ColorExtension.AddColor(NKStudio.Discord.Module.Embed,UnityEngine.Color32)
+  fullName: NKStudio.Discord.Module.ColorExtension.AddColor(NKStudio.Discord.Module.Embed, UnityEngine.Color32)
+  nameWithType: ColorExtension.AddColor(Embed, Color32)
+- uid: NKStudio.Discord.Module.ColorExtension.AddColor*
+  name: AddColor
+  href: api/NKStudio.Discord.Module.ColorExtension.html#NKStudio_Discord_Module_ColorExtension_AddColor_
+  commentId: Overload:NKStudio.Discord.Module.ColorExtension.AddColor
+  isSpec: "True"
+  fullName: NKStudio.Discord.Module.ColorExtension.AddColor
+  nameWithType: ColorExtension.AddColor
+- uid: NKStudio.Discord.Module.Embed
+  name: Embed
+  href: api/NKStudio.Discord.Module.Embed.html
+  commentId: T:NKStudio.Discord.Module.Embed
+  fullName: NKStudio.Discord.Module.Embed
+  nameWithType: Embed
+- uid: NKStudio.Discord.Module.Embed.Create
+  name: Create()
+  href: api/NKStudio.Discord.Module.Embed.html#NKStudio_Discord_Module_Embed_Create
+  commentId: M:NKStudio.Discord.Module.Embed.Create
+  fullName: NKStudio.Discord.Module.Embed.Create()
+  nameWithType: Embed.Create()
+- uid: NKStudio.Discord.Module.Embed.Create*
+  name: Create
+  href: api/NKStudio.Discord.Module.Embed.html#NKStudio_Discord_Module_Embed_Create_
+  commentId: Overload:NKStudio.Discord.Module.Embed.Create
+  isSpec: "True"
+  fullName: NKStudio.Discord.Module.Embed.Create
+  nameWithType: Embed.Create
+- uid: NKStudio.Discord.Module.EmbedExtensions
+  name: EmbedExtensions
+  href: api/NKStudio.Discord.Module.EmbedExtensions.html
+  commentId: T:NKStudio.Discord.Module.EmbedExtensions
+  fullName: NKStudio.Discord.Module.EmbedExtensions
+  nameWithType: EmbedExtensions
+- uid: NKStudio.Discord.Module.EmbedExtensions.AddDescription(NKStudio.Discord.Module.Embed,System.String)
+  name: AddDescription(Embed, string)
+  href: api/NKStudio.Discord.Module.EmbedExtensions.html#NKStudio_Discord_Module_EmbedExtensions_AddDescription_NKStudio_Discord_Module_Embed_System_String_
+  commentId: M:NKStudio.Discord.Module.EmbedExtensions.AddDescription(NKStudio.Discord.Module.Embed,System.String)
+  name.vb: AddDescription(Embed, String)
+  fullName: NKStudio.Discord.Module.EmbedExtensions.AddDescription(NKStudio.Discord.Module.Embed, string)
+  fullName.vb: NKStudio.Discord.Module.EmbedExtensions.AddDescription(NKStudio.Discord.Module.Embed, String)
+  nameWithType: EmbedExtensions.AddDescription(Embed, string)
+  nameWithType.vb: EmbedExtensions.AddDescription(Embed, String)
+- uid: NKStudio.Discord.Module.EmbedExtensions.AddDescription*
+  name: AddDescription
+  href: api/NKStudio.Discord.Module.EmbedExtensions.html#NKStudio_Discord_Module_EmbedExtensions_AddDescription_
+  commentId: Overload:NKStudio.Discord.Module.EmbedExtensions.AddDescription
+  isSpec: "True"
+  fullName: NKStudio.Discord.Module.EmbedExtensions.AddDescription
+  nameWithType: EmbedExtensions.AddDescription
+- uid: NKStudio.Discord.Module.EmbedExtensions.AddEmbed(NKStudio.Discord.DiscordBot,NKStudio.Discord.Module.Embed)
+  name: AddEmbed(DiscordBot, Embed)
+  href: api/NKStudio.Discord.Module.EmbedExtensions.html#NKStudio_Discord_Module_EmbedExtensions_AddEmbed_NKStudio_Discord_DiscordBot_NKStudio_Discord_Module_Embed_
+  commentId: M:NKStudio.Discord.Module.EmbedExtensions.AddEmbed(NKStudio.Discord.DiscordBot,NKStudio.Discord.Module.Embed)
+  fullName: NKStudio.Discord.Module.EmbedExtensions.AddEmbed(NKStudio.Discord.DiscordBot, NKStudio.Discord.Module.Embed)
+  nameWithType: EmbedExtensions.AddEmbed(DiscordBot, Embed)
+- uid: NKStudio.Discord.Module.EmbedExtensions.AddEmbed*
+  name: AddEmbed
+  href: api/NKStudio.Discord.Module.EmbedExtensions.html#NKStudio_Discord_Module_EmbedExtensions_AddEmbed_
+  commentId: Overload:NKStudio.Discord.Module.EmbedExtensions.AddEmbed
+  isSpec: "True"
+  fullName: NKStudio.Discord.Module.EmbedExtensions.AddEmbed
+  nameWithType: EmbedExtensions.AddEmbed
+- uid: NKStudio.Discord.Module.EmbedExtensions.WithThumbnailURL(NKStudio.Discord.Module.Embed,System.String)
+  name: WithThumbnailURL(Embed, string)
+  href: api/NKStudio.Discord.Module.EmbedExtensions.html#NKStudio_Discord_Module_EmbedExtensions_WithThumbnailURL_NKStudio_Discord_Module_Embed_System_String_
+  commentId: M:NKStudio.Discord.Module.EmbedExtensions.WithThumbnailURL(NKStudio.Discord.Module.Embed,System.String)
+  name.vb: WithThumbnailURL(Embed, String)
+  fullName: NKStudio.Discord.Module.EmbedExtensions.WithThumbnailURL(NKStudio.Discord.Module.Embed, string)
+  fullName.vb: NKStudio.Discord.Module.EmbedExtensions.WithThumbnailURL(NKStudio.Discord.Module.Embed, String)
+  nameWithType: EmbedExtensions.WithThumbnailURL(Embed, string)
+  nameWithType.vb: EmbedExtensions.WithThumbnailURL(Embed, String)
+- uid: NKStudio.Discord.Module.EmbedExtensions.WithThumbnailURL*
+  name: WithThumbnailURL
+  href: api/NKStudio.Discord.Module.EmbedExtensions.html#NKStudio_Discord_Module_EmbedExtensions_WithThumbnailURL_
+  commentId: Overload:NKStudio.Discord.Module.EmbedExtensions.WithThumbnailURL
+  isSpec: "True"
+  fullName: NKStudio.Discord.Module.EmbedExtensions.WithThumbnailURL
+  nameWithType: EmbedExtensions.WithThumbnailURL
+- uid: NKStudio.Discord.Module.Footer
+  name: Footer
+  href: api/NKStudio.Discord.Module.Footer.html
+  commentId: T:NKStudio.Discord.Module.Footer
+  fullName: NKStudio.Discord.Module.Footer
+  nameWithType: Footer
+- uid: NKStudio.Discord.Module.Footer.Create(System.String)
+  name: Create(string)
+  href: api/NKStudio.Discord.Module.Footer.html#NKStudio_Discord_Module_Footer_Create_System_String_
+  commentId: M:NKStudio.Discord.Module.Footer.Create(System.String)
+  name.vb: Create(String)
+  fullName: NKStudio.Discord.Module.Footer.Create(string)
+  fullName.vb: NKStudio.Discord.Module.Footer.Create(String)
+  nameWithType: Footer.Create(string)
+  nameWithType.vb: Footer.Create(String)
+- uid: NKStudio.Discord.Module.Footer.Create*
+  name: Create
+  href: api/NKStudio.Discord.Module.Footer.html#NKStudio_Discord_Module_Footer_Create_
+  commentId: Overload:NKStudio.Discord.Module.Footer.Create
+  isSpec: "True"
+  fullName: NKStudio.Discord.Module.Footer.Create
+  nameWithType: Footer.Create
+- uid: NKStudio.Discord.Module.FooterExtensions
+  name: FooterExtensions
+  href: api/NKStudio.Discord.Module.FooterExtensions.html
+  commentId: T:NKStudio.Discord.Module.FooterExtensions
+  fullName: NKStudio.Discord.Module.FooterExtensions
+  nameWithType: FooterExtensions
+- uid: NKStudio.Discord.Module.FooterExtensions.AddFooter(NKStudio.Discord.Module.Embed,NKStudio.Discord.Module.Footer)
+  name: AddFooter(Embed, Footer)
+  href: api/NKStudio.Discord.Module.FooterExtensions.html#NKStudio_Discord_Module_FooterExtensions_AddFooter_NKStudio_Discord_Module_Embed_NKStudio_Discord_Module_Footer_
+  commentId: M:NKStudio.Discord.Module.FooterExtensions.AddFooter(NKStudio.Discord.Module.Embed,NKStudio.Discord.Module.Footer)
+  fullName: NKStudio.Discord.Module.FooterExtensions.AddFooter(NKStudio.Discord.Module.Embed, NKStudio.Discord.Module.Footer)
+  nameWithType: FooterExtensions.AddFooter(Embed, Footer)
+- uid: NKStudio.Discord.Module.FooterExtensions.AddFooter*
+  name: AddFooter
+  href: api/NKStudio.Discord.Module.FooterExtensions.html#NKStudio_Discord_Module_FooterExtensions_AddFooter_
+  commentId: Overload:NKStudio.Discord.Module.FooterExtensions.AddFooter
+  isSpec: "True"
+  fullName: NKStudio.Discord.Module.FooterExtensions.AddFooter
+  nameWithType: FooterExtensions.AddFooter
+- uid: NKStudio.Discord.Module.FooterExtensions.SetText(NKStudio.Discord.Module.Footer,System.String)
+  name: SetText(Footer, string)
+  href: api/NKStudio.Discord.Module.FooterExtensions.html#NKStudio_Discord_Module_FooterExtensions_SetText_NKStudio_Discord_Module_Footer_System_String_
+  commentId: M:NKStudio.Discord.Module.FooterExtensions.SetText(NKStudio.Discord.Module.Footer,System.String)
+  name.vb: SetText(Footer, String)
+  fullName: NKStudio.Discord.Module.FooterExtensions.SetText(NKStudio.Discord.Module.Footer, string)
+  fullName.vb: NKStudio.Discord.Module.FooterExtensions.SetText(NKStudio.Discord.Module.Footer, String)
+  nameWithType: FooterExtensions.SetText(Footer, string)
+  nameWithType.vb: FooterExtensions.SetText(Footer, String)
+- uid: NKStudio.Discord.Module.FooterExtensions.SetText*
+  name: SetText
+  href: api/NKStudio.Discord.Module.FooterExtensions.html#NKStudio_Discord_Module_FooterExtensions_SetText_
+  commentId: Overload:NKStudio.Discord.Module.FooterExtensions.SetText
+  isSpec: "True"
+  fullName: NKStudio.Discord.Module.FooterExtensions.SetText
+  nameWithType: FooterExtensions.SetText
+- uid: NKStudio.Discord.Module.FooterExtensions.WithIconURL(NKStudio.Discord.Module.Footer,System.String)
+  name: WithIconURL(Footer, string)
+  href: api/NKStudio.Discord.Module.FooterExtensions.html#NKStudio_Discord_Module_FooterExtensions_WithIconURL_NKStudio_Discord_Module_Footer_System_String_
+  commentId: M:NKStudio.Discord.Module.FooterExtensions.WithIconURL(NKStudio.Discord.Module.Footer,System.String)
+  name.vb: WithIconURL(Footer, String)
+  fullName: NKStudio.Discord.Module.FooterExtensions.WithIconURL(NKStudio.Discord.Module.Footer, string)
+  fullName.vb: NKStudio.Discord.Module.FooterExtensions.WithIconURL(NKStudio.Discord.Module.Footer, String)
+  nameWithType: FooterExtensions.WithIconURL(Footer, string)
+  nameWithType.vb: FooterExtensions.WithIconURL(Footer, String)
+- uid: NKStudio.Discord.Module.FooterExtensions.WithIconURL*
+  name: WithIconURL
+  href: api/NKStudio.Discord.Module.FooterExtensions.html#NKStudio_Discord_Module_FooterExtensions_WithIconURL_
+  commentId: Overload:NKStudio.Discord.Module.FooterExtensions.WithIconURL
+  isSpec: "True"
+  fullName: NKStudio.Discord.Module.FooterExtensions.WithIconURL
+  nameWithType: FooterExtensions.WithIconURL
+- uid: NKStudio.Discord.Module.ImageExtension
+  name: ImageExtension
+  href: api/NKStudio.Discord.Module.ImageExtension.html
+  commentId: T:NKStudio.Discord.Module.ImageExtension
+  fullName: NKStudio.Discord.Module.ImageExtension
+  nameWithType: ImageExtension
+- uid: NKStudio.Discord.Module.ImageExtension.AddImage(NKStudio.Discord.Module.Embed,System.String)
+  name: AddImage(Embed, string)
+  href: api/NKStudio.Discord.Module.ImageExtension.html#NKStudio_Discord_Module_ImageExtension_AddImage_NKStudio_Discord_Module_Embed_System_String_
+  commentId: M:NKStudio.Discord.Module.ImageExtension.AddImage(NKStudio.Discord.Module.Embed,System.String)
+  name.vb: AddImage(Embed, String)
+  fullName: NKStudio.Discord.Module.ImageExtension.AddImage(NKStudio.Discord.Module.Embed, string)
+  fullName.vb: NKStudio.Discord.Module.ImageExtension.AddImage(NKStudio.Discord.Module.Embed, String)
+  nameWithType: ImageExtension.AddImage(Embed, string)
+  nameWithType.vb: ImageExtension.AddImage(Embed, String)
+- uid: NKStudio.Discord.Module.ImageExtension.AddImage*
+  name: AddImage
+  href: api/NKStudio.Discord.Module.ImageExtension.html#NKStudio_Discord_Module_ImageExtension_AddImage_
+  commentId: Overload:NKStudio.Discord.Module.ImageExtension.AddImage
+  isSpec: "True"
+  fullName: NKStudio.Discord.Module.ImageExtension.AddImage
+  nameWithType: ImageExtension.AddImage
+- uid: NKStudio.Discord.Module.Options
+  name: Options
+  href: api/NKStudio.Discord.Module.Options.html
+  commentId: T:NKStudio.Discord.Module.Options
+  fullName: NKStudio.Discord.Module.Options
+  nameWithType: Options
+- uid: NKStudio.Discord.Module.Timestamp
+  name: Timestamp
+  href: api/NKStudio.Discord.Module.Timestamp.html
+  commentId: T:NKStudio.Discord.Module.Timestamp
+  fullName: NKStudio.Discord.Module.Timestamp
+  nameWithType: Timestamp
+- uid: NKStudio.Discord.Module.Timestamp.Create(System.DateTime)
+  name: Create(DateTime)
+  href: api/NKStudio.Discord.Module.Timestamp.html#NKStudio_Discord_Module_Timestamp_Create_System_DateTime_
+  commentId: M:NKStudio.Discord.Module.Timestamp.Create(System.DateTime)
+  name.vb: Create(Date)
+  fullName: NKStudio.Discord.Module.Timestamp.Create(System.DateTime)
+  fullName.vb: NKStudio.Discord.Module.Timestamp.Create(Date)
+  nameWithType: Timestamp.Create(DateTime)
+  nameWithType.vb: Timestamp.Create(Date)
+- uid: NKStudio.Discord.Module.Timestamp.Create*
+  name: Create
+  href: api/NKStudio.Discord.Module.Timestamp.html#NKStudio_Discord_Module_Timestamp_Create_
+  commentId: Overload:NKStudio.Discord.Module.Timestamp.Create
+  isSpec: "True"
+  fullName: NKStudio.Discord.Module.Timestamp.Create
+  nameWithType: Timestamp.Create
+- uid: NKStudio.Discord.Module.TimestampExtension
+  name: TimestampExtension
+  href: api/NKStudio.Discord.Module.TimestampExtension.html
+  commentId: T:NKStudio.Discord.Module.TimestampExtension
+  fullName: NKStudio.Discord.Module.TimestampExtension
+  nameWithType: TimestampExtension
+- uid: NKStudio.Discord.Module.TimestampExtension.AddTimestamp(NKStudio.Discord.Module.Embed,NKStudio.Discord.Module.Timestamp)
+  name: AddTimestamp(Embed, Timestamp)
+  href: api/NKStudio.Discord.Module.TimestampExtension.html#NKStudio_Discord_Module_TimestampExtension_AddTimestamp_NKStudio_Discord_Module_Embed_NKStudio_Discord_Module_Timestamp_
+  commentId: M:NKStudio.Discord.Module.TimestampExtension.AddTimestamp(NKStudio.Discord.Module.Embed,NKStudio.Discord.Module.Timestamp)
+  fullName: NKStudio.Discord.Module.TimestampExtension.AddTimestamp(NKStudio.Discord.Module.Embed, NKStudio.Discord.Module.Timestamp)
+  nameWithType: TimestampExtension.AddTimestamp(Embed, Timestamp)
+- uid: NKStudio.Discord.Module.TimestampExtension.AddTimestamp*
+  name: AddTimestamp
+  href: api/NKStudio.Discord.Module.TimestampExtension.html#NKStudio_Discord_Module_TimestampExtension_AddTimestamp_
+  commentId: Overload:NKStudio.Discord.Module.TimestampExtension.AddTimestamp
+  isSpec: "True"
+  fullName: NKStudio.Discord.Module.TimestampExtension.AddTimestamp
+  nameWithType: TimestampExtension.AddTimestamp
+- uid: NKStudio.Discord.Module.TimestampExtension.WithFormat(NKStudio.Discord.Module.Timestamp,System.String)
+  name: WithFormat(Timestamp, string)
+  href: api/NKStudio.Discord.Module.TimestampExtension.html#NKStudio_Discord_Module_TimestampExtension_WithFormat_NKStudio_Discord_Module_Timestamp_System_String_
+  commentId: M:NKStudio.Discord.Module.TimestampExtension.WithFormat(NKStudio.Discord.Module.Timestamp,System.String)
+  name.vb: WithFormat(Timestamp, String)
+  fullName: NKStudio.Discord.Module.TimestampExtension.WithFormat(NKStudio.Discord.Module.Timestamp, string)
+  fullName.vb: NKStudio.Discord.Module.TimestampExtension.WithFormat(NKStudio.Discord.Module.Timestamp, String)
+  nameWithType: TimestampExtension.WithFormat(Timestamp, string)
+  nameWithType.vb: TimestampExtension.WithFormat(Timestamp, String)
+- uid: NKStudio.Discord.Module.TimestampExtension.WithFormat*
+  name: WithFormat
+  href: api/NKStudio.Discord.Module.TimestampExtension.html#NKStudio_Discord_Module_TimestampExtension_WithFormat_
+  commentId: Overload:NKStudio.Discord.Module.TimestampExtension.WithFormat
+  isSpec: "True"
+  fullName: NKStudio.Discord.Module.TimestampExtension.WithFormat
+  nameWithType: TimestampExtension.WithFormat
+- uid: NKStudio.Discord.Module.TitleExtension
+  name: TitleExtension
+  href: api/NKStudio.Discord.Module.TitleExtension.html
+  commentId: T:NKStudio.Discord.Module.TitleExtension
+  fullName: NKStudio.Discord.Module.TitleExtension
+  nameWithType: TitleExtension
+- uid: NKStudio.Discord.Module.TitleExtension.AddTitle(NKStudio.Discord.Module.Embed,System.String)
+  name: AddTitle(Embed, string)
+  href: api/NKStudio.Discord.Module.TitleExtension.html#NKStudio_Discord_Module_TitleExtension_AddTitle_NKStudio_Discord_Module_Embed_System_String_
+  commentId: M:NKStudio.Discord.Module.TitleExtension.AddTitle(NKStudio.Discord.Module.Embed,System.String)
+  name.vb: AddTitle(Embed, String)
+  fullName: NKStudio.Discord.Module.TitleExtension.AddTitle(NKStudio.Discord.Module.Embed, string)
+  fullName.vb: NKStudio.Discord.Module.TitleExtension.AddTitle(NKStudio.Discord.Module.Embed, String)
+  nameWithType: TitleExtension.AddTitle(Embed, string)
+  nameWithType.vb: TitleExtension.AddTitle(Embed, String)
+- uid: NKStudio.Discord.Module.TitleExtension.AddTitle*
+  name: AddTitle
+  href: api/NKStudio.Discord.Module.TitleExtension.html#NKStudio_Discord_Module_TitleExtension_AddTitle_
+  commentId: Overload:NKStudio.Discord.Module.TitleExtension.AddTitle
+  isSpec: "True"
+  fullName: NKStudio.Discord.Module.TitleExtension.AddTitle
+  nameWithType: TitleExtension.AddTitle
+- uid: NKStudio.Discord.Module.URLExtension
+  name: URLExtension
+  href: api/NKStudio.Discord.Module.URLExtension.html
+  commentId: T:NKStudio.Discord.Module.URLExtension
+  fullName: NKStudio.Discord.Module.URLExtension
+  nameWithType: URLExtension
+- uid: NKStudio.Discord.Module.URLExtension.AddURL(NKStudio.Discord.Module.Embed,System.String)
+  name: AddURL(Embed, string)
+  href: api/NKStudio.Discord.Module.URLExtension.html#NKStudio_Discord_Module_URLExtension_AddURL_NKStudio_Discord_Module_Embed_System_String_
+  commentId: M:NKStudio.Discord.Module.URLExtension.AddURL(NKStudio.Discord.Module.Embed,System.String)
+  name.vb: AddURL(Embed, String)
+  fullName: NKStudio.Discord.Module.URLExtension.AddURL(NKStudio.Discord.Module.Embed, string)
+  fullName.vb: NKStudio.Discord.Module.URLExtension.AddURL(NKStudio.Discord.Module.Embed, String)
+  nameWithType: URLExtension.AddURL(Embed, string)
+  nameWithType.vb: URLExtension.AddURL(Embed, String)
+- uid: NKStudio.Discord.Module.URLExtension.AddURL*
+  name: AddURL
+  href: api/NKStudio.Discord.Module.URLExtension.html#NKStudio_Discord_Module_URLExtension_AddURL_
+  commentId: Overload:NKStudio.Discord.Module.URLExtension.AddURL
+  isSpec: "True"
+  fullName: NKStudio.Discord.Module.URLExtension.AddURL
+  nameWithType: URLExtension.AddURL

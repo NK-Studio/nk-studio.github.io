@@ -9,10 +9,10 @@
       "output": {
         ".html": {
           "relative_path": "api/MiniJSON.Json.html",
-          "hash": "ZynTbZJ35wmvg15063A/fH3sGv1PldyyTBNIaKKvhB8="
+          "hash": "f/GTfdu7h5FcjNfFPLcmz/V5Oy1XYytsFlVoq5+j4l8="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -21,10 +21,10 @@
       "output": {
         ".html": {
           "relative_path": "api/MiniJSON.html",
-          "hash": "aHF+nAq7yDnG0O+dot95Luod/mLmopnvV4mD8DnEAXA="
+          "hash": "6Oa7N9gr55KsJ+JyX8XAizRyHj4UtDB8jY/cdYHS8Dw="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -33,10 +33,10 @@
       "output": {
         ".html": {
           "relative_path": "api/NKStudio.Discord.DiscordBot.html",
-          "hash": "lgL/5s3Di7zUpzDJemO+J7qF1a3S+4x2CyPKq+PSp2M="
+          "hash": "ygzS9YBOUW7vLeyAMmTm0JuN8GVl4oesYh0q6Yizo/w="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -45,10 +45,10 @@
       "output": {
         ".html": {
           "relative_path": "api/NKStudio.Discord.DiscordBotExtensions.html",
-          "hash": "AT3ftkqqAoVFuUkot3gYb0COWDCsbAUzZ1Es1fbK/Y0="
+          "hash": "oljVQGSzVmaktEt75+op/ZwMdVD6sTQFDXIHIdZ0WDo="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -57,10 +57,10 @@
       "output": {
         ".html": {
           "relative_path": "api/NKStudio.Discord.Experimental.Video.html",
-          "hash": "FpkRXn+J+Fy76gX64/oH+FhKI8QqlyxOCP6ASq07JUg="
+          "hash": "umJJ6XRuqf7eSKmxHJGUVRKxEENL2MfxnokhHCP5eUo="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -69,10 +69,10 @@
       "output": {
         ".html": {
           "relative_path": "api/NKStudio.Discord.Experimental.VideoExtensions.html",
-          "hash": "GpYwCZJK4KxsFemR0KFwzDACWbwG0DM0+ZVumYUA+Tw="
+          "hash": "T315MU14A97SvASf546JC4luHyUy8bdRnxzU56W2KQM="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -81,10 +81,10 @@
       "output": {
         ".html": {
           "relative_path": "api/NKStudio.Discord.Experimental.html",
-          "hash": "yoqSjrOQbr3u57I2nc2DkVOW+dTBJj6ktoBptica//E="
+          "hash": "r6oBezI/6MAhz5LT8jaHaJ0mmC0EJ8z2/ka7u08mN9U="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -93,10 +93,10 @@
       "output": {
         ".html": {
           "relative_path": "api/NKStudio.Discord.Module.Author.html",
-          "hash": "nmSSnfxo46s9fAMUq1q8NBT0BYPpJnwMmTizTIr1MNA="
+          "hash": "Nr1mJcFcpdB8rU1lQJBNmprVYrnyNnVJaPFHJFNYjc8="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -105,10 +105,10 @@
       "output": {
         ".html": {
           "relative_path": "api/NKStudio.Discord.Module.AuthorExtension.html",
-          "hash": "XqV9BzVnIGvEGo6/JLM8IohI6Odtm3QYy5iRpnWJqrk="
+          "hash": "FlfJCi5Fy5nGqpTStcUyIEtr2Vpqgcdqkb81xTpwoss="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -117,10 +117,10 @@
       "output": {
         ".html": {
           "relative_path": "api/NKStudio.Discord.Module.ColorExtension.html",
-          "hash": "qLSzpw4qbKj99iypWSfF49bmGtS47KYY8SG53REIF1Y="
+          "hash": "xMT23wY8tESykyOHlOlnPt/OlNhZQq3z1UcjZmdXRFg="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -129,10 +129,10 @@
       "output": {
         ".html": {
           "relative_path": "api/NKStudio.Discord.Module.Embed.html",
-          "hash": "UiInH4NxK9r4/LpAkowSxOAVRhkVQ4PIcs4j+49nWqs="
+          "hash": "P6Kkq+Nrigd3fUrr2TABWnFZ67uUzK8iewYjrdzpYOg="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -141,10 +141,10 @@
       "output": {
         ".html": {
           "relative_path": "api/NKStudio.Discord.Module.EmbedExtensions.html",
-          "hash": "2GngLyvhwuCQFb/MvtwvDmPgei5HNWiIpR7NC+zOruA="
+          "hash": "QFStAk7JATxtCs2WcGk5ZHV+RG5kd5+nlrJqm+l9L9c="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -153,10 +153,10 @@
       "output": {
         ".html": {
           "relative_path": "api/NKStudio.Discord.Module.Footer.html",
-          "hash": "mEpN5Kpcvyh5D3BCbsZbyCoeBjhW3RndT+8lyD2pL00="
+          "hash": "1n2hk6CurP3shYc7p4eIQZsBt5uuNksBzX5O3r21484="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -165,10 +165,10 @@
       "output": {
         ".html": {
           "relative_path": "api/NKStudio.Discord.Module.FooterExtensions.html",
-          "hash": "lSq+5T9qr1hJFdHhf6TmtZg1taQMeth8oMSBZiWYmy4="
+          "hash": "7rubKmwywEkQy8FiaUPJOvfrdjZyYFpDC9SLCE5SbaI="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -177,10 +177,10 @@
       "output": {
         ".html": {
           "relative_path": "api/NKStudio.Discord.Module.ImageExtension.html",
-          "hash": "dzRJ3iAs4PUbE9CkxrHlffXDmyD2koYHeW8Pq1l6MiE="
+          "hash": "F1vzzA7/KojRL7KC86t/tImPPzFBxuAoeIJT/EbeeY8="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -189,10 +189,10 @@
       "output": {
         ".html": {
           "relative_path": "api/NKStudio.Discord.Module.Options.html",
-          "hash": "aO5ud+ApjhqRtUn3Ns8CGfLrp5siuQUknv2aMZl10L0="
+          "hash": "V+AvJOjw08QJIcYIeCdKwoq5i2q/0Xo0ape5vldR2s0="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -201,10 +201,10 @@
       "output": {
         ".html": {
           "relative_path": "api/NKStudio.Discord.Module.Timestamp.html",
-          "hash": "2LhGGGtbOQMLvvpB2Cj2FwYhOwv7cGk9CHecng0A2ZI="
+          "hash": "RIyEJ5dU3bGlJsND4YsXyZx+nhoZNpH/0vQmXbpbJrg="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -213,10 +213,10 @@
       "output": {
         ".html": {
           "relative_path": "api/NKStudio.Discord.Module.TimestampExtension.html",
-          "hash": "zGjfyrgCFbyYvK54hCH3eDsk4I7vd3yRhMwbnP8WtFQ="
+          "hash": "eT669WGys33LDAgzplc3DMHH4DBkcEesiQYGvIvP764="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -225,10 +225,10 @@
       "output": {
         ".html": {
           "relative_path": "api/NKStudio.Discord.Module.TitleExtension.html",
-          "hash": "KfX5yZV4d6wDOMAM49/jFrRWGwgkHlU5K/l0IZmrPrQ="
+          "hash": "aR2vA3cIzEopQ6LoBTg3D6wsS7TV8gZ/YWx1sbRttvM="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -237,10 +237,10 @@
       "output": {
         ".html": {
           "relative_path": "api/NKStudio.Discord.Module.URLExtension.html",
-          "hash": "7diCVhk0i/G1A6ktBp+ZRkl7TJLh0BlO71jPLb5R9Ss="
+          "hash": "SbOVC2s/mkh+AfG39Ibmx3HS5UB8yH4FB/hUOLsdxRY="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -249,10 +249,10 @@
       "output": {
         ".html": {
           "relative_path": "api/NKStudio.Discord.Module.html",
-          "hash": "G8uAPG0llgZkPxtIlG7pzKUHKl6TeC9IHOZ3POtKLF0="
+          "hash": "CJBQon/bY4B7T2EbkgllXWY528DyHftPVUFezGQ3f7M="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -261,10 +261,10 @@
       "output": {
         ".html": {
           "relative_path": "api/NKStudio.Discord.html",
-          "hash": "gFgTymIFS5Kne+XBhdrdy5ryC7uLBiznTxvhPz/haV4="
+          "hash": "5yiftlYszeuL6OIIn++nTxOojf4T8JzmF6xRhU87xzI="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -273,10 +273,10 @@
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "y0bZmS0/yDgsKy4Im9lAlvt0RamDK/pwZVBFzgTXNtw="
+          "hash": "3KJji/nLXPzllMvWXowHYfa9j+QgOEg3vAGzLbYKfJk="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -293,56 +293,71 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "articles/intro.md",
+      "source_relative_path": "changelog/CHANGELOG.md",
       "output": {
         ".html": {
-          "relative_path": "articles/intro.html",
-          "hash": "PmvWPINPm8XnTMFYOCR5padAs7m/MNx+LoPhMfqv37w="
+          "relative_path": "changelog/CHANGELOG.html",
+          "hash": "tXQQZ7ASYLCdcmF+3SNy7tbLed1upRciuV02vmAyTTE="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
       "type": "Toc",
-      "source_relative_path": "articles/toc.yml",
+      "source_relative_path": "changelog/toc.yml",
       "output": {
         ".html": {
-          "relative_path": "articles/toc.html",
-          "hash": "+FPCLcvmNhVb9VLasYr6Tnep0PZtIA6V/UOJ0u+1RmE="
+          "relative_path": "changelog/toc.html",
+          "hash": "pL3KVCuuULEckI+QSWEDJEeQHYCAxOE62rRH0oLHmyI="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
-      "type": "Resource",
-      "source_relative_path": "favicon.ico",
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
       "output": {
-        "resource": {
-          "relative_path": "favicon.ico"
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "DNMh9Sc5p6g95AMOERze95RG2/Dsuf4abAAeUxwWvZ4="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
-      "type": "Resource",
-      "source_relative_path": "index.html",
+      "type": "Conceptual",
+      "source_relative_path": "license/LICENSE.md",
       "output": {
-        "resource": {
-          "relative_path": "index.html"
+        ".html": {
+          "relative_path": "license/LICENSE.html",
+          "hash": "cN/RyOTgFiEfQM3R/SGXb2djBJ+j1JprA5H+rB21Ll4="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
-      "type": "Resource",
-      "source_relative_path": "logo.svg",
+      "type": "Conceptual",
+      "source_relative_path": "license/Third Party Notices.md",
       "output": {
-        "resource": {
-          "relative_path": "logo.svg"
+        ".html": {
+          "relative_path": "license/Third Party Notices.html",
+          "hash": "YTo3WbT+/Xuahivoe5AVllIUv0SwDEIHh1rycCeUkoc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "license/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "license/toc.html",
+          "hash": "Bf4FC3/fgpmFH8f9LbZt0JapAefRMTJhSlrRV7EBLx4="
         }
       },
       "is_incremental": false,
@@ -354,10 +369,10 @@
       "output": {
         ".html": {
           "relative_path": "manual/index.html",
-          "hash": "N0abNHOkYFsCw7x0sVdZM0ZGE3GYvHeAdXxN1SlBMm4="
+          "hash": "X3rHBgiZGhfk5VNWwx4yrGV8+gmshuW28RKq1es+26s="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -378,7 +393,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "YcrTUiGN/+rBFsNHcW2OSXaYn4EIggfFeUuQxOCfsoo="
+          "hash": "e4hW/wn32X5oDvE7HVXTQe6pXIRsKr/dvklIGiQiiRY="
         }
       },
       "is_incremental": false,
@@ -388,29 +403,24 @@
   "incremental_info": [
     {
       "status": {
-        "can_incremental": true,
+        "can_incremental": false,
+        "details": "Cannot build incrementally because plugin changed.",
         "incrementalPhase": "build",
         "total_file_count": 0,
-        "skipped_file_count": 0
+        "skipped_file_count": 0,
+        "full_build_reason_code": "PluginChanged"
       },
       "processors": {
         "ConceptualDocumentProcessor": {
-          "can_incremental": true,
+          "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 3,
-          "skipped_file_count": 3
+          "total_file_count": 6,
+          "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {
-          "can_incremental": true,
+          "can_incremental": false,
           "incrementalPhase": "build",
           "total_file_count": 22,
-          "skipped_file_count": 22
-        },
-        "ResourceDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build",
-          "total_file_count": 0,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {

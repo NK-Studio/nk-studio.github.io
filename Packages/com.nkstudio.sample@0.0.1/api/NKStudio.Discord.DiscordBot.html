@@ -51,9 +51,10 @@
 
         <div class="subnav navbar navbar-default">
           <div class="container hide-when-search" id="breadcrumb">
+            <!-- Unity Customization: Remove content of breadcrumb bar. This space is used for version and language switchers
             <ul class="breadcrumb">
               <li></li>
-            </ul>
+            </ul> -->
           </div>
         </div>
       </header>
@@ -67,6 +68,11 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
+            <div id="unity_breadcrumb_placeholder">
+                <ul class="breadcrumb">
+                <li></li>
+                </ul>
+            </div>
             <article class="content wrap" id="_content" data-uid="NKStudio.Discord.DiscordBot">
 
 
@@ -212,7 +218,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Networking.UnityWebRequest.html">UnityWebRequest</a></td>
+        <td><span class="xref">UnityEngine.Networking.UnityWebRequest</span></td>
         <td><p>생성된 UnityWebRequest</p>
 </td>
       </tr>

@@ -1,5 +1,4 @@
-//const isOffline = !location.host || (location.host.indexOf('nk-studio.github.io') === -1);
-const isOffline = !location.host || (location.host.indexOf('localhost:8080') === -1);
+const isOffline = !location.host || (location.host.indexOf('nk-studio.github.io') === -1);
 
 $(function () {
     if (isOffline) {

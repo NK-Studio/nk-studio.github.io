@@ -1,0 +1,14 @@
+{
+  "versions":{
+    "1.0.0":{
+      "unity":"2021.3",
+      "displayName":"UDiscord",
+      "name":"com.nkstudio.udiscordbot",
+      "type":"asset",
+      "keywords":[
+        "Discord"
+      ],
+      "version":"1.0.0"
+    }
+  }
+}

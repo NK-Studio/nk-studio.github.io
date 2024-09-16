@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <script type="text/javascript">
+        thisPackageMetaData = {name: "com.nkstudio.udiscordbot", version: "1.0.0", displayTitle: "UDiscord Bot 1.0.0", lang: "kr"};
+    </script>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Send | UDiscord Bot | 1.0.0</title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Send | UDiscord Bot | 1.0.0">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <link rel="stylesheet" href="../styles/version-switcher.css">
+      <link rel="stylesheet" href="../styles/language-switcher.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        <div class="subnav navbar navbar-default">
+            <div class="container hide-when-search" id="breadcrumb">
+                <!-- Unity Customization: Remove content of breadcrumb bar. This space is used for version and language switchers
+                <ul class="breadcrumb">
+                  <li></li>
+                </ul>
+                -->
+            </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+          <div id="unity_breadcrumb_placeholder">
+              <ul class="breadcrumb">
+              <li> csharp</li>
+              </ul>
+          </div>
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="send">Send</h1>
+
+<p>생성된 디스코드 봇에 내용을 추가되어있는 상태에서, <code>.Send</code> 메서드를 호출하여 디스코드 웹훅에 <strong>메시지를 전송</strong>합니다.</p>
+<pre><code class="lang-csharp" highlight-lines="3">DiscordBot.Create(&quot;Webhook URL&quot;)
+    .WithContent(&quot;Message&quot;)
+    .Send();
+</code></pre><h1 id="주의">주의</h1>
+<p><code>.Send</code> 메서드를 호출할 때, 전달해야하는 내용이 꼭 있어야 합니다.<br>
+다음과 같이 내용이 없는 상태에서 <code>.Send</code> 메서드를 호출하면 메세지가 전달되지 않습니다.</p>
+<pre><code class="lang-csharp">DiscordBot.Create(&quot;Webhook URL&quot;)
+    .Send(); // 에러 발생
+</code></pre>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+              <div>
+                  이 에셋과 문서는 Unity Technologies와 관련이 없으며, 사용으로 인해 발생하는 법적 문제에 대해서는 제작자가 책임지지 않습니다.
+              </div>
+              <div>
+                  <span class="pull-right"><a href="#top">Back to top</a></span>
+            
+            <span>이 문서는 <strong>DocFX</strong>를 통해 생성되었습니다.</span>
+              </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../styles/version-switcher.js"></script>
+    <script type="text/javascript" src="../styles/language-switcher.js"></script>
+    <script type="text/javascript" src="../styles/metadata-collector.js"></script>
+  </body>
+</html>

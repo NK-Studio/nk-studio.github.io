@@ -1,0 +1,20 @@
+{
+  "langs": [
+    {
+      "pathPrefix": "",
+      "versions": [
+        "1.0"
+      ],
+      "display": "English",
+      "lang": "en"
+    },
+    {
+      "pathPrefix": "kr",
+      "versions": [
+        "1.0"
+      ],
+      "display": "한국어",
+      "lang": "kr"
+    }
+  ]
+}

@@ -1,9 +1,9 @@
 const cacheName = "DefaultCompany-Eclipse Built In-0.1";
 const contentToCache = [
-    "Build/Ppap.loader.js",
-    "Build/Ppap.framework.js",
-    "Build/Ppap.data",
-    "Build/Ppap.wasm",
+    "Build/WebAR.loader.js",
+    "Build/WebAR.framework.js",
+    "Build/WebAR.data",
+    "Build/WebAR.wasm",
     "TemplateData/style.css"
 
 ];

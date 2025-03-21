@@ -1,14 +1,5 @@
-### YamlMime:XRefMap
-sorted: true
-references:
-- uid: UnityEngine.AudioSource
-  name: AudioSource
-  name.vb:
-  href: https://docs.unity3d.com/ScriptReference/AudioSource.html
-  commentId: T:UnityEngine.AudioSource
-  isSpec:
-  fullName: UnityEngine.AudioSource
-  fullName.vb:
-  nameWithType: AudioSource
-  nameWithType.vb:
-  IsValid: true
+version: 1.0
+items:
+  - uid: UnityEngine.Texture2D
+    name: Texture2D
+    href: https://www.naver.com/

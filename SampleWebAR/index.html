@@ -17,33 +17,16 @@
             width: 100vw;
             overflow: hidden;
         }
-        .ctaDiv {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            position: absolute;
-            left: 0;
-            right: 0;
-            top: 0;
-            bottom: 0;
-            background: #fffa;
-            z-index: 99;
-        }
     </style>
 </head>
 <body>
     <!--IMAGETARGETS-->
-    <imagetarget id='NupyCard' src='targets/NupyCard.jpg'></imagetarget>
+		<imagetarget id='NupyCard' src='targets/162626.20240913140612.jpg'></imagetarget>
 
     <video id="webcam-video" muted autoplay playsinline style="width:1px;position:absolute"></video>
     <!-- <video id="webcam-video" muted autoplay playsinline style="width:100%; height:100%; object-fit:cover; position:absolute"></video> -->
     <canvas id="video-canvas" style="width:100%; height:100%; object-fit:cover; position:absolute"></canvas>
-    <div id="startARDiv" class="ctaDiv">
-        <select id="chooseCamSel" style="display: none;" onchange="SelectCam()"></select>
-        <p style="text-align: center; width:60vw;">This augmented reality experience requires access to your device's camera</p>
-        <button id="startARButton" onclick="StartAR()" style="display:none">ALLOW ACCESS</button>
-    </div>
+
     <div id="screenshotDiv" style="display: none;" class="ctaDiv">
         <div style="position:relative; background-color:white; padding:10px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.25);">
             <img id="screenshotImg" src="" alt="screenshot" style="width:80vw; height:80vh">
@@ -64,13 +47,12 @@
     </div>
     <div id="unity-container" class="unity-mobile">
         <canvas id="unity-canvas" style="width: 100%; height: 100%; background: #0000; z-index: -99"></canvas>
-        <div id="unity-loading-bar" style="position: absolute; right: -4000000px">
+        <div id="unity-loading-bar">
             <div id="unity-logo"></div>
             <div id="unity-progress-bar-empty">
                 <div id="unity-progress-bar-full"></div>
             </div>
         </div>
-        <canvas id="video-canvas"></canvas>
     </div>
     <script src="arcamera.js" type="text/javascript"></script>
     <script src="itracker.js" type="text/javascript"></script>
@@ -90,20 +72,22 @@
                     ShowError("Failed to initialize the experience.");
                     return;
                 }
-                
+
+                await RequestWebcam();
                 await LoadWebcams();
-                document.getElementById("startARButton").style.display = "block";
             }
             initialize();
+
+
             var container = document.querySelector("#unity-container");
             var canvas = document.querySelector("#unity-canvas");
             var loadingBar = document.querySelector("#unity-loading-bar");
             var progressBarFull = document.querySelector("#unity-progress-bar-full");
+
             function StartAR() {
                 canvas.style.width = window.innerWidth + "px";
                 canvas.style.height = window.innerHeight + "px";
-                
-                document.getElementById("startARDiv").style.display = "none";
+
                 createUnityInstance(document.querySelector("#unity-canvas"), {
                     dataUrl: "Build/SampleWebAR.data",
                     frameworkUrl: "Build/SampleWebAR.framework.js",
@@ -121,10 +105,10 @@
                     }
                 ).then((unityInstance) => {
                     window.unityInstance = unityInstance;
-                    RequestWebcam();
+
                     loadingBar.style.display = "none";
                 });
-                loadingBar.style.display = "block";
+                loadingBar.style.display = "none";
             }
             //Set Facing Mode here ('environment', 'user', '')
 		window.unityFacingMode = "environment"
@@ -135,19 +119,20 @@
                 audio: false
             };
             window.requestingForPermissions = false;
+
             async function RequestWebcam(){
                 window.requestingForPermissions = true;
                 try{
                     window.webcamStream = await navigator.mediaDevices.getUserMedia(window.WEBCAM_SETTINGS);
-                    console.log("Webcam access granted");
+                    console.log("웹캠 액세스 부여");
                     requestingForPermissions = false;
                 }
                 catch (err) {
-                    //user denied camera permission - show error panel
+                    // user denied camera permission - show error panel
                     console.error("getUserMedia error - " , err);
-                    ShowError("Failed to start the experience. Camera permission was denied");
+                    ShowError("경험을 시작하지 못했습니다. 카메라 권한이 거부되었습니다");
                     window.requestingForPermissions = false;
-                }           
+                }
             }
             async function StartWebcam(){
                 console.log("StartWebcam")
@@ -169,12 +154,12 @@
                     catch(err){
                         console.error("Webcam failed to start - ", err);
                         window.unityInstance.SendMessage('ARCamera', 'OnStartWebcamFail');
-                    }   
+                    }
                 }
                 else{
                     console.error("Webcam failed to start - permission not yet granted");
                     window.unityInstance.SendMessage('ARCamera', 'OnStartWebcamFail');
-                }  
+                }
             }
             async function LoadWebcams(){
                 let camDevices = [];
@@ -194,38 +179,23 @@
                         else{
                             //back and front
                             camDevices.push(mediaDevice);
-                        }   
-                        
+                        }
+
                         ctr++;
                     }
                 });
-                var select = document.getElementById("chooseCamSel");
-                select.style.display = "block";
-                var count = 0;
-                //reverse array because some Android phones can't distinguish front and back cams at first load
-                //and when this happens, most of the time, front cam goes first and back cam goes last
-                camDevices = camDevices.reverse();
-                camDevices.forEach(mediaDevice => {
-                    const option = document.createElement('option');
-                    option.value = mediaDevice.deviceId;
-                    let label = `Camera ${count}`;
-                    if (mediaDevice.label) {
-                        label = mediaDevice.label
-                    }
-                    const textNode = document.createTextNode(label);
-                    option.appendChild(textNode);
-                    select.appendChild(option);
-                    count++;
-                });
-                iTracker.WEBCAM_NAME = select.options[select.selectedIndex].innerHTML;
-            }
-            function SelectCam(){
-                var select = document.getElementById("chooseCamSel");
-                window.deviceId = select.value;
+
+                camDevices.forEach(device => {
+                    console.log(device.name);
+                })
+
+                window.deviceId = camDevices[0].value;
                 window.WEBCAM_SETTINGS.video['deviceId'] = deviceId;
-                //console.log(window.WEBCAM_SETTINGS);
-                iTracker.WEBCAM_NAME = select.options[select.selectedIndex].innerHTML;
+                iTracker.WEBCAM_NAME = camDevices[0].name;
+
+                StartAR();
             }
+
             async function FlipCam(){
                 arCamera.stopWebcam();
                 window.WEBCAM_SETTINGS.video.deviceId = '';
@@ -255,13 +225,13 @@
             function ShowConfirmUrl(url){
                 document.getElementById("confirmUrlDiv").style.display = "flex";
                 window.newUrlString = url;
-                document.getElementById("confirmUrlText").innerText = "Are you sure you want to visit " + url;                
+                document.getElementById("confirmUrlText").innerText = "Are you sure you want to visit " + url;
             }
             window.ITRACKER_GLOBALS = {
                 //place global settings here
                 INTERNAL_SMOOTHFACTOR_POS: .075,
             }
-            
+
     </script>
 </body>
 </html>

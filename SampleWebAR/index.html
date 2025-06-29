@@ -145,11 +145,8 @@
                             window.unityInstance.SendMessage("Local Tracker System", "InitTargetMatches",text);
                             window.unityInstance.SendMessage("Tracker", "InputTargetData",text);
                         })
-                        setTimeout(() =>
-                            {
-                                nupyIntro.style.display = "none";
-                                loadingBar.style.display = "none";
-                            }, 500);
+                        nupyIntro.style.display = "none";
+                        loadingBar.style.display = "none";
                 });
                 nupyIntro.style.display = "block";
                 loadingBar.style.display = "block";

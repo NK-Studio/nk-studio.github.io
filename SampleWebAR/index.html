@@ -61,6 +61,10 @@
     </div>
     <div id="unity-container" class="unity-mobile">
         <canvas id="unity-canvas" style="width: 100%; height: 100%; background: #0000; z-index: -99"></canvas>
+        <div id="nupy-intro">
+            <div id="nupy-title"></div>
+            <div id="company-logo"></div>
+        </div>
         <div id="unity-loading-bar">
             <div id="unity-logo"></div>
             <div id="unity-progress-bar-empty">
@@ -105,7 +109,7 @@
                     ShowError("Failed to initialize the experience.");
                     return;
                 }
-
+                
                 await RequestWebcam();
                 await LoadWebcams();
             }
@@ -114,11 +118,12 @@
             var container = document.querySelector("#unity-container");
             var canvas = document.querySelector("#unity-canvas");
             var loadingBar = document.querySelector("#unity-loading-bar");
+            var nupyIntro = document.querySelector("#nupy-intro");
             var progressBarFull = document.querySelector("#unity-progress-bar-full");
             function StartAR() {
                 canvas.style.width = window.innerWidth + "px";
                 canvas.style.height = window.innerHeight + "px";
-
+                
                 createUnityInstance(document.querySelector("#unity-canvas"), {
                     dataUrl: "Build/SampleWebAR.data",
                     frameworkUrl: "Build/SampleWebAR.framework.js",
@@ -140,8 +145,13 @@
                             window.unityInstance.SendMessage("Local Tracker System", "InitTargetMatches",text);
                             window.unityInstance.SendMessage("Tracker", "InputTargetData",text);
                         })
-                    loadingBar.style.display = "none";
+                        setTimeout(() =>
+                            {
+                                nupyIntro.style.display = "none";
+                                loadingBar.style.display = "none";
+                            }, 1000);
                 });
+                nupyIntro.style.display = "block";
                 loadingBar.style.display = "block";
             }
 		window.unityFacingMode = "environment"
@@ -163,7 +173,7 @@
                     console.error("getUserMedia error - " , err);
                     ShowError("Failed to start the experience. Camera permission was denied");
                     window.requestingForPermissions = false;
-                }
+                }           
             }
             async function StartWebcam(){
                 console.log("StartWebcam")
@@ -184,12 +194,12 @@
                     catch(err){
                         console.error("Webcam failed to start - ", err);
                         window.unityInstance.SendMessage('ARCamera', 'OnStartWebcamFail');
-                    }
+                    }   
                 }
                 else{
                     console.error("Webcam failed to start - permission not yet granted");
                     window.unityInstance.SendMessage('ARCamera', 'OnStartWebcamFail');
-                }
+                }  
             }
             async function LoadWebcams(){
                 let camDevices = [];
@@ -204,7 +214,7 @@
                         }
                         else if (window.unityFacingMode == '') {
                             camDevices.push(mediaDevice);
-                        }
+                        }   
                     }
                 });
                 if (camDevices.length === 0 && window.unityFacingMode === 'environment') {
@@ -254,7 +264,7 @@
             function ShowConfirmUrl(url){
                 document.getElementById("confirmUrlDiv").style.display = "flex";
                 window.newUrlString = url;
-                document.getElementById("confirmUrlText").innerText = "Are you sure you want to visit " + url;
+                document.getElementById("confirmUrlText").innerText = "Are you sure you want to visit " + url;                
             }
             window.ITRACKER_GLOBALS = {
                 INTERNAL_SMOOTHFACTOR_POS: .075,

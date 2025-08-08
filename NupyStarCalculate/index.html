@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>누피 별점 계산기</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="container">
+  <h1>누피 별점 계산기</h1>
+
+  <div class="controls">
+    <button id="mode-1-single" class="mode-button active">1장</button>
+    <button id="mode-2-vertical" class="mode-button">2장 세로</button>
+    <button id="mode-2-horizontal" class="mode-button" disabled>2장 가로 (비활성)</button>
+    <button id="mode-4-grid" class="mode-button" disabled>4장 (비활성)</button>
+  </div>
+
+  <div id="mode-status"></div>
+
+  <div id="drop-zone-container">
+    <div id="drop-area">
+      <p>분석할 고해상도 이미지를 여기에 드래그 앤 드롭하거나, 클립보드에서 붙여넣기(Ctrl/Cmd+V) 하세요.</p>
+      <p class="small-text">이미지만 지원합니다. (2장 모드는 세로가 긴 이미지를 권장합니다.)</p>
+    </div>
+  </div>
+
+  <div id="results-container" class="hidden">
+    <div id="card-grid">
+      <!-- 분석 결과 카드가 여기에 동적으로 추가됩니다. -->
+    </div>
+    <button id="reset-button">다시하기</button>
+  </div>
+
+  <div id="loading-overlay" class="hidden">
+    <div class="spinner"></div>
+    <p>이미지를 분석 중입니다...</p>
+  </div>
+</div>
+
+<!-- 정보 안내 모달 -->
+<div id="info-modal-overlay" class="modal-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="info-modal-title">
+  <div class="modal">
+    <h2 id="info-modal-title">안내</h2>
+    <div class="modal-body">
+      <p>
+        이 도구는 Vuforia와 동일한 기술을 사용하지는 않지만,<br>
+        유사한 방식으로 구현되었습니다.<br>
+        따라서 산출되는 별점에는 1~2점 정도의 오차가 있을 수 있습니다.
+      </p>
+
+      <p>
+        또한, 이 도구는 Vuforia보다 특징점 검출에서<br>
+        다소 유리하게 작동하는 경향이 있습니다.<br><br>
+
+        그럼에도 불구하고 별점이 <b>0~1점</b>으로 매우 낮게 나올 경우,<br>
+        누피 콘텐츠 이용에 제약이 발생할 가능성이 높으므로<br>
+        다른 이미지를 사용하는 것을 권장드립니다.<br><br>
+
+        별점이 <b>3점 이상</b>이면<br>
+        원활하게 누피 콘텐츠를 즐기실 수 있습니다.
+      </p>
+    </div>
+    <div class="modal-actions">
+      <button id="modal-close" class="btn primary">알겠어요</button>
+      <button id="modal-dont-show" class="btn outline">다음에는 보이지 않기!</button>
+    </div>
+  </div>
+</div>
+
+<script>
+  var Module = {
+    // OpenCV.js가 완전히 로드되면 이 함수가 호출됩니다.
+    onRuntimeInitialized() {
+      // 'opencv-ready' 신호를 보내 index.js의 코드를 깨웁니다.
+      document.dispatchEvent(new CustomEvent('opencv-ready'));
+    }
+  };
+</script>
+
+<script>
+  var cv;
+  var Module = {
+    onRuntimeInitialized() {
+      cv = Module;
+      document.dispatchEvent(new Event('opencv-ready'));
+    }
+  };
+</script>
+<script src="opencv.js"></script>
+<script src="./index.js" type="text/javascript"></script>
+</body>
+</html>

@@ -1,0 +1,438 @@
+/* General Styles */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+}
+
+h1 {
+    color: #1c1e21;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* Controls */
+.controls {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#mode-status {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+}
+
+/* 모든 모드 버튼의 기본 스타일 (비활성화된 것처럼 보이게) */
+.mode-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid #007bff;
+    background-color: #fff; /* 배경은 하얗게 */
+    color: #007bff;      /* 글자는 파랗게 */
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    /* 핵심: 선택되지 않은 버튼은 반투명하게 만듭니다 */
+    opacity: 0.6;
+}
+
+/* 선택되지 않은 버튼에 마우스를 올렸을 때의 효과 */
+.mode-button:hover:not(:disabled):not(.active) {
+    opacity: 1; /* 마우스를 올리면 완전히 보이게 */
+    background-color: #f0f8ff; /* 아주 살짝 배경색 변경 */
+}
+
+/* .active 클래스가 붙은 버튼 (선택된 버튼)의 스타일 */
+.mode-button.active {
+    background-color: #007bff;
+    color: #fff;
+    /* 핵심: 선택된 버튼은 완전히 불투명하게 만듭니다 */
+    opacity: 1;
+    /* 추가: 살짝 그림자를 주어 입체감을 더합니다 */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* 비활성화된(disabled) 버튼의 스타일 */
+.mode-button:disabled {
+    border-color: #ccc;
+    color: #ccc;
+    cursor: not-allowed;
+    opacity: 0.5; /* 다른 비활성 버튼과 비슷하게 처리 */
+}
+
+/* Drop Area */
+#drop-area {
+    border: 3px dashed #ccc;
+    border-radius: 12px;
+    padding: 40px;
+    margin: 20px auto;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+#drop-area.highlight {
+    border-color: #007bff;
+    background-color: #f0f8ff;
+}
+
+#drop-area p {
+    margin: 0;
+    font-size: 1.2em;
+    color: #555;
+}
+
+#drop-area .small-text {
+    font-size: 0.9em;
+    color: #777;
+    margin-top: 10px;
+}
+
+/* Results Area */
+#results-container {
+    margin-top: 20px;
+}
+
+#card-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+#card-grid.grid-2-vertical {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(160px, 1fr)); /* 기존의 절반 폭 */
+    gap: 80px; /* 간격도 절반 */
+    justify-content: center;
+    align-items: start;
+    max-width: 600px; /* 전체 폭도 줄임 */
+    margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+    #card-grid.grid-2-vertical {
+        grid-template-columns: 1fr;
+    }
+}
+
+#card-grid.grid-4 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* 1장 모드에서도 2장 축소 카드 크기와 동일하게 보이도록 하는 컨테이너 클래스 */
+#card-grid.grid-1-compact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+/* 2장 모드에서의 각 컬럼(~260px)에 맞춰 단일 카드의 최대 폭을 동일하게 제한 */
+#card-grid.grid-1-compact .card {
+    max-width: 260px;
+}
+
+/* 1장(컴팩트) 모드에서 가로(landscape) 이미지는 더 넓게 표시하여 너무 작게 보이지 않도록 조정 */
+#card-grid.grid-1-compact .card.landscape {
+    max-width: 480px; /* 기본 카드 최대폭과 동일하게 확장 */
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 480px;
+    box-sizing: border-box;
+    transform: scale(1);
+    transform-origin: top left; /* 축소 기준점을 왼쪽 위로 */
+    /* 카드가 생성될 때 부드럽게 나타나는 애니메이션 */
+    animation: card-enter 320ms ease-out both;
+}
+
+@keyframes card-enter {
+    from {
+        opacity: 0;
+        transform: translateY(8px) scale(0.98);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* 간단한 스태거 효과로 연속 카드가 순차적으로 뜨도록 처리 (최대 6개) */
+#card-grid > .card:nth-child(1) { animation-delay: 0ms; }
+#card-grid > .card:nth-child(2) { animation-delay: 60ms; }
+#card-grid > .card:nth-child(3) { animation-delay: 120ms; }
+#card-grid > .card:nth-child(4) { animation-delay: 180ms; }
+#card-grid > .card:nth-child(5) { animation-delay: 240ms; }
+#card-grid > .card:nth-child(6) { animation-delay: 300ms; }
+
+.card canvas {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid #eee;
+    display: block;
+}
+
+.card-info {
+    padding-top: 15px;
+    text-align: left;
+}
+
+.card-info p {
+    margin: 0 0 10px 0;
+    font-weight: 500;
+}
+
+.stars {
+    font-size: 24px;
+}
+
+.star.filled {
+    color: #ffc107;
+}
+
+.star.empty {
+    color: #e0e0e0;
+}
+
+/* Reset Button */
+#reset-button {
+    margin-top: 30px;
+    padding: 12px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    background-color: #dc3545;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#reset-button:hover {
+    background-color: #c82333;
+}
+
+/* Loading Spinner */
+#loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.spinner {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #007bff;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite;
+}
+
+#loading-overlay p {
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.canvas-wrapper {
+    position: relative; /* 자식 캔버스의 위치 기준점 */
+    width: 100%;
+    /* 캔버스의 가로세로 비율을 유지하기 위한 트릭 */
+    padding-top: 75%; /* 4:3 비율 예시, JS에서 동적으로 설정됩니다. */
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #eee;
+    background-color: #f9f9f9;
+}
+
+.canvas-wrapper canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block; /* 두 캔버스를 모두 올려두고 투명도로 전환 */
+    opacity: 0;
+    transition: opacity 200ms ease-in-out;
+    pointer-events: none; /* 클릭 방지 */
+}
+
+/* 기본 상태: 원본 뷰가 보이고, 키포인트 뷰는 숨김(투명) */
+.canvas-wrapper .original-view { opacity: 1; }
+.canvas-wrapper .keypoint-view { opacity: 0; }
+
+/* 'show-keypoints' 클래스가 있을 때: 원본 뷰가 사라지고, 키포인트 뷰가 나타남 */
+.canvas-wrapper.show-keypoints .original-view { opacity: 0; }
+.canvas-wrapper.show-keypoints .keypoint-view { opacity: 1; }
+
+
+/* 토글 스위치 스타일 */
+.toggle-switch-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* 오른쪽 정렬 */
+    margin-top: 15px;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 28px;
+}
+
+.toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 28px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #007bff;
+}
+
+input:checked + .slider:before {
+    transform: translateX(22px);
+}
+/* Respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    .card {
+        animation: none !important;
+    }
+    .canvas-wrapper canvas {
+        transition: none !important;
+    }
+}
+
+/* Modal */
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    z-index: 10000;
+}
+
+.modal {
+    width: 100%;
+    max-width: 600px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    padding: 20px 22px;
+    text-align: left;
+}
+
+.modal h2 {
+    margin: 0 0 10px 0;
+}
+
+.modal-body {
+    color: #444;
+    line-height: 1.6;
+}
+
+.modal-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: flex-end;
+    margin-top: 16px;
+}
+
+.btn {
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.btn.primary {
+    background: #007bff;
+    color: #fff;
+    border-color: #007bff;
+}
+
+.btn.outline {
+    background: #fff;
+    color: #007bff;
+    border-color: #007bff;
+}
+
+.btn:hover {
+    filter: brightness(0.95);
+}

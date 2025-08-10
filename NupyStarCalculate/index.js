@@ -23,7 +23,7 @@ function main() {
   function updateModeUI() {
     const modeTexts = {
       '1-single': '1장',
-      '2-vertical': '2장 세로',
+      '2-auto': '2장',
       '4-grid': '4장'
     };
     modeStatusDiv.textContent = `현재 모드: ${modeTexts[currentMode]}`;
@@ -137,9 +137,11 @@ function main() {
     setTimeout(() => {
       try {
         let src = safeImread(imgElement);
+        // 원본 이미지의 가로세로로 2장 모드의 레이아웃을 다르게 설정
+        const orientation = (src.cols >= src.rows) ? 'landscape' : 'portrait';
         const subImages = splitImage(src, currentMode);
         cardGrid.innerHTML = '';
-        updateCardGridClass(currentMode);
+        updateCardGridClass(currentMode, orientation);
         subImages.forEach(subImgMat => {
           const card = analyzeAndCreateCard(subImgMat);
           cardGrid.appendChild(card);
@@ -186,10 +188,18 @@ function main() {
     }
     const w = sourceMat.cols;
     const h = sourceMat.rows;
-    if (mode === '2-vertical') {
-      const h_half = Math.floor(h / 2);
-      subImages.push(sourceMat.roi(new cv.Rect(0, 0, w, h_half)));
-      subImages.push(sourceMat.roi(new cv.Rect(0, h_half, w, h - h_half)));
+    if (mode === '2-auto') {
+      if (w >= h) {
+        // 가로가 더 긴 경우: 좌/우 2분할
+        const w_half = Math.floor(w / 2);
+        subImages.push(sourceMat.roi(new cv.Rect(0, 0, w_half, h)));
+        subImages.push(sourceMat.roi(new cv.Rect(w_half, 0, w - w_half, h)));
+      } else {
+        // 세로가 더 긴 경우: 상/하 2분할
+        const h_half = Math.floor(h / 2);
+        subImages.push(sourceMat.roi(new cv.Rect(0, 0, w, h_half)));
+        subImages.push(sourceMat.roi(new cv.Rect(0, h_half, w, h - h_half)));
+      }
     } else if (mode === '4-grid') {
       const w_half = Math.floor(w / 2);
       const h_half = Math.floor(h / 2);
@@ -291,15 +301,18 @@ function main() {
     }
   }
 
-  function updateCardGridClass(mode) {
+  function updateCardGridClass(mode, orientation) {
     cardGrid.className = 'card-grid';
     if (mode === '1-single') {
       // 단일 카드도 2장 축소 크기와 동일하게 보이도록 컴팩트 클래스 부여
       cardGrid.classList.add('grid-1-compact');
-    } else if (mode === '2-vertical') {
-      cardGrid.classList.add('grid-2-vertical');
+    } else if (mode === '2-auto') {
+      // 원본이 가로로 길 경우 카드가 너무 작아지는 문제를 해결하기 위해 별도의 레이아웃 사용
+      cardGrid.classList.add(orientation === 'landscape' ? 'grid-2-horizontal' : 'grid-2-vertical');
     } else if (mode === '4-grid') {
-      cardGrid.classList.add('grid-4');
+      // 4장 모드에서도 원본이 세로로 긴 경우 카드가 너무 커지는 문제를 완화하기 위해
+      // 2장 세로 레이아웃과 유사한 컴팩트 레이아웃을 적용
+      cardGrid.classList.add(orientation === 'portrait' ? 'grid-4-portrait' : 'grid-4');
     }
   }
 

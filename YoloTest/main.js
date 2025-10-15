@@ -113,7 +113,7 @@ async function detectObjects(image) {
         blue.push(data[i + 2] / 255);
     }
     const inputTensorData = [...red, ...green, ...blue];
-    const inputTensor = new ort.Tensor('float16', inputTensorData, MODEL_INPUT_SHAPE); // float16 대신 float32가 더 안정적일 수 있습니다.
+    const inputTensor = new ort.Tensor('float32', inputTensorData, MODEL_INPUT_SHAPE); // float16 대신 float32가 더 안정적일 수 있습니다.
 
     try {
         const feeds = { [session.inputNames[0]]: inputTensor };

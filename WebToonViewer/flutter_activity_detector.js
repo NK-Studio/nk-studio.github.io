@@ -13,3 +13,13 @@ if (window.sendToFlutter) {
       }
   }
 });
+
+
+
+document.addEventListener('touchstart', (e) => {
+  if (e.target.tagName === 'IFRAME') {
+if (window.sendToFlutter) {
+        window.sendToFlutter("WebViewCall;CountReset");
+      }
+  }
+});

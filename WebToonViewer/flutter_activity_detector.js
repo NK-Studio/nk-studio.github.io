@@ -14,18 +14,12 @@ if (window.sendToFlutter) {
   }
 });
 
-document.addEventListener('touchstart', (e) => {
-  if (e.target.tagName === 'IFRAME') {
-if (window.sendToFlutter) {
-        window.sendToFlutter("WebViewCall;CountReset");
-      }
-  }
-});
-
-window.addEventListener('wheel', (e) => {
-  if (e.deltaY < 0) {
-    if (window.sendToFlutter) window.sendToFlutter("Wheel:Up");
-  } else if (e.deltaY > 0) {
-    if (window.sendToFlutter) window.sendToFlutter("Wheel:Down");
-  }
+window.addEventListener('blur', () => {
+    setTimeout(() => {
+        if (document.activeElement && document.activeElement.tagName === 'IFRAME') {
+            if (window.sendToFlutter) {
+                window.sendToFlutter("WebViewCall;CountReset");
+            }
+        }
+    }, 0);
 });

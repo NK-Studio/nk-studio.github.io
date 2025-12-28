@@ -2,3 +2,4 @@
 [SnapToFloor](https://nk-studio.github.io/Packages/com.nkstudio.snap-to-floor@2.5.3/index.html)  
 [UDiscord](https://nk-studio.github.io/Packages/com.nkstudio.udiscordbot@1.0/index.html)  
 [Nupy Star Calculate](https://nk-studio.github.io/NupyStarCalculate/index.html)  
+[WebtoonViewer25](https://nk-studio.github.io/WebToonViewer/index.html)  

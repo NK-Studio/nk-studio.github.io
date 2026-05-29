@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Optimization -->
+  <title>NK-Studio | Unity 클라이언트 개발자 & TA 포트폴리오</title>
+  <meta name="description" content="한용GPT - Unity 엔진 기반 크로스 플랫폼 개발자이자 테크니컬 아티스트(TA) 한용의 포트폴리오 웹사이트입니다. 고성능 아키텍처 설계와 셰이더 그래픽 최적화 솔루션을 제공합니다.">
+  <meta name="keywords" content="유니티 개발자, 테크니컬 아티스트, TA, Unity Developer, Technical Artist, 게임 개발, 셰이더 최적화, Zenject, UniTask, 캔디러쉬, 스노래빗">
+  <meta name="author" content="한용 (NK-Studio)">
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="NK-Studio | Unity 클라이언트 개발자 & TA 포트폴리오">
+  <meta property="og:description" content="코딩과 그래픽 사이의 가교가 되어 프로젝트의 기술적 병목을 해결하는 트러블슈터, 한용의 포트폴리오입니다.">
+  <meta property="og:url" content="https://nk-studio.github.io/portfolio/">
+  
+  <!-- CSS Link -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Glowing Orbs Backdrops -->
+  <div class="glow-orb glow-orb-cyan"></div>
+  <div class="glow-orb glow-orb-purple"></div>
+
+  <!-- Floating Glassmorphic Header -->
+  <header class="navbar glass-panel">
+    <a href="#" class="nav-logo">NK-Studio</a>
+    <nav class="nav-links">
+      <a href="#about" class="active">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#awards">Awards</a>
+      <a href="#contact" class="btn btn-primary" style="padding: 8px 20px; box-shadow: none;">Contact</a>
+    </nav>
+    <div class="menu-toggle" id="mobileMenuBtn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content fade-in-section is-visible">
+      <p class="hero-tagline">Unity Developer & Technical Artist</p>
+      <h1 class="hero-title">안녕하세요,<br><span>한용(NK-Studio)</span>입니다</h1>
+      <p class="hero-desc">"모르는 게 생기면 한용이한테 물어봐" — 동료들이 인정하는 트러블슈터 <strong>'한용GPT'</strong>.<br>코드와 그래픽의 경계를 허물고 프로젝트 최적화와 견고한 아키텍처를 설계합니다.</p>
+      
+      <div class="hero-tags">
+        <span class="hero-tag">#Unity6_LTS</span>
+        <span class="hero-tag">#Technical_Artist</span>
+        <span class="hero-tag">#Architecture_Designer</span>
+        <span class="hero-tag">#Optimizing_Troubleshooter</span>
+      </div>
+
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">포트폴리오 보기</a>
+        <a href="#contact" class="btn btn-secondary">연락하기</a>
+      </div>
+
+      <div class="hero-socials">
+        <!-- GitHub Link -->
+        <a href="https://github.com/NK-Studio" target="_blank" class="social-icon" aria-label="GitHub">
+          <svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+        </a>
+        <!-- Velog Link -->
+        <a href="https://velog.io/@bnm000215" target="_blank" class="social-icon" aria-label="Velog">
+          <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
+        </a>
+        <!-- YouTube Link -->
+        <a href="https://www.youtube.com/@nkstudio9161" target="_blank" class="social-icon" aria-label="YouTube">
+          <svg viewBox="0 0 24 24"><path d="M23.498 6.163gC23.224 5.137 22.416 4.329 21.39 4.055 19.517 3.545 12 3.545 12 3.545s-7.517 0-9.39.51c-1.026.274-1.834 1.082-2.108 2.108C0 8.036 0 12 0 12s0 3.964.51 5.837c.274 1.026 1.082 1.834 2.108 2.108 1.873.51 9.39.51 9.39.51s7.517 0 9.39-.51c1.026-.274 1.834-.823 2.108-1.834.51-1.873.51-5.837.51-5.837s0-3.964-.51-5.837zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+        </a>
+        <!-- Notion Link -->
+        <a href="https://pebble-glider-f8f.notion.site/NK-Studio-ef0e693f9db749c59731905dc9495db9?source=copy_link" target="_blank" class="social-icon" aria-label="Notion">
+          <svg viewBox="0 0 24 24"><path d="M4.6 2h14.8c1.4 0 2.6 1.2 2.6 2.6v14.8c0 1.4-1.2 2.6-2.6 2.6H4.6C3.2 22 2 20.8 2 19.4V4.6C2 3.2 3.2 2 4.6 2zm4 3.7c-.5 0-.9.4-.9.9v10.8c0 .5.4.9.9.9h1.1V5.7H8.6zm5.7 0c-.5 0-.9.4-.9.9v10.8c0 .5.4.9.9.9h1.1V5.7h-1.1z"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About & Philosophy Section -->
+  <section id="about" class="section-padding container">
+    <div class="fade-in-section">
+      <h2 class="section-title">Core <span>Philosophy</span></h2>
+      <div class="philosophy-grid">
+        <!-- Philosophy Card 1 -->
+        <div class="philosophy-card glass-panel">
+          <div class="phil-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3zM5.47 12.8L12 16.36l6.53-3.56v1.96L12 18.33l-6.53-3.57v-1.96z"/></svg>
+          </div>
+          <h3>아트와 코드의 번역가</h3>
+          <p>그래픽 리소스의 렌더링 파이프라인 작동 원리와 수학적 공식을 깊이 이해하여, 아티스트와 개발자 사이의 최적화된 언어로 소통하고 공정 병목을 주도적으로 해결합니다.</p>
+        </div>
+        <!-- Philosophy Card 2 -->
+        <div class="philosophy-card glass-panel">
+          <div class="phil-icon">
+            <svg viewBox="0 0 24 24"><path d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54c-.04-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"/></svg>
+          </div>
+          <h3>집요한 트러블슈터</h3>
+          <p>"모바일 사양 한계로 불가능하다"고 평가받던 실시간 반투명 필터 연산을 Downsampling 및 Dual-pass Kawase Blur 커스텀 셰이더로 우회 구현하여 안정적인 60fps를 이끌어냅니다.</p>
+        </div>
+        <!-- Philosophy Card 3 -->
+        <div class="philosophy-card glass-panel">
+          <div class="phil-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+          </div>
+          <h3>지식 공유와 상생</h3>
+          <p>나 혼자만 아는 독창적 코드보다는, 7년간 유튜브 교육 채널을 꾸준히 운영해 오고 유데미 강사 활동을 펼친 만큼 팀원들과 함께 기록하고 공유하며 다 함께 삽질 시간을 줄여나갑니다.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Skill Stack -->
+  <section id="skills" class="section-padding container">
+    <div class="fade-in-section">
+      <h2 class="section-title">Technical <span>Skills</span></h2>
+      <div class="tech-grid">
+        <!-- Tech Stack Card 1: Languages -->
+        <div class="tech-card glass-panel">
+          <h3>Languages</h3>
+          <div class="tech-list">
+            <span class="tech-item">C# (주언어)</span>
+            <span class="tech-item">HLSL / ShaderLab</span>
+            <span class="tech-item">Java</span>
+            <span class="tech-item">Kotlin</span>
+            <span class="tech-item">Swift</span>
+            <span class="tech-item">JavaScript</span>
+          </div>
+        </div>
+        <!-- Tech Stack Card 2: Engine & Rendering -->
+        <div class="tech-card glass-panel">
+          <h3>Engine & Graphics</h3>
+          <div class="tech-list">
+            <span class="tech-item">Unity 6 (LTS)</span>
+            <span class="tech-item">Unity 2022.3 LTS</span>
+            <span class="tech-item">URP / SRP</span>
+            <span class="tech-item">Bakery</span>
+            <span class="tech-item">RenderDoc</span>
+            <span class="tech-item">3ds Max / Biped</span>
+            <span class="tech-item">Spine2D</span>
+          </div>
+        </div>
+        <!-- Tech Stack Card 3: Frameworks & Libs -->
+        <div class="tech-card glass-panel">
+          <h3>Frameworks & Libraries</h3>
+          <div class="tech-list">
+            <span class="tech-item">Zenject (DI)</span>
+            <span class="tech-item">UniTask (Async)</span>
+            <span class="tech-item">UniRx (Reactive)</span>
+            <span class="tech-item">MessagePack</span>
+            <span class="tech-item">Visual Scripting (Bolt)</span>
+            <span class="tech-item">FMOD Studio</span>
+            <span class="tech-item">RayFire</span>
+          </div>
+        </div>
+        <!-- Tech Stack Card 4: Infra & DevOps -->
+        <div class="tech-card glass-panel">
+          <h3>Infra & DevOps</h3>
+          <div class="tech-list">
+            <span class="tech-item">Git / GitHub</span>
+            <span class="tech-item">Unity DevOps</span>
+            <span class="tech-item">OpenCV.js</span>
+            <span class="tech-item">GitHub Actions</span>
+            <span class="tech-item">Jenkins / TeamCity</span>
+            <span class="tech-item">Xcode / Android Studio</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Timeline -->
+  <section id="experience" class="section-padding container">
+    <div class="fade-in-section">
+      <h2 class="section-title">Work <span>Experience</span></h2>
+      <div class="timeline">
+        <!-- Timeline Item 1: Rainbow Co Full-time -->
+        <div class="timeline-item">
+          <div class="timeline-badge"></div>
+          <div class="timeline-content glass-panel">
+            <span class="timeline-date">2025.07 ~ 2026.01</span>
+            <h3>레인보우 컴퍼니 (정규직)</h3>
+            <p class="timeline-role">Unity 개발자 / TA</p>
+            <p>Android, iOS, WebGL 통합 샌드박스 크로스 플랫폼 AR 뷰어 앱 고도화, OpenCV.js 연동 이미지 트래킹 오버레이 마커 판별 분석 모듈 및 사내 CS 반복 업무 자동화 유틸리티(프린트 툴) R&D.</p>
+          </div>
+        </div>
+        <!-- Timeline Item 2: Rainbow Co Freelance -->
+        <div class="timeline-item">
+          <div class="timeline-badge"></div>
+          <div class="timeline-content glass-panel">
+            <span class="timeline-date">2024.04 ~ 2025.06</span>
+            <h3>레인보우 컴퍼니 (프리랜서)</h3>
+            <p class="timeline-role">Unity 프리랜서 외주 개발자</p>
+            <p>이미지 AR 포토카드 서비스 '누피(Noopy)'의 모바일 영상 캡처/녹화 파이프라인 개발 및 저사양 모바일 기기에서의 60fps 보장형 실시간 Dual-pass Kawase Blur UI 연출 최적화 셰이더 설계.</p>
+          </div>
+        </div>
+        <!-- Timeline Item 3: NunTokkiDan -->
+        <div class="timeline-item">
+          <div class="timeline-badge"></div>
+          <div class="timeline-content glass-panel">
+            <span class="timeline-date">2023.03 ~ 2023.11</span>
+            <h3>눈토끼단</h3>
+            <p class="timeline-role">TA / 클라이언트 프로그래머</p>
+            <p>PC Steam용 코나(Kona) & 스노래빗(Snow Rabbit) 제작 참여. 에디터 툴바 유틸리티 R&D, Bakery 라이팅 베이크 파이프라인 분석, 투명 얼음/물 반투명 몬스터의 솔팅(Sorting) 오류 우회용 셰이더 해결.</p>
+          </div>
+        </div>
+        <!-- Timeline Item 4: Rusty Nail -->
+        <div class="timeline-item">
+          <div class="timeline-badge"></div>
+          <div class="timeline-content glass-panel">
+            <span class="timeline-date">2022.09 ~ 2022.11</span>
+            <h3>러스티네일</h3>
+            <p class="timeline-role">TD / 메인 프로그래머</p>
+            <p>3D 액션 어드벤처 '캔디러쉬(Candy Rush)' 핵심 아키텍처(Zenject, MessagePack) 구축, 3D 훅액션(로프) 3ds Max 애니메이션 협업 표준 가이드 및 젤리 질감 셰이더 극복, 17인 초급 개발 팀원 리딩.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Filterable Projects Section -->
+  <section id="projects" class="section-padding container">
+    <div class="fade-in-section">
+      <h2 class="section-title">Featured <span>Projects</span></h2>
+      
+      <!-- Portfolio Filters -->
+      <div class="portfolio-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="games-ta">Games & TA</button>
+        <button class="filter-btn" data-filter="web-ar">Web AR & Apps</button>
+        <button class="filter-btn" data-filter="packages">Packages & Tools</button>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1: Candy Rush -->
+        <div class="project-card glass-panel" data-category="games-ta">
+          <div class="project-card-meta">
+            <span class="project-cat">Games & TA (PC / Steam)</span>
+            <h3>캔디러쉬 (Candy Rush)</h3>
+            <p class="project-desc">3D 액션 어드벤처 게임으로 메인 아키텍처 및 3D 훅액션 물리 로프 시스템 설계. 17명의 동료를 위한 리소스 배포 규격 수립.</p>
+            <div class="project-stack">
+              <span>Unity 2021.3</span>
+              <span>Zenject</span>
+              <span>UniRx</span>
+              <span>FMOD</span>
+              <span>3ds Max</span>
+            </div>
+            <div class="project-actions">
+              <div class="project-link" onclick="openProjectModal('candyrush')">
+                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg>
+                상세 정보 & 영상 보기
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Snow Rabbit -->
+        <div class="project-card glass-panel" data-category="games-ta">
+          <div class="project-card-meta">
+            <span class="project-cat">Games & TA (PC)</span>
+            <h3>코나 & 스노래빗</h3>
+            <p class="project-desc">BIC 2023 루키 부문 선정작. 아티스트의 작업 병목을 줄이는 에디터 툴과 반투명 몬스터의 솔팅 꼬임 셰이더 해결.</p>
+            <div class="project-stack">
+              <span>Unity 2022.3</span>
+              <span>URP 12</span>
+              <span>ShaderLab</span>
+              <span>RenderDoc</span>
+              <span>Bakery</span>
+            </div>
+            <div class="project-actions">
+              <div class="project-link" onclick="openProjectModal('snowrabbit')">
+                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg>
+                상세 정보 & 영상 보기
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: Noopy AR -->
+        <div class="project-card glass-panel" data-category="web-ar">
+          <div class="project-card-meta">
+            <span class="project-cat">Web AR & Apps (Mobile App)</span>
+            <h3>AR 포토카드 '누피'</h3>
+            <p class="project-desc">Unity 6 LTS 기반 이미지 AR 영상 증강 포토카드 서비스. 모바일 최적화 실시간 60fps 블러 셰이더 구현 및 화면 녹화.</p>
+            <div class="project-stack">
+              <span>Unity 6 LTS</span>
+              <span>URP 17</span>
+              <span>Custom Shader</span>
+              <span>Video Recorder</span>
+            </div>
+            <div class="project-actions">
+              <div class="project-link" onclick="openProjectModal('noopy')">
+                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                상세 정보 보기
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: Kona AR Engine -->
+        <div class="project-card glass-panel" data-category="web-ar">
+          <div class="project-card-meta">
+            <span class="project-cat">Web AR & Apps (WebGL / Web)</span>
+            <h3>레인보우 AR 뷰어 Engine</h3>
+            <p class="project-desc">크로스 플랫폼 카메라 연동 웹 AR 엔진 구축 및 OpenCV.js 기반 이미지 트래킹 적합성 판별 스코어 리포터 모듈 R&D.</p>
+            <div class="project-stack">
+              <span>Unity 2022.3</span>
+              <span>WebGL</span>
+              <span>OpenCV.js</span>
+              <span>CS Printer Tool</span>
+            </div>
+            <div class="project-actions">
+              <div class="project-link" onclick="openProjectModal('rainbow_ar')">
+                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                상세 정보 보기
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5: Scene System -->
+        <div class="project-card glass-panel" data-category="packages">
+          <div class="project-card-meta">
+            <span class="project-cat">Packages & Tools (Open Source)</span>
+            <h3>Scene System Package</h3>
+            <p class="project-desc">유니티 에디터 내에서 다중 씬 로딩 및 전환 작업을 안정적이고 강력하게 통제할 수 있는 오픈 소스 패키지 도구.</p>
+            <div class="project-stack">
+              <span>Unity Editor API</span>
+              <span>C#</span>
+              <span>Scene Management</span>
+            </div>
+            <div class="project-actions">
+              <a href="../Packages/com.unity.scene-system@1.0/index.html" class="project-link" target="_blank">
+                <svg viewBox="0 0 24 24"><path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg>
+                패키지 문서 보기
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6: Snap To Floor -->
+        <div class="project-card glass-panel" data-category="packages">
+          <div class="project-card-meta">
+            <span class="project-cat">Packages & Tools (Open Source)</span>
+            <h3>SnapToFloor Package</h3>
+            <p class="project-desc">유니티 씬 뷰 에디터 상에서 선택한 콜라이더/오브젝트를 원버튼으로 즉시 지형 바닥에 정렬 스냅시키는 효율적 제작 생산성 도구.</p>
+            <div class="project-stack">
+              <span>Unity Editor Tool</span>
+              <span>C#</span>
+              <span>Editor Extension</span>
+            </div>
+            <div class="project-actions">
+              <a href="../Packages/com.nkstudio.snap-to-floor@2.5.3/index.html" class="project-link" target="_blank">
+                <svg viewBox="0 0 24 24"><path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg>
+                패키지 문서 보기
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 7: UDiscord -->
+        <div class="project-card glass-panel" data-category="packages">
+          <div class="project-card-meta">
+            <span class="project-cat">Packages & Tools (Open Source)</span>
+            <h3>UDiscord Bot Package</h3>
+            <p class="project-desc">유니티 프로젝트 내부 이벤트 또는 빌드 리포트 상황을 디스코드 API를 통해 채널 웹훅으로 자동 전파하는 파이프라인 패키지.</p>
+            <div class="project-stack">
+              <span>Unity Package</span>
+              <span>Discord Webhook</span>
+              <span>CI/CD integration</span>
+            </div>
+            <div class="project-actions">
+              <a href="../Packages/com.nkstudio.udiscordbot@1.0/index.html" class="project-link" target="_blank">
+                <svg viewBox="0 0 24 24"><path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg>
+                패키지 문서 보기
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 8: Nupy Star Calculate -->
+        <div class="project-card glass-panel" data-category="packages">
+          <div class="project-card-meta">
+            <span class="project-cat">Packages & Tools (Live Demo)</span>
+            <h3>Nupy Star Calculate</h3>
+            <p class="project-desc">OpenCV.js 엔진을 브라우저상에 로드하여, AR 포토카드로 인식 가능한 이미지 마커의 적합성(별점 스코어)을 정량 계산해내는 분석 데모 웹 도구.</p>
+            <div class="project-stack">
+              <span>OpenCV.js</span>
+              <span>HTML5 Canvas</span>
+              <span>Web Utility</span>
+            </div>
+            <div class="project-actions">
+              <a href="../NupyStarCalculate/index.html" class="project-link" target="_blank">
+                <svg viewBox="0 0 24 24"><path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg>
+                실시간 데모 열기
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 9: Webtoon Viewer -->
+        <div class="project-card glass-panel" data-category="packages">
+          <div class="project-card-meta">
+            <span class="project-cat">Packages & Tools (Live Demo)</span>
+            <h3>WebtoonViewer25</h3>
+            <p class="project-desc">모바일 디바이스 뷰포트에 통일성 있게 반응하는 웹툰 롤링/레이아웃 전용 웹 뷰어 시각화 프로토타입 시연 페이지.</p>
+            <div class="project-stack">
+              <span>Responsive Web</span>
+              <span>CSS Flexbox</span>
+              <span>JS Prototype</span>
+            </div>
+            <div class="project-actions">
+              <a href="../WebToonViewer/index.html" class="project-link" target="_blank">
+                <svg viewBox="0 0 24 24"><path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg>
+                실시간 데모 열기
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Awards & Activities Section -->
+  <section id="awards" class="section-padding container">
+    <div class="fade-in-section">
+      <h2 class="section-title">Awards & <span>Activities</span></h2>
+      <div class="awards-grid">
+        <!-- Award 1 -->
+        <div class="award-card glass-panel">
+          <div class="award-icon-box">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm0-4h-2V7h2v8z"/></svg>
+          </div>
+          <div class="award-meta">
+            <h3>유니티 서울 유나이트 2026 홍보 영상 제작 협업</h3>
+            <p class="award-issuer">유니티 코리아 | 2026.07</p>
+            <p>유니티 공식 최대 컨퍼런스인 'Unite Seoul 2026'의 홍보 메인 콘텐츠 영상 제작 기술 파트너십을 수행하여 브랜드 홍보에 기여했습니다.</p>
+          </div>
+        </div>
+        <!-- Award 2 -->
+        <div class="award-card glass-panel">
+          <div class="award-icon-box">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm0-4h-2V7h2v8z"/></svg>
+          </div>
+          <div class="award-meta">
+            <h3>유니티 유나이트 서울 파이어 사이드 챗 진행</h3>
+            <p class="award-issuer">유니티 코리아 | 2025.04</p>
+            <p>공식 Unite 테크 세션 패널로 초청받아, 셰이더 최적화 기법 및 아티스트와의 리소스 파이프라인 협업 방안에 대해 현업자들과 패널 토의를 이끌었습니다.</p>
+          </div>
+        </div>
+        <!-- Award 3 -->
+        <div class="award-card glass-panel">
+          <div class="award-icon-box">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm0-4h-2V7h2v8z"/></svg>
+          </div>
+          <div class="award-meta">
+            <h3>유데미 강사 초청 ('5시간 안에 완벽한 게임 만들기')</h3>
+            <p class="award-issuer">Udemy | 2023.12</p>
+            <p>비전공자 및 주니어를 위해 단 5시간 만에 유니티 구조 설계부터 핵심 로직, 출시까지 압축적으로 전수하는 정식 교육 과정을 R&D하여 강사로 초청되었습니다.</p>
+          </div>
+        </div>
+        <!-- Award 4 -->
+        <div class="award-card glass-panel">
+          <div class="award-icon-box">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm0-4h-2V7h2v8z"/></svg>
+          </div>
+          <div class="award-meta">
+            <h3>BIC 2023 루키 전시작 및 청강 크로니클 전시 선정</h3>
+            <p class="award-issuer">BIC & 네오위즈 | 2023.08 & 2022.12</p>
+            <p>&lt;코나와 스노래빗&gt;으로 부산인디커넥트 BIC 2023 루키 부문 선정 오프라인 시연 부스를 운영했으며, &lt;캔디러쉬&gt;로 전체 17팀 중 단 3팀만 부여된 네오위즈 졸업 작품 크로니클 공동 전시에 선발되었습니다.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section-padding container">
+    <div class="fade-in-section">
+      <div class="contact-card glass-panel">
+        <h2>Let's build something <span>incredible</span></h2>
+        <p>프로젝트 셰이더 그래픽 최적화 솔루션부터 유연하고 독립성 높은 유니티 클라이언트 아키텍처 구축까지,<br>도전적인 기술적 해결을 기다리고 있습니다.</p>
+        
+        <div class="contact-btn-box">
+          <a href="mailto:bnm000215@naver.com" class="btn btn-primary">이메일 보내기</a>
+        </div>
+
+        <div class="contact-details">
+          <span>E-mail: bnm000215@naver.com</span>
+          <span>Location: Gyeonggi-do, Korea</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p class="footer-copy">&copy; 2026 NK-Studio (한용). All rights reserved.</p>
+      <div class="footer-links">
+        <a href="https://github.com/NK-Studio" target="_blank">GitHub</a>
+        <a href="https://velog.io/@bnm000215" target="_blank">Velog</a>
+        <a href="https://www.youtube.com/@nkstudio9161" target="_blank">YouTube</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Glassmorphic Detail Modal Overlay -->
+  <div class="modal-overlay" id="projectModal">
+    <div class="modal-container glass-panel">
+      <div class="modal-close" onclick="closeProjectModal()">
+        <svg viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+      </div>
+      <div class="modal-body" id="modalBodyContent">
+        <!-- Inside contents dynamically loaded from app.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript Link -->
+  <script src="app.js"></script>
+</body>
+</html>

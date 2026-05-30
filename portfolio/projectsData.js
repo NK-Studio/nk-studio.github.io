@@ -32,33 +32,6 @@ const projectDetailsData = {
       "<strong>아티스트 전용 제작 툴 확장:</strong> 커스텀 툴바 확장 및 씬 뷰 버그 프리뷰 수정 유틸리티 에디터를 개발하여 아티스트 반복 소요 시간 대폭 단축."
     ]
   },
-  noopy: {
-    title: "AR 포토카드 '누피(Noopy)'",
-    category: "Web AR & Apps (Mobile App)",
-    videoUrl: null, // No video, text and images only
-    team: "클라이언트 1명 (단독 외주 프리랜서)",
-    contribution: "Unity 클라이언트 모바일 엔진 개발 및 셰이더 최적화 100%",
-    overview: "정적인 포토카드 위에 모바일 카메라 화면을 비추었을 때 입체적인 AR 특수효과 및 비디오 가수가 증강 오버레이되는 실시간 모바일 AR 포토카드 서비스 누피(Noopy)의 핵심 기능 개발 외주 프로젝트입니다.",
-    details: [
-      "<strong>모바일 실시간 블러 렌더링 한계 극복:</strong> 타 외주사 및 기존 개발진이 모바일 GPU 연산 부하(가우시안 블러 사용 시 10~15fps 및 디바이스 과열)를 이유로 구현 불가능 판정을 내린 실시간 화면 블러 락(Lock) 해제 기능을 완벽히 해결.",
-      "<strong>Downsampling 및 Dual-pass Kawase Blur 적용:</strong> 무거운 Gaussian 연산 대신 렌더 텍스처 해상도를 1/4, 1/8로 축소(Downsampling)하여 메모리 대역폭 부하를 완전 차단하고, 모바일 GPU 연산량이 획기적으로 낮으면서도 경계가 부드러운 <strong>Dual-pass Kawase Blur</strong> 셰이더를 자체 설계 및 적용.",
-      "<strong>시그니처 상품 '익스크루시브 카드' 론칭:</strong> 저사양 모바일 단말기에서도 프레임 저하 없는 안정적 60fps 풀 프레임 블러 연출을 성공시킴으로써, 회사의 최고 매출 라인업인 시그니처 BM '익스크루시브 카드' 론칭의 결정적 공헌.",
-      "<strong>안정적 모바일 영상 녹화 파이프라인:</strong> 미디어 인코딩 최적화를 통해 실시간 AR 증강 연출 화면를 매끄럽게 화면 녹화 및 로컬 미디어 라이브러리에 저장하는 비디오 파이프라인 빌딩."
-    ]
-  },
-  rainbow_ar: {
-    title: "레인보우 AR 뷰어 Engine",
-    category: "Web AR & Apps (WebGL / Web)",
-    videoUrl: null,
-    team: "인하우스 정규직 개발팀 메인 리드",
-    contribution: "Unity AR 크로스 플랫폼 빌드 파이프라인 및 OpenCV.js 트래킹 100%",
-    overview: "누피(Noopy) 프리랜서 당시에 보여준 압도적인 최적화 및 문제 해결 역량을 인정받아 인하우스 개발팀으로 스카웃되어 정규직으로 리드한 크로스 플랫폼 AR 뷰어 및 Web AR 분석 기술 엔진 구축 프로젝트입니다.",
-    details: [
-      "<strong>크로스 플랫폼 AR 통합 대응:</strong> Android, iOS 단말 앱 환경뿐만 아니라 모바일 브라우저 WebGL 환경 전체에서 레이턴시 없이 통일되고 안정된 AR 트래킹 뷰어 파이프라인 설계 및 빌드.",
-      "<strong>OpenCV.js 연동 마커 판별 모듈 개발:</strong> 브라우저 메모리 부하와 JS 비동기 버퍼 전송을 차단하는 모듈을 R&D하여, 이미지 마커의 적합성(별점 점수 계산)을 실시간 분석 및 판별 시각화 리포팅 제공.",
-      "<strong>사내 CS 부서 프린트 자동화 소프트웨어 구축:</strong> 수작업으로 발생하던 인쇄용 마킹 오류 및 CS 반복 부하 프로세스를 한 번에 처리해 주는 전용 툴을 개발하여 사내 CS 운영 일일 리소스 50% 단축 달성."
-    ]
-  },
   ta_unity6: {
     title: "Unity 6 URP 17 그래픽스 데모",
     category: "Shaders & Rendering (PC / Mobile)",
@@ -215,7 +188,7 @@ const projectDetailsData = {
       "<strong>C# 스크립트 기반 고성능 타이밍 동기화:</strong> 애니메이션 소멸 시점, 파티클 분사, 플레이어 획득 UI 연동의 트리거 시퀀스를 프레임 오차 없이 완벽히 동기화해 최고의 피드백 타격감 선사."
     ]
   },
-  noopy: {
+  nupy: {
     title: "AR 포토카드 '누피(Noopy)'",
     category: "Web AR & Apps (Mobile App)",
     videoUrl: "https://www.youtube.com/embed/0jD73brdcIU",

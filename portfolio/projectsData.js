@@ -289,6 +289,7 @@ const projectDetailsData = {
   unityanimatorpro: {
     title: "UnityAnimatorPro",
     category: "Packages & Tools (Open Source)",
+    projectUrl: "https://github.com/NK-Studio/UnityAnimatorPro",
     videoUrl: null,
     team: "개인 개발 (GitHub 오픈소스 배포)",
     contribution: "오픈소스 패키지 아키텍처 설계 및 런타임 최적화 모듈 개발 100%",

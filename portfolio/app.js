@@ -324,11 +324,18 @@ document.addEventListener('DOMContentLoaded', () => {
   const labSearchInput = document.getElementById('labSearchInput');
   const labFilterButtons = document.querySelectorAll('.lab-filter-btn');
   const dirCards = document.querySelectorAll('.dir-card');
+  const labMoreBtnContainer = document.querySelector('.lab-more-btn-container');
+  const loadMoreBtn = document.getElementById('labLoadMoreBtn');
+
+  let isExpanded = false;
 
   function filterLabDirectory() {
     const query = labSearchInput ? labSearchInput.value.toLowerCase().trim() : '';
     const activeFilterBtn = document.querySelector('.lab-filter-btn.active');
     const activeCategory = activeFilterBtn ? activeFilterBtn.getAttribute('data-lab-filter') : 'all';
+
+    const isDefaultState = (query === '' && activeCategory === 'all');
+    let matchCount = 0;
 
     dirCards.forEach(card => {
       const cardCategory = card.getAttribute('data-lab-category');
@@ -340,18 +347,41 @@ document.addEventListener('DOMContentLoaded', () => {
       const matchesSearch = (title.includes(query) || desc.includes(query) || tags.includes(query));
 
       if (matchesCategory && matchesSearch) {
-        card.classList.remove('hide-item');
-        card.style.opacity = '0';
-        card.style.transform = 'scale(0.98) translateY(5px)';
-        setTimeout(() => {
-          card.style.transition = 'all 0.4s cubic-bezier(0.16, 1, 0.3, 1)';
-          card.style.opacity = '1';
-          card.style.transform = 'scale(1) translateY(0)';
-        }, 10);
+        if (isDefaultState && !isExpanded && matchCount >= 6) {
+          card.classList.add('hide-item');
+        } else {
+          card.classList.remove('hide-item');
+          // Smooth entry animation
+          card.style.opacity = '0';
+          card.style.transform = 'scale(0.98) translateY(5px)';
+          setTimeout(() => {
+            card.style.transition = 'all 0.4s cubic-bezier(0.16, 1, 0.3, 1)';
+            card.style.opacity = '1';
+            card.style.transform = 'scale(1) translateY(0)';
+          }, 10);
+        }
+        matchCount++;
       } else {
         card.classList.add('hide-item');
       }
     });
+
+    // Update Load More Button visibility and text
+    if (query !== '' || activeCategory !== 'all') {
+      if (labMoreBtnContainer) labMoreBtnContainer.style.display = 'none';
+    } else {
+      if (labMoreBtnContainer) labMoreBtnContainer.style.display = 'flex';
+      const chevronIcon = document.getElementById('chevronIcon');
+      if (loadMoreBtn && chevronIcon) {
+        if (isExpanded) {
+          loadMoreBtn.querySelector('span').textContent = '오픈소스 폴더 접기';
+          chevronIcon.style.transform = 'rotate(180deg)';
+        } else {
+          loadMoreBtn.querySelector('span').textContent = '더 많은 오픈소스 보기';
+          chevronIcon.style.transform = 'rotate(0deg)';
+        }
+      }
+    }
   }
 
   if (labSearchInput) {
@@ -365,5 +395,23 @@ document.addEventListener('DOMContentLoaded', () => {
       filterLabDirectory();
     });
   });
+
+  if (loadMoreBtn) {
+    loadMoreBtn.addEventListener('click', () => {
+      isExpanded = !isExpanded;
+      filterLabDirectory();
+      
+      // Smooth scroll back to top of directory if collapsed to avoid getting lost on long pages
+      if (!isExpanded) {
+        const wrapper = document.querySelector('.lab-directory-wrapper');
+        if (wrapper) {
+          wrapper.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }
+    });
+  }
+
+  // Initialize visibility state
+  filterLabDirectory();
 });
 

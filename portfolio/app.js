@@ -117,38 +117,6 @@ filterButtons.forEach(button => {
 });
 
 // ==========================================
-// 5.4. PROGRAMMER LAB DYNAMIC FILTERING ENGINE
-// ==========================================
-const progFilterButtons = document.querySelectorAll('[data-prog-filter]');
-const progCards = document.querySelectorAll('.prog-card');
-
-progFilterButtons.forEach(button => {
-  button.addEventListener('click', () => {
-    progFilterButtons.forEach(btn => btn.classList.remove('active'));
-    button.classList.add('active');
-
-    const filterValue = button.getAttribute('data-prog-filter');
-
-    progCards.forEach(card => {
-      const cardCategory = card.getAttribute('data-prog-category');
-      
-      if (filterValue === 'all' || cardCategory === filterValue) {
-        card.classList.remove('hide');
-        card.style.opacity = '0';
-        card.style.transform = 'scale(0.95) translateY(10px)';
-        setTimeout(() => {
-          card.style.transition = 'all 0.5s cubic-bezier(0.16, 1, 0.3, 1)';
-          card.style.opacity = '1';
-          card.style.transform = 'scale(1) translateY(0)';
-        }, 30);
-      } else {
-        card.classList.add('hide');
-      }
-    });
-  });
-});
-
-// ==========================================
 // 5.5. TA LAB DYNAMIC FILTERING ENGINE
 // ==========================================
 const taFilterButtons = document.querySelectorAll('[data-ta-filter]');

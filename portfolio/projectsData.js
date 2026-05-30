@@ -285,5 +285,20 @@ const projectDetailsData = {
       "<strong>시네마신(Cinemachine) 드래곤 보스 시네마틱 등장 컷씬 연출:</strong> 타임라인 기반 카메라 카메라 제어를 활용해, 저 멀리 안개 속 검은 드래곤 실루엣 상태로 비행하며 접근하다 최종적으로 사용자 눈앞으로 강렬히 안착하는 연동 등장 시퀀스 구축.",
       "<strong>포스트 프로세싱 중첩을 통한 위압감 시각 극대화:</strong> 보스의 등장을 강조하기 위해 런타임 카메라 충격(Impact)과 동기화하여 RGB 색수차(Chromatic Aberration) 스플릿 현상 및 라디알 블러(Radial Blur) 디스토션 연쇄 발동 기법 탑재."
     ]
+  },
+  unityanimatorpro: {
+    title: "UnityAnimatorPro",
+    category: "Packages & Tools (Open Source)",
+    videoUrl: null,
+    team: "개인 개발 (GitHub 오픈소스 배포)",
+    contribution: "오픈소스 패키지 아키텍처 설계 및 런타임 최적화 모듈 개발 100%",
+    overview: "유니티의 기본 Animator 컴포넌트 제어 시 파라미터 타입별로 SetInteger, SetFloat, SetBool 등을 매번 분기 호출해야 하는 구조적 불편함을 개선하고, 런타임 가비지 컬렉터(GC) 부하와 코딩 피로도를 최소화하기 위해 개발한 애니메이터 래핑 최적화 오픈소스 패키지입니다.",
+    details: [
+      "<strong>단일 파라미터 제어 API (SetParam / GetParam):</strong> 자료형에 상관없이 Polymorphism(다형성)을 이용하여 단일 래핑 메소드로 애니메이터의 모든 형태 파라미터를 유연하게 설정 및 조회.",
+      "<strong>StringToHash 자동 캐싱 레이어:</strong> 매 프레임 스트링 파싱으로 유발되는 극심한 가비지(GC Heap Allocation) 부하를 방지하기 위해, 최초 등록 시 C# 딕셔너리에 Animator.StringToHash 정수 해시값을 캐싱하여 즉시 매핑 처리.",
+      "<strong>C# 커스텀 애트리뷰트 콜백 바인딩:</strong> State Machine Behaviour를 사용하지 않고도 C# 스크립트 상에서 [AnimatorEnter], [AnimatorStay], [AnimatorExit] 애트리뷰트를 통해 상태 전이 시점의 콜백을 우아하게 관찰.",
+      "<strong>결합도 감소 및 사이드 이펙트 제로:</strong> 기존 Animator 컴포넌트의 본래 기능과 완전한 호환성을 유지하여 프로젝트 도중 도입하더라도 사이드 이펙트 없이 부분 이식 가능.",
+      "<strong>UPM(Unity Package Manager) 규격 배포:</strong> 유니티 표준 배포용 UPM 팩키징 구조를 준수하여 GitHub URL을 통해 바로 프로젝트에 원클릭 임포트할 수 있도록 배포."
+    ]
   }
 };

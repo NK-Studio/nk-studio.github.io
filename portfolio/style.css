@@ -23,6 +23,8 @@
   --accent-cyan: #06b6d4;
   --accent-purple: #8b5cf6;
   --accent-orange: #ea580c;
+  --accent-gradient: linear-gradient(135deg, var(--accent-cyan) 0%, var(--accent-purple) 100%);
+  --cyan-glow: rgba(6, 182, 212, 0.35);
 
   /* Glassmorphism Specs (Zinc Muted Style) */
   --glass-bg: #18181b;

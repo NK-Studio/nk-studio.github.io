@@ -218,7 +218,7 @@ const projectDetailsData = {
   noopy: {
     title: "AR 포토카드 '누피(Noopy)'",
     category: "Web AR & Apps (Mobile App)",
-    videoUrl: null, // No video, text and images only
+    videoUrl: "https://www.youtube.com/embed/0jD73brdcIU",
     team: "클라이언트 1명 (단독 외주 프리랜서)",
     contribution: "Unity 클라이언트 모바일 엔진 개발 및 셰이더 최적화 100%",
     overview: "정적인 포토카드 위에 모바일 카메라 화면을 비추었을 때 입체적인 AR 특수효과 및 비디오 가수가 증강 오버레이되는 실시간 모바일 AR 포토카드 서비스 누피(Noopy)의 핵심 기능 개발 외주 프로젝트입니다.",

@@ -1359,6 +1359,10 @@ img {
 }
 
 @media (max-width: 768px) {
+  .container {
+    padding: 0 32px; /* 모바일 좌우 안전 여백을 넉넉히 확보하여 시각적 답답함 해소 */
+  }
+
   /* Navbar */
   .menu-toggle {
     display: flex;

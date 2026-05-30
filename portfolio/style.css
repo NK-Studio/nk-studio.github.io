@@ -1491,23 +1491,6 @@ img {
   padding-top: 55px;
 }
 
-.directory-title {
-  font-family: var(--font-heading);
-  font-size: 1.8rem;
-  font-weight: 800;
-  text-align: center;
-  margin-bottom: 35px;
-  letter-spacing: -0.5px;
-}
-
-.directory-title span {
-  color: var(--text-secondary);
-  font-size: 1.1rem;
-  font-weight: 400;
-  display: block;
-  margin-top: 5px;
-  letter-spacing: 1px;
-}
 
 .lab-toolbar {
   display: flex;

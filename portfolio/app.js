@@ -317,3 +317,53 @@ window.handleContactSubmit = function(event) {
   }, 800);
 };
 
+/* ==========================================
+   15. OPEN SOURCE LAB DIRECTORY FILTERING ENGINE
+   ========================================== */
+document.addEventListener('DOMContentLoaded', () => {
+  const labSearchInput = document.getElementById('labSearchInput');
+  const labFilterButtons = document.querySelectorAll('.lab-filter-btn');
+  const dirCards = document.querySelectorAll('.dir-card');
+
+  function filterLabDirectory() {
+    const query = labSearchInput ? labSearchInput.value.toLowerCase().trim() : '';
+    const activeFilterBtn = document.querySelector('.lab-filter-btn.active');
+    const activeCategory = activeFilterBtn ? activeFilterBtn.getAttribute('data-lab-filter') : 'all';
+
+    dirCards.forEach(card => {
+      const cardCategory = card.getAttribute('data-lab-category');
+      const title = card.querySelector('h4').textContent.toLowerCase();
+      const desc = card.querySelector('.dir-card-desc').textContent.toLowerCase();
+      const tags = Array.from(card.querySelectorAll('.dir-card-tags span')).map(span => span.textContent.toLowerCase()).join(' ');
+
+      const matchesCategory = (activeCategory === 'all' || cardCategory === activeCategory);
+      const matchesSearch = (title.includes(query) || desc.includes(query) || tags.includes(query));
+
+      if (matchesCategory && matchesSearch) {
+        card.classList.remove('hide-item');
+        card.style.opacity = '0';
+        card.style.transform = 'scale(0.98) translateY(5px)';
+        setTimeout(() => {
+          card.style.transition = 'all 0.4s cubic-bezier(0.16, 1, 0.3, 1)';
+          card.style.opacity = '1';
+          card.style.transform = 'scale(1) translateY(0)';
+        }, 10);
+      } else {
+        card.classList.add('hide-item');
+      }
+    });
+  }
+
+  if (labSearchInput) {
+    labSearchInput.addEventListener('input', filterLabDirectory);
+  }
+
+  labFilterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      labFilterButtons.forEach(btn => btn.classList.remove('active'));
+      button.classList.add('active');
+      filterLabDirectory();
+    });
+  });
+});
+

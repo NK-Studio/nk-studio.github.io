@@ -673,6 +673,577 @@
         </div>
 
       </div>
+
+      <!-- Open Source Lab Directory Wrapper -->
+      <div class="lab-directory-wrapper fade-in-section">
+        <h3 class="directory-title">
+          오픈소스 랩 디렉터리 <span>(All Open Source Directory)</span>
+        </h3>
+        
+        <!-- Search & Filters Toolbar -->
+        <div class="lab-toolbar">
+          <!-- Search Input -->
+          <div class="lab-search-box">
+            <input type="text" id="labSearchInput" placeholder="패키지명 또는 설명 검색...">
+            <svg class="lab-search-icon" viewBox="0 0 24 24">
+              <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+            </svg>
+          </div>
+          
+          <!-- Category Filters Buttons -->
+          <div class="lab-filters">
+            <button class="lab-filter-btn active" data-lab-filter="all">전체 보기</button>
+            <button class="lab-filter-btn" data-lab-filter="editor">에디터 확장</button>
+            <button class="lab-filter-btn" data-lab-filter="graphics">그래픽스 & URP</button>
+            <button class="lab-filter-btn" data-lab-filter="utils">유틸리티 & 최적화</button>
+          </div>
+        </div>
+        
+        <!-- Directory Cards Grid -->
+        <div class="lab-directory-grid" id="labDirectoryGrid">
+          
+          <!-- Card 1: MoveClone -->
+          <div class="dir-card" data-lab-category="editor">
+            <div class="dir-card-header">
+              <div class="dir-card-title-area">
+                <span class="dir-card-badge-dot"></span>
+                <h4>MoveClone</h4>
+              </div>
+              <a href="https://github.com/NK-Studio/MoveClone" target="_blank" class="dir-link-btn" aria-label="GitHub Repository">
+                <svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+            <p class="dir-card-desc">언리얼 에디터 기능처럼, 특정 단축키(A)를 누른 상태에서 씬 오브젝트를 이동시키면 그 즉시 원클릭으로 정교하게 복제 생성되는 에디터 플러그인.</p>
+            <div class="dir-card-tags">
+              <span>Editor Extension</span>
+              <span>Unreal Feature</span>
+            </div>
+          </div>
+
+          <!-- Card 2: ToggleShadedOrWireframe -->
+          <div class="dir-card" data-lab-category="editor">
+            <div class="dir-card-header">
+              <div class="dir-card-title-area">
+                <span class="dir-card-badge-dot"></span>
+                <h4>ToggleShadedOrWireframe</h4>
+              </div>
+              <a href="https://github.com/NK-Studio/ToggleShadedOrWireframe" target="_blank" class="dir-link-btn" aria-label="GitHub Repository">
+                <svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+            <p class="dir-card-desc">3ds Max 에디터 습관을 이식하기 위해, 유니티 씬 뷰포트 내에서 단축키 `F3`를 누르는 것만으로 셰이딩 뷰와 와이어프레임 뷰 모드를 고속 전환하는 도구.</p>
+            <div class="dir-card-tags">
+              <span>Scene View</span>
+              <span>3ds Max Hotkey</span>
+            </div>
+          </div>
+
+          <!-- Card 3: CreateObjectOriginHook -->
+          <div class="dir-card" data-lab-category="editor">
+            <div class="dir-card-header">
+              <div class="dir-card-title-area">
+                <span class="dir-card-badge-dot"></span>
+                <h4>CreateObjectOriginHook</h4>
+              </div>
+              <a href="https://github.com/NK-Studio/CreateObjectOriginHook" target="_blank" class="dir-link-btn" aria-label="GitHub Repository">
+                <svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+            <p class="dir-card-desc">Shift 키를 누르고 하이어라이키 뷰에서 새 오브젝트를 생성할 때, 에디터 카메라의 애매한 위치가 아닌 정밀한 `0,0,0` 월드 좌표에 배치시키는 후킹 확장 툴.</p>
+            <div class="dir-card-tags">
+              <span>Hierarchy Tool</span>
+              <span>Origin Fixer</span>
+            </div>
+          </div>
+
+          <!-- Card 4: Visible-Enum-Attribute -->
+          <div class="dir-card" data-lab-category="editor">
+            <div class="dir-card-header">
+              <div class="dir-card-title-area">
+                <span class="dir-card-badge-dot"></span>
+                <h4>Visible-Enum-Attribute</h4>
+              </div>
+              <a href="https://github.com/NK-Studio/Visible-Enum-Attribute" target="_blank" class="dir-link-btn" aria-label="GitHub Repository">
+                <svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+            <p class="dir-card-desc">유니티의 인스펙터 창 UnityEvent 이벤트 전송 함수 란에서, 일반 자바나 기본 C# Enum 타입 멤버 변수가 정상적으로 표시 및 노출되도록 강제하는 데코레이터 Attribute.</p>
+            <div class="dir-card-tags">
+              <span>C# Attribute</span>
+              <span>UnityEvent Extension</span>
+            </div>
+          </div>
+
+          <!-- Card 5: Array-Element-Title -->
+          <div class="dir-card" data-lab-category="editor">
+            <div class="dir-card-header">
+              <div class="dir-card-title-area">
+                <span class="dir-card-badge-dot"></span>
+                <h4>Array-Element-Title</h4>
+              </div>
+              <a href="https://github.com/NK-Studio/Array-Element-Title" target="_blank" class="dir-link-btn" aria-label="GitHub Repository">
+                <svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+            <p class="dir-card-desc">배열이나 리스트의 기본 Element 문자 구조를 파괴하고, 요소 내부의 특정 변수값이나 데이터 문자열을 Element 이름으로 즉각 변환 렌더링해 인스펙터 가독성을 높이는 툴.</p>
+            <div class="dir-card-tags">
+              <span>Inspector Customizer</span>
+              <span>Array List GUI</span>
+            </div>
+          </div>
+
+          <!-- Card 6: EventSystem-Patch -->
+          <div class="dir-card" data-lab-category="editor">
+            <div class="dir-card-header">
+              <div class="dir-card-title-area">
+                <span class="dir-card-badge-dot"></span>
+                <h4>EventSystem-Patch</h4>
+              </div>
+              <a href="https://github.com/NK-Studio/EventSystem-Patch" target="_blank" class="dir-link-btn" aria-label="GitHub Repository">
+                <svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+            <p class="dir-card-desc">유니티 6 엔진 환경에서 Event System 컴포넌트 생성 시, 패키지 구성 환경이 Input System이어도 Standalone Module이 강제 결합되는 엔진 오류를 감지해 자동 패치 교체해주는 툴.</p>
+            <div class="dir-card-tags">
+              <span>Input System Fix</span>
+              <span>Unity 6 Patch</span>
+            </div>
+          </div>
+
+          <!-- Card 7: UFolder -->
+          <div class="dir-card" data-lab-category="editor">
+            <div class="dir-card-header">
+              <div class="dir-card-title-area">
+                <span class="dir-card-badge-dot"></span>
+                <h4>UFolder</h4>
+              </div>
+              <a href="https://github.com/NK-Studio/UFolder" target="_blank" class="dir-link-btn" aria-label="GitHub Repository">
+                <svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+            <p class="dir-card-desc">유니티 하이어라이키 뷰 계층 구조에 실제 '폴더' 개념과 정돈된 파스텔풍 가독성 아이콘 및 구분을 제공해 씬 뷰 리소스 오거나이징 생산성을 극한으로 올리는 에디터 도구.</p>
+            <div class="dir-card-tags">
+              <span>Hierarchy Customizer</span>
+              <span>UX Organizer</span>
+            </div>
+          </div>
+
+          <!-- Card 8: SceneReference -->
+          <div class="dir-card" data-lab-category="utils">
+            <div class="dir-card-header">
+              <div class="dir-card-title-area">
+                <span class="dir-card-badge-dot"></span>
+                <h4>SceneReference</h4>
+              </div>
+              <a href="https://github.com/NK-Studio/SceneReference" target="_blank" class="dir-link-btn" aria-label="GitHub Repository">
+                <svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+            <p class="dir-card-desc">문자열(String) 기반의 불안정한 씬 로딩 흐름 대신, 인스펙터 상에서 실제 씬 파일 에셋(Scene Asset)을 드래그해 유실 위험 없는 결합으로 직접 접근/바인딩 로드해주는 래핑 툴.</p>
+            <div class="dir-card-tags">
+              <span>Scene Asset Binding</span>
+              <span>System Safety</span>
+            </div>
+          </div>
+
+          <!-- Card 9: UOverwrite -->
+          <div class="dir-card" data-lab-category="editor">
+            <div class="dir-card-header">
+              <div class="dir-card-title-area">
+                <span class="dir-card-badge-dot"></span>
+                <h4>UOverwrite</h4>
+              </div>
+              <a href="https://github.com/NK-Studio/UOverwrite" target="_blank" class="dir-link-btn" aria-label="GitHub Repository">
+                <svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+            <p class="dir-card-desc">유니티 프로젝트 폴더에 중복된 파일을 신규 드래그할 때 에디터 에셋이 무분별하게 복사본 `(1)` 형태로 생성되던 엔진 불편을 막고 즉각 덮어쓰기 기능으로 치환하는 툴.</p>
+            <div class="dir-card-tags">
+              <span>Asset Import Enhancer</span>
+              <span>Workflow Helper</span>
+            </div>
+          </div>
+
+          <!-- Card 10: Unity-AnimationPreview-Patcher -->
+          <div class="dir-card" data-lab-category="editor">
+            <div class="dir-card-header">
+              <div class="dir-card-title-area">
+                <span class="dir-card-badge-dot"></span>
+                <h4>Unity-AnimationPreview-Patcher</h4>
+              </div>
+              <a href="https://github.com/NK-Studio/Unity-AnimationPreview-Patcher" target="_blank" class="dir-link-btn" aria-label="GitHub Repository">
+                <svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+            <p class="dir-card-desc">유니티 2022.3 LTS 인스펙터 미리보기 창 내부 3D 매시 렌더링 그림자가 상하 Y축 기준으로 완전히 뒤집혀 렌더링되던 에디터 렌더러 코어 엔진 버그를 리플렉션으로 후킹 복구한 픽서.</p>
+            <div class="dir-card-tags">
+              <span>Editor Patcher</span>
+              <span>Reflection Hooking</span>
+            </div>
+          </div>
+
+          <!-- Card 11: Unity-Topbar-DarkMode -->
+          <div class="dir-card" data-lab-category="editor">
+            <div class="dir-card-header">
+              <div class="dir-card-title-area">
+                <span class="dir-card-badge-dot"></span>
+                <h4>Unity-Topbar-DarkMode</h4>
+              </div>
+              <a href="https://github.com/NK-Studio/Unity-Topbar-DarkMode" target="_blank" class="dir-link-btn" aria-label="GitHub Repository">
+                <svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+            <p class="dir-card-desc">Windows 환경 유니티 에디터 상단 타이틀 바 프레임이 에디터 다크 테마 설정 시에도 백색으로 고정 출력되는 비주얼 이질감을 스마트하게 OS 다크 타이틀 바 양식으로 강제 이식하는 확장 툴.</p>
+            <div class="dir-card-tags">
+              <span>Dark Theme Titlebar</span>
+              <span>Windows OS UI</span>
+            </div>
+          </div>
+
+          <!-- Card 12: URP-Volume-Track -->
+          <div class="dir-card" data-lab-category="graphics">
+            <div class="dir-card-header">
+              <div class="dir-card-title-area">
+                <span class="dir-card-badge-dot"></span>
+                <h4>URP-Volume-Track</h4>
+              </div>
+              <a href="https://github.com/NK-Studio/URP-Volume-Track" target="_blank" class="dir-link-btn" aria-label="GitHub Repository">
+                <svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+            <p class="dir-card-desc">URP의 포스트 프로세싱 볼륨(Post-Processing Volume) 상세 파라미터 값들을 유니티 타임라인 트랙과 프레임 키에 결합하여, 실시간 컷씬 애니메이션과 복합 제어를 돕는 그래픽 유틸리티.</p>
+            <div class="dir-card-tags">
+              <span>URP Post-Processing</span>
+              <span>Timeline Track</span>
+            </div>
+          </div>
+
+          <!-- Card 13: Unity-URP-SceneColor2D -->
+          <div class="dir-card" data-lab-category="graphics">
+            <div class="dir-card-header">
+              <div class="dir-card-title-area">
+                <span class="dir-card-badge-dot"></span>
+                <h4>Unity-URP-SceneColor2D</h4>
+              </div>
+              <a href="https://github.com/NK-Studio/Unity-URP-SceneColor2D" target="_blank" class="dir-link-btn" aria-label="GitHub Repository">
+                <svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+            <p class="dir-card-desc">URP 2D 렌더러 파이프라인에서 기본 미지원되던 셰이더 그래프(Shader Graph) 내 2D 씬 컬러(Scene Color 2D) 연산 노드의 호환성과 굴절 기능을 지원해 주는 전용 익스텐션 라이브러리.</p>
+            <div class="dir-card-tags">
+              <span>URP 2D</span>
+              <span>Shader Graph Ext</span>
+            </div>
+          </div>
+
+          <!-- Card 14: ShaderGraphToShader -->
+          <div class="dir-card" data-lab-category="graphics">
+            <div class="dir-card-header">
+              <div class="dir-card-title-area">
+                <span class="dir-card-badge-dot"></span>
+                <h4>ShaderGraphToShader</h4>
+              </div>
+              <a href="https://github.com/NK-Studio/ShaderGraphToShader" target="_blank" class="dir-link-btn" aria-label="GitHub Repository">
+                <svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+            <p class="dir-card-desc">유니티 셰이더 그래프(Shader Graph)의 복잡한 노드 연산 맵핑 구조를 빌드 타임 오버헤드 없이 순수 고속 구동형 C# HLSL 셰이더 소스 코드로 즉각 변경/출력하는 원버튼 전환기.</p>
+            <div class="dir-card-tags">
+              <span>Shader Converter</span>
+              <span>HLSL Generator</span>
+            </div>
+          </div>
+
+          <!-- Card 15: TMP_TwoUnderlay -->
+          <div class="dir-card" data-lab-category="graphics">
+            <div class="dir-card-header">
+              <div class="dir-card-title-area">
+                <span class="dir-card-badge-dot"></span>
+                <h4>TMP_TwoUnderlay</h4>
+              </div>
+              <a href="https://github.com/NK-Studio/TMP_TwoUnderlay" target="_blank" class="dir-link-btn" aria-label="GitHub Repository">
+                <svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+            <p class="dir-card-desc">기존 TextMesh Pro(TMP)의 1회 전용 언더레이 한계를 오버라이드 튜닝해, 입체적인 모바일/PC UI 연출을 위해 최대 2개 중첩 레이어로 그림자/외곽선을 그리는 셰이더 샘플 코드.</p>
+            <div class="dir-card-tags">
+              <span>TextMesh Pro</span>
+              <span>Font Outline Shader</span>
+            </div>
+          </div>
+
+          <!-- Card 16: Unity-RenderGraph-Blur -->
+          <div class="dir-card" data-lab-category="graphics">
+            <div class="dir-card-header">
+              <div class="dir-card-title-area">
+                <span class="dir-card-badge-dot"></span>
+                <h4>Unity-RenderGraph-Blur</h4>
+              </div>
+              <a href="https://github.com/NK-Studio/Unity-RenderGraph-Blur" target="_blank" class="dir-link-btn" aria-label="GitHub Repository">
+                <svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+            <p class="dir-card-desc">유니티 6의 신규 통합 그래픽스 파이프라인 규격인 렌더 그래프(Render Graph) 아키텍처 상에서 프레임 드롭 병목 없이 초고속으로 작동하는 고품질 화면 블러 포스트 패키지.</p>
+            <div class="dir-card-tags">
+              <span>Unity 6</span>
+              <span>Render Graph</span>
+            </div>
+          </div>
+
+          <!-- Card 17: ASE_CanvasShader -->
+          <div class="dir-card" data-lab-category="graphics">
+            <div class="dir-card-header">
+              <div class="dir-card-title-area">
+                <span class="dir-card-badge-dot"></span>
+                <h4>ASE_CanvasShader</h4>
+              </div>
+              <a href="https://github.com/NK-Studio/ASE_CanvasShader" target="_blank" class="dir-link-btn" aria-label="GitHub Repository">
+                <svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+            <p class="dir-card-desc">앰플리파이 셰이더 에디터(Amplify Shader Editor) 내에서 URP 규격을 완전히 준수하면서 UGUI 캔버스 UI 상에 정상 매핑되는 특수 셰이더 컴파일용 전용 템플릿 코드 소스.</p>
+            <div class="dir-card-tags">
+              <span>Amplify Template</span>
+              <span>UGUI Canvas Shader</span>
+            </div>
+          </div>
+
+          <!-- Card 18: Vertex-Flow -->
+          <div class="dir-card" data-lab-category="graphics">
+            <div class="dir-card-header">
+              <div class="dir-card-title-area">
+                <span class="dir-card-badge-dot"></span>
+                <h4>Vertex-Flow</h4>
+              </div>
+              <a href="https://github.com/NK-Studio/Vertex-Flow" target="_blank" class="dir-link-btn" aria-label="GitHub Repository">
+                <svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+            <p class="dir-card-desc">유니티 씬 뷰 뷰포트에서 버텍스 컬러 페인팅 연산을 가볍게 돕기 위해 설계되어, 3D 오브젝트 표면에 정밀하게 컬러 데이터를 직접 칠하고 블렌딩을 제어하는 에디터 드로잉 도구.</p>
+            <div class="dir-card-tags">
+              <span>Vertex Painter</span>
+              <span>Level Shader Tool</span>
+            </div>
+          </div>
+
+          <!-- Card 19: UnityEnumPro -->
+          <div class="dir-card" data-lab-category="utils">
+            <div class="dir-card-header">
+              <div class="dir-card-title-area">
+                <span class="dir-card-badge-dot"></span>
+                <h4>UnityEnumPro</h4>
+              </div>
+              <a href="https://github.com/NK-Studio/UnityEnumPro" target="_blank" class="dir-link-btn" aria-label="GitHub Repository">
+                <svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+            <p class="dir-card-desc">C#의 기본 Enum이 지닌 가비지 할당 한계를 보완하고, 유니티 인스펙터 및 런타임 제어 코드 상에서 Enum 자료구조의 파싱 성능을 고속 처리하도록 도운 편의성 확장 API.</p>
+            <div class="dir-card-tags">
+              <span>C# Enum Extension</span>
+              <span>GC-Free Parsing</span>
+            </div>
+          </div>
+
+          <!-- Card 20: UnityShotPatterns -->
+          <div class="dir-card" data-lab-category="utils">
+            <div class="dir-card-header">
+              <div class="dir-card-title-area">
+                <span class="dir-card-badge-dot"></span>
+                <h4>UnityShotPatterns</h4>
+              </div>
+              <a href="https://github.com/NK-Studio/UnityShotPatterns" target="_blank" class="dir-link-btn" aria-label="GitHub Repository">
+                <svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+            <p class="dir-card-desc">탄막 슈팅 또는 보스 스킬 개발 시 핵심 알고리즘이 되는 다양한 차원의 물리 탄판 공식(원형, 실시간 나선 회전, 하트형, 오각 별형, 고밀도 탄막 등)을 정밀 최적화 구현한 수학 라이브러리.</p>
+            <div class="dir-card-tags">
+              <span>Bullet Geometry</span>
+              <span>Math Physics</span>
+            </div>
+          </div>
+
+          <!-- Card 21: Unity-Notifier -->
+          <div class="dir-card" data-lab-category="utils">
+            <div class="dir-card-header">
+              <div class="dir-card-title-area">
+                <span class="dir-card-badge-dot"></span>
+                <h4>Unity-Notifier</h4>
+              </div>
+              <a href="https://github.com/NK-Studio/Unity-Notifier" target="_blank" class="dir-link-btn" aria-label="GitHub Repository">
+                <svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+            <p class="dir-card-desc">Windows OS 시스템 알림 및 macOS의 네이티브 알림 센터 호출 동작을 C# 단일 인터페이스로 래핑하여, 유니티 런타임 앱에서 OS 데스크톱 푸시를 즉시 트리거하는 플러그인.</p>
+            <div class="dir-card-tags">
+              <span>OS Push API</span>
+              <span>C# Native Wrapper</span>
+            </div>
+          </div>
+
+          <!-- Card 22: DebugX -->
+          <div class="dir-card" data-lab-category="utils">
+            <div class="dir-card-header">
+              <div class="dir-card-title-area">
+                <span class="dir-card-badge-dot"></span>
+                <h4>DebugX</h4>
+              </div>
+              <a href="https://github.com/NK-Studio/DebugX" target="_blank" class="dir-link-btn" aria-label="GitHub Repository">
+                <svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+            <p class="dir-card-desc">유니티의 `Debug.Log` 호출 메모리를 래핑 제어하여, 에디터 재생 시에는 정상 로그를 송신하고 릴리즈 빌드 컴파일 시 관련 클래스 코드를 자동 바이너리 제외 처리해 가비지를 차단하는 튜닝 툴.</p>
+            <div class="dir-card-tags">
+              <span>GC Optimization</span>
+              <span>Compiler Stripper</span>
+            </div>
+          </div>
+
+          <!-- Card 23: SceneSystem -->
+          <div class="dir-card" data-lab-category="utils">
+            <div class="dir-card-header">
+              <div class="dir-card-title-area">
+                <span class="dir-card-badge-dot"></span>
+                <h4>SceneSystem</h4>
+              </div>
+              <a href="https://github.com/NK-Studio/SceneSystem" target="_blank" class="dir-link-btn" aria-label="GitHub Repository">
+                <svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+            <p class="dir-card-desc">유니티 씬 관리 파이프라인의 Single 및 Additive 비동기 로딩을 안전하게 가이드하며 다중 씬 런타임 제어 편의성을 극대화한 프레임워크 플러그인.</p>
+            <div class="dir-card-tags">
+              <span>Scene Async</span>
+              <span>UPM Package</span>
+            </div>
+          </div>
+
+          <!-- Card 24: USingleton -->
+          <div class="dir-card" data-lab-category="utils">
+            <div class="dir-card-header">
+              <div class="dir-card-title-area">
+                <span class="dir-card-badge-dot"></span>
+                <h4>USingleton</h4>
+              </div>
+              <a href="https://github.com/NK-Studio/USingleton" target="_blank" class="dir-link-btn" aria-label="GitHub Repository">
+                <svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+            <p class="dir-card-desc">모노비헤이비어(MonoBehaviour) 클래스를 싱글톤 인스턴스화할 때 자주 겪는 씬 해제/종료 시점의 잔존 메모리 릭 및 오브젝트 파괴 스파이크 버그를 차단하는 프레임워크.</p>
+            <div class="dir-card-tags">
+              <span>Architecture</span>
+              <span>Memory leak protection</span>
+            </div>
+          </div>
+
+          <!-- Card 25: FMOD-Plus -->
+          <div class="dir-card" data-lab-category="utils">
+            <div class="dir-card-header">
+              <div class="dir-card-title-area">
+                <span class="dir-card-badge-dot"></span>
+                <h4>FMOD-Plus</h4>
+              </div>
+              <a href="https://github.com/NK-Studio/FMOD-Plus" target="_blank" class="dir-link-btn" aria-label="GitHub Repository">
+                <svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+            <p class="dir-card-desc">사운드 연출용 외산 FMOD 모듈의 조작 난도를 낮추고, 유니티의 순정 `AudioSource`를 사용하는 것과 같은 친숙한 인스펙터 UX로 모든 FMOD 사운드를 유연하게 호출하는 래퍼.</p>
+            <div class="dir-card-tags">
+              <span>FMOD Studio</span>
+              <span>Audio Wrapper</span>
+            </div>
+          </div>
+
+          <!-- Card 26: UDiscord-Bot -->
+          <div class="dir-card" data-lab-category="utils">
+            <div class="dir-card-header">
+              <div class="dir-card-title-area">
+                <span class="dir-card-badge-dot"></span>
+                <h4>UDiscord-Bot</h4>
+              </div>
+              <a href="https://github.com/NK-Studio/UDiscord-Bot" target="_blank" class="dir-link-btn" aria-label="GitHub Repository">
+                <svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+            <p class="dir-card-desc">유니티 씬 플레이 또는 에디터 빌드 성공/오류 발생 시 지정 채널로의 빌드 리포트 실시간 디스코드 웹훅 메세지 전파를 극도로 간소화해 주는 협업 서포트 라이브러리.</p>
+            <div class="dir-card-tags">
+              <span>Discord Webhook</span>
+              <span>Workflow Notification</span>
+            </div>
+          </div>
+
+          <!-- Card 27: Mobile-Camera-Webcam-TextureSample -->
+          <div class="dir-card" data-lab-category="utils">
+            <div class="dir-card-header">
+              <div class="dir-card-title-area">
+                <span class="dir-card-badge-dot"></span>
+                <h4>Mobile-Camera-Webcam-TextureSample</h4>
+              </div>
+              <a href="https://github.com/NK-Studio/Mobile-Camera-Webcam-TextureSample" target="_blank" class="dir-link-btn" aria-label="GitHub Repository">
+                <svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+            <p class="dir-card-desc">무거운 시뮬레이션 과정 없이 웹캠 텍스처(Webcam Texture) 디바이스 가속 연동을 거쳐, 모바일 전/후방 카메라 이미지를 고속 렌더 텍스처로 스크린에 출력해 주는 경량 샘플.</p>
+            <div class="dir-card-tags">
+              <span>Webcam System</span>
+              <span>Mobile High-Frame</span>
+            </div>
+          </div>
+
+          <!-- Card 28: Web-Local-Remote -->
+          <div class="dir-card" data-lab-category="utils">
+            <div class="dir-card-header">
+              <div class="dir-card-title-area">
+                <span class="dir-card-badge-dot"></span>
+                <h4>Web-Local-Remote</h4>
+              </div>
+              <a href="https://github.com/NK-Studio/Web-Local-Remote" target="_blank" class="dir-link-btn" aria-label="GitHub Repository">
+                <svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+            <p class="dir-card-desc">유니티로 WebGL/Web 기반 게임 빌드 시, 런타임에 전용 로컬 서버를 백그라운드에 구동하고 접속용 모바일 QR 코드를 에디터에 출력해 주어 모바일 기기 교차 브라우징 테스트를 원스톱 지원하는 툴.</p>
+            <div class="dir-card-tags">
+              <span>WebGL Server</span>
+              <span>QR Local Test</span>
+            </div>
+          </div>
+
+          <!-- Card 29: LangCursor -->
+          <div class="dir-card" data-lab-category="utils">
+            <div class="dir-card-header">
+              <div class="dir-card-title-area">
+                <span class="dir-card-badge-dot"></span>
+                <h4>LangCursor</h4>
+              </div>
+              <a href="https://github.com/NK-Studio/LangCursor" target="_blank" class="dir-link-btn" aria-label="GitHub Repository">
+                <svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+            <p class="dir-card-desc">JetBrains IDE(IntelliJ IDEA 등) 상에서 타이핑 중인 개발자의 한/영 키보드 언어 입력 상태를 캐치하여 영어 시 흰색, 한글 시 스마트한 빨간색 커서로 변환해 오타율을 줄이는 IDE 플러그인.</p>
+            <div class="dir-card-tags">
+              <span>JetBrains Extension</span>
+              <span>IntelliJ Tool</span>
+            </div>
+          </div>
+
+          <!-- Card 30: ShaderGraphHotKey -->
+          <div class="dir-card" data-lab-category="editor">
+            <div class="dir-card-header">
+              <div class="dir-card-title-area">
+                <span class="dir-card-badge-dot"></span>
+                <h4>ShaderGraphHotKey</h4>
+              </div>
+              <a href="https://github.com/NK-Studio/ShaderGraphHotKey" target="_blank" class="dir-link-btn" aria-label="GitHub Repository">
+                <svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+            <p class="dir-card-desc">유니티 셰이더 그래프(Shader Graph)의 복잡한 연산 노드 생성 절차를, 반복 클릭 단축키 리매핑 레이어로 설계해 작업 소요 시간을 획기적으로 경감하는 특수 에디터 툴.</p>
+            <div class="dir-card-tags">
+              <span>Shader Graph UI</span>
+              <span>Hotkey Remapper</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
     </div>
   </section>
 

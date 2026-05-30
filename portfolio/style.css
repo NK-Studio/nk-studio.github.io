@@ -587,6 +587,13 @@ img {
   height: 100%;
   overflow: hidden;
   position: relative;
+  transition: var(--transition-smooth);
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+  border-color: var(--glass-border-focus);
 }
 
 .project-card.hide {
@@ -1023,7 +1030,8 @@ img {
   transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.ta-card:hover .ta-thumb {
+.ta-card:hover .ta-thumb,
+.project-card:hover .ta-thumb {
   transform: scale(1.05);
 }
 
@@ -1041,7 +1049,8 @@ img {
   transition: opacity 0.3s ease;
 }
 
-.ta-card:hover .ta-play-overlay {
+.ta-card:hover .ta-play-overlay,
+.project-card:hover .ta-play-overlay {
   opacity: 1;
 }
 
@@ -1054,7 +1063,8 @@ img {
   transform: scale(0.8);
 }
 
-.ta-card:hover .ta-play-overlay svg {
+.ta-card:hover .ta-play-overlay svg,
+.project-card:hover .ta-play-overlay svg {
   transform: scale(1);
 }
 

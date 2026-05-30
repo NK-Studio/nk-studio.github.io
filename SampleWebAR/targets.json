@@ -9,6 +9,11 @@
             "id": 162626,
             "thumbnailUrl": "https://asset.nupy.life/thumbnail/162626.20240913140612.jpg",
             "videoUrl": "https://asset.nupy.life/video/162626.20240913140544.mp4"
+        },
+        {
+            "id": "NupyCard",
+            "thumbnailUrl": "targets/NupyCard.jpg",
+            "videoUrl": "https://www.youtube.com/embed/0jD73brdcIU"
         }
     ]
 }

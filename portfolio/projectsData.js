@@ -59,7 +59,7 @@ const projectDetailsData = {
     ]
   },
   ta_nexo_ik: {
-    title: "서서담 'Nexo' 보스 - 실시간 동적 IK 리깅",
+    title: "서서담 'NEXO' 보스 - 실시간 동적 IK 리깅",
     category: "VFX & Animation (PC / Steam)",
     videoUrl: "https://www.youtube.com/embed/P7J5rGpzKG4",
     team: "청강대 졸업작품팀 '서서담' (아트 4명, 개발 3명)",
@@ -72,7 +72,7 @@ const projectDetailsData = {
     ]
   },
   ta_nexo_flow: {
-    title: "서서담 'Nexo' 보스 - 전기에너지 코어 흐름 셰이더",
+    title: "서서담 'NEXO' 보스 - 전기에너지 코어 흐름 셰이더",
     category: "Shaders & Rendering (PC / Steam)",
     videoUrl: "https://www.youtube.com/embed/axhE_ZdTSlA",
     team: "청강대 졸업작품팀 '서서담' (아트 4명, 개발 3명)",
@@ -98,12 +98,12 @@ const projectDetailsData = {
     ]
   },
   ta_outline_shading: {
-    title: "모툰/애니메이션 스타일 정밀 아웃라인 셰이더",
+    title: "아웃라인 셰이더",
     category: "Shaders & Rendering (Universal)",
     videoUrl: "https://www.youtube.com/embed/Bp0t2KFC3S4",
     team: "개인 연구 (R&D)",
     contribution: "셰이더 그래픽스 개발 100%",
-    overview: "3D 카툰 스타일 렌더링에서 캐릭터의 입체적인 실루엣을 또렷하게 잡아주며 카메라와의 거리가 바뀌어도 일정한 외곽선 두께와 엣지를 유지하는 정밀 툰 아웃라인 셰이딩 시스템입니다.",
+    overview: "3D 공간에서 객체의 입체적인 실루엣을 부드럽게 잡아주는 범용적인 실시간 아웃라인 셰이더입니다. 원근 거리와 카메라 각도에 상관없이 안정적인 엣지를 유지하며, 다양한 렌더링 스타일에 보편적으로 적용할 수 있습니다.",
     details: [
       "<strong>Vertex Normal Expansion 기법:</strong> 버텍스 셰이더 내에서 법선 벡터 방향으로 메시 외곽선을 밀어내고 Backface를 그리는 고성능 2-Pass 구조 개발.",
       "<strong>원근 거리별 두께 보정 공식 탑재:</strong> Perspective 카메라 렌즈 상에서 멀어진 물체의 아웃라인이 지나치게 두꺼워져 메시가 뭉개지는 오류를 방지하기 위해 거리에 비례한 스케일링 계수 연산 처리.",
@@ -150,16 +150,16 @@ const projectDetailsData = {
     ]
   },
   ta_cloud_shadow: {
-    title: "실시간 구름 이동 라이팅 프로젝션 그림자 셰이더",
+    title: "구름 그림자 셰이더",
     category: "Shaders & Rendering (Universal)",
     videoUrl: "https://www.youtube.com/embed/PLc2ykvCMp8",
     team: "개인 연구 (R&D)",
     contribution: "셰이더 그래픽스 개발 100%",
-    overview: "구름 3D 오브젝트를 대량으로 배치하는 부하 없이, 셰이더 내부 수학적 2D 회전 행렬 연산과 노이즈를 결합해 지형 전체에 실시간 구름 드리프트 그림자를 연출하는 고효율 그래픽스 기법입니다.",
+    overview: "하늘에 실제 구름 3D 오브젝트를 배치하지 않고, 노이즈 텍스처의 UV 흐름 이동과 Cast Shadow 렌더링을 조합하여 Top View 시점의 게임에서 구름 그림자가 지나가는 듯한 연출을 유도하는 가볍고 실용적인 그림자 셰이더입니다.",
     details: [
-      "<strong>2D Rotation Matrix 적용 드리프트:</strong> 단순 선형 이동이 아닌 바람 방향 벡터에 대응하여 구름 그림자 형상이 부드럽게 비틀어지며 회전하고 흘러가는 동적 연산 탑재.",
-      "<strong>Custom Render Pass 섀도우 마스크 바인딩:</strong> 지형 머티리얼에 종속되지 않는 독립 패스 드로잉을 구현하기 위해 유니티 섀도우 버퍼(Shadow Map) 마스킹 단계에 연산을 추가하여 지형 위의 모든 물체에 그림자가 일체형으로 깔끔히 적용되도록 설계.",
-      "<strong>모바일 대역폭 90% 이상 세이빙:</strong> 구름의 메시 데이터 및 애니메이션 부하를 0으로 만들고 단 1장의 노이즈 텍스처 매핑 연산만으로 입체적인 자연 경관 완성."
+      "<strong>UV 흐름 이동 연산:</strong> 바람 방향 벡터에 맞춰 노이즈 텍스처를 매끄럽게 UV 스크롤(Scrolling)하여 흘러가는 구름 형상을 구현.",
+      "<strong>Cast Shadow 렌더링:</strong> 지형이나 게임 내 오브젝트 위에 어둡게 투영된 그림자가 지나가도록 하여, 실제 구름이 하늘을 덮어 가리는 듯한 현장감 선사.",
+      "<strong>극도의 렌더링 최적화:</strong> 2D 회전 매트릭스나 복잡한 라이트 프로젝션 연산 등을 완전 배제하고, 단순 텍스처 연산과 섀도우 마스킹만으로 탑뷰 환경에 완벽한 연출 실현."
     ]
   },
   ta_water_rendering: {
@@ -227,6 +227,63 @@ const projectDetailsData = {
       "<strong>졸업전시회 무인 쇼케이스 연동:</strong> 2025년 청강대 웹툰 졸업 전시 현장의 크롬북 디바이스 한쪽에 실시간 거치 시연되어 관람객들이 웹툰 작품을 부드럽게 무한 롤링 및 줌인/아웃하여 볼 수 있도록 뷰어 기능 고도화.",
       "<strong>반응형 모바일 및 태블릿 뷰포트 최적화:</strong> 모바일 기기뿐만 아니라 크롬북 디바이스 화면 해상도 규격에 맞춰 종횡비를 자동 스케일링하고 웹툰 이미지 리소스 로드 속도를 획기적으로 개선.",
       "<strong>안정적인 무인 거치 운용성 확보:</strong> 오프라인/네트워크 불안정 상태에서도 서비스 워커 동작을 통한 리소스 복원 기능을 구현하여 전시 기간 내내 다운타임 없는 100% 무중단 운용 달성."
+    ]
+  },
+  nexo: {
+    title: "NEXO (넥소)",
+    category: "Games & TA (PC / Steam)",
+    videoUrl: "https://www.youtube.com/embed/zAwMnne5-eE",
+    team: "졸업작품 개발팀 '서서담' (TA 이펙터 서포터 참여)",
+    contribution: "UI 블러, 보스 전기 플로우, 카메라 빗물 스크린, 캐릭터 툰 셰이딩 등 핵심 TA 셰이더 서포트",
+    overview: "청강문화산업대학교 졸업작품팀 '서서담'의 하이엔드 액션 프로젝트 NEXO에 TA 이펙터 서포터로 참여하여, Unity 6.1 엔진 및 URP 16 환경 하에서 게임의 그래픽 완성도와 연출력을 극대화하는 핵심 특수 효과 및 보스/캐릭터 셰이딩 시스템을 전담 지원한 프로젝트입니다.",
+    details: [
+      "<strong>Unity 6.1 & URP 16 그래픽 파이프라인 대응:</strong> 최신 엔진 규격에 맞춘 포스트 프로세싱 피드백 제어 및 셰이더 연산 고속화를 R&D하여 기기 부하 최소화.",
+      "<strong>화면 UI 블러 셰이딩 구현:</strong> UI 오픈 시 런타임 환경에서 뒷배경이 부드럽고 고급스럽게 가려지는 실시간 화면 블러 셰이더 구축.",
+      "<strong>보스 전기 플로우 이동 셰이딩:</strong> 기계 거대 보스의 약점 및 신체 표면 회로를 따라 전기가 흐르고 맥동 치는 실시간 UV Flow 셰이더 개발.",
+      "<strong>카메라 빗물 풀화면 스크린 셰이딩:</strong> 날씨 연출의 극대화를 위해 렌즈 표면에 실시간으로 빗물이 맺히고 흘러내리는 듯한 Full-screen Screen Space 빗물 왜곡 포스트 셰이더 구현.",
+      "<strong>캐릭터 툰 렌더링 셰이딩:</strong> 캐릭터의 형태와 비주얼 특징을 돋보이게 하는 스타일라이즈드 캐릭터 툰 렌더링 파이프라인 협업."
+    ]
+  },
+  dododoit: {
+    title: "DoDo Doit (두두두잇)",
+    category: "Games & TA (PC / Mobile / Runner)",
+    videoUrl: "https://www.youtube.com/embed/lnLTA-0WeUQ",
+    team: "졸업작품 개발팀 '쁘띠꿍디' (TA / 그래픽 디렉팅 지원)",
+    contribution: "오큘루전 컬링, 렌더 스케일 최적화 R&D, 라이팅 베이킹 및 포스트 프로세싱 튜닝 교육 100%",
+    overview: "청강문화산업대학교 졸업작품팀 '쁘띠꿍디'의 러너 장르 프로젝트 DoDo Doit에 TA로 참여하여, 최적화 노하우가 부족한 배경 모델러들을 교육하고 엔진 성능 이슈를 종합 진단/해결하여 쾌적한 플레이 성능을 확보한 기술 지원 프로젝트입니다.",
+    details: [
+      "<strong>배경 모델러 대상 엔진 최적화 및 라이팅 베이킹 교육:</strong> 한 씬에 대규모 사물을 과도하게 렌더링하여 프레임이 저하되던 배경 파이프라인의 원인을 직접 짚어주고, 유니티 라이팅 베이크 기법에 관한 실무 교육 세션 진행.",
+      "<strong>카메라 오큘루전 컬링(Occlusion Culling) 적용:</strong> 보이지 않는 지형지물이 과도하게 드로우 콜을 낭비하던 구조를 차단하기 위해 유니티 Occlusion Culling 데이터 오프라인 베이킹 파이프라인을 구축하여 드로우 콜 대폭 단축.",
+      "<strong>Render Scale 및 업스케일러 통합 최적화:</strong> 모바일 및 저사양 PC 타겟의 픽셀 병목(Fillrate)을 해결하기 위해 런타임 렌더 해상도 배율을 0.7로 축소하고 후처리 업스케일러 보정을 거쳐 고해상도 품질을 유지하며 드로우 타임 절감.",
+      "<strong>러너 장르 전용 라이팅 베이크 파이프라인 R&D:</strong> 배경이 고정된 채 캐릭터와 가상 트랙이 이동하는 무한 러너 게임의 지형 특성을 고려하여 실시간 라이팅을 정적 머티리얼 라이트 맵(Lightmap)으로 베이킹해 런타임 연산 0에 수렴.",
+      "<strong>SSAO 연산 차단 및 모바일 성능 방어:</strong> 빠르게 배경이 스쳐 지나가는 하이 스피드 러너 게임의 특성상 세밀한 구석 접경 그림자(SSAO)는 시각적으로 인지하기 불가능함을 감안, 무거운 화면 공간 앰비언트 오클루전(SSAO) 연산을 의도적으로 차단하여 런타임 계산 부하 대폭 절충."
+    ]
+  },
+  tabuti: {
+    title: "타부티 (Tabuti)",
+    category: "Games & TA (PC / Steam)",
+    videoUrl: "https://www.youtube.com/embed/mlkKjLJGvIY",
+    team: "졸업작품 개발팀 'Ipari' (TA 서포터 참여)",
+    contribution: "Magica Cloth 2 시뮬레이션 환경 구축, HDR Bloom 마스킹 및 아웃라인 셰이더 적용, 기술 자문 100%",
+    overview: "청강문화산업대학교 졸업작품팀 'Ipari'의 3D 액션 프로젝트 타부티(Tabuti)에 테크니컬 아티스트 서포터로 참여하여, 캐릭터 및 환경 오브젝트의 물리적 텐션 시뮬레이션을 정밀 세팅하고 그래픽 완성도를 높이는 핵심 연출 셰이딩 구현 및 개발팀 전반의 프로그래밍 이슈를 자문한 프로젝트입니다.",
+    details: [
+      "<strong>Magica Cloth 2 기반 실시간 천 시뮬레이션 구축:</strong> 캐릭터 의상 및 천 재질의 매끄러운 런타임 흔들림 시뮬레이션을 구현하기 위해 물리 충돌(Collider) 피벗 및 콜라이더 파라미터를 물리 엔진 내 최적으로 통합/적용.",
+      "<strong>신화 속 고래 대상 HDR Bloom 마스킹 셰이더 R&D:</strong> 게임 내 상징적인 거대 신화적 생명체인 고래 표면에 림라이트 연산과 커스텀 마스크 텍스처를 블렌딩하여 과도한 난반사 없이 신비롭고 영롱하게 빛나는 발광 비주얼 구현.",
+      "<strong>실시간 원근 대응 아웃라인 셰이더 적용:</strong> 버텍스 법선 확장 및 카메라 원근 거리를 역산 보정한 범용 아웃라인 셰이더를 탑재하여 캐릭터 및 고래의 실루엣 시인성 대폭 향상.",
+      "<strong>테크니컬 프로그래밍 구조적 자문:</strong> 클라이언트 개발 파트에서 빌드 오류나 아키텍처 상의 질문 등 기술적 병목이 발생할 때마다 빠르고 정확한 디버깅 가이드라인 및 코드 자문 제공."
+    ]
+  },
+  operation: {
+    title: "오퍼레이션 (Operation)",
+    category: "Games & TA (PC / Steam)",
+    videoUrl: "https://www.youtube.com/embed/nbsZhxGLIoE",
+    team: "졸업작품 개발팀 '청강리카노' (TA / 클라이언트 서포터 참여)",
+    contribution: "UGUI 해상도 대응 솔루션 구현, 시네마신 타임라인 드래곤 보스 연출 설계 및 후처리 효과 복합 제어 100%",
+    overview: "청강문화산업대학교 졸업작품팀 '청강리카노'의 3D 프로젝트 Operation에 테크니컬 아티스트 및 클라이언트 서포터로 참여하여, 게임을 처음 구축해보는 학생팀의 구조적 UGUI 해상도 대응 좌표 버그를 근본적으로 수정하고, 시네마신 컷씬 연출력 극대화를 위한 후처리 카메라 효과를 적용한 기술 지원 프로젝트입니다.",
+    details: [
+      "<strong>UGUI 멀티 해상도 드래그앤드롭 좌표 매핑 버그 수정:</strong> 특정 1920x1080 고정 해상도 캔버스에서만 작동하여 타 모니터 해상도에서 먹통이 되던 드래그 UI 시스템의 앵커링 스케일 배율을 스크린 픽셀 좌표 대비 역산하여 완벽한 해상도 대응 솔루션 설계.",
+      "<strong>시네마신(Cinemachine) 드래곤 보스 시네마틱 등장 컷씬 연출:</strong> 타임라인 기반 카메라 카메라 제어를 활용해, 저 멀리 안개 속 검은 드래곤 실루엣 상태로 비행하며 접근하다 최종적으로 사용자 눈앞으로 강렬히 안착하는 연동 등장 시퀀스 구축.",
+      "<strong>포스트 프로세싱 중첩을 통한 위압감 시각 극대화:</strong> 보스의 등장을 강조하기 위해 런타임 카메라 충격(Impact)과 동기화하여 RGB 색수차(Chromatic Aberration) 스플릿 현상 및 라디알 블러(Radial Blur) 디스토션 연쇄 발동 기법 탑재."
     ]
   }
 };

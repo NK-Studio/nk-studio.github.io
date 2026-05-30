@@ -235,3 +235,72 @@ if (projectModal) {
     }
   });
 }
+
+/* ==========================================
+   7. CONTACT SYSTEM LOGIC (Clipboard Copy & Mailto Form)
+   ========================================== */
+function showToast(message) {
+  let toast = document.querySelector('.toast-notification');
+  if (!toast) {
+    toast = document.createElement('div');
+    toast.className = 'toast-notification';
+    toast.innerHTML = `
+      <svg viewBox="0 0 24 24" class="toast-success-icon"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+      <span class="toast-message"></span>
+    `;
+    document.body.appendChild(toast);
+  }
+  toast.querySelector('.toast-message').textContent = message;
+  toast.classList.add('active');
+  setTimeout(() => {
+    toast.classList.remove('active');
+  }, 2500);
+}
+
+// Copy email address handler
+const copyEmailBtn = document.getElementById('copyEmailBtn');
+if (copyEmailBtn) {
+  copyEmailBtn.addEventListener('click', () => {
+    navigator.clipboard.writeText('bnm000215@naver.com').then(() => {
+      showToast('이메일 주소가 복사되었습니다!');
+      const tooltip = document.getElementById('copyTooltip');
+      if (tooltip) {
+        tooltip.textContent = '복사 완료!';
+        setTimeout(() => {
+          tooltip.textContent = '복사';
+        }, 2000);
+      }
+    }).catch(err => {
+      console.error('Clipboard copy failed:', err);
+    });
+  });
+}
+
+// Interactive mailto form handler
+window.handleContactSubmit = function(event) {
+  event.preventDefault();
+  
+  const name = document.getElementById('contactName').value;
+  const subject = document.getElementById('contactSubject').value;
+  const message = document.getElementById('contactMessage').value;
+  
+  const mailtoLink = `mailto:bnm000215@naver.com` + 
+    `?subject=${encodeURIComponent('[포트폴리오 문의] ' + subject)}` + 
+    `&body=${encodeURIComponent(
+      `안녕하세요,\n\n${name}님께서 보내신 포트폴리오 사이트 문의 내용입니다.\n\n` + 
+      `-----------------------------------------\n` +
+      `보낸이: ${name}\n` +
+      `제목: ${subject}\n` +
+      `-----------------------------------------\n\n` + 
+      `${message}\n\n` +
+      `-----------------------------------------`
+    )}`;
+    
+  showToast('메일 작성 클라이언트를 실행합니다...');
+  
+  setTimeout(() => {
+    window.location.href = mailtoLink;
+    document.getElementById('contactForm').reset();
+  }, 800);
+};
+

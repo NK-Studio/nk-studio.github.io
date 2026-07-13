@@ -1,35 +1,86 @@
-// Simple language switcher for this project's /en/<version>/ and /kr/<version>/
-// sibling site structure. Not dependent on Unity's Packages/metadata registry
-// (that version only works on the nk-studio.github.io domain and needs a
-// Packages/<name>@<version>/ URL layout).
-$(function () {
-    const langs = [
-        { code: "en", display: "English" },
-        { code: "kr", display: "한국어" }
-    ];
+function populateLanguageSwitcher(data, currentLang) {
+    if (data.length <= 1) // <= 1 set of docs exist for this package so return
+        return;
 
-    const pathMatch = location.pathname.match(/\/(en|kr)\/(\d+\.\d+\.\d+)\//);
-    if (!pathMatch) return; // Not served under a recognizable /en/<version>/ or /kr/<version>/ prefix
+    const pathSub = /^.*?\/Packages/;
+    const baseUrl = location.pathname.replace(pathSub, "/Packages");
+    const shortVersion = getShortVersion(thisPackageMetaData.version);
+    const languageSwitcher = ["<div id='language-switcher'>", "<label for='language-select'>Language: <select id='language-select'>", "</select></label>", "</div>"];
 
-    const currentLang = pathMatch[1];
+    // Create the language selector
+    $('#breadcrumb').append($(languageSwitcher.join("\n")));
 
-    const $switcher = $("<div id='language-switcher'></div>");
-    const $label = $("<label for='language-select'>Language: </label>");
-    const $select = $("<select id='language-select'></select>");
-    $label.append($select);
-    $switcher.append($label);
+    const $languageSelect = $("#language-select");
 
-    langs.forEach(function (lang) {
-        // Keep the same version segment — only the language prefix changes.
-        const targetPath = location.pathname.replace(/\/(en|kr)\/(\d+\.\d+\.\d+)\//, "/" + lang.code + "/$2/");
-        const targetUrl = targetPath + location.search + location.hash;
-        const selected = lang.code === currentLang ? "selected" : "";
-        $select.append(`<option value="${targetUrl}" ${selected}>${lang.display}</option>`);
-    });
+    // Populate the language selector
+    for (let i = 0; i < data.length; i++) {
+        const element = data[i];
+        const lang = element.lang;
+        const langUrlPrefix = element.pathPrefix;
+        const className = `language-switcher-language-${lang}`;
+        let targetUrl = "";
+        let selectedOption = "";
 
-    $select.on("change", function () {
+        if (langUrlPrefix.length > 0)
+            targetUrl = `/${langUrlPrefix}`;
+
+        if (element.lang === currentLang || (element.lang === 'en' && !currentLang))
+            selectedOption = "selected";
+
+        if (element.versions.includes(shortVersion)) {
+            // If the same version exists for the other language, send to same pagePath
+            targetUrl += baseUrl;
+        }
+        else {
+            // Else send to latest because another version exists
+            targetUrl += `/${!isOffline ? "Packages/" : ""}${thisPackageMetaData.name}@${getLatestVersion(element.versions)}/index.html`;
+        }
+
+        $languageSelect.append(`<option class="${className}" value="${targetUrl}" ${selectedOption}>${element.display}</li>`);
+    }
+
+    $languageSelect.change(function () {
         location.href = $(this).val();
     });
 
-    $("#breadcrumb").append($switcher);
-});
+    localStorage.setItem("docs-lang", currentLang);
+}
+
+function getShortVersion(longVersion) {
+    const longVersSplit = longVersion.split('.');
+    return `${longVersSplit[0]}.${longVersSplit[1]}`;
+}
+
+function getLatestVersion(versions) {
+    const sortedVersions = versions.sort(stringShortVersionComparator);
+    return sortedVersions[0];
+}
+
+function stringShortVersionComparator(a, b) {
+    const aSplit = a.split(".");
+    const bSplit = b.split(".");
+
+    const aMajor = parseInt(aSplit[0]);
+    const bMajor = parseInt(bSplit[0]);
+
+    if (isNaN(aMajor) || isNaN(bMajor))
+        return 0;
+
+    if (aMajor > bMajor)
+        return -1;
+    if (bMajor > aMajor)
+        return 1;
+
+    const aMinor = parseInt(aSplit[1]);
+    const bMinor = parseInt(bSplit[1]);
+
+    if (isNaN(aMinor) || isNaN(bMinor))
+        return 0;
+
+    if (aMinor > bMinor)
+        return -1;
+    if (bMinor > aMinor)
+        return 1;
+
+    return 0;
+}

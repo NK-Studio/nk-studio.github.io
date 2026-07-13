@@ -89,6 +89,19 @@
 
 <p>UITK Effects provides <code>Filter Function Definition</code> assets for richer visual effects in UI Toolkit.</p>
 <p>Each filter works with labels, images, and vector graphics. Apply the same filter multiple times or chain different filters to build a composite effect on a single element.</p>
+<h2 id="filter-stacking-order">Filter stacking order</h2>
+<p>When stacking multiple filters on one element, use the following order <strong>from top to bottom</strong> in UI Builder's Filter list:</p>
+<ol>
+<li>Inner Shadow</li>
+<li>Outline</li>
+<li>Outer Glow</li>
+<li>Drop Shadow</li>
+</ol>
+<p>Each filter processes the output of the previous stage, so changing the order can alter the final appearance even when the same filters and parameters are used. Use the recommended order unless you are intentionally creating a different look.</p>
+<div class="CAUTION">
+<h5>Caution</h5>
+<p>A different order may cause outlines, glows, or shadows to spread farther than expected or distort the intended shape.</p>
+</div>
 <h2 id="available-filters">Available filters</h2>
 <ul>
 <li><a href="DropShadow.html">Drop Shadow</a>: Adds a shadow shape behind text or images, making it look as if the shadow is cast by light.</li>
@@ -104,6 +117,9 @@
             <div class="sideaffix">
               <div class="contribution">
                 <ul class="nav">
+                  <li>
+                    <a href="https://github.com/NK-Studio/document/blob/main/UITKEffects-Document/en/1.0.0/manual/Filters/index.md/#L1" class="contribution-link">Edit this page</a>
+                  </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">

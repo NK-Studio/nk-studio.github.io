@@ -32,7 +32,7 @@
   "manual/Filters/index.html": {
     "href": "manual/Filters/index.html",
     "title": "Filter Effects | UITK Effects",
-    "summary": "Filter Effects UITK Effects provides Filter Function Definition assets for richer visual effects in UI Toolkit. Each filter works with labels, images, and vector graphics. Apply the same filter multiple times or chain different filters to build a composite effect on a single element. Available filters Drop Shadow: Adds a shadow shape behind text or images, making it look as if the shadow is cast by light. Inner Shadow: Adds a shadow along the inner edge of an object, making the surface look recessed or indented. Outer Glow: Makes light appear to spread outward from text or images. Outline: Draws one or more outlines with Outside, Center, or Inside alignment."
+    "summary": "Filter Effects UITK Effects provides Filter Function Definition assets for richer visual effects in UI Toolkit. Each filter works with labels, images, and vector graphics. Apply the same filter multiple times or chain different filters to build a composite effect on a single element. Filter stacking order When stacking multiple filters on one element, use the following order from top to bottom in UI Builder's Filter list: Inner Shadow Outline Outer Glow Drop Shadow Each filter processes the output of the previous stage, so changing the order can alter the final appearance even when the same filters and parameters are used. Use the recommended order unless you are intentionally creating a different look. Caution A different order may cause outlines, glows, or shadows to spread farther than expected or distort the intended shape. Available filters Drop Shadow: Adds a shadow shape behind text or images, making it look as if the shadow is cast by light. Inner Shadow: Adds a shadow along the inner edge of an object, making the surface look recessed or indented. Outer Glow: Makes light appear to spread outward from text or images. Outline: Draws one or more outlines with Outside, Center, or Inside alignment."
   },
   "manual/GettingStart.html": {
     "href": "manual/GettingStart.html",
@@ -57,7 +57,7 @@
   "manual/requirement.html": {
     "href": "manual/requirement.html",
     "title": "Requirements | UITK Effects",
-    "summary": "Requirements UITK Effects is built for Unity UI Toolkit projects. Unity version Unity 6000.3.0f1 or newer is recommended. The package targets Unity 6000.3 in package.json. Required systems UI Toolkit USS style sheets or UI Builder for assigning filters and materials No additional runtime package dependency is required by UITK Effects itself."
+    "summary": "Requirements UITK Effects is built for Unity UI Toolkit projects. Unity version Unity 6000.3.0f1 or newer is supported. The minimum supported version in package.json is Unity 6000.3. Compatibility has been verified through Unity 6000.7.0a2. Note Versions newer than Unity 6000.7.0a2 may work, but are not yet included in the verified compatibility range. Required systems UI Toolkit USS style sheets or UI Builder for assigning filters and materials No additional runtime package dependency is required by UITK Effects itself."
   },
   "node_modules/jetbrains-mono-webfont/README.html": {
     "href": "node_modules/jetbrains-mono-webfont/README.html",

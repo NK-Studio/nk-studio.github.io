@@ -1,0 +1,67 @@
+{
+  "changelog/CHANGELOG.html": {
+    "href": "changelog/CHANGELOG.html",
+    "title": "변경 로그 | UITK Effects",
+    "summary": "변경 로그 이 패키지의 주요 변경 사항은 이 파일에 기록됩니다. 형식은 Keep a Changelog를 기반으로 하며, 이 프로젝트는 Semantic Versioning을 따릅니다. [1.0.0] - 2026-07-12 추가됨 UITK Effects 첫 릴리스. Drop Shadow, Inner Shadow, Outer Glow, Outline용 UI Toolkit 필터 에셋 추가. 같은 효과 유형을 여러 번 체인할 수 있도록 Drop Shadow와 Inner Shadow의 중복 필터 정의 에셋 추가. 그림자, 글로우, 외곽선, 그라디언트 렌더링을 위한 UI Toolkit 호환 셰이더와 머티리얼 추가. 시작 색상, 끝 색상, 각도, 단계 값을 제어할 수 있는 -unity-material용 그라디언트 머티리얼 추가. 패키지 에셋용 runtime assembly definition 추가."
+  },
+  "license/License.html": {
+    "href": "license/License.html",
+    "title": "| UITK Effects",
+    "summary": "MIT License Copyright (c) 2024 NK Studio Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE."
+  },
+  "manual/Filters/DropShadow.html": {
+    "href": "manual/Filters/DropShadow.html",
+    "title": "Drop Shadow | UITK Effects",
+    "summary": "Drop Shadow 라벨, 이미지, 벡터 그래픽 바깥쪽에 부드러운 그림자를 표현합니다. 오프셋, 블러 반경, 색상을 조절하여 높이감, 조명 방향 또는 여러 겹의 그림자를 만들 수 있습니다. 파라미터 파라미터 설명 offset-x 그림자의 가로 오프셋 offset-y 그림자의 세로 오프셋 blur-radius 그림자의 부드러움과 퍼지는 범위 color 그림자의 색상과 불투명도"
+  },
+  "manual/Filters/InnerShadow.html": {
+    "href": "manual/Filters/InnerShadow.html",
+    "title": "Inner Shadow | UITK Effects",
+    "summary": "Inner Shadow 라벨, 이미지, 벡터 그래픽의 안쪽 가장자리에 음영을 표현합니다. 들어간 패널, 눌린 컨트롤, 오목한 표면을 표현할 때 유용합니다. 파라미터 파라미터 설명 offset-x 내부 그림자의 가로 오프셋 offset-y 내부 그림자의 세로 오프셋 blur-radius 내부 그림자의 부드러움과 퍼지는 범위 color 내부 그림자의 색상과 불투명도"
+  },
+  "manual/Filters/OuterGlow.html": {
+    "href": "manual/Filters/OuterGlow.html",
+    "title": "Outer Glow | UITK Effects",
+    "summary": "Outer Glow 라벨, 이미지, 벡터 그래픽 바깥쪽으로 부드러운 색상 글로우를 표현합니다. 반경으로 퍼지는 범위를, 강도로 글로우의 세기를 조절할 수 있습니다. 파라미터 파라미터 설명 radius 글로우가 퍼지는 범위 intensity 글로우의 세기 color 글로우 색상"
+  },
+  "manual/Filters/Outline.html": {
+    "href": "manual/Filters/Outline.html",
+    "title": "Outline | UITK Effects",
+    "summary": "Outline 라벨, 이미지, 벡터 그래픽의 형태를 따라 선명한 외곽선을 표현합니다. 아웃라인을 여러 개 체인할 수 있으며 각 아웃라인마다 두께, 색상, 정렬 방식을 다르게 지정할 수 있습니다. 파라미터 파라미터 설명 width 아웃라인 두께 color 아웃라인 색상 mode 원본 가장자리를 기준으로 한 정렬 방식 정렬 모드 0: Outside 1: Center 2: Inside"
+  },
+  "manual/Filters/index.html": {
+    "href": "manual/Filters/index.html",
+    "title": "필터 효과 | UITK Effects",
+    "summary": "필터 효과 UITK Effects는 UI Toolkit에서 더 향상된 시각 효과를 위한 Filter Function Definition 에셋을 제공합니다. 각 필터는 라벨, 이미지, 벡터 그래픽에 사용할 수 있습니다. 같은 필터를 여러 번 적용하거나 서로 다른 필터를 체인하여 하나의 엘리먼트에 복합 효과를 구성할 수 있습니다. 제공 필터 Drop Shadow: 글자나 이미지 뒤에 그림자 모양을 덧붙여, 마치 빛에 의해 그림자가 생긴 것처럼 보이게 하는 효과입니다. Inner Shadow: 오브젝트의 안쪽 가장자리에 그림자를 넣어, 표면이 안으로 들어가 있거나 움푹 파인 것처럼 보이게 하는 효과입니다. Outer Glow: 글자나 이미지의 바깥쪽으로 빛이 퍼져 나가는 것처럼 보이게 하는 효과입니다. Outline: Outside, Center, Inside 정렬 방식으로 하나 이상의 외곽선을 표현합니다."
+  },
+  "manual/GettingStart.html": {
+    "href": "manual/GettingStart.html",
+    "title": "시작하기 | UITK Effects",
+    "summary": "시작하기 UI Builder에서 Outline 필터를 추가하고 모양을 조절하는 기본 과정을 설명합니다. 요소 준비 UI Builder에서 VisualElement로 요소를 그리거나 아웃라인을 적용할 Label을 준비합니다. Hierarchy에서 대상 요소를 선택합니다. Outline 필터 추가 Inspector의 Filter 섹션으로 이동합니다. + 버튼을 눌러 새로운 필터(Custom)를 생성합니다. Definition 목록에서 Outline Filter를 선택합니다. Outline 조절 width 값을 조절하여 아웃라인 두께를 변경합니다. color에서 원하는 아웃라인 색상을 지정합니다. mode 값으로 아웃라인이 그려지는 위치를 선택합니다. mode 적용 위치 설명 0 Outside 요소의 바깥쪽으로 아웃라인을 그립니다. 1 Center 요소의 경계를 중심으로 아웃라인을 그립니다. 2 Inside 요소의 안쪽으로 아웃라인을 그립니다. 설정을 변경하면 UI Builder의 Canvas에서 결과를 바로 확인할 수 있습니다."
+  },
+  "manual/Gradient.html": {
+    "href": "manual/Gradient.html",
+    "title": "그라디언트 머티리얼 | UITK Effects",
+    "summary": "그라디언트 머티리얼 그라디언트는 필터가 아니라 -unity-material로 적용하는 커스텀 머티리얼입니다. 요소의 배경을 두 색상 사이의 그라디언트로 칠합니다. 프로퍼티 프로퍼티 설명 ColorStart 그라디언트 시작 색상 ColorEnd 그라디언트 끝 색상 Angle 그라디언트 각도(도). 0이면 왼쪽 → 오른쪽 Steps 색 전환의 부드러움. 값이 작을수록 두 색의 경계가 뚜렷한 칼단면에 가깝고, 150에 가까울수록 부드럽게 이어지는 그라디언트가 됩니다. 범위는 1~150이며 기본값은 150입니다. 주의사항 1. 머티리얼만 지정해서는 표시되지 않습니다 머티리얼을 지정하는 것만으로는 그라디언트가 바로 나타나지 않습니다. 그라디언트 셰이더는 요소의 배경 위에 색을 곱해서 그리기 때문에, 색이 곱해질 밑바탕이 없으면 아무것도 보이지 않습니다. Inspector의 Background > Background Color를 흰색 불투명(1, 1, 1, 1)으로 채워 두세요. 흰색을 밑바탕으로 두어야 그라디언트가 원래 색 그대로 표시됩니다. 배경 색의 알파가 0이면 Unity가 배경 메시 자체를 생성하지 않아 그라디언트도 그려지지 않습니다. 2. 자식 요소에 머티리얼이 상속됩니다 -unity-material은 상속되는 프로퍼티입니다. 그라디언트 머티리얼을 적용한 요소 아래에 Label이나 다른 VisualElement를 자식으로 두면, UI Builder가 자식에게도 부모의 머티리얼을 그대로 바인딩합니다. 그 결과 자식도 같은 위치에 같은 그라디언트로 덧칠되어, 마치 자식이 렌더링되지 않는 것처럼 보일 수 있습니다. 자식이 그라디언트의 영향을 받지 않게 하려면 자식 요소에 -unity-material: none;을 명시하세요. 3. 머티리얼 그라디언트는 Border를 그리지 않습니다 머티리얼로 그라디언트를 적용하면 Inspector의 Border > Color 가 의도대로 그려지지 않습니다. 그라디언트 요소에 단색의 외곽선을 넣고 싶다면 Border에 Color와 Width를 비워두고, 대신 Outline 필터를 사용하세요."
+  },
+  "manual/index.html": {
+    "href": "manual/index.html",
+    "title": "UITK Effects 개요 | UITK Effects",
+    "summary": "UITK Effects 개요 UITK Effects는 런타임 스크립트 대신 에셋 기반으로 UI Toolkit 시각 효과를 제공하는 Unity 패키지입니다. 그림자, 글로우, 외곽선용 커스텀 필터 정의와 UI Toolkit에서 사용할 수 있는 그라디언트 머티리얼을 포함합니다. 특징 USS 또는 UI Builder에서 바로 참조할 수 있는 에셋 기반 UI Toolkit 효과 제공 라벨, 이미지, 벡터 그래픽에 여러 개의 그림자를 중첩 적용 가능 라벨, 이미지, 벡터 그래픽에 Outside, Center, Inside 방식의 아웃라인을 여러 개 중첩 적용 가능 그림자, 글로우, 아웃라인 등 여러 효과를 조합하여 하나의 복합 효과로 표현 가능 색상, 각도, 단계 값을 제어할 수 있는 -unity-material용 그라디언트 머티리얼 제공 일반적인 사용에는 별도의 런타임 C# API가 필요 없음 뉴모피즘 UI 샘플, 소프트 컨트롤, 배지, 검색 바, 브랜드 텍스트 표현에 적합 포함된 효과 효과 유형 설명 Drop Shadow 필터 엘리먼트 바깥쪽에 하나 이상의 부드러운 그림자를 표현합니다. Inner Shadow 필터 엘리먼트 안쪽에 들어간 듯한 음영을 표현합니다. Outer Glow 필터 엘리먼트 주변에 부드럽게 퍼지는 색상 글로우를 표현합니다. Outline 필터 Outside, Center, Inside 정렬 방식으로 하나 이상의 외곽선을 표현합니다. Gradient 머티리얼 부드러운 색상 전환 또는 단계형 그라디언트를 표현합니다."
+  },
+  "manual/installation.html": {
+    "href": "manual/installation.html",
+    "title": "설치 | UITK Effects",
+    "summary": "설치 패키지 설치 Unity Package Manager에서 Git 저장소 URL로 UITK Effects를 설치합니다. Git이 설치되어 있는지 확인하세요. 패키지 관리자를 엽니다. + 버튼을 클릭하고 Install package from git URL...을 선택합니다. 패키지 저장소 URL을 입력한 후 Install 버튼을 클릭합니다. https://github.com/NK-Studio/com.nkstudio.uitk-effect.git 필터와 그라디언트 머티리얼 설치 필터 정의와 그라디언트 머티리얼은 패키지 폴더 안에 들어있어서, 프로젝트의 Assets 폴더로 복사하기 전까지는 UI Builder의 애셋 선택기에 표시되지 않습니다. 패키지를 프로젝트에 처음 임포트하면 UITK Effects Setup 창이 자동으로 열립니다. Window > NK Studio > UITK Effects Setup에서 수동으로 열 수도 있습니다. Install UI Builder Assets 버튼을 클릭합니다. 정의와 머티리얼이 Assets/UITK Effects에 복사되고, 각 항목의 상태가 설치됨으로 바뀝니다. 설치가 끝나면 시작하기에서 사용하는 것처럼 UI Builder의 Filter 인스펙터 Definition 목록에서 DropShadowFilter, InnerShadowFilter, OuterGlowFilter, OutlineFilter, Gradient.mat을 선택할 수 있습니다. Note 시작 시 표시를 해제하면 이후 세션에서는 창이 자동으로 열리지 않습니다. 새로 추가된 애셋이 없을 때는 Window 메뉴에서 직접 다시 열어주세요."
+  },
+  "manual/requirement.html": {
+    "href": "manual/requirement.html",
+    "title": "요구사항 | UITK Effects",
+    "summary": "요구사항 UITK Effects는 Unity UI Toolkit 프로젝트를 대상으로 합니다. Unity 버전 Unity 6000.3.0f1 이상을 권장합니다. package.json의 대상 Unity 버전은 6000.3입니다. 필요한 시스템 UI Toolkit 필터와 머티리얼을 지정할 USS 스타일시트 또는 UI Builder UITK Effects 자체에는 별도의 런타임 패키지 의존성이 없습니다."
+  },
+  "node_modules/jetbrains-mono-webfont/README.html": {
+    "href": "node_modules/jetbrains-mono-webfont/README.html",
+    "title": "jetbrains-mono-webfont | UITK Effects",
+    "summary": "jetbrains-mono-webfont A webfont package for the JetBrains Mono typeface. For more information about the typeface, see JetBrains Mono's website. NPM npm install --save jetbrains-mono-webfont License jetbrains-mono-webfont © Chawye Hsu. Released under the MIT License. The JetBrains Mono typeface is available under the SIL Open Font License 1.1 license. Blog · GitHub @chawyehsu · Twitter @chawyehsu"
+  }
+}

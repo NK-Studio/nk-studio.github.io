@@ -1,0 +1,67 @@
+{
+  "changelog/CHANGELOG.html": {
+    "href": "changelog/CHANGELOG.html",
+    "title": "Changelog | UITK Effects",
+    "summary": "Changelog All notable changes to this package will be documented in this file. The format is based on Keep a Changelog, and this project adheres to Semantic Versioning. [1.0.0] - 2026-07-12 Added Initial release of UITK Effects. Added UI Toolkit filter assets for Drop Shadow, Inner Shadow, Outer Glow, and Outline effects. Added duplicate Drop Shadow and Inner Shadow filter definition assets for chaining the same effect type multiple times. Added UI Toolkit-compatible shaders and materials for shadow, glow, outline, and gradient rendering. Added a gradient material for -unity-material with start color, end color, angle, and step controls. Added a runtime assembly definition for package assets."
+  },
+  "license/License.html": {
+    "href": "license/License.html",
+    "title": "| UITK Effects",
+    "summary": "MIT License Copyright (c) 2024 NK Studio Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE."
+  },
+  "manual/Filters/DropShadow.html": {
+    "href": "manual/Filters/DropShadow.html",
+    "title": "Drop Shadow | UITK Effects",
+    "summary": "Drop Shadow Renders a soft shadow outside a label, image, or vector graphic. Adjust the offset, blur radius, and color to create elevation, directional lighting, or multiple layered shadows. Parameters Parameter Description offset-x Horizontal offset of the shadow offset-y Vertical offset of the shadow blur-radius Softness and spread of the shadow color Color and opacity of the shadow"
+  },
+  "manual/Filters/InnerShadow.html": {
+    "href": "manual/Filters/InnerShadow.html",
+    "title": "Inner Shadow | UITK Effects",
+    "summary": "Inner Shadow Shades the inside edge of a label, image, or vector graphic. Useful for recessed panels, pressed controls, and inset surfaces. Parameters Parameter Description offset-x Horizontal offset of the inner shadow offset-y Vertical offset of the inner shadow blur-radius Softness and spread of the inner shadow color Color and opacity of the inner shadow"
+  },
+  "manual/Filters/OuterGlow.html": {
+    "href": "manual/Filters/OuterGlow.html",
+    "title": "Outer Glow | UITK Effects",
+    "summary": "Outer Glow Spreads a soft colored glow beyond a label, image, or vector graphic. Radius controls how far the glow spreads, and intensity controls its strength. Parameters Parameter Description radius Distance over which the glow spreads intensity Strength of the glow color Glow color"
+  },
+  "manual/Filters/Outline.html": {
+    "href": "manual/Filters/Outline.html",
+    "title": "Outline | UITK Effects",
+    "summary": "Outline Draws a sharp outline following the shape of a label, image, or vector graphic. Multiple outlines can be chained, each with its own width, color, and alignment mode. Parameters Parameter Description width Outline thickness color Outline color mode Alignment relative to the source edge Alignment modes 0: Outside 1: Center 2: Inside"
+  },
+  "manual/Filters/index.html": {
+    "href": "manual/Filters/index.html",
+    "title": "Filter Effects | UITK Effects",
+    "summary": "Filter Effects UITK Effects provides Filter Function Definition assets for richer visual effects in UI Toolkit. Each filter works with labels, images, and vector graphics. Apply the same filter multiple times or chain different filters to build a composite effect on a single element. Available filters Drop Shadow: Adds a shadow shape behind text or images, making it look as if the shadow is cast by light. Inner Shadow: Adds a shadow along the inner edge of an object, making the surface look recessed or indented. Outer Glow: Makes light appear to spread outward from text or images. Outline: Draws one or more outlines with Outside, Center, or Inside alignment."
+  },
+  "manual/GettingStart.html": {
+    "href": "manual/GettingStart.html",
+    "title": "Getting Started | UITK Effects",
+    "summary": "Getting Started This guide explains the basic workflow for adding and configuring an Outline filter in UI Builder. Prepare an element Draw an element with a VisualElement in UI Builder, or prepare a Label that needs an outline. Select the target element in the Hierarchy. Add the Outline filter Open the Filter section in the Inspector. Click the + button to create a new filter (Custom). Select Outline Filter from the Definition list. Configure the Outline Change width to adjust the outline thickness. Set the desired outline color with color. Use mode to choose where the outline is drawn. mode Position Description 0 Outside Draws the outline outside the element edge. 1 Center Draws the outline centered on the element edge. 2 Inside Draws the outline inside the element edge. UI Builder displays the result directly in the Canvas as the settings change."
+  },
+  "manual/Gradient.html": {
+    "href": "manual/Gradient.html",
+    "title": "Gradient Material | UITK Effects",
+    "summary": "Gradient Material The gradient is a custom material applied with -unity-material, not a filter. It fills an element's background with a gradient between two colors. Properties Property Description _ColorStart Start color of the gradient _ColorEnd End color of the gradient _Angle Gradient angle in degrees. 0 is left → right _Steps Softness of the color transition. Lower values give a sharp, hard-edged boundary between the two colors; values closer to 150 produce a smoothly blended gradient. The range is 1–150 and the default is 150. Notes Because the gradient material behaves differently from filters, there are a few things to watch out for. 1. The material alone won't display anything Assigning the material by itself doesn't make the gradient appear. The gradient shader draws by multiplying its color over the element's background, so with no base fill to multiply against, nothing shows. Set Background > Background Color in the Inspector to opaque white (1, 1, 1, 1). A white base is required for the gradient to appear at its true colors. If the background color's alpha is 0, Unity doesn't generate the background mesh at all, so the gradient isn't drawn either. 2. The material is inherited by child elements -unity-material is an inherited property. If you place a Label or another VisualElement as a child of an element that uses the gradient material, UI Builder binds the parent's material to the child as well. As a result the child is painted with the same gradient at the same position, which can look as if the child isn't being rendered. To keep a child free of the gradient, set -unity-material: none; on the child element. 3. The material gradient does not draw a Border When the gradient is applied through the material, the Border > Color set in the Inspector does not render as intended. If you need a solid outline on a gradient element, leave the Border color and width empty and use the Outline filter instead."
+  },
+  "manual/index.html": {
+    "href": "manual/index.html",
+    "title": "UITK Effects Overview | UITK Effects",
+    "summary": "UITK Effects Overview UITK Effects is a Unity package that adds ready-to-use UI Toolkit visual effects through assets instead of runtime scripts. The package includes custom filter definitions for shadows, glow, and outline effects, plus a UI Toolkit-compatible gradient material. Features Asset-based UI Toolkit effects that can be referenced from USS or UI Builder Multiple shadows can be applied to labels, images, and vector graphics Multiple outlines can be layered with Outside, Center, or Inside alignment on labels, images, and vector graphics Shadow, glow, outline, and other effects can be stacked to create a single composite visual Gradient material for -unity-material with color, angle, and step controls No runtime C# API required for normal usage Suitable for neumorphic UI samples, soft controls, badges, search bars, and branded text Included effects Effect Type Description Drop Shadow Filter Adds one or more soft shadows outside an element Inner Shadow Filter Adds recessed shading inside an element Outer Glow Filter Adds a soft colored glow around an element Outline Filter Draws one or more borders with Outside, Center, or Inside alignment Gradient Material Renders configurable smooth or stepped color gradients"
+  },
+  "manual/installation.html": {
+    "href": "manual/installation.html",
+    "title": "Installation | UITK Effects",
+    "summary": "Installation Install the package Install UITK Effects through Unity Package Manager using the Git repository URL. Make sure Git is installed. Open the Package Manager. Click the + button and select Install package from git URL.... Enter the package repository URL and click Install. https://github.com/NK-Studio/com.nkstudio.uitk-effect.git Install the filters and gradient material The filter definitions and gradient material ship inside the package folder, so they don't appear in UI Builder's asset pickers until they are copied into your project's Assets folder. The UITK Effects Setup window opens automatically the first time the package is imported into a project. You can also open it manually from Window > NK Studio > UITK Effects Setup. Click Install UI Builder Assets. The definitions and material are copied to Assets/UITK Effects, and each item's status changes to Installed. Once installed, DropShadowFilter, InnerShadowFilter, OuterGlowFilter, OutlineFilter, and Gradient.mat are selectable from the Definition list in UI Builder's Filter inspector, as used in Getting Started. Note If Show at startup is unchecked, the window won't reopen automatically on later sessions — reopen it from the Window menu whenever new assets are missing."
+  },
+  "manual/requirement.html": {
+    "href": "manual/requirement.html",
+    "title": "Requirements | UITK Effects",
+    "summary": "Requirements UITK Effects is built for Unity UI Toolkit projects. Unity version Unity 6000.3.0f1 or newer is recommended. The package targets Unity 6000.3 in package.json. Required systems UI Toolkit USS style sheets or UI Builder for assigning filters and materials No additional runtime package dependency is required by UITK Effects itself."
+  },
+  "node_modules/jetbrains-mono-webfont/README.html": {
+    "href": "node_modules/jetbrains-mono-webfont/README.html",
+    "title": "jetbrains-mono-webfont | UITK Effects",
+    "summary": "jetbrains-mono-webfont A webfont package for the JetBrains Mono typeface. For more information about the typeface, see JetBrains Mono's website. NPM npm install --save jetbrains-mono-webfont License jetbrains-mono-webfont © Chawye Hsu. Released under the MIT License. The JetBrains Mono typeface is available under the SIL Open Font License 1.1 license. Blog · GitHub @chawyehsu · Twitter @chawyehsu"
+  }
+}

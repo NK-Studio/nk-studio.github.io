@@ -1,0 +1,17 @@
+{
+  "versions":{
+    "1.0.0":{
+      "unity":"6000.3",
+      "displayName":"UITK Effects",
+      "name":"com.nkstudio.uitk-effects",
+      "type":"asset",
+      "keywords":[
+        "UI Toolkit",
+        "UITK",
+        "Filter",
+        "Gradient"
+      ],
+      "version":"1.0.0"
+    }
+  }
+}

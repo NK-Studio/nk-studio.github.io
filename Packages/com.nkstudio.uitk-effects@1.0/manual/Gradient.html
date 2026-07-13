@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Gradient Material | UITK Effects </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Gradient Material | UITK Effects ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <link rel="stylesheet" href="../styles/language-switcher.css">
+      <link rel="stylesheet" href="../styles/version-switcher.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../manual/index.html">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="">
+              </a>            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+            <div class="container hide-when-search" id="breadcrumb">
+                <!-- Unity Customization: Remove content of breadcrumb bar. This space is used for version and language switchers
+                            <ul class="breadcrumb">
+                              <li></li>
+                            </ul>
+                            -->
+            </div>
+        </div>      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+        <div id="unity_breadcrumb_placeholder">
+            <ul class="breadcrumb">
+            <li></li>
+            </ul>
+        </div>
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="gradient-material">Gradient Material</h1>
+
+<p>The gradient is a custom material applied with <code>-unity-material</code>, not a filter. It fills an element's background with a gradient between two colors.</p>
+<!-- Image: a VisualElement with the Gradient material applied, and the Start / End / Angle / Steps property inspector -->
+<p><img src="../images/gradient-inspector.png" alt="Gradient material and properties"></p>
+<h2 id="properties">Properties</h2>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>_ColorStart</code></td>
+<td>Start color of the gradient</td>
+</tr>
+<tr>
+<td><code>_ColorEnd</code></td>
+<td>End color of the gradient</td>
+</tr>
+<tr>
+<td><code>_Angle</code></td>
+<td>Gradient angle in degrees. <code>0</code> is left → right</td>
+</tr>
+<tr>
+<td><code>_Steps</code></td>
+<td>Softness of the color transition. Lower values give a sharp, hard-edged boundary between the two colors; values closer to <code>150</code> produce a smoothly blended gradient. The range is <code>1</code>–<code>150</code> and the default is <code>150</code>.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="notes">Notes</h2>
+<p>Because the gradient material behaves differently from filters, there are a few things to watch out for.</p>
+<h3 id="1-the-material-alone-wont-display-anything">1. The material alone won't display anything</h3>
+<p>Assigning the material by itself doesn't make the gradient appear. The gradient shader draws by <strong>multiplying its color over the element's background</strong>, so with no base fill to multiply against, nothing shows.</p>
+<p><img src="../images/gradient-missing-background.png" alt="Material assigned with no background fill — nothing shows"></p>
+<p>Set <strong>Background &gt; Background Color</strong> in the Inspector to opaque white (<code>1, 1, 1, 1</code>). A white base is required for the gradient to appear at its true colors. If the background color's alpha is <code>0</code>, Unity doesn't generate the background mesh at all, so the gradient isn't drawn either.</p>
+<p><img src="../images/gradient-white-background.png" alt="White background color reveals the gradient"></p>
+<h3 id="2-the-material-is-inherited-by-child-elements">2. The material is inherited by child elements</h3>
+<p><code>-unity-material</code> is an <strong>inherited property</strong>. If you place a <code>Label</code> or another <code>VisualElement</code> as a child of an element that uses the gradient material, UI Builder binds the parent's material to the child as well. As a result the child is painted with the same gradient at the same position, which can look as if the child isn't being rendered.</p>
+<p>To keep a child free of the gradient, set <code>-unity-material: none;</code> on the child element.</p>
+<p><img src="../images/gradient-child-inherited.png" alt="Child element inherits the parent gradient">
+<img src="../images/gradient-child-material-none.png" alt="Child fixed with -unity-material: none"></p>
+<h3 id="3-the-material-gradient-does-not-draw-a-border">3. The material gradient does not draw a Border</h3>
+<p>When the gradient is applied through the material, the <strong>Border &gt; Color</strong> set in the Inspector does not render as intended. If you need a solid outline on a gradient element, leave the Border color and width empty and use the <a href="Filters/Outline.html">Outline</a> filter instead.</p>
+<p><img src="../images/gradient-border-ignored.png" alt="Border settings ignored on a gradient element">
+<img src="../images/gradient-outline-filter.png" alt="Outline filter used for the border instead"></p>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+              <div>
+                  This asset and documentation are not affiliated with Unity Technologies, and the creator is not responsible for any legal issues arising from its use.
+              </div>
+              <div>
+                  <span class="pull-right"><a href="#top">Back to top</a></span>
+
+                  <span>This document was generated using <strong>DocFX</strong>.</span>
+              </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../styles/language-switcher.js"></script>
+    <script type="text/javascript" src="../styles/version-switcher.js"></script>  </body>
+</html>

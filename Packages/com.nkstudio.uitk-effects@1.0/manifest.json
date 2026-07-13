@@ -1,0 +1,431 @@
+{
+  "source_base_path": "E:/0.Project/3.document/docfx/UITKEffects-Document/en/1.0.0",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "changelog/CHANGELOG.md",
+      "output": {
+        ".html": {
+          "relative_path": "changelog/CHANGELOG.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "changelog/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "changelog/toc.html"
+        },
+        ".json": {
+          "relative_path": "changelog/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/apply-outline.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/apply-outline.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/drop-shadow.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/drop-shadow.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/element-innershadow.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/element-innershadow.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/element-outglow.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/element-outglow.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/gradient-border-ignored.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/gradient-border-ignored.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/gradient-child-inherited.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/gradient-child-inherited.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/gradient-child-material-none.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/gradient-child-material-none.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/gradient-inspector.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/gradient-inspector.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/gradient-missing-background.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/gradient-missing-background.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/gradient-outline-filter.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/gradient-outline-filter.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/gradient-white-background.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/gradient-white-background.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/image-outline.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/image-outline.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/install-window.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/install-window.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/install.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/install.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/label-drop-shadow.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/label-drop-shadow.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/label-innershadow.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/label-innershadow.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/label-outglow.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/label-outglow.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/label-outline.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/label-outline.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/logo.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/logo.svg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/preview-filter-custom.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/preview-filter-custom.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/select-target.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/select-target.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/uitk-effects-overview.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/uitk-effects-overview.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "index.html",
+      "output": {
+        "resource": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "license/License.md",
+      "output": {
+        ".html": {
+          "relative_path": "license/License.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "license/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "license/toc.html"
+        },
+        ".json": {
+          "relative_path": "license/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/Filters/DropShadow.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/Filters/DropShadow.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/Filters/InnerShadow.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/Filters/InnerShadow.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/Filters/OuterGlow.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/Filters/OuterGlow.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/Filters/Outline.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/Filters/Outline.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/Filters/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/Filters/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/GettingStart.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/GettingStart.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/Gradient.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/Gradient.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/installation.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/installation.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/requirement.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/requirement.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "manual/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "manual/toc.html"
+        },
+        ".json": {
+          "relative_path": "manual/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "node_modules/jetbrains-mono-webfont/README.md",
+      "output": {
+        ".html": {
+          "relative_path": "node_modules/jetbrains-mono-webfont/README.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

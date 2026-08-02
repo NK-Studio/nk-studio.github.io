@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <script type="text/javascript">
+        thisPackageMetaData = {name: "com.nkstudio.uitk-navigation", version: "0.2.0", displayTitle: "UITK Navigation 0.2.0", lang: "en"};
+    </script>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Random node | UITK Navigation </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Random node | UITK Navigation ">
+    
+      <link rel="shortcut icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../../styles/docfx.css">
+      <link rel="stylesheet" href="../../styles/main.css">
+      <link rel="stylesheet" href="../../styles/language-switcher.css">
+      <link rel="stylesheet" href="../../styles/version-switcher.css">
+      <meta property="docfx:navrel" content="../../toc.html">
+      <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../../manual/index.html">
+                <img id="logo" class="svg" src="../../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+            <div class="container hide-when-search" id="breadcrumb">
+                <!-- Unity Customization: Remove content of breadcrumb bar. This space is used for version and language switchers
+                            <ul class="breadcrumb">
+                              <li></li>
+                            </ul>
+                            -->
+            </div>
+        </div>      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+        <div id="unity_breadcrumb_placeholder">
+            <ul class="breadcrumb">
+            <li></li>
+            </ul>
+        </div>
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="random-node">Random node</h1>
+
+<p>The Random node is a transient routing screen that chooses one connected output by relative weight on the next service Tick. It does not Show or Hide a View itself.</p>
+<h2 id="configure-outputs">Configure outputs</h2>
+<p>Add entries under <strong>Random Outputs</strong>, give each one a non-negative finite <strong>Weight</strong>, and connect it to one UI or Action chain. The percentages shown beside ports are calculated from connected outputs only.</p>
+<p>For example, connected weights <code>1</code>, <code>1</code>, and <code>2</code> produce approximate shares of 25%, 25%, and 50%. The absolute scale does not matter: <code>10</code>, <code>10</code>, and <code>20</code> produce the same result.</p>
+<p>The graph validator requires:</p>
+<ul>
+<li>at least one connected output;</li>
+<li>one target per connected output;</li>
+<li>every Weight to be finite and zero or greater;</li>
+<li>the sum of connected Weights to be greater than zero.</li>
+</ul>
+<p>Disconnected outputs show 0% and are ignored by runtime selection.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>In version 0.2.0, Random still shows inherited <strong>Node Description</strong> and <strong>Clear History</strong> fields in the Inspector, but the compiler does not copy them to the Random runtime node. In particular, Clear History has no runtime effect on Random.</p>
+</div>
+<h2 id="runtime-behavior">Runtime behavior</h2>
+<p>After navigation enters Random, <code>UINavigationService.Tick()</code> selects a branch on the next update. If its Action chain reaches another screen, navigation uses a normal Push transition; a terminal Action branch only executes its Actions. Put Action nodes between Random and the target when the chosen branch should also change time scale, log, or manage a scene.</p>
+<p>Use Random for loot screens, rotating tips, A/B flows, or any route whose probability belongs in the graph rather than application code.</p>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/NK-Studio/document/blob/main/UITKNavigation-Document/en/0.2.0/manual/navigation-graph/random.md/#L1" class="contribution-link">Edit this page</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+              <div>
+                  This asset and documentation are not affiliated with Unity Technologies, and the creator is not responsible for any legal issues arising from its use.
+              </div>
+              <div>
+                  <span class="pull-right"><a href="#top">Back to top</a></span>
+
+                  <span>This document was generated using <strong>DocFX</strong>.</span>
+              </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+    <script type="text/javascript" src="../../styles/language-switcher.js"></script>
+    <script type="text/javascript" src="../../styles/version-switcher.js"></script>
+    <script type="text/javascript" src="../../styles/metadata-collector.js"></script>  </body>
+</html>

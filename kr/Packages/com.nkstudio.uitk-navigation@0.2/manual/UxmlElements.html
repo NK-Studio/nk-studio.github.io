@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <script type="text/javascript">
+        thisPackageMetaData = {name: "com.nkstudio.uitk-navigation", version: "0.2.0", displayTitle: "UITK Navigation 0.2.0", lang: "kr"};
+    </script>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>UXML 요소 | UITK Navigation </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="UXML 요소 | UITK Navigation ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <link rel="stylesheet" href="../styles/language-switcher.css">
+      <link rel="stylesheet" href="../styles/version-switcher.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../manual/index.html">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+            <div class="container hide-when-search" id="breadcrumb">
+                <!-- Unity Customization: Remove content of breadcrumb bar. This space is used for version and language switchers
+                            <ul class="breadcrumb">
+                              <li></li>
+                            </ul>
+                            -->
+            </div>
+        </div>      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+        <div id="unity_breadcrumb_placeholder">
+            <ul class="breadcrumb">
+            <li></li>
+            </ul>
+        </div>
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="uxml-요소">UXML 요소</h1>
+
+<p>이 섹션에서는 Visual Tree를 Key Catalog와 Navigation Graph에 연결하는 UI Builder Control 세 개를 다룹니다. Popup 전용 UXML Control은 <a href="Popup.html">팝업</a>에서 설명합니다.</p>
+<table>
+<thead>
+<tr>
+<th>요소</th>
+<th>기반 Control</th>
+<th>Catalog</th>
+<th>역할</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="uxml-elements/nav-element.html">NavElement</a></td>
+<td><code>VisualElement</code></td>
+<td>View</td>
+<td>그래프가 제어하는 View 등록과 Show/Hide 전환 관리</td>
+</tr>
+<tr>
+<td><a href="uxml-elements/nav-button.html">NavButton</a></td>
+<td><code>Button</code></td>
+<td>Button</td>
+<td>Click 시 UI Button 주소 발생</td>
+</tr>
+<tr>
+<td><a href="uxml-elements/nav-toggle.html">NavToggle</a></td>
+<td><code>Toggle</code></td>
+<td>Button</td>
+<td>Toggle 주소와 <code>bool</code> 값 발생</td>
+</tr>
+</tbody>
+</table>
+<h2 id="namespace">Namespace</h2>
+<p>UXML을 직접 작성할 때 패키지 Namespace를 추가합니다.</p>
+<pre><code class="lang-xml">&lt;ui:UXML xmlns:ui=&quot;UnityEngine.UIElements&quot;
+         xmlns:nav=&quot;NKStudio.UITKNavigation.Elements&quot;&gt;
+    &lt;nav:NavElement name=&quot;main&quot; view-category=&quot;Menu&quot; view-key=&quot;Main&quot;&gt;
+        &lt;nav:NavButton text=&quot;Settings&quot;
+                       signal-category=&quot;Menu&quot; signal-key=&quot;OpenSettings&quot; /&gt;
+        &lt;nav:NavToggle label=&quot;Music&quot;
+                       toggle-category=&quot;Settings&quot; toggle-key=&quot;Music&quot; /&gt;
+    &lt;/nav:NavElement&gt;
+&lt;/ui:UXML&gt;
+</code></pre>
+<p>UI Builder의 Catalog Picker에서 주소를 선택해도 같은 속성이 저장됩니다. Picker가 올바른 View 또는 Button 주소를 찾을 수 있도록 <strong>Tools &gt; UI Navigation &gt; Key Catalog</strong>에 항목을 먼저 등록하세요.</p>
+<h2 id="주소-규약">주소 규약</h2>
+<p>주소는 대소문자를 구분하는 <code>Category/Key</code> 쌍이며 <code>UIKey</code>로 표현합니다. UXML과 Graph 양쪽에서 같은 주소를 사용해야 합니다.</p>
+<table>
+<thead>
+<tr>
+<th>UXML</th>
+<th>Graph</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>NavElement</code> View 주소</td>
+<td>On Enter/Exit Show/Hide 또는 UI View 출력(Animated 시작만)</td>
+</tr>
+<tr>
+<td><code>NavButton</code> Button 주소(<code>signal-*</code> 속성)</td>
+<td>UI Button 출력 또는 UI Button Portal</td>
+</tr>
+<tr>
+<td><code>NavToggle</code> Toggle 주소</td>
+<td>Toggle 출력 또는 Toggle Portal</td>
+</tr>
+</tbody>
+</table>
+<p><code>NavButton</code>의 프로퍼티와 UXML 속성 이름에는 Signal이 들어가지만 Button Catalog와 UI Button Event Channel을 사용합니다. Graph의 Signal 출력에 연결하지 마세요.</p>
+<p>런타임에서 유효한 <code>NavElement</code>는 Player Context Panel에 연결될 때 Registry에 등록됩니다. Graph의 View 명령은 이 Registry에서 대상을 찾아 Animated 또는 Instant 가시성 명령을 호출합니다. UI Builder Preview는 런타임 View로 등록되지 않습니다.</p>
+<!-- IMAGE NEEDED: UI Builder Inspector의 View 주소, Startup, Show/Hide Animation 섹션. 권장 파일명: nav-element-inspector.png -->
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/NK-Studio/document/blob/main/UITKNavigation-Document/kr/0.2.0/manual/UxmlElements.md/#L1" class="contribution-link">Edit this page</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+              <div>
+                  이 에셋과 문서는 Unity Technologies와 관련이 없으며, 사용으로 인해 발생하는 법적 문제에 대해서는 제작자가 책임지지 않습니다.
+              </div>
+              <div>
+                  <span class="pull-right"><a href="#top">Back to top</a></span>
+
+                  <span>이 문서는 <strong>DocFX</strong>를 통해 생성되었습니다.</span>
+              </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../styles/language-switcher.js"></script>
+    <script type="text/javascript" src="../styles/version-switcher.js"></script>
+    <script type="text/javascript" src="../styles/metadata-collector.js"></script>  </body>
+</html>

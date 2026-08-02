@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <script type="text/javascript">
+        thisPackageMetaData = {name: "com.nkstudio.uitk-navigation", version: "0.2.0", displayTitle: "UITK Navigation 0.2.0", lang: "en"};
+    </script>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class NavElement | UITK Navigation </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class NavElement | UITK Navigation ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <link rel="stylesheet" href="../styles/language-switcher.css">
+      <link rel="stylesheet" href="../styles/version-switcher.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../manual/index.html">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+            <div class="container hide-when-search" id="breadcrumb">
+                <!-- Unity Customization: Remove content of breadcrumb bar. This space is used for version and language switchers
+                            <ul class="breadcrumb">
+                              <li></li>
+                            </ul>
+                            -->
+            </div>
+        </div>      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+        <div id="unity_breadcrumb_placeholder">
+            <ul class="breadcrumb">
+            <li></li>
+            </ul>
+        </div>
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="NKStudio.UITKNavigation.Elements.NavElement">
+
+
+
+  <h1 id="NKStudio_UITKNavigation_Elements_NavElement" data-uid="NKStudio.UITKNavigation.Elements.NavElement" class="text-break">Class NavElement</h1>
+  <div class="markdown level0 summary"><p>Provides Nav Element functionality.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">NavElement</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="NKStudio.UITKNavigation.Identity.IUIVisibleView.html">IUIVisibleView</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="NKStudio.html">NKStudio</a>.<a class="xref" href="NKStudio.UITKNavigation.html">UITKNavigation</a>.<a class="xref" href="NKStudio.UITKNavigation.Elements.html">Elements</a></h6>
+  <h6><strong>Assembly</strong>: com.nkstudio.uitk-navigation.runtime.dll</h6>
+  <h5 id="NKStudio_UITKNavigation_Elements_NavElement_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[UxmlElement]
+public class NavElement : VisualElement, IUIVisibleView</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+
+
+  <a id="NKStudio_UITKNavigation_Elements_NavElement__ctor_" data-uid="NKStudio.UITKNavigation.Elements.NavElement.#ctor*"></a>
+  <h4 id="NKStudio_UITKNavigation_Elements_NavElement__ctor" data-uid="NKStudio.UITKNavigation.Elements.NavElement.#ctor">NavElement()</h4>
+  <div class="markdown level1 summary"><p>Initializes a new navigation view element and its panel lifecycle callbacks.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NavElement()</code></pre>
+  </div>
+  <h3 id="properties">Properties
+</h3>
+
+
+  <a id="NKStudio_UITKNavigation_Elements_NavElement_BlockBack_" data-uid="NKStudio.UITKNavigation.Elements.NavElement.BlockBack*"></a>
+  <h4 id="NKStudio_UITKNavigation_Elements_NavElement_BlockBack" data-uid="NKStudio.UITKNavigation.Elements.NavElement.BlockBack">BlockBack</h4>
+  <div class="markdown level1 summary"><p>Gets or sets whether this visible view consumes Back requests without hiding itself.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[UxmlAttribute(&quot;block-back&quot;)]
+public bool BlockBack { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="NKStudio_UITKNavigation_Elements_NavElement_FollowParent_" data-uid="NKStudio.UITKNavigation.Elements.NavElement.FollowParent*"></a>
+  <h4 id="NKStudio_UITKNavigation_Elements_NavElement_FollowParent" data-uid="NKStudio.UITKNavigation.Elements.NavElement.FollowParent">FollowParent</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the follow parent.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[UxmlAttribute(&quot;follow-parent&quot;)]
+public bool FollowParent { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="NKStudio_UITKNavigation_Elements_NavElement_HideOnBack_" data-uid="NKStudio.UITKNavigation.Elements.NavElement.HideOnBack*"></a>
+  <h4 id="NKStudio_UITKNavigation_Elements_NavElement_HideOnBack" data-uid="NKStudio.UITKNavigation.Elements.NavElement.HideOnBack">HideOnBack</h4>
+  <div class="markdown level1 summary"><p>Gets or sets whether a Back request hides this view when it has the highest Back priority.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[UxmlAttribute(&quot;hide-on-back&quot;)]
+public bool HideOnBack { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="NKStudio_UITKNavigation_Elements_NavElement_Id_" data-uid="NKStudio.UITKNavigation.Elements.NavElement.Id*"></a>
+  <h4 id="NKStudio_UITKNavigation_Elements_NavElement_Id" data-uid="NKStudio.UITKNavigation.Elements.NavElement.Id">Id</h4>
+  <div class="markdown level1 summary"><p>Gets the normalized identifier under which this view is registered.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UIKey Id { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NKStudio.UITKNavigation.Identity.UIKey.html">UIKey</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="NKStudio_UITKNavigation_Elements_NavElement_IsVisible_" data-uid="NKStudio.UITKNavigation.Elements.NavElement.IsVisible*"></a>
+  <h4 id="NKStudio_UITKNavigation_Elements_NavElement_IsVisible" data-uid="NKStudio.UITKNavigation.Elements.NavElement.IsVisible">IsVisible</h4>
+  <div class="markdown level1 summary"><p>Gets whether this view is visible or currently animating into view.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsVisible { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="NKStudio_UITKNavigation_Elements_NavElement_StartsHidden_" data-uid="NKStudio.UITKNavigation.Elements.NavElement.StartsHidden*"></a>
+  <h4 id="NKStudio_UITKNavigation_Elements_NavElement_StartsHidden" data-uid="NKStudio.UITKNavigation.Elements.NavElement.StartsHidden">StartsHidden</h4>
+  <div class="markdown level1 summary"><p>Gets the starts hidden.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool StartsHidden { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="NKStudio_UITKNavigation_Elements_NavElement_ViewCategory_" data-uid="NKStudio.UITKNavigation.Elements.NavElement.ViewCategory*"></a>
+  <h4 id="NKStudio_UITKNavigation_Elements_NavElement_ViewCategory" data-uid="NKStudio.UITKNavigation.Elements.NavElement.ViewCategory">ViewCategory</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the catalog category used to register this view.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[UIKeySelector(&quot;ViewKey&quot;, UIKeyCatalogKind.View)]
+[UxmlAttribute(&quot;view-category&quot;)]
+public string ViewCategory { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="NKStudio_UITKNavigation_Elements_NavElement_ViewKey_" data-uid="NKStudio.UITKNavigation.Elements.NavElement.ViewKey*"></a>
+  <h4 id="NKStudio_UITKNavigation_Elements_NavElement_ViewKey" data-uid="NKStudio.UITKNavigation.Elements.NavElement.ViewKey">ViewKey</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the key used to register this view within its category.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HideInInspector]
+[UxmlAttribute(&quot;view-key&quot;)]
+public string ViewKey { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="NKStudio_UITKNavigation_Elements_NavElement_Visibility_" data-uid="NKStudio.UITKNavigation.Elements.NavElement.Visibility*"></a>
+  <h4 id="NKStudio_UITKNavigation_Elements_NavElement_Visibility" data-uid="NKStudio.UITKNavigation.Elements.NavElement.Visibility">Visibility</h4>
+  <div class="markdown level1 summary"><p>Performs the ensure visibility operation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UIViewVisibility Visibility { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NKStudio.UITKNavigation.Animation.UIViewVisibility.html">UIViewVisibility</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="NKStudio_UITKNavigation_Elements_NavElement_ApplyStartPosition_" data-uid="NKStudio.UITKNavigation.Elements.NavElement.ApplyStartPosition*"></a>
+  <h4 id="NKStudio_UITKNavigation_Elements_NavElement_ApplyStartPosition" data-uid="NKStudio.UITKNavigation.Elements.NavElement.ApplyStartPosition">ApplyStartPosition()</h4>
+  <div class="markdown level1 summary"><p>Applies s ta rt po si ti on.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ApplyStartPosition()</code></pre>
+  </div>
+
+
+  <a id="NKStudio_UITKNavigation_Elements_NavElement_Hide_" data-uid="NKStudio.UITKNavigation.Elements.NavElement.Hide*"></a>
+  <h4 id="NKStudio_UITKNavigation_Elements_NavElement_Hide" data-uid="NKStudio.UITKNavigation.Elements.NavElement.Hide">Hide()</h4>
+  <div class="markdown level1 summary"><p>Hides the view using its configured Hide transition.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Hide()</code></pre>
+  </div>
+
+
+  <a id="NKStudio_UITKNavigation_Elements_NavElement_InstantHide_" data-uid="NKStudio.UITKNavigation.Elements.NavElement.InstantHide*"></a>
+  <h4 id="NKStudio_UITKNavigation_Elements_NavElement_InstantHide" data-uid="NKStudio.UITKNavigation.Elements.NavElement.InstantHide">InstantHide()</h4>
+  <div class="markdown level1 summary"><p>Hides the view immediately without playing a transition.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InstantHide()</code></pre>
+  </div>
+
+
+  <a id="NKStudio_UITKNavigation_Elements_NavElement_InstantShow_" data-uid="NKStudio.UITKNavigation.Elements.NavElement.InstantShow*"></a>
+  <h4 id="NKStudio_UITKNavigation_Elements_NavElement_InstantShow" data-uid="NKStudio.UITKNavigation.Elements.NavElement.InstantShow">InstantShow()</h4>
+  <div class="markdown level1 summary"><p>Shows the view immediately without playing a transition.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InstantShow()</code></pre>
+  </div>
+
+
+  <a id="NKStudio_UITKNavigation_Elements_NavElement_InvalidateAnimationStartValues_" data-uid="NKStudio.UITKNavigation.Elements.NavElement.InvalidateAnimationStartValues*"></a>
+  <h4 id="NKStudio_UITKNavigation_Elements_NavElement_InvalidateAnimationStartValues" data-uid="NKStudio.UITKNavigation.Elements.NavElement.InvalidateAnimationStartValues">InvalidateAnimationStartValues()</h4>
+  <div class="markdown level1 summary"><p>Performs the invalidate animation start values operation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InvalidateAnimationStartValues()</code></pre>
+  </div>
+
+
+  <a id="NKStudio_UITKNavigation_Elements_NavElement_RestoreStartState_" data-uid="NKStudio.UITKNavigation.Elements.NavElement.RestoreStartState*"></a>
+  <h4 id="NKStudio_UITKNavigation_Elements_NavElement_RestoreStartState" data-uid="NKStudio.UITKNavigation.Elements.NavElement.RestoreStartState">RestoreStartState()</h4>
+  <div class="markdown level1 summary"><p>Performs the restore start state operation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RestoreStartState()</code></pre>
+  </div>
+
+
+  <a id="NKStudio_UITKNavigation_Elements_NavElement_Show_" data-uid="NKStudio.UITKNavigation.Elements.NavElement.Show*"></a>
+  <h4 id="NKStudio_UITKNavigation_Elements_NavElement_Show" data-uid="NKStudio.UITKNavigation.Elements.NavElement.Show">Show()</h4>
+  <div class="markdown level1 summary"><p>Shows the view using its configured Show transition.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Show()</code></pre>
+  </div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="NKStudio.UITKNavigation.Identity.IUIVisibleView.html">IUIVisibleView</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+              <div>
+                  This asset and documentation are not affiliated with Unity Technologies, and the creator is not responsible for any legal issues arising from its use.
+              </div>
+              <div>
+                  <span class="pull-right"><a href="#top">Back to top</a></span>
+
+                  <span>This document was generated using <strong>DocFX</strong>.</span>
+              </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../styles/language-switcher.js"></script>
+    <script type="text/javascript" src="../styles/version-switcher.js"></script>
+    <script type="text/javascript" src="../styles/metadata-collector.js"></script>  </body>
+</html>

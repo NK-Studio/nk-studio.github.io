@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <script type="text/javascript">
+        thisPackageMetaData = {name: "com.nkstudio.uitk-navigation", version: "0.2.0", displayTitle: "UITK Navigation 0.2.0", lang: "en"};
+    </script>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class UIPopupHost | UITK Navigation </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class UIPopupHost | UITK Navigation ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <link rel="stylesheet" href="../styles/language-switcher.css">
+      <link rel="stylesheet" href="../styles/version-switcher.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../manual/index.html">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+            <div class="container hide-when-search" id="breadcrumb">
+                <!-- Unity Customization: Remove content of breadcrumb bar. This space is used for version and language switchers
+                            <ul class="breadcrumb">
+                              <li></li>
+                            </ul>
+                            -->
+            </div>
+        </div>      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+        <div id="unity_breadcrumb_placeholder">
+            <ul class="breadcrumb">
+            <li></li>
+            </ul>
+        </div>
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="NKStudio.UITKNavigation.Popup.UIPopupHost">
+
+
+
+  <h1 id="NKStudio_UITKNavigation_Popup_UIPopupHost" data-uid="NKStudio.UITKNavigation.Popup.UIPopupHost" class="text-break">Class UIPopupHost</h1>
+  <div class="markdown level0 summary"><p>Owns a panel-local LIFO popup stack and instantiates popup templates on its UI root.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">UIPopupHost</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="NKStudio.html">NKStudio</a>.<a class="xref" href="NKStudio.UITKNavigation.html">UITKNavigation</a>.<a class="xref" href="NKStudio.UITKNavigation.Popup.html">Popup</a></h6>
+  <h6><strong>Assembly</strong>: com.nkstudio.uitk-navigation.runtime.dll</h6>
+  <h5 id="NKStudio_UITKNavigation_Popup_UIPopupHost_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DisallowMultipleComponent]
+[RequireComponent(typeof(PanelRenderer))]
+public sealed class UIPopupHost : MonoBehaviour</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+
+
+  <a id="NKStudio_UITKNavigation_Popup_UIPopupHost__ctor_" data-uid="NKStudio.UITKNavigation.Popup.UIPopupHost.#ctor*"></a>
+  <h4 id="NKStudio_UITKNavigation_Popup_UIPopupHost__ctor" data-uid="NKStudio.UITKNavigation.Popup.UIPopupHost.#ctor">UIPopupHost()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UIPopupHost()</code></pre>
+  </div>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="NKStudio_UITKNavigation_Popup_UIPopupHost_CloseAll_" data-uid="NKStudio.UITKNavigation.Popup.UIPopupHost.CloseAll*"></a>
+  <h4 id="NKStudio_UITKNavigation_Popup_UIPopupHost_CloseAll_NKStudio_UITKNavigation_Popup_UIPopupCloseReason_System_Boolean_" data-uid="NKStudio.UITKNavigation.Popup.UIPopupHost.CloseAll(NKStudio.UITKNavigation.Popup.UIPopupCloseReason,System.Boolean)">CloseAll(UIPopupCloseReason, bool)</h4>
+  <div class="markdown level1 summary"><p>Closes every popup in this host from top to bottom.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CloseAll(UIPopupCloseReason reason = UIPopupCloseReason.Programmatic, bool instant = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NKStudio.UITKNavigation.Popup.UIPopupCloseReason.html">UIPopupCloseReason</a></td>
+        <td><span class="parametername">reason</span></td>
+        <td><p>The reason reported by each popup result.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">instant</span></td>
+        <td><p>Whether to skip Hide transitions.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="NKStudio_UITKNavigation_Popup_UIPopupHost_CloseTop_" data-uid="NKStudio.UITKNavigation.Popup.UIPopupHost.CloseTop*"></a>
+  <h4 id="NKStudio_UITKNavigation_Popup_UIPopupHost_CloseTop_NKStudio_UITKNavigation_Popup_UIPopupCloseReason_" data-uid="NKStudio.UITKNavigation.Popup.UIPopupHost.CloseTop(NKStudio.UITKNavigation.Popup.UIPopupCloseReason)">CloseTop(UIPopupCloseReason)</h4>
+  <div class="markdown level1 summary"><p>Closes the topmost popup using its configured Hide transition.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CloseTop(UIPopupCloseReason reason = UIPopupCloseReason.Programmatic)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NKStudio.UITKNavigation.Popup.UIPopupCloseReason.html">UIPopupCloseReason</a></td>
+        <td><span class="parametername">reason</span></td>
+        <td><p>The reason reported by the popup result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> when a popup was available to close.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="NKStudio_UITKNavigation_Popup_UIPopupHost_Show_" data-uid="NKStudio.UITKNavigation.Popup.UIPopupHost.Show*"></a>
+  <h4 id="NKStudio_UITKNavigation_Popup_UIPopupHost_Show_UnityEngine_UIElements_VisualTreeAsset_System_Object_System_Action_NKStudio_UITKNavigation_Popup_UIPopupView__System_Threading_CancellationToken_" data-uid="NKStudio.UITKNavigation.Popup.UIPopupHost.Show(UnityEngine.UIElements.VisualTreeAsset,System.Object,System.Action{NKStudio.UITKNavigation.Popup.UIPopupView},System.Threading.CancellationToken)">Show(VisualTreeAsset, object, Action&lt;UIPopupView&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Instantiates a popup template, pushes it onto this host, and starts its Show transition.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UIPopupHandle Show(VisualTreeAsset template, object dataSource = null, Action&lt;UIPopupView&gt; configure = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">VisualTreeAsset</span></td>
+        <td><span class="parametername">template</span></td>
+        <td><p>The template containing exactly one <a class="xref" href="NKStudio.UITKNavigation.Popup.UIPopupView.html">UIPopupView</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></td>
+        <td><span class="parametername">dataSource</span></td>
+        <td><p>The optional object assigned as the popup root data source.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="NKStudio.UITKNavigation.Popup.UIPopupView.html">UIPopupView</a>&gt;</td>
+        <td><span class="parametername">configure</span></td>
+        <td><p>An optional callback invoked before the popup is shown.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A token that cancels the popup completion task.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NKStudio.UITKNavigation.Popup.UIPopupHandle.html">UIPopupHandle</a></td>
+        <td><p>A handle used to observe actions, close the popup, or await completion.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>The panel root has not been initialized.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="NKStudio_UITKNavigation_Popup_UIPopupHost_ShowAsync_" data-uid="NKStudio.UITKNavigation.Popup.UIPopupHost.ShowAsync*"></a>
+  <h4 id="NKStudio_UITKNavigation_Popup_UIPopupHost_ShowAsync_UnityEngine_UIElements_VisualTreeAsset_System_Object_System_Action_NKStudio_UITKNavigation_Popup_UIPopupView__System_Threading_CancellationToken_" data-uid="NKStudio.UITKNavigation.Popup.UIPopupHost.ShowAsync(UnityEngine.UIElements.VisualTreeAsset,System.Object,System.Action{NKStudio.UITKNavigation.Popup.UIPopupView},System.Threading.CancellationToken)">ShowAsync(VisualTreeAsset, object, Action&lt;UIPopupView&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Shows a popup and returns the task that completes when it closes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;UIPopupResult&gt; ShowAsync(VisualTreeAsset template, object dataSource = null, Action&lt;UIPopupView&gt; configure = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">VisualTreeAsset</span></td>
+        <td><span class="parametername">template</span></td>
+        <td><p>The template containing exactly one <a class="xref" href="NKStudio.UITKNavigation.Popup.UIPopupView.html">UIPopupView</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></td>
+        <td><span class="parametername">dataSource</span></td>
+        <td><p>The optional object assigned as the popup root data source.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="NKStudio.UITKNavigation.Popup.UIPopupView.html">UIPopupView</a>&gt;</td>
+        <td><span class="parametername">configure</span></td>
+        <td><p>An optional callback invoked before the popup is shown.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A token that cancels the returned task.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="NKStudio.UITKNavigation.Popup.UIPopupResult.html">UIPopupResult</a>&gt;</td>
+        <td><p>The popup completion result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+              <div>
+                  This asset and documentation are not affiliated with Unity Technologies, and the creator is not responsible for any legal issues arising from its use.
+              </div>
+              <div>
+                  <span class="pull-right"><a href="#top">Back to top</a></span>
+
+                  <span>This document was generated using <strong>DocFX</strong>.</span>
+              </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../styles/language-switcher.js"></script>
+    <script type="text/javascript" src="../styles/version-switcher.js"></script>
+    <script type="text/javascript" src="../styles/metadata-collector.js"></script>  </body>
+</html>

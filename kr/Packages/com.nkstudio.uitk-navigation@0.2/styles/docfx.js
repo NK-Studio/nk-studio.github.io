@@ -127,13 +127,10 @@ $(function () {
       return;
     }
     try {
-      var worker = new Worker(relHref + 'styles/search-worker.js');
-      if (!worker && !window.worker) {
-        localSearch();
-      } else {
-        webWorkerSearch();
+      if (!window.Worker) {
+        return;
       }
-
+      webWorkerSearch();
       renderSearchBox();
       highlightKeywords();
       addSearchEvent();
@@ -206,6 +203,10 @@ $(function () {
     function webWorkerSearch() {
       console.log("using Web Worker");
       var indexReady = $.Deferred();
+      var worker = new Worker(relHref + 'styles/search-worker.min.js');
+      worker.onerror = function (oEvent) {
+        console.error('Error occurred at search-worker. message: ' + oEvent.message);
+      }
 
       worker.onmessage = function (oEvent) {
         switch (oEvent.data.e) {
@@ -251,7 +252,7 @@ $(function () {
 
         $('#search-query').keyup(function () {
           query = $(this).val();
-          if (query.length < 3) {
+          if (query === '') {
             flipContents("show");
           } else {
             flipContents("hide");
@@ -288,6 +289,9 @@ $(function () {
     }
 
     function extractContentBrief(content) {
+      if (!content) {
+        return;
+      }
       var briefOffset = 512;
       var words = query.split(/\s+/g);
       var queryIndex = content.indexOf(words[0]);
@@ -323,7 +327,7 @@ $(function () {
                 var itemRawHref = relativeUrlToAbsoluteUrl(currentUrl, relHref + hit.href);
                 var itemHref = relHref + hit.href + "?q=" + query;
                 var itemTitle = hit.title;
-                var itemBrief = extractContentBrief(hit.keywords);
+                var itemBrief = extractContentBrief(hit.summary || '');
 
                 var itemNode = $('<div>').attr('class', 'sr-item');
                 var itemTitleNode = $('<div>').attr('class', 'item-title').append($('<a>').attr('href', itemHref).attr("target", "_blank").attr("rel", "noopener noreferrer").text(itemTitle));

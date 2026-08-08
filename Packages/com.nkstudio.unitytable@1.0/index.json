@@ -1,0 +1,42 @@
+{
+  "changelog/CHANGELOG.html": {
+    "href": "changelog/CHANGELOG.html",
+    "title": "Changelog | Tabular Editor",
+    "summary": "Changelog 1.0.0 First release of Tabular Editor. File handling Added RFC 4180-compatible CSV and TSV parsing and writing, including quoted fields, embedded separators and line breaks, and escaped quotes. Preserved source encoding, BOM, line-ending style, and final-newline state. Added a TSV Scripted Importer and CSV/TSV double-click open handler. Added a confirmation before overwriting a file changed by another tool. Editing Added keyboard navigation, range selection, direct typing, F2 editing, and IME-safe text entry. Added save, dirty-state tracking, reload, and close confirmation. Added table-local Undo/Redo, clipboard operations, and cell search. Added row and column append, contextual insert/remove commands, and full row/column deletion."
+  },
+  "license/License.html": {
+    "href": "license/License.html",
+    "title": "| Tabular Editor",
+    "summary": "MIT License Copyright (c) 2026 NK Studio Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE."
+  },
+  "manual/editor-interface.html": {
+    "href": "manual/editor-interface.html",
+    "title": "Editor interface | Tabular Editor",
+    "summary": "Editor interface Toolbar Control Purpose Save Writes the current table to its source file. Reload Reads the source file again. Unsaved edits must be discarded first. First row as header Uses row 1 as column titles and excludes it from normal editing. Search Opens the cell search bar. Search bar The search bar contains the query, current/total match count, Aa case toggle, previous and next controls, and a close button. Matching cells are highlighted in the grid. Status bar The status bar shows: the active cell address, such as B4; the table size in rows and columns; the selected range size or selected row/column count; what Delete will do for a row or column selection; whether the document has unsaved changes."
+  },
+  "manual/getting-started.html": {
+    "href": "manual/getting-started.html",
+    "title": "Getting started | Tabular Editor",
+    "summary": "Getting started Open a table In the Project window, double-click a .csv or .tsv asset. Tabular Editor opens one window for that asset; double-clicking the same file again focuses its existing window. Edit and save Click a cell to make it active. Start typing to replace its value, or press F2 or double-click to edit the existing value. Press Enter to commit and move down, or Tab to commit and move right. Press Ctrl+S on Windows/Linux or Cmd+S on macOS to save. The window title shows * while changes are unsaved. The status bar also displays the unsaved state. Use the first row as column names First row as header is enabled by default. The first row is shown as the column titles and is excluded from normal grid editing and searching. Turn the toolbar toggle off when the first row is ordinary data; columns then use spreadsheet names such as A, B, and C."
+  },
+  "manual/index.html": {
+    "href": "manual/index.html",
+    "title": "Tabular Editor | Tabular Editor",
+    "summary": "Tabular Editor Tabular Editor is a UI Toolkit editor for working with CSV and TSV files inside Unity. Double-click a supported asset to open it as a grid, edit cells with familiar spreadsheet controls, and save the result back to the original text file. Highlights Open .csv and .tsv assets directly from the Project window. Navigate, select, and edit cells with the keyboard or mouse. Insert and remove rows or columns at a selected position. Copy and paste rectangular ranges to and from Excel, Google Sheets, or Numbers. Search cell contents with optional case-sensitive matching. Undo and redo table edits independently from Unity's scene Undo history. Preserve the source encoding, line endings, final newline, and CSV quoting rules when saving. Tabular Editor is an Editor-only authoring tool. It does not add a runtime table API or require third-party packages. Start with Requirements, then follow Installation and Getting started."
+  },
+  "manual/installation.html": {
+    "href": "manual/installation.html",
+    "title": "Installation | Tabular Editor",
+    "summary": "Installation Tabular Editor is installed as a single Git package and has no additional dependencies. Install with Unity Package Manager In Unity, open Window > Package Manager. Click + and choose Install package from git URL.... Enter the following URL and click Install: https://github.com/NK-Studio/com.nkstudio.unitytable.git To pin version 1.0.0, append its Git tag: https://github.com/NK-Studio/com.nkstudio.unitytable.git#1.0.0 Manifest alternative You can add the package directly to the dependencies object in Packages/manifest.json: { \"dependencies\": { \"com.nkstudio.unitytable\": \"https://github.com/NK-Studio/com.nkstudio.unitytable.git#1.0.0\" } } Keep the other dependencies already present in your manifest. Verify the installation After Unity finishes importing and compiling, verify that: Tabular Editor appears in Package Manager. The Console has no package compilation errors. Double-clicking a .csv or .tsv asset opens it in Tabular Editor. No additional plugins or dependency-installation steps are required."
+  },
+  "manual/requirements.html": {
+    "href": "manual/requirements.html",
+    "title": "Requirements | Tabular Editor",
+    "summary": "Requirements Supported Unity version Tabular Editor 1.0.0 requires Unity 6000.0 or newer. UI Toolkit is included with the Unity Editor, so no separate UI package is required. Supported files Extension Separator Notes .csv Comma Quoted fields and embedded commas, quotes, and line breaks are supported. .tsv Tab Imported by the package's Scripted Importer and opened in the same editor. The file must be inside the Unity project so it appears as an asset in the Project window. Files under Assets and installed or embedded Packages can be opened when they are writable. Encoding support The editor detects UTF-8 with or without a BOM, UTF-16 little-endian, and UTF-16 big-endian. A file without a recognized BOM is treated as UTF-8 without a BOM."
+  },
+  "manual/shortcuts.html": {
+    "href": "manual/shortcuts.html",
+    "title": "Keyboard shortcuts | Tabular Editor",
+    "summary": "Keyboard shortcuts Use Cmd instead of Ctrl on macOS. Shortcut Action Arrow keys Move the active cell. Shift+Arrow keys Extend the selection. Tab / Shift+Tab Move right/left and wrap at row boundaries. Enter / Shift+Enter Move down/up; commit first when editing. Home / End Move to the first/last column in the row. Ctrl+Home / Ctrl+End Move to the first/last cell in the table. Page Up / Page Down Move by approximately one visible page. F2 or double-click Edit the existing cell value. Typing Replace the active cell and begin editing. Esc Cancel editing or close search. Delete / Backspace Clear cells or remove selected rows/columns. Ctrl+S Save. Ctrl+Z Undo. Ctrl+Shift+Z / Ctrl+Y Redo. Ctrl+C / Ctrl+X / Ctrl+V Copy / cut / paste. Ctrl+A Select the entire editable grid. Ctrl+F Open search. F3 / Shift+F3 Select the next / previous search match. During an edit started with F2 or a double-click, arrow keys move the caret. During an edit started by typing, arrow keys commit the value and move to the adjacent cell."
+  }
+}

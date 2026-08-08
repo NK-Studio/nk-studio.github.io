@@ -1,0 +1,16 @@
+{
+  "versions": {
+    "1.0.0": {
+      "unity": "6000.0",
+      "displayName": "Tabular Editor",
+      "name": "com.nkstudio.unitytable",
+      "type": "asset",
+      "keywords": [
+        "Table",
+        "Unity Table",
+        "Tabular Editor"
+      ],
+      "version": "1.0.0"
+    }
+  }
+}

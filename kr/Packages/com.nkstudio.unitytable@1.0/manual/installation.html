@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <script type="text/javascript">
+        thisPackageMetaData = {name: "com.nkstudio.unitytable", version: "1.0.0", displayTitle: "Tabular Editor 1.0.0", lang: "kr"};
+    </script>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>설치 | Tabular Editor </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="설치 | Tabular Editor ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <link rel="stylesheet" href="../styles/language-switcher.css">
+      <link rel="stylesheet" href="../styles/version-switcher.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../manual/index.html">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+            <div class="container hide-when-search" id="breadcrumb">
+                <!-- Unity Customization: Remove content of breadcrumb bar. This space is used for version and language switchers
+                            <ul class="breadcrumb">
+                              <li></li>
+                            </ul>
+                            -->
+            </div>
+        </div>      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+        <div id="unity_breadcrumb_placeholder">
+            <ul class="breadcrumb">
+            <li></li>
+            </ul>
+        </div>
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="설치">설치</h1>
+
+<p>Tabular Editor는 추가 의존성 없이 Git 패키지 하나로 설치합니다.</p>
+<h2 id="unity-package-manager로-설치">Unity Package Manager로 설치</h2>
+<ol>
+<li>Unity에서 <strong>Window &gt; Package Manager</strong>를 엽니다.</li>
+<li><strong>+</strong> 버튼을 누른 뒤 **Install package from git URL...**을 선택합니다.</li>
+</ol>
+<p><img src="../images/install-package-from-git-url.png" alt="Unity Package Manager의 Install package from git URL 메뉴"></p>
+<ol start="3">
+<li>다음 주소를 입력하고 <strong>Install</strong>을 누릅니다.</li>
+</ol>
+<pre><code class="lang-text">https://github.com/NK-Studio/com.nkstudio.unitytable.git
+</code></pre>
+<p>1.0.0 버전으로 고정하려면 Git 태그를 덧붙입니다.</p>
+<pre><code class="lang-text">https://github.com/NK-Studio/com.nkstudio.unitytable.git#1.0.0
+</code></pre>
+<h2 id="manifest에-직접-추가">manifest에 직접 추가</h2>
+<p><code>Packages/manifest.json</code>의 <code>dependencies</code> 객체에 패키지를 직접 추가할 수도 있습니다.</p>
+<pre><code class="lang-json">{
+  &quot;dependencies&quot;: {
+    &quot;com.nkstudio.unitytable&quot;: &quot;https://github.com/NK-Studio/com.nkstudio.unitytable.git#1.0.0&quot;
+  }
+}
+</code></pre>
+<p>기존 manifest에 들어 있던 다른 의존성은 그대로 유지하세요.</p>
+<h2 id="설치-확인">설치 확인</h2>
+<p>Unity가 Import와 Compile을 마친 뒤 다음을 확인합니다.</p>
+<ul>
+<li>Package Manager에 <code>Tabular Editor</code>가 표시됩니다.</li>
+<li>Console에 패키지 컴파일 오류가 없습니다.</li>
+<li><code>.csv</code> 또는 <code>.tsv</code> 에셋을 더블클릭하면 Tabular Editor로 열립니다.</li>
+</ul>
+<p>추가 플러그인이나 의존성 설치 과정은 필요하지 않습니다.</p>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+              <div>
+                  이 에셋과 문서는 Unity Technologies와 관련이 없으며, 사용으로 인해 발생하는 법적 문제에 대해서는 제작자가 책임지지 않습니다.
+              </div>
+              <div>
+                  <span class="pull-right"><a href="#top">Back to top</a></span>
+
+                  <span>이 문서는 <strong>DocFX</strong>를 통해 생성되었습니다.</span>
+              </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../styles/docs-switcher.js"></script>
+  </body>
+</html>

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <script type="text/javascript">
+        thisPackageMetaData = {name: "com.nkstudio.uitk-navigation", version: "0.4.0", displayTitle: "UITK Navigation 0.4.0", lang: "kr"};
+    </script>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>팝업 | UITK Navigation </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="팝업 | UITK Navigation ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <link rel="stylesheet" href="../styles/language-switcher.css">
+      <link rel="stylesheet" href="../styles/version-switcher.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../manual/index.html">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+            <div class="container hide-when-search" id="breadcrumb">
+                <!-- Unity Customization: Remove content of breadcrumb bar. This space is used for version and language switchers
+                            <ul class="breadcrumb">
+                              <li></li>
+                            </ul>
+                            -->
+            </div>
+        </div>      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+        <div id="unity_breadcrumb_placeholder">
+            <ul class="breadcrumb">
+            <li></li>
+            </ul>
+        </div>
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="팝업">팝업</h1>
+
+<p>Popup은 Navigation Graph와 분리된 Panel Local LIFO Stack을 사용합니다. 각 호출은 <code>VisualTreeAsset</code>을 Clone하고, 선택적으로 Data Source를 할당하며, Panel에서 Show 전환을 재생한 뒤 Await할 수 있는 결과를 반환합니다.</p>
+<h2 id="host-설정">Host 설정</h2>
+<p>Panel의 <code>PanelRenderer</code>를 소유한 GameObject에 <code>UIPopupHost</code>를 추가합니다. Host는 이 Component를 필수로 요구하며, <code>PanelRenderer</code>가 UI Root를 제공할 때 Popup Layer를 생성합니다.</p>
+<pre><code class="lang-csharp">public sealed class PopupExample : MonoBehaviour
+{
+    [SerializeField] private UIPopupHost popupHost;
+    [SerializeField] private VisualTreeAsset messagePopup;
+}
+</code></pre>
+<p>Panel Root가 초기화된 후 <code>Show</code>를 호출하세요. UI Root가 준비되기 전에 호출하면 <code>InvalidOperationException</code>이 발생합니다.</p>
+<h2 id="popup-template-구성">Popup Template 구성</h2>
+<p>각 Popup <code>VisualTreeAsset</code>에는 다음 구조가 필요합니다.</p>
+<ul>
+<li><code>UIPopupView</code> 정확히 1개</li>
+<li>해당 View 안의 <code>UIPopupContent</code> 정확히 1개</li>
+<li>해당 View 안의 <code>UIPopupBackdrop</code> 0개 또는 1개</li>
+</ul>
+<p>개수가 잘못되면 발견한 수를 포함한 예외가 발생합니다. 실패한 Instance는 Rollback되며 Stack에 남지 않습니다.</p>
+<pre><code class="lang-xml">&lt;ui:UXML xmlns:ui=&quot;UnityEngine.UIElements&quot;
+         xmlns:popup=&quot;NKStudio.UITKNavigation.Popup&quot;&gt;
+    &lt;popup:UIPopupView close-on-backdrop=&quot;false&quot; back-behavior=&quot;Close&quot;&gt;
+        &lt;popup:UIPopupBackdrop /&gt;
+        &lt;popup:UIPopupContent&gt;
+            &lt;ui:Label&gt;
+                &lt;Bindings&gt;
+                    &lt;ui:DataBinding property=&quot;text&quot;
+                                    data-source-path=&quot;Title&quot;
+                                    binding-mode=&quot;ToTarget&quot; /&gt;
+                &lt;/Bindings&gt;
+            &lt;/ui:Label&gt;
+
+            &lt;ui:VisualElement name=&quot;dynamic-content&quot; /&gt;
+
+            &lt;popup:UIPopupActionButton text=&quot;취소&quot;
+                action-id=&quot;cancel&quot; close-popup=&quot;true&quot; /&gt;
+            &lt;popup:UIPopupActionButton text=&quot;확인&quot;
+                action-id=&quot;confirm&quot; close-popup=&quot;true&quot; /&gt;
+        &lt;/popup:UIPopupContent&gt;
+    &lt;/popup:UIPopupView&gt;
+&lt;/ui:UXML&gt;
+</code></pre>
+<p>패키지는 Full Panel 배치와 <code>ui-popup-view</code>, <code>ui-popup-backdrop</code>, <code>ui-popup-content</code>, <code>ui-popup-action-button</code> USS Class를 제공합니다. Backdrop 색상, Content 위치와 크기, 간격, Typography는 Template USS에서 설계하세요.</p>
+<h2 id="popup-표시와-await">Popup 표시와 Await</h2>
+<p>최종 결과만 필요하면 <code>ShowAsync</code>를 사용합니다.</p>
+<pre><code class="lang-csharp">UIPopupResult result = await popupHost.ShowAsync(
+    messagePopup,
+    new MessagePopupModel { Title = &quot;안내&quot; },
+    configure: view =&gt;
+        view.Q(&quot;dynamic-content&quot;)?.Add(new Label(&quot;Runtime content&quot;)),
+    cancellationToken: cancellationToken);
+
+Debug.Log($&quot;Action={result.ActionId}, Reason={result.Reason}&quot;);
+</code></pre>
+<p>UI Toolkit Data Binding에서 사용할 Model 프로퍼티에는 <code>Unity.Properties</code>의 <code>[CreateProperty]</code>를 사용하세요. Model은 Show 전에 <code>UIPopupView.dataSource</code>로 할당됩니다.</p>
+<p>Handle도 필요하면 <code>Show</code>를 사용합니다.</p>
+<pre><code class="lang-csharp">UIPopupHandle handle = popupHost.Show(messagePopup, model);
+
+handle.ActionInvoked += actionId =&gt;
+    Debug.Log($&quot;Invoked: {actionId}&quot;);
+
+UIPopupResult result = await handle.Completion;
+</code></pre>
+<p><code>UIPopupHandle.IsOpen</code>은 Hide 전환이 완료될 때까지 <code>true</code>입니다. 특정 Instance는 <code>handle.Close()</code>, 최상위 항목은 <code>popupHost.CloseTop()</code>, Host 전체는 <code>popupHost.CloseAll()</code>로 닫습니다.</p>
+<h2 id="action과-result">Action과 Result</h2>
+<p><code>UIPopupActionButton</code>은 <code>action-id</code>의 앞뒤 공백을 제거한 후 발생시킵니다. <code>close-popup=&quot;true&quot;</code>면 해당 ID를 반환하며 Popup을 닫습니다. <code>false</code>면 <code>ActionInvoked</code>만 발생하고 다른 동작이 Popup을 닫을 때까지 <code>Completion</code>은 Pending 상태입니다.</p>
+<table>
+<thead>
+<tr>
+<th>Close Reason</th>
+<th>발생 원인</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Action</td>
+<td>Popup을 닫는 Action Button</td>
+</tr>
+<tr>
+<td>Back</td>
+<td>Back Behavior <code>Close</code></td>
+</tr>
+<tr>
+<td>Backdrop</td>
+<td><code>close-on-backdrop=&quot;true&quot;</code>인 Backdrop 직접 Click</td>
+</tr>
+<tr>
+<td>Programmatic</td>
+<td><code>Close</code>, <code>CloseTop</code>, <code>CloseAll</code></td>
+</tr>
+<tr>
+<td>HostDetached</td>
+<td>Host Disable, Panel Root Reload 또는 Detach</td>
+</tr>
+</tbody>
+</table>
+<p>Cancellation은 Close Result와 다릅니다. Token이 취소되면 Instance를 즉시 제거하고 Task를 Canceled 상태로 완료합니다. 이미 취소된 Token을 전달하면 Template을 Instance화하지 않습니다.</p>
+<h2 id="stack-back-focus">Stack, Back, Focus</h2>
+<p>가장 나중에 표시한 Popup이 먼저 닫힙니다. 최상위에 있고 Closing 중이 아닌 Popup만 높은 우선순위의 Back Policy를 가집니다.</p>
+<table>
+<thead>
+<tr>
+<th>Back Behavior</th>
+<th>결과</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Close</td>
+<td>최상위 Popup을 닫고 Back 소비</td>
+</tr>
+<tr>
+<td>Block</td>
+<td>Popup을 유지하고 Back 소비</td>
+</tr>
+<tr>
+<td>PassThrough</td>
+<td>Popup을 유지하고 Graph 또는 아래 Handler로 Back 전달</td>
+</tr>
+</tbody>
+</table>
+<p>Popup을 표시하면 첫 번째 활성 Focusable 자식으로 Focus를 옮깁니다. 최상위 Popup이 닫히면 이전 Focus Element로 복원하고, 해당 Element가 더 이상 없으면 아래 Popup으로 Focus를 옮깁니다.</p>
+<p><code>close-on-backdrop</code>은 Backdrop 자체가 Click Target일 때만 반응합니다. Backdrop 안의 자식을 Click하는 것은 Backdrop 직접 Click으로 처리되지 않습니다.</p>
+<h2 id="popup-전환">Popup 전환</h2>
+<p><code>UIPopupView</code>는 서로 독립된 <strong>Backdrop Transitions</strong>과 <strong>Content Transitions</strong>를 제공합니다. 각 Layer에 Show/Hide Preset과 Channel을 따로 설정할 수 있습니다. 두 Layer는 함께 재생되며 더 긴 유한 전환이 완료 시점을 결정합니다. Close를 호출해도 Hide가 완료되기 전에는 Handle이 완료되지 않습니다.</p>
+<p>무한 Hide Loop는 Popup의 최종 정리를 막으므로 사용하지 마세요. Preset, Timing, Reversal, Loop의 자세한 내용은 <a href="Animation.html">전환 애니메이션</a>을 참고하세요.</p>
+<!-- IMAGE NEEDED: Backdrop, Content, 두 Action Button이 보이는 실행 중 Message Popup. 권장 파일명: popup-overview.png -->
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+              <div>
+                  이 에셋과 문서는 Unity Technologies와 관련이 없으며, 사용으로 인해 발생하는 법적 문제에 대해서는 제작자가 책임지지 않습니다.
+              </div>
+              <div>
+                  <span class="pull-right"><a href="#top">Back to top</a></span>
+
+                  <span>이 문서는 <strong>DocFX</strong>를 통해 생성되었습니다.</span>
+              </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../styles/docs-switcher.js"></script>
+  </body>
+</html>

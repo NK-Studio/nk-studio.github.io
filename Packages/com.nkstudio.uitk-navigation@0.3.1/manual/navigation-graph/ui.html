@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <script type="text/javascript">
+        thisPackageMetaData = {name: "com.nkstudio.uitk-navigation", version: "0.3.1", displayTitle: "UITK Navigation 0.3.1", lang: "en"};
+    </script>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>UI node | UITK Navigation </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="UI node | UITK Navigation ">
+    
+      <link rel="shortcut icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../../styles/docfx.css">
+      <link rel="stylesheet" href="../../styles/main.css">
+      <link rel="stylesheet" href="../../styles/language-switcher.css">
+      <link rel="stylesheet" href="../../styles/version-switcher.css">
+      <meta property="docfx:navrel" content="../../toc.html">
+      <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../../manual/index.html">
+                <img id="logo" class="svg" src="../../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+            <div class="container hide-when-search" id="breadcrumb">
+                <!-- Unity Customization: Remove content of breadcrumb bar. This space is used for version and language switchers
+                            <ul class="breadcrumb">
+                              <li></li>
+                            </ul>
+                            -->
+            </div>
+        </div>      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+        <div id="unity_breadcrumb_placeholder">
+            <ul class="breadcrumb">
+            <li></li>
+            </ul>
+        </div>
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="ui-node">UI node</h1>
+
+<p>The UI node is the main screen-state node. It controls registered Views when navigation enters or leaves the node and waits for one of its outputs to choose the next route.</p>
+<h2 id="node-options">Node options</h2>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Display Name</td>
+<td>Label shown on the graph node</td>
+</tr>
+<tr>
+<td>Node Description</td>
+<td>Authoring note stored with the runtime node</td>
+</tr>
+<tr>
+<td>Clear History</td>
+<td>Clears Back and Forward stacks after entering this node</td>
+</tr>
+<tr>
+<td>Use Back</td>
+<td>Allows a Back request on this active node to call <code>Back()</code></td>
+</tr>
+<tr>
+<td>On Enter UI</td>
+<td>Show/Hide commands applied when this node becomes active</td>
+</tr>
+<tr>
+<td>On Exit UI</td>
+<td>Show/Hide commands merged in when leaving this node</td>
+</tr>
+<tr>
+<td>Outputs</td>
+<td>Dynamic routes originating from this node</td>
+</tr>
+</tbody>
+</table>
+<p>Each Show or Hide command selects a View catalog address and either <strong>Animated</strong> or <strong>Instant</strong> mode. Show wins if one navigation change would both Show and Hide the same address.</p>
+<h2 id="output-types">Output types</h2>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Matching event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>UI Button</td>
+<td><code>NavButton</code> click or <code>RequestButtonSignal(...)</code></td>
+</tr>
+<tr>
+<td>Signal</td>
+<td><code>RequestSignal(...)</code> from application code</td>
+</tr>
+<tr>
+<td>Time Delay</td>
+<td>Unscaled seconds since this node became active</td>
+</tr>
+<tr>
+<td>Toggle</td>
+<td><code>NavToggle</code> value change matching On, Off, or Any</td>
+</tr>
+<tr>
+<td>UI View</td>
+<td>A matching View starts an Animated Show or Hide</td>
+</tr>
+</tbody>
+</table>
+<p>UI View routes react when an Animated transition <strong>starts</strong>, not when its animation finishes. Instant View commands and <code>InstantShow()</code> or <code>InstantHide()</code> calls do not raise this output.</p>
+<p>Each output can be left unconnected while drafting. Once connected, it must lead to exactly one UI or Action chain. Duplicate Button/Signal addresses, duplicate View conditions, and overlapping Toggle conditions such as Any plus On are validation errors.</p>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>A <code>NavButton</code> uses the Button catalog and a <strong>UI Button</strong> output even though its UXML properties are named <code>signal-category</code> and <code>signal-key</code>. A graph <strong>Signal</strong> output is a different event channel.</p>
+</div>
+<p>Normal UI outputs are authored as Push transitions. The previous node is pushed only when the connected Action chain reaches another screen; a terminal Action chain only runs its Actions. <strong>Use Back</strong> controls whether the active node accepts a Back request, not the output's authored transition kind.</p>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+              <div>
+                  This asset and documentation are not affiliated with Unity Technologies, and the creator is not responsible for any legal issues arising from its use.
+              </div>
+              <div>
+                  <span class="pull-right"><a href="#top">Back to top</a></span>
+
+                  <span>This document was generated using <strong>DocFX</strong>.</span>
+              </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+    <script type="text/javascript" src="../../styles/docs-switcher.js"></script>
+  </body>
+</html>

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <script type="text/javascript">
+        thisPackageMetaData = {name: "com.nkstudio.uitk-navigation", version: "0.3.1", displayTitle: "UITK Navigation 0.3.1", lang: "en"};
+    </script>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Troubleshooting | UITK Navigation </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Troubleshooting | UITK Navigation ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <link rel="stylesheet" href="../styles/language-switcher.css">
+      <link rel="stylesheet" href="../styles/version-switcher.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../manual/index.html">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+            <div class="container hide-when-search" id="breadcrumb">
+                <!-- Unity Customization: Remove content of breadcrumb bar. This space is used for version and language switchers
+                            <ul class="breadcrumb">
+                              <li></li>
+                            </ul>
+                            -->
+            </div>
+        </div>      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+        <div id="unity_breadcrumb_placeholder">
+            <ul class="breadcrumb">
+            <li></li>
+            </ul>
+        </div>
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="troubleshooting">Troubleshooting</h1>
+
+<p>Start with the first Console error. A Navigation Graph that fails to import cannot update its compiled runtime asset, so later runtime symptoms may be consequences of that authoring error.</p>
+<h2 id="package-compilation">Package compilation</h2>
+<h3 id="zlinqdll-or-the-zlinq-namespace-is-missing"><code>ZLinq.dll</code> or the <code>ZLinq</code> namespace is missing</h3>
+<p><code>ZLinq.Unity</code> is an adapter and does not contain the core library. Install the <code>ZLinq</code> NuGet package with NuGetForUnity first, then install the <code>ZLinq.Unity</code> UPM package. See <a href="installation.html#1-install-nugetforunity-and-core-zlinq">Installation</a>.</p>
+<p>If both are installed, verify that their versions are compatible and that the NuGet package produced the core assembly under <code>Assets/Packages</code>.</p>
+<h3 id="litmotion-types-are-missing">LitMotion types are missing</h3>
+<p>Install <a href="https://github.com/annulusgames/LitMotion">LitMotion</a> <code>2.0.0</code> or newer with the Git URL in <a href="installation.html#2-install-the-git-dependencies">Installation</a>. Allow Unity to finish importing LitMotion before installing or reimporting UITK Navigation.</p>
+<h2 id="graph-authoring">Graph authoring</h2>
+<h3 id="the-navigation-graph-creation-or-editor-menu-is-missing">The Navigation Graph creation or editor menu is missing</h3>
+<ol>
+<li>Verify that the project uses Unity <code>6000.6.0b5</code> or newer.</li>
+<li>Confirm that <code>com.unity.graphtoolkit</code> <code>0.5.0-exp.1</code> is resolved in Package Manager.</li>
+<li>Resolve the earliest Graph Toolkit or UITK Navigation compile error in the Console.</li>
+<li>Reimport the <code>.uinavgraph</code> after compilation succeeds.</li>
+</ol>
+<p>UITK Navigation uses Graph Toolkit for authoring and compiles the graph to a runtime <code>UINavigationAsset</code>; a Graph Toolkit error therefore blocks graph import. See <a href="requirement.html#graph-toolkit-usage">Requirements</a>.</p>
+<h3 id="the-graph-reports-validation-errors">The graph reports validation errors</h3>
+<p>Check these structural rules:</p>
+<ul>
+<li>The graph contains at least one Screen node and exactly one <a href="navigation-graph/start.html">Start node</a>.</li>
+<li>Start connects to exactly one Screen Enter.</li>
+<li>Every Screen has a non-empty, unique Node ID.</li>
+<li>A UI, Random, Portal, or continuing Action output connects to the required single target.</li>
+<li>UI outputs do not duplicate the same trigger and address on one node.</li>
+<li>Random has at least one connected output, non-negative finite weights, and a connected weight sum greater than zero.</li>
+<li>Each Portal has a valid address, a unique condition, and exactly one target.</li>
+<li>Time Scale and Scene Action values satisfy the constraints described by their <a href="NavigationGraph.html#nodes">node pages</a>.</li>
+</ul>
+<p>Warnings for unregistered addresses do not always stop compilation, but they usually indicate that UXML and graph values no longer agree.</p>
+<h2 id="navigation-at-runtime">Navigation at runtime</h2>
+<h3 id="play-mode-starts-with-a-blank-ui">Play Mode starts with a blank UI</h3>
+<ol>
+<li>Make sure exactly one enabled <code>UINavigatorBehaviour</code> exists. A duplicate disables itself and logs an error.</li>
+<li>Assign the intended <code>.uinavgraph</code> to its <strong>Navigation Graph</strong> field.</li>
+<li>Verify that Start reaches the expected first UI node.</li>
+<li>Add the first View address to that UI node's <strong>On Enter &gt; Show</strong> list.</li>
+<li>Confirm that a matching <a href="uxml-elements/nav-element.html">NavElement</a> is attached to a live Player-context panel.</li>
+<li>Compare Category and Key exactly, including case.</li>
+</ol>
+<p><code>UINavigatorBehaviour</code> waits briefly for Views to register, then initializes the graph. A View that never attaches to a panel cannot receive the initial Show command.</p>
+<h3 id="a-button-toggle-or-signal-does-not-navigate">A button, toggle, or signal does not navigate</h3>
+<p>Match the sender, catalog tab, and graph trigger:</p>
+<table>
+<thead>
+<tr>
+<th>Sender</th>
+<th>Catalog tab</th>
+<th>Graph route</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>NavButton</code></td>
+<td><strong>Button</strong></td>
+<td><strong>UI Button</strong> output or Button Portal</td>
+</tr>
+<tr>
+<td><code>NavToggle</code></td>
+<td><strong>Button</strong></td>
+<td><strong>Toggle</strong> output or Toggle Portal with the expected On/Off value</td>
+</tr>
+<tr>
+<td><code>UINavigationEvents.RequestSignal(...)</code></td>
+<td><strong>Signal</strong></td>
+<td><strong>Signal</strong> output or Signal Portal</td>
+</tr>
+</tbody>
+</table>
+<p>Then verify the exact <code>Category / Key</code>. Normal UI outputs are evaluated only on the active UI node; Portals are global and are tested before the active node. <strong>Scan Project</strong> can register a missing catalog entry, but it cannot correct a mismatched address or trigger type.</p>
+<h3 id="more-than-one-view-animates-at-once">More than one View animates at once</h3>
+<p>This is expected when multiple attached <code>NavElement</code> instances share the same View address. The registry broadcasts Show and Hide commands to every matching instance. Give each independently controlled View a unique <code>Category / Key</code>.</p>
+<h3 id="a-ui-view-route-occurs-earlier-than-expected">A UI View route occurs earlier than expected</h3>
+<p><strong>UI View</strong> outputs fire when a matching Animated Show or Hide transition starts, not when its animation completes. Instant View commands and <code>InstantShow()</code> or <code>InstantHide()</code> do not fire this output. Use a <strong>Time Delay</strong>, a different application signal, or another graph step when routing must wait.</p>
+<h2 id="transitions">Transitions</h2>
+<h3 id="a-view-changes-visibility-but-does-not-move">A View changes visibility but does not move</h3>
+<ul>
+<li>Confirm that the Move channel is enabled or that a preset containing Move was applied.</li>
+<li>Ensure the animated element receives a non-zero resolved width and height from layout.</li>
+<li>If the View starts with <code>display: none</code>, UITK Navigation performs a layout warm-up for up to four frames before starting a Move animation.</li>
+<li>In UI Builder, selecting a preset applies its values to the Show/Hide channels and then resets the preset selector to <strong>None</strong>. Inspect the channel values rather than expecting the selector to remain selected.</li>
+</ul>
+<p>See <a href="Animation.html">Transition animation</a> for channel precedence, timing, and Hide Mode.</p>
+<h3 id="a-transition-popup-result-or-async-operation-never-completes">A transition, popup result, or async operation never completes</h3>
+<p>Check every active animation channel for <code>Loops = -1</code>. Infinite channels repeat in Ping Pong mode and never report completion, so a visibility transition or Popup close that awaits them cannot settle. Use a finite loop count for lifecycle transitions.</p>
+<h3 id="animations-continue-while-timetimescale-is-zero">Animations continue while <code>Time.timeScale</code> is zero</h3>
+<p>This is intentional by default. Navigation delays use unscaled time and transition animation starts with a real-time scheduler, so menus and Popups continue to work while gameplay is paused unless you replace the View scheduler.</p>
+<h2 id="back-navigation">Back navigation</h2>
+<h3 id="escape-or-the-mouse-back-button-does-nothing">Escape or the mouse Back button does nothing</h3>
+<p>Add and enable <code>UIBackInputRouter</code>. It translates Escape, Backspace, and mouse Back/Forward buttons into navigation requests through the Input System.</p>
+<p>For graph history to handle Back, the active Screen must enable <strong>Use Back</strong> and history must contain a previous Screen. A visible View with <strong>Hide On Back</strong> or <strong>Block Back</strong> has priority. The topmost Popup has still higher priority: <code>Close</code> closes it, <code>Block</code> consumes Back, and <code>PassThrough</code> lets navigation below it continue.</p>
+<h2 id="popups">Popups</h2>
+<h3 id="uipopuphost-says-the-ui-root-is-not-ready"><code>UIPopupHost</code> says the UI root is not ready</h3>
+<p>Place <code>UIPopupHost</code> on the same GameObject as <code>PanelRenderer</code>, enable the renderer, and call <code>Show</code> only after the panel root has initialized. See <a href="Popup.html#set-up-a-host">Popups</a>.</p>
+<h3 id="a-popup-template-is-rejected">A popup template is rejected</h3>
+<p>The template must contain exactly one <code>UIPopupView</code>, exactly one <code>UIPopupContent</code> inside it, and zero or one <code>UIPopupBackdrop</code>. Remove duplicate wrappers and do not place the required Content outside the View.</p>
+<h3 id="clicking-an-action-does-not-complete-showasync">Clicking an action does not complete <code>ShowAsync</code></h3>
+<p><code>UIPopupActionButton</code> with <code>close-popup=&quot;false&quot;</code> raises its action but deliberately keeps the Popup open. Close its handle, call <code>CloseTop</code>, or set <code>close-popup=&quot;true&quot;</code> when that action should complete the task.</p>
+<h2 id="scene-action-nodes">Scene Action nodes</h2>
+<h3 id="a-scene-does-not-load-activate-or-unload">A scene does not load, activate, or unload</h3>
+<ul>
+<li>Add named or indexed scenes to Build Settings and verify the selected reference mode.</li>
+<li><code>Set Active Loaded Scene</code> and <code>Unload Scene</code> require the scene to be loaded already.</li>
+<li>The last loaded scene cannot be unloaded.</li>
+<li>If <strong>Allow Scene Activation</strong> is disabled on Load Scene, call <code>UINavigatorBehaviour.ActivatePendingScene()</code> when activation should continue.</li>
+</ul>
+<p>An Action node's <strong>Next</strong> chain continues immediately after the request is issued; it does not wait for Unity's asynchronous scene operation to finish. Trigger post-load UI from the destination scene or an explicit completion signal when ordering matters.</p>
+<h2 id="the-key-picker-does-not-show-an-address">The Key picker does not show an address</h2>
+<p>Open <a href="KeyCatalog.html">Key Catalog</a>, select the correct View/Button/Signal tab, and run <strong>Scan Project</strong>. Add code-only addresses manually because project scanning covers UXML and <code>.uinavgraph</code> assets, not arbitrary C# strings.</p>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+              <div>
+                  This asset and documentation are not affiliated with Unity Technologies, and the creator is not responsible for any legal issues arising from its use.
+              </div>
+              <div>
+                  <span class="pull-right"><a href="#top">Back to top</a></span>
+
+                  <span>This document was generated using <strong>DocFX</strong>.</span>
+              </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../styles/docs-switcher.js"></script>
+  </body>
+</html>

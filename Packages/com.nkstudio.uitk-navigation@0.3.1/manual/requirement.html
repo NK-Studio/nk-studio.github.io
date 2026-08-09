@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <script type="text/javascript">
+        thisPackageMetaData = {name: "com.nkstudio.uitk-navigation", version: "0.3.1", displayTitle: "UITK Navigation 0.3.1", lang: "en"};
+    </script>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Requirements | UITK Navigation </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Requirements | UITK Navigation ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <link rel="stylesheet" href="../styles/language-switcher.css">
+      <link rel="stylesheet" href="../styles/version-switcher.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../manual/index.html">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+            <div class="container hide-when-search" id="breadcrumb">
+                <!-- Unity Customization: Remove content of breadcrumb bar. This space is used for version and language switchers
+                            <ul class="breadcrumb">
+                              <li></li>
+                            </ul>
+                            -->
+            </div>
+        </div>      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+        <div id="unity_breadcrumb_placeholder">
+            <ul class="breadcrumb">
+            <li></li>
+            </ul>
+        </div>
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="requirements">Requirements</h1>
+
+<p>UITK Navigation targets Unity 6.6 and builds its graph authoring workflow on Unity's experimental Graph Toolkit.</p>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Version</th>
+<th>How it is provided</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Unity</td>
+<td><code>6000.6.0b5</code> or newer</td>
+<td>Unity 6.6 is required</td>
+</tr>
+<tr>
+<td>Graph Toolkit</td>
+<td><code>0.5.0-exp.1</code></td>
+<td>Resolved from the UITK Navigation package manifest</td>
+</tr>
+<tr>
+<td>Input System</td>
+<td><code>1.19.0</code></td>
+<td>Resolved from the UITK Navigation package manifest</td>
+</tr>
+<tr>
+<td>UI Toolkit</td>
+<td><code>com.unity.modules.uielements</code> <code>1.0.0</code></td>
+<td>Built into Unity</td>
+</tr>
+<tr>
+<td><a href="https://github.com/annulusgames/LitMotion">LitMotion</a></td>
+<td><code>2.0.0</code> or newer</td>
+<td>Install the UPM package from Git</td>
+</tr>
+<tr>
+<td><a href="https://github.com/Cysharp/ZLinq">ZLinq</a></td>
+<td>Compatible NuGet release plus <code>ZLinq.Unity</code></td>
+<td>Install in two steps with NuGetForUnity and UPM</td>
+</tr>
+<tr>
+<td><a href="https://github.com/GlitchEnzo/NuGetForUnity">NuGetForUnity</a></td>
+<td>A release compatible with Unity 6.6</td>
+<td>Required to install the core <code>ZLinq</code> package</td>
+</tr>
+</tbody>
+</table>
+<h2 id="zlinq-requires-two-packages">ZLinq requires two packages</h2>
+<p>ZLinq support in Unity is split between the core library and its Unity integration:</p>
+<ol>
+<li>Install the <code>ZLinq</code> NuGet package through <strong>Window &gt; NuGet &gt; Manage NuGet Packages</strong>. This menu is provided by NuGetForUnity.</li>
+<li>Install <code>ZLinq.Unity</code> through Unity Package Manager with this Git URL:</li>
+</ol>
+<pre><code class="lang-text">https://github.com/Cysharp/ZLinq.git?path=src/ZLinq.Unity/Assets/ZLinq.Unity
+</code></pre>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>Installing only <code>ZLinq.Unity</code> is not enough. The core <code>ZLinq</code> assembly must also be present under <code>Assets/Packages</code> through NuGetForUnity.</p>
+</div>
+<p>LitMotion is installed separately through Unity Package Manager:</p>
+<pre><code class="lang-text">https://github.com/annulusgames/LitMotion.git?path=src/LitMotion/Assets/LitMotion
+</code></pre>
+<p>The Runtime and Editor assemblies do not compile when LitMotion, core ZLinq, or <code>ZLinq.Unity</code> is missing.</p>
+<h2 id="graph-toolkit-usage">Graph Toolkit usage</h2>
+<p>UITK Navigation uses Graph Toolkit internally to edit <code>.uinavgraph</code> files. Saving the graph runs a Scripted Importer that validates the authoring graph and compiles it into a runtime <code>UINavigationAsset</code>. You work in the Graph Toolkit editor, but runtime navigation reads the compiled asset.</p>
+<p>Graph Toolkit <code>0.5.0-exp.1</code> is declared by UITK Navigation and is normally installed automatically. Because it is experimental and tied to Unity 6.6 APIs, other Unity versions are not supported.</p>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+              <div>
+                  This asset and documentation are not affiliated with Unity Technologies, and the creator is not responsible for any legal issues arising from its use.
+              </div>
+              <div>
+                  <span class="pull-right"><a href="#top">Back to top</a></span>
+
+                  <span>This document was generated using <strong>DocFX</strong>.</span>
+              </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../styles/docs-switcher.js"></script>
+  </body>
+</html>

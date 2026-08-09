@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <script type="text/javascript">
+        thisPackageMetaData = {name: "com.nkstudio.uitk-navigation", version: "0.4.0", displayTitle: "UITK Navigation 0.4.0", lang: "kr"};
+    </script>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>문제 해결 | UITK Navigation </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="문제 해결 | UITK Navigation ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <link rel="stylesheet" href="../styles/language-switcher.css">
+      <link rel="stylesheet" href="../styles/version-switcher.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../manual/index.html">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+            <div class="container hide-when-search" id="breadcrumb">
+                <!-- Unity Customization: Remove content of breadcrumb bar. This space is used for version and language switchers
+                            <ul class="breadcrumb">
+                              <li></li>
+                            </ul>
+                            -->
+            </div>
+        </div>      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+        <div id="unity_breadcrumb_placeholder">
+            <ul class="breadcrumb">
+            <li></li>
+            </ul>
+        </div>
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="문제-해결">문제 해결</h1>
+
+<p>Console에서 가장 먼저 발생한 오류부터 해결하세요. Navigation Graph 가져오기가 실패하면 컴파일된 런타임 자산을 갱신하지 못하므로, 이후 런타임 증상은 저작 단계 오류에서 파생됐을 수 있습니다.</p>
+<h2 id="패키지-컴파일">패키지 컴파일</h2>
+<h3 id="zlinqdll-또는-zlinq-네임스페이스를-찾을-수-없음"><code>ZLinq.dll</code> 또는 <code>ZLinq</code> 네임스페이스를 찾을 수 없음</h3>
+<p><code>ZLinq.Unity</code>는 어댑터이며 핵심 라이브러리를 포함하지 않습니다. 먼저 NuGetForUnity로 <code>ZLinq</code> NuGet 패키지를 설치한 뒤 <code>ZLinq.Unity</code> UPM 패키지를 설치하세요. 자세한 순서는 <a href="installation.html#1-nugetforunity%EC%99%80-%ED%95%B5%EC%8B%AC-zlinq-%EC%84%A4%EC%B9%98">설치</a>를 참고하세요.</p>
+<p>둘 다 설치했다면 버전 호환 여부와 NuGet 패키지가 <code>Assets/Packages</code> 아래에 핵심 어셈블리를 생성했는지 확인합니다.</p>
+<h3 id="litmotion-형식을-찾을-수-없음">LitMotion 형식을 찾을 수 없음</h3>
+<p><a href="https://github.com/annulusgames/LitMotion">LitMotion</a> <code>2.0.0</code> 이상을 <a href="installation.html#2-git-%EC%9D%98%EC%A1%B4%EC%84%B1-%EC%84%A4%EC%B9%98">설치</a>의 Git URL로 설치하세요. LitMotion 가져오기가 끝난 다음 UITK Navigation을 설치하거나 다시 가져옵니다.</p>
+<h2 id="graph-저작">Graph 저작</h2>
+<h3 id="navigation-graph-생성-또는-editor-메뉴가-보이지-않음">Navigation Graph 생성 또는 Editor 메뉴가 보이지 않음</h3>
+<ol>
+<li>프로젝트가 Unity <code>6000.6.0b5</code> 이상인지 확인합니다.</li>
+<li>Package Manager에서 <code>com.unity.graphtoolkit</code> <code>0.5.0-exp.1</code>이 해결됐는지 확인합니다.</li>
+<li>Console에서 가장 먼저 발생한 Graph Toolkit 또는 UITK Navigation 컴파일 오류를 해결합니다.</li>
+<li>컴파일이 성공하면 <code>.uinavgraph</code>를 다시 가져옵니다.</li>
+</ol>
+<p>UITK Navigation은 Graph Toolkit으로 Graph를 편집한 뒤 런타임 <code>UINavigationAsset</code>으로 컴파일합니다. 따라서 Graph Toolkit 오류가 있으면 Graph 가져오기도 중단됩니다. <a href="requirement.html#graph-toolkit-%EC%82%AC%EC%9A%A9">요구 사항</a>을 참고하세요.</p>
+<h3 id="graph-검증-오류가-발생함">Graph 검증 오류가 발생함</h3>
+<p>다음 구조 규칙을 확인하세요.</p>
+<ul>
+<li>Screen 노드가 하나 이상 있고 <a href="navigation-graph/start.html">Start 노드</a>는 정확히 하나여야 합니다.</li>
+<li>Start는 정확히 하나의 Screen Enter에 연결돼야 합니다.</li>
+<li>모든 Screen의 Node ID가 비어 있지 않고 서로 달라야 합니다.</li>
+<li>UI 출력은 정확히 하나의 UI, Action 또는 Send Signal 대상에 연결하고 Send Signal은 여러 UI 출력을 입력받을 수 있습니다.</li>
+<li>한 UI 노드 안에서 같은 Trigger와 주소를 중복 출력으로 만들 수 없습니다.</li>
+<li>Random에는 연결된 출력이 하나 이상 있어야 하고, Weight는 0 이상의 유한한 값이며 연결된 Weight 합은 0보다 커야 합니다.</li>
+<li>각 Send Signal은 비어 있지 않은 Database 또는 Custom 주소, 하나 이상의 Enter 연결과 일치하는 Signal Portal이 필요합니다.</li>
+<li>각 Portal의 주소와 조건은 유효하고 고유해야 하며 대상 하나에 연결돼야 합니다.</li>
+<li>Time Scale과 Scene Action 값은 각 <a href="NavigationGraph.html#%EB%85%B8%EB%93%9C">노드 문서</a>의 제약을 만족해야 합니다.</li>
+</ul>
+<p>미등록 주소 경고가 항상 컴파일을 막는 것은 아니지만, 대부분 UXML과 Graph 값이 더 이상 일치하지 않는다는 뜻입니다.</p>
+<h2 id="런타임-내비게이션">런타임 내비게이션</h2>
+<h3 id="play-mode를-시작해도-ui가-비어-있음">Play Mode를 시작해도 UI가 비어 있음</h3>
+<ol>
+<li>활성화된 <code>UINavigatorBehaviour</code>가 정확히 하나인지 확인합니다. 중복 컴포넌트는 스스로 비활성화되고 오류를 기록합니다.</li>
+<li><strong>Navigation Graph</strong> 필드에 원하는 <code>.uinavgraph</code>가 연결됐는지 확인합니다.</li>
+<li>Start가 예상한 첫 UI 노드로 이어지는지 확인합니다.</li>
+<li>첫 View 주소를 해당 UI 노드의 <strong>On Enter &gt; Show</strong> 목록에 추가합니다.</li>
+<li>주소가 같은 <a href="uxml-elements/nav-element.html">NavElement</a>가 실제 Player Context Panel에 연결됐는지 확인합니다.</li>
+<li>대소문자를 포함해 Category와 Key가 정확히 같은지 비교합니다.</li>
+</ol>
+<p><code>UINavigatorBehaviour</code>는 View 등록을 잠시 기다린 뒤 Graph를 초기화합니다. 패널에 연결되지 않은 View는 최초 Show 명령을 받을 수 없습니다.</p>
+<h3 id="버튼-토글-또는-signal로-이동하지-않음">버튼, 토글 또는 Signal로 이동하지 않음</h3>
+<p>발신 요소, Address Type과 Graph Trigger를 맞춥니다.</p>
+<table>
+<thead>
+<tr>
+<th>발신</th>
+<th>카탈로그 탭</th>
+<th>Graph 경로</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>NavButton</code></td>
+<td><strong>Signal</strong></td>
+<td>Database Signal 출력 또는 Signal Portal</td>
+</tr>
+<tr>
+<td><code>Signal.Send(UIKey)</code></td>
+<td><strong>Signal</strong></td>
+<td>Database Signal 출력 또는 Signal Portal</td>
+</tr>
+<tr>
+<td><code>Signal.Send(string)</code></td>
+<td>없음</td>
+<td>Custom Signal 출력 또는 Custom Signal Portal</td>
+</tr>
+<tr>
+<td><code>NavToggle</code></td>
+<td><strong>Toggle</strong></td>
+<td>Toggle 출력 또는 예상 On/Off 값의 Toggle Portal</td>
+</tr>
+</tbody>
+</table>
+<p>그 다음 Address Type과 값을 정확히 확인합니다. Database <code>Default / Home</code>과 Custom <code>Home</code>은 다른 주소이며 Custom은 대소문자를 구분합니다. 일반 UI 출력은 현재 활성 UI 노드에서만 검사하지만 Portal은 전역이며 먼저 검사합니다.</p>
+<h3 id="send-signal이-destination에-도착하지-않음">Send Signal이 Destination에 도착하지 않음</h3>
+<ol>
+<li>하나 이상의 기존 UI 출력을 Send Signal의 Multi <strong>Enter</strong>에 직접 연결합니다.</li>
+<li><strong>Go To</strong>에 비어 있지 않은 Database 또는 Custom 주소를 지정합니다.</li>
+<li>같은 Address Type과 정확한 값을 가진 Signal Portal을 만듭니다.</li>
+<li>Portal 출력을 하나의 UI 또는 Action Chain에 연결합니다.</li>
+</ol>
+<p>Send Signal에 출력이 없는 것은 정상입니다. 일치하는 Portal이 다음 경로를 소유합니다.</p>
+<h3 id="여러-view가-동시에-애니메이션됨">여러 View가 동시에 애니메이션됨</h3>
+<p>같은 View 주소를 가진 <code>NavElement</code>가 패널에 여러 개 연결돼 있다면 정상 동작입니다. Registry는 일치하는 모든 인스턴스에 Show/Hide 명령을 전달합니다. 각각 제어해야 하는 View에는 고유한 <code>Category / Key</code>를 지정하세요.</p>
+<h3 id="ui-view-경로가-예상보다-일찍-실행됨">UI View 경로가 예상보다 일찍 실행됨</h3>
+<p><strong>UI View</strong> 출력은 해당 Animated Show/Hide 전환이 완료될 때가 아니라 시작될 때 발생합니다. Instant View 명령과 <code>InstantShow()</code>, <code>InstantHide()</code>는 이 출력을 발생시키지 않습니다. 애니메이션 이후에 이동해야 한다면 <strong>Time Delay</strong>, 애플리케이션 Signal 또는 별도 Graph 단계를 사용하세요.</p>
+<h2 id="전환-애니메이션">전환 애니메이션</h2>
+<h3 id="view의-표시-상태는-바뀌지만-이동하지-않음">View의 표시 상태는 바뀌지만 이동하지 않음</h3>
+<ul>
+<li>Move 채널이 활성화됐거나 Move를 포함한 프리셋이 적용됐는지 확인합니다.</li>
+<li>애니메이션 요소의 계산된 너비와 높이가 0이 되지 않도록 레이아웃을 구성합니다.</li>
+<li>View가 <code>display: none</code>에서 시작하면 UITK Navigation은 Move 실행 전 최대 4프레임 동안 레이아웃을 준비합니다.</li>
+<li>UI Builder에서 프리셋을 선택하면 Show/Hide 채널에 값이 적용된 뒤 선택기는 <strong>None</strong>으로 돌아갑니다. 선택 상태 대신 실제 채널 값을 확인하세요.</li>
+</ul>
+<p>채널 우선순위, Timing, Hide Mode는 <a href="Animation.html">전환 애니메이션</a>을 참고하세요.</p>
+<h3 id="전환-popup-결과-또는-비동기-작업이-끝나지-않음">전환, Popup 결과 또는 비동기 작업이 끝나지 않음</h3>
+<p>활성 애니메이션 채널에 <code>Loops = -1</code>이 있는지 확인합니다. 무한 채널은 Ping Pong으로 반복하며 완료를 보고하지 않으므로, 이를 기다리는 View 전환이나 Popup 닫기가 끝나지 않습니다. 수명 주기 전환에는 유한 반복 횟수를 사용하세요.</p>
+<h3 id="timetimescale이-0인데-애니메이션이-계속됨"><code>Time.timeScale</code>이 0인데 애니메이션이 계속됨</h3>
+<p>기본 설정에서 의도된 동작입니다. 내비게이션 지연은 Unscaled Time을 사용하고 전환 애니메이션은 Realtime Scheduler로 시작하므로, View Scheduler를 교체하지 않았다면 게임이 일시 정지돼도 메뉴와 Popup이 계속 동작합니다.</p>
+<h2 id="back-내비게이션">Back 내비게이션</h2>
+<h3 id="escape-또는-마우스-뒤로-버튼이-동작하지-않음">Escape 또는 마우스 뒤로 버튼이 동작하지 않음</h3>
+<p><code>UIBackInputRouter</code>를 추가하고 활성화하세요. 이 컴포넌트는 Input System을 통해 Escape, Backspace, 마우스 Back/Forward 버튼을 내비게이션 요청으로 변환합니다.</p>
+<p>Graph History가 Back을 처리하려면 활성 Screen의 <strong>Use Back</strong>이 켜져 있고 이전 Screen 기록이 있어야 합니다. <strong>Hide On Back</strong> 또는 <strong>Block Back</strong>을 사용하는 표시 중인 View가 우선합니다. 최상위 Popup은 이보다도 우선하며 <code>Close</code>는 닫기, <code>Block</code>은 입력 소비, <code>PassThrough</code>는 아래 내비게이션으로 전달합니다.</p>
+<h2 id="popup">Popup</h2>
+<h3 id="uipopuphost에서-ui-root가-준비되지-않았다고-표시됨"><code>UIPopupHost</code>에서 UI Root가 준비되지 않았다고 표시됨</h3>
+<p><code>UIPopupHost</code>를 <code>PanelRenderer</code>와 같은 GameObject에 두고 Renderer를 활성화한 뒤, 패널 Root가 초기화된 다음 <code>Show</code>를 호출하세요. <a href="Popup.html#host-%EC%84%A4%EC%A0%95">Popup</a>을 참고하세요.</p>
+<h3 id="popup-템플릿이-거부됨">Popup 템플릿이 거부됨</h3>
+<p>템플릿에는 <code>UIPopupView</code>가 정확히 하나, 그 내부에 <code>UIPopupContent</code>가 정확히 하나, <code>UIPopupBackdrop</code>은 0개 또는 1개 있어야 합니다. 중복 Wrapper를 제거하고 필수 Content를 View 밖에 두지 마세요.</p>
+<h3 id="action을-눌러도-showasync가-완료되지-않음">Action을 눌러도 <code>ShowAsync</code>가 완료되지 않음</h3>
+<p><code>close-popup=&quot;false&quot;</code>인 <code>UIPopupActionButton</code>은 Action만 발생시키고 Popup을 의도적으로 유지합니다. 해당 동작이 Task를 완료해야 한다면 Handle을 닫거나 <code>CloseTop</code>을 호출하거나 <code>close-popup=&quot;true&quot;</code>로 설정하세요.</p>
+<h2 id="scene-action-노드">Scene Action 노드</h2>
+<h3 id="scene이-로드-활성화-또는-언로드되지-않음">Scene이 로드, 활성화 또는 언로드되지 않음</h3>
+<ul>
+<li>이름 또는 Index로 참조하는 Scene을 Build Settings에 추가하고 선택한 참조 방식을 확인합니다.</li>
+<li><code>Set Active Loaded Scene</code>과 <code>Unload Scene</code>은 대상 Scene이 이미 로드돼 있어야 합니다.</li>
+<li>마지막으로 남은 로드 Scene은 언로드할 수 없습니다.</li>
+<li>Load Scene에서 <strong>Allow Scene Activation</strong>을 끈 경우 활성화를 계속할 시점에 <code>UINavigatorBehaviour.ActivatePendingScene()</code>을 호출합니다.</li>
+</ul>
+<p>Action 노드의 <strong>Next</strong> 체인은 요청을 보낸 직후 계속되며 Unity의 비동기 Scene 작업 완료를 기다리지 않습니다. 순서가 중요하면 대상 Scene 또는 명시적인 완료 Signal에서 후속 UI를 실행하세요.</p>
+<h2 id="key-선택기에-주소가-보이지-않음">Key 선택기에 주소가 보이지 않음</h2>
+<p><a href="KeyCatalog.html">키 카탈로그</a>를 열어 올바른 View/Toggle/Signal 탭을 선택하고 <strong>Scan Project</strong>를 실행합니다. 코드에만 있는 Database 주소는 직접 등록하세요. Custom Signal은 Key Catalog에 표시되지 않습니다.</p>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+              <div>
+                  이 에셋과 문서는 Unity Technologies와 관련이 없으며, 사용으로 인해 발생하는 법적 문제에 대해서는 제작자가 책임지지 않습니다.
+              </div>
+              <div>
+                  <span class="pull-right"><a href="#top">Back to top</a></span>
+
+                  <span>이 문서는 <strong>DocFX</strong>를 통해 생성되었습니다.</span>
+              </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../styles/docs-switcher.js"></script>
+  </body>
+</html>

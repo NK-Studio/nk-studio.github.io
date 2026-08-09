@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <script type="text/javascript">
+        thisPackageMetaData = {name: "com.nkstudio.uitk-navigation", version: "0.4.0", displayTitle: "UITK Navigation 0.4.0", lang: "en"};
+    </script>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Popups | UITK Navigation </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Popups | UITK Navigation ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <link rel="stylesheet" href="../styles/language-switcher.css">
+      <link rel="stylesheet" href="../styles/version-switcher.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../manual/index.html">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+            <div class="container hide-when-search" id="breadcrumb">
+                <!-- Unity Customization: Remove content of breadcrumb bar. This space is used for version and language switchers
+                            <ul class="breadcrumb">
+                              <li></li>
+                            </ul>
+                            -->
+            </div>
+        </div>      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+        <div id="unity_breadcrumb_placeholder">
+            <ul class="breadcrumb">
+            <li></li>
+            </ul>
+        </div>
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="popups">Popups</h1>
+
+<p>Popups use a panel-local LIFO stack that is independent of the Navigation Graph. Each call clones a <code>VisualTreeAsset</code>, optionally assigns a data source, animates it into the panel, and returns an awaitable result.</p>
+<h2 id="set-up-a-host">Set up a host</h2>
+<p>Add <code>UIPopupHost</code> to the GameObject that owns the panel's <code>PanelRenderer</code>. The host requires that component and creates its popup layer when <code>PanelRenderer</code> supplies a UI root.</p>
+<pre><code class="lang-csharp">public sealed class PopupExample : MonoBehaviour
+{
+    [SerializeField] private UIPopupHost popupHost;
+    [SerializeField] private VisualTreeAsset messagePopup;
+}
+</code></pre>
+<p>Call <code>Show</code> only after the panel root has been initialized. Calling it before the UI root is ready throws an <code>InvalidOperationException</code>.</p>
+<h2 id="build-a-popup-template">Build a popup template</h2>
+<p>Every popup <code>VisualTreeAsset</code> must contain:</p>
+<ul>
+<li>exactly one <code>UIPopupView</code>;</li>
+<li>exactly one <code>UIPopupContent</code> inside that View;</li>
+<li>zero or one <code>UIPopupBackdrop</code> inside that View.</li>
+</ul>
+<p>Invalid counts throw an exception that includes the number found. The failed instance is rolled back and is not left on the stack.</p>
+<pre><code class="lang-xml">&lt;ui:UXML xmlns:ui=&quot;UnityEngine.UIElements&quot;
+         xmlns:popup=&quot;NKStudio.UITKNavigation.Popup&quot;&gt;
+    &lt;popup:UIPopupView close-on-backdrop=&quot;false&quot; back-behavior=&quot;Close&quot;&gt;
+        &lt;popup:UIPopupBackdrop /&gt;
+        &lt;popup:UIPopupContent&gt;
+            &lt;ui:Label&gt;
+                &lt;Bindings&gt;
+                    &lt;ui:DataBinding property=&quot;text&quot;
+                                    data-source-path=&quot;Title&quot;
+                                    binding-mode=&quot;ToTarget&quot; /&gt;
+                &lt;/Bindings&gt;
+            &lt;/ui:Label&gt;
+
+            &lt;ui:VisualElement name=&quot;dynamic-content&quot; /&gt;
+
+            &lt;popup:UIPopupActionButton text=&quot;Cancel&quot;
+                action-id=&quot;cancel&quot; close-popup=&quot;true&quot; /&gt;
+            &lt;popup:UIPopupActionButton text=&quot;OK&quot;
+                action-id=&quot;confirm&quot; close-popup=&quot;true&quot; /&gt;
+        &lt;/popup:UIPopupContent&gt;
+    &lt;/popup:UIPopupView&gt;
+&lt;/ui:UXML&gt;
+</code></pre>
+<p>The package supplies full-panel positioning and these USS classes: <code>ui-popup-view</code>, <code>ui-popup-backdrop</code>, <code>ui-popup-content</code>, and <code>ui-popup-action-button</code>. Your template USS is responsible for Backdrop color, Content placement and size, spacing, and typography.</p>
+<h2 id="show-and-await-a-popup">Show and await a popup</h2>
+<p>Use <code>ShowAsync</code> when only the final result matters:</p>
+<pre><code class="lang-csharp">UIPopupResult result = await popupHost.ShowAsync(
+    messagePopup,
+    new MessagePopupModel { Title = &quot;Notice&quot; },
+    configure: view =&gt;
+        view.Q(&quot;dynamic-content&quot;)?.Add(new Label(&quot;Runtime content&quot;)),
+    cancellationToken: cancellationToken);
+
+Debug.Log($&quot;Action={result.ActionId}, Reason={result.Reason}&quot;);
+</code></pre>
+<p>Annotate model properties used by UI Toolkit data binding with <code>[CreateProperty]</code> from <code>Unity.Properties</code>. The model becomes the <code>UIPopupView.dataSource</code> before Show.</p>
+<p>Use <code>Show</code> when you also need the handle:</p>
+<pre><code class="lang-csharp">UIPopupHandle handle = popupHost.Show(messagePopup, model);
+
+handle.ActionInvoked += actionId =&gt;
+    Debug.Log($&quot;Invoked: {actionId}&quot;);
+
+UIPopupResult result = await handle.Completion;
+</code></pre>
+<p><code>UIPopupHandle.IsOpen</code> remains true until the Hide transition finishes. Call <code>handle.Close()</code> for that specific instance, <code>popupHost.CloseTop()</code> for the top item, or <code>popupHost.CloseAll()</code> for the entire host.</p>
+<h2 id="actions-and-results">Actions and results</h2>
+<p><code>UIPopupActionButton</code> trims and raises its <code>action-id</code>. With <code>close-popup=&quot;true&quot;</code>, it closes the popup and returns that ID. With <code>false</code>, it raises <code>ActionInvoked</code> but leaves <code>Completion</code> pending until something else closes the popup.</p>
+<table>
+<thead>
+<tr>
+<th>Close reason</th>
+<th>Produced by</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Action</td>
+<td>An action button that closes the popup</td>
+</tr>
+<tr>
+<td>Back</td>
+<td>Back behavior <code>Close</code></td>
+</tr>
+<tr>
+<td>Backdrop</td>
+<td>A direct Backdrop click with <code>close-on-backdrop=&quot;true&quot;</code></td>
+</tr>
+<tr>
+<td>Programmatic</td>
+<td><code>Close</code>, <code>CloseTop</code>, or <code>CloseAll</code></td>
+</tr>
+<tr>
+<td>HostDetached</td>
+<td>Host disable, panel root reload, or detach</td>
+</tr>
+</tbody>
+</table>
+<p>Cancellation is different from a close result. A canceled token removes the instance immediately and completes the task as canceled. If the token is already canceled, the template is not instantiated.</p>
+<h2 id="stack-back-and-focus">Stack, Back, and focus</h2>
+<p>The last popup shown is the first one closed. Only the topmost, non-closing popup receives the high-priority Back policy:</p>
+<table>
+<thead>
+<tr>
+<th>Back behavior</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Close</td>
+<td>Closes the top popup and consumes Back</td>
+</tr>
+<tr>
+<td>Block</td>
+<td>Keeps the popup open and consumes Back</td>
+</tr>
+<tr>
+<td>PassThrough</td>
+<td>Keeps it open and lets Back continue to the graph or a lower handler</td>
+</tr>
+</tbody>
+</table>
+<p>When shown, the popup focuses its first enabled focusable descendant. When the top popup closes, focus returns to the previously focused element; if that element no longer exists, focus moves to the popup below.</p>
+<p><code>close-on-backdrop</code> reacts only when the Backdrop itself is the click target. Clicking a child placed inside the Backdrop does not count as a direct Backdrop click.</p>
+<h2 id="popup-transitions">Popup transitions</h2>
+<p><code>UIPopupView</code> provides separate <strong>Backdrop Transitions</strong> and <strong>Content Transitions</strong>, each with independent Show/Hide presets and channels. Both layers play together and the longer finite layer determines completion. Closing does not complete the handle until Hide finishes.</p>
+<p>Avoid infinite Hide loops, because the popup cannot finalize while its Hide transition never completes. See <a href="Animation.html">Transition animation</a> for preset, timing, reversal, and Loop details.</p>
+<!-- IMAGE NEEDED: Running message popup with backdrop, content, and two action buttons. Suggested filename: popup-overview.png -->
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+              <div>
+                  This asset and documentation are not affiliated with Unity Technologies, and the creator is not responsible for any legal issues arising from its use.
+              </div>
+              <div>
+                  <span class="pull-right"><a href="#top">Back to top</a></span>
+
+                  <span>This document was generated using <strong>DocFX</strong>.</span>
+              </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../styles/docs-switcher.js"></script>
+  </body>
+</html>

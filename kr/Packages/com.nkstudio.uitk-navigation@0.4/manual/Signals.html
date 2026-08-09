@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <script type="text/javascript">
+        thisPackageMetaData = {name: "com.nkstudio.uitk-navigation", version: "0.4.0", displayTitle: "UITK Navigation 0.4.0", lang: "kr"};
+    </script>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Signal | UITK Navigation </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Signal | UITK Navigation ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <link rel="stylesheet" href="../styles/language-switcher.css">
+      <link rel="stylesheet" href="../styles/version-switcher.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../manual/index.html">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+            <div class="container hide-when-search" id="breadcrumb">
+                <!-- Unity Customization: Remove content of breadcrumb bar. This space is used for version and language switchers
+                            <ul class="breadcrumb">
+                              <li></li>
+                            </ul>
+                            -->
+            </div>
+        </div>      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+        <div id="unity_breadcrumb_placeholder">
+            <ul class="breadcrumb">
+            <li></li>
+            </ul>
+        </div>
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="signal">Signal</h1>
+
+<p>UITK Navigation 0.4.0은 <code>NavButton</code>, 애플리케이션 코드, UI 노드 출력, <a href="navigation-graph/send-signal.html">Send Signal</a>, Signal Portal이 하나의 Signal 채널을 사용합니다.</p>
+<h2 id="주소-형식">주소 형식</h2>
+<table>
+<thead>
+<tr>
+<th>Address Type</th>
+<th>값</th>
+<th>사용처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Database</td>
+<td>Signal Catalog의 <code>Category / Key</code></td>
+<td>프로젝트 전체에서 공유하는 주소와 <code>UIKey</code>를 사용하는 코드</td>
+</tr>
+<tr>
+<td>Custom</td>
+<td><code>Home</code>, <code>Back</code>, <code>Close</code> 같은 그래프 로컬 문자열</td>
+<td>Catalog 등록이 필요 없는 짧은 경로</td>
+</tr>
+</tbody>
+</table>
+<p>Custom 주소는 대소문자를 구분하며 Ordinal 비교를 사용합니다. <code>Home</code>과 <code>home</code>은 서로 다릅니다. 자주 실행되는 Dispatch 경로에서는 문자열 보간, 결합, 대소문자 변환과 <code>ToString()</code>을 피하고 기존 문자열이나 상수를 재사용하세요.</p>
+<h2 id="코드에서-보내기">코드에서 보내기</h2>
+<pre><code class="lang-csharp">using NKStudio.UITKNavigation.Identity;
+using NKStudio.UITKNavigation.Navigation;
+
+bool databaseByParts = Signal.Send(&quot;Menu&quot;, &quot;OpenSettings&quot;);
+bool databaseByKey = Signal.Send(new UIKey(&quot;Menu&quot;, &quot;OpenSettings&quot;));
+bool custom = Signal.Send(&quot;Home&quot;);
+</code></pre>
+<p>각 Overload는 활성 Navigator가 요청을 처리하거나 Queue에 넣으면 <code>true</code>를 반환합니다. 주소가 비었거나 유효하지 않은 경우, 활성 Navigator가 없는 경우 또는 처리할 경로가 없으면 <code>false</code>를 반환합니다.</p>
+<p>Service는 활성 UI 노드보다 먼저 Portal을 검사합니다. Custom Signal은 Custom 출력 또는 Custom Portal과 매칭되며 Database 주소로 자동 변환되지 않습니다.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Toggle은 별도 채널이며 Toggle Catalog를 사용합니다. <code>NavToggle</code>은 <code>Signal.Send</code>를 호출하지 않습니다.</p>
+</div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+              <div>
+                  이 에셋과 문서는 Unity Technologies와 관련이 없으며, 사용으로 인해 발생하는 법적 문제에 대해서는 제작자가 책임지지 않습니다.
+              </div>
+              <div>
+                  <span class="pull-right"><a href="#top">Back to top</a></span>
+
+                  <span>이 문서는 <strong>DocFX</strong>를 통해 생성되었습니다.</span>
+              </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../styles/docs-switcher.js"></script>
+  </body>
+</html>

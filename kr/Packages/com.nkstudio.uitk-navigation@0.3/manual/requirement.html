@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <script type="text/javascript">
+        thisPackageMetaData = {name: "com.nkstudio.uitk-navigation", version: "0.3.1", displayTitle: "UITK Navigation 0.3.1", lang: "kr"};
+    </script>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>요구사항 | UITK Navigation </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="요구사항 | UITK Navigation ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <link rel="stylesheet" href="../styles/language-switcher.css">
+      <link rel="stylesheet" href="../styles/version-switcher.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../manual/index.html">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+            <div class="container hide-when-search" id="breadcrumb">
+                <!-- Unity Customization: Remove content of breadcrumb bar. This space is used for version and language switchers
+                            <ul class="breadcrumb">
+                              <li></li>
+                            </ul>
+                            -->
+            </div>
+        </div>      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+        <div id="unity_breadcrumb_placeholder">
+            <ul class="breadcrumb">
+            <li></li>
+            </ul>
+        </div>
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="요구사항">요구사항</h1>
+
+<p>UITK Navigation은 Unity 6.6을 대상으로 하며, 그래프 편집 워크플로에 Unity의 실험적 Graph Toolkit을 사용합니다.</p>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>버전</th>
+<th>제공 방식</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Unity</td>
+<td><code>6000.6.0b5</code> 이상</td>
+<td>Unity 6.6 필수</td>
+</tr>
+<tr>
+<td>Graph Toolkit</td>
+<td><code>0.5.0-exp.1</code></td>
+<td>UITK Navigation 패키지 manifest에서 자동 해결</td>
+</tr>
+<tr>
+<td>Input System</td>
+<td><code>1.19.0</code></td>
+<td>UITK Navigation 패키지 manifest에서 자동 해결</td>
+</tr>
+<tr>
+<td>UI Toolkit</td>
+<td><code>com.unity.modules.uielements</code> <code>1.0.0</code></td>
+<td>Unity 내장 모듈</td>
+</tr>
+<tr>
+<td><a href="https://github.com/annulusgames/LitMotion">LitMotion</a></td>
+<td><code>2.0.0</code> 이상</td>
+<td>Git URL로 UPM 패키지 설치</td>
+</tr>
+<tr>
+<td><a href="https://github.com/Cysharp/ZLinq">ZLinq</a></td>
+<td>호환되는 NuGet 버전 + <code>ZLinq.Unity</code></td>
+<td>NuGetForUnity와 UPM을 사용해 2단계로 설치</td>
+</tr>
+<tr>
+<td><a href="https://github.com/GlitchEnzo/NuGetForUnity">NuGetForUnity</a></td>
+<td>Unity 6.6과 호환되는 버전</td>
+<td>핵심 <code>ZLinq</code> 패키지 설치에 필수</td>
+</tr>
+</tbody>
+</table>
+<h2 id="zlinq는-두-패키지가-필요합니다">ZLinq는 두 패키지가 필요합니다</h2>
+<p>Unity에서 ZLinq를 사용하려면 핵심 라이브러리와 Unity 연동 패키지를 모두 설치해야 합니다.</p>
+<ol>
+<li>NuGetForUnity가 제공하는 <strong>Window &gt; NuGet &gt; Manage NuGet Packages</strong>에서 <code>ZLinq</code>를 검색해 설치합니다.</li>
+<li>Unity Package Manager에서 다음 Git URL로 <code>ZLinq.Unity</code>를 설치합니다.</li>
+</ol>
+<pre><code class="lang-text">https://github.com/Cysharp/ZLinq.git?path=src/ZLinq.Unity/Assets/ZLinq.Unity
+</code></pre>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p><code>ZLinq.Unity</code>만 설치해서는 부족합니다. NuGetForUnity를 통해 핵심 <code>ZLinq</code> 어셈블리가 <code>Assets/Packages</code>에 설치되어 있어야 합니다.</p>
+</div>
+<p>LitMotion은 Unity Package Manager에서 별도로 설치합니다.</p>
+<pre><code class="lang-text">https://github.com/annulusgames/LitMotion.git?path=src/LitMotion/Assets/LitMotion
+</code></pre>
+<p>LitMotion, 핵심 ZLinq, <code>ZLinq.Unity</code> 중 하나라도 없으면 Runtime 또는 Editor 어셈블리가 컴파일되지 않습니다.</p>
+<h2 id="graph-toolkit-사용">Graph Toolkit 사용</h2>
+<p>UITK Navigation은 <code>.uinavgraph</code>를 편집하는 내부 도구로 Graph Toolkit을 사용합니다. 그래프를 저장하면 Scripted Importer가 편집용 그래프를 검증하고 런타임용 <code>UINavigationAsset</code>으로 컴파일합니다. 편집은 Graph Toolkit에서 하지만 런타임은 컴파일된 에셋을 읽습니다.</p>
+<p>Graph Toolkit <code>0.5.0-exp.1</code>은 UITK Navigation에 선언되어 보통 자동으로 설치됩니다. Unity 6.6 API에 맞춘 실험 패키지이므로 다른 Unity 버전은 지원하지 않습니다.</p>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+              <div>
+                  이 에셋과 문서는 Unity Technologies와 관련이 없으며, 사용으로 인해 발생하는 법적 문제에 대해서는 제작자가 책임지지 않습니다.
+              </div>
+              <div>
+                  <span class="pull-right"><a href="#top">Back to top</a></span>
+
+                  <span>이 문서는 <strong>DocFX</strong>를 통해 생성되었습니다.</span>
+              </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../styles/docs-switcher.js"></script>
+  </body>
+</html>

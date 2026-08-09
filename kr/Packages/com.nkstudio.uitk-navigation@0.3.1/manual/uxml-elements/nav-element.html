@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <script type="text/javascript">
+        thisPackageMetaData = {name: "com.nkstudio.uitk-navigation", version: "0.3.1", displayTitle: "UITK Navigation 0.3.1", lang: "kr"};
+    </script>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>NavElement | UITK Navigation </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="NavElement | UITK Navigation ">
+    
+      <link rel="shortcut icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../../styles/docfx.css">
+      <link rel="stylesheet" href="../../styles/main.css">
+      <link rel="stylesheet" href="../../styles/language-switcher.css">
+      <link rel="stylesheet" href="../../styles/version-switcher.css">
+      <meta property="docfx:navrel" content="../../toc.html">
+      <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../../manual/index.html">
+                <img id="logo" class="svg" src="../../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+            <div class="container hide-when-search" id="breadcrumb">
+                <!-- Unity Customization: Remove content of breadcrumb bar. This space is used for version and language switchers
+                            <ul class="breadcrumb">
+                              <li></li>
+                            </ul>
+                            -->
+            </div>
+        </div>      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+        <div id="unity_breadcrumb_placeholder">
+            <ul class="breadcrumb">
+            <li></li>
+            </ul>
+        </div>
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="navelement">NavElement</h1>
+
+<p><code>NavElement</code>는 View 주소를 등록하고 가시성 수명 주기를 관리하는 <code>VisualElement</code>입니다. Navigation Graph의 Show/Hide 명령은 런타임 <code>UIViewRegistry</code>에서 이 주소를 찾습니다.</p>
+<pre><code class="lang-xml">&lt;nav:NavElement name=&quot;main&quot;
+                view-category=&quot;Menu&quot; view-key=&quot;Main&quot;
+                hide-on-back=&quot;false&quot; block-back=&quot;false&quot;
+                follow-parent=&quot;true&quot;&gt;
+    &lt;startup&gt;
+        &lt;nav:UIViewStartupSettings on-start=&quot;InstantShow&quot;
+            hide-mode=&quot;Display&quot;
+            use-custom-start-position=&quot;false&quot;
+            auto-hide-after-show=&quot;false&quot;
+            auto-hide-delay=&quot;3&quot; /&gt;
+    &lt;/startup&gt;
+&lt;/nav:NavElement&gt;
+</code></pre>
+<h2 id="속성">속성</h2>
+<table>
+<thead>
+<tr>
+<th>속성</th>
+<th>기본값</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>view-category</code></td>
+<td><code>Default</code></td>
+<td>View Catalog Category</td>
+</tr>
+<tr>
+<td><code>view-key</code></td>
+<td>빈 문자열</td>
+<td>선택한 Category 안의 Key</td>
+</tr>
+<tr>
+<td><code>hide-on-back</code></td>
+<td><code>false</code></td>
+<td>Back 처리 우선순위가 가장 높을 때 표시 중인 View Hide</td>
+</tr>
+<tr>
+<td><code>block-back</code></td>
+<td><code>false</code></td>
+<td>View를 유지하고 Back만 소비</td>
+</tr>
+<tr>
+<td><code>follow-parent</code></td>
+<td><code>true</code></td>
+<td>바깥쪽 <code>NavElement</code>의 가시성을 따름</td>
+</tr>
+</tbody>
+</table>
+<p>Category와 Key에는 모두 문자가 있어야 합니다. 비교는 Ordinal 방식으로 대소문자를 구분합니다. Player Context Panel에 연결되어 있는 동안만 View가 등록되고 Panel에서 분리되면 해제됩니다.</p>
+<h2 id="startup-설정">Startup 설정</h2>
+<table>
+<thead>
+<tr>
+<th>On Start</th>
+<th>초기 동작</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Disabled</td>
+<td>현재 해석된 <code>display</code> 상태 사용</td>
+</tr>
+<tr>
+<td>Instant Hide</td>
+<td>애니메이션 없이 숨김</td>
+</tr>
+<tr>
+<td>Instant Show</td>
+<td>애니메이션 없이 표시</td>
+</tr>
+<tr>
+<td>Animation Hide</td>
+<td>표시 상태에서 Hide 재생</td>
+</tr>
+<tr>
+<td>Animation Show</td>
+<td>숨김 상태에서 Show 재생</td>
+</tr>
+</tbody>
+</table>
+<p>중첩된 <code>UIViewStartupSettings</code> Object는 다음 속성을 사용합니다.</p>
+<table>
+<thead>
+<tr>
+<th>속성</th>
+<th>기본값</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>on-start</code></td>
+<td><code>Disabled</code></td>
+<td>위 표의 초기 동작</td>
+</tr>
+<tr>
+<td><code>hide-mode</code></td>
+<td><code>Display</code></td>
+<td>숨긴 View를 Layout에 남길지 결정</td>
+</tr>
+<tr>
+<td><code>use-custom-start-position</code></td>
+<td><code>true</code></td>
+<td>Move 준비 전에 Pixel 시작 위치 적용</td>
+</tr>
+<tr>
+<td><code>custom-start-position</code></td>
+<td><code>(0, 0, 0)</code></td>
+<td>Custom Start Position을 켰을 때 사용할 Translation</td>
+</tr>
+<tr>
+<td><code>auto-hide-after-show</code></td>
+<td><code>false</code></td>
+<td>Show 완료 뒤 Hide 예약</td>
+</tr>
+<tr>
+<td><code>auto-hide-delay</code></td>
+<td><code>3</code></td>
+<td>Auto Hide까지 기다릴 Unscaled Time(초)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>When Hidden</strong>은 <code>Display</code>(<code>display: none</code>, Layout에서 제거)와 <code>Visibility</code>(<code>visibility: hidden</code>, Layout 유지) 중 하나를 선택합니다. Custom Start Position은 Move 값을 준비하기 전에 Pixel <code>translate</code>를 적용합니다. <strong>Auto Hide after Show</strong>는 Show가 완료된 후에만 Unscaled Timer를 시작합니다.</p>
+<p>Show/Hide Preset과 수동 Channel은 <a href="../Animation.html">전환 애니메이션</a>을 참고하세요.</p>
+<h2 id="중첩-view와-back">중첩 View와 Back</h2>
+<p><code>follow-parent=&quot;true&quot;</code>인 중첩 <code>NavElement</code>는 가장 가까운 부모 View와 함께 Show/Hide됩니다. 부모는 자식의 전환이 안정될 때까지 기다린 후 완료를 보고합니다. 독립 Overlay라면 <code>false</code>로 설정하세요.</p>
+<p><code>hide-on-back</code>과 <code>block-back</code>은 Graph History보다 먼저 처리됩니다. 의도한 동작만 활성화하세요. 표시 중인 View가 Back을 소비하면 활성 UI 노드의 <strong>Use Back</strong>으로 전달되지 않습니다.</p>
+<h2 id="runtime-api">Runtime API</h2>
+<pre><code class="lang-csharp">NavElement view = root.Q&lt;NavElement&gt;(&quot;main&quot;);
+
+view.Show();        // 설정된 Show 전환
+view.Hide();        // 설정된 Hide 전환
+view.InstantShow();
+view.InstantHide();
+
+Debug.Log($&quot;{view.Id}: {view.IsVisible}&quot;);
+</code></pre>
+<p><code>Visibility</code>로 내부 <code>UIViewVisibility</code>의 State Event, Scheduler, 선택적인 재사용 <code>UIAnimationPreset</code>에 접근할 수 있습니다. <code>RestoreStartState()</code>는 Startup 상태를 다시 적용하고, Layout이 변경된 후 <code>InvalidateAnimationStartValues()</code>로 Move 기준을 다시 캡처할 수 있습니다.</p>
+<p>여러 <code>NavElement</code>가 같은 <code>UIKey</code>를 등록하면 Graph 명령은 의도적으로 모두에게 전파됩니다. 각 요소를 독립적으로 제어하려면 서로 다른 View Key를 사용하세요.</p>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+              <div>
+                  이 에셋과 문서는 Unity Technologies와 관련이 없으며, 사용으로 인해 발생하는 법적 문제에 대해서는 제작자가 책임지지 않습니다.
+              </div>
+              <div>
+                  <span class="pull-right"><a href="#top">Back to top</a></span>
+
+                  <span>이 문서는 <strong>DocFX</strong>를 통해 생성되었습니다.</span>
+              </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+    <script type="text/javascript" src="../../styles/docs-switcher.js"></script>
+  </body>
+</html>

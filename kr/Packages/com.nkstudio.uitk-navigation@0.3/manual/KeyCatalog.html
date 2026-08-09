@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <script type="text/javascript">
+        thisPackageMetaData = {name: "com.nkstudio.uitk-navigation", version: "0.3.1", displayTitle: "UITK Navigation 0.3.1", lang: "kr"};
+    </script>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>키 카탈로그 | UITK Navigation </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="키 카탈로그 | UITK Navigation ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <link rel="stylesheet" href="../styles/language-switcher.css">
+      <link rel="stylesheet" href="../styles/version-switcher.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../manual/index.html">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+            <div class="container hide-when-search" id="breadcrumb">
+                <!-- Unity Customization: Remove content of breadcrumb bar. This space is used for version and language switchers
+                            <ul class="breadcrumb">
+                              <li></li>
+                            </ul>
+                            -->
+            </div>
+        </div>      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+        <div id="unity_breadcrumb_placeholder">
+            <ul class="breadcrumb">
+            <li></li>
+            </ul>
+        </div>
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="키-카탈로그">키 카탈로그</h1>
+
+<p><strong>Tools &gt; UI Navigation &gt; Key Catalog</strong>에서 UXML, Navigation Graph, 런타임 Signal이 함께 사용하는 주소를 관리합니다. 카탈로그는 참조를 일관되게 유지하는 저작 도구이며, View를 생성하거나 직접 화면을 전환하지는 않습니다.</p>
+<p><img src="../images/key-catalog.png" alt="keycatalog"></p>
+<h2 id="주소-규칙">주소 규칙</h2>
+<p>모든 주소는 <code>Category / Key</code> 쌍입니다. 앞뒤 공백은 제거되며 대소문자를 구분합니다. 예를 들어 <code>Demo / Home</code>과 <code>demo / Home</code>은 서로 다른 주소입니다.</p>
+<p>주소는 용도에 따라 세 탭으로 분리됩니다.</p>
+<table>
+<thead>
+<tr>
+<th>탭</th>
+<th>이 탭에 등록하는 사용처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>View</strong></td>
+<td><code>NavElement</code>, UI 노드의 Show/Hide 명령, <strong>UI View</strong> 출력</td>
+</tr>
+<tr>
+<td><strong>Button</strong></td>
+<td><code>NavButton</code>, <code>NavToggle</code>, <strong>UI Button</strong> 및 <strong>Toggle</strong> 출력, 같은 종류의 Portal 조건</td>
+</tr>
+<tr>
+<td><strong>Signal</strong></td>
+<td><code>UINavigationEvents.RequestSignal</code>, <strong>Signal</strong> 출력, 같은 종류의 Portal 조건</td>
+</tr>
+</tbody>
+</table>
+<div class="NOTE">
+<h5>Note</h5>
+<p><code>NavButton</code>의 UXML 속성 이름은 <code>signal-category</code>, <code>signal-key</code>이지만 Button Signal을 발생시키므로 주소는 <strong>Button</strong> 탭에 등록합니다.</p>
+</div>
+<h2 id="주소-생성과-연결">주소 생성과 연결</h2>
+<ol>
+<li><strong>View</strong>, <strong>Button</strong>, <strong>Signal</strong> 중 알맞은 탭을 선택합니다.</li>
+<li>Category를 추가한 뒤 그 안에 Key를 하나 이상 추가합니다.</li>
+<li>UI Builder 또는 Navigation Graph Inspector의 선택기에서 해당 주소를 선택합니다.</li>
+</ol>
+<p><a href="GettingStart.html">시작하기</a> 예제에서는 연결 전에 다음 주소를 등록합니다.</p>
+<ul>
+<li><strong>View</strong>: <code>Demo / Home</code>, <code>Demo / Settings</code></li>
+<li><strong>Button</strong>: <code>Demo / OpenSettings</code></li>
+</ul>
+<p>먼저 등록해 두면 UXML과 Graph에서 자유 입력으로 인해 철자가 달라지는 문제를 예방할 수 있습니다.</p>
+<h2 id="scan-project와-refresh-usage">Scan Project와 Refresh Usage</h2>
+<p><strong>Scan Project</strong>는 프로젝트의 모든 UXML <code>VisualTreeAsset</code>과 <code>.uinavgraph</code>를 검사합니다. <code>NavElement</code>, <code>NavButton</code>, <code>NavToggle</code>, UI 노드의 View 명령과 출력, Portal 조건에서 사용 중인 주소를 찾아 올바른 탭에 누락 항목을 추가합니다.</p>
+<p><strong>Refresh Usage</strong>는 같은 지원 자산을 다시 검사해 카탈로그를 변경하지 않고 사용 횟수만 갱신합니다. Key를 선택하면 각 참조의 자산 경로와 사용 문맥을 확인할 수 있습니다.</p>
+<p>프로젝트 스캔은 C# 문자열 리터럴, 사용자 정의 직렬화 필드, 애플리케이션 전용 주소 형식을 분석하지 않습니다. 코드에서만 사용하는 주소는 직접 등록하세요.</p>
+<h2 id="안전하게-이름-변경-및-삭제">안전하게 이름 변경 및 삭제</h2>
+<p>Category 또는 Key의 이름을 바꾸면 적용 전에 영향을 받는 UXML과 Graph 자산을 보여줍니다. 승인하면 카탈로그와 지원되는 참조를 함께 수정합니다. 수정 중 실패하면 변경된 원본 파일을 메모리 백업에서 복원합니다.</p>
+<p>삭제는 다르게 동작합니다. 카탈로그 항목만 제거하며 기존 UXML과 Graph 문자열은 남아 미등록 참조로 표시됩니다. 이후 <strong>Scan Project</strong>를 실행하면 다시 등록되므로, 기존 사용처까지 옮기려는 경우에는 삭제가 아니라 이름 변경을 사용하세요.</p>
+<h2 id="저장-위치와-버전-관리">저장 위치와 버전 관리</h2>
+<p>카탈로그는 <code>ProjectSettings/UITKNavigationKeyCatalog.asset</code>에 저장됩니다. 팀이 같은 주소 목록을 사용하도록 이를 참조하는 UXML 및 Graph 자산과 함께 커밋하세요. 이 파일은 Editor 전용 저작 자산이라 Player 빌드에는 포함되지 않으며, 런타임은 직렬화된 <code>Category / Key</code> 값으로 주소를 비교합니다.</p>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+              <div>
+                  이 에셋과 문서는 Unity Technologies와 관련이 없으며, 사용으로 인해 발생하는 법적 문제에 대해서는 제작자가 책임지지 않습니다.
+              </div>
+              <div>
+                  <span class="pull-right"><a href="#top">Back to top</a></span>
+
+                  <span>이 문서는 <strong>DocFX</strong>를 통해 생성되었습니다.</span>
+              </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../styles/docs-switcher.js"></script>
+  </body>
+</html>

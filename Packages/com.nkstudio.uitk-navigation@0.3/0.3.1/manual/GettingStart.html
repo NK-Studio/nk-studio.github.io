@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <script type="text/javascript">
+        thisPackageMetaData = {name: "com.nkstudio.uitk-navigation", version: "0.3.1", displayTitle: "UITK Navigation 0.3.1", lang: "en"};
+    </script>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Getting started | UITK Navigation </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Getting started | UITK Navigation ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <link rel="stylesheet" href="../styles/language-switcher.css">
+      <link rel="stylesheet" href="../styles/version-switcher.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../manual/index.html">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+            <div class="container hide-when-search" id="breadcrumb">
+                <!-- Unity Customization: Remove content of breadcrumb bar. This space is used for version and language switchers
+                            <ul class="breadcrumb">
+                              <li></li>
+                            </ul>
+                            -->
+            </div>
+        </div>      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+        <div id="unity_breadcrumb_placeholder">
+            <ul class="breadcrumb">
+            <li></li>
+            </ul>
+        </div>
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="getting-started">Getting started</h1>
+
+<p>This walkthrough builds a small Home → Settings flow. The important order is: create the UI, register its addresses, assign those addresses in UI Builder, connect the graph, and then enter Play Mode.</p>
+<h2 id="1-build-the-ui-hierarchy">1. Build the UI hierarchy</h2>
+<p>Open your UXML document in UI Builder and create two screen roots:</p>
+<ul>
+<li>Use a <code>NavElement</code> for the Home screen.</li>
+<li>Use another <code>NavElement</code> for the Settings screen.</li>
+<li>Place a <code>NavButton</code> labeled <strong>Settings</strong> inside Home.</li>
+</ul>
+<p>Use <code>NavButton</code>, not the standard UI Toolkit <code>Button</code>, for a control that should trigger a graph <strong>UI Button</strong> output. A regular <code>Button</code> does not publish a navigation address.</p>
+<p>The two <code>NavElement</code> screens can be siblings under the same panel root. <code>NavElement</code> uses absolute positioning by default, so the graph can show one and hide the other.</p>
+<h2 id="2-register-the-addresses-in-key-catalog">2. Register the addresses in Key Catalog</h2>
+<p>Open <strong>Tools &gt; UI Navigation &gt; Key Catalog</strong> and add these entries:</p>
+<table>
+<thead>
+<tr>
+<th>Catalog tab</th>
+<th>Category</th>
+<th>Key</th>
+<th>Used by</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>View</td>
+<td><code>Demo</code></td>
+<td><code>Home</code></td>
+<td>Home <code>NavElement</code> and graph View commands</td>
+</tr>
+<tr>
+<td>View</td>
+<td><code>Demo</code></td>
+<td><code>Settings</code></td>
+<td>Settings <code>NavElement</code> and graph View commands</td>
+</tr>
+<tr>
+<td>Button</td>
+<td><code>Demo</code></td>
+<td><code>OpenSettings</code></td>
+<td>Home <code>NavButton</code> and graph UI Button output</td>
+</tr>
+</tbody>
+</table>
+<p>The View and Button catalogs are separate. The same spelling in the wrong tab will not appear in the matching picker.</p>
+<h2 id="3-assign-the-catalog-entries-in-ui-builder">3. Assign the catalog entries in UI Builder</h2>
+<p>Select each element in UI Builder and use its catalog picker. Each picker writes both Category and Key:</p>
+<ol>
+<li>On Home, choose <code>Demo / Home</code> from the <strong>View</strong> picker.</li>
+<li>On Settings, choose <code>Demo / Settings</code> from the <strong>View</strong> picker.</li>
+<li>On the Home <code>NavButton</code>, choose <code>Demo / OpenSettings</code> from the <strong>Signal</strong> picker. This picker reads the Button catalog despite its label.</li>
+<li>Save the UXML document.</li>
+</ol>
+<p><img src="../images/connect-view.png" alt="bind-view"></p>
+<p>The resulting UXML is equivalent to:</p>
+<pre><code class="lang-xml">&lt;ui:UXML xmlns:ui=&quot;UnityEngine.UIElements&quot;
+         xmlns:nav=&quot;NKStudio.UITKNavigation.Elements&quot;&gt;
+    &lt;nav:NavElement name=&quot;home&quot;
+                    view-category=&quot;Demo&quot; view-key=&quot;Home&quot;&gt;
+        &lt;nav:NavButton name=&quot;open-settings&quot; text=&quot;Settings&quot;
+                       signal-category=&quot;Demo&quot; signal-key=&quot;OpenSettings&quot; /&gt;
+    &lt;/nav:NavElement&gt;
+
+    &lt;nav:NavElement name=&quot;settings&quot;
+                    view-category=&quot;Demo&quot; view-key=&quot;Settings&quot; /&gt;
+&lt;/ui:UXML&gt;
+</code></pre>
+<p>Although the UXML attribute is named <code>signal-key</code>, <code>NavButton</code> uses the <strong>Button</strong> catalog and must match a graph <strong>UI Button</strong> output. The separate <strong>Signal</strong> catalog is for signals raised from code with <code>UINavigationEvents.RequestSignal(...)</code>.</p>
+<h2 id="4-connect-the-navigation-graph">4. Connect the Navigation Graph</h2>
+<ol>
+<li>In the Project window, choose <strong>Assets &gt; Create &gt; UI Navigation &gt; UI Navigation Graph</strong>.</li>
+<li>Open the <code>.uinavgraph</code> asset. A new graph already contains <code>Start → Home</code>.</li>
+<li>Select the Home UI node. Under <strong>On Enter UI</strong>, Show <code>Demo/Home</code> and Hide <code>Demo/Settings</code>.</li>
+<li>Choose <strong>+ Add Output &gt; UIButton</strong> on Home, then select <code>Demo/OpenSettings</code> from the Button catalog. The created port is labeled <code>UI Button · Demo/OpenSettings</code>.</li>
+<li>Create a second UI node and name it <strong>Settings</strong>.</li>
+<li>Under Settings <strong>On Enter UI</strong>, Show <code>Demo/Settings</code> and Hide <code>Demo/Home</code>.</li>
+<li>Connect Home's <code>UI Button · Demo/OpenSettings</code> output to the Settings <strong>Enter</strong> port.</li>
+<li>Enable <strong>Use Back</strong> on Settings if Back should return to Home.</li>
+<li>Save the graph. Saving validates the Graph Toolkit model and recompiles the runtime asset.</li>
+</ol>
+<p><img src="../images/getting-started-graph.png" alt="Graph Toolkit Screen"></p>
+<h2 id="5-connect-the-runtime">5. Connect the runtime</h2>
+<ol>
+<li>Make sure the UXML is instantiated on a Player-context panel through <code>PanelRenderer</code>, <code>UIDocument</code>, or your panel integration.</li>
+<li>Add one <code>UINavigatorBehaviour</code> to an active GameObject.</li>
+<li>Assign the <code>.uinavgraph</code> asset to its <strong>Navigation Graph</strong> field.</li>
+<li>Optional: add <code>UIBackInputRouter</code> to enable Escape, Backspace, and mouse Back/Forward navigation.</li>
+</ol>
+<p>Only one <code>UINavigatorBehaviour</code> can be active. It does not need to be on the same GameObject as <code>PanelRenderer</code>, although keeping the UI components together is convenient.</p>
+<h2 id="6-play-the-flow">6. Play the flow</h2>
+<p>Enter Play Mode. Home appears first. Clicking <strong>Settings</strong> publishes <code>Demo/OpenSettings</code>, the active Home node matches its UI Button output, and the graph transitions to Settings. If Settings has <strong>Use Back</strong> enabled and a <code>UIBackInputRouter</code> is present, press Escape or the mouse Back button to return Home.</p>
+<div class="TIP">
+<h5>Tip</h5>
+<p>If a picker does not contain an address, reopen <strong>Tools &gt; UI Navigation &gt; Key Catalog</strong> and verify the selected View/Button tab. <strong>Scan Project</strong> can import valid addresses that already exist in UXML or graphs.</p>
+</div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+              <div>
+                  This asset and documentation are not affiliated with Unity Technologies, and the creator is not responsible for any legal issues arising from its use.
+              </div>
+              <div>
+                  <span class="pull-right"><a href="#top">Back to top</a></span>
+
+                  <span>This document was generated using <strong>DocFX</strong>.</span>
+              </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../styles/docs-switcher.js"></script>
+  </body>
+</html>

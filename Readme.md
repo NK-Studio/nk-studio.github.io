@@ -3,7 +3,7 @@
 [SnapToFloor](https://nk-studio.github.io/Packages/com.nkstudio.snap-to-floor@2.5.3/index.html)  
 [UDiscord](https://nk-studio.github.io/Packages/com.nkstudio.udiscordbot@1.0/index.html)  
 [UITK Effects](https://nk-studio.github.io/Packages/com.nkstudio.uitk-effects@1.0/index.html)  
-[UITK Navigation](https://nk-studio.github.io/Packages/com.nkstudio.uitk-navigation@0.2/index.html)  
+[UITK Navigation](https://nk-studio.github.io/Packages/com.nkstudio.uitk-navigation@0.4/index.html)  
 [Unity Table](https://nk-studio.github.io/Packages/com.nkstudio.unitytable@1.0/index.html)  
 [Nupy Star Calculate](https://nk-studio.github.io/NupyStarCalculate/index.html)  
 [WebtoonViewer25](https://nk-studio.github.io/WebToonViewer/index.html)  

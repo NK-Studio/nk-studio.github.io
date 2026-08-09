@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <script type="text/javascript">
+        thisPackageMetaData = {name: "com.nkstudio.uitk-navigation", version: "0.4.0", displayTitle: "UITK Navigation 0.4.0", lang: "en"};
+    </script>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Key Catalog | UITK Navigation </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Key Catalog | UITK Navigation ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <link rel="stylesheet" href="../styles/language-switcher.css">
+      <link rel="stylesheet" href="../styles/version-switcher.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../manual/index.html">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+            <div class="container hide-when-search" id="breadcrumb">
+                <!-- Unity Customization: Remove content of breadcrumb bar. This space is used for version and language switchers
+                            <ul class="breadcrumb">
+                              <li></li>
+                            </ul>
+                            -->
+            </div>
+        </div>      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+        <div id="unity_breadcrumb_placeholder">
+            <ul class="breadcrumb">
+            <li></li>
+            </ul>
+        </div>
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="key-catalog">Key Catalog</h1>
+
+<p>Open <strong>Tools &gt; UI Navigation &gt; Key Catalog</strong> to manage Database addresses shared by UXML, graphs, and code. The catalog is an Editor authoring registry; runtime matching uses serialized values.</p>
+<p><img src="../images/key-catalog.png" alt="Key Catalog"></p>
+<h2 id="catalogs">Catalogs</h2>
+<table>
+<thead>
+<tr>
+<th>Tab</th>
+<th>Used by</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>View</td>
+<td><code>NavElement</code>, UI Show/Hide commands, and UI View outputs</td>
+</tr>
+<tr>
+<td>Toggle</td>
+<td><code>NavToggle</code>, Toggle outputs, and Toggle Portal conditions</td>
+</tr>
+<tr>
+<td>Signal</td>
+<td><code>NavButton</code>, <code>Signal.Send(UIKey)</code>, Signal outputs, Send Signal, and Signal Portals</td>
+</tr>
+</tbody>
+</table>
+<p>Every Database address is a case-sensitive <code>Category / Key</code> pair. Leading and trailing whitespace is removed. Custom Signals are graph-local strings and are intentionally not registered in the catalog.</p>
+<h2 id="workflow">Workflow</h2>
+<ol>
+<li>Add a Category and Key in the correct tab.</li>
+<li>Assign it from a UI Builder or Graph Inspector picker.</li>
+<li>Use <strong>Scan Project</strong> to discover addresses in UXML and <code>.uinavgraph</code> assets.</li>
+<li>Use <strong>Refresh Usage</strong> to update reference counts without modifying the catalog.</li>
+</ol>
+<p>Scanning does not parse arbitrary C# strings. Register code-only Database addresses manually. Rename previews and updates supported UXML and graph references together; deleting only removes the catalog entry and leaves serialized usages intact.</p>
+<p>The catalog is stored at <code>ProjectSettings/UITKNavigationKeyCatalog.asset</code>. Commit it with the assets that use it. It is not included in player builds.</p>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+              <div>
+                  This asset and documentation are not affiliated with Unity Technologies, and the creator is not responsible for any legal issues arising from its use.
+              </div>
+              <div>
+                  <span class="pull-right"><a href="#top">Back to top</a></span>
+
+                  <span>This document was generated using <strong>DocFX</strong>.</span>
+              </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../styles/docs-switcher.js"></script>
+  </body>
+</html>

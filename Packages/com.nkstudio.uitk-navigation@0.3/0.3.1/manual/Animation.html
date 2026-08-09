@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <script type="text/javascript">
+        thisPackageMetaData = {name: "com.nkstudio.uitk-navigation", version: "0.3.1", displayTitle: "UITK Navigation 0.3.1", lang: "en"};
+    </script>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Transition animation | UITK Navigation </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Transition animation | UITK Navigation ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <link rel="stylesheet" href="../styles/language-switcher.css">
+      <link rel="stylesheet" href="../styles/version-switcher.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../manual/index.html">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+            <div class="container hide-when-search" id="breadcrumb">
+                <!-- Unity Customization: Remove content of breadcrumb bar. This space is used for version and language switchers
+                            <ul class="breadcrumb">
+                              <li></li>
+                            </ul>
+                            -->
+            </div>
+        </div>      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+        <div id="unity_breadcrumb_placeholder">
+            <ul class="breadcrumb">
+            <li></li>
+            </ul>
+        </div>
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="transition-animation">Transition animation</h1>
+
+<p><code>NavElement</code> has independent Show and Hide transitions. Each transition can combine Move, Rotate, Scale, and Fade channels, driven by LitMotion on a real-time scheduler by default.</p>
+<p>Popups use the same transition system but configure their Backdrop and Content as separate layers.</p>
+<h2 id="start-with-a-preset">Start with a preset</h2>
+<p>In the UI Builder Inspector:</p>
+<ol>
+<li>Select the <code>NavElement</code> and open <strong>Transitions</strong>.</li>
+<li>Choose the <strong>Show</strong> or <strong>Hide</strong> tab.</li>
+<li>Select a <strong>Preset</strong> category and <strong>Variant</strong>.</li>
+<li>Click <strong>Apply</strong>.</li>
+<li>Open the Move, Rotate, Scale, and Fade cards to tune the copied values.</li>
+<li>Use the Play icon to preview the selected tab and Reset to restore the element's <strong>On Start</strong> state.</li>
+</ol>
+<p><img src="../images/preset-transition.png" alt="preset-transition.png"></p>
+<p>Apply bakes the chosen preset into the current channel values. After the preset block loses focus, its category returns to <code>None</code> while the copied channel configuration remains. This makes a preset a starting point rather than a locked style.</p>
+<p>In hand-authored raw UXML, <code>preset-category</code> and the one-based <code>preset-variant</code> can also remain as runtime settings. Any manually enabled channel overrides the corresponding channel built by that preset. An out-of-range Variant is ignored.</p>
+<h2 id="built-in-preset-library">Built-in preset library</h2>
+<p>The package contains 21 categories and 351 variants. Every variant includes separate Show and Hide definitions.</p>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th style="text-align: right;">Variants</th>
+<th>Category</th>
+<th style="text-align: right;">Variants</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Back</td>
+<td style="text-align: right;">8</td>
+<td>Basic1</td>
+<td style="text-align: right;">25</td>
+</tr>
+<tr>
+<td>Basic2</td>
+<td style="text-align: right;">25</td>
+<td>Bounce</td>
+<td style="text-align: right;">15</td>
+</tr>
+<tr>
+<td>Default</td>
+<td style="text-align: right;">1</td>
+<td>Discrete</td>
+<td style="text-align: right;">20</td>
+</tr>
+<tr>
+<td>Drift</td>
+<td style="text-align: right;">10</td>
+<td>Drop</td>
+<td style="text-align: right;">15</td>
+</tr>
+<tr>
+<td>Fade</td>
+<td style="text-align: right;">25</td>
+<td>Flip</td>
+<td style="text-align: right;">10</td>
+</tr>
+<tr>
+<td>Ghost</td>
+<td style="text-align: right;">10</td>
+<td>Gradual</td>
+<td style="text-align: right;">12</td>
+</tr>
+<tr>
+<td>Jelly</td>
+<td style="text-align: right;">10</td>
+<td>Organic1</td>
+<td style="text-align: right;">25</td>
+</tr>
+<tr>
+<td>Organic2</td>
+<td style="text-align: right;">25</td>
+<td>Rotate</td>
+<td style="text-align: right;">25</td>
+</tr>
+<tr>
+<td>Shake</td>
+<td style="text-align: right;">10</td>
+<td>Slide1</td>
+<td style="text-align: right;">25</td>
+</tr>
+<tr>
+<td>Slide2</td>
+<td style="text-align: right;">25</td>
+<td>Spin</td>
+<td style="text-align: right;">10</td>
+</tr>
+<tr>
+<td>Zoom</td>
+<td style="text-align: right;">20</td>
+<td></td>
+<td style="text-align: right;"></td>
+</tr>
+</tbody>
+</table>
+<p>Choose <code>None</code> when you want to build the transition entirely from manual channels. Preset variant numbers start at 1.</p>
+<h2 id="animation-channels">Animation channels</h2>
+<table>
+<thead>
+<tr>
+<th>Channel</th>
+<th>UI Toolkit style</th>
+<th>Main values</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Move</td>
+<td><code>translate</code></td>
+<td>From/To reference, direction or custom pixel position, offset</td>
+</tr>
+<tr>
+<td>Rotate</td>
+<td><code>rotate</code></td>
+<td>From/To Z-axis angle and offset</td>
+</tr>
+<tr>
+<td>Scale</td>
+<td><code>scale</code></td>
+<td>From/To <code>Vector2</code> scale and offset</td>
+</tr>
+<tr>
+<td>Fade</td>
+<td><code>opacity</code></td>
+<td>From/To opacity and offset</td>
+</tr>
+</tbody>
+</table>
+<p>Move provides edge and anchor directions such as Left, Top, BottomRight, and MiddleCenter, plus Custom Position. Direction distances are calculated from the parent content rectangle and the transformed bounds of the element.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>UI Toolkit rotation is 2D. Only the Z axis is applied; Y-axis rotation from a source preset is not available.</p>
+</div>
+<h3 id="reference-values">Reference values</h3>
+<p>Each From and To side chooses a reference:</p>
+<table>
+<thead>
+<tr>
+<th>Reference</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Start Value</td>
+<td>The channel's captured rest/start value</td>
+</tr>
+<tr>
+<td>Current Value</td>
+<td>The resolved style when the transition is prepared</td>
+</tr>
+<tr>
+<td>Custom Value</td>
+<td>An explicitly entered value</td>
+</tr>
+</tbody>
+</table>
+<p>Offset is added to the resolved reference. Keep the final resting layout in UXML or USS: transform styles applied by the animator are cleared after completion.</p>
+<h2 id="timing-and-playback">Timing and playback</h2>
+<p>Every enabled channel has its own settings:</p>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Delay</td>
+<td>Wait before this channel begins; must be zero or greater</td>
+</tr>
+<tr>
+<td>Duration</td>
+<td>Length of one cycle; default <code>0.3</code> seconds</td>
+</tr>
+<tr>
+<td>Ease</td>
+<td>LitMotion Ease value, or a custom Animation Curve</td>
+</tr>
+<tr>
+<td>Play Mode</td>
+<td>Normal, Ping Pong, Spring, or Shake</td>
+</tr>
+<tr>
+<td>Loops</td>
+<td>Additional cycles: <code>0</code> plays once, <code>1</code> plays twice, <code>-1</code> repeats forever</td>
+</tr>
+</tbody>
+</table>
+<p><img src="../images/loop.png" alt="loopImage"></p>
+<p>All enabled channels run in parallel. The longest finite channel determines when Show or Hide finishes. Infinite loops are forced to Ping Pong and never report completion.</p>
+<div class="CAUTION">
+<h5>Caution</h5>
+<p>Do not use <code>Loops = -1</code> on a transition whose lifecycle must finish. Infinite Show prevents <code>ShowFinished</code> and Auto Hide; infinite Hide prevents the View from closing and can leave a popup <code>Completion</code> task pending.</p>
+</div>
+<p>The default scheduler is <code>MotionScheduler.UpdateRealtime</code>. Animations and graph Time Delay outputs therefore continue while <code>Time.timeScale</code> is <code>0</code>.</p>
+<h2 id="interruption-and-reversal">Interruption and reversal</h2>
+<p><code>UIViewVisibility</code> tracks <code>NotVisible</code>, <code>Showing</code>, <code>Visible</code>, and <code>Hiding</code>, plus continuous progress. When Hide is requested during Show, or Show during Hide, the opposite transition starts at mirrored progress instead of restarting from its beginning. This keeps rapid navigation responsive.</p>
+<p>While LitMotion is active, the animator temporarily suppresses the element's USS <code>transition-duration</code> and restores it afterward, preventing two animation systems from fighting over the same styles.</p>
+<h2 id="hide-mode">Hide mode</h2>
+<table>
+<thead>
+<tr>
+<th>When Hidden</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Display</td>
+<td>Applies <code>display: none</code>; removes the View from layout</td>
+</tr>
+<tr>
+<td>Visibility</td>
+<td>Keeps <code>display: flex</code> and applies <code>visibility: hidden</code>; preserves layout</td>
+</tr>
+</tbody>
+</table>
+<p>Both modes ignore picking while hidden. Move, Rotate, and Scale automatically request <code>UsageHints.DynamicTransform</code>; Fade requests <code>UsageHints.DynamicColor</code>.</p>
+<h2 id="animation-ownership-in-031">Animation ownership in 0.3.1</h2>
+<p><code>UIViewVisibility</code> owns its Show and Hide <code>UIAnimation</code> settings directly. The legacy <code>UIAnimationPreset</code> ScriptableObject and <code>UIViewVisibility.Preset</code> property were removed in 0.3.1. Configure reusable Category/Variant values through UXML templates or copy the animation settings in Editor tooling.</p>
+<!-- IMAGE NEEDED: Inspector showing preset Category/Variant and Move/Fade channel settings. Suggested filename: transition-inspector.png -->
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+              <div>
+                  This asset and documentation are not affiliated with Unity Technologies, and the creator is not responsible for any legal issues arising from its use.
+              </div>
+              <div>
+                  <span class="pull-right"><a href="#top">Back to top</a></span>
+
+                  <span>This document was generated using <strong>DocFX</strong>.</span>
+              </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../styles/docs-switcher.js"></script>
+  </body>
+</html>

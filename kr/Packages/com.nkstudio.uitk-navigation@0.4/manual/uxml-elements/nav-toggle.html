@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <script type="text/javascript">
+        thisPackageMetaData = {name: "com.nkstudio.uitk-navigation", version: "0.4.0", displayTitle: "UITK Navigation 0.4.0", lang: "kr"};
+    </script>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>NavToggle | UITK Navigation </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="NavToggle | UITK Navigation ">
+    
+      <link rel="shortcut icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../../styles/docfx.css">
+      <link rel="stylesheet" href="../../styles/main.css">
+      <link rel="stylesheet" href="../../styles/language-switcher.css">
+      <link rel="stylesheet" href="../../styles/version-switcher.css">
+      <meta property="docfx:navrel" content="../../toc.html">
+      <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../../manual/index.html">
+                <img id="logo" class="svg" src="../../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+            <div class="container hide-when-search" id="breadcrumb">
+                <!-- Unity Customization: Remove content of breadcrumb bar. This space is used for version and language switchers
+                            <ul class="breadcrumb">
+                              <li></li>
+                            </ul>
+                            -->
+            </div>
+        </div>      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+        <div id="unity_breadcrumb_placeholder">
+            <ul class="breadcrumb">
+            <li></li>
+            </ul>
+        </div>
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="navtoggle">NavToggle</h1>
+
+<p><code>NavToggle</code>은 UI Toolkit <code>Toggle</code>을 확장합니다. 값이 바뀔 때마다 Toggle 주소와 새 <code>bool</code> 값을 전달합니다.</p>
+<pre><code class="lang-xml">&lt;nav:NavToggle name=&quot;music&quot;
+               label=&quot;Music&quot;
+               value=&quot;true&quot;
+               toggle-category=&quot;Settings&quot;
+               toggle-key=&quot;Music&quot; /&gt;
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>속성</th>
+<th>기본값</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>toggle-category</code></td>
+<td><code>Default</code></td>
+<td>Toggle Catalog Category</td>
+</tr>
+<tr>
+<td><code>toggle-key</code></td>
+<td>빈 문자열</td>
+<td>Category 안의 Toggle Key</td>
+</tr>
+</tbody>
+</table>
+<p>Public <code>Toggle</code> 프로퍼티는 결합된 <code>UIKey</code>를 반환합니다. Category 또는 Key가 비어 있으면 값이 변경될 때 <code>[NavToggle]</code> 경고를 남기고 Event를 보내지 않습니다.</p>
+<h2 id="graph에-연결">Graph에 연결</h2>
+<ol>
+<li>Key Catalog의 <strong>Button</strong> 탭에 주소를 등록합니다. 별도의 Toggle Catalog는 없습니다.</li>
+<li>UI Builder에서 <code>NavToggle</code>에 주소를 할당합니다.</li>
+<li>활성 UI 노드에서 <strong>+ Add Output &gt; UIToggle</strong>을 선택해 하나 이상의 <strong>Toggle</strong> 포트를 만듭니다.</li>
+<li>같은 주소와 조건을 선택합니다.</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>조건</th>
+<th>매칭 값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>On</td>
+<td><code>true</code>만</td>
+</tr>
+<tr>
+<td>Off</td>
+<td><code>false</code>만</td>
+</tr>
+<tr>
+<td>Any</td>
+<td>모두</td>
+</tr>
+</tbody>
+</table>
+<p>같은 주소에서 Any를 On 또는 Off와 함께 사용하거나 같은 조건을 반복하지 마세요. 그래프 Compiler는 겹치는 경로를 오류로 처리합니다.</p>
+<p>애플리케이션 코드에서 같은 Event를 보내려면 다음을 호출합니다.</p>
+<pre><code class="lang-csharp">UINavigationEvents.RequestToggle(&quot;Settings&quot;, &quot;Music&quot;, enabled);
+</code></pre>
+<p><code>NavToggle</code>은 기본 Toggle API, Binding, USS Styling을 유지하며 패키지는 <code>ui-navigation-toggle</code> USS Class를 추가합니다.</p>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+              <div>
+                  이 에셋과 문서는 Unity Technologies와 관련이 없으며, 사용으로 인해 발생하는 법적 문제에 대해서는 제작자가 책임지지 않습니다.
+              </div>
+              <div>
+                  <span class="pull-right"><a href="#top">Back to top</a></span>
+
+                  <span>이 문서는 <strong>DocFX</strong>를 통해 생성되었습니다.</span>
+              </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+    <script type="text/javascript" src="../../styles/docs-switcher.js"></script>
+  </body>
+</html>

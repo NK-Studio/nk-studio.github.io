@@ -1,0 +1,26 @@
+{
+  "layout": "auto",
+  "packageName": "com.nkstudio.uitk-navigation",
+  "displayName": "UITK Navigation",
+  "languages": [
+    { "id": "en", "label": "English" },
+    { "id": "kr", "label": "한국어" }
+  ],
+  "versions": [
+    {
+      "docsVersion": "0.4.0",
+      "hostedVersion": "0.4",
+      "unityVersion": "6000.6"
+    },
+    {
+      "docsVersion": "0.3.1",
+      "hostedVersion": "0.3",
+      "unityVersion": "6000.6"
+    },
+    {
+      "docsVersion": "0.2.0",
+      "hostedVersion": "0.2",
+      "unityVersion": "6000.6"
+    }
+  ]
+}

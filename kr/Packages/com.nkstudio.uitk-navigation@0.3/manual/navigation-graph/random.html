@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <script type="text/javascript">
+        thisPackageMetaData = {name: "com.nkstudio.uitk-navigation", version: "0.3.1", displayTitle: "UITK Navigation 0.3.1", lang: "kr"};
+    </script>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Random 노드 | UITK Navigation </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Random 노드 | UITK Navigation ">
+    
+      <link rel="shortcut icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../../styles/docfx.css">
+      <link rel="stylesheet" href="../../styles/main.css">
+      <link rel="stylesheet" href="../../styles/language-switcher.css">
+      <link rel="stylesheet" href="../../styles/version-switcher.css">
+      <meta property="docfx:navrel" content="../../toc.html">
+      <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../../manual/index.html">
+                <img id="logo" class="svg" src="../../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+            <div class="container hide-when-search" id="breadcrumb">
+                <!-- Unity Customization: Remove content of breadcrumb bar. This space is used for version and language switchers
+                            <ul class="breadcrumb">
+                              <li></li>
+                            </ul>
+                            -->
+            </div>
+        </div>      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+        <div id="unity_breadcrumb_placeholder">
+            <ul class="breadcrumb">
+            <li></li>
+            </ul>
+        </div>
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="random-노드">Random 노드</h1>
+
+<p>Random은 진입 후 다음 Service Tick에서 상대 Weight에 따라 연결된 출력 중 하나를 선택하는 임시 경로 Screen입니다. Random 자체는 View를 Show하거나 Hide하지 않습니다.</p>
+<h2 id="출력-구성">출력 구성</h2>
+<p><strong>Random Outputs</strong>에 항목을 추가하고 0 이상의 유한한 <strong>Weight</strong>를 입력한 뒤, 각 출력을 하나의 UI 또는 Action Chain에 연결합니다. 포트 옆의 확률은 연결된 출력만으로 계산합니다.</p>
+<p>예를 들어 Weight <code>1</code>, <code>1</code>, <code>2</code>는 약 25%, 25%, 50%입니다. <code>10</code>, <code>10</code>, <code>20</code>도 같은 비율을 만듭니다.</p>
+<p>그래프 검증 조건은 다음과 같습니다.</p>
+<ul>
+<li>연결된 출력이 하나 이상이어야 합니다.</li>
+<li>연결된 출력마다 대상은 하나여야 합니다.</li>
+<li>모든 Weight는 0 이상의 유한한 값이어야 합니다.</li>
+<li>연결된 Weight의 합은 0보다 커야 합니다.</li>
+</ul>
+<p>연결되지 않은 출력은 0%로 표시되고 런타임 선택에서 제외됩니다.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>0.2.0에서는 Random Inspector에 상속받은 <strong>Node Description</strong>과 <strong>Clear History</strong> 필드가 표시되지만 Compiler가 이를 Random Runtime Node로 복사하지 않습니다. 특히 Random의 Clear History는 런타임에 영향을 주지 않습니다.</p>
+</div>
+<h2 id="런타임-동작">런타임 동작</h2>
+<p>Random에 진입하면 다음 Update의 <code>UINavigationService.Tick()</code>에서 분기를 선택합니다. Action Chain이 다른 Screen에 도달하면 일반 Push로 전환하고, Terminal Action으로 끝나면 Action만 실행합니다. 선택된 분기에서 Time Scale, Log, Scene 관리도 실행하려면 Random과 대상 사이에 Action 노드를 두세요.</p>
+<p>Random은 전리품 화면, 순환 팁, A/B Flow처럼 확률을 애플리케이션 코드가 아니라 Graph에서 관리해야 하는 경로에 사용할 수 있습니다.</p>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+              <div>
+                  이 에셋과 문서는 Unity Technologies와 관련이 없으며, 사용으로 인해 발생하는 법적 문제에 대해서는 제작자가 책임지지 않습니다.
+              </div>
+              <div>
+                  <span class="pull-right"><a href="#top">Back to top</a></span>
+
+                  <span>이 문서는 <strong>DocFX</strong>를 통해 생성되었습니다.</span>
+              </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+    <script type="text/javascript" src="../../styles/docs-switcher.js"></script>
+  </body>
+</html>

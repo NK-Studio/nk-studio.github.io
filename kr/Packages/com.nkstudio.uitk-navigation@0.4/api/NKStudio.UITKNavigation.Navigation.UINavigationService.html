@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <script type="text/javascript">
+        thisPackageMetaData = {name: "com.nkstudio.uitk-navigation", version: "0.4.0", displayTitle: "UITK Navigation 0.4.0", lang: "kr"};
+    </script>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class UINavigationService | UITK Navigation </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class UINavigationService | UITK Navigation ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <link rel="stylesheet" href="../styles/language-switcher.css">
+      <link rel="stylesheet" href="../styles/version-switcher.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../manual/index.html">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+            <div class="container hide-when-search" id="breadcrumb">
+                <!-- Unity Customization: Remove content of breadcrumb bar. This space is used for version and language switchers
+                            <ul class="breadcrumb">
+                              <li></li>
+                            </ul>
+                            -->
+            </div>
+        </div>      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+        <div id="unity_breadcrumb_placeholder">
+            <ul class="breadcrumb">
+            <li></li>
+            </ul>
+        </div>
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="NKStudio.UITKNavigation.Navigation.UINavigationService">
+
+
+
+  <h1 id="NKStudio_UITKNavigation_Navigation_UINavigationService" data-uid="NKStudio.UITKNavigation.Navigation.UINavigationService" class="text-break">Class UINavigationService</h1>
+  <div class="markdown level0 summary"><p>Provides UI Navigation Service functionality.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">UINavigationService</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="NKStudio.html">NKStudio</a>.<a class="xref" href="NKStudio.UITKNavigation.html">UITKNavigation</a>.<a class="xref" href="NKStudio.UITKNavigation.Navigation.html">Navigation</a></h6>
+  <h6><strong>Assembly</strong>: com.nkstudio.uitk-navigation.runtime.dll</h6>
+  <h5 id="NKStudio_UITKNavigation_Navigation_UINavigationService_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class UINavigationService</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+
+
+  <a id="NKStudio_UITKNavigation_Navigation_UINavigationService__ctor_" data-uid="NKStudio.UITKNavigation.Navigation.UINavigationService.#ctor*"></a>
+  <h4 id="NKStudio_UITKNavigation_Navigation_UINavigationService__ctor_NKStudio_UITKNavigation_Navigation_UINavigationAsset_" data-uid="NKStudio.UITKNavigation.Navigation.UINavigationService.#ctor(NKStudio.UITKNavigation.Navigation.UINavigationAsset)">UINavigationService(UINavigationAsset)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of <a class="xref" href="NKStudio.UITKNavigation.Navigation.UINavigationService.html">UINavigationService</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UINavigationService(UINavigationAsset asset)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NKStudio.UITKNavigation.Navigation.UINavigationAsset.html">UINavigationAsset</a></td>
+        <td><span class="parametername">asset</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+
+
+  <a id="NKStudio_UITKNavigation_Navigation_UINavigationService_Asset_" data-uid="NKStudio.UITKNavigation.Navigation.UINavigationService.Asset*"></a>
+  <h4 id="NKStudio_UITKNavigation_Navigation_UINavigationService_Asset" data-uid="NKStudio.UITKNavigation.Navigation.UINavigationService.Asset">Asset</h4>
+  <div class="markdown level1 summary"><p>Gets the asset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UINavigationAsset Asset { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NKStudio.UITKNavigation.Navigation.UINavigationAsset.html">UINavigationAsset</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="NKStudio_UITKNavigation_Navigation_UINavigationService_BackStack_" data-uid="NKStudio.UITKNavigation.Navigation.UINavigationService.BackStack*"></a>
+  <h4 id="NKStudio_UITKNavigation_Navigation_UINavigationService_BackStack" data-uid="NKStudio.UITKNavigation.Navigation.UINavigationService.BackStack">BackStack</h4>
+  <div class="markdown level1 summary"><p>Gets the back stack.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyCollection&lt;string&gt; BackStack { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1">IReadOnlyCollection</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="NKStudio_UITKNavigation_Navigation_UINavigationService_ForwardStack_" data-uid="NKStudio.UITKNavigation.Navigation.UINavigationService.ForwardStack*"></a>
+  <h4 id="NKStudio_UITKNavigation_Navigation_UINavigationService_ForwardStack" data-uid="NKStudio.UITKNavigation.Navigation.UINavigationService.ForwardStack">ForwardStack</h4>
+  <div class="markdown level1 summary"><p>Gets the forward stack.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyCollection&lt;string&gt; ForwardStack { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1">IReadOnlyCollection</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="NKStudio_UITKNavigation_Navigation_UINavigationService_IsInitialized_" data-uid="NKStudio.UITKNavigation.Navigation.UINavigationService.IsInitialized*"></a>
+  <h4 id="NKStudio_UITKNavigation_Navigation_UINavigationService_IsInitialized" data-uid="NKStudio.UITKNavigation.Navigation.UINavigationService.IsInitialized">IsInitialized</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether initialized.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsInitialized { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="NKStudio_UITKNavigation_Navigation_UINavigationService_MaxHistoryDepth_" data-uid="NKStudio.UITKNavigation.Navigation.UINavigationService.MaxHistoryDepth*"></a>
+  <h4 id="NKStudio_UITKNavigation_Navigation_UINavigationService_MaxHistoryDepth" data-uid="NKStudio.UITKNavigation.Navigation.UINavigationService.MaxHistoryDepth">MaxHistoryDepth</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the max history depth.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int MaxHistoryDepth { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="NKStudio_UITKNavigation_Navigation_UINavigationService_Back_" data-uid="NKStudio.UITKNavigation.Navigation.UINavigationService.Back*"></a>
+  <h4 id="NKStudio_UITKNavigation_Navigation_UINavigationService_Back" data-uid="NKStudio.UITKNavigation.Navigation.UINavigationService.Back">Back()</h4>
+  <div class="markdown level1 summary"><p>Performs the back operation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Back()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="NKStudio_UITKNavigation_Navigation_UINavigationService_Forward_" data-uid="NKStudio.UITKNavigation.Navigation.UINavigationService.Forward*"></a>
+  <h4 id="NKStudio_UITKNavigation_Navigation_UINavigationService_Forward" data-uid="NKStudio.UITKNavigation.Navigation.UINavigationService.Forward">Forward()</h4>
+  <div class="markdown level1 summary"><p>Performs the forward operation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Forward()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="NKStudio_UITKNavigation_Navigation_UINavigationService_GoTo_" data-uid="NKStudio.UITKNavigation.Navigation.UINavigationService.GoTo*"></a>
+  <h4 id="NKStudio_UITKNavigation_Navigation_UINavigationService_GoTo_System_String_NKStudio_UITKNavigation_Navigation_UINavigationTransitionKind_" data-uid="NKStudio.UITKNavigation.Navigation.UINavigationService.GoTo(System.String,NKStudio.UITKNavigation.Navigation.UINavigationTransitionKind)">GoTo(string, UINavigationTransitionKind)</h4>
+  <div class="markdown level1 summary"><p>Performs the go to operation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GoTo(string nodeId, UINavigationTransitionKind kind = UINavigationTransitionKind.Push)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">nodeId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="NKStudio.UITKNavigation.Navigation.UINavigationTransitionKind.html">UINavigationTransitionKind</a></td>
+        <td><span class="parametername">kind</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="NKStudio_UITKNavigation_Navigation_UINavigationService_Initialize_" data-uid="NKStudio.UITKNavigation.Navigation.UINavigationService.Initialize*"></a>
+  <h4 id="NKStudio_UITKNavigation_Navigation_UINavigationService_Initialize" data-uid="NKStudio.UITKNavigation.Navigation.UINavigationService.Initialize">Initialize()</h4>
+  <div class="markdown level1 summary"><p>Initializes this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Initialize()</code></pre>
+  </div>
+
+
+  <a id="NKStudio_UITKNavigation_Navigation_UINavigationService_Resync_" data-uid="NKStudio.UITKNavigation.Navigation.UINavigationService.Resync*"></a>
+  <h4 id="NKStudio_UITKNavigation_Navigation_UINavigationService_Resync" data-uid="NKStudio.UITKNavigation.Navigation.UINavigationService.Resync">Resync()</h4>
+  <div class="markdown level1 summary"><p>Performs the resync operation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Resync()</code></pre>
+  </div>
+
+
+  <a id="NKStudio_UITKNavigation_Navigation_UINavigationService_Trigger_" data-uid="NKStudio.UITKNavigation.Navigation.UINavigationService.Trigger*"></a>
+  <h4 id="NKStudio_UITKNavigation_Navigation_UINavigationService_Trigger_NKStudio_UITKNavigation_Identity_UIKey_" data-uid="NKStudio.UITKNavigation.Navigation.UINavigationService.Trigger(NKStudio.UITKNavigation.Identity.UIKey)">Trigger(UIKey)</h4>
+  <div class="markdown level1 summary"><p>Performs the trigger operation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Trigger(UIKey signal)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NKStudio.UITKNavigation.Identity.UIKey.html">UIKey</a></td>
+        <td><span class="parametername">signal</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="NKStudio_UITKNavigation_Navigation_UINavigationService_Trigger_" data-uid="NKStudio.UITKNavigation.Navigation.UINavigationService.Trigger*"></a>
+  <h4 id="NKStudio_UITKNavigation_Navigation_UINavigationService_Trigger_System_String_" data-uid="NKStudio.UITKNavigation.Navigation.UINavigationService.Trigger(System.String)">Trigger(string)</h4>
+  <div class="markdown level1 summary"><p>Sends a graph-local custom destination signal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Trigger(string destinationKey)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">destinationKey</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="NKStudio_UITKNavigation_Navigation_UINavigationService_TriggerToggle_" data-uid="NKStudio.UITKNavigation.Navigation.UINavigationService.TriggerToggle*"></a>
+  <h4 id="NKStudio_UITKNavigation_Navigation_UINavigationService_TriggerToggle_NKStudio_UITKNavigation_Identity_UIKey_System_Boolean_" data-uid="NKStudio.UITKNavigation.Navigation.UINavigationService.TriggerToggle(NKStudio.UITKNavigation.Identity.UIKey,System.Boolean)">TriggerToggle(UIKey, bool)</h4>
+  <div class="markdown level1 summary"><p>Performs the trigger toggle operation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TriggerToggle(UIKey toggle, bool value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NKStudio.UITKNavigation.Identity.UIKey.html">UIKey</a></td>
+        <td><span class="parametername">toggle</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="NKStudio_UITKNavigation_Navigation_UINavigationService_TriggerView_" data-uid="NKStudio.UITKNavigation.Navigation.UINavigationService.TriggerView*"></a>
+  <h4 id="NKStudio_UITKNavigation_Navigation_UINavigationService_TriggerView_NKStudio_UITKNavigation_Identity_UIKey_NKStudio_UITKNavigation_Navigation_UIViewOutputCondition_" data-uid="NKStudio.UITKNavigation.Navigation.UINavigationService.TriggerView(NKStudio.UITKNavigation.Identity.UIKey,NKStudio.UITKNavigation.Navigation.UIViewOutputCondition)">TriggerView(UIKey, UIViewOutputCondition)</h4>
+  <div class="markdown level1 summary"><p>Performs the trigger view operation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TriggerView(UIKey view, UIViewOutputCondition condition)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="NKStudio.UITKNavigation.Identity.UIKey.html">UIKey</a></td>
+        <td><span class="parametername">view</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="NKStudio.UITKNavigation.Navigation.UIViewOutputCondition.html">UIViewOutputCondition</a></td>
+        <td><span class="parametername">condition</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+              <div>
+                  이 에셋과 문서는 Unity Technologies와 관련이 없으며, 사용으로 인해 발생하는 법적 문제에 대해서는 제작자가 책임지지 않습니다.
+              </div>
+              <div>
+                  <span class="pull-right"><a href="#top">Back to top</a></span>
+
+                  <span>이 문서는 <strong>DocFX</strong>를 통해 생성되었습니다.</span>
+              </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../styles/docs-switcher.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1044 @@
+{
+  "source_base_path": "/Volumes/NKStudioHD/1.DevProjects/WebProject/document/UITKNavigation-Document/kr/0.3.1",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../../api/NKStudio.UITKNavigation.Animation.UIViewVisibility.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NKStudio.UITKNavigation.Animation.UIViewVisibility.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "NKStudio.UITKNavigation.Animation.UIViewVisibility",
+      "Summary": "<p sourcefile=\"../../api/NKStudio.UITKNavigation.Animation.UIViewVisibility.yml\" sourcestartlinenumber=\"1\">Provides UI View Visibility functionality.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../../api/NKStudio.UITKNavigation.Animation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NKStudio.UITKNavigation.Animation.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "NKStudio.UITKNavigation.Animation",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../../api/NKStudio.UITKNavigation.Elements.NavButton.UxmlSerializedData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NKStudio.UITKNavigation.Elements.NavButton.UxmlSerializedData.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "NKStudio.UITKNavigation.Elements.NavButton.UxmlSerializedData",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../../api/NKStudio.UITKNavigation.Elements.NavButton.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NKStudio.UITKNavigation.Elements.NavButton.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "NKStudio.UITKNavigation.Elements.NavButton",
+      "Summary": "<p sourcefile=\"../../api/NKStudio.UITKNavigation.Elements.NavButton.yml\" sourcestartlinenumber=\"1\">Provides Nav Button functionality.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../../api/NKStudio.UITKNavigation.Elements.NavElement.UxmlSerializedData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NKStudio.UITKNavigation.Elements.NavElement.UxmlSerializedData.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "NKStudio.UITKNavigation.Elements.NavElement.UxmlSerializedData",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../../api/NKStudio.UITKNavigation.Elements.NavElement.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NKStudio.UITKNavigation.Elements.NavElement.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "NKStudio.UITKNavigation.Elements.NavElement",
+      "Summary": "<p sourcefile=\"../../api/NKStudio.UITKNavigation.Elements.NavElement.yml\" sourcestartlinenumber=\"1\">Provides Nav Element functionality.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../../api/NKStudio.UITKNavigation.Elements.NavToggle.UxmlSerializedData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NKStudio.UITKNavigation.Elements.NavToggle.UxmlSerializedData.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "NKStudio.UITKNavigation.Elements.NavToggle.UxmlSerializedData",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../../api/NKStudio.UITKNavigation.Elements.NavToggle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NKStudio.UITKNavigation.Elements.NavToggle.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "NKStudio.UITKNavigation.Elements.NavToggle",
+      "Summary": "<p sourcefile=\"../../api/NKStudio.UITKNavigation.Elements.NavToggle.yml\" sourcestartlinenumber=\"1\">Provides Nav Toggle functionality.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../../api/NKStudio.UITKNavigation.Elements.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NKStudio.UITKNavigation.Elements.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "NKStudio.UITKNavigation.Elements",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../../api/NKStudio.UITKNavigation.Identity.IUIVisibleView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NKStudio.UITKNavigation.Identity.IUIVisibleView.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "NKStudio.UITKNavigation.Identity.IUIVisibleView",
+      "Summary": "<p sourcefile=\"../../api/NKStudio.UITKNavigation.Identity.IUIVisibleView.yml\" sourcestartlinenumber=\"1\">Defines the contract for IUI Visible View.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../../api/NKStudio.UITKNavigation.Identity.UIKey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NKStudio.UITKNavigation.Identity.UIKey.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "NKStudio.UITKNavigation.Identity.UIKey",
+      "Summary": "<p sourcefile=\"../../api/NKStudio.UITKNavigation.Identity.UIKey.yml\" sourcestartlinenumber=\"1\">Represents UI Key data.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../../api/NKStudio.UITKNavigation.Identity.UIKeyCatalogKind.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NKStudio.UITKNavigation.Identity.UIKeyCatalogKind.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "NKStudio.UITKNavigation.Identity.UIKeyCatalogKind",
+      "Summary": "<p sourcefile=\"../../api/NKStudio.UITKNavigation.Identity.UIKeyCatalogKind.yml\" sourcestartlinenumber=\"1\">Identifies the Key Catalog collection from which an editor selector obtains values.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../../api/NKStudio.UITKNavigation.Identity.UIKeySelectorAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NKStudio.UITKNavigation.Identity.UIKeySelectorAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "NKStudio.UITKNavigation.Identity.UIKeySelectorAttribute",
+      "Summary": "<p sourcefile=\"../../api/NKStudio.UITKNavigation.Identity.UIKeySelectorAttribute.yml\" sourcestartlinenumber=\"1\">Provides UI Key Selector Attribute functionality.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../../api/NKStudio.UITKNavigation.Identity.UIViewRegistry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NKStudio.UITKNavigation.Identity.UIViewRegistry.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "NKStudio.UITKNavigation.Identity.UIViewRegistry",
+      "Summary": "<p sourcefile=\"../../api/NKStudio.UITKNavigation.Identity.UIViewRegistry.yml\" sourcestartlinenumber=\"1\">Provides UI View Registry functionality.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../../api/NKStudio.UITKNavigation.Identity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NKStudio.UITKNavigation.Identity.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "NKStudio.UITKNavigation.Identity",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../../api/NKStudio.UITKNavigation.Input.UIBackInputRouter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NKStudio.UITKNavigation.Input.UIBackInputRouter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "NKStudio.UITKNavigation.Input.UIBackInputRouter",
+      "Summary": "<p sourcefile=\"../../api/NKStudio.UITKNavigation.Input.UIBackInputRouter.yml\" sourcestartlinenumber=\"1\">Provides UI Back Input Router functionality.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../../api/NKStudio.UITKNavigation.Input.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NKStudio.UITKNavigation.Input.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "NKStudio.UITKNavigation.Input",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../../api/NKStudio.UITKNavigation.Navigation.Signal.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NKStudio.UITKNavigation.Navigation.Signal.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "NKStudio.UITKNavigation.Navigation.Signal",
+      "Summary": "<p sourcefile=\"../../api/NKStudio.UITKNavigation.Navigation.Signal.yml\" sourcestartlinenumber=\"1\">Sends navigation signals to the active navigator.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../../api/NKStudio.UITKNavigation.Navigation.UINavigationAsset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NKStudio.UITKNavigation.Navigation.UINavigationAsset.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "NKStudio.UITKNavigation.Navigation.UINavigationAsset",
+      "Summary": "<p sourcefile=\"../../api/NKStudio.UITKNavigation.Navigation.UINavigationAsset.yml\" sourcestartlinenumber=\"1\">Provides UI Navigation Asset functionality.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../../api/NKStudio.UITKNavigation.Navigation.UINavigationEvents.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NKStudio.UITKNavigation.Navigation.UINavigationEvents.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "NKStudio.UITKNavigation.Navigation.UINavigationEvents",
+      "Summary": "<p sourcefile=\"../../api/NKStudio.UITKNavigation.Navigation.UINavigationEvents.yml\" sourcestartlinenumber=\"1\">Provides UI Navigation Events functionality.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../../api/NKStudio.UITKNavigation.Navigation.UINavigationService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NKStudio.UITKNavigation.Navigation.UINavigationService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "NKStudio.UITKNavigation.Navigation.UINavigationService",
+      "Summary": "<p sourcefile=\"../../api/NKStudio.UITKNavigation.Navigation.UINavigationService.yml\" sourcestartlinenumber=\"1\">Provides UI Navigation Service functionality.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../../api/NKStudio.UITKNavigation.Navigation.UINavigationTransitionKind.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NKStudio.UITKNavigation.Navigation.UINavigationTransitionKind.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "NKStudio.UITKNavigation.Navigation.UINavigationTransitionKind",
+      "Summary": "<p sourcefile=\"../../api/NKStudio.UITKNavigation.Navigation.UINavigationTransitionKind.yml\" sourcestartlinenumber=\"1\">Defines the available UI Navigation Transition Kind values.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../../api/NKStudio.UITKNavigation.Navigation.UINavigatorBehaviour.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NKStudio.UITKNavigation.Navigation.UINavigatorBehaviour.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "NKStudio.UITKNavigation.Navigation.UINavigatorBehaviour",
+      "Summary": "<p sourcefile=\"../../api/NKStudio.UITKNavigation.Navigation.UINavigatorBehaviour.yml\" sourcestartlinenumber=\"1\">Provides UI Navigator Behaviour functionality.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../../api/NKStudio.UITKNavigation.Navigation.UIViewOutputCondition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NKStudio.UITKNavigation.Navigation.UIViewOutputCondition.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "NKStudio.UITKNavigation.Navigation.UIViewOutputCondition",
+      "Summary": "<p sourcefile=\"../../api/NKStudio.UITKNavigation.Navigation.UIViewOutputCondition.yml\" sourcestartlinenumber=\"1\">Identifies the view visibility event that can trigger a navigation transition.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../../api/NKStudio.UITKNavigation.Navigation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NKStudio.UITKNavigation.Navigation.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "NKStudio.UITKNavigation.Navigation",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../../api/NKStudio.UITKNavigation.Popup.UIPopupActionButton.UxmlSerializedData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NKStudio.UITKNavigation.Popup.UIPopupActionButton.UxmlSerializedData.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "NKStudio.UITKNavigation.Popup.UIPopupActionButton.UxmlSerializedData",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../../api/NKStudio.UITKNavigation.Popup.UIPopupActionButton.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NKStudio.UITKNavigation.Popup.UIPopupActionButton.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "NKStudio.UITKNavigation.Popup.UIPopupActionButton",
+      "Summary": "<p sourcefile=\"../../api/NKStudio.UITKNavigation.Popup.UIPopupActionButton.yml\" sourcestartlinenumber=\"1\">Provides UI Popup Action Button functionality.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../../api/NKStudio.UITKNavigation.Popup.UIPopupBackBehavior.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NKStudio.UITKNavigation.Popup.UIPopupBackBehavior.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "NKStudio.UITKNavigation.Popup.UIPopupBackBehavior",
+      "Summary": "<p sourcefile=\"../../api/NKStudio.UITKNavigation.Popup.UIPopupBackBehavior.yml\" sourcestartlinenumber=\"1\">Defines how the topmost popup responds to a Back request.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../../api/NKStudio.UITKNavigation.Popup.UIPopupBackdrop.UxmlSerializedData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NKStudio.UITKNavigation.Popup.UIPopupBackdrop.UxmlSerializedData.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "NKStudio.UITKNavigation.Popup.UIPopupBackdrop.UxmlSerializedData",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../../api/NKStudio.UITKNavigation.Popup.UIPopupBackdrop.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NKStudio.UITKNavigation.Popup.UIPopupBackdrop.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "NKStudio.UITKNavigation.Popup.UIPopupBackdrop",
+      "Summary": "<p sourcefile=\"../../api/NKStudio.UITKNavigation.Popup.UIPopupBackdrop.yml\" sourcestartlinenumber=\"1\">Provides UI Popup Backdrop functionality.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../../api/NKStudio.UITKNavigation.Popup.UIPopupCloseReason.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NKStudio.UITKNavigation.Popup.UIPopupCloseReason.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "NKStudio.UITKNavigation.Popup.UIPopupCloseReason",
+      "Summary": "<p sourcefile=\"../../api/NKStudio.UITKNavigation.Popup.UIPopupCloseReason.yml\" sourcestartlinenumber=\"1\">Identifies why a popup was closed.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../../api/NKStudio.UITKNavigation.Popup.UIPopupContent.UxmlSerializedData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NKStudio.UITKNavigation.Popup.UIPopupContent.UxmlSerializedData.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "NKStudio.UITKNavigation.Popup.UIPopupContent.UxmlSerializedData",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../../api/NKStudio.UITKNavigation.Popup.UIPopupContent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NKStudio.UITKNavigation.Popup.UIPopupContent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "NKStudio.UITKNavigation.Popup.UIPopupContent",
+      "Summary": "<p sourcefile=\"../../api/NKStudio.UITKNavigation.Popup.UIPopupContent.yml\" sourcestartlinenumber=\"1\">Provides UI Popup Content functionality.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../../api/NKStudio.UITKNavigation.Popup.UIPopupHandle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NKStudio.UITKNavigation.Popup.UIPopupHandle.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "NKStudio.UITKNavigation.Popup.UIPopupHandle",
+      "Summary": "<p sourcefile=\"../../api/NKStudio.UITKNavigation.Popup.UIPopupHandle.yml\" sourcestartlinenumber=\"1\">Provides UI Popup Handle functionality.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../../api/NKStudio.UITKNavigation.Popup.UIPopupHost.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NKStudio.UITKNavigation.Popup.UIPopupHost.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "NKStudio.UITKNavigation.Popup.UIPopupHost",
+      "Summary": "<p sourcefile=\"../../api/NKStudio.UITKNavigation.Popup.UIPopupHost.yml\" sourcestartlinenumber=\"1\">Owns a panel-local LIFO popup stack and instantiates popup templates on its UI root.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../../api/NKStudio.UITKNavigation.Popup.UIPopupResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NKStudio.UITKNavigation.Popup.UIPopupResult.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "NKStudio.UITKNavigation.Popup.UIPopupResult",
+      "Summary": "<p sourcefile=\"../../api/NKStudio.UITKNavigation.Popup.UIPopupResult.yml\" sourcestartlinenumber=\"1\">Describes the action and close reason produced when a popup completes.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../../api/NKStudio.UITKNavigation.Popup.UIPopupView.UxmlSerializedData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NKStudio.UITKNavigation.Popup.UIPopupView.UxmlSerializedData.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "NKStudio.UITKNavigation.Popup.UIPopupView.UxmlSerializedData",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../../api/NKStudio.UITKNavigation.Popup.UIPopupView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NKStudio.UITKNavigation.Popup.UIPopupView.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "NKStudio.UITKNavigation.Popup.UIPopupView",
+      "Summary": "<p sourcefile=\"../../api/NKStudio.UITKNavigation.Popup.UIPopupView.yml\" sourcestartlinenumber=\"1\">Provides UI Popup View functionality.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../../api/NKStudio.UITKNavigation.Popup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NKStudio.UITKNavigation.Popup.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "NKStudio.UITKNavigation.Popup",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../../api/NKStudio.UITKNavigation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NKStudio.UITKNavigation.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": null,
+      "Summary": null
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "../../api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "../../scripts/docs-switcher.js",
+      "output": {
+        "resource": {
+          "relative_path": "styles/docs-switcher.js"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "../../switcher.config.json",
+      "output": {
+        "resource": {
+          "relative_path": "switcher.config.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "changelog/CHANGELOG.md",
+      "output": {
+        ".html": {
+          "relative_path": "changelog/CHANGELOG.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "changelog/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "changelog/toc.html"
+        },
+        ".json": {
+          "relative_path": "changelog/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Banner.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/Banner.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/connect-view.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/connect-view.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/getting-started-graph.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/getting-started-graph.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/graph-play-mode-follow.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/graph-play-mode-follow.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/install-package-from-git-url.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/install-package-from-git-url.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/key-catalog.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/key-catalog.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/logo.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/logo.svg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/loop.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/loop.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/preset-transition.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/preset-transition.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "index.html",
+      "output": {
+        "resource": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "license/License.md",
+      "output": {
+        ".html": {
+          "relative_path": "license/License.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "license/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "license/toc.html"
+        },
+        ".json": {
+          "relative_path": "license/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/Animation.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/Animation.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/GettingStart.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/GettingStart.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/KeyCatalog.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/KeyCatalog.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/NavigationGraph.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/NavigationGraph.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/Popup.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/Popup.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/Signals.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/Signals.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/Troubleshooting.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/Troubleshooting.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/UxmlElements.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/UxmlElements.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/installation.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/installation.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/navigation-graph/application-quit.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/navigation-graph/application-quit.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/navigation-graph/code-first.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/navigation-graph/code-first.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/navigation-graph/debug-log.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/navigation-graph/debug-log.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/navigation-graph/load-scene.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/navigation-graph/load-scene.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/navigation-graph/pivot.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/navigation-graph/pivot.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/navigation-graph/portal.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/navigation-graph/portal.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/navigation-graph/random.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/navigation-graph/random.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/navigation-graph/set-active-loaded-scene.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/navigation-graph/set-active-loaded-scene.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/navigation-graph/start.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/navigation-graph/start.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/navigation-graph/time-scale.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/navigation-graph/time-scale.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/navigation-graph/ui.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/navigation-graph/ui.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/navigation-graph/unload-scene.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/navigation-graph/unload-scene.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/requirement.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/requirement.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "manual/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "manual/toc.html"
+        },
+        ".json": {
+          "relative_path": "manual/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/uxml-elements/nav-button.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/uxml-elements/nav-button.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/uxml-elements/nav-element.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/uxml-elements/nav-element.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/uxml-elements/nav-toggle.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/uxml-elements/nav-toggle.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

@@ -3,6 +3,9 @@
     {
       "pathPrefix": "",
       "versions": [
+        "0.4",
+        "0.3.1",
+        "0.3",
         "0.2"
       ],
       "display": "English",
@@ -11,6 +14,9 @@
     {
       "pathPrefix": "kr",
       "versions": [
+        "0.4",
+        "0.3.1",
+        "0.3",
         "0.2"
       ],
       "display": "한국어",

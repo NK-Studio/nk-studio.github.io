@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <script type="text/javascript">
+        thisPackageMetaData = {name: "com.nkstudio.fmodplus", version: "1.7.0", displayTitle: "FMOD Plus 1.7.0", lang: "kr"};
+    </script>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Changelog | FMOD Plus </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Changelog | FMOD Plus ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <link rel="stylesheet" href="../styles/language-switcher.css">
+      <link rel="stylesheet" href="../styles/version-switcher.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../manual/index.html">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+            <div class="container hide-when-search" id="breadcrumb">
+                <!-- Unity Customization: Remove content of breadcrumb bar. This space is used for version and language switchers
+                            <ul class="breadcrumb">
+                              <li></li>
+                            </ul>
+                            -->
+            </div>
+        </div>      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+        <div id="unity_breadcrumb_placeholder">
+            <ul class="breadcrumb">
+            <li></li>
+            </ul>
+        </div>
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="changelog">Changelog</h1>
+
+<p>이 문서는 FMOD Plus의 주요 변경 사항을 기록합니다.</p>
+<h2 id="172---2026-08-11">[1.7.2] - 2026-08-11</h2>
+<h3 id="changed">Changed</h3>
+<ul>
+<li>About 창을 FMOD 설치 여부와 무관하게 사용할 수 있도록 Bootstrap Editor 어셈블리로 이동</li>
+<li>About 창의 UXML, USS, 로고 및 <code>package.json</code>을 고정 경로/직렬화 참조 대신 GUID와 <code>AssetDatabase.GUIDToAssetPath</code>로 해석하도록 변경</li>
+<li>About UI 구조와 스타일을 정리하고 패키지 버전 로드 실패 시 진단 가능한 대체 문구를 표시하도록 개선</li>
+</ul>
+<h3 id="fixed">Fixed</h3>
+<ul>
+<li>직렬화된 UXML 또는 <code>package.json</code> 참조가 연결되지 않은 경우 About 창 내용이 그려지지 않던 문제 수정</li>
+</ul>
+<h2 id="171---2026-08-11">[1.7.1] - 2026-08-11</h2>
+<h3 id="changed-1">Changed</h3>
+<ul>
+<li><code>KeyReference</code>의 필드, 프로퍼티, public 메서드 및 private helper 순서를 역할별로 정리</li>
+<li><code>KeyReference</code>의 <code>Key</code>, <code>Guid</code>, <code>Path</code>, <code>ToString()</code>과 Key 조회 API의 XML 문서를 보완</li>
+<li><code>FMODEventTrigger</code>의 필드, override, private helper 및 내부 enum 순서를 역할별로 정리</li>
+</ul>
+<h2 id="170---2026-08-11">[1.7.0] - 2026-08-11</h2>
+<h3 id="added">Added</h3>
+<ul>
+<li><code>KeyReference</code>에 Global/Local Key List의 Event와 초기 파라미터를 안전하게 조회하는 API 추가</li>
+<li><code>AudioPathByString</code>의 기본 Key 생성, 중복 방지, 변경 직후 조회, null 데이터 처리를 검증하는 EditMode 테스트 추가</li>
+<li>Unity 버전에 맞는 static 필드 초기화 정책이 적용되었는지 검증하는 EditMode 테스트 추가</li>
+</ul>
+<h3 id="changed-2">Changed</h3>
+<ul>
+<li><code>FMODAudioSource</code>, <code>CommandSender</code>, <code>FMODEventTrigger</code>의 재생·명령·이벤트 처리 책임을 분리하고 public API 문서를 정리</li>
+<li><code>LocalKeyList</code>를 직렬화 필드 캡슐화와 값 중심 조회 API(<code>Count</code>, <code>TryGetEvent</code>, <code>TryGetParameters</code>, <code>TryGetEventAndParameters</code>)로 변경</li>
+<li>Local Key List를 참조하는 Command Sender와 Editor UI가 목록 직렬화 배열을 직접 순회하지 않고 <code>LocalKeyList</code> 조회 API를 사용하도록 변경</li>
+<li><code>KeyReference</code>에서 복제된 FMOD <code>EventReference.Find</code> 코드를 제거하고 Key List 참조 모델의 책임과 null 처리를 명확하게 정리</li>
+<li><code>FMODPlusUtility.cs</code>에 혼재된 <code>AudioType</code>, <code>EventRefCallback</code>, <code>KeyAndPath</code>, <code>EventReferenceByKey</code>, <code>AudioPathByString</code>을 역할별 파일로 분리</li>
+<li><code>FMODPlusUtility.Length</code>가 빈 Event, 유효하지 않은 Event Description 및 조회 실패를 안전하게 처리하도록 변경</li>
+<li><code>AudioPathByString</code>, <code>EventRefAtKey</code>, <code>KeyAndPath</code>의 public API XML 문서를 보완</li>
+<li>Unity 6.5 이상에서 mutable static 필드를 <code>[AutoStaticsCleanup]</code>으로 정리하고, Unity 6.4 이하에서는 Enter Play Mode 초기화 콜백을 사용하도록 변경</li>
+<li><code>SimpleBaseField</code>의 구형 UXML factory/traits 구현을 Unity 6의 <code>[UxmlElement]</code> 및 <code>[UxmlAttribute]</code> API로 변경</li>
+<li>Key List ScriptableObject와 Local Key List의 public API XML 문서를 보완하고 null 안전성을 강화</li>
+</ul>
+<h3 id="fixed-1">Fixed</h3>
+<ul>
+<li>Local Key List의 null 목록·항목·파라미터 배열과 빈 Key 조회 시 예외 또는 불필요한 오류 로그가 발생할 수 있던 문제 수정</li>
+<li><code>AudioPathByString</code>의 공개 목록을 수정한 뒤 내부 Dictionary 캐시가 오래된 Event 또는 파라미터를 반환하던 문제 수정</li>
+<li>기본 Key의 중간 번호가 비어 있어도 사용하지 못하거나 부분 문자열이 같은 Key를 중복으로 판단하던 문제 수정</li>
+<li>잘못된 <code>ClipStyle</code>을 가진 <code>EventRefCallback.TryGetClip</code>이 예외를 발생시키던 문제 수정</li>
+<li>Domain Reload를 비활성화한 상태로 Play Mode에 재진입할 때 Global Key List 싱글턴과 Editor UI 캐시가 이전 상태를 유지하던 문제 수정</li>
+<li>Custom UI field가 패널에 재부착될 때 정렬 콜백이 중복 등록될 수 있던 문제 수정</li>
+</ul>
+<h3 id="removed">Removed</h3>
+<ul>
+<li><code>FMODAudioSource</code>의 레거시 <code>Event</code>, <code>AllowNonRigidbodyDoppler</code>, <code>UpdateActiveAudioSource()</code>, 쓰기 가능한 <code>EventInstance</code> API 제거</li>
+<li><code>LocalKeyList</code>의 레거시 <code>ClipList</code> 공개 필드, 최상위 <code>EventRefList</code>, 변환 ContextMenu 및 기존 <code>TryFind*</code>/<code>TryGetValue</code> API 제거</li>
+</ul>
+<h2 id="170-beta1---2026-08-11">[1.7.0-beta.1] - 2026-08-11</h2>
+<h3 id="added-1">Added</h3>
+<ul>
+<li><code>FMOD/FMOD Plus/Setup</code> UI Toolkit 설정 창 추가</li>
+<li>시스템 언어에 따른 Setup 창 한국어/영어 자동 전환 추가</li>
+<li>Assets 내부 FMOD Integration 감지 및 Embedded UPM 마이그레이션 기능 추가</li>
+<li>FMOD Integration 버전의 UPM SemVer 변환과 <code>FMOD.meta</code> GUID 자동 복구 추가</li>
+<li>마이그레이션 사전 검사, 파일 이동 롤백, Settings/Cache 보존 처리 추가</li>
+<li>AMB, BGM, SFX를 통합하는 Global Key List Editor Window 추가</li>
+<li>Global 및 Local Key List의 Key 이름 검색 기능 추가</li>
+<li>선택 항목의 Event와 초기 파라미터를 편집하는 상세 패널 추가</li>
+<li>FMOD Studio Listener 아이콘 자동 적용 기능 추가</li>
+</ul>
+<h3 id="changed-3">Changed</h3>
+<ul>
+<li>FMOD Plus를 <code>com.nkstudio.fmodplus</code> Embedded UPM 패키지 구조로 변경</li>
+<li>FMOD 패키지 <code>com.firelight.fmod-for-unity</code>의 <code>[2.2.0,3.0.0)</code> 버전을 asmdef Version Define으로 감지하도록 변경</li>
+<li>FMOD가 설치된 경우에만 Runtime/Editor 어셈블리를 컴파일하도록 변경</li>
+<li>Global 및 Local Key List 편집 UI를 UXML/USS 기반 UI Toolkit으로 변경</li>
+<li><code>LocalKeyList</code>는 <code>MonoBehaviour</code>, AMB/BGM/SFX 목록은 <code>ScriptableObject</code>를 직접 상속하도록 정리</li>
+<li><code>FMODAudioSource</code>가 FMOD 소스 Hook 없이 거리 기반 재생 상태를 직접 갱신하도록 변경</li>
+<li>Setup 창에 최소/최대 크기와 좁은 너비 대응 레이아웃 적용</li>
+</ul>
+<h3 id="fixed-2">Fixed</h3>
+<ul>
+<li>검색 또는 Undo/Redo 후 Key List 선택 인덱스가 달라질 수 있던 문제 수정</li>
+<li>Local Key List 인스펙터 폭이 좁을 때 필드와 버튼이 옆으로 밀리던 문제 수정</li>
+<li>Event 변경 후 초기 파라미터 목록이 올바르게 갱신되지 않을 수 있던 문제 수정</li>
+<li>삭제된 패키지 경로를 AssetDatabase가 기억해 FMOD 마이그레이션 버튼이 비활성화되던 문제 수정</li>
+<li>FMOD Settings와 Cache가 Packages에 포함되어 발생하는 경로 오류 방지</li>
+<li>마이그레이션 중 파일 쓰기 실패 시 원본 meta 또는 package.json이 남을 수 있던 롤백 순서 보강</li>
+</ul>
+<h3 id="removed-1">Removed</h3>
+<ul>
+<li>AMB, BGM, SFX별 Global Key List 메뉴 제거</li>
+<li>Global Key List ScriptableObject의 장식용 전용 인스펙터 UI 제거</li>
+<li>레거시 <code>USE_FMOD</code>, <code>FMODPlus</code> Scripting Define 자동 등록 제거</li>
+<li>FMOD RuntimeManager 및 StudioListener Editor 소스를 직접 수정하던 Hook 제거</li>
+</ul>
+<h2 id="164-beta---2023-11-13">[1.6.4]-Beta - 2023-11-13</h2>
+<h3 id="added-2">Added</h3>
+<ul>
+<li>FMOD Audio Source에 PlayThisOneShot 함수 추가</li>
+</ul>
+<h2 id="163-beta---2023-10-24">[1.6.3]-Beta - 2023-10-24</h2>
+<h3 id="fixed-3">Fixed</h3>
+<ul>
+<li>KeyList 라벨 글자가 밀려서 Show Info 안보이던 이슈 수정</li>
+</ul>
+<h2 id="162-beta---2023-10-24">[1.6.2]-Beta - 2023-10-24</h2>
+<h3 id="added-3">Added</h3>
+<ul>
+<li>KeyList</li>
+</ul>
+<h3 id="fixed-4">Fixed</h3>
+<ul>
+<li>오딘과 같은 인스펙터 에셋을 사용하는 개발자를 위해 KeyListSO,와 KeyListMono를 제공</li>
+</ul>
+<h2 id="161-beta---2023-10-24">[1.6.1]-Beta - 2023-10-24</h2>
+<h3 id="added-4">Added</h3>
+<ul>
+<li>FMOD Plus를 위한 UI Toolkit 인스펙터 컨버터 지원</li>
+</ul>
+<h3 id="fixed-5">Fixed</h3>
+<ul>
+<li>오디오 스타일을 사용하지 않는 녀석이라고 하는 경고 메세지 차단</li>
+</ul>
+<h2 id="160-beta---2023-10-24">[1.6.0]-Beta - 2023-10-24</h2>
+<h3 id="added-5">Added</h3>
+<ul>
+<li>오디오 소스에서 키 리스트 사용 가능</li>
+</ul>
+<h3 id="fixed-6">Fixed</h3>
+<ul>
+<li>커맨드 센더의 컨셉 재 정의</li>
+</ul>
+<h2 id="150-beta---2023-10-17">[1.5.0]-Beta - 2023-10-17</h2>
+<h3 id="added-6">Added</h3>
+<ul>
+<li>FMOD Key List를 Mono 또는 SO에 그려낼 수 있도록 EventRefAtKey를 제공</li>
+</ul>
+<h3 id="fixed-7">Fixed</h3>
+<ul>
+<li>Key List는 전부 EventRefAtKey방식으로 그려내도록 변경</li>
+<li>Key List가 열리지 않고 헤더만 보였던 이슈 수정</li>
+</ul>
+<h2 id="142-beta---2023-10-16">[1.4.2]-Beta - 2023-10-16</h2>
+<h3 id="fixed-8">Fixed</h3>
+<ul>
+<li>FMOD Audio Source의 playOnAwake가 Start가 아닌 Enable에서 동작되도록 설계 변경</li>
+<li>OnDisable() 되었을 때 Stop 함수가 실행되도록 설계 변경</li>
+</ul>
+<h2 id="141-beta---2023-10-16">[1.4.1]-Beta - 2023-10-16</h2>
+<h3 id="fixed-9">Fixed</h3>
+<ul>
+<li>NKEditorUtility 제거</li>
+</ul>
+<h2 id="140-beta---2023-10-16">[1.4.0]-Beta - 2023-10-16</h2>
+<h3 id="fixed-10">Fixed</h3>
+<ul>
+<li>Key List를 전부 UI Toolkit으로 변경</li>
+</ul>
+<h2 id="130-beta---2023-09-29">[1.3.0]-Beta - 2023-09-29</h2>
+<h3 id="fixed-11">Fixed</h3>
+<ul>
+<li>Doozy 플러그인 서드파티 지원</li>
+</ul>
+<h2 id="127-beta---2023-09-29">[1.2.7]-Beta - 2023-09-29</h2>
+<h3 id="fixed-12">Fixed</h3>
+<ul>
+<li>FMOD Audio Source에서 IsPlaying() -&gt; isPlaying으로 소문자로 변경</li>
+<li>FMOD Audio Source에서 PlayOnAwake() -&gt; playOnAwake 소문자로 변경</li>
+</ul>
+<h2 id="126-beta---2023-09-29">[1.2.6]-Beta - 2023-09-29</h2>
+<h3 id="fixed-13">Fixed</h3>
+<ul>
+<li>FMOD Audio Source에서 Mute -&gt; mute으로 소문자로 변경</li>
+</ul>
+<h2 id="125-beta---2023-09-29">[1.2.5]-Beta - 2023-09-29</h2>
+<h3 id="fixed-14">Fixed</h3>
+<ul>
+<li>FMOD Audio Source에서 Clip -&gt; clip으로 소문자로 변경</li>
+</ul>
+<h2 id="124-beta---2023-09-03">[1.2.4]-Beta - 2023-09-03</h2>
+<h3 id="fixed-15">Fixed</h3>
+<ul>
+<li>KeyList에서 제공되는 함수 중 TryGetClip()이 추가됨</li>
+<li>TryFind -&gt; TryGet으로 함수 시작부분이 변경됨</li>
+</ul>
+<h2 id="123-beta---2023-09-03">[1.2.3]-Beta - 2023-09-03</h2>
+<h3 id="fixed-16">Fixed</h3>
+<ul>
+<li>PlayOneShot에서 파라미터 전달 방법 중 ParamRef[] 방식도 추가</li>
+</ul>
+<h2 id="122-beta---2023-09-03">[1.2.2]-Beta - 2023-09-03</h2>
+<h3 id="fixed-17">Fixed</h3>
+<ul>
+<li>Add(key, path) 함수에서 동일한 이름이 포함된 경우 경고문을 띄우는 알고리즘을 수정함</li>
+<li>커맨드 센더에서 on API 방식에 대하여 브릿지 템플릿 코드 제공</li>
+</ul>
+<h2 id="121-beta---2023-09-03">[1.2.1]-Beta - 2023-09-03</h2>
+<h3 id="fixed-18">Fixed</h3>
+<ul>
+<li>파라미터 센더를 삭제하고 커맨드 센더에 병합 됨</li>
+<li>트리거 이벤트에 커맨드 센더도 되도록 변경</li>
+<li>FMOD 업데이트 시 내부 코드를 업데이트 하도록 FMOD/FMOD Plus/Force Update를 추가함</li>
+</ul>
+<h2 id="120-beta---2023-09-03">[1.2.0]-Beta - 2023-09-03</h2>
+<h3 id="fixed-19">Fixed</h3>
+<ul>
+<li>파라미터 센더를 삭제하고 커맨드 센더에 병합 됨</li>
+<li>트리거 이벤트에 커맨드 센더도 되도록 변경</li>
+<li>FMOD 업데이트 시 내부 코드를 업데이트 하도록 FMOD/FMOD Plus/Force Update를 추가함</li>
+</ul>
+<h2 id="111-beta---2023-09-01">[1.1.1]-Beta - 2023-09-01</h2>
+<h3 id="fixed-20">Fixed</h3>
+<ul>
+<li>Audio Listener를 FMOD Studio Listener로 변경하는 메뉴 아이템 추가</li>
+</ul>
+<h2 id="110-beta---2023-08-26">[1.1.0]-Beta - 2023-08-26</h2>
+<h3 id="fixed-21">Fixed</h3>
+<ul>
+<li>FMOD 2.0.17을 기준으로 업그레이드</li>
+<li>트리거 이벤트가 파라미터 센더도 되도록 변경</li>
+</ul>
+<h2 id="1019-beta---2023-08-26">[1.0.19]-Beta - 2023-08-26</h2>
+<h3 id="fixed-22">Fixed</h3>
+<ul>
+<li>FMOD Audio Source가 Destroy될 때 오디오가 정지되지 않는 이슈 수정, Audio Source는 객체가 소멸되면 자동으로 오디오가 정지됨</li>
+<li>FMOD 플러그인 2.02.15의 Studio Emitter방식으로 변화됨</li>
+<li>FMODPlus 디파인 추가</li>
+</ul>
+<h2 id="1018-beta---2023-08-25">[1.0.18]-Beta - 2023-08-25</h2>
+<h3 id="fixed-23">Fixed</h3>
+<ul>
+<li>커맨드 Sender에서 KeyList를 사용할 때 Inital parameter Value에 대한 모호성이 있던 컨셉을 수정</li>
+</ul>
+<h2 id="1017-beta---2023-08-24">[1.0.17]-Beta - 2023-08-24</h2>
+<h3 id="fixed-24">Fixed</h3>
+<ul>
+<li>API Style에서 Key방식을 개편하였습니다.</li>
+</ul>
+<h2 id="1016-beta---2023-08-24">[1.0.16]-Beta - 2023-08-24</h2>
+<h3 id="fixed-25">Fixed</h3>
+<ul>
+<li>커맨드 Sender에서 Initial Parameter가 재대로 처리안되던 문제 해결</li>
+</ul>
+<h2 id="1015-beta---2023-08-23">[1.0.15]-Beta - 2023-08-23</h2>
+<h3 id="fixed-26">Fixed</h3>
+<ul>
+<li>FMOD Studio Listener 아이콘을 변경하는 로직 변경</li>
+</ul>
+<h2 id="1014-beta---2023-07-25">[1.0.14]-Beta - 2023-07-25</h2>
+<h3 id="fixed-27">Fixed</h3>
+<ul>
+<li>커맨드 센더 GUI 수정</li>
+</ul>
+<h2 id="1013-beta---2023-07-25">[1.0.13]-Beta - 2023-07-25</h2>
+<h3 id="fixed-28">Fixed</h3>
+<ul>
+<li>유니티 2021.3 LTS에서도 동작되도록 처리</li>
+</ul>
+<h2 id="1012-beta---2023-07-25">[1.0.12]-Beta - 2023-07-25</h2>
+<h3 id="fixed-29">Fixed</h3>
+<ul>
+<li>MouseDownEvent -&gt; ClickEvent로 변경</li>
+</ul>
+<h2 id="1011-beta---2023-07-25">[1.0.11]-Beta - 2023-07-25</h2>
+<h3 id="fixed-30">Fixed</h3>
+<ul>
+<li>커멘드 센더 리팩터링 완료 경량화 작업 진행함</li>
+</ul>
+<h2 id="1010-beta---2023-07-22">[1.0.10]-Beta - 2023-07-22</h2>
+<h3 id="fixed-31">Fixed</h3>
+<ul>
+<li>About 추가</li>
+</ul>
+<h2 id="109-beta---2023-07-22">[1.0.9]-Beta - 2023-07-22</h2>
+<h3 id="fixed-32">Fixed</h3>
+<ul>
+<li>파라미터 센더 리팩터링 완료 경량화 작업 진행함</li>
+</ul>
+<h2 id="108-beta---2023-07-22">[1.0.8]-Beta - 2023-07-22</h2>
+<h3 id="fixed-33">Fixed</h3>
+<ul>
+<li>경로 수정</li>
+</ul>
+<h2 id="107-beta---2023-07-22">[1.0.7]-Beta - 2023-07-22</h2>
+<h3 id="fixed-34">Fixed</h3>
+<ul>
+<li>Git UPM 지원 중단</li>
+<li>글로벌 키 리스트 생성 시 해당 폴더가 없으면 에러나는 이슈 수정</li>
+</ul>
+<h2 id="106-beta---2023-07-22">[1.0.6]-Beta - 2023-07-22</h2>
+<h3 id="fixed-35">Fixed</h3>
+<ul>
+<li>글로벌/로컬 키 리스트에서 새로운 요소를 만들 때 다른 요소들도 초기화되지 않아있떤 문제 수정</li>
+</ul>
+<h2 id="104-beta---2023-07-22">[1.0.4]-Beta - 2023-07-22</h2>
+<h3 id="fixed-36">Fixed</h3>
+<ul>
+<li>글로벌/로컬 키 리스트에서 새로운 요소를 만들 때 Path가 비어있는 값으로 생성되지 않던 문제 수정</li>
+</ul>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+              <div>
+                  이 에셋과 문서는 Unity Technologies와 관련이 없으며, 사용으로 인해 발생하는 법적 문제에 대해서는 제작자가 책임지지 않습니다.
+              </div>
+              <div>
+                  <span class="pull-right"><a href="#top">Back to top</a></span>
+
+                  <span>이 문서는 <strong>DocFX</strong>를 통해 생성되었습니다.</span>
+              </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../styles/docs-switcher.js"></script>
+  </body>
+</html>

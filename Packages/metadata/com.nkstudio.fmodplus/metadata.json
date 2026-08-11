@@ -1,0 +1,15 @@
+{
+  "versions":{
+    "1.7.0":{
+      "unity":"6000.3",
+      "displayName":"FMOD Plus",
+      "name":"com.nkstudio.fmodplus",
+      "type":"asset",
+      "keywords":[
+        "FMOD",
+        "Audio"
+      ],
+      "version":"1.7.0"
+    }
+  }
+}

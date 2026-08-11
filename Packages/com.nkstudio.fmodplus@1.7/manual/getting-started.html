@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <script type="text/javascript">
+        thisPackageMetaData = {name: "com.nkstudio.fmodplus", version: "1.7.0", displayTitle: "FMOD Plus 1.7.0", lang: "en"};
+    </script>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Getting started | FMOD Plus </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Getting started | FMOD Plus ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <link rel="stylesheet" href="../styles/language-switcher.css">
+      <link rel="stylesheet" href="../styles/version-switcher.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../manual/index.html">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+            <div class="container hide-when-search" id="breadcrumb">
+                <!-- Unity Customization: Remove content of breadcrumb bar. This space is used for version and language switchers
+                            <ul class="breadcrumb">
+                              <li></li>
+                            </ul>
+                            -->
+            </div>
+        </div>      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+        <div id="unity_breadcrumb_placeholder">
+            <ul class="breadcrumb">
+            <li></li>
+            </ul>
+        </div>
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="getting-started">Getting started</h1>
+
+<h2 id="1-verify-the-installation">1. Verify the installation</h2>
+<p>Open <strong>FMOD &gt; FMOD Plus &gt; Setup</strong> and confirm that a supported FMOD for Unity package is active. Resolve the first Console compilation error before adding FMOD Plus components.</p>
+<h2 id="2-verify-the-listener">2. Verify the listener</h2>
+<p>Ensure that the camera has an <code>FMOD Studio Listener</code> component attached instead of Unity's default <code>Audio Listener</code>. You can easily replace it by right-clicking the Unity <code>Audio Listener</code> component and selecting <strong>Change FMOD Studio Listener</strong>.</p>
+<p><img src="../images/fmod-studio-listener.jpg" alt="FMOD Studio Listener"></p>
+<h2 id="3-create-an-audio-source">3. Create an audio source</h2>
+<ol>
+<li>Create a GameObject from <strong>GameObject &gt; Audio &gt; FMOD &gt; Audio Source</strong>. This creates a GameObject with an <code>FMODAudioSource</code> component.</li>
+</ol>
+<p><img src="../images/create-audio-source.jpg" alt="Create Audio Source"></p>
+<ol start="2">
+<li>Select the created GameObject and find the <code>FMODAudioSource</code> component in the Inspector.</li>
+<li>Set <strong>Clip Style</strong> to <strong>Event Reference</strong>.
+<img src="../images/assign-fmod-event.jpg" alt="Assign FMOD Event"></li>
+<li>In <strong>Event</strong>, select the FMOD Event you want to play.
+<img src="../images/select-fmod-event.jpg" alt="Select FMOD Event"></li>
+<li>Enable <strong>Play On Awake</strong>.
+<img src="../images/play-on-awake.jpg" alt="Play On Awake"></li>
+<li>Enter Play Mode. The selected Event plays automatically when the GameObject is enabled.
+<img src="../images/play-mode.jpg" alt="Play Mode"></li>
+</ol>
+<p>If you cannot hear the Event, confirm that the FMOD banks are available and that the camera has the <code>FMOD Studio Listener</code> configured in step 2.</p>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+              <div>
+                  This asset and documentation are not affiliated with Unity Technologies, and the creator is not responsible for any legal issues arising from its use.
+              </div>
+              <div>
+                  <span class="pull-right"><a href="#top">Back to top</a></span>
+
+                  <span>This document was generated using <strong>DocFX</strong>.</span>
+              </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../styles/docs-switcher.js"></script>
+  </body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <script type="text/javascript">
+        thisPackageMetaData = {name: "com.nkstudio.fmodplus", version: "1.7.0", displayTitle: "FMOD Plus 1.7.0", lang: "en"};
+    </script>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Installation | FMOD Plus </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Installation | FMOD Plus ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <link rel="stylesheet" href="../styles/language-switcher.css">
+      <link rel="stylesheet" href="../styles/version-switcher.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../manual/index.html">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+            <div class="container hide-when-search" id="breadcrumb">
+                <!-- Unity Customization: Remove content of breadcrumb bar. This space is used for version and language switchers
+                            <ul class="breadcrumb">
+                              <li></li>
+                            </ul>
+                            -->
+            </div>
+        </div>      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+        <div id="unity_breadcrumb_placeholder">
+            <ul class="breadcrumb">
+            <li></li>
+            </ul>
+        </div>
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="installation">Installation</h1>
+
+<p>Install FMOD for Unity under <code>Assets</code> first, add FMOD Plus through Git UPM, and then use the FMOD Plus Setup window to move FMOD to an Embedded UPM package.</p>
+<h2 id="1-install-fmod-for-unity-under-assets">1. Install FMOD for Unity under Assets</h2>
+<p>Install FMOD for Unity using the standard FMOD Integration workflow. At this stage, keep the integration in its traditional Assets location:</p>
+<pre><code class="lang-text">Assets/Plugins/FMOD
+</code></pre>
+<p>Open the Unity project and wait for FMOD for Unity to finish importing. FMOD Plus does not include FMOD for Unity, FMOD Studio, banks, or an FMOD license.</p>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>Complete this Assets-based FMOD installation before running the FMOD Plus migration. The Setup window searches the Assets installation and prepares it for the move to <code>Packages</code>.</p>
+</div>
+<h2 id="2-install-fmod-plus-with-git-upm">2. Install FMOD Plus with Git UPM</h2>
+<ol>
+<li>In Unity, open <strong>Window &gt; Package Manager</strong>.</li>
+<li>Click <strong>+</strong> and choose <strong>Install package from git URL...</strong>.</li>
+</ol>
+<p><img src="../images/install-package-from-git-url.png" alt="Install package from git URL in Unity Package Manager"></p>
+<ol start="3">
+<li>Enter the following URL and click <strong>Install</strong>:</li>
+</ol>
+<pre><code class="lang-text">https://github.com/NK-Studio/com.nkstudio.fmodplus.git
+</code></pre>
+<h2 id="3-move-fmod-to-packages">3. Move FMOD to Packages</h2>
+<p>After FMOD Plus has been installed successfully, open the following menu:</p>
+<pre><code class="lang-text">FMOD &gt; FMOD Plus &gt; Setup
+</code></pre>
+<p>The Setup window detects the FMOD Integration under <code>Assets/Plugins/FMOD</code> and displays the migration status, source version, target UPM version, destination, and GUID checks.</p>
+<p><img src="../images/fmod-plus-setup-migration.png" alt="FMOD Plus Setup ready to move FMOD to Packages"></p>
+<p>Click <strong>Move FMOD to Packages</strong>. Review the confirmation dialog and continue with the migration.</p>
+<p>When the migration succeeds, the FMOD package is moved to:</p>
+<pre><code class="lang-text">Packages/com.firelight.fmod-for-unity
+</code></pre>
+<p>Project-specific FMOD Settings and Cache remain under <code>Assets/Plugins/FMOD</code>. Unity then recompiles the FMOD Plus Runtime and Editor assemblies against the detected FMOD package.</p>
+<h2 id="verify-the-installation">Verify the installation</h2>
+<p>After Unity finishes importing and compiling, verify that:</p>
+<ul>
+<li>Package Manager shows FMOD Plus and <code>com.firelight.fmod-for-unity</code>.</li>
+<li><strong>FMOD &gt; FMOD Plus &gt; Setup</strong> reports the Embedded FMOD package as active.</li>
+<li>FMOD Plus components such as <strong>FMOD Audio Source</strong> are available.</li>
+<li>The Console has no FMOD or FMOD Plus compilation errors.</li>
+</ul>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+              <div>
+                  This asset and documentation are not affiliated with Unity Technologies, and the creator is not responsible for any legal issues arising from its use.
+              </div>
+              <div>
+                  <span class="pull-right"><a href="#top">Back to top</a></span>
+
+                  <span>This document was generated using <strong>DocFX</strong>.</span>
+              </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../styles/docs-switcher.js"></script>
+  </body>
+</html>

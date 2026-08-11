@@ -1,0 +1,1866 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: FMODPlus
+  name: FMODPlus
+  href: api/FMODPlus.html
+  commentId: N:FMODPlus
+  fullName: FMODPlus
+  nameWithType: FMODPlus
+- uid: FMODPlus.AMBKeyList
+  name: AMBKeyList
+  href: api/FMODPlus.AMBKeyList.html
+  commentId: T:FMODPlus.AMBKeyList
+  fullName: FMODPlus.AMBKeyList
+  nameWithType: AMBKeyList
+- uid: FMODPlus.AMBKeyList.#ctor
+  name: AMBKeyList()
+  href: api/FMODPlus.AMBKeyList.html#FMODPlus_AMBKeyList__ctor
+  commentId: M:FMODPlus.AMBKeyList.#ctor
+  name.vb: New()
+  fullName: FMODPlus.AMBKeyList.AMBKeyList()
+  fullName.vb: FMODPlus.AMBKeyList.New()
+  nameWithType: AMBKeyList.AMBKeyList()
+  nameWithType.vb: AMBKeyList.New()
+- uid: FMODPlus.AMBKeyList.#ctor*
+  name: AMBKeyList
+  href: api/FMODPlus.AMBKeyList.html#FMODPlus_AMBKeyList__ctor_
+  commentId: Overload:FMODPlus.AMBKeyList.#ctor
+  name.vb: New
+  fullName: FMODPlus.AMBKeyList.AMBKeyList
+  fullName.vb: FMODPlus.AMBKeyList.New
+  nameWithType: AMBKeyList.AMBKeyList
+  nameWithType.vb: AMBKeyList.New
+- uid: FMODPlus.AMBKeyList.ClipList
+  name: ClipList
+  href: api/FMODPlus.AMBKeyList.html#FMODPlus_AMBKeyList_ClipList
+  commentId: F:FMODPlus.AMBKeyList.ClipList
+  fullName: FMODPlus.AMBKeyList.ClipList
+  nameWithType: AMBKeyList.ClipList
+- uid: FMODPlus.AMBKeyList.GetEventRef(System.String)
+  name: GetEventRef(string)
+  href: api/FMODPlus.AMBKeyList.html#FMODPlus_AMBKeyList_GetEventRef_System_String_
+  commentId: M:FMODPlus.AMBKeyList.GetEventRef(System.String)
+  name.vb: GetEventRef(String)
+  fullName: FMODPlus.AMBKeyList.GetEventRef(string)
+  fullName.vb: FMODPlus.AMBKeyList.GetEventRef(String)
+  nameWithType: AMBKeyList.GetEventRef(string)
+  nameWithType.vb: AMBKeyList.GetEventRef(String)
+- uid: FMODPlus.AMBKeyList.GetEventRef*
+  name: GetEventRef
+  href: api/FMODPlus.AMBKeyList.html#FMODPlus_AMBKeyList_GetEventRef_
+  commentId: Overload:FMODPlus.AMBKeyList.GetEventRef
+  fullName: FMODPlus.AMBKeyList.GetEventRef
+  nameWithType: AMBKeyList.GetEventRef
+- uid: FMODPlus.AMBKeyList.Instance
+  name: Instance
+  href: api/FMODPlus.AMBKeyList.html#FMODPlus_AMBKeyList_Instance
+  commentId: P:FMODPlus.AMBKeyList.Instance
+  fullName: FMODPlus.AMBKeyList.Instance
+  nameWithType: AMBKeyList.Instance
+- uid: FMODPlus.AMBKeyList.Instance*
+  name: Instance
+  href: api/FMODPlus.AMBKeyList.html#FMODPlus_AMBKeyList_Instance_
+  commentId: Overload:FMODPlus.AMBKeyList.Instance
+  fullName: FMODPlus.AMBKeyList.Instance
+  nameWithType: AMBKeyList.Instance
+- uid: FMODPlus.AMBKeyList.TryFindClip(System.String,FMODUnity.EventReference@)
+  name: TryFindClip(string, out EventReference)
+  href: api/FMODPlus.AMBKeyList.html#FMODPlus_AMBKeyList_TryFindClip_System_String_FMODUnity_EventReference__
+  commentId: M:FMODPlus.AMBKeyList.TryFindClip(System.String,FMODUnity.EventReference@)
+  name.vb: TryFindClip(String, EventReference)
+  fullName: FMODPlus.AMBKeyList.TryFindClip(string, out FMODUnity.EventReference)
+  fullName.vb: FMODPlus.AMBKeyList.TryFindClip(String, FMODUnity.EventReference)
+  nameWithType: AMBKeyList.TryFindClip(string, out EventReference)
+  nameWithType.vb: AMBKeyList.TryFindClip(String, EventReference)
+- uid: FMODPlus.AMBKeyList.TryFindClip*
+  name: TryFindClip
+  href: api/FMODPlus.AMBKeyList.html#FMODPlus_AMBKeyList_TryFindClip_
+  commentId: Overload:FMODPlus.AMBKeyList.TryFindClip
+  fullName: FMODPlus.AMBKeyList.TryFindClip
+  nameWithType: AMBKeyList.TryFindClip
+- uid: FMODPlus.AMBKeyList.TryFindClipAndParams(System.String,FMODUnity.EventReference@,FMODUnity.ParamRef[]@)
+  name: TryFindClipAndParams(string, out EventReference, out ParamRef[])
+  href: api/FMODPlus.AMBKeyList.html#FMODPlus_AMBKeyList_TryFindClipAndParams_System_String_FMODUnity_EventReference__FMODUnity_ParamRef____
+  commentId: M:FMODPlus.AMBKeyList.TryFindClipAndParams(System.String,FMODUnity.EventReference@,FMODUnity.ParamRef[]@)
+  name.vb: TryFindClipAndParams(String, EventReference, ParamRef())
+  fullName: FMODPlus.AMBKeyList.TryFindClipAndParams(string, out FMODUnity.EventReference, out FMODUnity.ParamRef[])
+  fullName.vb: FMODPlus.AMBKeyList.TryFindClipAndParams(String, FMODUnity.EventReference, FMODUnity.ParamRef())
+  nameWithType: AMBKeyList.TryFindClipAndParams(string, out EventReference, out ParamRef[])
+  nameWithType.vb: AMBKeyList.TryFindClipAndParams(String, EventReference, ParamRef())
+- uid: FMODPlus.AMBKeyList.TryFindClipAndParams*
+  name: TryFindClipAndParams
+  href: api/FMODPlus.AMBKeyList.html#FMODPlus_AMBKeyList_TryFindClipAndParams_
+  commentId: Overload:FMODPlus.AMBKeyList.TryFindClipAndParams
+  fullName: FMODPlus.AMBKeyList.TryFindClipAndParams
+  nameWithType: AMBKeyList.TryFindClipAndParams
+- uid: FMODPlus.AMBKeyList.TryFindParamRefs(System.String,FMODUnity.ParamRef[]@)
+  name: TryFindParamRefs(string, out ParamRef[])
+  href: api/FMODPlus.AMBKeyList.html#FMODPlus_AMBKeyList_TryFindParamRefs_System_String_FMODUnity_ParamRef____
+  commentId: M:FMODPlus.AMBKeyList.TryFindParamRefs(System.String,FMODUnity.ParamRef[]@)
+  name.vb: TryFindParamRefs(String, ParamRef())
+  fullName: FMODPlus.AMBKeyList.TryFindParamRefs(string, out FMODUnity.ParamRef[])
+  fullName.vb: FMODPlus.AMBKeyList.TryFindParamRefs(String, FMODUnity.ParamRef())
+  nameWithType: AMBKeyList.TryFindParamRefs(string, out ParamRef[])
+  nameWithType.vb: AMBKeyList.TryFindParamRefs(String, ParamRef())
+- uid: FMODPlus.AMBKeyList.TryFindParamRefs*
+  name: TryFindParamRefs
+  href: api/FMODPlus.AMBKeyList.html#FMODPlus_AMBKeyList_TryFindParamRefs_
+  commentId: Overload:FMODPlus.AMBKeyList.TryFindParamRefs
+  fullName: FMODPlus.AMBKeyList.TryFindParamRefs
+  nameWithType: AMBKeyList.TryFindParamRefs
+- uid: FMODPlus.AMBKeyList.TryGetParamRef(System.String,FMODUnity.ParamRef[]@)
+  name: TryGetParamRef(string, out ParamRef[])
+  href: api/FMODPlus.AMBKeyList.html#FMODPlus_AMBKeyList_TryGetParamRef_System_String_FMODUnity_ParamRef____
+  commentId: M:FMODPlus.AMBKeyList.TryGetParamRef(System.String,FMODUnity.ParamRef[]@)
+  name.vb: TryGetParamRef(String, ParamRef())
+  fullName: FMODPlus.AMBKeyList.TryGetParamRef(string, out FMODUnity.ParamRef[])
+  fullName.vb: FMODPlus.AMBKeyList.TryGetParamRef(String, FMODUnity.ParamRef())
+  nameWithType: AMBKeyList.TryGetParamRef(string, out ParamRef[])
+  nameWithType.vb: AMBKeyList.TryGetParamRef(String, ParamRef())
+- uid: FMODPlus.AMBKeyList.TryGetParamRef*
+  name: TryGetParamRef
+  href: api/FMODPlus.AMBKeyList.html#FMODPlus_AMBKeyList_TryGetParamRef_
+  commentId: Overload:FMODPlus.AMBKeyList.TryGetParamRef
+  fullName: FMODPlus.AMBKeyList.TryGetParamRef
+  nameWithType: AMBKeyList.TryGetParamRef
+- uid: FMODPlus.AMBKeyList.TryGetValue(System.String,FMODUnity.EventReference@)
+  name: TryGetValue(string, out EventReference)
+  href: api/FMODPlus.AMBKeyList.html#FMODPlus_AMBKeyList_TryGetValue_System_String_FMODUnity_EventReference__
+  commentId: M:FMODPlus.AMBKeyList.TryGetValue(System.String,FMODUnity.EventReference@)
+  name.vb: TryGetValue(String, EventReference)
+  fullName: FMODPlus.AMBKeyList.TryGetValue(string, out FMODUnity.EventReference)
+  fullName.vb: FMODPlus.AMBKeyList.TryGetValue(String, FMODUnity.EventReference)
+  nameWithType: AMBKeyList.TryGetValue(string, out EventReference)
+  nameWithType.vb: AMBKeyList.TryGetValue(String, EventReference)
+- uid: FMODPlus.AMBKeyList.TryGetValue*
+  name: TryGetValue
+  href: api/FMODPlus.AMBKeyList.html#FMODPlus_AMBKeyList_TryGetValue_
+  commentId: Overload:FMODPlus.AMBKeyList.TryGetValue
+  fullName: FMODPlus.AMBKeyList.TryGetValue
+  nameWithType: AMBKeyList.TryGetValue
+- uid: FMODPlus.AudioPathByString
+  name: AudioPathByString
+  href: api/FMODPlus.AudioPathByString.html
+  commentId: T:FMODPlus.AudioPathByString
+  fullName: FMODPlus.AudioPathByString
+  nameWithType: AudioPathByString
+- uid: FMODPlus.AudioPathByString.#ctor
+  name: AudioPathByString()
+  href: api/FMODPlus.AudioPathByString.html#FMODPlus_AudioPathByString__ctor
+  commentId: M:FMODPlus.AudioPathByString.#ctor
+  name.vb: New()
+  fullName: FMODPlus.AudioPathByString.AudioPathByString()
+  fullName.vb: FMODPlus.AudioPathByString.New()
+  nameWithType: AudioPathByString.AudioPathByString()
+  nameWithType.vb: AudioPathByString.New()
+- uid: FMODPlus.AudioPathByString.#ctor*
+  name: AudioPathByString
+  href: api/FMODPlus.AudioPathByString.html#FMODPlus_AudioPathByString__ctor_
+  commentId: Overload:FMODPlus.AudioPathByString.#ctor
+  name.vb: New
+  fullName: FMODPlus.AudioPathByString.AudioPathByString
+  fullName.vb: FMODPlus.AudioPathByString.New
+  nameWithType: AudioPathByString.AudioPathByString
+  nameWithType.vb: AudioPathByString.New
+- uid: FMODPlus.AudioPathByString.Add
+  name: Add()
+  href: api/FMODPlus.AudioPathByString.html#FMODPlus_AudioPathByString_Add
+  commentId: M:FMODPlus.AudioPathByString.Add
+  fullName: FMODPlus.AudioPathByString.Add()
+  nameWithType: AudioPathByString.Add()
+- uid: FMODPlus.AudioPathByString.Add(System.String,System.String)
+  name: Add(string, string)
+  href: api/FMODPlus.AudioPathByString.html#FMODPlus_AudioPathByString_Add_System_String_System_String_
+  commentId: M:FMODPlus.AudioPathByString.Add(System.String,System.String)
+  name.vb: Add(String, String)
+  fullName: FMODPlus.AudioPathByString.Add(string, string)
+  fullName.vb: FMODPlus.AudioPathByString.Add(String, String)
+  nameWithType: AudioPathByString.Add(string, string)
+  nameWithType.vb: AudioPathByString.Add(String, String)
+- uid: FMODPlus.AudioPathByString.Add*
+  name: Add
+  href: api/FMODPlus.AudioPathByString.html#FMODPlus_AudioPathByString_Add_
+  commentId: Overload:FMODPlus.AudioPathByString.Add
+  fullName: FMODPlus.AudioPathByString.Add
+  nameWithType: AudioPathByString.Add
+- uid: FMODPlus.AudioPathByString.Count
+  name: Count
+  href: api/FMODPlus.AudioPathByString.html#FMODPlus_AudioPathByString_Count
+  commentId: P:FMODPlus.AudioPathByString.Count
+  fullName: FMODPlus.AudioPathByString.Count
+  nameWithType: AudioPathByString.Count
+- uid: FMODPlus.AudioPathByString.Count*
+  name: Count
+  href: api/FMODPlus.AudioPathByString.html#FMODPlus_AudioPathByString_Count_
+  commentId: Overload:FMODPlus.AudioPathByString.Count
+  fullName: FMODPlus.AudioPathByString.Count
+  nameWithType: AudioPathByString.Count
+- uid: FMODPlus.AudioPathByString.EventRefAndKeyList
+  name: EventRefAndKeyList
+  href: api/FMODPlus.AudioPathByString.html#FMODPlus_AudioPathByString_EventRefAndKeyList
+  commentId: F:FMODPlus.AudioPathByString.EventRefAndKeyList
+  fullName: FMODPlus.AudioPathByString.EventRefAndKeyList
+  nameWithType: AudioPathByString.EventRefAndKeyList
+- uid: FMODPlus.AudioPathByString.GetEventRef(System.Int32)
+  name: GetEventRef(int)
+  href: api/FMODPlus.AudioPathByString.html#FMODPlus_AudioPathByString_GetEventRef_System_Int32_
+  commentId: M:FMODPlus.AudioPathByString.GetEventRef(System.Int32)
+  name.vb: GetEventRef(Integer)
+  fullName: FMODPlus.AudioPathByString.GetEventRef(int)
+  fullName.vb: FMODPlus.AudioPathByString.GetEventRef(Integer)
+  nameWithType: AudioPathByString.GetEventRef(int)
+  nameWithType.vb: AudioPathByString.GetEventRef(Integer)
+- uid: FMODPlus.AudioPathByString.GetEventRef(System.String)
+  name: GetEventRef(string)
+  href: api/FMODPlus.AudioPathByString.html#FMODPlus_AudioPathByString_GetEventRef_System_String_
+  commentId: M:FMODPlus.AudioPathByString.GetEventRef(System.String)
+  name.vb: GetEventRef(String)
+  fullName: FMODPlus.AudioPathByString.GetEventRef(string)
+  fullName.vb: FMODPlus.AudioPathByString.GetEventRef(String)
+  nameWithType: AudioPathByString.GetEventRef(string)
+  nameWithType.vb: AudioPathByString.GetEventRef(String)
+- uid: FMODPlus.AudioPathByString.GetEventRef*
+  name: GetEventRef
+  href: api/FMODPlus.AudioPathByString.html#FMODPlus_AudioPathByString_GetEventRef_
+  commentId: Overload:FMODPlus.AudioPathByString.GetEventRef
+  fullName: FMODPlus.AudioPathByString.GetEventRef
+  nameWithType: AudioPathByString.GetEventRef
+- uid: FMODPlus.AudioPathByString.GetKey(System.Int32)
+  name: GetKey(int)
+  href: api/FMODPlus.AudioPathByString.html#FMODPlus_AudioPathByString_GetKey_System_Int32_
+  commentId: M:FMODPlus.AudioPathByString.GetKey(System.Int32)
+  name.vb: GetKey(Integer)
+  fullName: FMODPlus.AudioPathByString.GetKey(int)
+  fullName.vb: FMODPlus.AudioPathByString.GetKey(Integer)
+  nameWithType: AudioPathByString.GetKey(int)
+  nameWithType.vb: AudioPathByString.GetKey(Integer)
+- uid: FMODPlus.AudioPathByString.GetKey*
+  name: GetKey
+  href: api/FMODPlus.AudioPathByString.html#FMODPlus_AudioPathByString_GetKey_
+  commentId: Overload:FMODPlus.AudioPathByString.GetKey
+  fullName: FMODPlus.AudioPathByString.GetKey
+  nameWithType: AudioPathByString.GetKey
+- uid: FMODPlus.AudioPathByString.GetList
+  name: GetList()
+  href: api/FMODPlus.AudioPathByString.html#FMODPlus_AudioPathByString_GetList
+  commentId: M:FMODPlus.AudioPathByString.GetList
+  fullName: FMODPlus.AudioPathByString.GetList()
+  nameWithType: AudioPathByString.GetList()
+- uid: FMODPlus.AudioPathByString.GetList*
+  name: GetList
+  href: api/FMODPlus.AudioPathByString.html#FMODPlus_AudioPathByString_GetList_
+  commentId: Overload:FMODPlus.AudioPathByString.GetList
+  fullName: FMODPlus.AudioPathByString.GetList
+  nameWithType: AudioPathByString.GetList
+- uid: FMODPlus.AudioPathByString.GetParam(System.Int32)
+  name: GetParam(int)
+  href: api/FMODPlus.AudioPathByString.html#FMODPlus_AudioPathByString_GetParam_System_Int32_
+  commentId: M:FMODPlus.AudioPathByString.GetParam(System.Int32)
+  name.vb: GetParam(Integer)
+  fullName: FMODPlus.AudioPathByString.GetParam(int)
+  fullName.vb: FMODPlus.AudioPathByString.GetParam(Integer)
+  nameWithType: AudioPathByString.GetParam(int)
+  nameWithType.vb: AudioPathByString.GetParam(Integer)
+- uid: FMODPlus.AudioPathByString.GetParam*
+  name: GetParam
+  href: api/FMODPlus.AudioPathByString.html#FMODPlus_AudioPathByString_GetParam_
+  commentId: Overload:FMODPlus.AudioPathByString.GetParam
+  fullName: FMODPlus.AudioPathByString.GetParam
+  nameWithType: AudioPathByString.GetParam
+- uid: FMODPlus.AudioPathByString.OverrideListByKey(FMODPlus.EventReferenceByKey)
+  name: OverrideListByKey(EventReferenceByKey)
+  href: api/FMODPlus.AudioPathByString.html#FMODPlus_AudioPathByString_OverrideListByKey_FMODPlus_EventReferenceByKey_
+  commentId: M:FMODPlus.AudioPathByString.OverrideListByKey(FMODPlus.EventReferenceByKey)
+  fullName: FMODPlus.AudioPathByString.OverrideListByKey(FMODPlus.EventReferenceByKey)
+  nameWithType: AudioPathByString.OverrideListByKey(EventReferenceByKey)
+- uid: FMODPlus.AudioPathByString.OverrideListByKey*
+  name: OverrideListByKey
+  href: api/FMODPlus.AudioPathByString.html#FMODPlus_AudioPathByString_OverrideListByKey_
+  commentId: Overload:FMODPlus.AudioPathByString.OverrideListByKey
+  fullName: FMODPlus.AudioPathByString.OverrideListByKey
+  nameWithType: AudioPathByString.OverrideListByKey
+- uid: FMODPlus.AudioPathByString.Remove(FMODPlus.EventReferenceByKey)
+  name: Remove(EventReferenceByKey)
+  href: api/FMODPlus.AudioPathByString.html#FMODPlus_AudioPathByString_Remove_FMODPlus_EventReferenceByKey_
+  commentId: M:FMODPlus.AudioPathByString.Remove(FMODPlus.EventReferenceByKey)
+  fullName: FMODPlus.AudioPathByString.Remove(FMODPlus.EventReferenceByKey)
+  nameWithType: AudioPathByString.Remove(EventReferenceByKey)
+- uid: FMODPlus.AudioPathByString.Remove*
+  name: Remove
+  href: api/FMODPlus.AudioPathByString.html#FMODPlus_AudioPathByString_Remove_
+  commentId: Overload:FMODPlus.AudioPathByString.Remove
+  fullName: FMODPlus.AudioPathByString.Remove
+  nameWithType: AudioPathByString.Remove
+- uid: FMODPlus.AudioPathByString.RemoveAt(System.Int32)
+  name: RemoveAt(int)
+  href: api/FMODPlus.AudioPathByString.html#FMODPlus_AudioPathByString_RemoveAt_System_Int32_
+  commentId: M:FMODPlus.AudioPathByString.RemoveAt(System.Int32)
+  name.vb: RemoveAt(Integer)
+  fullName: FMODPlus.AudioPathByString.RemoveAt(int)
+  fullName.vb: FMODPlus.AudioPathByString.RemoveAt(Integer)
+  nameWithType: AudioPathByString.RemoveAt(int)
+  nameWithType.vb: AudioPathByString.RemoveAt(Integer)
+- uid: FMODPlus.AudioPathByString.RemoveAt*
+  name: RemoveAt
+  href: api/FMODPlus.AudioPathByString.html#FMODPlus_AudioPathByString_RemoveAt_
+  commentId: Overload:FMODPlus.AudioPathByString.RemoveAt
+  fullName: FMODPlus.AudioPathByString.RemoveAt
+  nameWithType: AudioPathByString.RemoveAt
+- uid: FMODPlus.AudioPathByString.Reset
+  name: Reset()
+  href: api/FMODPlus.AudioPathByString.html#FMODPlus_AudioPathByString_Reset
+  commentId: M:FMODPlus.AudioPathByString.Reset
+  fullName: FMODPlus.AudioPathByString.Reset()
+  nameWithType: AudioPathByString.Reset()
+- uid: FMODPlus.AudioPathByString.Reset*
+  name: Reset
+  href: api/FMODPlus.AudioPathByString.html#FMODPlus_AudioPathByString_Reset_
+  commentId: Overload:FMODPlus.AudioPathByString.Reset
+  fullName: FMODPlus.AudioPathByString.Reset
+  nameWithType: AudioPathByString.Reset
+- uid: FMODPlus.AudioPathByString.TryGetEventAndParameters(System.String,FMODUnity.EventReference@,FMODUnity.ParamRef[]@)
+  name: TryGetEventAndParameters(string, out EventReference, out ParamRef[])
+  href: api/FMODPlus.AudioPathByString.html#FMODPlus_AudioPathByString_TryGetEventAndParameters_System_String_FMODUnity_EventReference__FMODUnity_ParamRef____
+  commentId: M:FMODPlus.AudioPathByString.TryGetEventAndParameters(System.String,FMODUnity.EventReference@,FMODUnity.ParamRef[]@)
+  name.vb: TryGetEventAndParameters(String, EventReference, ParamRef())
+  fullName: FMODPlus.AudioPathByString.TryGetEventAndParameters(string, out FMODUnity.EventReference, out FMODUnity.ParamRef[])
+  fullName.vb: FMODPlus.AudioPathByString.TryGetEventAndParameters(String, FMODUnity.EventReference, FMODUnity.ParamRef())
+  nameWithType: AudioPathByString.TryGetEventAndParameters(string, out EventReference, out ParamRef[])
+  nameWithType.vb: AudioPathByString.TryGetEventAndParameters(String, EventReference, ParamRef())
+- uid: FMODPlus.AudioPathByString.TryGetEventAndParameters*
+  name: TryGetEventAndParameters
+  href: api/FMODPlus.AudioPathByString.html#FMODPlus_AudioPathByString_TryGetEventAndParameters_
+  commentId: Overload:FMODPlus.AudioPathByString.TryGetEventAndParameters
+  fullName: FMODPlus.AudioPathByString.TryGetEventAndParameters
+  nameWithType: AudioPathByString.TryGetEventAndParameters
+- uid: FMODPlus.AudioPathByString.TryGetParamRef(System.String,FMODUnity.ParamRef[]@)
+  name: TryGetParamRef(string, out ParamRef[])
+  href: api/FMODPlus.AudioPathByString.html#FMODPlus_AudioPathByString_TryGetParamRef_System_String_FMODUnity_ParamRef____
+  commentId: M:FMODPlus.AudioPathByString.TryGetParamRef(System.String,FMODUnity.ParamRef[]@)
+  name.vb: TryGetParamRef(String, ParamRef())
+  fullName: FMODPlus.AudioPathByString.TryGetParamRef(string, out FMODUnity.ParamRef[])
+  fullName.vb: FMODPlus.AudioPathByString.TryGetParamRef(String, FMODUnity.ParamRef())
+  nameWithType: AudioPathByString.TryGetParamRef(string, out ParamRef[])
+  nameWithType.vb: AudioPathByString.TryGetParamRef(String, ParamRef())
+- uid: FMODPlus.AudioPathByString.TryGetParamRef*
+  name: TryGetParamRef
+  href: api/FMODPlus.AudioPathByString.html#FMODPlus_AudioPathByString_TryGetParamRef_
+  commentId: Overload:FMODPlus.AudioPathByString.TryGetParamRef
+  fullName: FMODPlus.AudioPathByString.TryGetParamRef
+  nameWithType: AudioPathByString.TryGetParamRef
+- uid: FMODPlus.AudioPathByString.TryGetValue(System.String,FMODUnity.EventReference@)
+  name: TryGetValue(string, out EventReference)
+  href: api/FMODPlus.AudioPathByString.html#FMODPlus_AudioPathByString_TryGetValue_System_String_FMODUnity_EventReference__
+  commentId: M:FMODPlus.AudioPathByString.TryGetValue(System.String,FMODUnity.EventReference@)
+  name.vb: TryGetValue(String, EventReference)
+  fullName: FMODPlus.AudioPathByString.TryGetValue(string, out FMODUnity.EventReference)
+  fullName.vb: FMODPlus.AudioPathByString.TryGetValue(String, FMODUnity.EventReference)
+  nameWithType: AudioPathByString.TryGetValue(string, out EventReference)
+  nameWithType.vb: AudioPathByString.TryGetValue(String, EventReference)
+- uid: FMODPlus.AudioPathByString.TryGetValue*
+  name: TryGetValue
+  href: api/FMODPlus.AudioPathByString.html#FMODPlus_AudioPathByString_TryGetValue_
+  commentId: Overload:FMODPlus.AudioPathByString.TryGetValue
+  fullName: FMODPlus.AudioPathByString.TryGetValue
+  nameWithType: AudioPathByString.TryGetValue
+- uid: FMODPlus.AudioType
+  name: AudioType
+  href: api/FMODPlus.AudioType.html
+  commentId: T:FMODPlus.AudioType
+  fullName: FMODPlus.AudioType
+  nameWithType: AudioType
+- uid: FMODPlus.AudioType.AMB
+  name: AMB
+  href: api/FMODPlus.AudioType.html#FMODPlus_AudioType_AMB
+  commentId: F:FMODPlus.AudioType.AMB
+  fullName: FMODPlus.AudioType.AMB
+  nameWithType: AudioType.AMB
+- uid: FMODPlus.AudioType.BGM
+  name: BGM
+  href: api/FMODPlus.AudioType.html#FMODPlus_AudioType_BGM
+  commentId: F:FMODPlus.AudioType.BGM
+  fullName: FMODPlus.AudioType.BGM
+  nameWithType: AudioType.BGM
+- uid: FMODPlus.AudioType.SFX
+  name: SFX
+  href: api/FMODPlus.AudioType.html#FMODPlus_AudioType_SFX
+  commentId: F:FMODPlus.AudioType.SFX
+  fullName: FMODPlus.AudioType.SFX
+  nameWithType: AudioType.SFX
+- uid: FMODPlus.BGMKeyList
+  name: BGMKeyList
+  href: api/FMODPlus.BGMKeyList.html
+  commentId: T:FMODPlus.BGMKeyList
+  fullName: FMODPlus.BGMKeyList
+  nameWithType: BGMKeyList
+- uid: FMODPlus.BGMKeyList.#ctor
+  name: BGMKeyList()
+  href: api/FMODPlus.BGMKeyList.html#FMODPlus_BGMKeyList__ctor
+  commentId: M:FMODPlus.BGMKeyList.#ctor
+  name.vb: New()
+  fullName: FMODPlus.BGMKeyList.BGMKeyList()
+  fullName.vb: FMODPlus.BGMKeyList.New()
+  nameWithType: BGMKeyList.BGMKeyList()
+  nameWithType.vb: BGMKeyList.New()
+- uid: FMODPlus.BGMKeyList.#ctor*
+  name: BGMKeyList
+  href: api/FMODPlus.BGMKeyList.html#FMODPlus_BGMKeyList__ctor_
+  commentId: Overload:FMODPlus.BGMKeyList.#ctor
+  name.vb: New
+  fullName: FMODPlus.BGMKeyList.BGMKeyList
+  fullName.vb: FMODPlus.BGMKeyList.New
+  nameWithType: BGMKeyList.BGMKeyList
+  nameWithType.vb: BGMKeyList.New
+- uid: FMODPlus.BGMKeyList.ClipList
+  name: ClipList
+  href: api/FMODPlus.BGMKeyList.html#FMODPlus_BGMKeyList_ClipList
+  commentId: F:FMODPlus.BGMKeyList.ClipList
+  fullName: FMODPlus.BGMKeyList.ClipList
+  nameWithType: BGMKeyList.ClipList
+- uid: FMODPlus.BGMKeyList.GetEventRef(System.String)
+  name: GetEventRef(string)
+  href: api/FMODPlus.BGMKeyList.html#FMODPlus_BGMKeyList_GetEventRef_System_String_
+  commentId: M:FMODPlus.BGMKeyList.GetEventRef(System.String)
+  name.vb: GetEventRef(String)
+  fullName: FMODPlus.BGMKeyList.GetEventRef(string)
+  fullName.vb: FMODPlus.BGMKeyList.GetEventRef(String)
+  nameWithType: BGMKeyList.GetEventRef(string)
+  nameWithType.vb: BGMKeyList.GetEventRef(String)
+- uid: FMODPlus.BGMKeyList.GetEventRef*
+  name: GetEventRef
+  href: api/FMODPlus.BGMKeyList.html#FMODPlus_BGMKeyList_GetEventRef_
+  commentId: Overload:FMODPlus.BGMKeyList.GetEventRef
+  fullName: FMODPlus.BGMKeyList.GetEventRef
+  nameWithType: BGMKeyList.GetEventRef
+- uid: FMODPlus.BGMKeyList.Instance
+  name: Instance
+  href: api/FMODPlus.BGMKeyList.html#FMODPlus_BGMKeyList_Instance
+  commentId: P:FMODPlus.BGMKeyList.Instance
+  fullName: FMODPlus.BGMKeyList.Instance
+  nameWithType: BGMKeyList.Instance
+- uid: FMODPlus.BGMKeyList.Instance*
+  name: Instance
+  href: api/FMODPlus.BGMKeyList.html#FMODPlus_BGMKeyList_Instance_
+  commentId: Overload:FMODPlus.BGMKeyList.Instance
+  fullName: FMODPlus.BGMKeyList.Instance
+  nameWithType: BGMKeyList.Instance
+- uid: FMODPlus.BGMKeyList.TryFindClip(System.String,FMODUnity.EventReference@)
+  name: TryFindClip(string, out EventReference)
+  href: api/FMODPlus.BGMKeyList.html#FMODPlus_BGMKeyList_TryFindClip_System_String_FMODUnity_EventReference__
+  commentId: M:FMODPlus.BGMKeyList.TryFindClip(System.String,FMODUnity.EventReference@)
+  name.vb: TryFindClip(String, EventReference)
+  fullName: FMODPlus.BGMKeyList.TryFindClip(string, out FMODUnity.EventReference)
+  fullName.vb: FMODPlus.BGMKeyList.TryFindClip(String, FMODUnity.EventReference)
+  nameWithType: BGMKeyList.TryFindClip(string, out EventReference)
+  nameWithType.vb: BGMKeyList.TryFindClip(String, EventReference)
+- uid: FMODPlus.BGMKeyList.TryFindClip*
+  name: TryFindClip
+  href: api/FMODPlus.BGMKeyList.html#FMODPlus_BGMKeyList_TryFindClip_
+  commentId: Overload:FMODPlus.BGMKeyList.TryFindClip
+  fullName: FMODPlus.BGMKeyList.TryFindClip
+  nameWithType: BGMKeyList.TryFindClip
+- uid: FMODPlus.BGMKeyList.TryFindClipAndParams(System.String,FMODUnity.EventReference@,FMODUnity.ParamRef[]@)
+  name: TryFindClipAndParams(string, out EventReference, out ParamRef[])
+  href: api/FMODPlus.BGMKeyList.html#FMODPlus_BGMKeyList_TryFindClipAndParams_System_String_FMODUnity_EventReference__FMODUnity_ParamRef____
+  commentId: M:FMODPlus.BGMKeyList.TryFindClipAndParams(System.String,FMODUnity.EventReference@,FMODUnity.ParamRef[]@)
+  name.vb: TryFindClipAndParams(String, EventReference, ParamRef())
+  fullName: FMODPlus.BGMKeyList.TryFindClipAndParams(string, out FMODUnity.EventReference, out FMODUnity.ParamRef[])
+  fullName.vb: FMODPlus.BGMKeyList.TryFindClipAndParams(String, FMODUnity.EventReference, FMODUnity.ParamRef())
+  nameWithType: BGMKeyList.TryFindClipAndParams(string, out EventReference, out ParamRef[])
+  nameWithType.vb: BGMKeyList.TryFindClipAndParams(String, EventReference, ParamRef())
+- uid: FMODPlus.BGMKeyList.TryFindClipAndParams*
+  name: TryFindClipAndParams
+  href: api/FMODPlus.BGMKeyList.html#FMODPlus_BGMKeyList_TryFindClipAndParams_
+  commentId: Overload:FMODPlus.BGMKeyList.TryFindClipAndParams
+  fullName: FMODPlus.BGMKeyList.TryFindClipAndParams
+  nameWithType: BGMKeyList.TryFindClipAndParams
+- uid: FMODPlus.BGMKeyList.TryFindParamRefs(System.String,FMODUnity.ParamRef[]@)
+  name: TryFindParamRefs(string, out ParamRef[])
+  href: api/FMODPlus.BGMKeyList.html#FMODPlus_BGMKeyList_TryFindParamRefs_System_String_FMODUnity_ParamRef____
+  commentId: M:FMODPlus.BGMKeyList.TryFindParamRefs(System.String,FMODUnity.ParamRef[]@)
+  name.vb: TryFindParamRefs(String, ParamRef())
+  fullName: FMODPlus.BGMKeyList.TryFindParamRefs(string, out FMODUnity.ParamRef[])
+  fullName.vb: FMODPlus.BGMKeyList.TryFindParamRefs(String, FMODUnity.ParamRef())
+  nameWithType: BGMKeyList.TryFindParamRefs(string, out ParamRef[])
+  nameWithType.vb: BGMKeyList.TryFindParamRefs(String, ParamRef())
+- uid: FMODPlus.BGMKeyList.TryFindParamRefs*
+  name: TryFindParamRefs
+  href: api/FMODPlus.BGMKeyList.html#FMODPlus_BGMKeyList_TryFindParamRefs_
+  commentId: Overload:FMODPlus.BGMKeyList.TryFindParamRefs
+  fullName: FMODPlus.BGMKeyList.TryFindParamRefs
+  nameWithType: BGMKeyList.TryFindParamRefs
+- uid: FMODPlus.BGMKeyList.TryGetParamRef(System.String,FMODUnity.ParamRef[]@)
+  name: TryGetParamRef(string, out ParamRef[])
+  href: api/FMODPlus.BGMKeyList.html#FMODPlus_BGMKeyList_TryGetParamRef_System_String_FMODUnity_ParamRef____
+  commentId: M:FMODPlus.BGMKeyList.TryGetParamRef(System.String,FMODUnity.ParamRef[]@)
+  name.vb: TryGetParamRef(String, ParamRef())
+  fullName: FMODPlus.BGMKeyList.TryGetParamRef(string, out FMODUnity.ParamRef[])
+  fullName.vb: FMODPlus.BGMKeyList.TryGetParamRef(String, FMODUnity.ParamRef())
+  nameWithType: BGMKeyList.TryGetParamRef(string, out ParamRef[])
+  nameWithType.vb: BGMKeyList.TryGetParamRef(String, ParamRef())
+- uid: FMODPlus.BGMKeyList.TryGetParamRef*
+  name: TryGetParamRef
+  href: api/FMODPlus.BGMKeyList.html#FMODPlus_BGMKeyList_TryGetParamRef_
+  commentId: Overload:FMODPlus.BGMKeyList.TryGetParamRef
+  fullName: FMODPlus.BGMKeyList.TryGetParamRef
+  nameWithType: BGMKeyList.TryGetParamRef
+- uid: FMODPlus.BGMKeyList.TryGetValue(System.String,FMODUnity.EventReference@)
+  name: TryGetValue(string, out EventReference)
+  href: api/FMODPlus.BGMKeyList.html#FMODPlus_BGMKeyList_TryGetValue_System_String_FMODUnity_EventReference__
+  commentId: M:FMODPlus.BGMKeyList.TryGetValue(System.String,FMODUnity.EventReference@)
+  name.vb: TryGetValue(String, EventReference)
+  fullName: FMODPlus.BGMKeyList.TryGetValue(string, out FMODUnity.EventReference)
+  fullName.vb: FMODPlus.BGMKeyList.TryGetValue(String, FMODUnity.EventReference)
+  nameWithType: BGMKeyList.TryGetValue(string, out EventReference)
+  nameWithType.vb: BGMKeyList.TryGetValue(String, EventReference)
+- uid: FMODPlus.BGMKeyList.TryGetValue*
+  name: TryGetValue
+  href: api/FMODPlus.BGMKeyList.html#FMODPlus_BGMKeyList_TryGetValue_
+  commentId: Overload:FMODPlus.BGMKeyList.TryGetValue
+  fullName: FMODPlus.BGMKeyList.TryGetValue
+  nameWithType: BGMKeyList.TryGetValue
+- uid: FMODPlus.ClipStyle
+  name: ClipStyle
+  href: api/FMODPlus.ClipStyle.html
+  commentId: T:FMODPlus.ClipStyle
+  fullName: FMODPlus.ClipStyle
+  nameWithType: ClipStyle
+- uid: FMODPlus.ClipStyle.EventReference
+  name: EventReference
+  href: api/FMODPlus.ClipStyle.html#FMODPlus_ClipStyle_EventReference
+  commentId: F:FMODPlus.ClipStyle.EventReference
+  fullName: FMODPlus.ClipStyle.EventReference
+  nameWithType: ClipStyle.EventReference
+- uid: FMODPlus.ClipStyle.Key
+  name: Key
+  href: api/FMODPlus.ClipStyle.html#FMODPlus_ClipStyle_Key
+  commentId: F:FMODPlus.ClipStyle.Key
+  fullName: FMODPlus.ClipStyle.Key
+  nameWithType: ClipStyle.Key
+- uid: FMODPlus.CommandBehaviourStyle
+  name: CommandBehaviourStyle
+  href: api/FMODPlus.CommandBehaviourStyle.html
+  commentId: T:FMODPlus.CommandBehaviourStyle
+  fullName: FMODPlus.CommandBehaviourStyle
+  nameWithType: CommandBehaviourStyle
+- uid: FMODPlus.CommandBehaviourStyle.GlobalParameter
+  name: GlobalParameter
+  href: api/FMODPlus.CommandBehaviourStyle.html#FMODPlus_CommandBehaviourStyle_GlobalParameter
+  commentId: F:FMODPlus.CommandBehaviourStyle.GlobalParameter
+  fullName: FMODPlus.CommandBehaviourStyle.GlobalParameter
+  nameWithType: CommandBehaviourStyle.GlobalParameter
+- uid: FMODPlus.CommandBehaviourStyle.KeyOff
+  name: KeyOff
+  href: api/FMODPlus.CommandBehaviourStyle.html#FMODPlus_CommandBehaviourStyle_KeyOff
+  commentId: F:FMODPlus.CommandBehaviourStyle.KeyOff
+  fullName: FMODPlus.CommandBehaviourStyle.KeyOff
+  nameWithType: CommandBehaviourStyle.KeyOff
+- uid: FMODPlus.CommandBehaviourStyle.Parameter
+  name: Parameter
+  href: api/FMODPlus.CommandBehaviourStyle.html#FMODPlus_CommandBehaviourStyle_Parameter
+  commentId: F:FMODPlus.CommandBehaviourStyle.Parameter
+  fullName: FMODPlus.CommandBehaviourStyle.Parameter
+  nameWithType: CommandBehaviourStyle.Parameter
+- uid: FMODPlus.CommandBehaviourStyle.Play
+  name: Play
+  href: api/FMODPlus.CommandBehaviourStyle.html#FMODPlus_CommandBehaviourStyle_Play
+  commentId: F:FMODPlus.CommandBehaviourStyle.Play
+  fullName: FMODPlus.CommandBehaviourStyle.Play
+  nameWithType: CommandBehaviourStyle.Play
+- uid: FMODPlus.CommandBehaviourStyle.Stop
+  name: Stop
+  href: api/FMODPlus.CommandBehaviourStyle.html#FMODPlus_CommandBehaviourStyle_Stop
+  commentId: F:FMODPlus.CommandBehaviourStyle.Stop
+  fullName: FMODPlus.CommandBehaviourStyle.Stop
+  nameWithType: CommandBehaviourStyle.Stop
+- uid: FMODPlus.CommandSender
+  name: CommandSender
+  href: api/FMODPlus.CommandSender.html
+  commentId: T:FMODPlus.CommandSender
+  fullName: FMODPlus.CommandSender
+  nameWithType: CommandSender
+- uid: FMODPlus.CommandSender.#ctor
+  name: CommandSender()
+  href: api/FMODPlus.CommandSender.html#FMODPlus_CommandSender__ctor
+  commentId: M:FMODPlus.CommandSender.#ctor
+  name.vb: New()
+  fullName: FMODPlus.CommandSender.CommandSender()
+  fullName.vb: FMODPlus.CommandSender.New()
+  nameWithType: CommandSender.CommandSender()
+  nameWithType.vb: CommandSender.New()
+- uid: FMODPlus.CommandSender.#ctor*
+  name: CommandSender
+  href: api/FMODPlus.CommandSender.html#FMODPlus_CommandSender__ctor_
+  commentId: Overload:FMODPlus.CommandSender.#ctor
+  name.vb: New
+  fullName: FMODPlus.CommandSender.CommandSender
+  fullName.vb: FMODPlus.CommandSender.New
+  nameWithType: CommandSender.CommandSender
+  nameWithType.vb: CommandSender.New
+- uid: FMODPlus.CommandSender.AudioStyle
+  name: AudioStyle
+  href: api/FMODPlus.CommandSender.html#FMODPlus_CommandSender_AudioStyle
+  commentId: F:FMODPlus.CommandSender.AudioStyle
+  fullName: FMODPlus.CommandSender.AudioStyle
+  nameWithType: CommandSender.AudioStyle
+- uid: FMODPlus.CommandSender.BehaviourStyle
+  name: BehaviourStyle
+  href: api/FMODPlus.CommandSender.html#FMODPlus_CommandSender_BehaviourStyle
+  commentId: F:FMODPlus.CommandSender.BehaviourStyle
+  fullName: FMODPlus.CommandSender.BehaviourStyle
+  nameWithType: CommandSender.BehaviourStyle
+- uid: FMODPlus.CommandSender.Clip
+  name: Clip
+  href: api/FMODPlus.CommandSender.html#FMODPlus_CommandSender_Clip
+  commentId: F:FMODPlus.CommandSender.Clip
+  fullName: FMODPlus.CommandSender.Clip
+  nameWithType: CommandSender.Clip
+- uid: FMODPlus.CommandSender.ClipStyle
+  name: ClipStyle
+  href: api/FMODPlus.CommandSender.html#FMODPlus_CommandSender_ClipStyle
+  commentId: F:FMODPlus.CommandSender.ClipStyle
+  fullName: FMODPlus.CommandSender.ClipStyle
+  nameWithType: CommandSender.ClipStyle
+- uid: FMODPlus.CommandSender.Fade
+  name: Fade
+  href: api/FMODPlus.CommandSender.html#FMODPlus_CommandSender_Fade
+  commentId: F:FMODPlus.CommandSender.Fade
+  fullName: FMODPlus.CommandSender.Fade
+  nameWithType: CommandSender.Fade
+- uid: FMODPlus.CommandSender.Key
+  name: Key
+  href: api/FMODPlus.CommandSender.html#FMODPlus_CommandSender_Key
+  commentId: F:FMODPlus.CommandSender.Key
+  fullName: FMODPlus.CommandSender.Key
+  nameWithType: CommandSender.Key
+- uid: FMODPlus.CommandSender.Parameter
+  name: Parameter
+  href: api/FMODPlus.CommandSender.html#FMODPlus_CommandSender_Parameter
+  commentId: F:FMODPlus.CommandSender.Parameter
+  fullName: FMODPlus.CommandSender.Parameter
+  nameWithType: CommandSender.Parameter
+- uid: FMODPlus.CommandSender.ParameterDescription
+  name: ParameterDescription
+  href: api/FMODPlus.CommandSender.html#FMODPlus_CommandSender_ParameterDescription
+  commentId: P:FMODPlus.CommandSender.ParameterDescription
+  fullName: FMODPlus.CommandSender.ParameterDescription
+  nameWithType: CommandSender.ParameterDescription
+- uid: FMODPlus.CommandSender.ParameterDescription*
+  name: ParameterDescription
+  href: api/FMODPlus.CommandSender.html#FMODPlus_CommandSender_ParameterDescription_
+  commentId: Overload:FMODPlus.CommandSender.ParameterDescription
+  fullName: FMODPlus.CommandSender.ParameterDescription
+  nameWithType: CommandSender.ParameterDescription
+- uid: FMODPlus.CommandSender.Params
+  name: Params
+  href: api/FMODPlus.CommandSender.html#FMODPlus_CommandSender_Params
+  commentId: F:FMODPlus.CommandSender.Params
+  fullName: FMODPlus.CommandSender.Params
+  nameWithType: CommandSender.Params
+- uid: FMODPlus.CommandSender.SendCommand
+  name: SendCommand()
+  href: api/FMODPlus.CommandSender.html#FMODPlus_CommandSender_SendCommand
+  commentId: M:FMODPlus.CommandSender.SendCommand
+  fullName: FMODPlus.CommandSender.SendCommand()
+  nameWithType: CommandSender.SendCommand()
+- uid: FMODPlus.CommandSender.SendCommand*
+  name: SendCommand
+  href: api/FMODPlus.CommandSender.html#FMODPlus_CommandSender_SendCommand_
+  commentId: Overload:FMODPlus.CommandSender.SendCommand
+  fullName: FMODPlus.CommandSender.SendCommand
+  nameWithType: CommandSender.SendCommand
+- uid: FMODPlus.CommandSender.SendOnAwake
+  name: SendOnAwake
+  href: api/FMODPlus.CommandSender.html#FMODPlus_CommandSender_SendOnAwake
+  commentId: F:FMODPlus.CommandSender.SendOnAwake
+  fullName: FMODPlus.CommandSender.SendOnAwake
+  nameWithType: CommandSender.SendOnAwake
+- uid: FMODPlus.CommandSender.Value
+  name: Value
+  href: api/FMODPlus.CommandSender.html#FMODPlus_CommandSender_Value
+  commentId: F:FMODPlus.CommandSender.Value
+  fullName: FMODPlus.CommandSender.Value
+  nameWithType: CommandSender.Value
+- uid: FMODPlus.CommandSender.audioSource
+  name: audioSource
+  href: api/FMODPlus.CommandSender.html#FMODPlus_CommandSender_audioSource
+  commentId: F:FMODPlus.CommandSender.audioSource
+  fullName: FMODPlus.CommandSender.audioSource
+  nameWithType: CommandSender.audioSource
+- uid: FMODPlus.EventRefAtKey
+  name: EventRefAtKey
+  href: api/FMODPlus.EventRefAtKey.html
+  commentId: T:FMODPlus.EventRefAtKey
+  fullName: FMODPlus.EventRefAtKey
+  nameWithType: EventRefAtKey
+- uid: FMODPlus.EventRefAtKey.#ctor
+  name: EventRefAtKey()
+  href: api/FMODPlus.EventRefAtKey.html#FMODPlus_EventRefAtKey__ctor
+  commentId: M:FMODPlus.EventRefAtKey.#ctor
+  name.vb: New()
+  fullName: FMODPlus.EventRefAtKey.EventRefAtKey()
+  fullName.vb: FMODPlus.EventRefAtKey.New()
+  nameWithType: EventRefAtKey.EventRefAtKey()
+  nameWithType.vb: EventRefAtKey.New()
+- uid: FMODPlus.EventRefAtKey.#ctor*
+  name: EventRefAtKey
+  href: api/FMODPlus.EventRefAtKey.html#FMODPlus_EventRefAtKey__ctor_
+  commentId: Overload:FMODPlus.EventRefAtKey.#ctor
+  name.vb: New
+  fullName: FMODPlus.EventRefAtKey.EventRefAtKey
+  fullName.vb: FMODPlus.EventRefAtKey.New
+  nameWithType: EventRefAtKey.EventRefAtKey
+  nameWithType.vb: EventRefAtKey.New
+- uid: FMODPlus.EventRefAtKey.Count
+  name: Count
+  href: api/FMODPlus.EventRefAtKey.html#FMODPlus_EventRefAtKey_Count
+  commentId: P:FMODPlus.EventRefAtKey.Count
+  fullName: FMODPlus.EventRefAtKey.Count
+  nameWithType: EventRefAtKey.Count
+- uid: FMODPlus.EventRefAtKey.Count*
+  name: Count
+  href: api/FMODPlus.EventRefAtKey.html#FMODPlus_EventRefAtKey_Count_
+  commentId: Overload:FMODPlus.EventRefAtKey.Count
+  fullName: FMODPlus.EventRefAtKey.Count
+  nameWithType: EventRefAtKey.Count
+- uid: FMODPlus.EventRefAtKey.EventRefList
+  name: EventRefList
+  href: api/FMODPlus.EventRefAtKey.html#FMODPlus_EventRefAtKey_EventRefList
+  commentId: F:FMODPlus.EventRefAtKey.EventRefList
+  fullName: FMODPlus.EventRefAtKey.EventRefList
+  nameWithType: EventRefAtKey.EventRefList
+- uid: FMODPlus.EventRefAtKey.Length
+  name: Length
+  href: api/FMODPlus.EventRefAtKey.html#FMODPlus_EventRefAtKey_Length
+  commentId: P:FMODPlus.EventRefAtKey.Length
+  fullName: FMODPlus.EventRefAtKey.Length
+  nameWithType: EventRefAtKey.Length
+- uid: FMODPlus.EventRefAtKey.Length*
+  name: Length
+  href: api/FMODPlus.EventRefAtKey.html#FMODPlus_EventRefAtKey_Length_
+  commentId: Overload:FMODPlus.EventRefAtKey.Length
+  fullName: FMODPlus.EventRefAtKey.Length
+  nameWithType: EventRefAtKey.Length
+- uid: FMODPlus.EventRefCallback
+  name: EventRefCallback
+  href: api/FMODPlus.EventRefCallback.html
+  commentId: T:FMODPlus.EventRefCallback
+  fullName: FMODPlus.EventRefCallback
+  nameWithType: EventRefCallback
+- uid: FMODPlus.EventRefCallback.#ctor(FMODUnity.EventReference,FMODPlus.ClipStyle,FMODUnity.ParamRef[])
+  name: EventRefCallback(EventReference, ClipStyle, ParamRef[])
+  href: api/FMODPlus.EventRefCallback.html#FMODPlus_EventRefCallback__ctor_FMODUnity_EventReference_FMODPlus_ClipStyle_FMODUnity_ParamRef___
+  commentId: M:FMODPlus.EventRefCallback.#ctor(FMODUnity.EventReference,FMODPlus.ClipStyle,FMODUnity.ParamRef[])
+  name.vb: New(EventReference, ClipStyle, ParamRef())
+  fullName: FMODPlus.EventRefCallback.EventRefCallback(FMODUnity.EventReference, FMODPlus.ClipStyle, FMODUnity.ParamRef[])
+  fullName.vb: FMODPlus.EventRefCallback.New(FMODUnity.EventReference, FMODPlus.ClipStyle, FMODUnity.ParamRef())
+  nameWithType: EventRefCallback.EventRefCallback(EventReference, ClipStyle, ParamRef[])
+  nameWithType.vb: EventRefCallback.New(EventReference, ClipStyle, ParamRef())
+- uid: FMODPlus.EventRefCallback.#ctor*
+  name: EventRefCallback
+  href: api/FMODPlus.EventRefCallback.html#FMODPlus_EventRefCallback__ctor_
+  commentId: Overload:FMODPlus.EventRefCallback.#ctor
+  name.vb: New
+  fullName: FMODPlus.EventRefCallback.EventRefCallback
+  fullName.vb: FMODPlus.EventRefCallback.New
+  nameWithType: EventRefCallback.EventRefCallback
+  nameWithType.vb: EventRefCallback.New
+- uid: FMODPlus.EventRefCallback.Params
+  name: Params
+  href: api/FMODPlus.EventRefCallback.html#FMODPlus_EventRefCallback_Params
+  commentId: P:FMODPlus.EventRefCallback.Params
+  fullName: FMODPlus.EventRefCallback.Params
+  nameWithType: EventRefCallback.Params
+- uid: FMODPlus.EventRefCallback.Params*
+  name: Params
+  href: api/FMODPlus.EventRefCallback.html#FMODPlus_EventRefCallback_Params_
+  commentId: Overload:FMODPlus.EventRefCallback.Params
+  fullName: FMODPlus.EventRefCallback.Params
+  nameWithType: EventRefCallback.Params
+- uid: FMODPlus.EventRefCallback.TryGetClip(FMODUnity.EventReference@)
+  name: TryGetClip(out EventReference)
+  href: api/FMODPlus.EventRefCallback.html#FMODPlus_EventRefCallback_TryGetClip_FMODUnity_EventReference__
+  commentId: M:FMODPlus.EventRefCallback.TryGetClip(FMODUnity.EventReference@)
+  name.vb: TryGetClip(EventReference)
+  fullName: FMODPlus.EventRefCallback.TryGetClip(out FMODUnity.EventReference)
+  fullName.vb: FMODPlus.EventRefCallback.TryGetClip(FMODUnity.EventReference)
+  nameWithType: EventRefCallback.TryGetClip(out EventReference)
+  nameWithType.vb: EventRefCallback.TryGetClip(EventReference)
+- uid: FMODPlus.EventRefCallback.TryGetClip*
+  name: TryGetClip
+  href: api/FMODPlus.EventRefCallback.html#FMODPlus_EventRefCallback_TryGetClip_
+  commentId: Overload:FMODPlus.EventRefCallback.TryGetClip
+  fullName: FMODPlus.EventRefCallback.TryGetClip
+  nameWithType: EventRefCallback.TryGetClip
+- uid: FMODPlus.EventReferenceByKey
+  name: EventReferenceByKey
+  href: api/FMODPlus.EventReferenceByKey.html
+  commentId: T:FMODPlus.EventReferenceByKey
+  fullName: FMODPlus.EventReferenceByKey
+  nameWithType: EventReferenceByKey
+- uid: FMODPlus.EventReferenceByKey.#ctor
+  name: EventReferenceByKey()
+  href: api/FMODPlus.EventReferenceByKey.html#FMODPlus_EventReferenceByKey__ctor
+  commentId: M:FMODPlus.EventReferenceByKey.#ctor
+  name.vb: New()
+  fullName: FMODPlus.EventReferenceByKey.EventReferenceByKey()
+  fullName.vb: FMODPlus.EventReferenceByKey.New()
+  nameWithType: EventReferenceByKey.EventReferenceByKey()
+  nameWithType.vb: EventReferenceByKey.New()
+- uid: FMODPlus.EventReferenceByKey.#ctor*
+  name: EventReferenceByKey
+  href: api/FMODPlus.EventReferenceByKey.html#FMODPlus_EventReferenceByKey__ctor_
+  commentId: Overload:FMODPlus.EventReferenceByKey.#ctor
+  name.vb: New
+  fullName: FMODPlus.EventReferenceByKey.EventReferenceByKey
+  fullName.vb: FMODPlus.EventReferenceByKey.New
+  nameWithType: EventReferenceByKey.EventReferenceByKey
+  nameWithType.vb: EventReferenceByKey.New
+- uid: FMODPlus.EventReferenceByKey.CreateGUID
+  name: CreateGUID()
+  href: api/FMODPlus.EventReferenceByKey.html#FMODPlus_EventReferenceByKey_CreateGUID
+  commentId: M:FMODPlus.EventReferenceByKey.CreateGUID
+  fullName: FMODPlus.EventReferenceByKey.CreateGUID()
+  nameWithType: EventReferenceByKey.CreateGUID()
+- uid: FMODPlus.EventReferenceByKey.CreateGUID*
+  name: CreateGUID
+  href: api/FMODPlus.EventReferenceByKey.html#FMODPlus_EventReferenceByKey_CreateGUID_
+  commentId: Overload:FMODPlus.EventReferenceByKey.CreateGUID
+  fullName: FMODPlus.EventReferenceByKey.CreateGUID
+  nameWithType: EventReferenceByKey.CreateGUID
+- uid: FMODPlus.EventReferenceByKey.GUID
+  name: GUID
+  href: api/FMODPlus.EventReferenceByKey.html#FMODPlus_EventReferenceByKey_GUID
+  commentId: F:FMODPlus.EventReferenceByKey.GUID
+  fullName: FMODPlus.EventReferenceByKey.GUID
+  nameWithType: EventReferenceByKey.GUID
+- uid: FMODPlus.EventReferenceByKey.Key
+  name: Key
+  href: api/FMODPlus.EventReferenceByKey.html#FMODPlus_EventReferenceByKey_Key
+  commentId: F:FMODPlus.EventReferenceByKey.Key
+  fullName: FMODPlus.EventReferenceByKey.Key
+  nameWithType: EventReferenceByKey.Key
+- uid: FMODPlus.EventReferenceByKey.Params
+  name: Params
+  href: api/FMODPlus.EventReferenceByKey.html#FMODPlus_EventReferenceByKey_Params
+  commentId: F:FMODPlus.EventReferenceByKey.Params
+  fullName: FMODPlus.EventReferenceByKey.Params
+  nameWithType: EventReferenceByKey.Params
+- uid: FMODPlus.EventReferenceByKey.ShowInfo
+  name: ShowInfo
+  href: api/FMODPlus.EventReferenceByKey.html#FMODPlus_EventReferenceByKey_ShowInfo
+  commentId: F:FMODPlus.EventReferenceByKey.ShowInfo
+  fullName: FMODPlus.EventReferenceByKey.ShowInfo
+  nameWithType: EventReferenceByKey.ShowInfo
+- uid: FMODPlus.EventReferenceByKey.Value
+  name: Value
+  href: api/FMODPlus.EventReferenceByKey.html#FMODPlus_EventReferenceByKey_Value
+  commentId: F:FMODPlus.EventReferenceByKey.Value
+  fullName: FMODPlus.EventReferenceByKey.Value
+  nameWithType: EventReferenceByKey.Value
+- uid: FMODPlus.FMODAudioSource
+  name: FMODAudioSource
+  href: api/FMODPlus.FMODAudioSource.html
+  commentId: T:FMODPlus.FMODAudioSource
+  fullName: FMODPlus.FMODAudioSource
+  nameWithType: FMODAudioSource
+- uid: FMODPlus.FMODAudioSource.#ctor
+  name: FMODAudioSource()
+  href: api/FMODPlus.FMODAudioSource.html#FMODPlus_FMODAudioSource__ctor
+  commentId: M:FMODPlus.FMODAudioSource.#ctor
+  name.vb: New()
+  fullName: FMODPlus.FMODAudioSource.FMODAudioSource()
+  fullName.vb: FMODPlus.FMODAudioSource.New()
+  nameWithType: FMODAudioSource.FMODAudioSource()
+  nameWithType.vb: FMODAudioSource.New()
+- uid: FMODPlus.FMODAudioSource.#ctor*
+  name: FMODAudioSource
+  href: api/FMODPlus.FMODAudioSource.html#FMODPlus_FMODAudioSource__ctor_
+  commentId: Overload:FMODPlus.FMODAudioSource.#ctor
+  name.vb: New
+  fullName: FMODPlus.FMODAudioSource.FMODAudioSource
+  fullName.vb: FMODPlus.FMODAudioSource.New
+  nameWithType: FMODAudioSource.FMODAudioSource
+  nameWithType.vb: FMODAudioSource.New
+- uid: FMODPlus.FMODAudioSource.AllowFadeout
+  name: AllowFadeout
+  href: api/FMODPlus.FMODAudioSource.html#FMODPlus_FMODAudioSource_AllowFadeout
+  commentId: F:FMODPlus.FMODAudioSource.AllowFadeout
+  fullName: FMODPlus.FMODAudioSource.AllowFadeout
+  nameWithType: FMODAudioSource.AllowFadeout
+- uid: FMODPlus.FMODAudioSource.ApplyParameter(FMODUnity.ParamRef[])
+  name: ApplyParameter(ParamRef[])
+  href: api/FMODPlus.FMODAudioSource.html#FMODPlus_FMODAudioSource_ApplyParameter_FMODUnity_ParamRef___
+  commentId: M:FMODPlus.FMODAudioSource.ApplyParameter(FMODUnity.ParamRef[])
+  name.vb: ApplyParameter(ParamRef())
+  fullName: FMODPlus.FMODAudioSource.ApplyParameter(FMODUnity.ParamRef[])
+  fullName.vb: FMODPlus.FMODAudioSource.ApplyParameter(FMODUnity.ParamRef())
+  nameWithType: FMODAudioSource.ApplyParameter(ParamRef[])
+  nameWithType.vb: FMODAudioSource.ApplyParameter(ParamRef())
+- uid: FMODPlus.FMODAudioSource.ApplyParameter*
+  name: ApplyParameter
+  href: api/FMODPlus.FMODAudioSource.html#FMODPlus_FMODAudioSource_ApplyParameter_
+  commentId: Overload:FMODPlus.FMODAudioSource.ApplyParameter
+  fullName: FMODPlus.FMODAudioSource.ApplyParameter
+  nameWithType: FMODAudioSource.ApplyParameter
+- uid: FMODPlus.FMODAudioSource.EventInstance
+  name: EventInstance
+  href: api/FMODPlus.FMODAudioSource.html#FMODPlus_FMODAudioSource_EventInstance
+  commentId: P:FMODPlus.FMODAudioSource.EventInstance
+  fullName: FMODPlus.FMODAudioSource.EventInstance
+  nameWithType: FMODAudioSource.EventInstance
+- uid: FMODPlus.FMODAudioSource.EventInstance*
+  name: EventInstance
+  href: api/FMODPlus.FMODAudioSource.html#FMODPlus_FMODAudioSource_EventInstance_
+  commentId: Overload:FMODPlus.FMODAudioSource.EventInstance
+  fullName: FMODPlus.FMODAudioSource.EventInstance
+  nameWithType: FMODAudioSource.EventInstance
+- uid: FMODPlus.FMODAudioSource.HandleGameEvent
+  name: HandleGameEvent
+  href: api/FMODPlus.FMODAudioSource.html#FMODPlus_FMODAudioSource_HandleGameEvent
+  commentId: F:FMODPlus.FMODAudioSource.HandleGameEvent
+  fullName: FMODPlus.FMODAudioSource.HandleGameEvent
+  nameWithType: FMODAudioSource.HandleGameEvent
+- uid: FMODPlus.FMODAudioSource.IsActive
+  name: IsActive
+  href: api/FMODPlus.FMODAudioSource.html#FMODPlus_FMODAudioSource_IsActive
+  commentId: P:FMODPlus.FMODAudioSource.IsActive
+  fullName: FMODPlus.FMODAudioSource.IsActive
+  nameWithType: FMODAudioSource.IsActive
+- uid: FMODPlus.FMODAudioSource.IsActive*
+  name: IsActive
+  href: api/FMODPlus.FMODAudioSource.html#FMODPlus_FMODAudioSource_IsActive_
+  commentId: Overload:FMODPlus.FMODAudioSource.IsActive
+  fullName: FMODPlus.FMODAudioSource.IsActive
+  nameWithType: FMODAudioSource.IsActive
+- uid: FMODPlus.FMODAudioSource.KeyOff
+  name: KeyOff()
+  href: api/FMODPlus.FMODAudioSource.html#FMODPlus_FMODAudioSource_KeyOff
+  commentId: M:FMODPlus.FMODAudioSource.KeyOff
+  fullName: FMODPlus.FMODAudioSource.KeyOff()
+  nameWithType: FMODAudioSource.KeyOff()
+- uid: FMODPlus.FMODAudioSource.KeyOff*
+  name: KeyOff
+  href: api/FMODPlus.FMODAudioSource.html#FMODPlus_FMODAudioSource_KeyOff_
+  commentId: Overload:FMODPlus.FMODAudioSource.KeyOff
+  fullName: FMODPlus.FMODAudioSource.KeyOff
+  nameWithType: FMODAudioSource.KeyOff
+- uid: FMODPlus.FMODAudioSource.Length
+  name: Length
+  href: api/FMODPlus.FMODAudioSource.html#FMODPlus_FMODAudioSource_Length
+  commentId: P:FMODPlus.FMODAudioSource.Length
+  fullName: FMODPlus.FMODAudioSource.Length
+  nameWithType: FMODAudioSource.Length
+- uid: FMODPlus.FMODAudioSource.Length*
+  name: Length
+  href: api/FMODPlus.FMODAudioSource.html#FMODPlus_FMODAudioSource_Length_
+  commentId: Overload:FMODPlus.FMODAudioSource.Length
+  fullName: FMODPlus.FMODAudioSource.Length
+  nameWithType: FMODAudioSource.Length
+- uid: FMODPlus.FMODAudioSource.NonRigidbodyVelocity
+  name: NonRigidbodyVelocity
+  href: api/FMODPlus.FMODAudioSource.html#FMODPlus_FMODAudioSource_NonRigidbodyVelocity
+  commentId: F:FMODPlus.FMODAudioSource.NonRigidbodyVelocity
+  fullName: FMODPlus.FMODAudioSource.NonRigidbodyVelocity
+  nameWithType: FMODAudioSource.NonRigidbodyVelocity
+- uid: FMODPlus.FMODAudioSource.OverrideAttenuation
+  name: OverrideAttenuation
+  href: api/FMODPlus.FMODAudioSource.html#FMODPlus_FMODAudioSource_OverrideAttenuation
+  commentId: F:FMODPlus.FMODAudioSource.OverrideAttenuation
+  fullName: FMODPlus.FMODAudioSource.OverrideAttenuation
+  nameWithType: FMODAudioSource.OverrideAttenuation
+- uid: FMODPlus.FMODAudioSource.OverrideMaxDistance
+  name: OverrideMaxDistance
+  href: api/FMODPlus.FMODAudioSource.html#FMODPlus_FMODAudioSource_OverrideMaxDistance
+  commentId: F:FMODPlus.FMODAudioSource.OverrideMaxDistance
+  fullName: FMODPlus.FMODAudioSource.OverrideMaxDistance
+  nameWithType: FMODAudioSource.OverrideMaxDistance
+- uid: FMODPlus.FMODAudioSource.OverrideMinDistance
+  name: OverrideMinDistance
+  href: api/FMODPlus.FMODAudioSource.html#FMODPlus_FMODAudioSource_OverrideMinDistance
+  commentId: F:FMODPlus.FMODAudioSource.OverrideMinDistance
+  fullName: FMODPlus.FMODAudioSource.OverrideMinDistance
+  nameWithType: FMODAudioSource.OverrideMinDistance
+- uid: FMODPlus.FMODAudioSource.Params
+  name: Params
+  href: api/FMODPlus.FMODAudioSource.html#FMODPlus_FMODAudioSource_Params
+  commentId: F:FMODPlus.FMODAudioSource.Params
+  fullName: FMODPlus.FMODAudioSource.Params
+  nameWithType: FMODAudioSource.Params
+- uid: FMODPlus.FMODAudioSource.Pause
+  name: Pause()
+  href: api/FMODPlus.FMODAudioSource.html#FMODPlus_FMODAudioSource_Pause
+  commentId: M:FMODPlus.FMODAudioSource.Pause
+  fullName: FMODPlus.FMODAudioSource.Pause()
+  nameWithType: FMODAudioSource.Pause()
+- uid: FMODPlus.FMODAudioSource.Pause*
+  name: Pause
+  href: api/FMODPlus.FMODAudioSource.html#FMODPlus_FMODAudioSource_Pause_
+  commentId: Overload:FMODPlus.FMODAudioSource.Pause
+  fullName: FMODPlus.FMODAudioSource.Pause
+  nameWithType: FMODAudioSource.Pause
+- uid: FMODPlus.FMODAudioSource.Pitch
+  name: Pitch
+  href: api/FMODPlus.FMODAudioSource.html#FMODPlus_FMODAudioSource_Pitch
+  commentId: P:FMODPlus.FMODAudioSource.Pitch
+  fullName: FMODPlus.FMODAudioSource.Pitch
+  nameWithType: FMODAudioSource.Pitch
+- uid: FMODPlus.FMODAudioSource.Pitch*
+  name: Pitch
+  href: api/FMODPlus.FMODAudioSource.html#FMODPlus_FMODAudioSource_Pitch_
+  commentId: Overload:FMODPlus.FMODAudioSource.Pitch
+  fullName: FMODPlus.FMODAudioSource.Pitch
+  nameWithType: FMODAudioSource.Pitch
+- uid: FMODPlus.FMODAudioSource.Play
+  name: Play()
+  href: api/FMODPlus.FMODAudioSource.html#FMODPlus_FMODAudioSource_Play
+  commentId: M:FMODPlus.FMODAudioSource.Play
+  fullName: FMODPlus.FMODAudioSource.Play()
+  nameWithType: FMODAudioSource.Play()
+- uid: FMODPlus.FMODAudioSource.Play*
+  name: Play
+  href: api/FMODPlus.FMODAudioSource.html#FMODPlus_FMODAudioSource_Play_
+  commentId: Overload:FMODPlus.FMODAudioSource.Play
+  fullName: FMODPlus.FMODAudioSource.Play
+  nameWithType: FMODAudioSource.Play
+- uid: FMODPlus.FMODAudioSource.PlayOneShot(FMODUnity.EventReference,System.Collections.Generic.IReadOnlyList{FMODUnity.ParamRef},System.Single,UnityEngine.Vector3)
+  name: PlayOneShot(EventReference, IReadOnlyList<ParamRef>, float, Vector3)
+  href: api/FMODPlus.FMODAudioSource.html#FMODPlus_FMODAudioSource_PlayOneShot_FMODUnity_EventReference_System_Collections_Generic_IReadOnlyList_FMODUnity_ParamRef__System_Single_UnityEngine_Vector3_
+  commentId: M:FMODPlus.FMODAudioSource.PlayOneShot(FMODUnity.EventReference,System.Collections.Generic.IReadOnlyList{FMODUnity.ParamRef},System.Single,UnityEngine.Vector3)
+  name.vb: PlayOneShot(EventReference, IReadOnlyList(Of ParamRef), Single, Vector3)
+  fullName: FMODPlus.FMODAudioSource.PlayOneShot(FMODUnity.EventReference, System.Collections.Generic.IReadOnlyList<FMODUnity.ParamRef>, float, UnityEngine.Vector3)
+  fullName.vb: FMODPlus.FMODAudioSource.PlayOneShot(FMODUnity.EventReference, System.Collections.Generic.IReadOnlyList(Of FMODUnity.ParamRef), Single, UnityEngine.Vector3)
+  nameWithType: FMODAudioSource.PlayOneShot(EventReference, IReadOnlyList<ParamRef>, float, Vector3)
+  nameWithType.vb: FMODAudioSource.PlayOneShot(EventReference, IReadOnlyList(Of ParamRef), Single, Vector3)
+- uid: FMODPlus.FMODAudioSource.PlayOneShot(FMODUnity.EventReference,System.Single,UnityEngine.Vector3)
+  name: PlayOneShot(EventReference, float, Vector3)
+  href: api/FMODPlus.FMODAudioSource.html#FMODPlus_FMODAudioSource_PlayOneShot_FMODUnity_EventReference_System_Single_UnityEngine_Vector3_
+  commentId: M:FMODPlus.FMODAudioSource.PlayOneShot(FMODUnity.EventReference,System.Single,UnityEngine.Vector3)
+  name.vb: PlayOneShot(EventReference, Single, Vector3)
+  fullName: FMODPlus.FMODAudioSource.PlayOneShot(FMODUnity.EventReference, float, UnityEngine.Vector3)
+  fullName.vb: FMODPlus.FMODAudioSource.PlayOneShot(FMODUnity.EventReference, Single, UnityEngine.Vector3)
+  nameWithType: FMODAudioSource.PlayOneShot(EventReference, float, Vector3)
+  nameWithType.vb: FMODAudioSource.PlayOneShot(EventReference, Single, Vector3)
+- uid: FMODPlus.FMODAudioSource.PlayOneShot(FMODUnity.EventReference,System.String,System.Single,System.Single,UnityEngine.Vector3)
+  name: PlayOneShot(EventReference, string, float, float, Vector3)
+  href: api/FMODPlus.FMODAudioSource.html#FMODPlus_FMODAudioSource_PlayOneShot_FMODUnity_EventReference_System_String_System_Single_System_Single_UnityEngine_Vector3_
+  commentId: M:FMODPlus.FMODAudioSource.PlayOneShot(FMODUnity.EventReference,System.String,System.Single,System.Single,UnityEngine.Vector3)
+  name.vb: PlayOneShot(EventReference, String, Single, Single, Vector3)
+  fullName: FMODPlus.FMODAudioSource.PlayOneShot(FMODUnity.EventReference, string, float, float, UnityEngine.Vector3)
+  fullName.vb: FMODPlus.FMODAudioSource.PlayOneShot(FMODUnity.EventReference, String, Single, Single, UnityEngine.Vector3)
+  nameWithType: FMODAudioSource.PlayOneShot(EventReference, string, float, float, Vector3)
+  nameWithType.vb: FMODAudioSource.PlayOneShot(EventReference, String, Single, Single, Vector3)
+- uid: FMODPlus.FMODAudioSource.PlayOneShot(System.String,System.Collections.Generic.IReadOnlyList{FMODUnity.ParamRef},System.Single,UnityEngine.Vector3)
+  name: PlayOneShot(string, IReadOnlyList<ParamRef>, float, Vector3)
+  href: api/FMODPlus.FMODAudioSource.html#FMODPlus_FMODAudioSource_PlayOneShot_System_String_System_Collections_Generic_IReadOnlyList_FMODUnity_ParamRef__System_Single_UnityEngine_Vector3_
+  commentId: M:FMODPlus.FMODAudioSource.PlayOneShot(System.String,System.Collections.Generic.IReadOnlyList{FMODUnity.ParamRef},System.Single,UnityEngine.Vector3)
+  name.vb: PlayOneShot(String, IReadOnlyList(Of ParamRef), Single, Vector3)
+  fullName: FMODPlus.FMODAudioSource.PlayOneShot(string, System.Collections.Generic.IReadOnlyList<FMODUnity.ParamRef>, float, UnityEngine.Vector3)
+  fullName.vb: FMODPlus.FMODAudioSource.PlayOneShot(String, System.Collections.Generic.IReadOnlyList(Of FMODUnity.ParamRef), Single, UnityEngine.Vector3)
+  nameWithType: FMODAudioSource.PlayOneShot(string, IReadOnlyList<ParamRef>, float, Vector3)
+  nameWithType.vb: FMODAudioSource.PlayOneShot(String, IReadOnlyList(Of ParamRef), Single, Vector3)
+- uid: FMODPlus.FMODAudioSource.PlayOneShot(System.String,System.Single,UnityEngine.Vector3)
+  name: PlayOneShot(string, float, Vector3)
+  href: api/FMODPlus.FMODAudioSource.html#FMODPlus_FMODAudioSource_PlayOneShot_System_String_System_Single_UnityEngine_Vector3_
+  commentId: M:FMODPlus.FMODAudioSource.PlayOneShot(System.String,System.Single,UnityEngine.Vector3)
+  name.vb: PlayOneShot(String, Single, Vector3)
+  fullName: FMODPlus.FMODAudioSource.PlayOneShot(string, float, UnityEngine.Vector3)
+  fullName.vb: FMODPlus.FMODAudioSource.PlayOneShot(String, Single, UnityEngine.Vector3)
+  nameWithType: FMODAudioSource.PlayOneShot(string, float, Vector3)
+  nameWithType.vb: FMODAudioSource.PlayOneShot(String, Single, Vector3)
+- uid: FMODPlus.FMODAudioSource.PlayOneShot(System.String,System.String,System.Single,System.Single,UnityEngine.Vector3)
+  name: PlayOneShot(string, string, float, float, Vector3)
+  href: api/FMODPlus.FMODAudioSource.html#FMODPlus_FMODAudioSource_PlayOneShot_System_String_System_String_System_Single_System_Single_UnityEngine_Vector3_
+  commentId: M:FMODPlus.FMODAudioSource.PlayOneShot(System.String,System.String,System.Single,System.Single,UnityEngine.Vector3)
+  name.vb: PlayOneShot(String, String, Single, Single, Vector3)
+  fullName: FMODPlus.FMODAudioSource.PlayOneShot(string, string, float, float, UnityEngine.Vector3)
+  fullName.vb: FMODPlus.FMODAudioSource.PlayOneShot(String, String, Single, Single, UnityEngine.Vector3)
+  nameWithType: FMODAudioSource.PlayOneShot(string, string, float, float, Vector3)
+  nameWithType.vb: FMODAudioSource.PlayOneShot(String, String, Single, Single, Vector3)
+- uid: FMODPlus.FMODAudioSource.PlayOneShot*
+  name: PlayOneShot
+  href: api/FMODPlus.FMODAudioSource.html#FMODPlus_FMODAudioSource_PlayOneShot_
+  commentId: Overload:FMODPlus.FMODAudioSource.PlayOneShot
+  fullName: FMODPlus.FMODAudioSource.PlayOneShot
+  nameWithType: FMODAudioSource.PlayOneShot
+- uid: FMODPlus.FMODAudioSource.PlayThisOneShot
+  name: PlayThisOneShot()
+  href: api/FMODPlus.FMODAudioSource.html#FMODPlus_FMODAudioSource_PlayThisOneShot
+  commentId: M:FMODPlus.FMODAudioSource.PlayThisOneShot
+  fullName: FMODPlus.FMODAudioSource.PlayThisOneShot()
+  nameWithType: FMODAudioSource.PlayThisOneShot()
+- uid: FMODPlus.FMODAudioSource.PlayThisOneShot*
+  name: PlayThisOneShot
+  href: api/FMODPlus.FMODAudioSource.html#FMODPlus_FMODAudioSource_PlayThisOneShot_
+  commentId: Overload:FMODPlus.FMODAudioSource.PlayThisOneShot
+  fullName: FMODPlus.FMODAudioSource.PlayThisOneShot
+  nameWithType: FMODAudioSource.PlayThisOneShot
+- uid: FMODPlus.FMODAudioSource.Preload
+  name: Preload
+  href: api/FMODPlus.FMODAudioSource.html#FMODPlus_FMODAudioSource_Preload
+  commentId: F:FMODPlus.FMODAudioSource.Preload
+  fullName: FMODPlus.FMODAudioSource.Preload
+  nameWithType: FMODAudioSource.Preload
+- uid: FMODPlus.FMODAudioSource.SetParameter(FMOD.Studio.PARAMETER_ID,System.Single,System.Boolean)
+  name: SetParameter(PARAMETER_ID, float, bool)
+  href: api/FMODPlus.FMODAudioSource.html#FMODPlus_FMODAudioSource_SetParameter_FMOD_Studio_PARAMETER_ID_System_Single_System_Boolean_
+  commentId: M:FMODPlus.FMODAudioSource.SetParameter(FMOD.Studio.PARAMETER_ID,System.Single,System.Boolean)
+  name.vb: SetParameter(PARAMETER_ID, Single, Boolean)
+  fullName: FMODPlus.FMODAudioSource.SetParameter(FMOD.Studio.PARAMETER_ID, float, bool)
+  fullName.vb: FMODPlus.FMODAudioSource.SetParameter(FMOD.Studio.PARAMETER_ID, Single, Boolean)
+  nameWithType: FMODAudioSource.SetParameter(PARAMETER_ID, float, bool)
+  nameWithType.vb: FMODAudioSource.SetParameter(PARAMETER_ID, Single, Boolean)
+- uid: FMODPlus.FMODAudioSource.SetParameter(System.String,System.Single,System.Boolean)
+  name: SetParameter(string, float, bool)
+  href: api/FMODPlus.FMODAudioSource.html#FMODPlus_FMODAudioSource_SetParameter_System_String_System_Single_System_Boolean_
+  commentId: M:FMODPlus.FMODAudioSource.SetParameter(System.String,System.Single,System.Boolean)
+  name.vb: SetParameter(String, Single, Boolean)
+  fullName: FMODPlus.FMODAudioSource.SetParameter(string, float, bool)
+  fullName.vb: FMODPlus.FMODAudioSource.SetParameter(String, Single, Boolean)
+  nameWithType: FMODAudioSource.SetParameter(string, float, bool)
+  nameWithType.vb: FMODAudioSource.SetParameter(String, Single, Boolean)
+- uid: FMODPlus.FMODAudioSource.SetParameter*
+  name: SetParameter
+  href: api/FMODPlus.FMODAudioSource.html#FMODPlus_FMODAudioSource_SetParameter_
+  commentId: Overload:FMODPlus.FMODAudioSource.SetParameter
+  fullName: FMODPlus.FMODAudioSource.SetParameter
+  nameWithType: FMODAudioSource.SetParameter
+- uid: FMODPlus.FMODAudioSource.Stop
+  name: Stop()
+  href: api/FMODPlus.FMODAudioSource.html#FMODPlus_FMODAudioSource_Stop
+  commentId: M:FMODPlus.FMODAudioSource.Stop
+  fullName: FMODPlus.FMODAudioSource.Stop()
+  nameWithType: FMODAudioSource.Stop()
+- uid: FMODPlus.FMODAudioSource.Stop(System.Boolean)
+  name: Stop(bool)
+  href: api/FMODPlus.FMODAudioSource.html#FMODPlus_FMODAudioSource_Stop_System_Boolean_
+  commentId: M:FMODPlus.FMODAudioSource.Stop(System.Boolean)
+  name.vb: Stop(Boolean)
+  fullName: FMODPlus.FMODAudioSource.Stop(bool)
+  fullName.vb: FMODPlus.FMODAudioSource.Stop(Boolean)
+  nameWithType: FMODAudioSource.Stop(bool)
+  nameWithType.vb: FMODAudioSource.Stop(Boolean)
+- uid: FMODPlus.FMODAudioSource.Stop*
+  name: Stop
+  href: api/FMODPlus.FMODAudioSource.html#FMODPlus_FMODAudioSource_Stop_
+  commentId: Overload:FMODPlus.FMODAudioSource.Stop
+  fullName: FMODPlus.FMODAudioSource.Stop
+  nameWithType: FMODAudioSource.Stop
+- uid: FMODPlus.FMODAudioSource.Time
+  name: Time
+  href: api/FMODPlus.FMODAudioSource.html#FMODPlus_FMODAudioSource_Time
+  commentId: P:FMODPlus.FMODAudioSource.Time
+  fullName: FMODPlus.FMODAudioSource.Time
+  nameWithType: FMODAudioSource.Time
+- uid: FMODPlus.FMODAudioSource.Time*
+  name: Time
+  href: api/FMODPlus.FMODAudioSource.html#FMODPlus_FMODAudioSource_Time_
+  commentId: Overload:FMODPlus.FMODAudioSource.Time
+  fullName: FMODPlus.FMODAudioSource.Time
+  nameWithType: FMODAudioSource.Time
+- uid: FMODPlus.FMODAudioSource.TriggerCue
+  name: TriggerCue()
+  href: api/FMODPlus.FMODAudioSource.html#FMODPlus_FMODAudioSource_TriggerCue
+  commentId: M:FMODPlus.FMODAudioSource.TriggerCue
+  fullName: FMODPlus.FMODAudioSource.TriggerCue()
+  nameWithType: FMODAudioSource.TriggerCue()
+- uid: FMODPlus.FMODAudioSource.TriggerCue*
+  name: TriggerCue
+  href: api/FMODPlus.FMODAudioSource.html#FMODPlus_FMODAudioSource_TriggerCue_
+  commentId: Overload:FMODPlus.FMODAudioSource.TriggerCue
+  fullName: FMODPlus.FMODAudioSource.TriggerCue
+  nameWithType: FMODAudioSource.TriggerCue
+- uid: FMODPlus.FMODAudioSource.TriggerOnce
+  name: TriggerOnce
+  href: api/FMODPlus.FMODAudioSource.html#FMODPlus_FMODAudioSource_TriggerOnce
+  commentId: F:FMODPlus.FMODAudioSource.TriggerOnce
+  fullName: FMODPlus.FMODAudioSource.TriggerOnce
+  nameWithType: FMODAudioSource.TriggerOnce
+- uid: FMODPlus.FMODAudioSource.UnPause
+  name: UnPause()
+  href: api/FMODPlus.FMODAudioSource.html#FMODPlus_FMODAudioSource_UnPause
+  commentId: M:FMODPlus.FMODAudioSource.UnPause
+  fullName: FMODPlus.FMODAudioSource.UnPause()
+  nameWithType: FMODAudioSource.UnPause()
+- uid: FMODPlus.FMODAudioSource.UnPause*
+  name: UnPause
+  href: api/FMODPlus.FMODAudioSource.html#FMODPlus_FMODAudioSource_UnPause_
+  commentId: Overload:FMODPlus.FMODAudioSource.UnPause
+  fullName: FMODPlus.FMODAudioSource.UnPause
+  nameWithType: FMODAudioSource.UnPause
+- uid: FMODPlus.FMODAudioSource.Volume
+  name: Volume
+  href: api/FMODPlus.FMODAudioSource.html#FMODPlus_FMODAudioSource_Volume
+  commentId: P:FMODPlus.FMODAudioSource.Volume
+  fullName: FMODPlus.FMODAudioSource.Volume
+  nameWithType: FMODAudioSource.Volume
+- uid: FMODPlus.FMODAudioSource.Volume*
+  name: Volume
+  href: api/FMODPlus.FMODAudioSource.html#FMODPlus_FMODAudioSource_Volume_
+  commentId: Overload:FMODPlus.FMODAudioSource.Volume
+  fullName: FMODPlus.FMODAudioSource.Volume
+  nameWithType: FMODAudioSource.Volume
+- uid: FMODPlus.FMODAudioSource.clip
+  name: clip
+  href: api/FMODPlus.FMODAudioSource.html#FMODPlus_FMODAudioSource_clip
+  commentId: P:FMODPlus.FMODAudioSource.clip
+  fullName: FMODPlus.FMODAudioSource.clip
+  nameWithType: FMODAudioSource.clip
+- uid: FMODPlus.FMODAudioSource.clip*
+  name: clip
+  href: api/FMODPlus.FMODAudioSource.html#FMODPlus_FMODAudioSource_clip_
+  commentId: Overload:FMODPlus.FMODAudioSource.clip
+  fullName: FMODPlus.FMODAudioSource.clip
+  nameWithType: FMODAudioSource.clip
+- uid: FMODPlus.FMODAudioSource.isPlaying
+  name: isPlaying
+  href: api/FMODPlus.FMODAudioSource.html#FMODPlus_FMODAudioSource_isPlaying
+  commentId: P:FMODPlus.FMODAudioSource.isPlaying
+  fullName: FMODPlus.FMODAudioSource.isPlaying
+  nameWithType: FMODAudioSource.isPlaying
+- uid: FMODPlus.FMODAudioSource.isPlaying*
+  name: isPlaying
+  href: api/FMODPlus.FMODAudioSource.html#FMODPlus_FMODAudioSource_isPlaying_
+  commentId: Overload:FMODPlus.FMODAudioSource.isPlaying
+  fullName: FMODPlus.FMODAudioSource.isPlaying
+  nameWithType: FMODAudioSource.isPlaying
+- uid: FMODPlus.FMODAudioSource.mute
+  name: mute
+  href: api/FMODPlus.FMODAudioSource.html#FMODPlus_FMODAudioSource_mute
+  commentId: P:FMODPlus.FMODAudioSource.mute
+  fullName: FMODPlus.FMODAudioSource.mute
+  nameWithType: FMODAudioSource.mute
+- uid: FMODPlus.FMODAudioSource.mute*
+  name: mute
+  href: api/FMODPlus.FMODAudioSource.html#FMODPlus_FMODAudioSource_mute_
+  commentId: Overload:FMODPlus.FMODAudioSource.mute
+  fullName: FMODPlus.FMODAudioSource.mute
+  nameWithType: FMODAudioSource.mute
+- uid: FMODPlus.FMODAudioSource.playOnAwake
+  name: playOnAwake
+  href: api/FMODPlus.FMODAudioSource.html#FMODPlus_FMODAudioSource_playOnAwake
+  commentId: F:FMODPlus.FMODAudioSource.playOnAwake
+  fullName: FMODPlus.FMODAudioSource.playOnAwake
+  nameWithType: FMODAudioSource.playOnAwake
+- uid: FMODPlus.FMODEventTrigger
+  name: FMODEventTrigger
+  href: api/FMODPlus.FMODEventTrigger.html
+  commentId: T:FMODPlus.FMODEventTrigger
+  fullName: FMODPlus.FMODEventTrigger
+  nameWithType: FMODEventTrigger
+- uid: FMODPlus.FMODEventTrigger.#ctor
+  name: FMODEventTrigger()
+  href: api/FMODPlus.FMODEventTrigger.html#FMODPlus_FMODEventTrigger__ctor
+  commentId: M:FMODPlus.FMODEventTrigger.#ctor
+  name.vb: New()
+  fullName: FMODPlus.FMODEventTrigger.FMODEventTrigger()
+  fullName.vb: FMODPlus.FMODEventTrigger.New()
+  nameWithType: FMODEventTrigger.FMODEventTrigger()
+  nameWithType.vb: FMODEventTrigger.New()
+- uid: FMODPlus.FMODEventTrigger.#ctor*
+  name: FMODEventTrigger
+  href: api/FMODPlus.FMODEventTrigger.html#FMODPlus_FMODEventTrigger__ctor_
+  commentId: Overload:FMODPlus.FMODEventTrigger.#ctor
+  name.vb: New
+  fullName: FMODPlus.FMODEventTrigger.FMODEventTrigger
+  fullName.vb: FMODPlus.FMODEventTrigger.New
+  nameWithType: FMODEventTrigger.FMODEventTrigger
+  nameWithType.vb: FMODEventTrigger.New
+- uid: FMODPlus.FMODEventTrigger.HandleGameEvent(FMODUnity.EmitterGameEvent)
+  name: HandleGameEvent(EmitterGameEvent)
+  href: api/FMODPlus.FMODEventTrigger.html#FMODPlus_FMODEventTrigger_HandleGameEvent_FMODUnity_EmitterGameEvent_
+  commentId: M:FMODPlus.FMODEventTrigger.HandleGameEvent(FMODUnity.EmitterGameEvent)
+  fullName: FMODPlus.FMODEventTrigger.HandleGameEvent(FMODUnity.EmitterGameEvent)
+  nameWithType: FMODEventTrigger.HandleGameEvent(EmitterGameEvent)
+- uid: FMODPlus.FMODEventTrigger.HandleGameEvent*
+  name: HandleGameEvent
+  href: api/FMODPlus.FMODEventTrigger.html#FMODPlus_FMODEventTrigger_HandleGameEvent_
+  commentId: Overload:FMODPlus.FMODEventTrigger.HandleGameEvent
+  fullName: FMODPlus.FMODEventTrigger.HandleGameEvent
+  nameWithType: FMODEventTrigger.HandleGameEvent
+- uid: FMODPlus.FMODEventTrigger.PlayEvent
+  name: PlayEvent
+  href: api/FMODPlus.FMODEventTrigger.html#FMODPlus_FMODEventTrigger_PlayEvent
+  commentId: F:FMODPlus.FMODEventTrigger.PlayEvent
+  fullName: FMODPlus.FMODEventTrigger.PlayEvent
+  nameWithType: FMODEventTrigger.PlayEvent
+- uid: FMODPlus.FMODEventTrigger.StopEvent
+  name: StopEvent
+  href: api/FMODPlus.FMODEventTrigger.html#FMODPlus_FMODEventTrigger_StopEvent
+  commentId: F:FMODPlus.FMODEventTrigger.StopEvent
+  fullName: FMODPlus.FMODEventTrigger.StopEvent
+  nameWithType: FMODEventTrigger.StopEvent
+- uid: FMODPlus.FMODPlusUtility
+  name: FMODPlusUtility
+  href: api/FMODPlus.FMODPlusUtility.html
+  commentId: T:FMODPlus.FMODPlusUtility
+  fullName: FMODPlus.FMODPlusUtility
+  nameWithType: FMODPlusUtility
+- uid: FMODPlus.FMODPlusUtility.DefaultKey
+  name: DefaultKey
+  href: api/FMODPlus.FMODPlusUtility.html#FMODPlus_FMODPlusUtility_DefaultKey
+  commentId: F:FMODPlus.FMODPlusUtility.DefaultKey
+  fullName: FMODPlus.FMODPlusUtility.DefaultKey
+  nameWithType: FMODPlusUtility.DefaultKey
+- uid: FMODPlus.FMODPlusUtility.Length(FMODUnity.EventReference)
+  name: Length(EventReference)
+  href: api/FMODPlus.FMODPlusUtility.html#FMODPlus_FMODPlusUtility_Length_FMODUnity_EventReference_
+  commentId: M:FMODPlus.FMODPlusUtility.Length(FMODUnity.EventReference)
+  fullName: FMODPlus.FMODPlusUtility.Length(FMODUnity.EventReference)
+  nameWithType: FMODPlusUtility.Length(EventReference)
+- uid: FMODPlus.FMODPlusUtility.Length*
+  name: Length
+  href: api/FMODPlus.FMODPlusUtility.html#FMODPlus_FMODPlusUtility_Length_
+  commentId: Overload:FMODPlus.FMODPlusUtility.Length
+  fullName: FMODPlus.FMODPlusUtility.Length
+  nameWithType: FMODPlusUtility.Length
+- uid: FMODPlus.KeyAndPath
+  name: KeyAndPath
+  href: api/FMODPlus.KeyAndPath.html
+  commentId: T:FMODPlus.KeyAndPath
+  fullName: FMODPlus.KeyAndPath
+  nameWithType: KeyAndPath
+- uid: FMODPlus.KeyAndPath.#ctor
+  name: KeyAndPath()
+  href: api/FMODPlus.KeyAndPath.html#FMODPlus_KeyAndPath__ctor
+  commentId: M:FMODPlus.KeyAndPath.#ctor
+  name.vb: New()
+  fullName: FMODPlus.KeyAndPath.KeyAndPath()
+  fullName.vb: FMODPlus.KeyAndPath.New()
+  nameWithType: KeyAndPath.KeyAndPath()
+  nameWithType.vb: KeyAndPath.New()
+- uid: FMODPlus.KeyAndPath.#ctor(System.String,System.String,System.String)
+  name: KeyAndPath(string, string, string)
+  href: api/FMODPlus.KeyAndPath.html#FMODPlus_KeyAndPath__ctor_System_String_System_String_System_String_
+  commentId: M:FMODPlus.KeyAndPath.#ctor(System.String,System.String,System.String)
+  name.vb: New(String, String, String)
+  fullName: FMODPlus.KeyAndPath.KeyAndPath(string, string, string)
+  fullName.vb: FMODPlus.KeyAndPath.New(String, String, String)
+  nameWithType: KeyAndPath.KeyAndPath(string, string, string)
+  nameWithType.vb: KeyAndPath.New(String, String, String)
+- uid: FMODPlus.KeyAndPath.#ctor*
+  name: KeyAndPath
+  href: api/FMODPlus.KeyAndPath.html#FMODPlus_KeyAndPath__ctor_
+  commentId: Overload:FMODPlus.KeyAndPath.#ctor
+  name.vb: New
+  fullName: FMODPlus.KeyAndPath.KeyAndPath
+  fullName.vb: FMODPlus.KeyAndPath.New
+  nameWithType: KeyAndPath.KeyAndPath
+  nameWithType.vb: KeyAndPath.New
+- uid: FMODPlus.KeyAndPath.GUID
+  name: GUID
+  href: api/FMODPlus.KeyAndPath.html#FMODPlus_KeyAndPath_GUID
+  commentId: F:FMODPlus.KeyAndPath.GUID
+  fullName: FMODPlus.KeyAndPath.GUID
+  nameWithType: KeyAndPath.GUID
+- uid: FMODPlus.KeyAndPath.Key
+  name: Key
+  href: api/FMODPlus.KeyAndPath.html#FMODPlus_KeyAndPath_Key
+  commentId: F:FMODPlus.KeyAndPath.Key
+  fullName: FMODPlus.KeyAndPath.Key
+  nameWithType: KeyAndPath.Key
+- uid: FMODPlus.KeyAndPath.Path
+  name: Path
+  href: api/FMODPlus.KeyAndPath.html#FMODPlus_KeyAndPath_Path
+  commentId: F:FMODPlus.KeyAndPath.Path
+  fullName: FMODPlus.KeyAndPath.Path
+  nameWithType: KeyAndPath.Path
+- uid: FMODPlus.KeyAndPath.ToString
+  name: ToString()
+  href: api/FMODPlus.KeyAndPath.html#FMODPlus_KeyAndPath_ToString
+  commentId: M:FMODPlus.KeyAndPath.ToString
+  fullName: FMODPlus.KeyAndPath.ToString()
+  nameWithType: KeyAndPath.ToString()
+- uid: FMODPlus.KeyAndPath.ToString*
+  name: ToString
+  href: api/FMODPlus.KeyAndPath.html#FMODPlus_KeyAndPath_ToString_
+  commentId: Overload:FMODPlus.KeyAndPath.ToString
+  fullName: FMODPlus.KeyAndPath.ToString
+  nameWithType: KeyAndPath.ToString
+- uid: FMODPlus.KeyReference
+  name: KeyReference
+  href: api/FMODPlus.KeyReference.html
+  commentId: T:FMODPlus.KeyReference
+  fullName: FMODPlus.KeyReference
+  nameWithType: KeyReference
+- uid: FMODPlus.KeyReference.#ctor
+  name: KeyReference()
+  href: api/FMODPlus.KeyReference.html#FMODPlus_KeyReference__ctor
+  commentId: M:FMODPlus.KeyReference.#ctor
+  name.vb: New()
+  fullName: FMODPlus.KeyReference.KeyReference()
+  fullName.vb: FMODPlus.KeyReference.New()
+  nameWithType: KeyReference.KeyReference()
+  nameWithType.vb: KeyReference.New()
+- uid: FMODPlus.KeyReference.#ctor*
+  name: KeyReference
+  href: api/FMODPlus.KeyReference.html#FMODPlus_KeyReference__ctor_
+  commentId: Overload:FMODPlus.KeyReference.#ctor
+  name.vb: New
+  fullName: FMODPlus.KeyReference.KeyReference
+  fullName.vb: FMODPlus.KeyReference.New
+  nameWithType: KeyReference.KeyReference
+  nameWithType.vb: KeyReference.New
+- uid: FMODPlus.KeyReference.AudioStyle
+  name: AudioStyle
+  href: api/FMODPlus.KeyReference.html#FMODPlus_KeyReference_AudioStyle
+  commentId: P:FMODPlus.KeyReference.AudioStyle
+  fullName: FMODPlus.KeyReference.AudioStyle
+  nameWithType: KeyReference.AudioStyle
+- uid: FMODPlus.KeyReference.AudioStyle*
+  name: AudioStyle
+  href: api/FMODPlus.KeyReference.html#FMODPlus_KeyReference_AudioStyle_
+  commentId: Overload:FMODPlus.KeyReference.AudioStyle
+  fullName: FMODPlus.KeyReference.AudioStyle
+  nameWithType: KeyReference.AudioStyle
+- uid: FMODPlus.KeyReference.Guid
+  name: Guid
+  href: api/FMODPlus.KeyReference.html#FMODPlus_KeyReference_Guid
+  commentId: F:FMODPlus.KeyReference.Guid
+  fullName: FMODPlus.KeyReference.Guid
+  nameWithType: KeyReference.Guid
+- uid: FMODPlus.KeyReference.IsNull
+  name: IsNull
+  href: api/FMODPlus.KeyReference.html#FMODPlus_KeyReference_IsNull
+  commentId: P:FMODPlus.KeyReference.IsNull
+  fullName: FMODPlus.KeyReference.IsNull
+  nameWithType: KeyReference.IsNull
+- uid: FMODPlus.KeyReference.IsNull*
+  name: IsNull
+  href: api/FMODPlus.KeyReference.html#FMODPlus_KeyReference_IsNull_
+  commentId: Overload:FMODPlus.KeyReference.IsNull
+  fullName: FMODPlus.KeyReference.IsNull
+  nameWithType: KeyReference.IsNull
+- uid: FMODPlus.KeyReference.Key
+  name: Key
+  href: api/FMODPlus.KeyReference.html#FMODPlus_KeyReference_Key
+  commentId: F:FMODPlus.KeyReference.Key
+  fullName: FMODPlus.KeyReference.Key
+  nameWithType: KeyReference.Key
+- uid: FMODPlus.KeyReference.KeyList
+  name: KeyList
+  href: api/FMODPlus.KeyReference.html#FMODPlus_KeyReference_KeyList
+  commentId: P:FMODPlus.KeyReference.KeyList
+  fullName: FMODPlus.KeyReference.KeyList
+  nameWithType: KeyReference.KeyList
+- uid: FMODPlus.KeyReference.KeyList*
+  name: KeyList
+  href: api/FMODPlus.KeyReference.html#FMODPlus_KeyReference_KeyList_
+  commentId: Overload:FMODPlus.KeyReference.KeyList
+  fullName: FMODPlus.KeyReference.KeyList
+  nameWithType: KeyReference.KeyList
+- uid: FMODPlus.KeyReference.Path
+  name: Path
+  href: api/FMODPlus.KeyReference.html#FMODPlus_KeyReference_Path
+  commentId: F:FMODPlus.KeyReference.Path
+  fullName: FMODPlus.KeyReference.Path
+  nameWithType: KeyReference.Path
+- uid: FMODPlus.KeyReference.ToString
+  name: ToString()
+  href: api/FMODPlus.KeyReference.html#FMODPlus_KeyReference_ToString
+  commentId: M:FMODPlus.KeyReference.ToString
+  fullName: FMODPlus.KeyReference.ToString()
+  nameWithType: KeyReference.ToString()
+- uid: FMODPlus.KeyReference.ToString*
+  name: ToString
+  href: api/FMODPlus.KeyReference.html#FMODPlus_KeyReference_ToString_
+  commentId: Overload:FMODPlus.KeyReference.ToString
+  fullName: FMODPlus.KeyReference.ToString
+  nameWithType: KeyReference.ToString
+- uid: FMODPlus.KeyReference.TryGetEvent(FMODUnity.EventReference@)
+  name: TryGetEvent(out EventReference)
+  href: api/FMODPlus.KeyReference.html#FMODPlus_KeyReference_TryGetEvent_FMODUnity_EventReference__
+  commentId: M:FMODPlus.KeyReference.TryGetEvent(FMODUnity.EventReference@)
+  name.vb: TryGetEvent(EventReference)
+  fullName: FMODPlus.KeyReference.TryGetEvent(out FMODUnity.EventReference)
+  fullName.vb: FMODPlus.KeyReference.TryGetEvent(FMODUnity.EventReference)
+  nameWithType: KeyReference.TryGetEvent(out EventReference)
+  nameWithType.vb: KeyReference.TryGetEvent(EventReference)
+- uid: FMODPlus.KeyReference.TryGetEvent*
+  name: TryGetEvent
+  href: api/FMODPlus.KeyReference.html#FMODPlus_KeyReference_TryGetEvent_
+  commentId: Overload:FMODPlus.KeyReference.TryGetEvent
+  fullName: FMODPlus.KeyReference.TryGetEvent
+  nameWithType: KeyReference.TryGetEvent
+- uid: FMODPlus.KeyReference.TryGetEventAndParameters(FMODUnity.EventReference@,FMODUnity.ParamRef[]@)
+  name: TryGetEventAndParameters(out EventReference, out ParamRef[])
+  href: api/FMODPlus.KeyReference.html#FMODPlus_KeyReference_TryGetEventAndParameters_FMODUnity_EventReference__FMODUnity_ParamRef____
+  commentId: M:FMODPlus.KeyReference.TryGetEventAndParameters(FMODUnity.EventReference@,FMODUnity.ParamRef[]@)
+  name.vb: TryGetEventAndParameters(EventReference, ParamRef())
+  fullName: FMODPlus.KeyReference.TryGetEventAndParameters(out FMODUnity.EventReference, out FMODUnity.ParamRef[])
+  fullName.vb: FMODPlus.KeyReference.TryGetEventAndParameters(FMODUnity.EventReference, FMODUnity.ParamRef())
+  nameWithType: KeyReference.TryGetEventAndParameters(out EventReference, out ParamRef[])
+  nameWithType.vb: KeyReference.TryGetEventAndParameters(EventReference, ParamRef())
+- uid: FMODPlus.KeyReference.TryGetEventAndParameters*
+  name: TryGetEventAndParameters
+  href: api/FMODPlus.KeyReference.html#FMODPlus_KeyReference_TryGetEventAndParameters_
+  commentId: Overload:FMODPlus.KeyReference.TryGetEventAndParameters
+  fullName: FMODPlus.KeyReference.TryGetEventAndParameters
+  nameWithType: KeyReference.TryGetEventAndParameters
+- uid: FMODPlus.KeyReference.UseGlobalKeyList
+  name: UseGlobalKeyList
+  href: api/FMODPlus.KeyReference.html#FMODPlus_KeyReference_UseGlobalKeyList
+  commentId: P:FMODPlus.KeyReference.UseGlobalKeyList
+  fullName: FMODPlus.KeyReference.UseGlobalKeyList
+  nameWithType: KeyReference.UseGlobalKeyList
+- uid: FMODPlus.KeyReference.UseGlobalKeyList*
+  name: UseGlobalKeyList
+  href: api/FMODPlus.KeyReference.html#FMODPlus_KeyReference_UseGlobalKeyList_
+  commentId: Overload:FMODPlus.KeyReference.UseGlobalKeyList
+  fullName: FMODPlus.KeyReference.UseGlobalKeyList
+  nameWithType: KeyReference.UseGlobalKeyList
+- uid: FMODPlus.LocalKeyList
+  name: LocalKeyList
+  href: api/FMODPlus.LocalKeyList.html
+  commentId: T:FMODPlus.LocalKeyList
+  fullName: FMODPlus.LocalKeyList
+  nameWithType: LocalKeyList
+- uid: FMODPlus.LocalKeyList.#ctor
+  name: LocalKeyList()
+  href: api/FMODPlus.LocalKeyList.html#FMODPlus_LocalKeyList__ctor
+  commentId: M:FMODPlus.LocalKeyList.#ctor
+  name.vb: New()
+  fullName: FMODPlus.LocalKeyList.LocalKeyList()
+  fullName.vb: FMODPlus.LocalKeyList.New()
+  nameWithType: LocalKeyList.LocalKeyList()
+  nameWithType.vb: LocalKeyList.New()
+- uid: FMODPlus.LocalKeyList.#ctor*
+  name: LocalKeyList
+  href: api/FMODPlus.LocalKeyList.html#FMODPlus_LocalKeyList__ctor_
+  commentId: Overload:FMODPlus.LocalKeyList.#ctor
+  name.vb: New
+  fullName: FMODPlus.LocalKeyList.LocalKeyList
+  fullName.vb: FMODPlus.LocalKeyList.New
+  nameWithType: LocalKeyList.LocalKeyList
+  nameWithType.vb: LocalKeyList.New
+- uid: FMODPlus.LocalKeyList.Count
+  name: Count
+  href: api/FMODPlus.LocalKeyList.html#FMODPlus_LocalKeyList_Count
+  commentId: P:FMODPlus.LocalKeyList.Count
+  fullName: FMODPlus.LocalKeyList.Count
+  nameWithType: LocalKeyList.Count
+- uid: FMODPlus.LocalKeyList.Count*
+  name: Count
+  href: api/FMODPlus.LocalKeyList.html#FMODPlus_LocalKeyList_Count_
+  commentId: Overload:FMODPlus.LocalKeyList.Count
+  fullName: FMODPlus.LocalKeyList.Count
+  nameWithType: LocalKeyList.Count
+- uid: FMODPlus.LocalKeyList.TryGetEvent(System.String,FMODUnity.EventReference@)
+  name: TryGetEvent(string, out EventReference)
+  href: api/FMODPlus.LocalKeyList.html#FMODPlus_LocalKeyList_TryGetEvent_System_String_FMODUnity_EventReference__
+  commentId: M:FMODPlus.LocalKeyList.TryGetEvent(System.String,FMODUnity.EventReference@)
+  name.vb: TryGetEvent(String, EventReference)
+  fullName: FMODPlus.LocalKeyList.TryGetEvent(string, out FMODUnity.EventReference)
+  fullName.vb: FMODPlus.LocalKeyList.TryGetEvent(String, FMODUnity.EventReference)
+  nameWithType: LocalKeyList.TryGetEvent(string, out EventReference)
+  nameWithType.vb: LocalKeyList.TryGetEvent(String, EventReference)
+- uid: FMODPlus.LocalKeyList.TryGetEvent*
+  name: TryGetEvent
+  href: api/FMODPlus.LocalKeyList.html#FMODPlus_LocalKeyList_TryGetEvent_
+  commentId: Overload:FMODPlus.LocalKeyList.TryGetEvent
+  fullName: FMODPlus.LocalKeyList.TryGetEvent
+  nameWithType: LocalKeyList.TryGetEvent
+- uid: FMODPlus.LocalKeyList.TryGetEventAndParameters(System.String,FMODUnity.EventReference@,FMODUnity.ParamRef[]@)
+  name: TryGetEventAndParameters(string, out EventReference, out ParamRef[])
+  href: api/FMODPlus.LocalKeyList.html#FMODPlus_LocalKeyList_TryGetEventAndParameters_System_String_FMODUnity_EventReference__FMODUnity_ParamRef____
+  commentId: M:FMODPlus.LocalKeyList.TryGetEventAndParameters(System.String,FMODUnity.EventReference@,FMODUnity.ParamRef[]@)
+  name.vb: TryGetEventAndParameters(String, EventReference, ParamRef())
+  fullName: FMODPlus.LocalKeyList.TryGetEventAndParameters(string, out FMODUnity.EventReference, out FMODUnity.ParamRef[])
+  fullName.vb: FMODPlus.LocalKeyList.TryGetEventAndParameters(String, FMODUnity.EventReference, FMODUnity.ParamRef())
+  nameWithType: LocalKeyList.TryGetEventAndParameters(string, out EventReference, out ParamRef[])
+  nameWithType.vb: LocalKeyList.TryGetEventAndParameters(String, EventReference, ParamRef())
+- uid: FMODPlus.LocalKeyList.TryGetEventAndParameters*
+  name: TryGetEventAndParameters
+  href: api/FMODPlus.LocalKeyList.html#FMODPlus_LocalKeyList_TryGetEventAndParameters_
+  commentId: Overload:FMODPlus.LocalKeyList.TryGetEventAndParameters
+  fullName: FMODPlus.LocalKeyList.TryGetEventAndParameters
+  nameWithType: LocalKeyList.TryGetEventAndParameters
+- uid: FMODPlus.LocalKeyList.TryGetParameters(System.String,FMODUnity.ParamRef[]@)
+  name: TryGetParameters(string, out ParamRef[])
+  href: api/FMODPlus.LocalKeyList.html#FMODPlus_LocalKeyList_TryGetParameters_System_String_FMODUnity_ParamRef____
+  commentId: M:FMODPlus.LocalKeyList.TryGetParameters(System.String,FMODUnity.ParamRef[]@)
+  name.vb: TryGetParameters(String, ParamRef())
+  fullName: FMODPlus.LocalKeyList.TryGetParameters(string, out FMODUnity.ParamRef[])
+  fullName.vb: FMODPlus.LocalKeyList.TryGetParameters(String, FMODUnity.ParamRef())
+  nameWithType: LocalKeyList.TryGetParameters(string, out ParamRef[])
+  nameWithType.vb: LocalKeyList.TryGetParameters(String, ParamRef())
+- uid: FMODPlus.LocalKeyList.TryGetParameters*
+  name: TryGetParameters
+  href: api/FMODPlus.LocalKeyList.html#FMODPlus_LocalKeyList_TryGetParameters_
+  commentId: Overload:FMODPlus.LocalKeyList.TryGetParameters
+  fullName: FMODPlus.LocalKeyList.TryGetParameters
+  nameWithType: LocalKeyList.TryGetParameters
+- uid: FMODPlus.ParamRefAttribute
+  name: ParamRefAttribute
+  href: api/FMODPlus.ParamRefAttribute.html
+  commentId: T:FMODPlus.ParamRefAttribute
+  fullName: FMODPlus.ParamRefAttribute
+  nameWithType: ParamRefAttribute
+- uid: FMODPlus.ParamRefAttribute.#ctor
+  name: ParamRefAttribute()
+  href: api/FMODPlus.ParamRefAttribute.html#FMODPlus_ParamRefAttribute__ctor
+  commentId: M:FMODPlus.ParamRefAttribute.#ctor
+  name.vb: New()
+  fullName: FMODPlus.ParamRefAttribute.ParamRefAttribute()
+  fullName.vb: FMODPlus.ParamRefAttribute.New()
+  nameWithType: ParamRefAttribute.ParamRefAttribute()
+  nameWithType.vb: ParamRefAttribute.New()
+- uid: FMODPlus.ParamRefAttribute.#ctor*
+  name: ParamRefAttribute
+  href: api/FMODPlus.ParamRefAttribute.html#FMODPlus_ParamRefAttribute__ctor_
+  commentId: Overload:FMODPlus.ParamRefAttribute.#ctor
+  name.vb: New
+  fullName: FMODPlus.ParamRefAttribute.ParamRefAttribute
+  fullName.vb: FMODPlus.ParamRefAttribute.New
+  nameWithType: ParamRefAttribute.ParamRefAttribute
+  nameWithType.vb: ParamRefAttribute.New
+- uid: FMODPlus.SFXKeyList
+  name: SFXKeyList
+  href: api/FMODPlus.SFXKeyList.html
+  commentId: T:FMODPlus.SFXKeyList
+  fullName: FMODPlus.SFXKeyList
+  nameWithType: SFXKeyList
+- uid: FMODPlus.SFXKeyList.#ctor
+  name: SFXKeyList()
+  href: api/FMODPlus.SFXKeyList.html#FMODPlus_SFXKeyList__ctor
+  commentId: M:FMODPlus.SFXKeyList.#ctor
+  name.vb: New()
+  fullName: FMODPlus.SFXKeyList.SFXKeyList()
+  fullName.vb: FMODPlus.SFXKeyList.New()
+  nameWithType: SFXKeyList.SFXKeyList()
+  nameWithType.vb: SFXKeyList.New()
+- uid: FMODPlus.SFXKeyList.#ctor*
+  name: SFXKeyList
+  href: api/FMODPlus.SFXKeyList.html#FMODPlus_SFXKeyList__ctor_
+  commentId: Overload:FMODPlus.SFXKeyList.#ctor
+  name.vb: New
+  fullName: FMODPlus.SFXKeyList.SFXKeyList
+  fullName.vb: FMODPlus.SFXKeyList.New
+  nameWithType: SFXKeyList.SFXKeyList
+  nameWithType.vb: SFXKeyList.New
+- uid: FMODPlus.SFXKeyList.ClipList
+  name: ClipList
+  href: api/FMODPlus.SFXKeyList.html#FMODPlus_SFXKeyList_ClipList
+  commentId: F:FMODPlus.SFXKeyList.ClipList
+  fullName: FMODPlus.SFXKeyList.ClipList
+  nameWithType: SFXKeyList.ClipList
+- uid: FMODPlus.SFXKeyList.GetEventRef(System.String)
+  name: GetEventRef(string)
+  href: api/FMODPlus.SFXKeyList.html#FMODPlus_SFXKeyList_GetEventRef_System_String_
+  commentId: M:FMODPlus.SFXKeyList.GetEventRef(System.String)
+  name.vb: GetEventRef(String)
+  fullName: FMODPlus.SFXKeyList.GetEventRef(string)
+  fullName.vb: FMODPlus.SFXKeyList.GetEventRef(String)
+  nameWithType: SFXKeyList.GetEventRef(string)
+  nameWithType.vb: SFXKeyList.GetEventRef(String)
+- uid: FMODPlus.SFXKeyList.GetEventRef*
+  name: GetEventRef
+  href: api/FMODPlus.SFXKeyList.html#FMODPlus_SFXKeyList_GetEventRef_
+  commentId: Overload:FMODPlus.SFXKeyList.GetEventRef
+  fullName: FMODPlus.SFXKeyList.GetEventRef
+  nameWithType: SFXKeyList.GetEventRef
+- uid: FMODPlus.SFXKeyList.Instance
+  name: Instance
+  href: api/FMODPlus.SFXKeyList.html#FMODPlus_SFXKeyList_Instance
+  commentId: P:FMODPlus.SFXKeyList.Instance
+  fullName: FMODPlus.SFXKeyList.Instance
+  nameWithType: SFXKeyList.Instance
+- uid: FMODPlus.SFXKeyList.Instance*
+  name: Instance
+  href: api/FMODPlus.SFXKeyList.html#FMODPlus_SFXKeyList_Instance_
+  commentId: Overload:FMODPlus.SFXKeyList.Instance
+  fullName: FMODPlus.SFXKeyList.Instance
+  nameWithType: SFXKeyList.Instance
+- uid: FMODPlus.SFXKeyList.TryFindClip(System.String,FMODUnity.EventReference@)
+  name: TryFindClip(string, out EventReference)
+  href: api/FMODPlus.SFXKeyList.html#FMODPlus_SFXKeyList_TryFindClip_System_String_FMODUnity_EventReference__
+  commentId: M:FMODPlus.SFXKeyList.TryFindClip(System.String,FMODUnity.EventReference@)
+  name.vb: TryFindClip(String, EventReference)
+  fullName: FMODPlus.SFXKeyList.TryFindClip(string, out FMODUnity.EventReference)
+  fullName.vb: FMODPlus.SFXKeyList.TryFindClip(String, FMODUnity.EventReference)
+  nameWithType: SFXKeyList.TryFindClip(string, out EventReference)
+  nameWithType.vb: SFXKeyList.TryFindClip(String, EventReference)
+- uid: FMODPlus.SFXKeyList.TryFindClip*
+  name: TryFindClip
+  href: api/FMODPlus.SFXKeyList.html#FMODPlus_SFXKeyList_TryFindClip_
+  commentId: Overload:FMODPlus.SFXKeyList.TryFindClip
+  fullName: FMODPlus.SFXKeyList.TryFindClip
+  nameWithType: SFXKeyList.TryFindClip
+- uid: FMODPlus.SFXKeyList.TryFindClipAndParams(System.String,FMODUnity.EventReference@,FMODUnity.ParamRef[]@)
+  name: TryFindClipAndParams(string, out EventReference, out ParamRef[])
+  href: api/FMODPlus.SFXKeyList.html#FMODPlus_SFXKeyList_TryFindClipAndParams_System_String_FMODUnity_EventReference__FMODUnity_ParamRef____
+  commentId: M:FMODPlus.SFXKeyList.TryFindClipAndParams(System.String,FMODUnity.EventReference@,FMODUnity.ParamRef[]@)
+  name.vb: TryFindClipAndParams(String, EventReference, ParamRef())
+  fullName: FMODPlus.SFXKeyList.TryFindClipAndParams(string, out FMODUnity.EventReference, out FMODUnity.ParamRef[])
+  fullName.vb: FMODPlus.SFXKeyList.TryFindClipAndParams(String, FMODUnity.EventReference, FMODUnity.ParamRef())
+  nameWithType: SFXKeyList.TryFindClipAndParams(string, out EventReference, out ParamRef[])
+  nameWithType.vb: SFXKeyList.TryFindClipAndParams(String, EventReference, ParamRef())
+- uid: FMODPlus.SFXKeyList.TryFindClipAndParams*
+  name: TryFindClipAndParams
+  href: api/FMODPlus.SFXKeyList.html#FMODPlus_SFXKeyList_TryFindClipAndParams_
+  commentId: Overload:FMODPlus.SFXKeyList.TryFindClipAndParams
+  fullName: FMODPlus.SFXKeyList.TryFindClipAndParams
+  nameWithType: SFXKeyList.TryFindClipAndParams
+- uid: FMODPlus.SFXKeyList.TryFindParamRefs(System.String,FMODUnity.ParamRef[]@)
+  name: TryFindParamRefs(string, out ParamRef[])
+  href: api/FMODPlus.SFXKeyList.html#FMODPlus_SFXKeyList_TryFindParamRefs_System_String_FMODUnity_ParamRef____
+  commentId: M:FMODPlus.SFXKeyList.TryFindParamRefs(System.String,FMODUnity.ParamRef[]@)
+  name.vb: TryFindParamRefs(String, ParamRef())
+  fullName: FMODPlus.SFXKeyList.TryFindParamRefs(string, out FMODUnity.ParamRef[])
+  fullName.vb: FMODPlus.SFXKeyList.TryFindParamRefs(String, FMODUnity.ParamRef())
+  nameWithType: SFXKeyList.TryFindParamRefs(string, out ParamRef[])
+  nameWithType.vb: SFXKeyList.TryFindParamRefs(String, ParamRef())
+- uid: FMODPlus.SFXKeyList.TryFindParamRefs*
+  name: TryFindParamRefs
+  href: api/FMODPlus.SFXKeyList.html#FMODPlus_SFXKeyList_TryFindParamRefs_
+  commentId: Overload:FMODPlus.SFXKeyList.TryFindParamRefs
+  fullName: FMODPlus.SFXKeyList.TryFindParamRefs
+  nameWithType: SFXKeyList.TryFindParamRefs
+- uid: FMODPlus.SFXKeyList.TryGetParamRef(System.String,FMODUnity.ParamRef[]@)
+  name: TryGetParamRef(string, out ParamRef[])
+  href: api/FMODPlus.SFXKeyList.html#FMODPlus_SFXKeyList_TryGetParamRef_System_String_FMODUnity_ParamRef____
+  commentId: M:FMODPlus.SFXKeyList.TryGetParamRef(System.String,FMODUnity.ParamRef[]@)
+  name.vb: TryGetParamRef(String, ParamRef())
+  fullName: FMODPlus.SFXKeyList.TryGetParamRef(string, out FMODUnity.ParamRef[])
+  fullName.vb: FMODPlus.SFXKeyList.TryGetParamRef(String, FMODUnity.ParamRef())
+  nameWithType: SFXKeyList.TryGetParamRef(string, out ParamRef[])
+  nameWithType.vb: SFXKeyList.TryGetParamRef(String, ParamRef())
+- uid: FMODPlus.SFXKeyList.TryGetParamRef*
+  name: TryGetParamRef
+  href: api/FMODPlus.SFXKeyList.html#FMODPlus_SFXKeyList_TryGetParamRef_
+  commentId: Overload:FMODPlus.SFXKeyList.TryGetParamRef
+  fullName: FMODPlus.SFXKeyList.TryGetParamRef
+  nameWithType: SFXKeyList.TryGetParamRef
+- uid: FMODPlus.SFXKeyList.TryGetValue(System.String,FMODUnity.EventReference@)
+  name: TryGetValue(string, out EventReference)
+  href: api/FMODPlus.SFXKeyList.html#FMODPlus_SFXKeyList_TryGetValue_System_String_FMODUnity_EventReference__
+  commentId: M:FMODPlus.SFXKeyList.TryGetValue(System.String,FMODUnity.EventReference@)
+  name.vb: TryGetValue(String, EventReference)
+  fullName: FMODPlus.SFXKeyList.TryGetValue(string, out FMODUnity.EventReference)
+  fullName.vb: FMODPlus.SFXKeyList.TryGetValue(String, FMODUnity.EventReference)
+  nameWithType: SFXKeyList.TryGetValue(string, out EventReference)
+  nameWithType.vb: SFXKeyList.TryGetValue(String, EventReference)
+- uid: FMODPlus.SFXKeyList.TryGetValue*
+  name: TryGetValue
+  href: api/FMODPlus.SFXKeyList.html#FMODPlus_SFXKeyList_TryGetValue_
+  commentId: Overload:FMODPlus.SFXKeyList.TryGetValue
+  fullName: FMODPlus.SFXKeyList.TryGetValue
+  nameWithType: SFXKeyList.TryGetValue
+- uid: NKStudio.UIElements
+  name: NKStudio.UIElements
+  href: api/NKStudio.UIElements.html
+  commentId: N:NKStudio.UIElements
+  fullName: NKStudio.UIElements
+  nameWithType: NKStudio.UIElements
+- uid: NKStudio.UIElements.SimpleBaseField
+  name: SimpleBaseField
+  href: api/NKStudio.UIElements.SimpleBaseField.html
+  commentId: T:NKStudio.UIElements.SimpleBaseField
+  fullName: NKStudio.UIElements.SimpleBaseField
+  nameWithType: SimpleBaseField
+- uid: NKStudio.UIElements.SimpleBaseField.#ctor
+  name: SimpleBaseField()
+  href: api/NKStudio.UIElements.SimpleBaseField.html#NKStudio_UIElements_SimpleBaseField__ctor
+  commentId: M:NKStudio.UIElements.SimpleBaseField.#ctor
+  name.vb: New()
+  fullName: NKStudio.UIElements.SimpleBaseField.SimpleBaseField()
+  fullName.vb: NKStudio.UIElements.SimpleBaseField.New()
+  nameWithType: SimpleBaseField.SimpleBaseField()
+  nameWithType.vb: SimpleBaseField.New()
+- uid: NKStudio.UIElements.SimpleBaseField.#ctor*
+  name: SimpleBaseField
+  href: api/NKStudio.UIElements.SimpleBaseField.html#NKStudio_UIElements_SimpleBaseField__ctor_
+  commentId: Overload:NKStudio.UIElements.SimpleBaseField.#ctor
+  name.vb: New
+  fullName: NKStudio.UIElements.SimpleBaseField.SimpleBaseField
+  fullName.vb: NKStudio.UIElements.SimpleBaseField.New
+  nameWithType: SimpleBaseField.SimpleBaseField
+  nameWithType.vb: SimpleBaseField.New
+- uid: NKStudio.UIElements.SimpleBaseField.Label
+  name: Label
+  href: api/NKStudio.UIElements.SimpleBaseField.html#NKStudio_UIElements_SimpleBaseField_Label
+  commentId: P:NKStudio.UIElements.SimpleBaseField.Label
+  fullName: NKStudio.UIElements.SimpleBaseField.Label
+  nameWithType: SimpleBaseField.Label
+- uid: NKStudio.UIElements.SimpleBaseField.Label*
+  name: Label
+  href: api/NKStudio.UIElements.SimpleBaseField.html#NKStudio_UIElements_SimpleBaseField_Label_
+  commentId: Overload:NKStudio.UIElements.SimpleBaseField.Label
+  fullName: NKStudio.UIElements.SimpleBaseField.Label
+  nameWithType: SimpleBaseField.Label
+- uid: NKStudio.UIElements.SimpleBaseField.UxmlSerializedData
+  name: SimpleBaseField.UxmlSerializedData
+  href: api/NKStudio.UIElements.SimpleBaseField.UxmlSerializedData.html
+  commentId: T:NKStudio.UIElements.SimpleBaseField.UxmlSerializedData
+  fullName: NKStudio.UIElements.SimpleBaseField.UxmlSerializedData
+  nameWithType: SimpleBaseField.UxmlSerializedData
+- uid: NKStudio.UIElements.SimpleBaseField.UxmlSerializedData.#ctor
+  name: UxmlSerializedData()
+  href: api/NKStudio.UIElements.SimpleBaseField.UxmlSerializedData.html#NKStudio_UIElements_SimpleBaseField_UxmlSerializedData__ctor
+  commentId: M:NKStudio.UIElements.SimpleBaseField.UxmlSerializedData.#ctor
+  name.vb: New()
+  fullName: NKStudio.UIElements.SimpleBaseField.UxmlSerializedData.UxmlSerializedData()
+  fullName.vb: NKStudio.UIElements.SimpleBaseField.UxmlSerializedData.New()
+  nameWithType: SimpleBaseField.UxmlSerializedData.UxmlSerializedData()
+  nameWithType.vb: SimpleBaseField.UxmlSerializedData.New()
+- uid: NKStudio.UIElements.SimpleBaseField.UxmlSerializedData.#ctor*
+  name: UxmlSerializedData
+  href: api/NKStudio.UIElements.SimpleBaseField.UxmlSerializedData.html#NKStudio_UIElements_SimpleBaseField_UxmlSerializedData__ctor_
+  commentId: Overload:NKStudio.UIElements.SimpleBaseField.UxmlSerializedData.#ctor
+  name.vb: New
+  fullName: NKStudio.UIElements.SimpleBaseField.UxmlSerializedData.UxmlSerializedData
+  fullName.vb: NKStudio.UIElements.SimpleBaseField.UxmlSerializedData.New
+  nameWithType: SimpleBaseField.UxmlSerializedData.UxmlSerializedData
+  nameWithType.vb: SimpleBaseField.UxmlSerializedData.New
+- uid: NKStudio.UIElements.SimpleBaseField.UxmlSerializedData.CreateInstance
+  name: CreateInstance()
+  href: api/NKStudio.UIElements.SimpleBaseField.UxmlSerializedData.html#NKStudio_UIElements_SimpleBaseField_UxmlSerializedData_CreateInstance
+  commentId: M:NKStudio.UIElements.SimpleBaseField.UxmlSerializedData.CreateInstance
+  fullName: NKStudio.UIElements.SimpleBaseField.UxmlSerializedData.CreateInstance()
+  nameWithType: SimpleBaseField.UxmlSerializedData.CreateInstance()
+- uid: NKStudio.UIElements.SimpleBaseField.UxmlSerializedData.CreateInstance*
+  name: CreateInstance
+  href: api/NKStudio.UIElements.SimpleBaseField.UxmlSerializedData.html#NKStudio_UIElements_SimpleBaseField_UxmlSerializedData_CreateInstance_
+  commentId: Overload:NKStudio.UIElements.SimpleBaseField.UxmlSerializedData.CreateInstance
+  fullName: NKStudio.UIElements.SimpleBaseField.UxmlSerializedData.CreateInstance
+  nameWithType: SimpleBaseField.UxmlSerializedData.CreateInstance
+- uid: NKStudio.UIElements.SimpleBaseField.UxmlSerializedData.Deserialize(System.Object)
+  name: Deserialize(object)
+  href: api/NKStudio.UIElements.SimpleBaseField.UxmlSerializedData.html#NKStudio_UIElements_SimpleBaseField_UxmlSerializedData_Deserialize_System_Object_
+  commentId: M:NKStudio.UIElements.SimpleBaseField.UxmlSerializedData.Deserialize(System.Object)
+  name.vb: Deserialize(Object)
+  fullName: NKStudio.UIElements.SimpleBaseField.UxmlSerializedData.Deserialize(object)
+  fullName.vb: NKStudio.UIElements.SimpleBaseField.UxmlSerializedData.Deserialize(Object)
+  nameWithType: SimpleBaseField.UxmlSerializedData.Deserialize(object)
+  nameWithType.vb: SimpleBaseField.UxmlSerializedData.Deserialize(Object)
+- uid: NKStudio.UIElements.SimpleBaseField.UxmlSerializedData.Deserialize*
+  name: Deserialize
+  href: api/NKStudio.UIElements.SimpleBaseField.UxmlSerializedData.html#NKStudio_UIElements_SimpleBaseField_UxmlSerializedData_Deserialize_
+  commentId: Overload:NKStudio.UIElements.SimpleBaseField.UxmlSerializedData.Deserialize
+  fullName: NKStudio.UIElements.SimpleBaseField.UxmlSerializedData.Deserialize
+  nameWithType: SimpleBaseField.UxmlSerializedData.Deserialize
+- uid: NKStudio.UIElements.SimpleBaseField.UxmlSerializedData.Register
+  name: Register()
+  href: api/NKStudio.UIElements.SimpleBaseField.UxmlSerializedData.html#NKStudio_UIElements_SimpleBaseField_UxmlSerializedData_Register
+  commentId: M:NKStudio.UIElements.SimpleBaseField.UxmlSerializedData.Register
+  fullName: NKStudio.UIElements.SimpleBaseField.UxmlSerializedData.Register()
+  nameWithType: SimpleBaseField.UxmlSerializedData.Register()
+- uid: NKStudio.UIElements.SimpleBaseField.UxmlSerializedData.Register*
+  name: Register
+  href: api/NKStudio.UIElements.SimpleBaseField.UxmlSerializedData.html#NKStudio_UIElements_SimpleBaseField_UxmlSerializedData_Register_
+  commentId: Overload:NKStudio.UIElements.SimpleBaseField.UxmlSerializedData.Register
+  fullName: NKStudio.UIElements.SimpleBaseField.UxmlSerializedData.Register
+  nameWithType: SimpleBaseField.UxmlSerializedData.Register
+- uid: NKStudio.UIElements.SimpleBaseField.contentContainer
+  name: contentContainer
+  href: api/NKStudio.UIElements.SimpleBaseField.html#NKStudio_UIElements_SimpleBaseField_contentContainer
+  commentId: P:NKStudio.UIElements.SimpleBaseField.contentContainer
+  fullName: NKStudio.UIElements.SimpleBaseField.contentContainer
+  nameWithType: SimpleBaseField.contentContainer
+- uid: NKStudio.UIElements.SimpleBaseField.contentContainer*
+  name: contentContainer
+  href: api/NKStudio.UIElements.SimpleBaseField.html#NKStudio_UIElements_SimpleBaseField_contentContainer_
+  commentId: Overload:NKStudio.UIElements.SimpleBaseField.contentContainer
+  fullName: NKStudio.UIElements.SimpleBaseField.contentContainer
+  nameWithType: SimpleBaseField.contentContainer

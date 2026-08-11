@@ -1,0 +1,772 @@
+{
+  "source_base_path": "/Volumes/NKStudioHD/1.DevProjects/WebProject/document/FMODPlus-Document/kr/1.7.0",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../../api/FMODPlus.AMBKeyList.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FMODPlus.AMBKeyList.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FMODPlus.AMBKeyList",
+      "Summary": "<p sourcefile=\"../../api/FMODPlus.AMBKeyList.yml\" sourcestartlinenumber=\"1\">Stores globally addressable ambient FMOD events and their initial parameter values.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../../api/FMODPlus.AudioPathByString.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FMODPlus.AudioPathByString.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FMODPlus.AudioPathByString",
+      "Summary": "<p sourcefile=\"../../api/FMODPlus.AudioPathByString.yml\" sourcestartlinenumber=\"1\">Stores and resolves FMOD events by string key.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../../api/FMODPlus.AudioType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FMODPlus.AudioType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FMODPlus.AudioType",
+      "Summary": "<p sourcefile=\"../../api/FMODPlus.AudioType.yml\" sourcestartlinenumber=\"1\">Identifies a global FMOD Plus key-list category.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../../api/FMODPlus.BGMKeyList.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FMODPlus.BGMKeyList.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FMODPlus.BGMKeyList",
+      "Summary": "<p sourcefile=\"../../api/FMODPlus.BGMKeyList.yml\" sourcestartlinenumber=\"1\">Stores globally addressable background-music FMOD events and their initial parameter values.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../../api/FMODPlus.ClipStyle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FMODPlus.ClipStyle.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FMODPlus.ClipStyle",
+      "Summary": "<p sourcefile=\"../../api/FMODPlus.ClipStyle.yml\" sourcestartlinenumber=\"1\">Defines whether an FMOD event is assigned directly or resolved from a key list.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../../api/FMODPlus.CommandBehaviourStyle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FMODPlus.CommandBehaviourStyle.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FMODPlus.CommandBehaviourStyle",
+      "Summary": "<p sourcefile=\"../../api/FMODPlus.CommandBehaviourStyle.yml\" sourcestartlinenumber=\"1\">Defines the command sent to FMOD by a <xref href=\"FMODPlus.CommandSender\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../../api/FMODPlus.CommandSender.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FMODPlus.CommandSender.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FMODPlus.CommandSender",
+      "Summary": "<p sourcefile=\"../../api/FMODPlus.CommandSender.yml\" sourcestartlinenumber=\"1\">Sends playback and parameter commands to an <xref href=\"FMODPlus.FMODAudioSource\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../../api/FMODPlus.EventRefAtKey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FMODPlus.EventRefAtKey.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FMODPlus.EventRefAtKey",
+      "Summary": "<p sourcefile=\"../../api/FMODPlus.EventRefAtKey.yml\" sourcestartlinenumber=\"1\">Stores a serialized array of FMOD event entries addressed by key.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../../api/FMODPlus.EventRefCallback.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FMODPlus.EventRefCallback.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FMODPlus.EventRefCallback",
+      "Summary": "<p sourcefile=\"../../api/FMODPlus.EventRefCallback.yml\" sourcestartlinenumber=\"1\">Carries an FMOD event and its initial parameter values to a callback.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../../api/FMODPlus.EventReferenceByKey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FMODPlus.EventReferenceByKey.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FMODPlus.EventReferenceByKey",
+      "Summary": "<p sourcefile=\"../../api/FMODPlus.EventReferenceByKey.yml\" sourcestartlinenumber=\"1\">Stores an FMOD event and its initial parameters under a string key.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../../api/FMODPlus.FMODAudioSource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FMODPlus.FMODAudioSource.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FMODPlus.FMODAudioSource",
+      "Summary": "<p sourcefile=\"../../api/FMODPlus.FMODAudioSource.yml\" sourcestartlinenumber=\"1\">Plays and controls an FMOD event with AudioSource-like controls.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../../api/FMODPlus.FMODEventTrigger.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FMODPlus.FMODEventTrigger.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FMODPlus.FMODEventTrigger",
+      "Summary": "<p sourcefile=\"../../api/FMODPlus.FMODEventTrigger.yml\" sourcestartlinenumber=\"1\">Forwards FMOD emitter game events to an <xref href=\"FMODPlus.FMODAudioSource\" data-throw-if-not-resolved=\"false\"></xref> or a\n<xref href=\"FMODPlus.CommandSender\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../../api/FMODPlus.FMODPlusUtility.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FMODPlus.FMODPlusUtility.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FMODPlus.FMODPlusUtility",
+      "Summary": "<p sourcefile=\"../../api/FMODPlus.FMODPlusUtility.yml\" sourcestartlinenumber=\"1\">Provides shared helpers for FMOD Plus runtime types.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../../api/FMODPlus.KeyAndPath.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FMODPlus.KeyAndPath.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FMODPlus.KeyAndPath",
+      "Summary": "<p sourcefile=\"../../api/FMODPlus.KeyAndPath.yml\" sourcestartlinenumber=\"1\">Stores a key together with its FMOD path and GUID string.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../../api/FMODPlus.KeyReference.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FMODPlus.KeyReference.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FMODPlus.KeyReference",
+      "Summary": "<p sourcefile=\"../../api/FMODPlus.KeyReference.yml\" sourcestartlinenumber=\"1\">Identifies an FMOD event by a key from either a global or local key list.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../../api/FMODPlus.LocalKeyList.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FMODPlus.LocalKeyList.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FMODPlus.LocalKeyList",
+      "Summary": "<p sourcefile=\"../../api/FMODPlus.LocalKeyList.yml\" sourcestartlinenumber=\"1\">Stores FMOD events that are addressed by keys on a specific GameObject.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../../api/FMODPlus.ParamRefAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FMODPlus.ParamRefAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FMODPlus.ParamRefAttribute",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../../api/FMODPlus.SFXKeyList.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FMODPlus.SFXKeyList.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FMODPlus.SFXKeyList",
+      "Summary": "<p sourcefile=\"../../api/FMODPlus.SFXKeyList.yml\" sourcestartlinenumber=\"1\">Stores globally addressable sound-effect FMOD events and their initial parameter values.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../../api/FMODPlus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FMODPlus.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "FMODPlus",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../../api/NKStudio.UIElements.SimpleBaseField.UxmlSerializedData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NKStudio.UIElements.SimpleBaseField.UxmlSerializedData.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "NKStudio.UIElements.SimpleBaseField.UxmlSerializedData",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../../api/NKStudio.UIElements.SimpleBaseField.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NKStudio.UIElements.SimpleBaseField.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "NKStudio.UIElements.SimpleBaseField",
+      "Summary": "<p sourcefile=\"../../api/NKStudio.UIElements.SimpleBaseField.yml\" sourcestartlinenumber=\"1\">Provides an inspector-aligned label and a content container for custom UI Toolkit fields.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "../../api/NKStudio.UIElements.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NKStudio.UIElements.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "NKStudio.UIElements",
+      "Summary": null
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "../../api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "../../scripts/docs-switcher.js",
+      "output": {
+        "resource": {
+          "relative_path": "styles/docs-switcher.js"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "../../switcher.config.json",
+      "output": {
+        "resource": {
+          "relative_path": "switcher.config.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "changelog/CHANGELOG.md",
+      "output": {
+        ".html": {
+          "relative_path": "changelog/CHANGELOG.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "changelog/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "changelog/toc.html"
+        },
+        ".json": {
+          "relative_path": "changelog/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/add-command-sender.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/add-command-sender.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/add-event-trigger.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/add-event-trigger.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/add-local-key-list.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/add-local-key-list.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/assign-fmod-event.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/assign-fmod-event.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/banner.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/banner.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/command-sender-audio-source.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/command-sender-audio-source.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/command-sender-event-trigger.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/command-sender-event-trigger.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/command-sender-send-on-awake.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/command-sender-send-on-awake.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/create-audio-source.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/create-audio-source.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/event-trigger-audio-source.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/event-trigger-audio-source.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/event-trigger-command-sender-target.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/event-trigger-command-sender-target.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/fmod-audio-source-global-key.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/fmod-audio-source-global-key.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/fmod-audio-source-inspector.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/fmod-audio-source-inspector.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/fmod-audio-source-local-key.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/fmod-audio-source-local-key.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/fmod-plus-setup-migration.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/fmod-plus-setup-migration.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/fmod-studio-listener.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/fmod-studio-listener.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/global-key-list-window.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/global-key-list-window.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/install-package-from-git-url.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/install-package-from-git-url.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/local-key-list-inspector.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/local-key-list-inspector.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/logo.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/logo.svg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/menu-global-key-list.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/menu-global-key-list.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/play-mode.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/play-mode.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/play-on-awake.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/play-on-awake.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/select-fmod-event.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/select-fmod-event.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "index.html",
+      "output": {
+        "resource": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "license/License.md",
+      "output": {
+        ".html": {
+          "relative_path": "license/License.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "license/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "license/toc.html"
+        },
+        ".json": {
+          "relative_path": "license/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/command-sender.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/command-sender.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/event-trigger.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/event-trigger.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/fmod-audio-source.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/fmod-audio-source.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/getting-started.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/getting-started.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/installation.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/installation.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/key-lists.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/key-lists.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/requirements.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/requirements.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "manual/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "manual/toc.html"
+        },
+        ".json": {
+          "relative_path": "manual/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/troubleshooting.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/troubleshooting.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

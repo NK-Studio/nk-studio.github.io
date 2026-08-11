@@ -7,3 +7,4 @@
 [Unity Table](https://nk-studio.github.io/Packages/com.nkstudio.unitytable@1.0/index.html)  
 [Nupy Star Calculate](https://nk-studio.github.io/NupyStarCalculate/index.html)  
 [WebtoonViewer25](https://nk-studio.github.io/WebToonViewer/index.html)  
+[FMOD Plus](https://nk-studio.github.io/Packages/com.nkstudio.fmodplus@1.7/index.html)  

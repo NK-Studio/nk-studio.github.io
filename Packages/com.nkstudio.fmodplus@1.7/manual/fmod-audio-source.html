@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <script type="text/javascript">
+        thisPackageMetaData = {name: "com.nkstudio.fmodplus", version: "1.7.0", displayTitle: "FMOD Plus 1.7.0", lang: "en"};
+    </script>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>FMOD Audio Source | FMOD Plus </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="FMOD Audio Source | FMOD Plus ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <link rel="stylesheet" href="../styles/language-switcher.css">
+      <link rel="stylesheet" href="../styles/version-switcher.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../manual/index.html">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+            <div class="container hide-when-search" id="breadcrumb">
+                <!-- Unity Customization: Remove content of breadcrumb bar. This space is used for version and language switchers
+                            <ul class="breadcrumb">
+                              <li></li>
+                            </ul>
+                            -->
+            </div>
+        </div>      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+        <div id="unity_breadcrumb_placeholder">
+            <ul class="breadcrumb">
+            <li></li>
+            </ul>
+        </div>
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="fmod-audio-source">FMOD Audio Source</h1>
+
+<p><code>FMODAudioSource</code> is a component that plays FMOD Events from a GameObject, much like Unity's <code>AudioSource</code>. You can use the same component for sounds that need continuous control, such as background music, as well as parameterized effects and 3D audio.</p>
+<p>This page walks through the complete workflow, from selecting and playing an Event to controlling it at runtime.</p>
+<h2 id="add-the-component">Add the component</h2>
+<p>Add <code>FMODAudioSource</code> in either of these ways:</p>
+<ul>
+<li>Select <strong>GameObject &gt; Audio &gt; FMOD &gt; Audio Source</strong> to create a new Audio Source GameObject.</li>
+<li>On an existing GameObject, select <strong>FMOD Studio &gt; FMOD Plus &gt; FMOD Audio Source</strong> from <strong>Add Component</strong>.</li>
+</ul>
+<p><img src="../images/create-audio-source.jpg" alt="Create Audio Source"></p>
+<p>The Scene needs an <code>FMOD Studio Listener</code> for you to hear the sound. The Listener is usually added to the Main Camera.</p>
+<h2 id="select-an-event">Select an Event</h2>
+<p>Use <strong>Clip Style</strong> in the Inspector to choose how the Event is assigned.</p>
+<p><img src="../images/fmod-audio-source-inspector.jpg" alt="FMOD Audio Source Inspector"></p>
+<h3 id="select-an-event-directly">Select an Event directly</h3>
+<p>Use the following setup when a GameObject always plays one specific Event:</p>
+<ol>
+<li>Set <strong>Clip Style</strong> to <strong>Event Reference</strong>.</li>
+<li>Select an FMOD Event in the <strong>Event</strong> field.</li>
+</ol>
+<p><img src="../images/select-fmod-event.jpg" alt="Select FMOD Event"></p>
+<h3 id="select-from-a-key-list">Select from a Key List</h3>
+<p>Set <strong>Clip Style</strong> to <strong>Key</strong> when multiple Audio Sources should share Events by name, or when you want to manage an Event and its initial Parameters together.</p>
+<p><img src="../images/fmod-audio-source-global-key.jpg" alt="Select a Key"></p>
+<ol>
+<li>For a Global Key, enable <strong>Use Global Key List</strong> and select <strong>AMB</strong>, <strong>BGM</strong>, or <strong>SFX</strong>.</li>
+<li>For a Scene or Prefab Key List, disable <strong>Use Global Key List</strong> and assign a <code>LocalKeyList</code> to <strong>Key List</strong>.</li>
+<li>Select the entry to play from <strong>Key</strong>.</li>
+</ol>
+<p><img src="../images/fmod-audio-source-local-key.jpg" alt="Select a Local Key"></p>
+<p>Changing <strong>Clip Style</strong> clears the previous selection, so select the Event or Key again. See <a href="key-lists.html">Global and Local Key Lists</a> to learn how to create Keys.</p>
+<h2 id="play-a-sound">Play a sound</h2>
+<h3 id="play-automatically-when-enabled">Play automatically when enabled</h3>
+<p>To play as soon as the GameObject becomes enabled:</p>
+<ol>
+<li>Select an Event or Key.</li>
+<li>Enable <strong>Play On Awake</strong>.</li>
+<li>Enter Play Mode.</li>
+</ol>
+<p><img src="../images/play-on-awake.jpg" alt="Play On Awake"></p>
+<p>Enabling the GameObject or component again requests playback again. When it is disabled, the sound stops according to <strong>Allow Fadeout When Stopping</strong>.</p>
+<h3 id="play-from-code-or-a-unityevent">Play from code or a UnityEvent</h3>
+<p>To play at a specific time, such as from a button, Timeline, or game state, disable <strong>Play On Awake</strong> and call <code>Play()</code>.</p>
+<pre><code class="lang-csharp">using FMODPlus;
+using UnityEngine;
+
+public class MusicController : MonoBehaviour
+{
+    [SerializeField] private FMODAudioSource audioSource;
+
+    public void PlayMusic()
+    {
+        audioSource.Play();
+    }
+}
+</code></pre>
+<p>In a UnityEvent, select <code>FMODAudioSource.Play()</code> on the target GameObject to connect the same action without another script.</p>
+<p>Calling <code>Play()</code> does nothing when no Event is assigned.</p>
+<h2 id="control-playback">Control playback</h2>
+<h3 id="choose-how-to-stop">Choose how to stop</h3>
+<p>Set <strong>Allow Fadeout When Stopping</strong> under <strong>Advanced Controls</strong>, then call <code>Stop()</code> to use that setting.</p>
+<pre><code class="lang-csharp">public void StopMusic()
+{
+    audioSource.Stop();
+}
+</code></pre>
+<p>Use <code>Stop(bool)</code> when you need to choose the stop behavior for each call.</p>
+<pre><code class="lang-csharp">// Use the fadeout authored in FMOD Studio.
+audioSource.Stop(true);
+
+// Stop the sound immediately.
+audioSource.Stop(false);
+</code></pre>
+<p>The actual fade curve and duration for <code>Stop(true)</code> must be authored on the Event in FMOD Studio. Without a fadeout or AHDSR release, it may sound similar to an immediate stop.</p>
+<h3 id="pause-and-resume">Pause and resume</h3>
+<p>Call <code>Pause()</code> to stop at the current playback position and <code>UnPause()</code> to continue from that position.</p>
+<pre><code class="lang-csharp">public void PauseMusic()
+{
+    audioSource.Pause();
+}
+
+public void ResumeMusic()
+{
+    audioSource.UnPause();
+}
+</code></pre>
+<h3 id="mute-playback">Mute playback</h3>
+<p>Enable <strong>Mute</strong> in the Inspector or set <code>mute</code> to <code>true</code> to pause the current sound. Disable <strong>Mute</strong> or set it to <code>false</code> to continue playback.</p>
+<pre><code class="lang-csharp">audioSource.mute = true;
+audioSource.mute = false;
+</code></pre>
+<h3 id="adjust-volume-and-pitch">Adjust Volume and Pitch</h3>
+<p>Adjust the current sound's volume and playback rate in the Inspector or from code.</p>
+<pre><code class="lang-csharp">audioSource.Volume = 0.5f;
+audioSource.Pitch = 1.2f;
+</code></pre>
+<ul>
+<li><code>Volume</code> is limited to the range from <code>0</code> to <code>1</code>.</li>
+<li><code>Pitch</code> is limited to the range from <code>-3</code> to <code>3</code>.</li>
+<li>Values set before playback are used the next time the Event plays.</li>
+</ul>
+<h2 id="change-the-event-at-runtime">Change the Event at runtime</h2>
+<p>To switch music or effects as the game progresses, assign a new <code>EventReference</code> to <code>clip</code>, then call <code>Play()</code>.</p>
+<pre><code class="lang-csharp">using FMODPlus;
+using FMODUnity;
+using UnityEngine;
+
+public class StageMusic : MonoBehaviour
+{
+    [SerializeField] private FMODAudioSource audioSource;
+    [SerializeField] private EventReference stageTwoMusic;
+
+    public void ChangeToStageTwo()
+    {
+        audioSource.clip = stageTwoMusic;
+        audioSource.Play();
+    }
+}
+</code></pre>
+<p>Changing <code>clip</code> immediately clears the sound that was previously playing. The new Event does not start automatically, so call <code>Play()</code> when it should begin.</p>
+<h2 id="use-event-parameters">Use Event Parameters</h2>
+<p>Parameters let you change states such as a music stage, effect intensity, or surface type without replacing the Event.</p>
+<h3 id="apply-initial-values-when-playback-starts">Apply initial values when playback starts</h3>
+<p>After selecting an Event, <strong>Initial Parameter Values</strong> appears in the Inspector.</p>
+<ol>
+<li>Expand <strong>Initial Parameter Values</strong>.</li>
+<li>Select a Local Parameter from <strong>Add</strong>.</li>
+<li>Set the value to use when playback starts.</li>
+</ol>
+<p>The registered values are applied every time <code>Play()</code> starts the sound. When using a Key List, you can configure Parameters from the Event linked to the selected Key.</p>
+<h3 id="change-a-parameter-during-playback">Change a Parameter during playback</h3>
+<p>Pass the Parameter name and value to <code>SetParameter()</code>.</p>
+<pre><code class="lang-csharp">public void ChangeStage(float value)
+{
+    audioSource.SetParameter(&quot;Stage&quot;, value);
+}
+</code></pre>
+<p>Pass <code>true</code> as the third argument to ignore the Seek Speed authored in FMOD Studio and apply the value immediately.</p>
+<pre><code class="lang-csharp">audioSource.SetParameter(&quot;Stage&quot;, 1f, true);
+</code></pre>
+<h3 id="apply-multiple-parameters-together">Apply multiple Parameters together</h3>
+<p>Create an array of <code>ParamRef</code> values and pass it to <code>ApplyParameter()</code>.</p>
+<pre><code class="lang-csharp">audioSource.ApplyParameter(new[]
+{
+    new ParamRef { Name = &quot;Stage&quot;, Value = 1f },
+    new ParamRef { Name = &quot;Intensity&quot;, Value = 0.75f },
+});
+</code></pre>
+<p>If a matching name is registered under <strong>Initial Parameter Values</strong>, the new value is also used for subsequent playback.</p>
+<h3 id="use-a-parameter-id">Use a Parameter ID</h3>
+<p>When changing a Parameter frequently, such as every frame, look up and store its FMOD <code>PARAMETER_ID</code> once instead of using its name each time.</p>
+<pre><code class="lang-csharp">using FMOD.Studio;
+using FMODUnity;
+
+private PARAMETER_ID stageParameterId;
+private bool hasStageParameter;
+
+private void CacheStageParameter()
+{
+    EventDescription eventDescription = RuntimeManager.GetEventDescription(audioSource.clip);
+    hasStageParameter = eventDescription.getParameterDescriptionByName(
+        &quot;Stage&quot;, out PARAMETER_DESCRIPTION description) == FMOD.RESULT.OK;
+
+    if (hasStageParameter)
+        stageParameterId = description.id;
+}
+
+public void ChangeStageFrequently(float value)
+{
+    if (hasStageParameter)
+        audioSource.SetParameter(stageParameterId, value);
+}
+</code></pre>
+<p>Call <code>CacheStageParameter()</code> once after selecting or changing the Event, then use the stored ID through <code>ChangeStageFrequently()</code>.</p>
+<h2 id="play-short-effects-as-one-shots">Play short effects as one-shots</h2>
+<p>One-shots are best for short sounds that can overlap, such as button clicks, impacts, and footsteps.</p>
+<table>
+<thead>
+<tr>
+<th>Required behavior</th>
+<th>Method to use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Repeat or overlap a short sound</td>
+<td><code>PlayOneShot()</code></td>
+</tr>
+<tr>
+<td>Stop, pause, or key off the sound later</td>
+<td>Set <code>clip</code> and use <code>Play()</code></td>
+</tr>
+<tr>
+<td>Play the currently selected Event once at the current position</td>
+<td><code>PlayThisOneShot()</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="play-an-event-reference-or-path">Play an Event Reference or path</h3>
+<pre><code class="lang-csharp">using FMODPlus;
+using FMODUnity;
+using UnityEngine;
+
+public class EffectPlayer : MonoBehaviour
+{
+    [SerializeField] private FMODAudioSource audioSource;
+    [SerializeField] private EventReference hitEffect;
+
+    public void PlayHit()
+    {
+        audioSource.PlayOneShot(hitEffect, 1f, transform.position);
+    }
+
+    public void PlayHitByPath()
+    {
+        audioSource.PlayOneShot(&quot;event:/SFX/Hit&quot;, 1f, transform.position);
+    }
+}
+</code></pre>
+<p>When omitted, <code>volumeScale</code> defaults to <code>1</code> and <code>position</code> defaults to <code>Vector3.zero</code>. Pass <code>transform.position</code> or an impact point explicitly so a 3D effect plays at the intended location.</p>
+<p>You cannot later control a one-shot with this component's <code>Stop()</code>, <code>Pause()</code>, or <code>KeyOff()</code>. Use regular <code>Play()</code> when the sound needs control after it starts.</p>
+<h3 id="play-with-parameters">Play with Parameters</h3>
+<p>Pass a name and value directly for a single Parameter.</p>
+<pre><code class="lang-csharp">audioSource.PlayOneShot(
+    hitEffect,
+    &quot;Surface&quot;,
+    2f,
+    volumeScale: 1f,
+    position: transform.position);
+</code></pre>
+<p>Pass a collection of <code>ParamRef</code> values for multiple Parameters.</p>
+<pre><code class="lang-csharp">var parameters = new[]
+{
+    new ParamRef { Name = &quot;Surface&quot;, Value = 2f },
+    new ParamRef { Name = &quot;Intensity&quot;, Value = 0.5f },
+};
+
+audioSource.PlayOneShot(hitEffect, parameters, 1f, transform.position);
+</code></pre>
+<h3 id="play-the-currently-selected-event">Play the currently selected Event</h3>
+<p><code>PlayThisOneShot()</code> plays the current <code>clip</code> once at this GameObject's position and current <code>Volume</code>.</p>
+<pre><code class="lang-csharp">audioSource.PlayThisOneShot();
+</code></pre>
+<p>It does not automatically pass <strong>Initial Parameter Values</strong>. Use a <code>PlayOneShot()</code> overload that accepts Parameters when they are required.</p>
+<h2 id="continue-past-a-sustain-point">Continue past a sustain point</h2>
+<p>When an FMOD Studio Event is authored to wait at a sustain point, call <code>KeyOff()</code> to continue to its next section.</p>
+<pre><code class="lang-csharp">public void ContinueDialogue()
+{
+    audioSource.KeyOff();
+}
+</code></pre>
+<p><code>TriggerCue()</code> sends the same command to the current Event.</p>
+<pre><code class="lang-csharp">audioSource.TriggerCue();
+</code></pre>
+<p>There is no audible change when the Event has no sustain point.</p>
+<h2 id="play-3d-audio">Play 3D audio</h2>
+<p>When you select an Event authored as 3D in FMOD Studio, its sound follows the GameObject containing <code>FMODAudioSource</code>.</p>
+<ol>
+<li>Configure the Event as 3D in FMOD Studio and rebuild the Bank.</li>
+<li>Select the Event on <code>FMODAudioSource</code> in Unity.</li>
+<li>Confirm that the Main Camera or player has an <code>FMOD Studio Listener</code>.</li>
+<li>Place or move the Audio Source GameObject at the desired position.</li>
+</ol>
+<p>Velocity is supplied according to how the GameObject moves:</p>
+<ul>
+<li>When a <code>Rigidbody</code> or <code>Rigidbody2D</code> is present, its Velocity is used.</li>
+<li>When moving the Transform directly without a Rigidbody, enable <strong>Non-Rigidbody Velocity</strong> if the sound needs Doppler.</li>
+<li>Do not enable <strong>Non-Rigidbody Velocity</strong> when a Rigidbody is present.</li>
+</ul>
+<h3 id="change-attenuation-distances">Change attenuation distances</h3>
+<p>Enable <strong>Override Attenuation</strong> when only this Audio Source should use different attenuation distances from the FMOD Studio Event.</p>
+<ul>
+<li><strong>Min</strong>: the distance where attenuation begins</li>
+<li><strong>Max</strong>: the maximum attenuation distance</li>
+</ul>
+<p>Max cannot be less than Min. You can also adjust both distances with the radius handles in the Scene view. This setting is available only for 3D Events.</p>
+<h3 id="handle-continuous-events-outside-the-maximum-distance">Handle continuous Events outside the maximum distance</h3>
+<p>When <strong>Stop Events Outside Max Distance</strong> is enabled in FMOD for Unity settings, a continuous 3D Event stops while the Listener is outside Max Distance and starts again from the beginning when it returns inside. Parameters changed during playback are applied again.</p>
+<p>A 3D one-shot uses the position supplied when it starts. Use regular <code>Play()</code> instead when the sound must keep following a moving object or needs to be stopped later.</p>
+<h2 id="control-a-snapshot">Control a Snapshot</h2>
+<p>Select an FMOD Snapshot from the <strong>Event</strong> field, then use <code>Play()</code> and <code>Stop()</code> to enable and disable it like a regular Event.</p>
+<pre><code class="lang-csharp">public void EnterCave()
+{
+    audioSource.Play();
+}
+
+public void ExitCave()
+{
+    audioSource.Stop();
+}
+</code></pre>
+<p>Use <a href="event-trigger.html">Event Trigger</a> when a trigger volume or Unity Event should control the Snapshot.</p>
+<h2 id="options-to-use-when-needed">Options to use when needed</h2>
+<h3 id="prepare-the-first-playback">Prepare the first playback</h3>
+<p>For an Event that must start immediately after it is requested, enable <strong>Advanced Controls &gt; Preload Sample Data</strong>. Preparing the selected Event's sample data ahead of time can reduce the first-play delay, but it may increase memory usage.</p>
+<p>Use it selectively for frequently used sounds that need an immediate response instead of enabling it for every Event.</p>
+<h3 id="allow-playback-only-once">Allow playback only once</h3>
+<p>Enable <strong>Trigger Once</strong> to ignore additional <code>Play()</code> requests after the current Event plays for the first time. Re-enabling the GameObject or calling <code>Play()</code> after <code>Stop()</code> does not play the same Event again.</p>
+<p>Assigning a different Event to <code>clip</code> at runtime allows that new Event to play once. Use this option for notifications or sequences that must occur only once.</p>
+<h2 id="check-playback-state-and-time">Check playback state and time</h2>
+<p>Read the state properties to display playback progress in UI or prevent duplicate playback.</p>
+<pre><code class="lang-csharp">if (!audioSource.isPlaying)
+{
+    audioSource.Play();
+}
+
+float duration = audioSource.Length;
+float currentTime = audioSource.Time;
+float progress = duration &gt; 0f ? currentTime / duration : 0f;
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>What to check</th>
+<th>Property</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Whether the current sound is playing or sustaining</td>
+<td><code>isPlaying</code></td>
+</tr>
+<tr>
+<td>Whether playback requested by <code>Play()</code> is still active</td>
+<td><code>IsActive</code></td>
+</tr>
+<tr>
+<td>Total duration of the selected Event in seconds</td>
+<td><code>Length</code></td>
+</tr>
+<tr>
+<td>Current playback position in seconds</td>
+<td><code>Time</code></td>
+</tr>
+</tbody>
+</table>
+<p><code>IsActive</code> can remain <code>true</code> while a 3D Event is outside its maximum distance and currently inaudible. Use <code>isPlaying</code> when you need the actual playback state.</p>
+<p>Use <code>EventInstance</code> only when you need to call low-level FMOD functionality directly. Always check <code>audioSource.EventInstance.isValid()</code> first. Sounds played as one-shots cannot be controlled through this property.</p>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+              <div>
+                  This asset and documentation are not affiliated with Unity Technologies, and the creator is not responsible for any legal issues arising from its use.
+              </div>
+              <div>
+                  <span class="pull-right"><a href="#top">Back to top</a></span>
+
+                  <span>This document was generated using <strong>DocFX</strong>.</span>
+              </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../styles/docs-switcher.js"></script>
+  </body>
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <script type="text/javascript">
+        thisPackageMetaData = {name: "com.nkstudio.fmodplus", version: "1.7.0", displayTitle: "FMOD Plus 1.7.0", lang: "en"};
+    </script>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Command Sender | FMOD Plus </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Command Sender | FMOD Plus ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <link rel="stylesheet" href="../styles/language-switcher.css">
+      <link rel="stylesheet" href="../styles/version-switcher.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../manual/index.html">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+            <div class="container hide-when-search" id="breadcrumb">
+                <!-- Unity Customization: Remove content of breadcrumb bar. This space is used for version and language switchers
+                            <ul class="breadcrumb">
+                              <li></li>
+                            </ul>
+                            -->
+            </div>
+        </div>      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+        <div id="unity_breadcrumb_placeholder">
+            <ul class="breadcrumb">
+            <li></li>
+            </ul>
+        </div>
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="command-sender">Command Sender</h1>
+
+<p><code>CommandSender</code> forwards an Inspector-configured command to an <code>FMODAudioSource</code> or the FMOD Studio System. A UnityEvent or <code>FMODEventTrigger</code> can always call the same <code>SendCommand()</code> method while the Sender selects playback, stopping, key-off, Local Parameter, or Global Parameter behavior.</p>
+<h2 id="create-a-command-sender">Create a Command Sender</h2>
+<p>Add a <code>CommandSender</code> in either of the following ways:</p>
+<ul>
+<li>Select <strong>GameObject &gt; Audio &gt; FMOD &gt; Command Sender</strong>.</li>
+<li>On an existing GameObject, select <strong>FMOD Studio &gt; FMOD Plus &gt; FMOD Command Sender</strong> from <strong>Add Component</strong>.</li>
+</ul>
+<p><img src="../images/add-command-sender.jpg" alt="Add Command Sender Component"></p>
+<p>Every behavior except Global Parameter requires a target <code>FMODAudioSource</code>. The basic setup is to assign it directly to <strong>Audio Source</strong>.</p>
+<p><img src="../images/command-sender-audio-source.jpg" alt="Command Sender Audio Source"></p>
+<h2 id="behaviour-types">Behaviour types</h2>
+<table>
+<thead>
+<tr>
+<th>Behaviour</th>
+<th>Target</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Play</strong></td>
+<td>FMOD Audio Source</td>
+<td>Selects an Event, applies Parameters, and starts playback.</td>
+</tr>
+<tr>
+<td><strong>Stop</strong></td>
+<td>FMOD Audio Source</td>
+<td>Stops the current Event with the selected Fade option.</td>
+</tr>
+<tr>
+<td><strong>Key Off</strong></td>
+<td>FMOD Audio Source</td>
+<td>Releases a sustain point on the current Event.</td>
+</tr>
+<tr>
+<td><strong>Parameter</strong></td>
+<td>FMOD Audio Source</td>
+<td>Applies Local Parameters to the current Event.</td>
+</tr>
+<tr>
+<td><strong>Global Parameter</strong></td>
+<td>FMOD Studio System</td>
+<td>Changes a project-wide Parameter value.</td>
+</tr>
+</tbody>
+</table>
+<p><code>CommandSender</code> has no Pause or Mute behavior. Use <a class="xref" href="../api/FMODPlus.FMODAudioSource.html"><code>FMODAudioSource.Pause()</code></a> and <code>mute</code> directly for those operations.</p>
+<h2 id="send-on-awake">Send On Awake</h2>
+<p>Despite its name, <strong>Send On Awake</strong> invokes <code>SendCommand()</code> from <code>OnEnable</code>, not <code>Awake</code>.</p>
+<p><img src="../images/command-sender-send-on-awake.jpg" alt="Command Sender Send On Awake"></p>
+<ul>
+<li>The command is sent when the GameObject first becomes enabled.</li>
+<li>Disabling and enabling it again sends the command again.</li>
+<li>When a target or Key is assigned at runtime, disable this option or configure execution order so the command cannot run before the assignment is complete.</li>
+</ul>
+<h2 id="call-sendcommand-directly">Call SendCommand directly</h2>
+<p>Code can execute the configured Behaviour and Inspector values through the single <code>SendCommand()</code> method.</p>
+<pre><code class="lang-csharp">using FMODPlus;
+using UnityEngine;
+
+public class CommandButton : MonoBehaviour
+{
+    [SerializeField] private CommandSender commandSender;
+
+    public void Execute()
+    {
+        commandSender.SendCommand();
+    }
+}
+</code></pre>
+<p>Connect <code>CommandSender.SendCommand</code> to a Unity UI Button or UI Toolkit UnityEvent. The caller remains the same even when the configured command becomes more complex.</p>
+<h2 id="connect-an-event-trigger">Connect an Event Trigger</h2>
+<p>Set the <code>FMODEventTrigger</code> <strong>Trigger Type</strong> to <strong>Command Sender</strong>, then assign the Sender to <strong>Command Sender</strong>. The Trigger invokes <code>SendCommand()</code> when its configured <strong>Send Event</strong> occurs.</p>
+<p><img src="../images/command-sender-event-trigger.jpg" alt="Command Sender Event Trigger"></p>
+<p>The Command Sender target does not use the Event Trigger Stop Event. To stop from a Trigger, create a separate Command Sender with <strong>Stop</strong> behavior and invoke it from the desired Event.</p>
+<p>See <a href="event-trigger.html">Event Trigger</a> for the available Event conditions.</p>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+              <div>
+                  This asset and documentation are not affiliated with Unity Technologies, and the creator is not responsible for any legal issues arising from its use.
+              </div>
+              <div>
+                  <span class="pull-right"><a href="#top">Back to top</a></span>
+
+                  <span>This document was generated using <strong>DocFX</strong>.</span>
+              </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../styles/docs-switcher.js"></script>
+  </body>
+</html>

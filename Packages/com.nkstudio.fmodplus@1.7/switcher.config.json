@@ -1,0 +1,16 @@
+{
+  "layout": "auto",
+  "packageName": "com.nkstudio.fmodplus",
+  "displayName": "FMOD Plus",
+  "languages": [
+    { "id": "en", "label": "English" },
+    { "id": "kr", "label": "한국어" }
+  ],
+  "versions": [
+    {
+      "docsVersion": "1.7.0",
+      "hostedVersion": "1.7",
+      "unityVersion": "6000.0"
+    }
+  ]
+}

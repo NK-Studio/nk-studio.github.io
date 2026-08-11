@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <script type="text/javascript">
+        thisPackageMetaData = {name: "com.nkstudio.fmodplus", version: "1.7.0", displayTitle: "FMOD Plus 1.7.0", lang: "kr"};
+    </script>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Command Sender | FMOD Plus </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Command Sender | FMOD Plus ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <link rel="stylesheet" href="../styles/language-switcher.css">
+      <link rel="stylesheet" href="../styles/version-switcher.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../manual/index.html">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+            <div class="container hide-when-search" id="breadcrumb">
+                <!-- Unity Customization: Remove content of breadcrumb bar. This space is used for version and language switchers
+                            <ul class="breadcrumb">
+                              <li></li>
+                            </ul>
+                            -->
+            </div>
+        </div>      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+        <div id="unity_breadcrumb_placeholder">
+            <ul class="breadcrumb">
+            <li></li>
+            </ul>
+        </div>
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="command-sender">Command Sender</h1>
+
+<p><code>CommandSender</code>는 Inspector에 구성한 명령을 <code>FMODAudioSource</code> 또는 FMOD Studio System으로 전달합니다. UnityEvent나 <code>FMODEventTrigger</code>에서 하나의 <code>SendCommand()</code>만 호출하면서 재생, 정지, Key Off, Local Parameter, Global Parameter 동작을 선택할 수 있습니다.</p>
+<h2 id="command-sender-만들기">Command Sender 만들기</h2>
+<p>다음 두 방법 중 하나로 <code>CommandSender</code>를 추가합니다.</p>
+<ul>
+<li><strong>GameObject &gt; Audio &gt; FMOD &gt; Command Sender</strong>를 선택합니다.</li>
+<li>기존 GameObject의 <strong>Add Component</strong>에서 <strong>FMOD Studio &gt; FMOD Plus &gt; FMOD Command Sender</strong>를 선택합니다.</li>
+</ul>
+<p><img src="../images/add-command-sender.jpg" alt="Add Command Sender Component"></p>
+<p>Global Parameter를 제외한 명령은 대상 <code>FMODAudioSource</code>가 필요합니다. 가장 기본적인 구성은 <strong>Audio Source</strong> 필드에 직접 연결하는 것입니다.</p>
+<p><img src="../images/command-sender-audio-source.jpg" alt="Command Sender Audio Source"></p>
+<h2 id="behaviour-종류">Behaviour 종류</h2>
+<table>
+<thead>
+<tr>
+<th>Behaviour</th>
+<th>대상</th>
+<th>동작</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Play</strong></td>
+<td>FMOD Audio Source</td>
+<td>Event를 선택하고 Parameter를 적용한 뒤 재생합니다.</td>
+</tr>
+<tr>
+<td><strong>Stop</strong></td>
+<td>FMOD Audio Source</td>
+<td>Fade 선택과 함께 현재 Event를 정지합니다.</td>
+</tr>
+<tr>
+<td><strong>Key Off</strong></td>
+<td>FMOD Audio Source</td>
+<td>현재 Event의 Sustain Point를 해제합니다.</td>
+</tr>
+<tr>
+<td><strong>Parameter</strong></td>
+<td>FMOD Audio Source</td>
+<td>현재 Event에 Local Parameter를 적용합니다.</td>
+</tr>
+<tr>
+<td><strong>Global Parameter</strong></td>
+<td>FMOD Studio System</td>
+<td>프로젝트 전역 Parameter 값을 변경합니다.</td>
+</tr>
+</tbody>
+</table>
+<p><code>CommandSender</code>에는 Pause 또는 Mute Behaviour가 없습니다. 해당 동작은 <a class="xref" href="../api/FMODPlus.FMODAudioSource.html"><code>FMODAudioSource.Pause()</code></a>와 <code>mute</code>를 직접 사용합니다.</p>
+<h2 id="send-on-awake">Send On Awake</h2>
+<p><strong>Send On Awake</strong>는 이름과 달리 <code>Awake</code>가 아니라 <code>OnEnable</code>에서 <code>SendCommand()</code>를 호출합니다.</p>
+<p><img src="../images/command-sender-send-on-awake.jpg" alt="Command Sender Send On Awake"></p>
+<ul>
+<li>GameObject가 처음 활성화될 때 명령을 보냅니다.</li>
+<li>비활성화 후 다시 활성화하면 명령을 다시 보냅니다.</li>
+<li>대상이나 Key를 런타임에 연결한다면 연결이 끝나기 전 실행되지 않도록 이 옵션을 끄거나 실행 순서를 구성해야 합니다.</li>
+</ul>
+<h2 id="sendcommand-직접-호출">SendCommand 직접 호출</h2>
+<p>코드에서는 Behaviour와 Inspector 설정을 그대로 사용하여 <code>SendCommand()</code>만 호출합니다.</p>
+<pre><code class="lang-csharp">using FMODPlus;
+using UnityEngine;
+
+public class CommandButton : MonoBehaviour
+{
+    [SerializeField] private CommandSender commandSender;
+
+    public void Execute()
+    {
+        commandSender.SendCommand();
+    }
+}
+</code></pre>
+<p>Unity UI Button이나 UI Toolkit의 UnityEvent에는 <code>CommandSender.SendCommand</code>를 연결합니다. 명령이 복잡해져도 호출 측은 같은 메서드를 유지할 수 있습니다.</p>
+<h2 id="event-trigger와-연결하기">Event Trigger와 연결하기</h2>
+<p><code>FMODEventTrigger</code>의 <strong>Trigger Type</strong>을 <strong>Command Sender</strong>로 설정하고 <strong>Command Sender</strong> 필드에 대상 Sender를 연결합니다. 선택한 <strong>Send Event</strong>가 발생하면 <code>SendCommand()</code>가 호출됩니다.</p>
+<p><img src="../images/command-sender-event-trigger.jpg" alt="Command Sender Event Trigger"></p>
+<p>Command Sender Target에서는 Event Trigger의 Stop Event를 사용하지 않습니다. Trigger로 정지하려면 Behaviour가 <strong>Stop</strong>인 별도의 Command Sender를 만들고 원하는 Event에 연결하세요.</p>
+<p>자세한 Event 조건은 <a href="event-trigger.html">Event Trigger</a>를 참고하세요.</p>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+              <div>
+                  이 에셋과 문서는 Unity Technologies와 관련이 없으며, 사용으로 인해 발생하는 법적 문제에 대해서는 제작자가 책임지지 않습니다.
+              </div>
+              <div>
+                  <span class="pull-right"><a href="#top">Back to top</a></span>
+
+                  <span>이 문서는 <strong>DocFX</strong>를 통해 생성되었습니다.</span>
+              </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../styles/docs-switcher.js"></script>
+  </body>
+</html>

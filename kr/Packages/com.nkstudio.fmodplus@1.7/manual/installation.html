@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <script type="text/javascript">
+        thisPackageMetaData = {name: "com.nkstudio.fmodplus", version: "1.7.0", displayTitle: "FMOD Plus 1.7.0", lang: "kr"};
+    </script>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>설치 | FMOD Plus </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="설치 | FMOD Plus ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <link rel="stylesheet" href="../styles/language-switcher.css">
+      <link rel="stylesheet" href="../styles/version-switcher.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../manual/index.html">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+            <div class="container hide-when-search" id="breadcrumb">
+                <!-- Unity Customization: Remove content of breadcrumb bar. This space is used for version and language switchers
+                            <ul class="breadcrumb">
+                              <li></li>
+                            </ul>
+                            -->
+            </div>
+        </div>      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+        <div id="unity_breadcrumb_placeholder">
+            <ul class="breadcrumb">
+            <li></li>
+            </ul>
+        </div>
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="설치">설치</h1>
+
+<p>먼저 FMOD for Unity를 기존 방식대로 <code>Assets</code> 아래에 설치하고, FMOD Plus를 Git UPM으로 추가한 다음 FMOD Plus Setup 창에서 FMOD를 Embedded UPM 패키지로 이동합니다.</p>
+<h2 id="1-fmod-for-unity를-assets에-설치">1. FMOD for Unity를 Assets에 설치</h2>
+<p>FMOD Integration의 일반적인 설치 방법에 따라 FMOD for Unity를 설치합니다. 이 단계에서는 기존 Assets 경로를 유지합니다.</p>
+<pre><code class="lang-text">Assets/Plugins/FMOD
+</code></pre>
+<p>Unity 프로젝트를 열고 FMOD for Unity의 Import가 끝날 때까지 기다립니다. FMOD Plus에는 FMOD for Unity, FMOD Studio, Bank 또는 FMOD 라이선스가 포함되지 않습니다.</p>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>FMOD Plus 마이그레이션을 실행하기 전에 Assets 기반 FMOD 설치를 완료하세요. Setup 창은 Assets에 설치된 FMOD를 찾아 <code>Packages</code>로 이동할 준비를 합니다.</p>
+</div>
+<h2 id="2-fmod-plus를-git-upm으로-설치">2. FMOD Plus를 Git UPM으로 설치</h2>
+<ol>
+<li>Unity에서 <strong>Window &gt; Package Manager</strong>를 엽니다.</li>
+<li><strong>+</strong> 버튼을 누른 뒤 <strong>Install package from git URL...</strong> 을 선택합니다.</li>
+</ol>
+<p><img src="../images/install-package-from-git-url.png" alt="Unity Package Manager의 Install package from git URL 메뉴"></p>
+<ol start="3">
+<li>다음 주소를 입력하고 <strong>Install</strong>을 누릅니다.</li>
+</ol>
+<pre><code class="lang-text">https://github.com/NK-Studio/com.nkstudio.fmodplus.git
+</code></pre>
+<h2 id="3-fmod를-packages로-이동">3. FMOD를 Packages로 이동</h2>
+<p>FMOD Plus 설치가 완료되면 Unity 상단 메뉴에서 다음 창을 엽니다.</p>
+<pre><code class="lang-text">FMOD &gt; FMOD Plus &gt; Setup
+</code></pre>
+<p>Setup 창은 <code>Assets/Plugins/FMOD</code>의 FMOD Integration을 감지하고 마이그레이션 상태, 원본 버전, 변환할 UPM 버전, 대상 경로와 GUID 검사 결과를 표시합니다.</p>
+<p><img src="../images/fmod-plus-setup-migration.png" alt="FMOD를 Packages로 이동할 준비가 된 FMOD Plus Setup"></p>
+<p><strong>FMOD를 Packages로 이동</strong> 버튼을 누릅니다. 확인 대화상자의 내용을 검토한 뒤 마이그레이션을 계속합니다.</p>
+<p>마이그레이션에 성공하면 FMOD 패키지가 다음 위치로 이동합니다.</p>
+<pre><code class="lang-text">Packages/com.firelight.fmod-for-unity
+</code></pre>
+<p>프로젝트별 FMOD Settings와 Cache는 <code>Assets/Plugins/FMOD</code> 아래에 유지됩니다. 이후 Unity가 감지된 FMOD 패키지를 기준으로 FMOD Plus Runtime과 Editor 어셈블리를 다시 컴파일합니다.</p>
+<h2 id="설치-확인">설치 확인</h2>
+<p>Unity가 Import와 Compile을 마친 뒤 다음을 확인합니다.</p>
+<ul>
+<li>Package Manager에 FMOD Plus와 <code>com.firelight.fmod-for-unity</code>가 표시됩니다.</li>
+<li><strong>FMOD &gt; FMOD Plus &gt; Setup</strong>에서 Embedded FMOD 패키지가 활성 상태로 표시됩니다.</li>
+<li><strong>FMOD Audio Source</strong> 등의 FMOD Plus 컴포넌트를 추가할 수 있습니다.</li>
+<li>Console에 FMOD 또는 FMOD Plus 컴파일 오류가 없습니다.</li>
+</ul>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+              <div>
+                  이 에셋과 문서는 Unity Technologies와 관련이 없으며, 사용으로 인해 발생하는 법적 문제에 대해서는 제작자가 책임지지 않습니다.
+              </div>
+              <div>
+                  <span class="pull-right"><a href="#top">Back to top</a></span>
+
+                  <span>이 문서는 <strong>DocFX</strong>를 통해 생성되었습니다.</span>
+              </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../styles/docs-switcher.js"></script>
+  </body>
+</html>

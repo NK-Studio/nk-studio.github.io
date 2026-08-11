@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <script type="text/javascript">
+        thisPackageMetaData = {name: "com.nkstudio.fmodplus", version: "1.7.0", displayTitle: "FMOD Plus 1.7.0", lang: "en"};
+    </script>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Changelog | FMOD Plus </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Changelog | FMOD Plus ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <link rel="stylesheet" href="../styles/language-switcher.css">
+      <link rel="stylesheet" href="../styles/version-switcher.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../manual/index.html">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+            <div class="container hide-when-search" id="breadcrumb">
+                <!-- Unity Customization: Remove content of breadcrumb bar. This space is used for version and language switchers
+                            <ul class="breadcrumb">
+                              <li></li>
+                            </ul>
+                            -->
+            </div>
+        </div>      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+        <div id="unity_breadcrumb_placeholder">
+            <ul class="breadcrumb">
+            <li></li>
+            </ul>
+        </div>
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="changelog">Changelog</h1>
+
+<p>This document records the major changes to FMOD Plus.</p>
+<h2 id="172---2026-08-11">[1.7.2] - 2026-08-11</h2>
+<h3 id="changed">Changed</h3>
+<ul>
+<li>Moved the About window to the Bootstrap Editor assembly so it can be used regardless of whether FMOD is installed.</li>
+<li>Changed the About window's UXML, USS, logo, and <code>package.json</code> resolution to use GUIDs and <code>AssetDatabase.GUIDToAssetPath</code> instead of fixed paths or serialized references.</li>
+<li>Refined the About UI structure and styles, and added a diagnosable fallback message when loading the package version fails.</li>
+</ul>
+<h3 id="fixed">Fixed</h3>
+<ul>
+<li>Fixed the About window content not rendering when a serialized UXML or <code>package.json</code> reference was not assigned.</li>
+</ul>
+<h2 id="171---2026-08-11">[1.7.1] - 2026-08-11</h2>
+<h3 id="changed-1">Changed</h3>
+<ul>
+<li>Organized the fields, properties, public methods, and private helpers in <code>KeyReference</code> by responsibility.</li>
+<li>Expanded the XML documentation for <code>KeyReference.Key</code>, <code>Guid</code>, <code>Path</code>, <code>ToString()</code>, and the Key lookup APIs.</li>
+<li>Organized the fields, overrides, private helpers, and internal enum in <code>FMODEventTrigger</code> by responsibility.</li>
+</ul>
+<h2 id="170---2026-08-11">[1.7.0] - 2026-08-11</h2>
+<h3 id="added">Added</h3>
+<ul>
+<li>Added APIs to <code>KeyReference</code> for safely retrieving Events and initial parameters from Global and Local Key Lists.</li>
+<li>Added EditMode tests for default Key creation, duplicate prevention, immediate lookup after modification, and null-data handling in <code>AudioPathByString</code>.</li>
+<li>Added EditMode tests that verify the Unity-version-appropriate static field initialization policy.</li>
+</ul>
+<h3 id="changed-2">Changed</h3>
+<ul>
+<li>Separated playback, command, and event-handling responsibilities in <code>FMODAudioSource</code>, <code>CommandSender</code>, and <code>FMODEventTrigger</code>, and revised their public API documentation.</li>
+<li>Changed <code>LocalKeyList</code> to encapsulate serialized fields and provide value-oriented lookup APIs (<code>Count</code>, <code>TryGetEvent</code>, <code>TryGetParameters</code>, and <code>TryGetEventAndParameters</code>).</li>
+<li>Changed Command Sender and Editor UI code that references Local Key Lists to use <code>LocalKeyList</code> lookup APIs instead of directly iterating serialized arrays.</li>
+<li>Removed duplicated FMOD <code>EventReference.Find</code> code from <code>KeyReference</code> and clarified the responsibilities and null handling of the Key List reference model.</li>
+<li>Split <code>AudioType</code>, <code>EventRefCallback</code>, <code>KeyAndPath</code>, <code>EventReferenceByKey</code>, and <code>AudioPathByString</code> from <code>FMODPlusUtility.cs</code> into files organized by responsibility.</li>
+<li>Changed <code>FMODPlusUtility.Length</code> to safely handle empty Events, invalid Event Descriptions, and lookup failures.</li>
+<li>Expanded the public API XML documentation for <code>AudioPathByString</code>, <code>EventRefAtKey</code>, and <code>KeyAndPath</code>.</li>
+<li>Applied <code>[AutoStaticsCleanup]</code> to mutable static fields on Unity 6.5 or newer, while retaining Enter Play Mode initialization callbacks on Unity 6.4 or older.</li>
+<li>Replaced the legacy UXML factory/traits implementation in <code>SimpleBaseField</code> with the Unity 6 <code>[UxmlElement]</code> and <code>[UxmlAttribute]</code> APIs.</li>
+<li>Expanded the public API XML documentation for Key List ScriptableObjects and Local Key List, and improved null safety.</li>
+</ul>
+<h3 id="fixed-1">Fixed</h3>
+<ul>
+<li>Fixed exceptions or unnecessary error logs that could occur with null Local Key List collections, entries, parameter arrays, or empty Key lookups.</li>
+<li>Fixed <code>AudioPathByString</code> returning stale Events or parameters from its internal Dictionary cache after its public list was modified.</li>
+<li>Fixed default Keys being unavailable when an intermediate number was unused, and Keys with matching substrings being treated as duplicates.</li>
+<li>Fixed <code>EventRefCallback.TryGetClip</code> throwing an exception for an invalid <code>ClipStyle</code>.</li>
+<li>Fixed Global Key List singletons and Editor UI caches retaining previous state when re-entering Play Mode with Domain Reload disabled.</li>
+<li>Fixed alignment callbacks being registered more than once when a custom UI field was reattached to a panel.</li>
+</ul>
+<h3 id="removed">Removed</h3>
+<ul>
+<li>Removed the legacy <code>Event</code>, <code>AllowNonRigidbodyDoppler</code>, <code>UpdateActiveAudioSource()</code>, and writable <code>EventInstance</code> APIs from <code>FMODAudioSource</code>.</li>
+<li>Removed the legacy public <code>ClipList</code> field, top-level <code>EventRefList</code>, conversion ContextMenu, and old <code>TryFind*</code>/<code>TryGetValue</code> APIs from <code>LocalKeyList</code>.</li>
+</ul>
+<h2 id="170-beta1---2026-08-11">[1.7.0-beta.1] - 2026-08-11</h2>
+<h3 id="added-1">Added</h3>
+<ul>
+<li>Added the UI Toolkit-based <code>FMOD/FMOD Plus/Setup</code> window.</li>
+<li>Added automatic Korean/English localization of the Setup window based on the system language.</li>
+<li>Added detection of FMOD Integration under Assets and migration to Embedded UPM.</li>
+<li>Added UPM SemVer conversion for FMOD Integration versions and automatic recovery of the <code>FMOD.meta</code> GUID.</li>
+<li>Added migration preflight checks, file-move rollback, and Settings/Cache preservation.</li>
+<li>Added a Global Key List Editor Window that combines AMB, BGM, and SFX.</li>
+<li>Added Key-name search to Global and Local Key Lists.</li>
+<li>Added a detail panel for editing the selected Event and initial parameters.</li>
+<li>Added automatic application of the FMOD Studio Listener icon.</li>
+</ul>
+<h3 id="changed-3">Changed</h3>
+<ul>
+<li>Changed FMOD Plus to the <code>com.nkstudio.fmodplus</code> Embedded UPM package structure.</li>
+<li>Changed FMOD package detection to use an asmdef Version Define for <code>com.firelight.fmod-for-unity</code> versions in <code>[2.2.0,3.0.0)</code>.</li>
+<li>Changed Runtime and Editor assemblies to compile only when FMOD is installed.</li>
+<li>Rebuilt the Global and Local Key List editing UI with UXML/USS-based UI Toolkit.</li>
+<li>Changed <code>LocalKeyList</code> to directly inherit <code>MonoBehaviour</code>, and the AMB/BGM/SFX lists to directly inherit <code>ScriptableObject</code>.</li>
+<li>Changed <code>FMODAudioSource</code> to update distance-based playback state directly without an FMOD source hook.</li>
+<li>Added minimum/maximum sizes and narrow-width responsive layout to the Setup window.</li>
+</ul>
+<h3 id="fixed-2">Fixed</h3>
+<ul>
+<li>Fixed the selected Key List index becoming incorrect after searching or Undo/Redo.</li>
+<li>Fixed fields and buttons being pushed sideways when the Local Key List Inspector was narrow.</li>
+<li>Fixed initial parameter lists sometimes failing to refresh after changing an Event.</li>
+<li>Fixed the FMOD migration button remaining disabled because AssetDatabase remembered a deleted package path.</li>
+<li>Prevented path errors caused by including FMOD Settings and Cache in Packages.</li>
+<li>Improved rollback ordering so an original meta file or package.json is not left behind when a file write fails during migration.</li>
+</ul>
+<h3 id="removed-1">Removed</h3>
+<ul>
+<li>Removed separate Global Key List menus for AMB, BGM, and SFX.</li>
+<li>Removed the decorative dedicated Inspector UI from Global Key List ScriptableObjects.</li>
+<li>Removed automatic registration of the legacy <code>USE_FMOD</code> and <code>FMODPlus</code> Scripting Defines.</li>
+<li>Removed hooks that directly modified FMOD RuntimeManager and StudioListener Editor sources.</li>
+</ul>
+<h2 id="164-beta---2023-11-13">[1.6.4]-Beta - 2023-11-13</h2>
+<h3 id="added-2">Added</h3>
+<ul>
+<li>Added <code>PlayThisOneShot</code> to FMOD Audio Source.</li>
+</ul>
+<h2 id="163-beta---2023-10-24">[1.6.3]-Beta - 2023-10-24</h2>
+<h3 id="fixed-3">Fixed</h3>
+<ul>
+<li>Fixed Show Info being hidden because the KeyList label text was offset.</li>
+</ul>
+<h2 id="162-beta---2023-10-24">[1.6.2]-Beta - 2023-10-24</h2>
+<h3 id="added-3">Added</h3>
+<ul>
+<li>Added KeyList.</li>
+</ul>
+<h3 id="fixed-4">Fixed</h3>
+<ul>
+<li>Added KeyListSO and KeyListMono for developers using Inspector assets such as Odin.</li>
+</ul>
+<h2 id="161-beta---2023-10-24">[1.6.1]-Beta - 2023-10-24</h2>
+<h3 id="added-4">Added</h3>
+<ul>
+<li>Added a UI Toolkit Inspector converter for FMOD Plus.</li>
+</ul>
+<h3 id="fixed-5">Fixed</h3>
+<ul>
+<li>Suppressed warnings for items that do not use an audio style.</li>
+</ul>
+<h2 id="160-beta---2023-10-24">[1.6.0]-Beta - 2023-10-24</h2>
+<h3 id="added-5">Added</h3>
+<ul>
+<li>Added Key List support to Audio Source.</li>
+</ul>
+<h3 id="fixed-6">Fixed</h3>
+<ul>
+<li>Redefined the Command Sender concept.</li>
+</ul>
+<h2 id="150-beta---2023-10-17">[1.5.0]-Beta - 2023-10-17</h2>
+<h3 id="added-6">Added</h3>
+<ul>
+<li>Added <code>EventRefAtKey</code> so an FMOD Key List can be drawn on a MonoBehaviour or ScriptableObject.</li>
+</ul>
+<h3 id="fixed-7">Fixed</h3>
+<ul>
+<li>Changed all Key Lists to use the <code>EventRefAtKey</code> approach.</li>
+<li>Fixed Key Lists showing only the header and not opening.</li>
+</ul>
+<h2 id="142-beta---2023-10-16">[1.4.2]-Beta - 2023-10-16</h2>
+<h3 id="fixed-8">Fixed</h3>
+<ul>
+<li>Changed FMOD Audio Source <code>playOnAwake</code> to run in Enable instead of Start.</li>
+<li>Changed FMOD Audio Source to call Stop when disabled.</li>
+</ul>
+<h2 id="141-beta---2023-10-16">[1.4.1]-Beta - 2023-10-16</h2>
+<h3 id="fixed-9">Fixed</h3>
+<ul>
+<li>Removed NKEditorUtility.</li>
+</ul>
+<h2 id="140-beta---2023-10-16">[1.4.0]-Beta - 2023-10-16</h2>
+<h3 id="fixed-10">Fixed</h3>
+<ul>
+<li>Converted all Key Lists to UI Toolkit.</li>
+</ul>
+<h2 id="130-beta---2023-09-29">[1.3.0]-Beta - 2023-09-29</h2>
+<h3 id="fixed-11">Fixed</h3>
+<ul>
+<li>Added third-party support for the Doozy plugin.</li>
+</ul>
+<h2 id="127-beta---2023-09-29">[1.2.7]-Beta - 2023-09-29</h2>
+<h3 id="fixed-12">Fixed</h3>
+<ul>
+<li>Renamed FMOD Audio Source <code>IsPlaying()</code> to lowercase <code>isPlaying</code>.</li>
+<li>Renamed FMOD Audio Source <code>PlayOnAwake()</code> to lowercase <code>playOnAwake</code>.</li>
+</ul>
+<h2 id="126-beta---2023-09-29">[1.2.6]-Beta - 2023-09-29</h2>
+<h3 id="fixed-13">Fixed</h3>
+<ul>
+<li>Renamed FMOD Audio Source <code>Mute</code> to lowercase <code>mute</code>.</li>
+</ul>
+<h2 id="125-beta---2023-09-29">[1.2.5]-Beta - 2023-09-29</h2>
+<h3 id="fixed-14">Fixed</h3>
+<ul>
+<li>Renamed FMOD Audio Source <code>Clip</code> to lowercase <code>clip</code>.</li>
+</ul>
+<h2 id="124-beta---2023-09-03">[1.2.4]-Beta - 2023-09-03</h2>
+<h3 id="fixed-15">Fixed</h3>
+<ul>
+<li>Added <code>TryGetClip()</code> to the methods provided by KeyList.</li>
+<li>Changed the method prefix from <code>TryFind</code> to <code>TryGet</code>.</li>
+</ul>
+<h2 id="123-beta---2023-09-03">[1.2.3]-Beta - 2023-09-03</h2>
+<h3 id="fixed-16">Fixed</h3>
+<ul>
+<li>Added the <code>ParamRef[]</code> approach for passing parameters to PlayOneShot.</li>
+</ul>
+<h2 id="122-beta---2023-09-03">[1.2.2]-Beta - 2023-09-03</h2>
+<h3 id="fixed-17">Fixed</h3>
+<ul>
+<li>Fixed the algorithm in <code>Add(key, path)</code> that warns when matching names are included.</li>
+<li>Added a bridge template for the Command Sender on-API approach.</li>
+</ul>
+<h2 id="121-beta---2023-09-03">[1.2.1]-Beta - 2023-09-03</h2>
+<h3 id="fixed-18">Fixed</h3>
+<ul>
+<li>Removed Parameter Sender and merged it into Command Sender.</li>
+<li>Changed Trigger Event to also support Command Sender.</li>
+<li>Added <code>FMOD/FMOD Plus/Force Update</code> to update internal code when FMOD is updated.</li>
+</ul>
+<h2 id="120-beta---2023-09-03">[1.2.0]-Beta - 2023-09-03</h2>
+<h3 id="fixed-19">Fixed</h3>
+<ul>
+<li>Removed Parameter Sender and merged it into Command Sender.</li>
+<li>Changed Trigger Event to also support Command Sender.</li>
+<li>Added <code>FMOD/FMOD Plus/Force Update</code> to update internal code when FMOD is updated.</li>
+</ul>
+<h2 id="111-beta---2023-09-01">[1.1.1]-Beta - 2023-09-01</h2>
+<h3 id="fixed-20">Fixed</h3>
+<ul>
+<li>Added a menu item for replacing an Audio Listener with an FMOD Studio Listener.</li>
+</ul>
+<h2 id="110-beta---2023-08-26">[1.1.0]-Beta - 2023-08-26</h2>
+<h3 id="fixed-21">Fixed</h3>
+<ul>
+<li>Upgraded based on FMOD 2.0.17.</li>
+<li>Changed Trigger Event to also support Parameter Sender.</li>
+</ul>
+<h2 id="1019-beta---2023-08-26">[1.0.19]-Beta - 2023-08-26</h2>
+<h3 id="fixed-22">Fixed</h3>
+<ul>
+<li>Fixed FMOD Audio Source audio not stopping when destroyed; Audio Source now stops automatically when its GameObject is destroyed.</li>
+<li>Changed to the Studio Emitter approach from FMOD plugin 2.02.15.</li>
+<li>Added the FMODPlus define.</li>
+</ul>
+<h2 id="1018-beta---2023-08-25">[1.0.18]-Beta - 2023-08-25</h2>
+<h3 id="fixed-23">Fixed</h3>
+<ul>
+<li>Clarified the ambiguous initial parameter value concept when Command Sender uses a KeyList.</li>
+</ul>
+<h2 id="1017-beta---2023-08-24">[1.0.17]-Beta - 2023-08-24</h2>
+<h3 id="fixed-24">Fixed</h3>
+<ul>
+<li>Revised the Key approach in API Style.</li>
+</ul>
+<h2 id="1016-beta---2023-08-24">[1.0.16]-Beta - 2023-08-24</h2>
+<h3 id="fixed-25">Fixed</h3>
+<ul>
+<li>Fixed Command Sender not processing initial parameters correctly.</li>
+</ul>
+<h2 id="1015-beta---2023-08-23">[1.0.15]-Beta - 2023-08-23</h2>
+<h3 id="fixed-26">Fixed</h3>
+<ul>
+<li>Changed the logic that updates the FMOD Studio Listener icon.</li>
+</ul>
+<h2 id="1014-beta---2023-07-25">[1.0.14]-Beta - 2023-07-25</h2>
+<h3 id="fixed-27">Fixed</h3>
+<ul>
+<li>Updated the Command Sender GUI.</li>
+</ul>
+<h2 id="1013-beta---2023-07-25">[1.0.13]-Beta - 2023-07-25</h2>
+<h3 id="fixed-28">Fixed</h3>
+<ul>
+<li>Added support for Unity 2021.3 LTS.</li>
+</ul>
+<h2 id="1012-beta---2023-07-25">[1.0.12]-Beta - 2023-07-25</h2>
+<h3 id="fixed-29">Fixed</h3>
+<ul>
+<li>Changed <code>MouseDownEvent</code> to <code>ClickEvent</code>.</li>
+</ul>
+<h2 id="1011-beta---2023-07-25">[1.0.11]-Beta - 2023-07-25</h2>
+<h3 id="fixed-30">Fixed</h3>
+<ul>
+<li>Completed the Command Sender refactor and reduced its weight.</li>
+</ul>
+<h2 id="1010-beta---2023-07-22">[1.0.10]-Beta - 2023-07-22</h2>
+<h3 id="fixed-31">Fixed</h3>
+<ul>
+<li>Added About.</li>
+</ul>
+<h2 id="109-beta---2023-07-22">[1.0.9]-Beta - 2023-07-22</h2>
+<h3 id="fixed-32">Fixed</h3>
+<ul>
+<li>Completed the Parameter Sender refactor and reduced its weight.</li>
+</ul>
+<h2 id="108-beta---2023-07-22">[1.0.8]-Beta - 2023-07-22</h2>
+<h3 id="fixed-33">Fixed</h3>
+<ul>
+<li>Fixed paths.</li>
+</ul>
+<h2 id="107-beta---2023-07-22">[1.0.7]-Beta - 2023-07-22</h2>
+<h3 id="fixed-34">Fixed</h3>
+<ul>
+<li>Discontinued Git UPM support.</li>
+<li>Fixed an error when the target folder did not exist while creating a Global Key List.</li>
+</ul>
+<h2 id="106-beta---2023-07-22">[1.0.6]-Beta - 2023-07-22</h2>
+<h3 id="fixed-35">Fixed</h3>
+<ul>
+<li>Fixed other elements not being initialized when a new element was created in a Global or Local Key List.</li>
+</ul>
+<h2 id="104-beta---2023-07-22">[1.0.4]-Beta - 2023-07-22</h2>
+<h3 id="fixed-36">Fixed</h3>
+<ul>
+<li>Fixed new elements in Global and Local Key Lists not being created with an empty Path.</li>
+</ul>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+              <div>
+                  This asset and documentation are not affiliated with Unity Technologies, and the creator is not responsible for any legal issues arising from its use.
+              </div>
+              <div>
+                  <span class="pull-right"><a href="#top">Back to top</a></span>
+
+                  <span>This document was generated using <strong>DocFX</strong>.</span>
+              </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../styles/docs-switcher.js"></script>
+  </body>
+</html>

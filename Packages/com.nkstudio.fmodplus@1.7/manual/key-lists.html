@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <script type="text/javascript">
+        thisPackageMetaData = {name: "com.nkstudio.fmodplus", version: "1.7.0", displayTitle: "FMOD Plus 1.7.0", lang: "en"};
+    </script>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Global and Local Key Lists | FMOD Plus </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Global and Local Key Lists | FMOD Plus ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <link rel="stylesheet" href="../styles/language-switcher.css">
+      <link rel="stylesheet" href="../styles/version-switcher.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../manual/index.html">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+            <div class="container hide-when-search" id="breadcrumb">
+                <!-- Unity Customization: Remove content of breadcrumb bar. This space is used for version and language switchers
+                            <ul class="breadcrumb">
+                              <li></li>
+                            </ul>
+                            -->
+            </div>
+        </div>      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+        <div id="unity_breadcrumb_placeholder">
+            <ul class="breadcrumb">
+            <li></li>
+            </ul>
+        </div>
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="global-and-local-key-lists">Global and Local Key Lists</h1>
+
+<p>A Key List associates a string Key with an FMOD Event and its initial Local Parameter values. Instead of repeating Event paths across components, you can reuse names such as <code>Stage1</code>, <code>Battle</code>, or <code>Footstep</code>.</p>
+<h2 id="which-key-list-should-you-use">Which Key List should you use?</h2>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Storage</th>
+<th>Best suited for</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Global Key List</td>
+<td>Project <code>Resources</code> assets</td>
+<td>AMB, BGM, and SFX Events shared across Scenes</td>
+</tr>
+<tr>
+<td><code>LocalKeyList</code></td>
+<td>A Scene or Prefab GameObject</td>
+<td>Events used only by one Scene, Prefab, or feature</td>
+</tr>
+</tbody>
+</table>
+<p>AMB, BGM, and SFX are categories for organizing Keys and selecting which list to query. Registering a Key under BGM does not automatically route its Event to a BGM Bus. Configure the actual Bus routing in FMOD Studio.</p>
+<h2 id="create-global-key-lists">Create Global Key Lists</h2>
+<p>Select <strong>FMOD &gt; FMOD Plus &gt; Global Key List</strong> from the Unity menu.</p>
+<p><img src="../images/menu-global-key-list.jpg" alt="Global Key List Menu"></p>
+<p>When the window opens for the first time, it creates any missing assets at the following location:</p>
+<pre><code class="lang-text">Assets/FMOD Plus Data/Resources/
+├── AMB-KeyList.asset
+├── BGM-KeyList.asset
+└── SFX-KeyList.asset
+</code></pre>
+<h3 id="select-a-category">Select a category</h3>
+<p>Use the <strong>AMB</strong>, <strong>BGM</strong>, and <strong>SFX</strong> buttons at the top of the window to select the list to edit.</p>
+<ul>
+<li><strong>AMB</strong>: Organizes ambient sounds.</li>
+<li><strong>BGM</strong>: Organizes background music.</li>
+<li><strong>SFX</strong>: Organizes sound effects.</li>
+</ul>
+<p>The categories separate data only, so you can adapt their usage to your project's naming rules.</p>
+<h3 id="add-and-edit-a-key">Add and edit a Key</h3>
+<ol>
+<li>Select the category to edit.</li>
+<li>Select <strong>Add Key</strong> to create an entry.</li>
+<li>Set its <strong>Key</strong> name in the detail panel.</li>
+<li>Select the linked Event in <strong>FMOD Event</strong>.</li>
+<li>Add initial values under <strong>Initial Parameters</strong> when needed.</li>
+</ol>
+<p><img src="../images/global-key-list-window.jpg" alt="Global Key List Window"></p>
+<p>A new entry receives an available temporary name such as <code>New Key</code> or <code>New Key (1)</code>. Rename it to describe its actual purpose.</p>
+<p>The list displays each Key and Event path. Select an entry to edit its actual data in the detail panel. Changing the Event clears the existing Initial Parameters so values from the previous Event cannot be mixed with the new one.</p>
+<h3 id="search">Search</h3>
+<p>The search field looks for Key names across AMB, BGM, and SFX.</p>
+<ul>
+<li>It performs a substring search.</li>
+<li>Search is case-insensitive.</li>
+<li>Each result displays its original category.</li>
+<li>Drag reordering is disabled during a search to protect the source indices.</li>
+<li>Selecting a category button clears the search and returns to that category.</li>
+</ul>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>Search is case-insensitive, but runtime Key lookup is case-sensitive. <code>Stage1</code> and <code>stage1</code> are different Keys.</p>
+</div>
+<h3 id="reorder-and-remove-entries">Reorder and remove entries</h3>
+<p>When no search is active, drag entries to change their order within the current category. <strong>Remove Key</strong> displays a confirmation dialog before deleting the selected entry.</p>
+<p>Adding, deleting, reordering, and editing Events or Parameters support Unity Undo/Redo. Modified Global assets are saved automatically.</p>
+<h2 id="edit-initial-parameters">Edit Initial Parameters</h2>
+<p>After selecting an Event, add its Local Parameters from <strong>Add Parameter</strong>. Select <strong>All</strong> to add every Parameter that is not already present.</p>
+<p>The editor displays an appropriate input for each FMOD Parameter type.</p>
+<table>
+<thead>
+<tr>
+<th>FMOD Parameter type</th>
+<th>Editor control</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Continuous</td>
+<td>A floating-point Slider using the minimum and maximum range</td>
+</tr>
+<tr>
+<td>Discrete</td>
+<td>An integer Slider</td>
+</tr>
+<tr>
+<td>Labeled</td>
+<td>A Dropdown containing the FMOD labels</td>
+</tr>
+</tbody>
+</table>
+<p>These values are the initial values used when the Event is played through the Key. Removing a Parameter from the entry makes the Event use its FMOD default instead.</p>
+<p>If an Event cannot be found in the loaded banks, or a stored Parameter was removed from the Event, the editor displays <strong>Parameter Not Found</strong>. It does not discard the serialized data automatically. Select a new Event or remove obsolete entries manually.</p>
+<h2 id="create-a-local-key-list">Create a Local Key List</h2>
+<p>Create a <code>LocalKeyList</code> in either of the following ways:</p>
+<ul>
+<li>Select <strong>GameObject &gt; Audio &gt; FMOD &gt; Key List</strong>.</li>
+<li>On an existing GameObject, select <strong>FMOD Studio &gt; FMOD Plus &gt; FMOD Local Key List</strong> from <strong>Add Component</strong>.</li>
+</ul>
+<p><img src="../images/add-local-key-list.jpg" alt="Add Local Key List Component"></p>
+<p>The Local Key List Inspector uses the same basic workflow as the Global window.</p>
+<p><img src="../images/local-key-list-inspector.jpg" alt="Local Key List Inspector"></p>
+<ol>
+<li>Select <strong>Add Key</strong> to add an entry.</li>
+<li>Set its Key name and FMOD Event.</li>
+<li>Add any required Initial Parameters.</li>
+<li>Search or drag entries to organize the list.</li>
+</ol>
+<p>Search is limited to the current <code>LocalKeyList</code>, and reordering is disabled while searching. Editing a Scene Object marks the Scene as changed. Editing a Prefab is recorded as a Prefab Override. Undo/Redo is also supported.</p>
+<h2 id="local-key-list-lookup-api">Local Key List lookup API</h2>
+<p><code>LocalKeyList</code> can resolve an Event, its Parameters, or both together.</p>
+<pre><code class="lang-csharp">using FMODPlus;
+using FMODUnity;
+using UnityEngine;
+
+public class LocalMusicLookup : MonoBehaviour
+{
+    [SerializeField] private LocalKeyList keyList;
+    [SerializeField] private FMODAudioSource audioSource;
+
+    public void Play(string key)
+    {
+        if (!keyList.TryGetEventAndParameters(
+                key,
+                out EventReference eventReference,
+                out ParamRef[] parameters))
+        {
+            Debug.LogWarning($&quot;FMOD Key '{key}' was not found.&quot;);
+            return;
+        }
+
+        audioSource.clip = eventReference;
+        audioSource.ApplyParameter(parameters);
+        audioSource.Play();
+    }
+}
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>API</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Count</code></td>
+<td>Number of serialized Key entries</td>
+</tr>
+<tr>
+<td><code>TryGetEvent()</code></td>
+<td>Event Reference</td>
+</tr>
+<tr>
+<td><code>TryGetParameters()</code></td>
+<td>Initial <code>ParamRef[]</code></td>
+</tr>
+<tr>
+<td><code>TryGetEventAndParameters()</code></td>
+<td>Event and Parameters together</td>
+</tr>
+</tbody>
+</table>
+<p>On failure, the methods return <code>false</code>, the Event is its default value, and Parameters are an empty array.</p>
+<h2 id="global-key-list-lookup-api">Global Key List lookup API</h2>
+<p>Global lists use one Singleton per category.</p>
+<pre><code class="lang-csharp">using FMODPlus;
+using FMODUnity;
+using UnityEngine;
+
+public class GlobalMusicLookup : MonoBehaviour
+{
+    public bool TryGetMusic(
+        string key,
+        out EventReference eventReference,
+        out ParamRef[] parameters)
+    {
+        eventReference = default;
+        parameters = System.Array.Empty&lt;ParamRef&gt;();
+
+        return BGMKeyList.Instance.TryGetValue(key, out eventReference) &amp;&amp;
+               BGMKeyList.Instance.TryGetParamRef(key, out parameters);
+    }
+}
+</code></pre>
+<p><code>AMBKeyList</code>, <code>BGMKeyList</code>, and <code>SFXKeyList</code> provide the same lookup API.</p>
+<ul>
+<li><code>TryGetValue()</code> returns the Event.</li>
+<li><code>TryGetParamRef()</code> returns its initial Parameters.</li>
+<li><code>TryFindClip()</code>, <code>TryFindParamRefs()</code>, and <code>TryFindClipAndParams()</code> perform equivalent lookups and log an error when they fail.</li>
+</ul>
+<p>Use the <code>TryGet*</code> methods when the caller should handle failure. Use the <code>TryFind*</code> methods when a missing Key must also be logged as an error. Global <code>TryGetParamRef()</code> can return <code>null</code> on failure, so check its Boolean result before using the array.</p>
+<h2 id="use-keyreference">Use KeyReference</h2>
+<p><code>KeyReference</code> packages a Global or Local list selection and its Key into one serializable value.</p>
+<pre><code class="lang-csharp">using FMODPlus;
+using FMODUnity;
+using UnityEngine;
+
+public class KeyReferencePlayer : MonoBehaviour
+{
+    [SerializeField] private KeyReference eventKey = new();
+    [SerializeField] private FMODAudioSource audioSource;
+
+    public void Play()
+    {
+        if (!eventKey.TryGetEventAndParameters(
+                out EventReference eventReference,
+                out ParamRef[] parameters))
+        {
+            Debug.LogWarning($&quot;FMOD Key '{eventKey.Key}' was not found.&quot;);
+            return;
+        }
+
+        audioSource.clip = eventReference;
+        audioSource.ApplyParameter(parameters);
+        audioSource.Play();
+    }
+}
+</code></pre>
+<p><code>TryGetEvent()</code> resolves only the Event. <code>TryGetEventAndParameters()</code> also returns its initial values. Parameters are an empty array on failure, but always check the Boolean result before using them.</p>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+              <div>
+                  This asset and documentation are not affiliated with Unity Technologies, and the creator is not responsible for any legal issues arising from its use.
+              </div>
+              <div>
+                  <span class="pull-right"><a href="#top">Back to top</a></span>
+
+                  <span>This document was generated using <strong>DocFX</strong>.</span>
+              </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../styles/docs-switcher.js"></script>
+  </body>
+</html>

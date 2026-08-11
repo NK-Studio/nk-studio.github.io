@@ -1,0 +1,1154 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <script type="text/javascript">
+        thisPackageMetaData = {name: "com.nkstudio.fmodplus", version: "1.7.0", displayTitle: "FMOD Plus 1.7.0", lang: "en"};
+    </script>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class FMODAudioSource | FMOD Plus </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class FMODAudioSource | FMOD Plus ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <link rel="stylesheet" href="../styles/language-switcher.css">
+      <link rel="stylesheet" href="../styles/version-switcher.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../manual/index.html">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+            <div class="container hide-when-search" id="breadcrumb">
+                <!-- Unity Customization: Remove content of breadcrumb bar. This space is used for version and language switchers
+                            <ul class="breadcrumb">
+                              <li></li>
+                            </ul>
+                            -->
+            </div>
+        </div>      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+        <div id="unity_breadcrumb_placeholder">
+            <ul class="breadcrumb">
+            <li></li>
+            </ul>
+        </div>
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="FMODPlus.FMODAudioSource">
+
+
+
+  <h1 id="FMODPlus_FMODAudioSource" data-uid="FMODPlus.FMODAudioSource" class="text-break">Class FMODAudioSource</h1>
+  <div class="markdown level0 summary"><p>Plays and controls an FMOD event with AudioSource-like controls.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">object</span></div>
+    <div class="level1"><span class="xref">FMODAudioSource</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="FMODPlus.html">FMODPlus</a></h6>
+  <h6><strong>Assembly</strong>: com.nkstudio.fmod-plus.runtime.dll</h6>
+  <h5 id="FMODPlus_FMODAudioSource_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[AddComponentMenu(&quot;FMOD Studio/FMOD Plus/FMOD Audio Source&quot;)]
+[DefaultExecutionOrder(-220)]
+public class FMODAudioSource : MonoBehaviour</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+
+
+  <a id="FMODPlus_FMODAudioSource__ctor_" data-uid="FMODPlus.FMODAudioSource.#ctor*"></a>
+  <h4 id="FMODPlus_FMODAudioSource__ctor" data-uid="FMODPlus.FMODAudioSource.#ctor">FMODAudioSource()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FMODAudioSource()</code></pre>
+  </div>
+  <h3 id="fields">Fields
+</h3>
+
+
+  <h4 id="FMODPlus_FMODAudioSource_AllowFadeout" data-uid="FMODPlus.FMODAudioSource.AllowFadeout">AllowFadeout</h4>
+  <div class="markdown level1 summary"><p>Whether stopping the event uses its FMOD fadeout behavior.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AllowFadeout</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="FMODPlus_FMODAudioSource_HandleGameEvent" data-uid="FMODPlus.FMODAudioSource.HandleGameEvent">HandleGameEvent</h4>
+  <div class="markdown level1 summary"><p>Optional callback invoked by integrations that forward FMOD emitter game events.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action&lt;EmitterGameEvent&gt; HandleGameEvent</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<span class="xref">EmitterGameEvent</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="FMODPlus_FMODAudioSource_NonRigidbodyVelocity" data-uid="FMODPlus.FMODAudioSource.NonRigidbodyVelocity">NonRigidbodyVelocity</h4>
+  <div class="markdown level1 summary"><p>Whether transform-derived velocity is used when no Rigidbody is attached.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[FormerlySerializedAs(&quot;AllowNonRigidbodyDoppler&quot;)]
+public bool NonRigidbodyVelocity</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="FMODPlus_FMODAudioSource_OverrideAttenuation" data-uid="FMODPlus.FMODAudioSource.OverrideAttenuation">OverrideAttenuation</h4>
+  <div class="markdown level1 summary"><p>Whether the event's authored attenuation distances are overridden.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool OverrideAttenuation</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="FMODPlus_FMODAudioSource_OverrideMaxDistance" data-uid="FMODPlus.FMODAudioSource.OverrideMaxDistance">OverrideMaxDistance</h4>
+  <div class="markdown level1 summary"><p>The maximum distance used when attenuation override is enabled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float OverrideMaxDistance</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="FMODPlus_FMODAudioSource_OverrideMinDistance" data-uid="FMODPlus.FMODAudioSource.OverrideMinDistance">OverrideMinDistance</h4>
+  <div class="markdown level1 summary"><p>The minimum distance used when attenuation override is enabled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float OverrideMinDistance</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="FMODPlus_FMODAudioSource_Params" data-uid="FMODPlus.FMODAudioSource.Params">Params</h4>
+  <div class="markdown level1 summary"><p>Initial local parameter values applied whenever an event instance starts.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ParamRef[] Params</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ParamRef</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="FMODPlus_FMODAudioSource_Preload" data-uid="FMODPlus.FMODAudioSource.Preload">Preload</h4>
+  <div class="markdown level1 summary"><p>Whether sample data for the configured event is preloaded.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Preload</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="FMODPlus_FMODAudioSource_TriggerOnce" data-uid="FMODPlus.FMODAudioSource.TriggerOnce">TriggerOnce</h4>
+  <div class="markdown level1 summary"><p>Whether this component may start its configured event only once.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TriggerOnce</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="FMODPlus_FMODAudioSource_playOnAwake" data-uid="FMODPlus.FMODAudioSource.playOnAwake">playOnAwake</h4>
+  <div class="markdown level1 summary"><p>Whether the event starts when this component is enabled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Tooltip(&quot;Play when the component is enabled.&quot;)]
+public bool playOnAwake</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+
+
+  <a id="FMODPlus_FMODAudioSource_EventInstance_" data-uid="FMODPlus.FMODAudioSource.EventInstance*"></a>
+  <h4 id="FMODPlus_FMODAudioSource_EventInstance" data-uid="FMODPlus.FMODAudioSource.EventInstance">EventInstance</h4>
+  <div class="markdown level1 summary"><p>Gets the currently controlled FMOD event instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EventInstance EventInstance { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">EventInstance</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="FMODPlus_FMODAudioSource_IsActive_" data-uid="FMODPlus.FMODAudioSource.IsActive*"></a>
+  <h4 id="FMODPlus_FMODAudioSource_IsActive" data-uid="FMODPlus.FMODAudioSource.IsActive">IsActive</h4>
+  <div class="markdown level1 summary"><p>Gets whether this component currently has an active playback request.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsActive { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="FMODPlus_FMODAudioSource_Length_" data-uid="FMODPlus.FMODAudioSource.Length*"></a>
+  <h4 id="FMODPlus_FMODAudioSource_Length" data-uid="FMODPlus.FMODAudioSource.Length">Length</h4>
+  <div class="markdown level1 summary"><p>Gets the duration of the configured event in seconds, or zero when unavailable.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Length { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="FMODPlus_FMODAudioSource_Pitch_" data-uid="FMODPlus.FMODAudioSource.Pitch*"></a>
+  <h4 id="FMODPlus_FMODAudioSource_Pitch" data-uid="FMODPlus.FMODAudioSource.Pitch">Pitch</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the event pitch in the range from -3 to 3.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Pitch { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="FMODPlus_FMODAudioSource_Time_" data-uid="FMODPlus.FMODAudioSource.Time*"></a>
+  <h4 id="FMODPlus_FMODAudioSource_Time" data-uid="FMODPlus.FMODAudioSource.Time">Time</h4>
+  <div class="markdown level1 summary"><p>Gets the current playback position in seconds, or zero when not playing.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Time { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="FMODPlus_FMODAudioSource_Volume_" data-uid="FMODPlus.FMODAudioSource.Volume*"></a>
+  <h4 id="FMODPlus_FMODAudioSource_Volume" data-uid="FMODPlus.FMODAudioSource.Volume">Volume</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the event volume in the range from 0 to 1.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Volume { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="FMODPlus_FMODAudioSource_clip_" data-uid="FMODPlus.FMODAudioSource.clip*"></a>
+  <h4 id="FMODPlus_FMODAudioSource_clip" data-uid="FMODPlus.FMODAudioSource.clip">clip</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the FMOD event used by this audio source.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EventReference clip { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">EventReference</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="FMODPlus_FMODAudioSource_isPlaying_" data-uid="FMODPlus.FMODAudioSource.isPlaying*"></a>
+  <h4 id="FMODPlus_FMODAudioSource_isPlaying" data-uid="FMODPlus.FMODAudioSource.isPlaying">isPlaying</h4>
+  <div class="markdown level1 summary"><p>Gets whether the current FMOD event instance is playing or sustaining.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool isPlaying { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="FMODPlus_FMODAudioSource_mute_" data-uid="FMODPlus.FMODAudioSource.mute*"></a>
+  <h4 id="FMODPlus_FMODAudioSource_mute" data-uid="FMODPlus.FMODAudioSource.mute">mute</h4>
+  <div class="markdown level1 summary"><p>Gets or sets whether playback is paused by the mute control.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool mute { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="FMODPlus_FMODAudioSource_ApplyParameter_" data-uid="FMODPlus.FMODAudioSource.ApplyParameter*"></a>
+  <h4 id="FMODPlus_FMODAudioSource_ApplyParameter_FMODUnity_ParamRef___" data-uid="FMODPlus.FMODAudioSource.ApplyParameter(FMODUnity.ParamRef[])">ApplyParameter(ParamRef[])</h4>
+  <div class="markdown level1 summary"><p>Applies matching parameter values and sends all supplied values to the current instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ApplyParameter(ParamRef[] parameters)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ParamRef</span>[]</td>
+        <td><span class="parametername">parameters</span></td>
+        <td><p>Parameter values to apply.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="FMODPlus_FMODAudioSource_KeyOff_" data-uid="FMODPlus.FMODAudioSource.KeyOff*"></a>
+  <h4 id="FMODPlus_FMODAudioSource_KeyOff" data-uid="FMODPlus.FMODAudioSource.KeyOff">KeyOff()</h4>
+  <div class="markdown level1 summary"><p>Sends a key-off command to a sustaining event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void KeyOff()</code></pre>
+  </div>
+
+
+  <a id="FMODPlus_FMODAudioSource_Pause_" data-uid="FMODPlus.FMODAudioSource.Pause*"></a>
+  <h4 id="FMODPlus_FMODAudioSource_Pause" data-uid="FMODPlus.FMODAudioSource.Pause">Pause()</h4>
+  <div class="markdown level1 summary"><p>Pauses the current event independently of the mute property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Pause()</code></pre>
+  </div>
+
+
+  <a id="FMODPlus_FMODAudioSource_Play_" data-uid="FMODPlus.FMODAudioSource.Play*"></a>
+  <h4 id="FMODPlus_FMODAudioSource_Play" data-uid="FMODPlus.FMODAudioSource.Play">Play()</h4>
+  <div class="markdown level1 summary"><p>Starts the configured FMOD event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Play()</code></pre>
+  </div>
+
+
+  <a id="FMODPlus_FMODAudioSource_PlayOneShot_" data-uid="FMODPlus.FMODAudioSource.PlayOneShot*"></a>
+  <h4 id="FMODPlus_FMODAudioSource_PlayOneShot_FMODUnity_EventReference_System_Collections_Generic_IReadOnlyList_FMODUnity_ParamRef__System_Single_UnityEngine_Vector3_" data-uid="FMODPlus.FMODAudioSource.PlayOneShot(FMODUnity.EventReference,System.Collections.Generic.IReadOnlyList{FMODUnity.ParamRef},System.Single,UnityEngine.Vector3)">PlayOneShot(EventReference, IReadOnlyList&lt;ParamRef&gt;, float, Vector3)</h4>
+  <div class="markdown level1 summary"><p>Plays an event once with local parameter values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PlayOneShot(EventReference eventReference, IReadOnlyList&lt;ParamRef&gt; parameters, float volumeScale = 1, Vector3 position = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">EventReference</span></td>
+        <td><span class="parametername">eventReference</span></td>
+        <td><p>The FMOD event to play.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">IReadOnlyList</span>&lt;<span class="xref">ParamRef</span>&gt;</td>
+        <td><span class="parametername">parameters</span></td>
+        <td><p>The local parameter values.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td><span class="parametername">volumeScale</span></td>
+        <td><p>The volume applied to the one-shot instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></td>
+        <td><span class="parametername">position</span></td>
+        <td><p>The world position of the one-shot instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="FMODPlus_FMODAudioSource_PlayOneShot_" data-uid="FMODPlus.FMODAudioSource.PlayOneShot*"></a>
+  <h4 id="FMODPlus_FMODAudioSource_PlayOneShot_FMODUnity_EventReference_System_Single_UnityEngine_Vector3_" data-uid="FMODPlus.FMODAudioSource.PlayOneShot(FMODUnity.EventReference,System.Single,UnityEngine.Vector3)">PlayOneShot(EventReference, float, Vector3)</h4>
+  <div class="markdown level1 summary"><p>Plays an event once at a world position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PlayOneShot(EventReference eventReference, float volumeScale = 1, Vector3 position = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">EventReference</span></td>
+        <td><span class="parametername">eventReference</span></td>
+        <td><p>The FMOD event to play.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td><span class="parametername">volumeScale</span></td>
+        <td><p>The volume applied to the one-shot instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></td>
+        <td><span class="parametername">position</span></td>
+        <td><p>The world position of the one-shot instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="FMODPlus_FMODAudioSource_PlayOneShot_" data-uid="FMODPlus.FMODAudioSource.PlayOneShot*"></a>
+  <h4 id="FMODPlus_FMODAudioSource_PlayOneShot_FMODUnity_EventReference_System_String_System_Single_System_Single_UnityEngine_Vector3_" data-uid="FMODPlus.FMODAudioSource.PlayOneShot(FMODUnity.EventReference,System.String,System.Single,System.Single,UnityEngine.Vector3)">PlayOneShot(EventReference, string, float, float, Vector3)</h4>
+  <div class="markdown level1 summary"><p>Plays an event once with one local parameter value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PlayOneShot(EventReference eventReference, string parameterName, float parameterValue, float volumeScale = 1, Vector3 position = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">EventReference</span></td>
+        <td><span class="parametername">eventReference</span></td>
+        <td><p>The FMOD event to play.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">parameterName</span></td>
+        <td><p>The local parameter name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td><span class="parametername">parameterValue</span></td>
+        <td><p>The local parameter value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td><span class="parametername">volumeScale</span></td>
+        <td><p>The volume applied to the one-shot instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></td>
+        <td><span class="parametername">position</span></td>
+        <td><p>The world position of the one-shot instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="FMODPlus_FMODAudioSource_PlayOneShot_" data-uid="FMODPlus.FMODAudioSource.PlayOneShot*"></a>
+  <h4 id="FMODPlus_FMODAudioSource_PlayOneShot_System_String_System_Collections_Generic_IReadOnlyList_FMODUnity_ParamRef__System_Single_UnityEngine_Vector3_" data-uid="FMODPlus.FMODAudioSource.PlayOneShot(System.String,System.Collections.Generic.IReadOnlyList{FMODUnity.ParamRef},System.Single,UnityEngine.Vector3)">PlayOneShot(string, IReadOnlyList&lt;ParamRef&gt;, float, Vector3)</h4>
+  <div class="markdown level1 summary"><p>Plays an event path once with local parameter values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PlayOneShot(string path, IReadOnlyList&lt;ParamRef&gt; parameters, float volumeScale = 1, Vector3 position = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>The FMOD event path.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">IReadOnlyList</span>&lt;<span class="xref">ParamRef</span>&gt;</td>
+        <td><span class="parametername">parameters</span></td>
+        <td><p>The local parameter values.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td><span class="parametername">volumeScale</span></td>
+        <td><p>The volume applied to the one-shot instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></td>
+        <td><span class="parametername">position</span></td>
+        <td><p>The world position of the one-shot instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="FMODPlus_FMODAudioSource_PlayOneShot_" data-uid="FMODPlus.FMODAudioSource.PlayOneShot*"></a>
+  <h4 id="FMODPlus_FMODAudioSource_PlayOneShot_System_String_System_Single_UnityEngine_Vector3_" data-uid="FMODPlus.FMODAudioSource.PlayOneShot(System.String,System.Single,UnityEngine.Vector3)">PlayOneShot(string, float, Vector3)</h4>
+  <div class="markdown level1 summary"><p>Plays an event path once at a world position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PlayOneShot(string path, float volumeScale = 1, Vector3 position = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>The FMOD event path.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td><span class="parametername">volumeScale</span></td>
+        <td><p>The volume applied to the one-shot instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></td>
+        <td><span class="parametername">position</span></td>
+        <td><p>The world position of the one-shot instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="FMODPlus_FMODAudioSource_PlayOneShot_" data-uid="FMODPlus.FMODAudioSource.PlayOneShot*"></a>
+  <h4 id="FMODPlus_FMODAudioSource_PlayOneShot_System_String_System_String_System_Single_System_Single_UnityEngine_Vector3_" data-uid="FMODPlus.FMODAudioSource.PlayOneShot(System.String,System.String,System.Single,System.Single,UnityEngine.Vector3)">PlayOneShot(string, string, float, float, Vector3)</h4>
+  <div class="markdown level1 summary"><p>Plays an event path once with one local parameter value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PlayOneShot(string path, string parameterName, float parameterValue, float volumeScale = 1, Vector3 position = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>The FMOD event path.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">parameterName</span></td>
+        <td><p>The local parameter name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td><span class="parametername">parameterValue</span></td>
+        <td><p>The local parameter value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td><span class="parametername">volumeScale</span></td>
+        <td><p>The volume applied to the one-shot instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html">Vector3</a></td>
+        <td><span class="parametername">position</span></td>
+        <td><p>The world position of the one-shot instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="FMODPlus_FMODAudioSource_PlayThisOneShot_" data-uid="FMODPlus.FMODAudioSource.PlayThisOneShot*"></a>
+  <h4 id="FMODPlus_FMODAudioSource_PlayThisOneShot" data-uid="FMODPlus.FMODAudioSource.PlayThisOneShot">PlayThisOneShot()</h4>
+  <div class="markdown level1 summary"><p>Plays the configured clip once at this transform's position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PlayThisOneShot()</code></pre>
+  </div>
+
+
+  <a id="FMODPlus_FMODAudioSource_SetParameter_" data-uid="FMODPlus.FMODAudioSource.SetParameter*"></a>
+  <h4 id="FMODPlus_FMODAudioSource_SetParameter_FMOD_Studio_PARAMETER_ID_System_Single_System_Boolean_" data-uid="FMODPlus.FMODAudioSource.SetParameter(FMOD.Studio.PARAMETER_ID,System.Single,System.Boolean)">SetParameter(PARAMETER_ID, float, bool)</h4>
+  <div class="markdown level1 summary"><p>Sets a local parameter by ID and remembers the value across distance-managed recreation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetParameter(PARAMETER_ID id, float value, bool ignoreseekspeed = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">PARAMETER_ID</span></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>The FMOD parameter identifier.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The new parameter value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><span class="parametername">ignoreseekspeed</span></td>
+        <td><p>Whether FMOD seek speed should be ignored.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="FMODPlus_FMODAudioSource_SetParameter_" data-uid="FMODPlus.FMODAudioSource.SetParameter*"></a>
+  <h4 id="FMODPlus_FMODAudioSource_SetParameter_System_String_System_Single_System_Boolean_" data-uid="FMODPlus.FMODAudioSource.SetParameter(System.String,System.Single,System.Boolean)">SetParameter(string, float, bool)</h4>
+  <div class="markdown level1 summary"><p>Sets a local parameter by name and remembers the value across distance-managed recreation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetParameter(string paramName, float value, bool ignoreseekspeed = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">paramName</span></td>
+        <td><p>The FMOD parameter name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The new parameter value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><span class="parametername">ignoreseekspeed</span></td>
+        <td><p>Whether FMOD seek speed should be ignored.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="FMODPlus_FMODAudioSource_Stop_" data-uid="FMODPlus.FMODAudioSource.Stop*"></a>
+  <h4 id="FMODPlus_FMODAudioSource_Stop" data-uid="FMODPlus.FMODAudioSource.Stop">Stop()</h4>
+  <div class="markdown level1 summary"><p>Stops playback using <a class="xref" href="FMODPlus.FMODAudioSource.html#FMODPlus_FMODAudioSource_AllowFadeout">AllowFadeout</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Stop()</code></pre>
+  </div>
+
+
+  <a id="FMODPlus_FMODAudioSource_Stop_" data-uid="FMODPlus.FMODAudioSource.Stop*"></a>
+  <h4 id="FMODPlus_FMODAudioSource_Stop_System_Boolean_" data-uid="FMODPlus.FMODAudioSource.Stop(System.Boolean)">Stop(bool)</h4>
+  <div class="markdown level1 summary"><p>Stops playback with a per-call fadeout choice.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Stop(bool fade)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><span class="parametername">fade</span></td>
+        <td><p>Whether FMOD should allow the event to fade out.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="FMODPlus_FMODAudioSource_TriggerCue_" data-uid="FMODPlus.FMODAudioSource.TriggerCue*"></a>
+  <h4 id="FMODPlus_FMODAudioSource_TriggerCue" data-uid="FMODPlus.FMODAudioSource.TriggerCue">TriggerCue()</h4>
+  <div class="markdown level1 summary"><p>Sends a key-off command to trigger a cue transition.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TriggerCue()</code></pre>
+  </div>
+
+
+  <a id="FMODPlus_FMODAudioSource_UnPause_" data-uid="FMODPlus.FMODAudioSource.UnPause*"></a>
+  <h4 id="FMODPlus_FMODAudioSource_UnPause" data-uid="FMODPlus.FMODAudioSource.UnPause">UnPause()</h4>
+  <div class="markdown level1 summary"><p>Resumes playback paused through <a class="xref" href="FMODPlus.FMODAudioSource.html#FMODPlus_FMODAudioSource_Pause">Pause()</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UnPause()</code></pre>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+              <div>
+                  This asset and documentation are not affiliated with Unity Technologies, and the creator is not responsible for any legal issues arising from its use.
+              </div>
+              <div>
+                  <span class="pull-right"><a href="#top">Back to top</a></span>
+
+                  <span>This document was generated using <strong>DocFX</strong>.</span>
+              </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../styles/docs-switcher.js"></script>
+  </body>
+</html>

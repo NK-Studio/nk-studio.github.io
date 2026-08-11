@@ -1,0 +1,59 @@
+html,
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.collapsible {
+    cursor: pointer;
+}
+
+.collapsible div {
+    padding: 0 18px;
+    display: block;
+    overflow: hidden;
+}
+
+.collapsible.closed div {
+    display: none;
+}
+.initial {
+    display: block !important;
+}
+.collapsible.closed h5::before {
+    content: "+ ";
+    font-size: 1.2em;
+}
+.collapsible h5::before {
+    content: "- ";
+    font-size: 1.2em;
+}
+.collapsible.closed::after {
+    content: " ... ";
+    font-size: 1.5em;
+}
+
+.show-bottom .level0.initial:after {
+    content: "\A        ? ..." !important;
+    white-space: pre;
+}
+
+#search {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Unity accessibility */
+.declaration, .fieldValue, .parameters, .returns {
+    color: #4C4C4C;
+}
+
+/* Spacing between consecutive images in a paragraph */
+article.content p img {
+    vertical-align: top;
+}
+article.content p img:not(:last-child) {
+    margin-right: 12px;
+    margin-bottom: 12px;
+}

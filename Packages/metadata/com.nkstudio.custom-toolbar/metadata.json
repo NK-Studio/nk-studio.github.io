@@ -1,0 +1,15 @@
+{
+  "versions": {
+    "2.0.0": {
+      "unity": "2022.3",
+      "displayName": "Custom Toolbar",
+      "name": "com.nkstudio.custom-toolbar",
+      "type": "asset",
+      "keywords": [
+        "Toolbar",
+        "Utility"
+      ],
+      "version": "2.0.0"
+    }
+  }
+}

@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <script type="text/javascript">
+        thisPackageMetaData = {name: "com.nkstudio.custom-toolbar", version: "2.0.0", displayTitle: "Custom Toolbar 2.0.0", lang: "en"};
+    </script>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Create a custom module | Custom Toolbar </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Create a custom module | Custom Toolbar ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <link rel="stylesheet" href="../styles/language-switcher.css">
+      <link rel="stylesheet" href="../styles/version-switcher.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../manual/index.html">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+            <div class="container hide-when-search" id="breadcrumb">
+                <!-- Unity Customization: Remove content of breadcrumb bar. This space is used for version and language switchers
+                            <ul class="breadcrumb">
+                              <li></li>
+                            </ul>
+                            -->
+            </div>
+        </div>      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+        <div id="unity_breadcrumb_placeholder">
+            <ul class="breadcrumb">
+            <li></li>
+            </ul>
+        </div>
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="create-a-custom-module">Create a custom module</h1>
+
+<p>You can develop custom toolbar modules tailored to your project environment by implementing the <code>IToolbarModule</code> interface. Toolbar scripts should be created under an <code>Editor</code> folder.</p>
+<h2 id="choose-the-api-for-your-unity-version">Choose the API for your Unity version</h2>
+<p>Read <code>ProjectSettings/ProjectVersion.txt</code> and use the implementation that matches <code>m_EditorVersion</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Unity version</th>
+<th>Module implementation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>6000.3 or newer</td>
+<td>Implement <code>IToolbarModule</code>. Declare UI with Unity's official <code>MainToolbarElement</code> API.</td>
+</tr>
+<tr>
+<td>2022.3 through 6000.2</td>
+<td>Implement <code>IToolbarModule</code> and <code>ILegacyToolbarModule</code>. Add UI through <code>LegacyToolbarBuilder</code>.</td>
+</tr>
+</tbody>
+</table>
+<p>Custom Toolbar does not support Unity versions earlier than 2022.3.</p>
+<h2 id="register-the-module">Register the module</h2>
+<p>Module registration works the same way across all supported Unity versions. Every module needs a stable, globally unique ID and must register exactly once from an <code>[InitializeOnLoad]</code> static constructor.</p>
+<pre><code class="lang-csharp">using NKStudio.CustomToolbar;
+using UnityEditor;
+
+[InitializeOnLoad]
+internal sealed class ExampleToolbarModule : IToolbarModule
+{
+    private const string ModuleId = &quot;Company.Product.Toolbar.Example&quot;;
+
+    static ExampleToolbarModule()
+    {
+        ToolbarModuleRegistry.Register(new ExampleToolbarModule());
+    }
+
+    public string Id =&gt; ModuleId;
+
+    public void Refresh(ToolbarRefreshReason reason)
+    {
+        // Refresh this module's toolbar state.
+    }
+}
+</code></pre>
+<p>Do not subscribe separately to <code>EditorApplication.playModeStateChanged</code> or <code>EditorBuildSettings.sceneListChanged</code>. The toolbar host sends the corresponding <code>ToolbarRefreshReason</code> to registered modules.</p>
+<h2 id="unity-60003-or-newer">Unity 6000.3 or newer</h2>
+<p>Use Unity's public Main Toolbar API. The path passed to <code>MainToolbar.Refresh</code> must exactly match the path declared by <code>MainToolbarElement</code>.</p>
+<pre><code class="lang-csharp">using NKStudio.CustomToolbar;
+using UnityEditor;
+using UnityEditor.Toolbars;
+
+[InitializeOnLoad]
+internal sealed class ModernExampleToolbarModule : IToolbarModule
+{
+    private const string ModuleId = &quot;Company.Product.Toolbar.Example&quot;;
+    private const string ElementPath = &quot;Company Toolbar/Example&quot;;
+
+    static ModernExampleToolbarModule()
+    {
+        ToolbarModuleRegistry.Register(new ModernExampleToolbarModule());
+    }
+
+    public string Id =&gt; ModuleId;
+
+    public void Refresh(ToolbarRefreshReason reason)
+    {
+        if (reason is ToolbarRefreshReason.Initialized or ToolbarRefreshReason.PlayModeChanged)
+            MainToolbar.Refresh(ElementPath);
+    }
+
+    [MainToolbarElement(
+        ElementPath,
+        defaultDockPosition = MainToolbarDockPosition.Right,
+        defaultDockIndex = 20)]
+    private static MainToolbarElement CreateElement()
+    {
+        var content = new MainToolbarContent(&quot;Example&quot;, &quot;Run an Editor action.&quot;);
+        return new MainToolbarButton(content, OnClick)
+        {
+            enabled = ToolbarAvailability.InEditMode
+        };
+    }
+
+    private static void OnClick()
+    {
+        // Run an Editor-only action.
+    }
+}
+</code></pre>
+<h2 id="unity-20223-through-60002-compatibility">Unity 2022.3 through 6000.2 compatibility</h2>
+<p>For earlier supported versions, implement <code>ILegacyToolbarModule</code> and create UI Toolkit controls in <code>BuildLegacy</code>. The package owns all toolbar reflection.</p>
+<pre><code class="lang-csharp">using NKStudio.CustomToolbar;
+using UnityEditor;
+using UnityEditor.UIElements;
+
+[InitializeOnLoad]
+internal sealed class LegacyExampleToolbarModule : IToolbarModule, ILegacyToolbarModule
+{
+    private const string ModuleId = &quot;Company.Product.Toolbar.Example&quot;;
+    private ToolbarButton _button;
+
+    static LegacyExampleToolbarModule()
+    {
+        ToolbarModuleRegistry.Register(new LegacyExampleToolbarModule());
+    }
+
+    public string Id =&gt; ModuleId;
+
+    public void Refresh(ToolbarRefreshReason reason)
+    {
+        _button?.SetEnabled(ToolbarAvailability.InEditMode);
+    }
+
+    public void BuildLegacy(LegacyToolbarBuilder builder)
+    {
+        _button = new ToolbarButton(OnClick) { text = &quot;Example&quot; };
+        _button.SetEnabled(ToolbarAvailability.InEditMode);
+        builder.Add(LegacyToolbarZone.Right, _button);
+    }
+
+    private static void OnClick()
+    {
+        // Run an Editor-only action.
+    }
+}
+</code></pre>
+<p>Add every element through <code>LegacyToolbarBuilder.Add</code>. Available zones are <code>Left</code>, <code>CenterLeft</code>, <code>CenterRight</code>, and <code>Right</code>.</p>
+<h2 id="validation-checklist">Validation checklist</h2>
+<ul>
+<li>Confirm the module ID is not duplicated in <code>Assets</code> or <code>Packages</code>.</li>
+<li>Keep the action Editor-only and use <code>ToolbarAvailability.InEditMode</code> for controls that must be disabled in Play Mode.</li>
+<li>For Unity 6000.3 or newer, use the exact same element path for the attribute and refresh call.</li>
+<li>For earlier supported versions, add every element through <code>LegacyToolbarBuilder</code>.</li>
+<li>Compile and test with the Unity version recorded in <code>ProjectVersion.txt</code>.</li>
+</ul>
+<h2 id="choose-the-enabled-state-of-a-toolbar-element">Choose the enabled state of a toolbar element</h2>
+<p><code>ToolbarAvailability</code> provides four properties for the <code>enabled</code> value of a toolbar element. Choose the property whose name matches the intended behavior instead of interpreting a negated condition.</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>When the element is enabled</th>
+<th>Use case</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>InEditMode</code></td>
+<td>In Edit Mode</td>
+<td>Editor actions that must not run in Play Mode or while entering Play Mode</td>
+</tr>
+<tr>
+<td><code>InPlayMode</code></td>
+<td>During actual Play Mode</td>
+<td>Actions available only while the game is running</td>
+</tr>
+<tr>
+<td><code>Always</code></td>
+<td>Always</td>
+<td>Actions available regardless of the Editor state</td>
+</tr>
+<tr>
+<td><code>Never</code></td>
+<td>Never</td>
+<td>Visible actions that are not currently available</td>
+</tr>
+</tbody>
+</table>
+<p>On Unity 6000.3 or newer, assign the desired property to <code>enabled</code> in the element factory. The following button is enabled only in Edit Mode.</p>
+<pre><code class="lang-csharp">[MainToolbarElement(
+    ElementPath,
+    defaultDockPosition = MainToolbarDockPosition.Right,
+    defaultDockIndex = 20)]
+private static MainToolbarElement CreateElement()
+{
+    var content = new MainToolbarContent(&quot;Example&quot;, &quot;Run an Editor action.&quot;);
+
+    return new MainToolbarButton(content, OnClick)
+    {
+        enabled = ToolbarAvailability.InEditMode
+    };
+}
+</code></pre>
+<p>When using <code>InEditMode</code> or <code>InPlayMode</code>, recreate the element during initialization and whenever the Play Mode state changes.</p>
+<pre><code class="lang-csharp">public void Refresh(ToolbarRefreshReason reason)
+{
+    if (reason is ToolbarRefreshReason.Initialized or ToolbarRefreshReason.PlayModeChanged)
+        MainToolbar.Refresh(ElementPath);
+}
+</code></pre>
+<div class="TIP">
+<h5>Tip</h5>
+<p><code>ModernToolbarHost</code> sends <code>ToolbarRefreshReason.PlayModeChanged</code> to every registered module whenever the Play Mode state changes. If the module is registered with <code>ToolbarModuleRegistry</code>, its state updates without a separate <code>EditorApplication.playModeStateChanged</code> subscription.</p>
+<p><code>Always</code> and <code>Never</code> do not change with Play Mode, so they do not require recreation for state changes.</p>
+</div>
+<h2 id="display-a-dynamic-value-in-a-label">Display a dynamic value in a label</h2>
+<p>To display an external value in a toolbar label, as the Scene Switcher does, read the value inside <code>CreateElement()</code>. The first argument of the <code>MainToolbarContent</code> constructor is the label shown in the toolbar.</p>
+<pre><code class="lang-csharp">private static MainToolbarElement CreateElement()
+{
+    string label = MyToolbarData.CurrentLabel;
+
+    var content = new MainToolbarContent(
+        label,
+        &quot;Display the current value.&quot;);
+
+    return new MainToolbarButton(content, OnClick)
+    {
+        enabled = ToolbarAvailability.InEditMode
+    };
+}
+</code></pre>
+<p>The asset's built-in Scene Switcher displays the name of the first enabled scene in Build Settings. Its core structure is as follows.</p>
+<pre><code class="lang-csharp">public void Refresh(ToolbarRefreshReason reason)
+{
+    if (reason is ToolbarRefreshReason.Initialized
+        or ToolbarRefreshReason.SceneListChanged)
+    {
+        MainToolbar.Refresh(ElementPath);
+    }
+}
+
+[MainToolbarElement(ElementPath)]
+private static MainToolbarElement CreateElement()
+{
+    string label = $&quot;Start '{SceneHelper.FirstSceneName}'&quot;;
+
+    return new MainToolbarButton(
+        new MainToolbarContent(label, &quot;Start the first scene in Build Settings.&quot;),
+        SceneHelper.MoveFirstScene)
+    {
+        enabled = ToolbarAvailability.InEditMode
+            &amp;&amp; SceneHelper.HasFirstScene
+    };
+}
+</code></pre>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>A label does not change automatically when its source value changes. <code>CreateElement()</code> uses the value available when the element is created, so call <code>MainToolbar.Refresh(ElementPath)</code> in response to the source value's change event to apply the new label.</p>
+</div>
+<p><code>SceneHelper</code> is the class that retrieves and formats values for the asset's built-in Scene Switcher. Follow the same pattern in a custom module: keep data handling in a separate Helper or Provider class, and let the toolbar class focus on presenting that value.</p>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+              <div>
+                  This asset and documentation are not affiliated with Unity Technologies, and the creator is not responsible for any legal issues arising from its use.
+              </div>
+              <div>
+                  <span class="pull-right"><a href="#top">Back to top</a></span>
+
+                  <span>This document was generated using <strong>DocFX</strong>.</span>
+              </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../styles/docs-switcher.js"></script>
+  </body>
+</html>

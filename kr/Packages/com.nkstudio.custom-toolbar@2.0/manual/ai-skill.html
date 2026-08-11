@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <script type="text/javascript">
+        thisPackageMetaData = {name: "com.nkstudio.custom-toolbar", version: "2.0.0", displayTitle: "Custom Toolbar 2.0.0", lang: "kr"};
+    </script>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>AI 스킬 사용 | Custom Toolbar </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="AI 스킬 사용 | Custom Toolbar ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <link rel="stylesheet" href="../styles/language-switcher.css">
+      <link rel="stylesheet" href="../styles/version-switcher.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../manual/index.html">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+            <div class="container hide-when-search" id="breadcrumb">
+                <!-- Unity Customization: Remove content of breadcrumb bar. This space is used for version and language switchers
+                            <ul class="breadcrumb">
+                              <li></li>
+                            </ul>
+                            -->
+            </div>
+        </div>      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+        <div id="unity_breadcrumb_placeholder">
+            <ul class="breadcrumb">
+            <li></li>
+            </ul>
+        </div>
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="ai-스킬-사용">AI 스킬 사용</h1>
+
+<p>Custom Toolbar에는 AI 코딩 에이전트를 위한 <code>extend-custom-toolbar</code> 스킬이 포함되어 있습니다. 이 스킬은 Unity 버전 선택, 파일 위치, 어셈블리 참조, 모듈 구현과 검증 과정을 안내합니다.</p>
+<h2 id="스킬-위치">스킬 위치</h2>
+<p>설치된 패키지에서 다음 경로로 스킬을 확인할 수 있습니다.</p>
+<pre><code class="lang-text">Packages/com.nkstudio.custom-toolbar/Skills/extend-custom-toolbar/SKILL.md
+</code></pre>
+<p><code>extend-custom-toolbar</code> 폴더 전체에는 기본 지침과 지원 Unity 버전별 구현 참고 문서가 함께 들어 있습니다.</p>
+<h2 id="스킬이-수행하는-작업">스킬이 수행하는 작업</h2>
+<p>스킬은 에이전트가 다음 규칙을 따르도록 안내합니다.</p>
+<ul>
+<li><code>ProjectSettings/ProjectVersion.txt</code>를 Unity 에디터 버전의 기준으로 확인합니다.</li>
+<li>Unity 2022.3~6000.2에서는 <code>IToolbarModule</code>과 <code>ILegacyToolbarModule</code>을 사용합니다.</li>
+<li>Unity 6000.3 이상에서는 Unity 공식 <code>MainToolbarElement</code> API를 사용합니다.</li>
+<li>설치된 패키지를 수정하지 않고 프로젝트 전용 모듈을 <code>Assets/Editor/ToolbarModules</code> 아래에 만듭니다.</li>
+<li>필요한 경우 에디터 전용 어셈블리 참조를 추가합니다.</li>
+<li>모듈 ID, Refresh 경로, 수명주기 이벤트 구독과 컴파일 결과를 검사합니다.</li>
+</ul>
+<h2 id="에이전트에게-스킬-사용-요청">에이전트에게 스킬 사용 요청</h2>
+<p>요청에 스킬 경로를 명시합니다.</p>
+<pre><code class="lang-text">Packages/com.nkstudio.custom-toolbar/Skills/extend-custom-toolbar/SKILL.md를 읽고
+이 프로젝트에 새 Custom Toolbar 모듈을 추가해줘.
+</code></pre>
+<p>가능하면 원하는 컨트롤 종류, 툴바 위치, 실행할 동작과 Play Mode 동작도 요청에 포함하세요.</p>
+<h2 id="자동-스킬-탐색">자동 스킬 탐색</h2>
+<p>사용하는 코딩 에이전트가 스킬 자동 탐색을 지원한다면 <code>extend-custom-toolbar</code> 폴더 전체를 해당 에이전트의 skills 디렉터리에 설치하거나 복사하세요. <code>SKILL.md</code>와 참조 문서는 함께 유지해야 하며, 스킬은 프로젝트 Unity 버전을 확인한 뒤 알맞은 문서를 선택합니다.</p>
+<p>모듈 API와 직접 작성하는 예제는 <a href="custom-modules.html">커스텀 모듈 추가</a>를 참고하세요.</p>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+              <div>
+                  이 에셋과 문서는 Unity Technologies와 관련이 없으며, 사용으로 인해 발생하는 법적 문제에 대해서는 제작자가 책임지지 않습니다.
+              </div>
+              <div>
+                  <span class="pull-right"><a href="#top">Back to top</a></span>
+
+                  <span>이 문서는 <strong>DocFX</strong>를 통해 생성되었습니다.</span>
+              </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../styles/docs-switcher.js"></script>
+  </body>
+</html>

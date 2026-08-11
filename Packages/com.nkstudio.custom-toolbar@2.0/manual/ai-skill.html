@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <script type="text/javascript">
+        thisPackageMetaData = {name: "com.nkstudio.custom-toolbar", version: "2.0.0", displayTitle: "Custom Toolbar 2.0.0", lang: "en"};
+    </script>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Use the AI skill | Custom Toolbar </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Use the AI skill | Custom Toolbar ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <link rel="stylesheet" href="../styles/language-switcher.css">
+      <link rel="stylesheet" href="../styles/version-switcher.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../manual/index.html">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+            <div class="container hide-when-search" id="breadcrumb">
+                <!-- Unity Customization: Remove content of breadcrumb bar. This space is used for version and language switchers
+                            <ul class="breadcrumb">
+                              <li></li>
+                            </ul>
+                            -->
+            </div>
+        </div>      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+        <div id="unity_breadcrumb_placeholder">
+            <ul class="breadcrumb">
+            <li></li>
+            </ul>
+        </div>
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="use-the-ai-skill">Use the AI skill</h1>
+
+<p>Custom Toolbar includes an <code>extend-custom-toolbar</code> skill for AI coding agents. The skill guides the agent through Unity version selection, file placement, assembly references, module implementation, and validation.</p>
+<h2 id="skill-location">Skill location</h2>
+<p>The skill is included in the installed package at:</p>
+<pre><code class="lang-text">Packages/com.nkstudio.custom-toolbar/Skills/extend-custom-toolbar/SKILL.md
+</code></pre>
+<p>The complete <code>extend-custom-toolbar</code> folder contains the main instructions and separate implementation references for supported Unity versions.</p>
+<h2 id="what-the-skill-does">What the skill does</h2>
+<p>The skill instructs the agent to:</p>
+<ul>
+<li>read <code>ProjectSettings/ProjectVersion.txt</code> as the source of truth for the Unity Editor version;</li>
+<li>use <code>IToolbarModule</code> and <code>ILegacyToolbarModule</code> on Unity 2022.3 through 6000.2;</li>
+<li>use Unity's official <code>MainToolbarElement</code> API on Unity 6000.3 or newer;</li>
+<li>create project-specific modules under <code>Assets/Editor/ToolbarModules</code> instead of editing the installed package;</li>
+<li>add an Editor-only assembly reference when required;</li>
+<li>check module IDs, refresh paths, lifecycle subscriptions, and compilation.</li>
+</ul>
+<h2 id="ask-an-agent-to-use-the-skill">Ask an agent to use the skill</h2>
+<p>Provide the skill path explicitly in your request:</p>
+<pre><code class="lang-text">Read Packages/com.nkstudio.custom-toolbar/Skills/extend-custom-toolbar/SKILL.md
+and add a new Custom Toolbar module to this project.
+</code></pre>
+<p>Include the desired control type, toolbar position, action, and Play Mode behavior in the request when known.</p>
+<h2 id="automatic-skill-discovery">Automatic skill discovery</h2>
+<p>If the coding agent supports automatic skill discovery, install or copy the entire <code>extend-custom-toolbar</code> folder into that agent's skills directory. Keep the referenced files together with <code>SKILL.md</code>; the skill selects one of them after checking the project's Unity version.</p>
+<p>For the underlying module APIs and manual examples, see <a href="custom-modules.html">Create a custom module</a>.</p>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+              <div>
+                  This asset and documentation are not affiliated with Unity Technologies, and the creator is not responsible for any legal issues arising from its use.
+              </div>
+              <div>
+                  <span class="pull-right"><a href="#top">Back to top</a></span>
+
+                  <span>This document was generated using <strong>DocFX</strong>.</span>
+              </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../styles/docs-switcher.js"></script>
+  </body>
+</html>

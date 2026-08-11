@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <script type="text/javascript">
+        thisPackageMetaData = {name: "com.nkstudio.custom-toolbar", version: "2.0.0", displayTitle: "Custom Toolbar 2.0.0", lang: "kr"};
+    </script>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>커스텀 모듈 추가 | Custom Toolbar </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="커스텀 모듈 추가 | Custom Toolbar ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <link rel="stylesheet" href="../styles/language-switcher.css">
+      <link rel="stylesheet" href="../styles/version-switcher.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../manual/index.html">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+            <div class="container hide-when-search" id="breadcrumb">
+                <!-- Unity Customization: Remove content of breadcrumb bar. This space is used for version and language switchers
+                            <ul class="breadcrumb">
+                              <li></li>
+                            </ul>
+                            -->
+            </div>
+        </div>      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+        <div id="unity_breadcrumb_placeholder">
+            <ul class="breadcrumb">
+            <li></li>
+            </ul>
+        </div>
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="커스텀-모듈-추가">커스텀 모듈 추가</h1>
+
+<p><code>IToolbarModule</code> 인터페이스를 구현하여 프로젝트 환경에 맞는 자체 툴바 모듈을 개발할 수 있습니다. 툴바 스크립트는 <code>Editor</code> 폴더 아래에 생성해야 합니다.</p>
+<h2 id="unity-버전에-맞는-api-선택">Unity 버전에 맞는 API 선택</h2>
+<p><code>ProjectSettings/ProjectVersion.txt</code>의 <code>m_EditorVersion</code>을 확인하고 일치하는 구현 방식을 사용합니다.</p>
+<table>
+<thead>
+<tr>
+<th>Unity 버전</th>
+<th>모듈 구현 방식</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>6000.3 이상</td>
+<td><code>IToolbarModule</code>을 구현하고 Unity 공식 <code>MainToolbarElement</code> API로 UI를 선언합니다.</td>
+</tr>
+<tr>
+<td>2022.3~6000.2</td>
+<td><code>IToolbarModule</code>과 <code>ILegacyToolbarModule</code>을 구현하고 <code>LegacyToolbarBuilder</code>로 UI를 추가합니다.</td>
+</tr>
+</tbody>
+</table>
+<p>Custom Toolbar는 Unity 2022.3보다 이전 버전을 지원하지 않습니다.</p>
+<h2 id="모듈-등록">모듈 등록</h2>
+<p>모든 Unity 지원 버전에서 모듈 등록 방식은 같습니다. 각 모듈에는 안정적이고 전역에서 고유한 ID가 필요하며, <code>[InitializeOnLoad]</code> 정적 생성자에서 한 번만 등록해야 합니다.</p>
+<pre><code class="lang-csharp">using NKStudio.CustomToolbar;
+using UnityEditor;
+
+[InitializeOnLoad]
+internal sealed class ExampleToolbarModule : IToolbarModule
+{
+    private const string ModuleId = &quot;Company.Product.Toolbar.Example&quot;;
+
+    static ExampleToolbarModule()
+    {
+        ToolbarModuleRegistry.Register(new ExampleToolbarModule());
+    }
+
+    public string Id =&gt; ModuleId;
+
+    public void Refresh(ToolbarRefreshReason reason)
+    {
+        // 이 모듈의 툴바 상태를 갱신합니다.
+    }
+}
+</code></pre>
+<p><code>EditorApplication.playModeStateChanged</code> 또는 <code>EditorBuildSettings.sceneListChanged</code>를 모듈에서 별도로 구독하지 마세요. 툴바 Host가 대응하는 <code>ToolbarRefreshReason</code>을 등록된 모듈에 전달합니다.</p>
+<h2 id="unity-60003-이상">Unity 6000.3 이상</h2>
+<p>Unity의 공개 Main Toolbar API를 사용합니다. <code>MainToolbar.Refresh</code>에 전달하는 경로는 <code>MainToolbarElement</code>에 선언한 경로와 정확히 같아야 합니다.</p>
+<pre><code class="lang-csharp">using NKStudio.CustomToolbar;
+using UnityEditor;
+using UnityEditor.Toolbars;
+
+[InitializeOnLoad]
+internal sealed class ModernExampleToolbarModule : IToolbarModule
+{
+    private const string ModuleId = &quot;Company.Product.Toolbar.Example&quot;;
+    private const string ElementPath = &quot;Company Toolbar/Example&quot;;
+
+    static ModernExampleToolbarModule()
+    {
+        ToolbarModuleRegistry.Register(new ModernExampleToolbarModule());
+    }
+
+    public string Id =&gt; ModuleId;
+
+    public void Refresh(ToolbarRefreshReason reason)
+    {
+        if (reason is ToolbarRefreshReason.Initialized or ToolbarRefreshReason.PlayModeChanged)
+            MainToolbar.Refresh(ElementPath);
+    }
+
+    [MainToolbarElement(
+        ElementPath,
+        defaultDockPosition = MainToolbarDockPosition.Right,
+        defaultDockIndex = 20)]
+    private static MainToolbarElement CreateElement()
+    {
+        var content = new MainToolbarContent(&quot;Example&quot;, &quot;에디터 작업을 실행합니다.&quot;);
+        return new MainToolbarButton(content, OnClick)
+        {
+            enabled = ToolbarAvailability.InEditMode
+        };
+    }
+
+    private static void OnClick()
+    {
+        // 에디터 전용 작업을 실행합니다.
+    }
+}
+</code></pre>
+<h2 id="unity-2022360002-호환">Unity 2022.3~6000.2 호환</h2>
+<p>이전 지원 버전에서는 <code>ILegacyToolbarModule</code>을 구현하고 <code>BuildLegacy</code>에서 UI Toolkit 컨트롤을 만듭니다. 툴바 리플렉션은 패키지가 전담합니다.</p>
+<pre><code class="lang-csharp">using NKStudio.CustomToolbar;
+using UnityEditor;
+using UnityEditor.UIElements;
+
+[InitializeOnLoad]
+internal sealed class LegacyExampleToolbarModule : IToolbarModule, ILegacyToolbarModule
+{
+    private const string ModuleId = &quot;Company.Product.Toolbar.Example&quot;;
+    private ToolbarButton _button;
+
+    static LegacyExampleToolbarModule()
+    {
+        ToolbarModuleRegistry.Register(new LegacyExampleToolbarModule());
+    }
+
+    public string Id =&gt; ModuleId;
+
+    public void Refresh(ToolbarRefreshReason reason)
+    {
+        _button?.SetEnabled(ToolbarAvailability.InEditMode);
+    }
+
+    public void BuildLegacy(LegacyToolbarBuilder builder)
+    {
+        _button = new ToolbarButton(OnClick) { text = &quot;Example&quot; };
+        _button.SetEnabled(ToolbarAvailability.InEditMode);
+        builder.Add(LegacyToolbarZone.Right, _button);
+    }
+
+    private static void OnClick()
+    {
+        // 에디터 전용 작업을 실행합니다.
+    }
+}
+</code></pre>
+<p>모든 요소는 <code>LegacyToolbarBuilder.Add</code>로 추가하세요. <code>Left</code>, <code>CenterLeft</code>, <code>CenterRight</code>, <code>Right</code> 영역을 사용할 수 있습니다.</p>
+<h2 id="검증-목록">검증 목록</h2>
+<ul>
+<li><code>Assets</code>와 <code>Packages</code>에서 모듈 ID가 중복되지 않는지 확인합니다.</li>
+<li>동작은 에디터 전용으로 유지하고, Play Mode에서 비활성화해야 하는 컨트롤에는 <code>ToolbarAvailability.InEditMode</code>를 사용합니다.</li>
+<li>Unity 6000.3 이상에서는 Attribute와 Refresh 호출에 정확히 같은 요소 경로를 사용합니다.</li>
+<li>이전 지원 버전에서는 모든 요소를 <code>LegacyToolbarBuilder</code>로 추가합니다.</li>
+<li><code>ProjectVersion.txt</code>에 기록된 Unity 버전으로 컴파일하고 테스트합니다.</li>
+</ul>
+<h2 id="툴바-요소의-활성-상태-선택">툴바 요소의 활성 상태 선택</h2>
+<p><code>ToolbarAvailability</code>는 툴바 요소의 <code>enabled</code> 값에 사용할 수 있는 네 가지 속성을 제공합니다. 부정형 조건을 직접 해석할 필요 없이 원하는 동작과 같은 이름을 선택하면 됩니다.</p>
+<table>
+<thead>
+<tr>
+<th>속성</th>
+<th>요소가 활성화되는 시점</th>
+<th>용도</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>InEditMode</code></td>
+<td>Edit Mode일 때</td>
+<td>Play Mode와 Play Mode 진입 중에 실행하면 안 되는 에디터 작업</td>
+</tr>
+<tr>
+<td><code>InPlayMode</code></td>
+<td>실제 Play Mode일 때</td>
+<td>게임이 실행 중일 때만 사용할 수 있는 작업</td>
+</tr>
+<tr>
+<td><code>Always</code></td>
+<td>항상</td>
+<td>에디터 상태와 관계없이 항상 사용할 수 있는 작업</td>
+</tr>
+<tr>
+<td><code>Never</code></td>
+<td>사용 안 함</td>
+<td>UI는 표시하되 아직 사용할 수 없게 할 작업</td>
+</tr>
+</tbody>
+</table>
+<p>Unity 6000.3 이상의 요소 생성 함수에서는 원하는 속성을 <code>enabled</code>에 지정합니다. 다음 버튼은 Edit Mode에서만 활성화됩니다.</p>
+<pre><code class="lang-csharp">[MainToolbarElement(
+    ElementPath,
+    defaultDockPosition = MainToolbarDockPosition.Right,
+    defaultDockIndex = 20)]
+private static MainToolbarElement CreateElement()
+{
+    var content = new MainToolbarContent(&quot;Example&quot;, &quot;에디터 작업을 실행합니다.&quot;);
+
+    return new MainToolbarButton(content, OnClick)
+    {
+        enabled = ToolbarAvailability.InEditMode
+    };
+}
+</code></pre>
+<p><code>InEditMode</code> 또는 <code>InPlayMode</code>를 사용한다면 초기화 및 Play Mode 상태 변경 시 해당 요소를 다시 생성합니다.</p>
+<pre><code class="lang-csharp">public void Refresh(ToolbarRefreshReason reason)
+{
+    if (reason is ToolbarRefreshReason.Initialized or ToolbarRefreshReason.PlayModeChanged)
+        MainToolbar.Refresh(ElementPath);
+}
+</code></pre>
+<div class="TIP">
+<h5>Tip</h5>
+<p><code>ModernToolbarHost</code>는 Play Mode 상태가 변경될 때 등록된 모든 모듈에 <code>ToolbarRefreshReason.PlayModeChanged</code>를 전달합니다. 따라서 모듈이 <code>ToolbarModuleRegistry</code>에 등록되어 있다면 별도의 <code>EditorApplication.playModeStateChanged</code> 구독 없이 상태가 갱신됩니다.</p>
+<p><code>Always</code>와 <code>Never</code>는 Play Mode에 따라 값이 변하지 않으므로 상태 변경을 위한 재생성이 필요하지 않습니다.</p>
+</div>
+<h2 id="동적-값을-라벨에-표시">동적 값을 라벨에 표시</h2>
+<p>Scene Switcher처럼 외부 값을 툴바 라벨에 표시하려면 값을 읽는 코드를 <code>CreateElement()</code> 안에 둡니다. <code>MainToolbarContent</code> 생성자의 첫 번째 인자가 화면에 표시되는 라벨입니다.</p>
+<pre><code class="lang-csharp">private static MainToolbarElement CreateElement()
+{
+    string label = MyToolbarData.CurrentLabel;
+
+    var content = new MainToolbarContent(
+        label,
+        &quot;현재 값을 표시합니다.&quot;);
+
+    return new MainToolbarButton(content, OnClick)
+    {
+        enabled = ToolbarAvailability.InEditMode
+    };
+}
+</code></pre>
+<p>에셋 내부의 Scene Switcher는 Build Settings에서 첫 번째로 활성화된 씬 이름을 라벨에 표시합니다. 핵심 구조는 다음과 같습니다.</p>
+<pre><code class="lang-csharp">public void Refresh(ToolbarRefreshReason reason)
+{
+    if (reason is ToolbarRefreshReason.Initialized
+        or ToolbarRefreshReason.SceneListChanged)
+    {
+        MainToolbar.Refresh(ElementPath);
+    }
+}
+
+[MainToolbarElement(ElementPath)]
+private static MainToolbarElement CreateElement()
+{
+    string label = $&quot;Start '{SceneHelper.FirstSceneName}'&quot;;
+
+    return new MainToolbarButton(
+        new MainToolbarContent(label, &quot;첫 번째 Build Settings 씬을 시작합니다.&quot;),
+        SceneHelper.MoveFirstScene)
+    {
+        enabled = ToolbarAvailability.InEditMode
+            &amp;&amp; SceneHelper.HasFirstScene
+    };
+}
+</code></pre>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>라벨은 값이 바뀌었다고 자동으로 변경되지 않습니다. <code>CreateElement()</code>는 요소를 생성하는 시점의 값을 사용하므로, 원본 값이 변경되는 이벤트에 맞춰 <code>MainToolbar.Refresh(ElementPath)</code>를 호출해야 새 라벨이 반영됩니다.</p>
+</div>
+<p><code>SceneHelper</code>는 에셋 내부 Scene Switcher의 값 조회 및 가공을 담당하는 클래스입니다. 커스텀 모듈에서도 같은 방식으로 별도의 Helper 또는 Provider 클래스에 데이터 처리를 두고, 툴바 클래스는 그 값을 화면에 표현하는 역할만 맡기는 구성이 좋습니다.</p>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+              <div>
+                  이 에셋과 문서는 Unity Technologies와 관련이 없으며, 사용으로 인해 발생하는 법적 문제에 대해서는 제작자가 책임지지 않습니다.
+              </div>
+              <div>
+                  <span class="pull-right"><a href="#top">Back to top</a></span>
+
+                  <span>이 문서는 <strong>DocFX</strong>를 통해 생성되었습니다.</span>
+              </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../styles/docs-switcher.js"></script>
+  </body>
+</html>

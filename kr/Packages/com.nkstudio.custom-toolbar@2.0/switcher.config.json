@@ -1,0 +1,16 @@
+{
+  "layout": "auto",
+  "packageName": "com.nkstudio.custom-toolbar",
+  "displayName": "Custom Toolbar",
+  "languages": [
+    { "id": "en", "label": "English" },
+    { "id": "kr", "label": "한국어" }
+  ],
+  "versions": [
+    {
+      "docsVersion": "2.0.0",
+      "hostedVersion": "2.0",
+      "unityVersion": "2022.3"
+    }
+  ]
+}

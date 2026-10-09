@@ -89,8 +89,41 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="changelog">Changelog</h1>
 
-<h2 id="100---2026-10-09">[1.0.0] - 2026-10-09</h2>
+<h2 id="102---2026-10-09">[1.0.2] - 2026-10-09</h2>
+<h3 id="added">Added</h3>
+<ul>
+<li>When the running adb server is too old to send device name, API and ADB Wi-Fi version, a &quot;Restart adb Server&quot; button appears at the bottom (after confirmation, stops the server and starts it again with the newest installed adb)
+<ul>
+<li>If another program starts an older server again after the restart, the window says so</li>
+</ul>
+</li>
+</ul>
+<h3 id="fixed">Fixed</h3>
+<ul>
+<li>The previous adb server kept running after installing Platform-Tools (on macOS the server stayed alive on the replaced files): the server is now restarted with the new adb when the install finishes</li>
+</ul>
+<h2 id="101---2026-10-09">[1.0.1] - 2026-10-09</h2>
 <h3 id="changed">Changed</h3>
+<ul>
+<li>Platform-Tools install confirmation is shown as an in-window popup instead of an OS dialog (install location, administrator permission note, license link)</li>
+</ul>
+<h3 id="fixed-1">Fixed</h3>
+<ul>
+<li>Windows: Platform-Tools install
+<ul>
+<li>Stops the adb server before installing and doesn't restart it during the install (the running <code>adb.exe</code> was locked and couldn't be replaced)</li>
+<li>Runs sdkmanager with administrator permission (UAC) when Unity's SDK folder isn't writable (Program Files)</li>
+<li>Wraps <code>sdkmanager.bat</code> in paths with spaces with <code>cmd /s /c</code></li>
+<li>On cancel or timeout, also stops sdkmanager's child java process</li>
+<li>Windows sdkmanager didn't read the &quot;y&quot; answer from stdin, so nothing was installed without license acceptance: after you agree, the acceptance is written to <code>licenses/android-sdk-license</code> before running</li>
+<li>On failure, shows the actual error message instead of a progress line</li>
+</ul>
+</li>
+<li>Corrected the requirement for device name and API to Platform-Tools 37 or newer (a 36.0.0 server doesn't support <code>host:track-mdns-services</code>)</li>
+<li>Starting the adb server: waits at most 1 second for output after exit so it doesn't hang while the server daemon holds the output pipe. Treated as success if the server is running even when the exit code reports failure</li>
+</ul>
+<h2 id="100---2026-10-09">[1.0.0] - 2026-10-09</h2>
+<h3 id="changed-1">Changed</h3>
 <ul>
 <li>Rebuilt the window to follow Android Studio's &quot;Pair devices over Wi-Fi&quot; flow (one UXML per view)
 <ul>
@@ -104,7 +137,7 @@
 <li>Pairing and connecting also go through the server socket (<code>host:pair</code>, <code>host:connect</code>) instead of the adb CLI, reducing server restarts caused by adb version mismatches</li>
 <li>Starts the server itself only when it doesn't respond for 6+ seconds, using the newest installed adb</li>
 </ul>
-<h3 id="added">Added</h3>
+<h3 id="added-1">Added</h3>
 <ul>
 <li>ADB Wi-Fi version circle: v1.0 gray · v2.0 green (for Android 17)</li>
 <li>Themes: Android Studio / Unity (Dark / Light follows the editor skin), theme selection screen on first launch</li>
@@ -120,7 +153,7 @@
 <li>adb path field, direct connect, connected devices section, log (adb path override moved to Preferences)</li>
 </ul>
 <h2 id="010---2026-10-06">[0.1.0] - 2026-10-06</h2>
-<h3 id="added-1">Added</h3>
+<h3 id="added-2">Added</h3>
 <ul>
 <li>Initial release: wireless debugging pairing editor window with QR / pairing code</li>
 </ul>

@@ -95,8 +95,33 @@
 <li>Make sure <strong>Wireless debugging</strong> is on. It can turn off when the device locks or changes networks.</li>
 <li>Make sure the device runs Android 11 or newer. See <a href="requirements.html">Requirements</a>.</li>
 </ul>
-<h2 id="device-name-or-api-isnt-shown">Device name or API isn't shown</h2>
-<p>Platform-Tools in Unity's Android SDK is below 36. Install the latest version with <a href="settings.html#update-platform-tools">Update Platform-Tools</a>.</p>
+<h2 id="device-name-or-api-shows-">Device name or API shows &quot;—&quot;</h2>
+<p>If the serial number appears in place of the device name and ADB Wi-Fi and API show &quot;—&quot;, the adb server that's currently running is an older version. Check the note at the bottom of the window and fix it based on the cause.</p>
+<p><img src="../images/old-adb-server.png" alt="Older adb server notice"></p>
+<p><strong>An update notice for Platform-Tools also appears</strong></p>
+<p>Platform-Tools in Unity's Android SDK is below 37. Install the latest version with <a href="settings.html#update-platform-tools">Update Platform-Tools</a>. The adb server is restarted with the new version when the install finishes.</p>
+<p><strong>Only &quot;The running adb server is an older version&quot; appears</strong></p>
+<p>Unity's adb is up to date, but another program (scrcpy, Homebrew adb, an older Android Studio SDK, etc.) started the server first with an older adb.</p>
+<ol>
+<li><p>Click <strong>Restart adb Server</strong> at the bottom and confirm with <strong>Restart</strong>. The server is stopped and started again with the newest installed adb.</p>
+<ul>
+<li>Other tools using adb, such as Android Studio or Logcat, briefly lose their connection.</li>
+<li>Running <code>adb kill-server</code> in a terminal does the same. The window starts the server again with the newest adb shortly after.</li>
+</ul>
+</li>
+<li><p>If &quot;Another program started an older adb server again&quot; appears after restarting, that program keeps relaunching the server. Find out which adb it is, then update that program or point it at the same Android SDK.</p>
+<p>macOS:</p>
+<pre><code class="lang-bash">lsof -nP -iTCP:5037 -sTCP:LISTEN
+</code></pre>
+<p>Use the PID from the output to find the executable path.</p>
+<pre><code class="lang-bash">ps -p &lt;PID&gt; -o comm=
+</code></pre>
+<p>Windows (Command Prompt):</p>
+<pre><code class="lang-bat">netstat -ano | findstr :5037
+</code></pre>
+<p>Find the PID in the last column on the <strong>Details</strong> tab of Task Manager, then right-click &gt; <strong>Open file location</strong>.</p>
+</li>
+</ol>
 <h2 id="cant-reach-the-adb-server">&quot;Can't reach the adb server&quot;</h2>
 <p>The window connects to the running adb server (<code>127.0.0.1:5037</code> by default) to find devices. If the server doesn't respond, it starts one with the newest installed adb.</p>
 <ul>

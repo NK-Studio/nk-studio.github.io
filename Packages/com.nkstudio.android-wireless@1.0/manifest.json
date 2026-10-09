@@ -85,6 +85,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/old-adb-server.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/old-adb-server.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/pair-code-tab.png",
       "output": {
         "resource": {

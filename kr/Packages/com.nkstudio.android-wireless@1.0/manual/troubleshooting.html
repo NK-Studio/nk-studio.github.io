@@ -95,8 +95,33 @@
 <li>기기에서 <strong>무선 디버깅</strong>이 켜져 있는지 확인하세요. 기기가 잠기거나 네트워크가 바뀌면 무선 디버깅이 꺼질 수 있습니다.</li>
 <li>기기가 Android 11 이상인지 확인하세요. <a href="requirements.html">요구 사항</a>을 참고하세요.</li>
 </ul>
-<h2 id="기기-이름api가-표시되지-않음">기기 이름·API가 표시되지 않음</h2>
-<p>Unity Android SDK의 Platform-Tools가 36 미만입니다. <a href="settings.html#platform-tools-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8">Platform-Tools 업데이트</a>로 최신 버전을 설치하세요.</p>
+<h2 id="기기-이름api가-로-표시됨">기기 이름·API가 &quot;—&quot;로 표시됨</h2>
+<p>기기 이름 자리에 시리얼 번호가 나오고 ADB Wi-Fi·API가 &quot;—&quot;로 표시되면, 지금 실행 중인 adb 서버가 오래된 버전입니다. 창 하단의 안내를 보고 원인에 맞게 해결하세요.</p>
+<p><img src="../images/old-adb-server.png" alt="오래된 adb 서버 안내"></p>
+<p><strong>Platform-Tools 업데이트 안내가 함께 뜨는 경우</strong></p>
+<p>Unity Android SDK의 Platform-Tools가 37 미만입니다. <a href="settings.html#platform-tools-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8">Platform-Tools 업데이트</a>로 최신 버전을 설치하세요. 설치가 끝나면 adb 서버도 새 버전으로 다시 시작됩니다.</p>
+<p><strong>&quot;실행 중인 adb 서버가 오래된 버전&quot; 안내만 뜨는 경우</strong></p>
+<p>Unity SDK의 adb는 최신이지만, 다른 프로그램(scrcpy, Homebrew adb, 오래된 Android Studio SDK 등)이 오래된 adb로 서버를 먼저 띄운 상태입니다.</p>
+<ol>
+<li><p>하단의 <strong>adb 서버 다시 시작</strong>을 누르고 <strong>다시 시작</strong>으로 확인합니다. 서버를 내리고 설치된 adb 중 가장 최신 버전으로 다시 띄웁니다.</p>
+<ul>
+<li>Android Studio·Logcat 등 adb를 쓰는 다른 도구의 연결이 잠깐 끊깁니다.</li>
+<li>터미널에서 <code>adb kill-server</code>를 실행해도 같은 효과입니다. 잠시 뒤 창이 최신 adb로 서버를 다시 시작합니다.</li>
+</ul>
+</li>
+<li><p>다시 시작한 뒤에도 &quot;다른 프로그램이 오래된 adb 서버를 다시 실행했습니다&quot;가 뜨면, 그 프로그램이 서버를 계속 다시 띄우는 것입니다. 어떤 adb인지 확인한 뒤 그 프로그램을 업데이트하거나 같은 Android SDK를 쓰도록 맞추세요.</p>
+<p>macOS:</p>
+<pre><code class="lang-bash">lsof -nP -iTCP:5037 -sTCP:LISTEN
+</code></pre>
+<p>출력의 PID로 실행 파일 경로를 확인합니다.</p>
+<pre><code class="lang-bash">ps -p &lt;PID&gt; -o comm=
+</code></pre>
+<p>Windows (명령 프롬프트):</p>
+<pre><code class="lang-bat">netstat -ano | findstr :5037
+</code></pre>
+<p>출력 마지막 열의 PID를 작업 관리자 <strong>세부 정보</strong> 탭에서 찾고, 오른쪽 클릭 &gt; <strong>파일 위치 열기</strong>로 경로를 확인합니다.</p>
+</li>
+</ol>
 <h2 id="adb-서버에-연결할-수-없습니다">&quot;adb 서버에 연결할 수 없습니다&quot;</h2>
 <p>창은 실행 중인 adb 서버(기본 <code>127.0.0.1:5037</code>)에 연결해 기기를 찾습니다. 서버가 응답하지 않으면 설치된 adb 중 가장 최신 버전으로 서버를 직접 시작합니다.</p>
 <ul>

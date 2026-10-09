@@ -1,0 +1,17 @@
+{
+  "versions": {
+    "1.0.0": {
+      "unity": "6000.0",
+      "displayName": "Android Wireless Pairing",
+      "name": "com.nkstudio.android-wireless",
+      "type": "asset",
+      "keywords": [
+        "Android",
+        "ADB",
+        "Wireless",
+        "Debugging"
+      ],
+      "version": "1.0.0"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "layout": "auto",
+  "packageName": "com.nkstudio.android-wireless",
+  "displayName": "Android Wireless Pairing",
+  "languages": [
+    {
+      "id": "en",
+      "label": "English"
+    },
+    {
+      "id": "kr",
+      "label": "한국어",
+      "displayName": "무선 연결 페어링"
+    }
+  ],
+  "versions": [
+    {
+      "docsVersion": "1.0.0",
+      "hostedVersion": "1.0",
+      "unityVersion": "6000.0"
+    }
+  ]
+}

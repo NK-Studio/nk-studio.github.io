@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <script type="text/javascript">
+        thisPackageMetaData = {name: "com.nkstudio.android-wireless", version: "1.0.0", displayTitle: "무선 연결 페어링 1.0.0", lang: "kr"};
+    </script>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>문제 해결 | 무선 연결 페어링 </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="문제 해결 | 무선 연결 페어링 ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <link rel="stylesheet" href="../styles/language-switcher.css">
+      <link rel="stylesheet" href="../styles/version-switcher.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../manual/index.html">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+            <div class="container hide-when-search" id="breadcrumb">
+                <!-- Unity Customization: Remove content of breadcrumb bar. This space is used for version and language switchers
+                            <ul class="breadcrumb">
+                              <li></li>
+                            </ul>
+                            -->
+            </div>
+        </div>      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+        <div id="unity_breadcrumb_placeholder">
+            <ul class="breadcrumb">
+            <li></li>
+            </ul>
+        </div>
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="문제-해결">문제 해결</h1>
+
+<h2 id="기기가-목록에-나타나지-않음">기기가 목록에 나타나지 않음</h2>
+<ul>
+<li>PC와 기기가 같은 Wi-Fi 네트워크에 있는지 확인하세요. 게스트 네트워크나 기기 간 통신을 막는 네트워크에서는 기기를 찾지 못할 수 있습니다.</li>
+<li>기기에서 <strong>무선 디버깅</strong>이 켜져 있는지 확인하세요. 기기가 잠기거나 네트워크가 바뀌면 무선 디버깅이 꺼질 수 있습니다.</li>
+<li>기기가 Android 11 이상인지 확인하세요. <a href="requirements.html">요구 사항</a>을 참고하세요.</li>
+</ul>
+<h2 id="기기-이름api가-표시되지-않음">기기 이름·API가 표시되지 않음</h2>
+<p>Unity Android SDK의 Platform-Tools가 36 미만입니다. <a href="settings.html#platform-tools-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8">Platform-Tools 업데이트</a>로 최신 버전을 설치하세요.</p>
+<h2 id="adb-서버에-연결할-수-없습니다">&quot;adb 서버에 연결할 수 없습니다&quot;</h2>
+<p>창은 실행 중인 adb 서버(기본 <code>127.0.0.1:5037</code>)에 연결해 기기를 찾습니다. 서버가 응답하지 않으면 설치된 adb 중 가장 최신 버전으로 서버를 직접 시작합니다.</p>
+<ul>
+<li>그래도 연결되지 않으면 <strong>환경설정 열기…</strong>를 눌러 <a href="settings.html#%ED%99%98%EA%B2%BD%EC%84%A4%EC%A0%95">adb 경로</a>를 직접 지정하세요.</li>
+<li>방화벽이나 보안 프로그램이 adb를 막고 있지 않은지 확인하세요.</li>
+</ul>
+<h2 id="목록이-잠깐씩-비거나-연결이-끊김">목록이 잠깐씩 비거나 연결이 끊김</h2>
+<p>Unity와 다른 도구(Android Studio 등)가 서로 adb 서버를 종료하고 다시 띄우면서 생길 수 있습니다.</p>
+<ul>
+<li><strong>Preferences &gt; External Tools &gt; Kill external ADB instances</strong>가 켜져 있으면 Unity가 자기 SDK가 아닌 adb 서버를 종료합니다. 다른 도구와 함께 쓴다면 이 옵션을 끄세요.</li>
+<li>Unity SDK와 다른 도구의 Platform-Tools 버전이 다르면 서로 서버를 재시작시킵니다. Unity SDK를 최신으로 업데이트하거나 <strong>Preferences &gt; External Tools &gt; Android SDK</strong>를 같은 SDK로 맞추세요.</li>
+</ul>
+<h2 id="android-build-support-모듈이-설치되어-있지-않습니다">&quot;Android Build Support 모듈이 설치되어 있지 않습니다&quot;</h2>
+<p>Unity Hub에서 사용 중인 에디터 버전에 <strong>Android Build Support</strong> 모듈을 추가한 뒤 에디터를 다시 시작하세요.</p>
+<h2 id="그-밖의-문제">그 밖의 문제</h2>
+<p>Android 공식 문서의 <a href="https://developer.android.com/tools/adb#wireless-android11-troubleshoot">adb 무선 연결 문제 해결</a>을 참고하세요.</p>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+              <div>
+                  이 에셋과 문서는 Unity Technologies와 관련이 없으며, 사용으로 인해 발생하는 법적 문제에 대해서는 제작자가 책임지지 않습니다.
+              </div>
+              <div>
+                  <span class="pull-right"><a href="#top">Back to top</a></span>
+
+                  <span>이 문서는 <strong>DocFX</strong>를 통해 생성되었습니다.</span>
+              </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../styles/docs-switcher.js"></script>
+  </body>
+</html>

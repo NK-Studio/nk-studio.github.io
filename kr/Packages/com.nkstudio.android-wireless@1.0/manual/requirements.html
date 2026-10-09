@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <script type="text/javascript">
+        thisPackageMetaData = {name: "com.nkstudio.android-wireless", version: "1.0.0", displayTitle: "무선 연결 페어링 1.0.0", lang: "kr"};
+    </script>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>요구 사항 | 무선 연결 페어링 </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="요구 사항 | 무선 연결 페어링 ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <link rel="stylesheet" href="../styles/language-switcher.css">
+      <link rel="stylesheet" href="../styles/version-switcher.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../manual/index.html">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+            <div class="container hide-when-search" id="breadcrumb">
+                <!-- Unity Customization: Remove content of breadcrumb bar. This space is used for version and language switchers
+                            <ul class="breadcrumb">
+                              <li></li>
+                            </ul>
+                            -->
+            </div>
+        </div>      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+        <div id="unity_breadcrumb_placeholder">
+            <ul class="breadcrumb">
+            <li></li>
+            </ul>
+        </div>
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="요구-사항">요구 사항</h1>
+
+<h2 id="unity">Unity</h2>
+<ul>
+<li>Unity <code>6000.0</code> 이상</li>
+<li><strong>Android Build Support</strong> 모듈</li>
+</ul>
+<p>이 창은 Unity Android 모듈의 adb로 기기를 찾고 페어링합니다. 모듈이 없으면 창에 사용할 수 없다는 안내만 표시됩니다. Unity Hub에서 사용 중인 에디터 버전에 Android Build Support를 추가하세요.</p>
+<p>에디터 전용 패키지이므로 빌드에 런타임 코드를 추가하지 않습니다.</p>
+<h2 id="기기와-네트워크">기기와 네트워크</h2>
+<ul>
+<li>Android 11 이상 기기</li>
+<li>PC와 기기가 같은 Wi-Fi 네트워크에 연결되어 있어야 합니다.</li>
+</ul>
+<h2 id="android-sdk-platform-tools">Android SDK Platform-Tools</h2>
+<p>Unity가 사용하는 Android SDK의 Platform-Tools 버전에 따라 표시되는 정보가 달라집니다.</p>
+<table>
+<thead>
+<tr>
+<th>Platform-Tools</th>
+<th>사용할 수 있는 기능</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>36 미만</td>
+<td>기기 목록, 페어링, 연결 (기기 이름·API·ADB Wi-Fi 버전은 표시되지 않음)</td>
+</tr>
+<tr>
+<td>36 이상</td>
+<td>기기 이름, API, ADB Wi-Fi 버전 표시</td>
+</tr>
+<tr>
+<td>37 이상</td>
+<td>ADB Wi-Fi 2.0 (Android 17 이상 기기)</td>
+</tr>
+</tbody>
+</table>
+<p>Platform-Tools가 37 미만이면 창에서 바로 업데이트할 수 있습니다. <a href="settings.html#platform-tools-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8">설정 &gt; Platform-Tools 업데이트</a>를 참고하세요.</p>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+              <div>
+                  이 에셋과 문서는 Unity Technologies와 관련이 없으며, 사용으로 인해 발생하는 법적 문제에 대해서는 제작자가 책임지지 않습니다.
+              </div>
+              <div>
+                  <span class="pull-right"><a href="#top">Back to top</a></span>
+
+                  <span>이 문서는 <strong>DocFX</strong>를 통해 생성되었습니다.</span>
+              </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../styles/docs-switcher.js"></script>
+  </body>
+</html>

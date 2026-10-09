@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <script type="text/javascript">
+        thisPackageMetaData = {name: "com.nkstudio.android-wireless", version: "1.0.0", displayTitle: "Android Wireless Pairing 1.0.0", lang: "en"};
+    </script>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Connect a Device | Android Wireless Pairing </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Connect a Device | Android Wireless Pairing ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <link rel="stylesheet" href="../styles/language-switcher.css">
+      <link rel="stylesheet" href="../styles/version-switcher.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../manual/index.html">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+            <div class="container hide-when-search" id="breadcrumb">
+                <!-- Unity Customization: Remove content of breadcrumb bar. This space is used for version and language switchers
+                            <ul class="breadcrumb">
+                              <li></li>
+                            </ul>
+                            -->
+            </div>
+        </div>      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+        <div id="unity_breadcrumb_placeholder">
+            <ul class="breadcrumb">
+            <li></li>
+            </ul>
+        </div>
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="connect-a-device">Connect a Device</h1>
+
+<p>Pair and connect an Android 11+ device over Wi-Fi. Once paired, the device reconnects whenever you turn on wireless debugging.</p>
+<h2 id="1-prepare-the-device">1. Prepare the device</h2>
+<ol>
+<li>Connect your computer and the device to the same Wi-Fi network.</li>
+<li>Enable <a href="https://developer.android.com/studio/debug/dev-options">Developer options</a> on the device.</li>
+<li>Turn on <strong>Settings &gt; Developer options &gt; Wireless debugging</strong>.</li>
+<li>When asked whether to allow wireless debugging on this network, tap <strong>Allow</strong>.</li>
+</ol>
+<h2 id="2-open-the-window">2. Open the window</h2>
+<p>In Unity, select <strong>Tools &gt; Android Wireless Pairing</strong>. The first time, a theme selection screen appears. See <a href="settings.html">Settings</a>.</p>
+<h2 id="3-device-list">3. Device list</h2>
+<p>Devices with wireless debugging turned on appear in the list automatically. No refresh needed.</p>
+<p><img src="../images/device-list.png" alt="Device list"></p>
+<table>
+<thead>
+<tr>
+<th>Column</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Name</td>
+<td>Device name</td>
+</tr>
+<tr>
+<td>ADB Wi-Fi</td>
+<td>ADB Wi-Fi version the device supports. v1.0 is a gray circle, v2.0 is green.</td>
+</tr>
+<tr>
+<td>IP Address &amp; Port</td>
+<td>The device's wireless debugging address</td>
+</tr>
+<tr>
+<td>API</td>
+<td>Android API level</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Devices that are already connected show <strong>Connected</strong> instead of the <strong>Pair</strong> button.</li>
+<li>Type a device name or IP in the search field to filter the list.</li>
+</ul>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Device name, API, and ADB Wi-Fi version require Platform-Tools 36 or newer. See <a href="requirements.html#android-sdk-platform-tools">Requirements</a>.</p>
+</div>
+<h2 id="4-pair-using-qr-code">4. Pair using QR code</h2>
+<ol>
+<li>Click <strong>Pair</strong> next to the device. A QR code appears on the <strong>Pair using QR code</strong> tab.</li>
+<li>On the device, tap <strong>Developer options &gt; Wireless debugging &gt; Pair device with QR code</strong> and scan the code.</li>
+<li>Pairing and connecting happen automatically. A success screen appears when done.</li>
+</ol>
+<p><img src="../images/pair-qr.png" alt="Pair using QR code"></p>
+<p><img src="../images/pair-result.png" alt="Connected"></p>
+<h2 id="5-pair-using-pairing-code">5. Pair using pairing code</h2>
+<p>Use this when you can't scan the QR code.</p>
+<ol>
+<li><p>Click <strong>Pair</strong> next to the device and select the <strong>Pair using pairing code</strong> tab.</p>
+</li>
+<li><p>On the device, tap <strong>Developer options &gt; Wireless debugging &gt; Pair device with pairing code</strong>. The device shows a 6-digit Wi-Fi pairing code.</p>
+<img src="../images/phone-pairing-code.jpg" alt="Wi-Fi pairing code shown on the device" style="width: 100%; max-width: 280px; height: auto;">
+</li>
+<li><p>The device appears under <strong>Available Wi-Fi devices</strong> in the window as <strong>Available to pair</strong>.</p>
+<p><img src="../images/pair-code-tab.png" alt="Available Wi-Fi devices"></p>
+</li>
+<li><p>Click <strong>Pair</strong> and enter the 6-digit code shown on the device.</p>
+<ul>
+<li>Each box moves to the next one as you type.</li>
+<li>Paste the code into any box (Ctrl/Cmd+V) to fill all boxes and submit at once.</li>
+</ul>
+<p><img src="../images/pair-code.png" alt="Enter pairing code"></p>
+</li>
+<li><p>A success screen appears when pairing and connecting are done.</p>
+</li>
+</ol>
+<p>Click <strong>Pair another device</strong> on the success screen to return to the list.</p>
+<h2 id="unpair-a-device">Unpair a device</h2>
+<p>On the device, open <strong>Developer options &gt; Wireless debugging &gt; Paired devices</strong>, select your computer, and tap <strong>Forget</strong>. To unpair all computers at once, tap <strong>Developer options &gt; Revoke USB debugging authorizations</strong>.</p>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+              <div>
+                  This asset and documentation are not affiliated with Unity Technologies, and the creator is not responsible for any legal issues arising from its use.
+              </div>
+              <div>
+                  <span class="pull-right"><a href="#top">Back to top</a></span>
+
+                  <span>This document was generated using <strong>DocFX</strong>.</span>
+              </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../styles/docs-switcher.js"></script>
+  </body>
+</html>

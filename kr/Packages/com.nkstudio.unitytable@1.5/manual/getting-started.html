@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <script type="text/javascript">
+        thisPackageMetaData = {name: "com.nkstudio.unitytable", version: "1.5.1", displayTitle: "Tabular Editor 1.5.1", lang: "kr"};
+    </script>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>시작하기 | Tabular Editor </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="시작하기 | Tabular Editor ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <link rel="stylesheet" href="../styles/language-switcher.css">
+      <link rel="stylesheet" href="../styles/version-switcher.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../manual/index.html">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+            <div class="container hide-when-search" id="breadcrumb">
+                <!-- Unity Customization: Remove content of breadcrumb bar. This space is used for version and language switchers
+                            <ul class="breadcrumb">
+                              <li></li>
+                            </ul>
+                            -->
+            </div>
+        </div>      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+        <div id="unity_breadcrumb_placeholder">
+            <ul class="breadcrumb">
+            <li></li>
+            </ul>
+        </div>
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="시작하기">시작하기</h1>
+
+<h2 id="표-열기">표 열기</h2>
+<p>Project 창에서 <code>.csv</code> 또는 <code>.tsv</code> 에셋을 더블클릭합니다.<br>
+파일 없이 빈 창을 열려면 <strong>Window &gt; NKStudio &gt; Tabular Editor</strong>를 사용합니다.</p>
+<p><img src="../images/open-table-by-double-click.jpg" alt="Project 창에서 CSV 또는 TSV 에셋을 더블클릭해 열기"></p>
+<p>Tabular Editor는 에셋마다 창 하나를 열며, 같은 파일을 다시 더블클릭하면 기존 창에 포커스를 줍니다.<br>
+큰 파일은 백그라운드에서 읽으므로 불러오는 동안에도 에디터가 멈추지 않습니다.</p>
+<h2 id="새-csv-파일-만들기">새 CSV 파일 만들기</h2>
+<p>Project 창에서 <strong>Create &gt; Scripting &gt; CSV File</strong>을 고르면 빈 표가 만들어지고 바로 이름을 행입력할 수 있습니다.<br>
+열 수(기본 5×5)와 인코딩·구분 기호 같은 형식은 <a href="preferences.html">환경 설정</a>의 <strong>새 CSV 파일</strong>에서 정합니다.</p>
+<p><img src="../images/create-csv-file-menu.png" alt="Project 창의 Create &gt; Scripting &gt; CSV File 메뉴"></p>
+<h2 id="편집하고-저장하기">편집하고 저장하기</h2>
+<ol>
+<li>셀을 클릭해 활성화합니다.</li>
+<li>바로 타이핑해 값을 바꾸거나 <strong>F2</strong> 또는 더블클릭으로 기존 값을 편집합니다.</li>
+<li><strong>Enter</strong>로 확정하고 아래로 이동하거나 <strong>Tab</strong>으로 확정하고 오른쪽으로 이동합니다. 셀 안에서 줄을 바꾸려면 <strong>Alt+Enter</strong>(macOS는 <strong>Option+Enter</strong>)를 누릅니다.</li>
+<li>Windows/Linux에서는 <strong>Ctrl+S</strong>, macOS에서는 <strong>Cmd+S</strong>로 저장합니다.</li>
+</ol>
+<p>저장되지 않은 변경이 있으면 창 탭에 <code>*</code>가 붙고 상태 표시줄에 <strong>저장되지 않음</strong>이 나타납니다. 저장하지 않고 창을 닫으면 저장할지 묻습니다.</p>
+<p><img src="../images/unsaved-tab-asterisk.png" alt="저장되지 않은 변경이 있어 탭 이름에 *가 붙은 모습"></p>
+<h2 id="헤더-행-고정하기">헤더 행 고정하기</h2>
+<p>표 왼쪽 끝의 <strong>행 번호</strong>를 우클릭하면 헤더 행을 정하는 메뉴가 나옵니다.</p>
+<ol>
+<li>헤더로 고정할 마지막 행의 <strong>행 번호</strong>를 우클릭합니다. 맨 위 한 줄만 고정하려면 <strong>1</strong>을 우클릭합니다.</li>
+<li><strong>선택 항목까지 헤더 행 설정</strong>을 고릅니다. 1행부터 우클릭한 행까지가 헤더 행이 됩니다.</li>
+</ol>
+<p><img src="../images/set-header-rows.png" alt="행 번호 우클릭 메뉴의 선택 항목까지 헤더 행 설정"></p>
+<p>지정한 행들은 맨 위에 고정되어 굵게 표시되고, 세로로 스크롤해도 보입니다. 헤더 행도 선택·편집할 수 있으며 정렬에서만 빠집니다. 해제하려면 행 번호 우클릭 메뉴에서 <strong>헤더 행 설정 해제</strong>를 고릅니다. 헤더 행 수는 파일의 <code>.meta</code>에 기록되어 버전 관리로 팀원과 공유됩니다.</p>
+<h2 id="다음-단계">다음 단계</h2>
+<ul>
+<li><a href="editor-interface.html">에디터 화면</a>에서 각 영역의 역할을 확인합니다.</li>
+<li><a href="editing.html">편집</a>에서 행·열 다루기, 정렬, 채우기 핸들을 익힙니다.</li>
+<li><a href="shortcuts.html">키보드 단축키</a>에서 전체 단축키를 확인합니다.</li>
+</ul>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+              <div>
+                  이 에셋과 문서는 Unity Technologies와 관련이 없으며, 사용으로 인해 발생하는 법적 문제에 대해서는 제작자가 책임지지 않습니다.
+              </div>
+              <div>
+                  <span class="pull-right"><a href="#top">Back to top</a></span>
+
+                  <span>이 문서는 <strong>DocFX</strong>를 통해 생성되었습니다.</span>
+              </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../styles/docs-switcher.js"></script>
+  </body>
+</html>

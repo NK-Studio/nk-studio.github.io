@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <script type="text/javascript">
+        thisPackageMetaData = {name: "com.nkstudio.unitytable", version: "1.5.1", displayTitle: "Tabular Editor 1.5.1", lang: "en"};
+    </script>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Editor interface | Tabular Editor </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Editor interface | Tabular Editor ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <link rel="stylesheet" href="../styles/language-switcher.css">
+      <link rel="stylesheet" href="../styles/version-switcher.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../manual/index.html">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+            <div class="container hide-when-search" id="breadcrumb">
+                <!-- Unity Customization: Remove content of breadcrumb bar. This space is used for version and language switchers
+                            <ul class="breadcrumb">
+                              <li></li>
+                            </ul>
+                            -->
+            </div>
+        </div>      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+        <div id="unity_breadcrumb_placeholder">
+            <ul class="breadcrumb">
+            <li></li>
+            </ul>
+        </div>
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="editor-interface">Editor interface</h1>
+
+<p><img src="../images/editor-window-asset-paths.png" alt="The Tabular Editor window, with asset icons in an asset path column"></p>
+<p>From top to bottom, a Tabular Editor window has the toolbar, the find and replace bar, the external change notice bar, the table and the status bar.</p>
+<h2 id="toolbar-and-window-menu">Toolbar and window menu</h2>
+<p>The toolbar has a <strong>search</strong> icon button. Click it or press <strong>Ctrl+F</strong> to open the find and replace bar. Save with <strong>Ctrl+S</strong> or from the save prompt when closing the window (the 1.0.0 Save and Reload buttons are gone).</p>
+<p>The <strong>⋮</strong> menu at the top right of the window contains:</p>
+<p><img src="../images/window-menu-theme.png" alt="The Theme submenu in the window ⋮ menu"></p>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Theme</strong></td>
+<td>Choose Unity or Android Studio. Dark/light follows the Unity Editor skin.</td>
+</tr>
+<tr>
+<td><strong>Language</strong></td>
+<td>Choose English or 한국어. Applies to the whole window immediately.</td>
+</tr>
+<tr>
+<td><strong>Asset Path Preview for This File</strong></td>
+<td>Turn <a href="asset-paths.html">asset path</a> display on or off for this file only.</td>
+</tr>
+<tr>
+<td><strong>Preferences...</strong></td>
+<td>Open Preferences &gt; Tabular Editor.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="table">Table</h2>
+<ul>
+<li><strong>Column titles</strong> are always A, B, C… Click a title to select the column; drag across titles to select several.</li>
+<li>Hover a column title and click the <strong>▼</strong> button to open the <a href="editing.html#sort">sort</a> menu.</li>
+<li>Drag the right edge of a column title to resize; double-click it to fit the content. Columns with values also fit their content when a file opens.</li>
+<li>Click a <strong>row number</strong> to select the row; drag to select several. Set <a href="getting-started.html#freeze-header-rows">header rows</a> from the row number context menu.</li>
+<li>The selection has a blue outline; the round dot at its bottom-right is the <a href="editing.html#fill-handle">fill handle</a>.</li>
+<li>The <strong>+</strong> buttons at the right and bottom edges add a column and a row at the end.</li>
+<li>Clicking the empty space right of the last column or below the last row selects the nearest cell.</li>
+<li>The mouse wheel scrolls vertically; <strong>Shift+wheel</strong> and horizontal trackpad swipes scroll horizontally. <strong>Ctrl+wheel</strong> (Cmd+wheel on macOS) changes the font size.</li>
+</ul>
+<h2 id="find-and-replace-bar">Find and replace bar</h2>
+<p>See <a href="find-and-replace.html">Find and replace</a>.</p>
+<h2 id="external-change-notice-bar">External change notice bar</h2>
+<p>When another program changes the open file, Tabular Editor reloads it right away. Only when you have unsaved edits does a notice bar appear above the table: choose <strong>Reload</strong> (discard your edits and read the file) or <strong>Ignore</strong> (keep your edits; you are asked again whether to overwrite when you save).</p>
+<p><img src="../images/external-change-bar.png" alt="The external change notice bar above the table"></p>
+<h2 id="status-bar">Status bar</h2>
+<table>
+<thead>
+<tr>
+<th>Position</th>
+<th>Shows</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Left</td>
+<td>Table size (<code>120 rows × 8 columns</code>)</td>
+</tr>
+<tr>
+<td></td>
+<td>Active cell address and details (<code>C12 (4 chars)</code>, <code>54 cells</code> for a range, <code>3 rows · Delete to remove</code> for whole rows or columns)</td>
+</tr>
+<tr>
+<td></td>
+<td><code>3 missing asset paths</code> when an asset path column has problems — click to go to the next one</td>
+</tr>
+<tr>
+<td>Right</td>
+<td><code>Unsaved</code></td>
+</tr>
+<tr>
+<td></td>
+<td>Encoding, line ending (LF/CRLF), delimiter and quoting rule — click to open the <a href="file-format.html">file format</a> dialog</td>
+</tr>
+</tbody>
+</table>
+<p>The active cell address (<code>C12</code>) can be typed straight into <strong>Ctrl+G</strong> <a href="editing.html#go-to-a-row-or-cell">go to</a>.</p>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+              <div>
+                  This asset and documentation are not affiliated with Unity Technologies, and the creator is not responsible for any legal issues arising from its use.
+              </div>
+              <div>
+                  <span class="pull-right"><a href="#top">Back to top</a></span>
+
+                  <span>This document was generated using <strong>DocFX</strong>.</span>
+              </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../styles/docs-switcher.js"></script>
+  </body>
+</html>

@@ -181,6 +181,15 @@
                 link.style.color = "#000";
                 link.href = buildUrl(config, route, route.language, version);
 
+                // 새 버전에서 생긴 페이지는 이전 버전에 없다. 같은 페이지가 없으면 그 버전의 매뉴얼 첫 페이지로 간다.
+                const fallback = buildUrl(config, Object.assign({}, route, { pagePath: "manual/index.html" }), route.language, version);
+                link.addEventListener("click", function (event) {
+                    event.preventDefault();
+                    fetch(link.href, { method: "HEAD" })
+                        .then(function (response) { location.href = response.ok ? link.href : fallback; })
+                        .catch(function () { location.href = fallback; });
+                });
+
                 const item = document.createElement("li");
                 item.className = "component-select__option";
                 item.style.justifyContent = "space-between";

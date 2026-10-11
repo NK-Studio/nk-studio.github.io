@@ -3,10 +3,21 @@
   "packageName": "com.nkstudio.unitytable",
   "displayName": "Tabular Editor",
   "languages": [
-    { "id": "en", "label": "English" },
-    { "id": "kr", "label": "한국어" }
+    {
+      "id": "en",
+      "label": "English"
+    },
+    {
+      "id": "kr",
+      "label": "한국어"
+    }
   ],
   "versions": [
+    {
+      "docsVersion": "1.5.1",
+      "hostedVersion": "1.5",
+      "unityVersion": "6000.0"
+    },
     {
       "docsVersion": "1.0.0",
       "hostedVersion": "1.0",

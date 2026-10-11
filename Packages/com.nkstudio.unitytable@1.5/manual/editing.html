@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <script type="text/javascript">
+        thisPackageMetaData = {name: "com.nkstudio.unitytable", version: "1.5.1", displayTitle: "Tabular Editor 1.5.1", lang: "en"};
+    </script>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Editing | Tabular Editor </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Editing | Tabular Editor ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <link rel="stylesheet" href="../styles/language-switcher.css">
+      <link rel="stylesheet" href="../styles/version-switcher.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../manual/index.html">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+            <div class="container hide-when-search" id="breadcrumb">
+                <!-- Unity Customization: Remove content of breadcrumb bar. This space is used for version and language switchers
+                            <ul class="breadcrumb">
+                              <li></li>
+                            </ul>
+                            -->
+            </div>
+        </div>      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+        <div id="unity_breadcrumb_placeholder">
+            <ul class="breadcrumb">
+            <li></li>
+            </ul>
+        </div>
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="editing">Editing</h1>
+
+<h2 id="edit-cells">Edit cells</h2>
+<ul>
+<li>Select a cell and start typing to replace its value. <strong>F2</strong> or a double-click edits the existing value with the caret at the end.</li>
+<li>The edit field opens two rows tall over the cell. As the text grows it widens to the right edge of the table, then wraps and grows downward.</li>
+<li><strong>Alt+Enter</strong> (<strong>Option+Enter</strong> on macOS) inserts a line break inside the cell without committing.</li>
+<li>With a range selected, type a value and press <strong>Ctrl+Enter</strong> (<strong>Cmd+Enter</strong> on macOS) to put it into every selected cell.</li>
+<li>Press <strong>Esc</strong> to cancel the edit.</li>
+</ul>
+<p>Every change can be undone step by step with the table's own Undo (<strong>Ctrl+Z</strong>). It never mixes with Unity's Scene Undo.</p>
+<h2 id="rows-and-columns">Rows and columns</h2>
+<table>
+<thead>
+<tr>
+<th>Task</th>
+<th>How</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Add at the end</td>
+<td>The <strong>+</strong> buttons at the right and bottom edges</td>
+</tr>
+<tr>
+<td>Add rows above/below</td>
+<td><strong>Ctrl+Alt+↑ / ↓</strong>, or right-click <strong>Insert Row Above / Insert Row Below</strong></td>
+</tr>
+<tr>
+<td>Add columns left/right</td>
+<td><strong>Ctrl+Alt+← / →</strong>, or right-click <strong>Insert Column Left / Insert Column Right</strong></td>
+</tr>
+<tr>
+<td>Duplicate rows</td>
+<td><strong>Ctrl+D</strong>, or right-click <strong>Duplicate Row</strong> (copies the selected rows just below)</td>
+</tr>
+<tr>
+<td>Move rows/columns by one</td>
+<td><strong>Alt+↑ / ↓</strong> (rows), <strong>Alt+← / →</strong> (columns)</td>
+</tr>
+<tr>
+<td>Delete</td>
+<td><strong>Ctrl+-</strong>, right-click <strong>Delete Row / Delete Column</strong>, or select whole rows/columns and press <strong>Delete</strong></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>With several rows or columns selected, that many are added or deleted at once.</li>
+<li>With a cell range selected, <strong>Delete</strong> clears only the contents; <strong>Ctrl+-</strong> deletes the rows the range covers.</li>
+<li>Rows don't move across the boundary between header rows and body rows.</li>
+<li>The last remaining row or column can't be deleted.</li>
+</ul>
+<h2 id="sort">Sort</h2>
+<p>Choose <strong>Sort Ascending / Sort Descending</strong> from the <strong>▼</strong> button on a column title or from the column title context menu.</p>
+<p><img src="../images/sort-column.gif" alt="Sorting a date column descending and ascending from the ▼ button"></p>
+<ul>
+<li>Columns of numbers sort by value (<code>1, 2, 10</code>), ISO dates sort as dates, and everything else sorts as case-insensitive text.</li>
+<li>Empty cells always go last, in either direction. Equal values keep their original order.</li>
+<li>Header rows are excluded. One Undo restores the previous order.</li>
+</ul>
+<h2 id="fill-handle">Fill handle</h2>
+<p>Drag the round handle at the bottom-right of the selection down, up, right or left to fill the new cells. A light blue box shows the range while you drag; dragging outside the table scrolls in that direction.</p>
+<table>
+<thead>
+<tr>
+<th>Source</th>
+<th>Filled values</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Two or more numbers (<code>1</code>, <code>3</code>)</td>
+<td>Continue the step (<code>5</code>, <code>7</code>)</td>
+</tr>
+<tr>
+<td>Text ending in a number (<code>spr_buff_1000</code>, <code>item_007</code>)</td>
+<td>Count on by 1, keeping zero padding (<code>spr_buff_1001</code>, <code>item_008</code>); counts down when dragging up or left</td>
+</tr>
+<tr>
+<td>A single number, other text</td>
+<td>Copy; repeat in order when there are several</td>
+</tr>
+</tbody>
+</table>
+<p>Hold <strong>Alt</strong> (<strong>Option</strong> on macOS) when releasing to swap continuing and copying. Dragging a single number (<code>1000</code>) with Alt continues <code>1001, 1002…</code>, like Ctrl-dragging in Excel. Filling upward from body rows stops at the header rows.</p>
+<p><img src="../images/fill-handle.gif" alt="Dragging the fill handle to continue dates, and holding the modifier key to continue numbers"></p>
+<h2 id="go-to-a-row-or-cell">Go to a row or cell</h2>
+<p>Press <strong>Ctrl+G</strong> (<strong>Cmd+G</strong> on macOS) to open an input above the table.</p>
+<table>
+<thead>
+<tr>
+<th>Input</th>
+<th>Goes to</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>120</code></td>
+<td>Row 120 (same column)</td>
+</tr>
+<tr>
+<td><code>C120</code></td>
+<td>Column C, row 120</td>
+</tr>
+<tr>
+<td><code>120:3</code></td>
+<td>Row 120, column 3</td>
+</tr>
+</tbody>
+</table>
+<p>Numbers past the end go to the last row or column. Input that can't be read turns the field red. Press <strong>Enter</strong> to go; press <strong>Esc</strong> or click outside to close.</p>
+<p><img src="../images/go-to-cell.gif" alt="Pressing Cmd+G, typing B4 and jumping to column B, row 4"></p>
+<h2 id="copy-and-paste">Copy and paste</h2>
+<p>The clipboard always holds a tab-separated rectangle, even when the file is a CSV, so you can copy to and from Excel, Google Sheets and Numbers directly.</p>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+              <div>
+                  This asset and documentation are not affiliated with Unity Technologies, and the creator is not responsible for any legal issues arising from its use.
+              </div>
+              <div>
+                  <span class="pull-right"><a href="#top">Back to top</a></span>
+
+                  <span>This document was generated using <strong>DocFX</strong>.</span>
+              </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../styles/docs-switcher.js"></script>
+  </body>
+</html>

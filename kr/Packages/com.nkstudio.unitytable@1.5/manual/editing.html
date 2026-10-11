@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <script type="text/javascript">
+        thisPackageMetaData = {name: "com.nkstudio.unitytable", version: "1.5.1", displayTitle: "Tabular Editor 1.5.1", lang: "kr"};
+    </script>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>편집 | Tabular Editor </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="편집 | Tabular Editor ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <link rel="stylesheet" href="../styles/language-switcher.css">
+      <link rel="stylesheet" href="../styles/version-switcher.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../manual/index.html">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+            <div class="container hide-when-search" id="breadcrumb">
+                <!-- Unity Customization: Remove content of breadcrumb bar. This space is used for version and language switchers
+                            <ul class="breadcrumb">
+                              <li></li>
+                            </ul>
+                            -->
+            </div>
+        </div>      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+        <div id="unity_breadcrumb_placeholder">
+            <ul class="breadcrumb">
+            <li></li>
+            </ul>
+        </div>
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="편집">편집</h1>
+
+<h2 id="셀-편집">셀 편집</h2>
+<ul>
+<li>셀을 고르고 바로 타이핑하면 값을 새로 씁니다. <strong>F2</strong>나 더블클릭은 기존 값 끝에 캐럿을 두고 편집합니다.</li>
+<li>편집 입력칸은 셀 위에 두 줄 높이로 열리고, 글자가 길어지면 오른쪽으로 표 끝까지 늘어난 뒤 줄바꿈해서 아래로 늘어납니다.</li>
+<li><strong>Alt+Enter</strong>(macOS는 <strong>Option+Enter</strong>)는 확정하지 않고 셀 안에서 줄을 바꿉니다.</li>
+<li>범위를 고른 상태에서 값을 입력하고 <strong>Ctrl+Enter</strong>(macOS는 <strong>Cmd+Enter</strong>)를 누르면 선택 범위 전체에 같은 값이 들어갑니다.</li>
+<li><strong>Esc</strong>로 편집을 취소합니다.</li>
+</ul>
+<p>모든 변경은 표 전용 Undo(<strong>Ctrl+Z</strong>)로 한 단계씩 되돌아갑니다. Unity의 Scene Undo와는 섞이지 않습니다.</p>
+<h2 id="행과-열">행과 열</h2>
+<table>
+<thead>
+<tr>
+<th>작업</th>
+<th>방법</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>맨 끝에 추가</td>
+<td>표 오른쪽·아래쪽 끝의 <strong>+</strong> 버튼</td>
+</tr>
+<tr>
+<td>위·아래에 행 추가</td>
+<td><strong>Ctrl+Alt+↑ / ↓</strong>, 또는 우클릭 <strong>위에 행 삽입 / 아래에 행 삽입</strong></td>
+</tr>
+<tr>
+<td>왼쪽·오른쪽에 열 추가</td>
+<td><strong>Ctrl+Alt+← / →</strong>, 또는 우클릭 <strong>왼쪽에 열 삽입 / 오른쪽에 열 삽입</strong></td>
+</tr>
+<tr>
+<td>행 복제</td>
+<td><strong>Ctrl+D</strong>, 또는 우클릭 <strong>행 복제</strong> (선택한 행을 바로 아래에 복사)</td>
+</tr>
+<tr>
+<td>행·열 한 칸씩 옮기기</td>
+<td><strong>Alt+↑ / ↓</strong>(행), <strong>Alt+← / →</strong>(열)</td>
+</tr>
+<tr>
+<td>삭제</td>
+<td><strong>Ctrl+-</strong>, 우클릭 <strong>행 삭제 / 열 삭제</strong>, 또는 행 번호·열 제목으로 선택한 뒤 <strong>Delete</strong></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>여러 행이나 열을 선택한 상태면 그 개수만큼 한 번에 추가·삭제합니다.</li>
+<li>셀 범위를 선택하고 <strong>Delete</strong>를 누르면 내용만 지워집니다. <strong>Ctrl+-</strong>는 그 셀들이 걸친 행을 지웁니다.</li>
+<li>행은 헤더 행 구간과 본문 구간 사이를 넘어 옮겨지지 않습니다.</li>
+<li>마지막 남은 한 행·한 열은 지울 수 없습니다.</li>
+</ul>
+<h2 id="정렬">정렬</h2>
+<p>열 제목의 <strong>▼</strong> 버튼이나 열 제목 우클릭 메뉴에서 <strong>오름차순 정렬 / 내림차순 정렬</strong>을 고릅니다.</p>
+<p><img src="../images/sort-column.gif" alt="열 제목의 ▼ 버튼으로 날짜 열을 내림차순, 오름차순으로 정렬하는 모습"></p>
+<ul>
+<li>숫자만 있는 열은 숫자 크기로(<code>1, 2, 10</code>), ISO 날짜는 날짜로, 그 밖에는 대소문자를 가리지 않는 글자 순서로 정렬합니다.</li>
+<li>빈 셀은 어느 방향이든 맨 뒤로 갑니다. 같은 값끼리는 원래 순서를 유지합니다.</li>
+<li>헤더 행은 정렬에서 빠집니다. Undo 한 번으로 원래 순서로 돌아갑니다.</li>
+</ul>
+<h2 id="채우기-핸들">채우기 핸들</h2>
+<p>선택 범위 오른쪽 아래의 동그란 핸들을 아래·위·오른쪽·왼쪽으로 끌면 늘어난 칸을 채웁니다. 끄는 동안 채워질 범위가 옅은 파란 상자로 보이고, 표 밖으로 끌면 그 방향으로 스크롤됩니다.</p>
+<table>
+<thead>
+<tr>
+<th>원본</th>
+<th>채워지는 값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>숫자 두 칸 이상 (<code>1</code>, <code>3</code>)</td>
+<td>같은 간격으로 이어 감 (<code>5</code>, <code>7</code>)</td>
+</tr>
+<tr>
+<td>끝에 숫자가 붙은 글자 (<code>spr_buff_1000</code>, <code>item_007</code>)</td>
+<td>숫자를 1씩 이어 감, 자릿수 유지 (<code>spr_buff_1001</code>, <code>item_008</code>). 위·왼쪽으로 끌면 줄어듦</td>
+</tr>
+<tr>
+<td>숫자 한 칸, 그 밖의 글자</td>
+<td>복사. 여러 칸이면 순서대로 반복</td>
+</tr>
+</tbody>
+</table>
+<p>놓을 때 <strong>Alt</strong>(macOS는 <strong>Option</strong>)를 누르고 있으면 이어 가기와 복사가 바뀝니다. 숫자 한 칸(<code>1000</code>)을 Alt를 누른 채 끌면 <code>1001, 1002…</code>로 이어 갑니다(Excel의 Ctrl 끌기와 같습니다). 본문에서 시작해 위로 끌어도 헤더 행까지는 채우지 않습니다.</p>
+<p><img src="../images/fill-handle.gif" alt="채우기 핸들을 끌어 날짜를 이어 채우고, 수정 키를 눌러 숫자를 이어 채우는 모습"></p>
+<h2 id="행이나-셀로-이동">행이나 셀로 이동</h2>
+<p><strong>Ctrl+G</strong>(macOS는 <strong>Cmd+G</strong>)를 누르면 표 위에 입력칸이 뜹니다.</p>
+<table>
+<thead>
+<tr>
+<th>입력</th>
+<th>이동</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>120</code></td>
+<td>120행 (열은 그대로)</td>
+</tr>
+<tr>
+<td><code>C120</code></td>
+<td>C열 120행</td>
+</tr>
+<tr>
+<td><code>120:3</code></td>
+<td>120행 3열</td>
+</tr>
+</tbody>
+</table>
+<p>범위를 넘는 번호는 마지막 행·열로 맞춥니다. 해석할 수 없는 입력이면 입력칸이 빨갛게 표시됩니다. <strong>Enter</strong>로 이동하고 <strong>Esc</strong>나 바깥 클릭으로 닫습니다.</p>
+<p><img src="../images/go-to-cell.gif" alt="Cmd+G로 입력칸을 열고 B4를 입력해 B열 4행으로 이동하는 모습"></p>
+<h2 id="복사와-붙여넣기">복사와 붙여넣기</h2>
+<p>클립보드는 편집 중인 파일이 CSV여도 항상 탭으로 구분된 사각형 범위입니다. Excel, Google Sheets, Numbers와 그대로 주고받을 수 있습니다.</p>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+              <div>
+                  이 에셋과 문서는 Unity Technologies와 관련이 없으며, 사용으로 인해 발생하는 법적 문제에 대해서는 제작자가 책임지지 않습니다.
+              </div>
+              <div>
+                  <span class="pull-right"><a href="#top">Back to top</a></span>
+
+                  <span>이 문서는 <strong>DocFX</strong>를 통해 생성되었습니다.</span>
+              </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../styles/docs-switcher.js"></script>
+  </body>
+</html>

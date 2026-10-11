@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <script type="text/javascript">
+        thisPackageMetaData = {name: "com.nkstudio.unitytable", version: "1.5.1", displayTitle: "Tabular Editor 1.5.1", lang: "kr"};
+    </script>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>에디터 화면 | Tabular Editor </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="에디터 화면 | Tabular Editor ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <link rel="stylesheet" href="../styles/language-switcher.css">
+      <link rel="stylesheet" href="../styles/version-switcher.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../manual/index.html">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+            <div class="container hide-when-search" id="breadcrumb">
+                <!-- Unity Customization: Remove content of breadcrumb bar. This space is used for version and language switchers
+                            <ul class="breadcrumb">
+                              <li></li>
+                            </ul>
+                            -->
+            </div>
+        </div>      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+        <div id="unity_breadcrumb_placeholder">
+            <ul class="breadcrumb">
+            <li></li>
+            </ul>
+        </div>
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="에디터-화면">에디터 화면</h1>
+
+<p><img src="../images/editor-window-asset-paths.png" alt="Tabular Editor 창. 에셋 경로 열의 셀에 아이콘이 붙어 있다"></p>
+<p>Tabular Editor 창은 위에서부터 툴바, 찾기·바꾸기 바, 외부 변경 알림 바, 표, 상태 표시줄로 이루어집니다.</p>
+<h2 id="툴바와-창-메뉴">툴바와 창 메뉴</h2>
+<p>툴바에는 <strong>검색</strong> 아이콘 버튼이 있습니다. 누르거나 <strong>Ctrl+F</strong>를 누르면 찾기·바꾸기 바가 열립니다.<br>
+저장은 <strong>Ctrl+S</strong>와 창을 닫을 때의 저장 확인으로 합니다.</p>
+<p>창 오른쪽 위 <strong>⋮</strong> 메뉴에는 다음 항목이 있습니다.</p>
+<p><img src="../images/window-menu-theme.png" alt="창 ⋮ 메뉴의 테마 하위 메뉴"></p>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>기능</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>테마</strong></td>
+<td>Unity / Android Studio 중 고릅니다. 다크·라이트는 Unity 에디터 스킨을 따릅니다.</td>
+</tr>
+<tr>
+<td><strong>언어</strong></td>
+<td>English / 한국어 중 고릅니다. 바로 화면 전체에 적용됩니다.</td>
+</tr>
+<tr>
+<td><strong>이 파일에서 에셋 경로 미리보기</strong></td>
+<td>이 파일만 <a href="asset-paths.html">에셋 경로</a> 표시를 켜고 끕니다.</td>
+</tr>
+<tr>
+<td><strong>환경 설정...</strong></td>
+<td>Preferences &gt; Tabular Editor를 엽니다.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="표">표</h2>
+<ul>
+<li><strong>열 제목</strong>은 항상 A, B, C…로 표시됩니다. 제목을 누르면 열 전체가, 끌면 여러 열이 선택됩니다.</li>
+<li>열 제목에 마우스를 올리면 나타나는 <strong>▼</strong> 버튼으로 <a href="editing.html#%EC%A0%95%EB%A0%AC">정렬</a> 메뉴를 엽니다.</li>
+<li>열 제목 오른쪽 경계를 끌어 폭을 바꾸고, 더블클릭하면 그 열을 내용에 맞춥니다. 파일을 열 때도 값이 있는 열은 내용에 맞는 폭으로 시작합니다.</li>
+<li><strong>행 번호</strong>를 누르면 행 전체가, 끌면 여러 행이 선택됩니다. 행 번호 우클릭 메뉴에서 <a href="getting-started.html#%ED%97%A4%EB%8D%94-%ED%96%89-%EA%B3%A0%EC%A0%95%ED%95%98%EA%B8%B0">헤더 행</a>을 정합니다.</li>
+<li>선택 범위는 파란 테두리로 감싸지고, 오른쪽 아래 동그란 점이 <a href="editing.html#%EC%B1%84%EC%9A%B0%EA%B8%B0-%ED%95%B8%EB%93%A4">채우기 핸들</a>입니다.</li>
+<li>표 오른쪽 끝과 아래쪽 끝의 <strong>+</strong> 버튼은 맨 끝에 열과 행을 하나씩 추가합니다.</li>
+<li>마지막 열 오른쪽이나 마지막 행 아래 빈 공간을 누르면 가장 가까운 셀이 선택됩니다.</li>
+<li>마우스 휠은 세로, <strong>Shift+휠</strong>과 트랙패드 좌우 쓸기는 가로로 스크롤합니다. <strong>Ctrl+휠</strong>(macOS는 Cmd+휠)은 글꼴 크기를 바꿉니다.</li>
+</ul>
+<h2 id="찾기바꾸기-바">찾기·바꾸기 바</h2>
+<p><a href="find-and-replace.html">찾기와 바꾸기</a>를 참고하세요.</p>
+<h2 id="외부-변경-알림-바">외부 변경 알림 바</h2>
+<p>다른 프로그램이 열린 파일을 바꾸면 Tabular Editor가 바로 다시 읽습니다. 저장하지 않은 편집이 있을 때만 표 위에 알림 바가 나타나며, <strong>다시 불러오기</strong>(편집을 버리고 읽기) 또는 <strong>무시</strong>(편집 유지, 저장할 때 덮어쓸지 다시 확인)를 고릅니다.</p>
+<p><img src="../images/external-change-bar.png" alt="표 위에 나타난 외부 변경 알림 바"></p>
+<h2 id="상태-표시줄">상태 표시줄</h2>
+<table>
+<thead>
+<tr>
+<th>위치</th>
+<th>표시</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>왼쪽</td>
+<td>표 크기(<code>120 행 × 8 열</code>)</td>
+</tr>
+<tr>
+<td></td>
+<td>활성 셀 주소와 정보(<code>C12 (4자)</code>, 범위면 <code>54 셀</code>, 행·열 전체 선택이면 <code>행 3개 · Delete로 삭제</code>)</td>
+</tr>
+<tr>
+<td></td>
+<td>에셋 경로 열에 문제가 있으면 <code>찾을 수 없는 경로 3개</code> — 누르면 다음 문제 칸으로 이동</td>
+</tr>
+<tr>
+<td>오른쪽</td>
+<td><code>저장되지 않음</code></td>
+</tr>
+<tr>
+<td></td>
+<td>인코딩, 줄 끝(LF/CRLF), 구분 기호·따옴표 규칙 — 누르면 <a href="file-format.html">파일 형식</a> 대화상자가 열립니다.</td>
+</tr>
+</tbody>
+</table>
+<p>활성 셀 주소(<code>C12</code>)는 <strong>Ctrl+G</strong> <a href="editing.html#%ED%96%89%EC%9D%B4%EB%82%98-%EC%85%80%EB%A1%9C-%EC%9D%B4%EB%8F%99">이동</a>에 그대로 넣을 수 있습니다.</p>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+              <div>
+                  이 에셋과 문서는 Unity Technologies와 관련이 없으며, 사용으로 인해 발생하는 법적 문제에 대해서는 제작자가 책임지지 않습니다.
+              </div>
+              <div>
+                  <span class="pull-right"><a href="#top">Back to top</a></span>
+
+                  <span>이 문서는 <strong>DocFX</strong>를 통해 생성되었습니다.</span>
+              </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../styles/docs-switcher.js"></script>
+  </body>
+</html>

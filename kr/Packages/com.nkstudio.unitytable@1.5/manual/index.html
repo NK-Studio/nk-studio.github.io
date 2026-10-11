@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <script type="text/javascript">
+        thisPackageMetaData = {name: "com.nkstudio.unitytable", version: "1.5.1", displayTitle: "Tabular Editor 1.5.1", lang: "kr"};
+    </script>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Tabular Editor | Tabular Editor </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Tabular Editor | Tabular Editor ">
+    <meta name="description" content="Unity 에디터 안에서 CSV와 TSV 파일을 스프레드시트처럼 편집합니다.">
+    <link rel="canonical" href="https://nk-studio.github.io/kr/Packages/com.nkstudio.unitytable@1.5/manual/index.html">
+      <meta property="og:type" content="website">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:site_name" content="Tabular Editor">
+      <meta property="og:title" content="Tabular Editor">
+    <meta property="og:description" content="Unity 에디터 안에서 CSV와 TSV 파일을 스프레드시트처럼 편집합니다.">
+    <meta property="og:url" content="https://nk-studio.github.io/kr/Packages/com.nkstudio.unitytable@1.5/manual/index.html">
+      <meta property="og:image" content="https://nk-studio.github.io/kr/Packages/com.nkstudio.unitytable@1.5/images/tabular-editor-banner.jpg">
+      <meta property="og:image:type" content="image/jpeg">
+      <meta property="og:image:width" content="1920">
+      <meta property="og:image:height" content="1080">
+    <meta property="og:image:alt" content="Tabular Editor 기능 소개 배너">
+      <meta name="twitter:card" content="summary_large_image">
+      <meta name="twitter:title" content="Tabular Editor">
+    <meta name="twitter:description" content="Unity 에디터 안에서 CSV와 TSV 파일을 스프레드시트처럼 편집합니다.">
+      <meta name="twitter:image" content="https://nk-studio.github.io/kr/Packages/com.nkstudio.unitytable@1.5/images/tabular-editor-banner.jpg">
+    <meta name="twitter:image:alt" content="Tabular Editor 기능 소개 배너">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <link rel="stylesheet" href="../styles/language-switcher.css">
+      <link rel="stylesheet" href="../styles/version-switcher.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../manual/index.html">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+            <div class="container hide-when-search" id="breadcrumb">
+                <!-- Unity Customization: Remove content of breadcrumb bar. This space is used for version and language switchers
+                            <ul class="breadcrumb">
+                              <li></li>
+                            </ul>
+                            -->
+            </div>
+        </div>      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+        <div id="unity_breadcrumb_placeholder">
+            <ul class="breadcrumb">
+            <li></li>
+            </ul>
+        </div>
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="tabular-editor">Tabular Editor</h1>
+
+<p>Tabular Editor는 Unity 안에서 CSV와 TSV 파일을 편집하는 UI Toolkit 기반 에디터입니다.<br>
+파일을 더블클릭해 표로 열고, 스프레드시트처럼 편집한 뒤 그대로 저장합니다.</p>
+<p><img src="../images/tabular-editor-banner.jpg" alt="Tabular Editor 썸네일"></p>
+<h2 id="주요-기능">주요 기능</h2>
+<ul>
+<li><code>.csv</code>·<code>.tsv</code> 에셋을 더블클릭해 표로 열고 편집합니다.</li>
+<li>범위 선택, 행·열 편집, 정렬, 채우기 핸들(<code>1001, 1002…</code>)을 지원합니다.</li>
+<li>헤더 행 고정, 찾기/바꾸기(정규식), <strong>Ctrl+G</strong> 이동을 제공합니다.</li>
+<li>에셋 경로 열에 아이콘·미리보기를 보여 주고 끌어다 놓기를 지원합니다.</li>
+<li>저장할 때 원본 인코딩(CP949 포함)·개행·인용 규칙을 그대로 보존합니다.</li>
+</ul>
+<p>Editor 전용 도구이며 런타임 API나 외부 패키지가 없습니다.</p>
+<p><a href="requirements.html">요구 사항</a>을 확인한 다음 <a href="installation.html">설치</a>와 <a href="getting-started.html">시작하기</a>를 따라 진행하세요. 1.0.0 이후 바뀐 내용은 <a href="../changelog/CHANGELOG.html">변경 내역</a>에 있습니다.</p>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+              <div>
+                  이 에셋과 문서는 Unity Technologies와 관련이 없으며, 사용으로 인해 발생하는 법적 문제에 대해서는 제작자가 책임지지 않습니다.
+              </div>
+              <div>
+                  <span class="pull-right"><a href="#top">Back to top</a></span>
+
+                  <span>이 문서는 <strong>DocFX</strong>를 통해 생성되었습니다.</span>
+              </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../styles/docs-switcher.js"></script>
+  </body>
+</html>

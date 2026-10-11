@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <script type="text/javascript">
+        thisPackageMetaData = {name: "com.nkstudio.unitytable", version: "1.5.1", displayTitle: "Tabular Editor 1.5.1", lang: "kr"};
+    </script>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>파일 형식 | Tabular Editor </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="파일 형식 | Tabular Editor ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <link rel="stylesheet" href="../styles/language-switcher.css">
+      <link rel="stylesheet" href="../styles/version-switcher.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../manual/index.html">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+            <div class="container hide-when-search" id="breadcrumb">
+                <!-- Unity Customization: Remove content of breadcrumb bar. This space is used for version and language switchers
+                            <ul class="breadcrumb">
+                              <li></li>
+                            </ul>
+                            -->
+            </div>
+        </div>      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+        <div id="unity_breadcrumb_placeholder">
+            <ul class="breadcrumb">
+            <li></li>
+            </ul>
+        </div>
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="파일-형식">파일 형식</h1>
+
+<p>상태 표시줄 오른쪽의 인코딩·줄 끝·구분 기호 중 하나를 누르면 <strong>CSV 파일 형식</strong>(TSV면 <strong>TSV 파일 형식</strong>) 대화상자가 열립니다.</p>
+<p><img src="../images/csv-file-format-dialog.png" alt="CSV 파일 형식 대화상자"></p>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>선택지</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>인코딩</td>
+<td>UTF-8, UTF-8 with BOM, UTF-16 LE/BE, 한국어(CP949·EUC-KR), 일본어(Shift_JIS·EUC-JP), 중국어(GBK·GB18030·Big5), Windows 1252 등</td>
+</tr>
+<tr>
+<td>구분 기호</td>
+<td>쉼표, 탭, 세미콜론, 콜론, 파이프, 공백, 기타(한 글자 직접 입력)</td>
+</tr>
+<tr>
+<td>따옴표</td>
+<td>없음, <code>&quot;</code>, <code>'</code>, 기타(한 글자 직접 입력)</td>
+</tr>
+<tr>
+<td>따옴표 모드</td>
+<td>항상, 최소(구분 기호·따옴표·줄바꿈이 든 셀만), 사용 안 함</td>
+</tr>
+<tr>
+<td>줄 끝</td>
+<td>LF, CRLF</td>
+</tr>
+<tr>
+<td>마지막 줄 바꿈 추가</td>
+<td>파일 끝에 줄바꿈을 붙일지</td>
+</tr>
+</tbody>
+</table>
+<h2 id="다시-열기와-적용">다시 열기와 적용</h2>
+<ul>
+<li><strong>다시 열기</strong>: 고른 형식으로 파일을 디스크에서 다시 읽습니다. 저장하지 않은 편집은 버려집니다. 예를 들어 글자가 깨져 보이는 CP949 파일은 인코딩을 <strong>한국어 (CP949)</strong> 형식으로 바꾸고 다시 열면 됩니다.</li>
+<li><strong>적용</strong>: 셀 값은 그대로 두고 저장할 형식만 바꿉니다. 저장해야 파일에 반영되며 Undo로 되돌릴 수 있습니다.</li>
+</ul>
+<h2 id="meta에-기록되는-내용"><code>.meta</code>에 기록되는 내용</h2>
+<p>BOM이나 확장자로 알아낼 수 없는 부분(레거시 인코딩, 기본값이 아닌 구분 기호·따옴표·따옴표 모드)은 파일의 <code>.meta</code>(<code>userData</code>)에 기록됩니다. 다음에 열 때도, 버전 관리로 받은 팀원도 같은 형식으로 읽습니다. 모두 기본값이면 <code>.meta</code>는 바뀌지 않습니다.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>다른 도구가 이미 그 파일의 <code>userData</code>를 쓰고 있으면 덮어쓰지 않고 Console에 경고를 남깁니다.</p>
+</div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+              <div>
+                  이 에셋과 문서는 Unity Technologies와 관련이 없으며, 사용으로 인해 발생하는 법적 문제에 대해서는 제작자가 책임지지 않습니다.
+              </div>
+              <div>
+                  <span class="pull-right"><a href="#top">Back to top</a></span>
+
+                  <span>이 문서는 <strong>DocFX</strong>를 통해 생성되었습니다.</span>
+              </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../styles/docs-switcher.js"></script>
+  </body>
+</html>

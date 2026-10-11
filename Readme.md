@@ -4,7 +4,7 @@
 [UDiscord](https://nk-studio.github.io/Packages/com.nkstudio.udiscordbot@1.0/index.html)  
 [UITK Effects](https://nk-studio.github.io/Packages/com.nkstudio.uitk-effects@1.0/index.html)  
 [UITK Navigation](https://nk-studio.github.io/Packages/com.nkstudio.uitk-navigation@0.4/index.html)  
-[Unity Table](https://nk-studio.github.io/Packages/com.nkstudio.unitytable@1.0/index.html)  
+[Unity Table](https://nk-studio.github.io/Packages/com.nkstudio.unitytable@1.5/index.html)  
 [Nupy Star Calculate](https://nk-studio.github.io/NupyStarCalculate/index.html)  
 [WebtoonViewer25](https://nk-studio.github.io/WebToonViewer/index.html)  
 [FMOD Plus](https://nk-studio.github.io/Packages/com.nkstudio.fmodplus@1.7/index.html)  

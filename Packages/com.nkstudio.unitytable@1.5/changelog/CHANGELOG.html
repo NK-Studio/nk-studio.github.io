@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <script type="text/javascript">
+        thisPackageMetaData = {name: "com.nkstudio.unitytable", version: "1.5.1", displayTitle: "Tabular Editor 1.5.1", lang: "en"};
+    </script>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Changelog | Tabular Editor </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Changelog | Tabular Editor ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <link rel="stylesheet" href="../styles/language-switcher.css">
+      <link rel="stylesheet" href="../styles/version-switcher.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../manual/index.html">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+            <div class="container hide-when-search" id="breadcrumb">
+                <!-- Unity Customization: Remove content of breadcrumb bar. This space is used for version and language switchers
+                            <ul class="breadcrumb">
+                              <li></li>
+                            </ul>
+                            -->
+            </div>
+        </div>      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+        <div id="unity_breadcrumb_placeholder">
+            <ul class="breadcrumb">
+            <li></li>
+            </ul>
+        </div>
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="changelog">Changelog</h1>
+
+<h2 id="151">1.5.1</h2>
+<ul>
+<li><strong>Alt+Enter</strong> (<strong>Option+Enter</strong> on macOS) while editing inserts a line break inside the cell without committing; selected text is replaced.</li>
+</ul>
+<h2 id="150">1.5.0</h2>
+<ul>
+<li>Asset path columns flag paths that can't be found with a warning icon and red text; hovering shows where Tabular Editor looked. Click <strong>N missing asset paths</strong> in the status bar to go to the next one.</li>
+<li>Dropping assets from the Project window onto a cell writes their paths in the format the column uses (Resources path or <code>Assets/…</code>), one per row downward.</li>
+</ul>
+<h2 id="140">1.4.0</h2>
+<h3 id="added">Added</h3>
+<ul>
+<li>Columns of asset paths are recognized automatically and their cells show the Project window icon. Hover for a preview card; <strong>Ctrl/Cmd+click</strong> or right-click <strong>Show in Project</strong> pings the asset.</li>
+<li>Asset path display can be turned off for all files in Preferences, or per file from the window <strong>⋮</strong> menu.</li>
+</ul>
+<h3 id="fixed">Fixed</h3>
+<ul>
+<li>Scrolling stuttered in files with many long cells (thousands of characters). Cells now draw only what fits; editing, copy and save still use the full value.</li>
+</ul>
+<h2 id="130">1.3.0</h2>
+<h3 id="added-1">Added</h3>
+<ul>
+<li><strong>Ctrl+G</strong> go to a row or cell (<code>120</code>, <code>C120</code>, <code>120:3</code>).</li>
+<li>Fill handle: drag to continue numbers and text ending in a number, or copy other values. Hold Alt/Option on release to swap continuing and copying.</li>
+</ul>
+<h3 id="changed">Changed</h3>
+<ul>
+<li>The status bar shows the active cell as an address (<code>C12</code>).</li>
+</ul>
+<h3 id="fixed-1">Fixed</h3>
+<ul>
+<li>Input placeholders were not dimmed in the Android Studio theme.</li>
+</ul>
+<h2 id="120">1.2.0</h2>
+<h3 id="added-2">Added</h3>
+<ul>
+<li>English/Korean UI switch (window <strong>⋮</strong> menu or Preferences). Follows the OS language at first.</li>
+</ul>
+<h3 id="fixed-2">Fixed</h3>
+<ul>
+<li>Horizontal trackpad swipes, tilt wheels and <strong>Shift+wheel</strong> did not scroll the table sideways.</li>
+</ul>
+<h2 id="110">1.1.0</h2>
+<h3 id="added-3">Added</h3>
+<ul>
+<li>Themes (Unity / Android Studio).</li>
+<li>Frozen header rows (row number context menu <strong>Set Header Rows Up to Selection</strong>), stored in <code>.meta</code> and shared with your team.</li>
+<li>Find and replace: match case, regex, whole word, find in selection, vertical search, replace, replace all and preserve case.</li>
+<li>Reload files changed outside the editor right away; with unsaved edits, a notice bar asks what to do.</li>
+<li>Columns fit their content when a file opens; double-click a column border to fit again.</li>
+<li>The cell edit field grows right and down with its content.</li>
+<li>File format dialog: choose the encoding (including legacy code pages such as CP949), delimiter, quote, quote mode and line ending, then reopen or apply.</li>
+<li>Preferences &gt; Tabular Editor: font size, mouse wheel zoom, column auto-fit and the format of new CSV files.</li>
+<li>Ascending/descending sort from the column menu (numbers and dates recognized, empty cells last).</li>
+<li>Row and column shortcuts: add (<strong>Ctrl+Alt+Arrow</strong>), jump to data edge (<strong>Ctrl+Arrow</strong>), delete (<strong>Ctrl+-</strong>), duplicate rows (<strong>Ctrl+D</strong>), move by one (<strong>Alt+Arrow</strong>) and fill the selection (<strong>Ctrl+Enter</strong>).</li>
+<li>Clicking empty space selects the nearest cell.</li>
+</ul>
+<h3 id="changed-1">Changed</h3>
+<ul>
+<li>Removed the <strong>first row as header</strong> toggle and the Save and Reload buttons from the toolbar. Column titles are always A, B, C.</li>
+<li>The search button is now an icon, and the status bar shows the file format.</li>
+<li>The active cell stays at the cell where the selection started.</li>
+<li>Large files load in the background.</li>
+</ul>
+<h2 id="101">1.0.1</h2>
+<ul>
+<li>Lowered the supported version to Unity 6.0. Double-clicking <code>.csv</code>/<code>.tsv</code> files opens them on Unity 6.0 through 6.3 and later.</li>
+</ul>
+<h2 id="100">1.0.0</h2>
+<p>First release of Tabular Editor.</p>
+<h3 id="file-handling">File handling</h3>
+<ul>
+<li>Added RFC 4180-compatible CSV and TSV parsing and writing, including quoted fields, embedded separators and line breaks, and escaped quotes.</li>
+<li>Preserved source encoding, BOM, line-ending style, and final-newline state.</li>
+<li>Added a TSV Scripted Importer and CSV/TSV double-click open handler.</li>
+<li>Added a confirmation before overwriting a file changed by another tool.</li>
+</ul>
+<h3 id="editing">Editing</h3>
+<ul>
+<li>Added keyboard navigation, range selection, direct typing, F2 editing, and IME-safe text entry.</li>
+<li>Added save, dirty-state tracking, reload, and close confirmation.</li>
+<li>Added table-local Undo/Redo, clipboard operations, and cell search.</li>
+<li>Added row and column append, contextual insert/remove commands, and full row/column deletion.</li>
+</ul>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+              <div>
+                  This asset and documentation are not affiliated with Unity Technologies, and the creator is not responsible for any legal issues arising from its use.
+              </div>
+              <div>
+                  <span class="pull-right"><a href="#top">Back to top</a></span>
+
+                  <span>This document was generated using <strong>DocFX</strong>.</span>
+              </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../styles/docs-switcher.js"></script>
+  </body>
+</html>

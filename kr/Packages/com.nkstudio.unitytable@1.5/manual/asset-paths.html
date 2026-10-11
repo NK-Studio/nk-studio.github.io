@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <script type="text/javascript">
+        thisPackageMetaData = {name: "com.nkstudio.unitytable", version: "1.5.1", displayTitle: "Tabular Editor 1.5.1", lang: "kr"};
+    </script>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>에셋 경로 | Tabular Editor </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="에셋 경로 | Tabular Editor ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <link rel="stylesheet" href="../styles/language-switcher.css">
+      <link rel="stylesheet" href="../styles/version-switcher.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../manual/index.html">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+            <div class="container hide-when-search" id="breadcrumb">
+                <!-- Unity Customization: Remove content of breadcrumb bar. This space is used for version and language switchers
+                            <ul class="breadcrumb">
+                              <li></li>
+                            </ul>
+                            -->
+            </div>
+        </div>      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+        <div id="unity_breadcrumb_placeholder">
+            <ul class="breadcrumb">
+            <li></li>
+            </ul>
+        </div>
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="에셋-경로">에셋 경로</h1>
+
+<p>값이 에셋을 가리키는 열을 자동으로 알아보고, 셀에서 바로 에셋을 확인하고 넣을 수 있게 합니다.</p>
+<h2 id="알아보는-값">알아보는 값</h2>
+<table>
+<thead>
+<tr>
+<th>형식</th>
+<th>예</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Resources 기준 경로(확장자 없음)</td>
+<td><code>Art/Sprite/Buff/spr_buff_1000</code> → 어느 <code>Resources</code> 폴더 아래든 <code>spr_buff_1000.*</code></td>
+</tr>
+<tr>
+<td>프로젝트 경로</td>
+<td><code>Assets/Art/spr_buff_1000.png</code>, <code>Packages/…</code></td>
+</tr>
+</tbody>
+</table>
+<p>헤더 행을 뺀 본문에서 값이 있는 칸을 위에서부터 50개까지 보고, 그중 절반 이상이 에셋으로 찾아지면 그 열을 <strong>에셋 경로 열</strong>로 봅니다. 파일을 열 때, 편집할 때, 프로젝트의 에셋이 바뀔 때 다시 판정합니다.</p>
+<h2 id="아이콘과-미리보기">아이콘과 미리보기</h2>
+<p><img src="../images/editor-window-asset-paths.png" alt="에셋 경로 열의 셀마다 붙은 에셋 아이콘"></p>
+<ul>
+<li>에셋 경로 열의 셀은 글자 앞에 Project 창과 같은 아이콘이 붙습니다.</li>
+<li>셀에 마우스를 잠깐 올려 두면 미리보기 카드가 뜹니다. 텍스처·스프라이트는 큰 그림과 크기를, 프리팹 같은 그 밖의 에셋은 아이콘·종류·경로를 보여 줍니다(프리팹은 불러오는 데 시간이 걸려 미리보기를 만들지 않습니다).</li>
+<li><strong>Ctrl+클릭</strong>(macOS는 <strong>Cmd+클릭</strong>)하거나 우클릭 메뉴의 <strong>Project 창에서 보기</strong>를 고르면 Project 창에서 그 에셋을 찾아 보여 줍니다.</li>
+</ul>
+<h2 id="찾을-수-없는-경로">찾을 수 없는 경로</h2>
+<p>에셋 경로 열에서 경로처럼 생긴 값(<code>/</code> 포함)인데 에셋을 찾을 수 없으면 경고 아이콘과 빨간 글자로 표시합니다. 마우스를 올리면 어디를 찾아봤는지 알려 줍니다.</p>
+<p><img src="../images/missing-asset-path.png" alt="찾을 수 없는 경로가 경고 아이콘과 빨간 글자로 표시된 셀"></p>
+<p>상태 표시줄 왼쪽에 <strong>찾을 수 없는 경로 N개</strong>가 나타나고, 누를 때마다 다음 문제 칸으로 이동합니다(마지막 다음은 처음으로). <code>/</code>가 없는 값(열 제목, <code>None</code>, <code>-</code> 등)은 경고하지 않습니다.</p>
+<h2 id="끌어다-놓기">끌어다 놓기</h2>
+<p>Project 창의 에셋을 셀로 끌어다 놓으면 그 열이 쓰는 형식으로 경로를 적습니다.</p>
+<p><img src="../images/drag-asset-to-cell.gif" alt="Project 창의 macaron 에셋을 빈 셀로 끌어다 놓아 경로가 들어가는 모습"></p>
+<table>
+<thead>
+<tr>
+<th>열</th>
+<th>들어가는 값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Resources 경로를 쓰는 열</td>
+<td><code>Art/Sprite/Shop/spr_shop_1000</code></td>
+</tr>
+<tr>
+<td>프로젝트 경로를 쓰는 열</td>
+<td><code>Assets/…/spr_shop_1000.png</code></td>
+</tr>
+<tr>
+<td>아직 경로가 없는 열</td>
+<td>Resources 안의 에셋이면 Resources 경로, 아니면 프로젝트 경로</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>여러 개를 끌어 오면 놓은 셀부터 아래로 한 칸에 하나씩 들어갑니다. 끄는 동안 들어갈 칸이 표시됩니다.</li>
+<li>Resources 경로 열에 <code>Resources</code> 폴더 밖의 에셋은 놓을 수 없습니다(<code>Resources.Load</code>로 불러올 수 없기 때문입니다).</li>
+<li>Undo 한 번으로 되돌아갑니다.</li>
+</ul>
+<h2 id="끄기">끄기</h2>
+<table>
+<thead>
+<tr>
+<th>위치</th>
+<th>범위</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Preferences &gt; Tabular Editor &gt; <strong>에셋 경로 미리보기</strong></td>
+<td>모든 파일</td>
+</tr>
+<tr>
+<td>창 <strong>⋮</strong> 메뉴 &gt; <strong>이 파일에서 에셋 경로 미리보기</strong></td>
+<td>그 파일만. <code>.meta</code>에 저장되어 팀과 공유됩니다.</td>
+</tr>
+</tbody>
+</table>
+<p>두 곳이 모두 켜져 있어야 표시됩니다.</p>
+<p><img src="../images/window-menu-asset-preview.png" alt="창 ⋮ 메뉴의 이 파일에서 에셋 경로 미리보기 항목"></p>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+              <div>
+                  이 에셋과 문서는 Unity Technologies와 관련이 없으며, 사용으로 인해 발생하는 법적 문제에 대해서는 제작자가 책임지지 않습니다.
+              </div>
+              <div>
+                  <span class="pull-right"><a href="#top">Back to top</a></span>
+
+                  <span>이 문서는 <strong>DocFX</strong>를 통해 생성되었습니다.</span>
+              </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../styles/docs-switcher.js"></script>
+  </body>
+</html>
